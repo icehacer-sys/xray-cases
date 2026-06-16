@@ -1,0 +1,555 @@
+[
+  {
+    "diagnosis": "Maffucci syndrome",
+    "aliases": [
+      "Maffucci's syndrome",
+      "enchondromatosis with hemangiomas"
+    ],
+    "symptom": "lumpy, deformed fingers that had grown over years",
+    "hook": "the hand was studded with bubbly bone lumps and little round stones in the soft tissue",
+    "view": "PA hand",
+    "keyFindings": "multiple expansile lucent enchondromas in the phalanges and metacarpals with endosteal scalloping, plus rounded soft-tissue phleboliths from the hemangiomas",
+    "whatYouSee": "Multiple lytic, expansile enchondromas in the small bones of the hand alongside round, calcified phleboliths sitting in the soft tissues.",
+    "whyItMatters": "It is a non-hereditary combination of multiple enchondromas and soft-tissue hemangiomas that carries a markedly raised lifetime risk of malignant transformation, especially chondrosarcoma.",
+    "treatment": "There is no cure; management is surveillance for malignant change, correction of deformity or fractures, and excision of any lesion that grows or becomes painful.",
+    "takeaway": "Bone lumps plus little round stones in the soft tissue of the hand point to Maffucci syndrome, which needs lifelong cancer watch.",
+    "igTitle": "THE HAND OF STONES",
+    "igOptions": [
+      "Maffucci syndrome",
+      "Rheumatoid arthritis",
+      "Gout"
+    ],
+    "igCorrect": "A",
+    "used": false
+  },
+  {
+    "diagnosis": "Ollier disease",
+    "aliases": [
+      "Ollier's disease",
+      "multiple enchondromatosis"
+    ],
+    "symptom": "one arm and hand that had grown shorter and more crooked than the other",
+    "hook": "the bones looked like they were stuffed with translucent cartilage balloons, mostly on one side",
+    "view": "PA hand and forearm",
+    "keyFindings": "multiple expansile lucent enchondromas with a typically unilateral or asymmetric distribution, causing bone expansion, deformity and shortening, often with linear striations",
+    "whatYouSee": "Numerous lucent, expansile cartilage lesions clustered asymmetrically in the bones of one limb, distorting and shortening it.",
+    "whyItMatters": "This is multiple enchondromatosis without the hemangiomas of Maffucci; it causes limb deformity and length discrepancy and carries a real risk of chondrosarcoma.",
+    "treatment": "Management is orthopaedic correction of deformity and length discrepancy plus long-term monitoring for malignant transformation.",
+    "takeaway": "Many cartilage lesions crowding mostly one side of the body is Ollier disease, the hemangioma-free cousin of Maffucci.",
+    "igTitle": "ONE-SIDED CARTILAGE STORM",
+    "igOptions": [
+      "Fibrous dysplasia",
+      "Ollier disease",
+      "Bone metastases"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Sprengel deformity",
+    "aliases": [
+      "Sprengel's deformity",
+      "congenital high scapula"
+    ],
+    "symptom": "a shoulder that sat too high and could not lift the arm fully since birth",
+    "hook": "one shoulder blade was parked up near the neck instead of lying flat on the back",
+    "view": "AP shoulder and upper thorax",
+    "keyFindings": "a small, abnormally elevated and medially rotated scapula, sometimes connected to the cervical spine by an omovertebral bone",
+    "whatYouSee": "One scapula sits abnormally high and is smaller and rotated, occasionally bridged to the cervical spine by an extra bone.",
+    "whyItMatters": "It is the most common congenital shoulder anomaly and limits shoulder abduction; it is frequently associated with Klippel-Feil and other spine anomalies.",
+    "treatment": "Mild cases are observed; significant functional or cosmetic deformity is corrected surgically, ideally in early childhood.",
+    "takeaway": "A shoulder blade riding high near the neck from birth is the Sprengel deformity.",
+    "igTitle": "THE SHOULDER THAT WOULD NOT DROP",
+    "igOptions": [
+      "Klippel-Feil syndrome",
+      "Sprengel deformity",
+      "Erb's palsy"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Eagle syndrome",
+    "aliases": [
+      "elongated styloid process",
+      "stylohyoid syndrome"
+    ],
+    "symptom": "a stabbing throat and neck pain that got worse on turning the head and swallowing",
+    "hook": "a long bony spike was reaching down from the skull base toward the throat",
+    "view": "lateral / panoramic skull and neck",
+    "keyFindings": "an abnormally elongated styloid process (greater than about 3 cm) and/or calcification of the stylohyoid ligament projecting toward the tonsillar fossa",
+    "whatYouSee": "A long, slender, ossified spike extending from the skull base down toward the throat, far longer than the normal styloid process.",
+    "whyItMatters": "The elongated styloid or calcified ligament can irritate nearby nerves and vessels, causing throat pain, referred ear pain, and pain on neck movement.",
+    "treatment": "Symptoms can be managed conservatively with analgesics or local injections; refractory cases are treated by surgical shortening of the styloid process.",
+    "takeaway": "A bony spike pointing into the throat with neck and swallow pain is Eagle syndrome.",
+    "igTitle": "THE SWORD IN THE THROAT",
+    "igOptions": [
+      "Tonsillitis",
+      "Eagle syndrome",
+      "Carotid dissection"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Osteopoikilosis",
+    "aliases": [
+      "osteopoikilosis",
+      "spotted bone disease"
+    ],
+    "symptom": "no symptoms at all; the spots turned up by chance on an X-ray",
+    "hook": "the bone ends were sprayed with dozens of tiny dense white dots like a snowstorm",
+    "view": "AP pelvis and hips",
+    "keyFindings": "numerous small, round-to-oval sclerotic foci clustered symmetrically in the epiphyses and metaphyses around joints, especially pelvis, hips and hands",
+    "whatYouSee": "Dozens of small, well-defined dense white spots scattered symmetrically through the bone ends around the joints.",
+    "whyItMatters": "It is a benign, often inherited bone dysplasia that is clinically harmless but is important to recognise so it is not mistaken for blastic metastases.",
+    "treatment": "No treatment is needed; the key is confident recognition to avoid unnecessary cancer work-up.",
+    "takeaway": "A harmless snowstorm of tiny dense dots in the bone ends is osteopoikilosis, not cancer.",
+    "igTitle": "SNOWSTORM IN THE BONES",
+    "igOptions": [
+      "Blastic metastases",
+      "Osteopoikilosis",
+      "Paget disease"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Melorheostosis",
+    "aliases": [
+      "melorheostosis",
+      "Leri disease"
+    ],
+    "symptom": "a stiff, aching limb with thickened skin overlying the bone",
+    "hook": "dense bone was dripping down the side of the shaft like candle wax",
+    "view": "AP long bone (femur or tibia)",
+    "keyFindings": "flowing, wavy cortical hyperostosis along one side of a long bone resembling melted candle wax, usually in a single limb and sclerotomal distribution",
+    "whatYouSee": "Thick, flowing sclerotic bone running down one side of the shaft like wax dripping from a candle.",
+    "whyItMatters": "This rare benign dysplasia can cause pain, stiffness, limb deformity and soft-tissue contractures along the affected segment.",
+    "treatment": "Management is symptomatic with analgesia and physiotherapy; severe deformity or contracture may need surgical release or correction.",
+    "takeaway": "Bone that looks like dripping candle wax down one side of a limb is melorheostosis.",
+    "igTitle": "DRIPPING CANDLE BONE",
+    "igOptions": [
+      "Melorheostosis",
+      "Osteosarcoma",
+      "Chronic osteomyelitis"
+    ],
+    "igCorrect": "A",
+    "used": false
+  },
+  {
+    "diagnosis": "Fibrodysplasia ossificans progressiva",
+    "aliases": [
+      "FOP",
+      "stone man syndrome",
+      "myositis ossificans progressiva"
+    ],
+    "symptom": "soft tissues that kept turning hard and locking the joints, with short malformed big toes",
+    "hook": "sheets of new bone were forming inside the muscles, fusing the body into a second skeleton",
+    "view": "AP thorax and shoulders",
+    "keyFindings": "heterotopic ossification forming bony bridges within muscles and along soft-tissue planes, classically with short malformed great toes (hallux valgus / monophalangism)",
+    "whatYouSee": "Ribbons and sheets of bone forming inside the muscles and across soft tissues, with characteristically short, malformed big toes.",
+    "whyItMatters": "This ultra-rare genetic disorder progressively turns soft tissue into bone, locking joints; trauma and biopsy famously trigger more bone, so they must be avoided.",
+    "treatment": "There is no cure; care focuses on avoiding trauma and unnecessary surgery, managing flares, and protecting remaining mobility.",
+    "takeaway": "New bone growing inside the muscles with short malformed big toes is FOP, the stone man syndrome.",
+    "igTitle": "THE SECOND SKELETON",
+    "igOptions": [
+      "Polymyositis",
+      "Fibrodysplasia ossificans progressiva",
+      "Dermatomyositis"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Giant gallstone",
+    "aliases": [
+      "large gallstone",
+      "giant calculus"
+    ],
+    "symptom": "long-standing right upper abdominal discomfort and bloating",
+    "hook": "it looked like someone had hidden a giant laminated pearl inside the abdomen",
+    "view": "AP abdomen",
+    "keyFindings": "a single very large rounded calculus in the right upper quadrant, often with concentric laminated calcification or a central lucency",
+    "whatYouSee": "A large rounded calcified stone in the right upper quadrant, sometimes with layered, onion-ring calcification.",
+    "whyItMatters": "Giant gallstones can cause chronic cholecystitis and, rarely, erode into bowel to produce gallstone ileus, a mechanical obstruction.",
+    "treatment": "Symptomatic stones are treated by cholecystectomy; gallstone ileus also requires relief of the bowel obstruction.",
+    "takeaway": "A single huge layered stone in the right upper abdomen is a giant gallstone.",
+    "igTitle": "THE PEARL IN THE BELLY",
+    "igOptions": [
+      "Renal calculus",
+      "Giant gallstone",
+      "Calcified lymph node"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Staghorn calculus",
+    "aliases": [
+      "staghorn stone",
+      "struvite calculus"
+    ],
+    "symptom": "recurrent urinary infections and dull flank ache",
+    "hook": "a stone had grown into a perfect cast of the kidney's inner branches, like antlers",
+    "view": "AP abdomen (KUB)",
+    "keyFindings": "a large branching calcified density filling and outlining the renal pelvis and calyces in the shape of a stag's antlers",
+    "whatYouSee": "A dense branching stone that fills the collecting system of the kidney, shaped like deer antlers.",
+    "whyItMatters": "Staghorn calculi are usually infection (struvite) stones that can destroy renal function and serve as a persistent nidus for infection and sepsis.",
+    "treatment": "Definitive treatment is surgical clearance, classically percutaneous nephrolithotomy, plus treatment of the underlying infection.",
+    "takeaway": "A stone shaped like antlers filling the kidney's collecting system is a staghorn calculus.",
+    "igTitle": "ANTLERS IN THE KIDNEY",
+    "igOptions": [
+      "Staghorn calculus",
+      "Renal tumour",
+      "Nephrocalcinosis"
+    ],
+    "igCorrect": "A",
+    "used": false
+  },
+  {
+    "diagnosis": "Sigmoid volvulus",
+    "aliases": [
+      "sigmoid volvulus",
+      "coffee-bean sign"
+    ],
+    "symptom": "a hugely distended abdomen with no bowel movements and crampy pain",
+    "hook": "a massive loop of bowel had twisted up into the shape of a giant coffee bean",
+    "view": "AP abdomen (supine)",
+    "keyFindings": "a markedly dilated inverted-U loop of sigmoid colon rising out of the pelvis, with a central cleft giving the classic coffee-bean appearance pointing toward the right upper quadrant",
+    "whatYouSee": "A grossly dilated loop of large bowel folded on itself, looking like a giant coffee bean rising from the pelvis.",
+    "whyItMatters": "The twisted segment can obstruct and lose its blood supply, leading to ischaemia, perforation and peritonitis if not relieved.",
+    "treatment": "Initial treatment is endoscopic decompression and detorsion; recurrent or complicated cases need sigmoid colectomy.",
+    "takeaway": "A giant coffee-bean loop of bowel from the pelvis is a sigmoid volvulus.",
+    "igTitle": "THE COFFEE BEAN GUT",
+    "igOptions": [
+      "Toxic megacolon",
+      "Sigmoid volvulus",
+      "Small bowel obstruction"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Pneumoperitoneum",
+    "aliases": [
+      "free intraperitoneal air",
+      "perforated viscus"
+    ],
+    "symptom": "sudden severe abdominal pain with a rigid, board-like belly",
+    "hook": "a thin black crescent of free air was trapped under the dome of the diaphragm",
+    "view": "erect chest / upright abdomen",
+    "keyFindings": "free gas under the diaphragm on an erect film, seen as a lucent crescent between the diaphragm and liver or stomach",
+    "whatYouSee": "A crescent of black free air sitting under the diaphragm, separate from the normal stomach gas bubble.",
+    "whyItMatters": "Free intraperitoneal air usually signals a perforated hollow organ, a surgical emergency that can rapidly cause peritonitis and sepsis.",
+    "treatment": "Treatment is urgent resuscitation and, in most cases, emergency surgery to find and repair the perforation.",
+    "takeaway": "A crescent of free air under the diaphragm means a perforated organ until proven otherwise.",
+    "igTitle": "AIR WHERE IT SHOULD NOT BE",
+    "igOptions": [
+      "Pneumoperitoneum",
+      "Subphrenic abscess",
+      "Chilaiditi sign"
+    ],
+    "igCorrect": "A",
+    "used": false
+  },
+  {
+    "diagnosis": "Achalasia",
+    "aliases": [
+      "achalasia cardia",
+      "bird-beak oesophagus"
+    ],
+    "symptom": "years of difficulty swallowing both solids and liquids, with regurgitation",
+    "hook": "the food pipe had ballooned wide and tapered to a thin bird's beak at the bottom",
+    "view": "barium swallow (oesophagram)",
+    "keyFindings": "a dilated oesophagus with smooth tapering to a narrow point at the gastro-oesophageal junction producing the classic bird-beak appearance, often with retained food and an air-fluid level",
+    "whatYouSee": "A widely dilated oesophagus that narrows smoothly to a thin point at the bottom, like a bird's beak.",
+    "whyItMatters": "It is failure of the lower oesophageal sphincter to relax with loss of peristalsis, causing progressive dysphagia, weight loss and aspiration risk.",
+    "treatment": "Treatment options include pneumatic dilatation, peroral endoscopic myotomy or surgical Heller myotomy to relieve the obstruction.",
+    "takeaway": "A dilated oesophagus tapering to a bird's beak is achalasia.",
+    "igTitle": "THE BIRD-BEAK PIPE",
+    "igOptions": [
+      "Oesophageal cancer",
+      "Achalasia",
+      "Hiatus hernia"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Situs inversus totalis",
+    "aliases": [
+      "situs inversus",
+      "dextrocardia with situs inversus"
+    ],
+    "symptom": "no symptoms; discovered incidentally on a routine chest film",
+    "hook": "the heart was pointing to the right and the stomach bubble sat under the wrong lung",
+    "view": "PA chest",
+    "keyFindings": "the cardiac apex and aortic arch on the right (dextrocardia) with the gastric air bubble under the right hemidiaphragm and liver shadow on the left, a complete mirror-image of normal anatomy",
+    "whatYouSee": "The heart points to the right and the stomach gas bubble and organs are all flipped to the opposite side, a mirror image of normal.",
+    "whyItMatters": "It is usually benign, but recognising it prevents diagnostic errors and missed lateralised disease; with primary ciliary dyskinesia it forms Kartagener syndrome.",
+    "treatment": "No treatment is required for the mirror anatomy itself; associated conditions such as Kartagener syndrome are managed on their own.",
+    "takeaway": "A heart pointing right with flipped organs is situs inversus, a mirror-image body.",
+    "igTitle": "THE MIRROR BODY",
+    "igOptions": [
+      "Situs inversus totalis",
+      "Tension pneumothorax",
+      "Right lung collapse"
+    ],
+    "igCorrect": "A",
+    "used": false
+  },
+  {
+    "diagnosis": "Cannonball metastases",
+    "aliases": [
+      "cannonball secondaries",
+      "pulmonary metastases"
+    ],
+    "symptom": "cough, breathlessness and weight loss in someone with a known cancer",
+    "hook": "both lungs were peppered with large round shadows like a stack of cannonballs",
+    "view": "PA chest",
+    "keyFindings": "multiple large, well-defined round nodules scattered through both lungs, typically from renal, choriocarcinoma, or other distant primary tumours",
+    "whatYouSee": "Multiple large, round, sharply marginated masses spread through both lung fields like cannonballs.",
+    "whyItMatters": "These represent haematogenous metastatic spread to the lungs and indicate advanced malignancy requiring identification of the primary tumour.",
+    "treatment": "Management depends on the primary cancer and may include systemic chemotherapy, targeted therapy or immunotherapy.",
+    "takeaway": "Big round shadows scattered through both lungs are cannonball metastases.",
+    "igTitle": "CANNONBALLS IN THE CHEST",
+    "igOptions": [
+      "Miliary tuberculosis",
+      "Cannonball metastases",
+      "Sarcoidosis"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Lithopedion",
+    "aliases": [
+      "stone baby",
+      "calcified ectopic pregnancy"
+    ],
+    "symptom": "a long-forgotten failed pregnancy years earlier with vague abdominal fullness",
+    "hook": "a calcified fetus had been sitting silently in the abdomen for years, turned to stone",
+    "view": "AP abdomen/pelvis",
+    "keyFindings": "a calcified fetal skeleton lying within the abdomen or pelvis outside the uterine cavity, with recognisable calcified fetal bones",
+    "whatYouSee": "The calcified outline of a fetal skeleton lying free in the abdomen or pelvis, long after a failed pregnancy.",
+    "whyItMatters": "It is a rare end-stage of an abdominal or ectopic pregnancy where the dead fetus calcifies instead of being reabsorbed, and can be mistaken for a tumour or stone.",
+    "treatment": "Management is usually surgical removal, though asymptomatic cases in frail patients may be observed.",
+    "takeaway": "A calcified fetus retained for years in the abdomen is a lithopedion, a stone baby.",
+    "igTitle": "THE STONE BABY",
+    "igOptions": [
+      "Ovarian dermoid",
+      "Lithopedion",
+      "Calcified fibroid"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Gossypiboma",
+    "aliases": [
+      "retained surgical sponge",
+      "textiloma"
+    ],
+    "symptom": "vague abdominal pain and a mass months after an operation",
+    "hook": "a swirling mass with a tell-tale radiopaque marker was a sponge left behind in surgery",
+    "view": "AP abdomen",
+    "keyFindings": "a soft-tissue mass containing a whorled or spongiform gas pattern, often with a visible radiopaque marker thread from a retained surgical sponge",
+    "whatYouSee": "A soft-tissue mass with a swirled internal pattern and, often, a thin radiopaque marker line from a retained surgical sponge.",
+    "whyItMatters": "A retained sponge can cause chronic infection, abscess and fistula or mimic a tumour, and is a serious preventable surgical complication.",
+    "treatment": "Treatment is surgical removal of the retained material and management of any abscess or fistula.",
+    "takeaway": "A swirled abdominal mass with a radiopaque marker after surgery is a gossypiboma, a left-behind sponge.",
+    "igTitle": "THE THING LEFT BEHIND",
+    "igOptions": [
+      "Abdominal tumour",
+      "Gossypiboma",
+      "Haematoma"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Rhinolith",
+    "aliases": [
+      "nasal calculus",
+      "nasal stone"
+    ],
+    "symptom": "long-standing one-sided blocked nose and foul-smelling discharge",
+    "hook": "a hard calcified stone had quietly built up inside one nostril over years",
+    "view": "Waters / sinus X-ray",
+    "keyFindings": "a dense, often irregular calcified mass within the nasal cavity, typically unilateral on the floor of the nose",
+    "whatYouSee": "A dense, irregular calcified mass sitting inside one side of the nasal cavity.",
+    "whyItMatters": "A rhinolith forms by mineral deposition around a retained foreign body or debris and causes chronic unilateral obstruction, discharge and odour.",
+    "treatment": "Treatment is endoscopic or surgical removal of the stone.",
+    "takeaway": "A calcified stone inside one nostril causing chronic blockage is a rhinolith.",
+    "igTitle": "THE STONE IN THE NOSE",
+    "igOptions": [
+      "Nasal polyp",
+      "Rhinolith",
+      "Inverted papilloma"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Cervical rib",
+    "aliases": [
+      "cervical rib",
+      "extra rib"
+    ],
+    "symptom": "tingling and weakness in the hand worsened by raising the arm",
+    "hook": "an extra rib was sprouting from the lowest neck vertebra where none should exist",
+    "view": "AP cervicothoracic / chest",
+    "keyFindings": "a supernumerary rib arising from the C7 vertebra, ranging from a small bony stub to a complete extra rib above the first thoracic rib",
+    "whatYouSee": "An extra rib growing from the seventh cervical vertebra, above the normal first rib.",
+    "whyItMatters": "A cervical rib can compress the brachial plexus or subclavian vessels, causing thoracic outlet syndrome with neurological or vascular symptoms in the arm.",
+    "treatment": "Mild cases are managed with physiotherapy; significant nerve or vascular compression is treated by surgical resection of the rib.",
+    "takeaway": "An extra rib off the C7 vertebra is a cervical rib, a classic cause of thoracic outlet syndrome.",
+    "igTitle": "THE RIB THAT SHOULD NOT BE",
+    "igOptions": [
+      "Pancoast tumour",
+      "Cervical rib",
+      "Clavicle fracture"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Bochdalek hernia",
+    "aliases": [
+      "congenital diaphragmatic hernia",
+      "posterolateral diaphragmatic hernia"
+    ],
+    "symptom": "breathing difficulty with bowel sounds heard in the chest",
+    "hook": "loops of bowel had climbed up through a hole in the diaphragm into the chest",
+    "view": "AP chest",
+    "keyFindings": "gas-filled bowel loops within the thorax, usually on the left, through a posterolateral diaphragmatic defect, with shift of the mediastinum away from the herniated side",
+    "whatYouSee": "Bowel loops sitting up inside the chest cavity through a defect in the back of the diaphragm, pushing the heart to the other side.",
+    "whyItMatters": "This congenital diaphragmatic defect lets abdominal organs into the chest, compressing the developing lung and impairing breathing, especially in newborns.",
+    "treatment": "Treatment is surgical repair of the diaphragmatic defect after stabilisation of breathing.",
+    "takeaway": "Bowel loops in the chest through a back-of-diaphragm hole is a Bochdalek hernia.",
+    "igTitle": "GUTS IN THE CHEST",
+    "igOptions": [
+      "Bochdalek hernia",
+      "Lung abscess",
+      "Pleural effusion"
+    ],
+    "igCorrect": "A",
+    "used": false
+  },
+  {
+    "diagnosis": "Osteogenesis imperfecta",
+    "aliases": [
+      "brittle bone disease",
+      "OI"
+    ],
+    "symptom": "repeated fractures from minor knocks since early childhood, with bowed limbs",
+    "hook": "the bones were paper-thin and bowed, marked with healed fractures at every turn",
+    "view": "AP lower limb",
+    "keyFindings": "diffusely thin, osteopenic, gracile bones with multiple fractures at different healing stages, bowing deformities and thin cortices",
+    "whatYouSee": "Thin, under-mineralised, bowed bones with multiple fractures in different stages of healing.",
+    "whyItMatters": "It is an inherited collagen disorder causing fragile bones, blue sclerae and hearing loss, with fractures from minimal trauma.",
+    "treatment": "Management includes bisphosphonates to strengthen bone, fracture care, surgical rodding of long bones, and physiotherapy.",
+    "takeaway": "Thin, bowed bones with many old fractures point to osteogenesis imperfecta, brittle bone disease.",
+    "igTitle": "BONES LIKE GLASS",
+    "igOptions": [
+      "Child abuse",
+      "Osteogenesis imperfecta",
+      "Rickets"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Achondroplasia",
+    "aliases": [
+      "achondroplasia",
+      "the commonest skeletal dysplasia"
+    ],
+    "symptom": "disproportionately short limbs with a normal-length trunk since birth",
+    "hook": "the spinal canal narrowed going down instead of widening, with squared-off pelvic wings",
+    "view": "AP pelvis and lumbar spine",
+    "keyFindings": "narrowing interpedicular distance descending the lumbar spine, squared iliac wings with champagne-glass pelvic inlet, short proximal long bones and trident hands",
+    "whatYouSee": "The spacing of the lumbar spinal canal narrows as it goes down, with square pelvic wings and short, stubby long bones.",
+    "whyItMatters": "It is the most common form of disproportionate short stature; the narrowing spinal canal predisposes to spinal stenosis and cord or nerve compression.",
+    "treatment": "Care is supportive and orthopaedic, treating spinal stenosis, foramen magnum compression and limb issues as they arise.",
+    "takeaway": "A lumbar canal that narrows going down with short limbs is achondroplasia.",
+    "igTitle": "THE CANAL THAT NARROWS DOWN",
+    "igOptions": [
+      "Achondroplasia",
+      "Hypothyroidism",
+      "Mucopolysaccharidosis"
+    ],
+    "igCorrect": "A",
+    "used": false
+  },
+  {
+    "diagnosis": "Paget disease of bone",
+    "aliases": [
+      "Paget's disease of bone",
+      "osteitis deformans"
+    ],
+    "symptom": "an aching, enlarging bone and a hat that no longer fit",
+    "hook": "the skull bones were thickened and fluffy, like cotton wool stuffed into the vault",
+    "view": "lateral skull",
+    "keyFindings": "thickened skull with mixed lytic and sclerotic cotton-wool patches, coarsened trabeculae and bone enlargement; in long bones a flame-shaped advancing lytic front",
+    "whatYouSee": "Thickened, expanded skull bone with fluffy patches of dense and lucent bone, like cotton wool.",
+    "whyItMatters": "Disordered bone remodelling produces enlarged, weak bone prone to deformity, fracture, deafness and, rarely, malignant transformation.",
+    "treatment": "Active painful disease is treated with bisphosphonates, with surgery reserved for fractures, deformity or arthritis.",
+    "takeaway": "A thickened skull with cotton-wool patches is Paget disease of bone.",
+    "igTitle": "THE COTTON-WOOL SKULL",
+    "igOptions": [
+      "Fibrous dysplasia",
+      "Paget disease of bone",
+      "Hyperparathyroidism"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Madelung deformity",
+    "aliases": [
+      "Madelung's deformity",
+      "dyschondrosteosis wrist deformity"
+    ],
+    "symptom": "a crooked, dinner-fork-shaped wrist and limited rotation in a young person",
+    "hook": "the forearm bones had grown unevenly, bowing the wrist into a fork shape",
+    "view": "PA and lateral wrist",
+    "keyFindings": "premature fusion of the volar-ulnar distal radial physis causing a bowed, shortened radius, dorsal ulnar prominence and triangular carpus wedged between the radius and ulna",
+    "whatYouSee": "A short, bowed radius with the ulna sticking out dorsally and the wrist bones wedged into a triangle, giving a dinner-fork shape.",
+    "whyItMatters": "This growth-plate disorder, often linked to Leri-Weill dyschondrosteosis, causes wrist deformity, pain and reduced forearm rotation.",
+    "treatment": "Management ranges from observation and physiotherapy to surgical correction with osteotomy or release of the abnormal tethering ligament.",
+    "takeaway": "A dinner-fork wrist from an uneven, bowed forearm in a young person is Madelung deformity.",
+    "igTitle": "THE DINNER-FORK WRIST",
+    "igOptions": [
+      "Colles fracture",
+      "Madelung deformity",
+      "Rheumatoid arthritis"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Coin in the oesophagus",
+    "aliases": [
+      "swallowed coin",
+      "oesophageal foreign body"
+    ],
+    "symptom": "a child drooling and refusing food after swallowing something",
+    "hook": "a perfectly round metal disc was lodged in the food pipe, facing flat to the camera",
+    "view": "AP chest and neck",
+    "keyFindings": "a round radiopaque metallic disc lying in the coronal plane (face-on) at the level of the thoracic inlet, distinguishing oesophageal from tracheal location",
+    "whatYouSee": "A round, dense metallic disc sitting face-on in the oesophagus, typically at the thoracic inlet.",
+    "whyItMatters": "A lodged coin can cause obstruction, drooling and aspiration; a button battery looks similar but has a double-ring halo and is a corrosive emergency.",
+    "treatment": "An impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
+    "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin, but always rule out a button battery.",
+    "igTitle": "THE DISC IN THE PIPE",
+    "igOptions": [
+      "Button battery",
+      "Coin in the oesophagus",
+      "Calcified node"
+    ],
+    "igCorrect": "B",
+    "used": false
+  }
+]

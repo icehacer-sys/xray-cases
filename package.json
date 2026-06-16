@@ -4,15 +4,19 @@
   "private": true,
   "type": "module",
   "description": "Daily X-ray case publisher for @mdnoteslab. Takes a queued case (diagnosis + AI-generated images) and auto-writes the captions, posts the challenge, schedules the pinned answer + CTA, and cross-posts to Threads and Instagram.",
-  "engines": { "node": ">=18.17" },
+  "engines": {
+    "node": ">=18.17"
+  },
   "scripts": {
     "dry": "tsx src/index.ts --dry-run",
     "live": "tsx src/index.ts --live",
     "prompt": "tsx src/index.ts --prompt",
+    "generate": "tsx src/generate.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.1",
+    "@resvg/resvg-js": "^2.6.2",
     "dotenv": "^17.4.2"
   },
   "devDependencies": {

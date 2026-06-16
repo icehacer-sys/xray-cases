@@ -35,6 +35,22 @@ export const config = {
   // Cross-post to Instagram too (Threads always posts).
   instagram: (process.env.BOT_INSTAGRAM ?? "on").toLowerCase() !== "off",
 
+  // --- auto-generator ---
+  // OpenAI image model for the X-ray (the only AI-generated image; slides are rendered).
+  imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-1",
+  imageSize: process.env.BOT_IMAGE_SIZE ?? "1024x1024",
+  // The vetted condition pool the generator draws from.
+  conditionsFile: process.env.BOT_CONDITIONS_FILE ?? "./data/conditions.json",
+  // Keep this many approved-or-pending cases queued ahead.
+  queueTarget: num("BOT_QUEUE_TARGET", 7),
+  // Daily slot (UTC hour) the generator schedules new cases at.
+  postHourUtc: num("BOT_POST_HOUR_UTC", 17),
+  // Skip the human review gate and post generated cases automatically. Off by default
+  // (generated medical images should be eyeballed before they publish).
+  autoApprove: (process.env.BOT_AUTO_APPROVE ?? "off").toLowerCase() === "on",
+  // 1080x1080 slide canvas.
+  slideSize: num("BOT_SLIDE_SIZE", 1080),
+
   // Local queue + state
   casesDir: process.env.BOT_CASES_DIR ?? "./cases",
   stateFile: process.env.BOT_STATE_FILE ?? "./state.json",

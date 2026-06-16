@@ -139,6 +139,15 @@ async function runPublish(cli: Cli): Promise<void> {
 
     // --- Stage 1: challenge -------------------------------------------------------------
     if (!stages.challengePostedAt) {
+      // Review gate: a GENERATED case must be approved before the publisher posts it
+      // (unless BOT_AUTO_APPROVE is on). Hand-made cases (source !== "generated") are
+      // exempt, matching the documented manual workflow. Skip without advancing any
+      // stage so a later run picks it up once approved.
+      if (c.source === "generated" && !(c.approved === true || config.autoApprove)) {
+        log(`awaiting approval: ${c.folder}`);
+        continue;
+      }
+
       const generated = await ensureGenerated(c, state);
 
       if (cli.mode === "dry-run") {

@@ -15,6 +15,7 @@ name: xray-poster
 #
 # Required repository secrets (Settings -> Secrets and variables -> Actions):
 #   ANTHROPIC_API_KEY
+#   OPENAI_API_KEY      (X-ray image generation for the auto-generator top-up)
 #   THREADS_ACCESS_TOKEN
 #   IG_ACCESS_TOKEN
 
@@ -45,6 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
       THREADS_USER_ID: me
@@ -81,6 +83,20 @@ jobs:
           fi
           git config user.name "xray-poster"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Top up the queue once per chain run, before the polling loop. Generates new
+          # cases (AI X-ray + rendered slides) until pending+approved unposted cases reach
+          # BOT_QUEUE_TARGET; no-ops when the queue is already full. New cases land as
+          # approved:false, so the review gate still holds them until a human approves
+          # (BOT_AUTO_APPROVE stays unset). Commit the new cases/** + conditions.json.
+          echo "::group::queue top-up ($(date -u +%H:%M) UTC)"
+          npm run generate -- --topup || echo "top-up errored, continuing"
+          if [ -n "$(git status --porcelain cases data/conditions.json)" ]; then
+            git add cases data/conditions.json
+            git commit -m "chore: top up case queue [skip ci]"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" >/dev/null 2>&1 || true
+            git push || echo "push failed; will retry next loop"
+          fi
+          echo "::endgroup::"
           start=$(date +%s)
           for i in $(seq 1 60); do
             echo "::group::poll $i ($(date -u +%H:%M) UTC)"

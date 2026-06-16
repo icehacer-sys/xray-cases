@@ -34,6 +34,12 @@ export interface Case {
   postAt: string; // ISO datetime to publish the challenge
   cta?: CtaKey; // which CTA to use under the pinned answer (rotates if absent)
 
+  // --- review gate ---
+  /** A generated case must be approved before the publisher will post it (unless config.autoApprove). */
+  approved?: boolean;
+  /** "manual" = user-made images; "generated" = produced by the auto-generator. */
+  source?: "manual" | "generated";
+
   // --- filled by the tool ---
   generated?: {
     threadsCaption?: string;
@@ -56,3 +62,28 @@ export type CtaKey = "vol2" | "rare" | "vol1";
 
 /** A resolved public image URL for a case file (built from config.githubRawBase). */
 export type ImageUrl = string;
+
+/**
+ * One entry in the vetted condition pool (data/conditions.json). The auto-generator
+ * draws the next `used: false` condition, generates its X-ray + slides, and turns it
+ * into a Case. The medical facts here are owner-vetted — the source of truth.
+ */
+export interface Condition {
+  diagnosis: string; // "Maffucci syndrome"
+  aliases?: string[];
+  symptom: string; // "abdominal discomfort"
+  hook: string; // "it looked like someone had hidden a giant pearl inside the abdomen"
+  view: string; // radiograph view for the image prompt, e.g. "PA hand" / "AP chest"
+  keyFindings: string; // the classic radiographic signs, for the X-ray image prompt
+  // breakdown (real, vetted facts)
+  whatYouSee: string;
+  whyItMatters: string;
+  treatment: string;
+  takeaway: string;
+  // IG slide content
+  igTitle: string; // "THE HAND OF STONES"
+  igOptions: [string, string, string]; // the A/B/C choices shown on the question slide
+  igCorrect: "A" | "B" | "C"; // which option is right
+  /** Set true once the generator has produced a case from it (so it is never reused). */
+  used?: boolean;
+}
