@@ -52,7 +52,7 @@ jobs:
       THREADS_USER_ID: me
       GITHUB_RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
       BOT_CONFIRM_LIVE: "yes"
-      BOT_INSTAGRAM: "on"
+      BOT_INSTAGRAM: "off" # Threads only for now; re-enable once the OpenAI billing is fixed
       BOT_MODEL: "claude-sonnet-4-6"
     steps:
       - uses: actions/checkout@v4
