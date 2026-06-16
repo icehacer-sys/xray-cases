@@ -24,7 +24,7 @@
     "cta.png"
   ],
   "postAt": "2026-06-21T17:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Bochdalek hernia",
