@@ -1,0 +1,58 @@
+{
+  "folder": "00004-cervical-rib",
+  "number": 4,
+  "diagnosis": "Cervical rib",
+  "aliases": [
+    "cervical rib",
+    "extra rib"
+  ],
+  "symptom": "tingling and weakness in the hand worsened by raising the arm",
+  "hook": "an extra rib was sprouting from the lowest neck vertebra where none should exist",
+  "whatYouSee": "An extra rib growing from the seventh cervical vertebra, above the normal first rib.",
+  "whyItMatters": "A cervical rib can compress the brachial plexus or subclavian vessels, causing thoracic outlet syndrome with neurological or vascular symptoms in the arm.",
+  "treatment": "Mild cases are managed with physiotherapy; significant nerve or vascular compression is treated by surgical resection of the rib.",
+  "takeaway": "An extra rib off the C7 vertebra is a cervical rib, a classic cause of thoracic outlet syndrome.",
+  "igOptions": [
+    "A. Pancoast tumour",
+    "B. Cervical rib",
+    "C. Clavicle fracture"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-20T17:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Cervical rib",
+    "aliases": [
+      "cervical rib",
+      "extra rib"
+    ],
+    "symptom": "tingling and weakness in the hand worsened by raising the arm",
+    "hook": "an extra rib was sprouting from the lowest neck vertebra where none should exist",
+    "view": "AP cervicothoracic / chest",
+    "keyFindings": "a supernumerary rib arising from the C7 vertebra, ranging from a small bony stub to a complete extra rib above the first thoracic rib",
+    "whatYouSee": "An extra rib growing from the seventh cervical vertebra, above the normal first rib.",
+    "whyItMatters": "A cervical rib can compress the brachial plexus or subclavian vessels, causing thoracic outlet syndrome with neurological or vascular symptoms in the arm.",
+    "treatment": "Mild cases are managed with physiotherapy; significant nerve or vascular compression is treated by surgical resection of the rib.",
+    "takeaway": "An extra rib off the C7 vertebra is a cervical rib, a classic cause of thoracic outlet syndrome.",
+    "igTitle": "THE RIB THAT SHOULD NOT BE",
+    "igOptions": [
+      "Pancoast tumour",
+      "Cervical rib",
+      "Clavicle fracture"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with tingling and weakness in the hand worsened by raising the arm.\nThen the X-ray loaded 😭\nAnd an extra rib was sprouting from the lowest neck vertebra where none should exist.\nQuick diagnosis challenge 🩻\nWhat's the most likely diagnosis?\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Cervical rib\n👀 What you see:\nAn extra rib growing from the seventh cervical vertebra, above the normal first rib.\n🦴 Why it matters:\nA cervical rib can compress the brachial plexus or subclavian vessels, causing thoracic outlet syndrome with neurological or vascular symptoms in the arm.\n💊 Treatment:\nMild cases are managed with physiotherapy; significant nerve or vascular compression is treated by surgical resection of the rib.\n📝 Takeaway:\nAn extra rib off the C7 vertebra is a cervical rib, a classic cause of thoracic outlet syndrome.",
+    "igCaption": "Case File 04. 🩻\n\nSomething extra is growing where nothing should be.\nIt only causes trouble when the arm goes up.\nThe neck is hiding a secret the hand already knows.\n\nA real condition most people have never seen.\n\nSo before you swipe: A, B, or C? 👉\n\nSwipe for the answer then tell me if you got it. 👇\n\nNew weird X-ray case every single day.\n\nFollow along and you'll read scans like a doctor. 🧠\n\nWant the free 5-case starter pack?\n\nComment SAMPLE and I'll send it.\n\nEducational entertainment only. Not medical advice.\n\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "If these weird X-rays made you learn something, laugh, or question reality for a second.\nI put 20 brand-new cases into a PDF.\nNone repeated from Volume 1.\nSupport the page if you'd like, I'd appreciate it 🙏\nxray2.mednoteslab.com"
+  }
+}

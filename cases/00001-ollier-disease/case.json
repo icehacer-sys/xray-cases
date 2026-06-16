@@ -1,0 +1,58 @@
+{
+  "folder": "00001-ollier-disease",
+  "number": 1,
+  "diagnosis": "Ollier disease",
+  "aliases": [
+    "Ollier's disease",
+    "multiple enchondromatosis"
+  ],
+  "symptom": "one arm and hand that had grown shorter and more crooked than the other",
+  "hook": "the bones looked like they were stuffed with translucent cartilage balloons, mostly on one side",
+  "whatYouSee": "Numerous lucent, expansile cartilage lesions clustered asymmetrically in the bones of one limb, distorting and shortening it.",
+  "whyItMatters": "This is multiple enchondromatosis without the hemangiomas of Maffucci; it causes limb deformity and length discrepancy and carries a real risk of chondrosarcoma.",
+  "treatment": "Management is orthopaedic correction of deformity and length discrepancy plus long-term monitoring for malignant transformation.",
+  "takeaway": "Many cartilage lesions crowding mostly one side of the body is Ollier disease, the hemangioma-free cousin of Maffucci.",
+  "igOptions": [
+    "A. Fibrous dysplasia",
+    "B. Ollier disease",
+    "C. Bone metastases"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-17T17:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Ollier disease",
+    "aliases": [
+      "Ollier's disease",
+      "multiple enchondromatosis"
+    ],
+    "symptom": "one arm and hand that had grown shorter and more crooked than the other",
+    "hook": "the bones looked like they were stuffed with translucent cartilage balloons, mostly on one side",
+    "view": "PA hand and forearm",
+    "keyFindings": "multiple expansile lucent enchondromas with a typically unilateral or asymmetric distribution, causing bone expansion, deformity and shortening, often with linear striations",
+    "whatYouSee": "Numerous lucent, expansile cartilage lesions clustered asymmetrically in the bones of one limb, distorting and shortening it.",
+    "whyItMatters": "This is multiple enchondromatosis without the hemangiomas of Maffucci; it causes limb deformity and length discrepancy and carries a real risk of chondrosarcoma.",
+    "treatment": "Management is orthopaedic correction of deformity and length discrepancy plus long-term monitoring for malignant transformation.",
+    "takeaway": "Many cartilage lesions crowding mostly one side of the body is Ollier disease, the hemangioma-free cousin of Maffucci.",
+    "igTitle": "ONE-SIDED CARTILAGE STORM",
+    "igOptions": [
+      "Fibrous dysplasia",
+      "Ollier disease",
+      "Bone metastases"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with one arm and hand that had grown shorter and more crooked than the other.\nThen the X-ray loaded 😭\nAnd the bones looked like they were stuffed with translucent cartilage balloons, mostly on one side.\nQuick diagnosis challenge 🩻\nWhat's the most likely diagnosis?\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ollier disease\n👀 What you see:\nNumerous lucent, expansile cartilage lesions clustered asymmetrically in the bones of one limb, distorting and shortening it.\n🦴 Why it matters:\nThis is multiple enchondromatosis without the hemangiomas of Maffucci; it causes limb deformity and length discrepancy and carries a real risk of chondrosarcoma.\n💊 Treatment:\nManagement is orthopaedic correction of deformity and length discrepancy plus long-term monitoring for malignant transformation.\n📝 Takeaway:\nMany cartilage lesions crowding mostly one side of the body is Ollier disease, the hemangioma-free cousin of Maffucci.",
+    "igCaption": "Case File 01. 🩻\n\nOne side of this child's arm never got the memo about growing straight.\nThe bones look like something is quietly inflating inside them — soft, ghostly, relentless.\nWhen only half the skeleton plays by different rules, you start asking bigger questions.\n\nA real condition most people have never seen.\n\nSo before you swipe: A, B, or C? 👉\n\nSwipe for the answer then tell me if you got it. 👇\n\nNew weird X-ray case every single day.\n\nFollow along and you'll read scans like a doctor. 🧠\n\nWant the free 5-case starter pack?\n\nComment SAMPLE and I'll send it.\n\nEducational entertainment only. Not medical advice.\n\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "If these weird X-rays made you learn something, laugh, or question reality for a second.\nI put 20 brand-new cases into a PDF.\nNone repeated from Volume 1.\nSupport the page if you'd like, I'd appreciate it 🙏\nxray2.mednoteslab.com"
+  }
+}

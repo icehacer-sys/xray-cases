@@ -259,6 +259,7 @@ function buildCase(cond: Condition, folder: string, number: number, postAt: Date
     postAt: postAt.toISOString(),
     approved: false,
     source: "generated",
+    condition: cond, // kept so `npm run render` can rebuild slides after a manual X-ray swap
   };
 }
 

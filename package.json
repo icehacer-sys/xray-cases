@@ -12,6 +12,7 @@
     "live": "tsx src/index.ts --live",
     "prompt": "tsx src/index.ts --prompt",
     "generate": "tsx src/generate.ts",
+    "render": "tsx src/render.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

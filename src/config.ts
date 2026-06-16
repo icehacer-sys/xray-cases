@@ -37,7 +37,7 @@ export const config = {
 
   // --- auto-generator ---
   // OpenAI image model for the X-ray (the only AI-generated image; slides are rendered).
-  imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-1",
+  imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-2",
   imageSize: process.env.BOT_IMAGE_SIZE ?? "1024x1024",
   // Image quality: low | medium | high | auto. medium is the cost/quality sweet spot
   // (~3-4 cents per X-ray); high is ~4x that. Drives most of the per-image cost.

@@ -39,6 +39,9 @@ export interface Case {
   approved?: boolean;
   /** "manual" = user-made images; "generated" = produced by the auto-generator. */
   source?: "manual" | "generated";
+  /** The source Condition, kept on the case so the slides can be re-rendered after
+   *  you swap in your own X-ray (the manual workflow). */
+  condition?: Condition;
 
   // --- filled by the tool ---
   generated?: {
