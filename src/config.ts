@@ -39,6 +39,9 @@ export const config = {
   // OpenAI image model for the X-ray (the only AI-generated image; slides are rendered).
   imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-1",
   imageSize: process.env.BOT_IMAGE_SIZE ?? "1024x1024",
+  // Image quality: low | medium | high | auto. medium is the cost/quality sweet spot
+  // (~3-4 cents per X-ray); high is ~4x that. Drives most of the per-image cost.
+  imageQuality: process.env.BOT_IMAGE_QUALITY ?? "medium",
   // The vetted condition pool the generator draws from.
   conditionsFile: process.env.BOT_CONDITIONS_FILE ?? "./data/conditions.json",
   // Keep this many approved-or-pending cases queued ahead.

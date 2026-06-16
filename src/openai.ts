@@ -24,6 +24,7 @@ export async function generateXray(prompt: string): Promise<Buffer> {
       model: config.imageModel,
       prompt,
       size: config.imageSize,
+      quality: config.imageQuality,
       n: 1,
     }),
   });
