@@ -1,0 +1,103 @@
+name: xray-poster
+
+# Publishes the daily X-ray case for @mdnoteslab in the cloud (no need for your PC on).
+#
+# A run polls every ~15 min and, before it ends, launches the next run -- a perpetual
+# chain that is ALWAYS alive (workflow_dispatch self-launch works with the built-in
+# token). Each cycle runs `npm run live`, which only acts on cases whose schedule is
+# due (challenge at postAt, answer + CTA after their delays), so outside those moments
+# the runs just no-op. State + any drafted case.json are committed back so a restart
+# never double-posts. Concurrency keeps it a single chain; the */30 cron restarts it
+# only if a hand-off ever fails. Start it once (Actions -> Run workflow); disable to stop.
+#
+# NOTE: this repo must be PUBLIC so the raw image URLs (GITHUB_RAW_BASE) are fetchable
+# by Meta's Threads/Instagram publish APIs.
+#
+# Required repository secrets (Settings -> Secrets and variables -> Actions):
+#   ANTHROPIC_API_KEY
+#   THREADS_ACCESS_TOKEN
+#   IG_ACCESS_TOKEN
+
+on:
+  schedule:
+    - cron: "*/30 * * * *" # heartbeat to (re)start the polling loop; the loop does the 15-min cadence
+  workflow_dispatch: # lets you run it manually from the Actions tab
+    inputs:
+      mode:
+        description: "Run mode: live (posts) or dry (smoke test, posts nothing)"
+        type: choice
+        options: [live, dry]
+        default: live
+
+# Never let two runs overlap (they'd both read the same state and double-post).
+concurrency:
+  group: xray-poster
+  cancel-in-progress: false
+
+# contents: commit state.json + updated case.json back. actions: hand off to a fresh
+# run near the 6h job limit.
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      THREADS_USER_ID: me
+      GITHUB_RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+      BOT_CONFIRM_LIVE: "yes"
+      BOT_INSTAGRAM: "on"
+      BOT_MODEL: "claude-sonnet-4-6"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      # One run polls every ~15 minutes for hours instead of relying on GitHub's cron
+      # (which throttles fine-grained schedules badly). Each cycle runs `npm run live`,
+      # commits any progress (state.json + drafted/posted case.json), sleeps 15 min,
+      # repeats. Near the 6h job limit it hands off to a fresh run so coverage is
+      # continuous. State + case.json are pushed each cycle so a restart never
+      # double-posts. Long runs are free on this public repo.
+      - name: Poll every ~15 min (perpetual chain)
+        env:
+          MODE: ${{ github.event.inputs.mode || 'live' }}
+          GH_TOKEN: ${{ github.token }}
+          MAXSECS: "19800" # ~5.5h per run, then it launches the next (under the 6h job limit)
+        run: |
+          if [ "$MODE" = "dry" ]; then
+            npm run dry
+            exit 0
+          fi
+          git config user.name "xray-poster"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          start=$(date +%s)
+          for i in $(seq 1 60); do
+            echo "::group::poll $i ($(date -u +%H:%M) UTC)"
+            npm run live || echo "iteration $i errored, continuing"
+            if [ -n "$(git status --porcelain state.json cases)" ]; then
+              git add state.json cases
+              git commit -m "chore: update poster state [skip ci]"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" >/dev/null 2>&1 || true
+              git push || echo "push failed; will retry next loop"
+            fi
+            echo "::endgroup::"
+            if [ $(( $(date +%s) - start )) -ge "$MAXSECS" ]; then break; fi
+            sleep 900
+          done
+          # Perpetual chain: always launch the next run so a loop is ALWAYS alive.
+          # Each cycle only acts on due cases, so off-schedule runs just no-op.
+          # Concurrency keeps it a single chain; the */30 cron restarts it only if a
+          # hand-off ever fails.
+          echo "Launching the next run (keeps the poster live 24/7)."
+          gh workflow run publish.yml -f mode=live || echo "hand-off dispatch failed"

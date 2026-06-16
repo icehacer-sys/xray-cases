@@ -1,0 +1,63 @@
+// Central config. Loads ../.env regardless of cwd. Secrets are read lazily via
+// requireEnv() so --prompt mode (which only needs the Anthropic key) works without
+// the Threads/Instagram tokens.
+
+import { config as loadEnv } from "dotenv";
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+loadEnv({ path: join(dirname(fileURLToPath(import.meta.url)), "..", ".env"), quiet: true });
+
+function num(name: string, fallback: number): number {
+  const raw = process.env[name];
+  if (raw == null || raw.trim() === "") return fallback;
+  const n = Number(raw);
+  return Number.isFinite(n) ? n : fallback;
+}
+
+export const config = {
+  model: process.env.BOT_MODEL ?? "claude-sonnet-4-6",
+
+  // API hosts (pinned versions)
+  threadsBase: "https://graph.threads.net/v1.0",
+  igBase: process.env.IG_GRAPH_BASE ?? "https://graph.instagram.com/v21.0",
+  threadsUserId: process.env.THREADS_USER_ID ?? "me",
+
+  // Public base for image URLs (see .env.example). Trailing slash trimmed.
+  githubRawBase: (process.env.GITHUB_RAW_BASE ?? "").replace(/\/+$/, ""),
+
+  // Scheduling: minutes after the challenge post to publish the answer / CTA.
+  answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 60),
+  ctaDelayMin: num("BOT_CTA_DELAY_MIN", 90),
+
+  activeTz: process.env.BOT_ACTIVE_TZ ?? "Africa/Cairo",
+
+  // Cross-post to Instagram too (Threads always posts).
+  instagram: (process.env.BOT_INSTAGRAM ?? "on").toLowerCase() !== "off",
+
+  // Local queue + state
+  casesDir: process.env.BOT_CASES_DIR ?? "./cases",
+  stateFile: process.env.BOT_STATE_FILE ?? "./state.json",
+
+  // Live posting safety latch
+  confirmLive: (process.env.BOT_CONFIRM_LIVE ?? "").toLowerCase() === "yes",
+};
+
+// Stage 3 (CTA) is gated on challengePostedAt + ctaDelayMin and Stage 2 (answer) on
+// challengePostedAt + answerDelayMin. If ctaDelayMin <= answerDelayMin the CTA becomes
+// eligible no later than the answer, collapsing them into adjacent ~15-min loops. Fail
+// fast on a reversed/equal config instead of silently posting answer + CTA back-to-back.
+if (config.ctaDelayMin <= config.answerDelayMin) {
+  throw new Error(
+    `BOT_CTA_DELAY_MIN (${config.ctaDelayMin}) must be greater than ` +
+      `BOT_ANSWER_DELAY_MIN (${config.answerDelayMin}).`,
+  );
+}
+
+export function requireEnv(name: string): string {
+  const v = process.env[name];
+  if (!v || v.trim() === "") {
+    throw new Error(`Missing required env var ${name}. Copy .env.example to .env and fill it in.`);
+  }
+  return v;
+}

@@ -1,0 +1,37 @@
+{
+  "diagnosis": "Giant Gallstone",
+  "aliases": [
+    "gallstone",
+    "cholelithiasis",
+    "giant gallstone",
+    "large gallstone"
+  ],
+  "symptom": "abdominal discomfort",
+  "hook": "it looked like someone had hidden a giant pearl inside the abdomen",
+  "whatYouSee": "A large, well-defined rounded calcified mass in the right upper quadrant, sitting in the region of the gallbladder fossa.",
+  "whyItMatters": "Stones this size can erode into the bowel and cause a gallstone ileus, a mechanical obstruction that is easy to miss and dangerous if delayed.",
+  "treatment": "Cholecystectomy, usually laparoscopic; if the stone has already obstructed the bowel it is surgically removed (enterolithotomy).",
+  "takeaway": "Most gallstones are radiolucent, so a stone big and dense enough to show plainly on plain film deserves a second look for complications.",
+  "igOptions": [
+    "A. Foreign body the patient swallowed",
+    "B. Giant gallstone",
+    "C. Calcified tumor"
+  ],
+  "threadsImage": "xray.jpg",
+  "igSlides": [
+    "question.jpg",
+    "answer.jpg",
+    "cta.jpg"
+  ],
+  "postAt": "2026-06-17T20:00:00Z",
+  "cta": "vol1",
+  "folder": "00001-example",
+  "number": 1,
+  "generated": {
+    "threadsCaption": "A patient came in with abdominal discomfort.\nThen the X-ray loaded 😭\nAnd it looked like someone had hidden a giant pearl inside the abdomen.\nQuick diagnosis challenge 🩻\nWhat's the most likely diagnosis?\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Giant Gallstone\n👀 What you see:\nA large, well-defined rounded calcified mass in the right upper quadrant, sitting in the region of the gallbladder fossa.\n🦴 Why it matters:\nStones this size can erode into the bowel and cause a gallstone ileus, a mechanical obstruction that is easy to miss and dangerous if delayed.\n💊 Treatment:\nCholecystectomy, usually laparoscopic; if the stone has already obstructed the bowel it is surgically removed (enterolithotomy).\n📝 Takeaway:\nMost gallstones are radiolucent, so a stone big and dense enough to show plainly on plain film deserves a second look for complications.",
+    "igCaption": "Case File 01. 🩻\n\nSomething round. Something dense. Something that has absolutely no business being that size.\n\nA real condition most people have never seen.\n\nSo before you swipe: A, B, or C? 👉\n\nSwipe for the answer then tell me if you got it. 👇\n\nNew weird X-ray case every single day.\n\nFollow along and you'll read scans like a doctor. 🧠\n\nWant the free 5-case starter pack?\n\nComment SAMPLE and I'll send it.\n\nEducational entertainment only. Not medical advice.\n\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "If these weird X-rays have made you learn something, laugh, or question reality for a few seconds 😭\nI put 20 of the most bizarre cases into a digital PDF.\nAnd if you'd like to support the page, I'd genuinely appreciate it 🙏\nxray.mednoteslab.com"
+  },
+  "stages": {}
+}

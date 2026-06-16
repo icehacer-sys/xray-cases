@@ -1,0 +1,23 @@
+{
+  "name": "xray-case-poster",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Daily X-ray case publisher for @mdnoteslab. Takes a queued case (diagnosis + AI-generated images) and auto-writes the captions, posts the challenge, schedules the pinned answer + CTA, and cross-posts to Threads and Instagram.",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "dry": "tsx src/index.ts --dry-run",
+    "live": "tsx src/index.ts --live",
+    "prompt": "tsx src/index.ts --prompt",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.104.1",
+    "dotenv": "^17.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}

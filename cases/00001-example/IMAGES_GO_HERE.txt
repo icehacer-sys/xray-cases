@@ -1,0 +1,26 @@
+Real image files for this case go in THIS folder.
+
+This sample case (case.json) references three images by filename:
+
+  xray.jpg        -> threadsImage: the X-ray for the Threads challenge post
+  question.jpg    -> igSlides[0]:  Instagram carousel slide 1 (the A/B/C question)
+  answer.jpg      -> igSlides[1]:  Instagram carousel slide 2 (the answer/breakdown)
+  cta.jpg         -> igSlides[2]:  Instagram carousel slide 3 (the call to action)
+
+Drop those actual .jpg files right here, next to case.json.
+
+How it works
+------------
+- These are AI-generated illustrations you create yourself (paste the prompt from
+  `npm run prompt` into ChatGPT). This tool never renders images; it only assembles
+  text, schedules, and posts the images you supply.
+- The tool does NOT read the bytes of these files. At post time it builds a public
+  raw URL for each filename:
+      ${GITHUB_RAW_BASE}/cases/00001-example/<filename>
+  and hands that URL to Threads / Instagram. Meta fetches the image from that URL.
+- Because Meta must fetch the URLs, this repo has to be PUBLIC and the files must be
+  committed and pushed (GITHUB_RAW_BASE pointed at the raw host).
+- Recommended: keep the small "AI-generated illustration" tag in a corner of each
+  image (the image prompt adds it) so the content is clearly labeled.
+
+If you change a filename here, update the matching field in case.json.
