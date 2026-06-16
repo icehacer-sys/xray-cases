@@ -60,3 +60,51 @@ export function saveCase(c: Case): void {
   const file = join(casesRoot(), c.folder, "case.json");
   writeFileSync(file, JSON.stringify(c, null, 2) + "\n", "utf8");
 }
+
+// --- no-repeat tracking -----------------------------------------------------
+// Every diagnosis that has ever been posted (seeded with the account's history)
+// lives in data/used-diagnoses.json, so no case is ever repeated. We compare on a
+// normalized form and also track aliases, so "Gossypiboma" and "Retained surgical
+// sponge" both count as the same case.
+
+const usedFile = join(projectRoot, "data", "used-diagnoses.json");
+
+export function normalizeDx(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+}
+
+function readUsedRaw(): string[] {
+  if (!existsSync(usedFile)) return [];
+  try {
+    const arr = JSON.parse(readFileSync(usedFile, "utf8"));
+    return Array.isArray(arr) ? (arr as string[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+/** The set of normalized diagnosis names (incl. aliases) that have already been used. */
+export function loadUsedDiagnoses(): Set<string> {
+  return new Set(readUsedRaw().map(normalizeDx));
+}
+
+/** True if this diagnosis (or any alias) has already been used. */
+export function isUsedDiagnosis(used: Set<string>, name: string, aliases: string[] = []): boolean {
+  return [name, ...aliases].some((x) => used.has(normalizeDx(x)));
+}
+
+/** Record a diagnosis (and aliases) as used, so it can never be posted again. */
+export function addUsedDiagnosis(name: string, aliases: string[] = []): void {
+  const arr = readUsedRaw();
+  const set = new Set(arr.map(normalizeDx));
+  let changed = false;
+  for (const x of [name, ...aliases]) {
+    const n = normalizeDx(x);
+    if (n && !set.has(n)) {
+      arr.push(x);
+      set.add(n);
+      changed = true;
+    }
+  }
+  if (changed) writeFileSync(usedFile, JSON.stringify(arr, null, 2) + "\n", "utf8");
+}

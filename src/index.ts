@@ -12,7 +12,7 @@
 // Draft-ahead: cases due within ~24h get their `generated` text written now for review/edit.
 
 import { config } from "./config.js";
-import { loadCases, imageUrl, saveCase } from "./cases.js";
+import { loadCases, imageUrl, saveCase, loadUsedDiagnoses, isUsedDiagnosis, addUsedDiagnosis } from "./cases.js";
 import { State } from "./state.js";
 import {
   generateThreadsCaption,
@@ -148,6 +148,12 @@ async function runPublish(cli: Cli): Promise<void> {
         continue;
       }
 
+      // Never repeat a diagnosis we've already posted (history seed + earlier cases).
+      if (isUsedDiagnosis(loadUsedDiagnoses(), c.diagnosis, c.aliases ?? [])) {
+        log(`duplicate diagnosis, skipping ${c.folder} ("${c.diagnosis}" already used)`);
+        continue;
+      }
+
       const generated = await ensureGenerated(c, state);
 
       if (cli.mode === "dry-run") {
@@ -164,6 +170,7 @@ async function runPublish(cli: Cli): Promise<void> {
           challengePostedAt: new Date().toISOString(),
         });
         log(`posted CHALLENGE for ${c.folder} -> ${threadsPostId}`);
+        addUsedDiagnosis(c.diagnosis, c.aliases ?? []); // lock this diagnosis so it never repeats
 
         // Best-effort Instagram carousel. Never aborts the Threads flow. A failure
         // here is NOT terminal: because the carousel is keyed off the unset

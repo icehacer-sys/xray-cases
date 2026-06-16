@@ -18,7 +18,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { Resvg } from "@resvg/resvg-js";
 import { config } from "./config.js";
-import { loadCases, saveCase } from "./cases.js";
+import { loadCases, saveCase, loadUsedDiagnoses, isUsedDiagnosis } from "./cases.js";
 import { State } from "./state.js";
 import {
   generateThreadsCaption,
@@ -313,6 +313,8 @@ async function main(): Promise<void> {
   const cli = parseArgs(process.argv);
   const state = new State();
   const conditions = loadConditions();
+  // Diagnoses already posted (seeded with the account's history) — never repeat one.
+  const used = loadUsedDiagnoses();
 
   // How many to generate this run.
   let target = cli.count;
@@ -329,10 +331,13 @@ async function main(): Promise<void> {
   const results: GenResult[] = [];
 
   for (let i = 0; i < target; i++) {
-    // Pick the first unused condition (re-scan each iteration: we just used one).
-    const cond = conditions.find((c) => c.used !== true);
+    // Pick the first condition that is neither already burned (pool flag) nor a
+    // diagnosis we've ever posted (history). Guarantees no case is ever repeated.
+    const cond = conditions.find(
+      (c) => c.used !== true && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
+    );
     if (!cond) {
-      log(`condition pool exhausted after ${results.length} case(s); add more to ${config.conditionsFile}.`);
+      log(`no fresh conditions left after ${results.length} case(s); add new ones to ${config.conditionsFile}.`);
       break;
     }
 
