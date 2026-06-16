@@ -30,6 +30,10 @@ export const config = {
   answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 60),
   ctaDelayMin: num("BOT_CTA_DELAY_MIN", 90),
 
+  // Threads rejects a reply over this many characters, so the assembled answer is
+  // trimmed to stay under it (blank-line spacing included).
+  answerMaxChars: num("BOT_ANSWER_MAX_CHARS", 1000),
+
   activeTz: process.env.BOT_ACTIVE_TZ ?? "Africa/Cairo",
 
   // Cross-post to Instagram too (Threads always posts).

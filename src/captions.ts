@@ -47,7 +47,7 @@ export function generateThreadsCaption(c: Case): string {
     `Quick diagnosis challenge 🩻`,
     `What's the most likely diagnosis?`,
     `Wild guesses are welcome 👀`,
-  ].join("\n");
+  ].join("\n\n");
 }
 
 // ---------------------------------------------------------------------------
@@ -65,17 +65,44 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
     takeaway = takeaway ?? draft.takeaway;
   }
 
-  return [
-    `Answer: ${c.diagnosis}`,
-    `👀 What you see:`,
-    whatYouSee,
-    `🦴 Why it matters:`,
-    whyItMatters,
-    `💊 Treatment:`,
-    treatment,
-    `📝 Takeaway:`,
-    takeaway,
-  ].join("\n");
+  // Each section keeps its heading on its own line above the body (single newline);
+  // sections are separated by a blank line. clampAnswer guarantees the whole thing
+  // stays under config.answerMaxChars so Threads will accept the reply.
+  const sections = [
+    `👀 What you see:\n${whatYouSee}`,
+    `🦴 Why it matters:\n${whyItMatters}`,
+    `💊 Treatment:\n${treatment}`,
+    `📝 Takeaway:\n${takeaway}`,
+  ];
+  return clampAnswer(`Answer: ${c.diagnosis}`, sections);
+}
+
+/** First sentence of a body (used when an answer must be shortened to fit). */
+function firstSentence(s: string): string {
+  const m = s.match(/^.*?[.!?](?=\s|$)/);
+  return (m ? m[0] : s).trim();
+}
+
+/**
+ * Assemble the answer (head + blank-line-separated sections) and guarantee it fits
+ * under config.answerMaxChars. If it's too long, trim section bodies to their first
+ * sentence from the LAST section toward the first (keeping "what you see" / "why it
+ * matters" fullest); as a last resort, hard-cut at a word boundary.
+ */
+function clampAnswer(head: string, sections: string[]): string {
+  const max = config.answerMaxChars;
+  const assemble = (secs: string[]) => [head, ...secs].join("\n\n");
+  let out = assemble(sections);
+  if (out.length <= max) return out;
+
+  const trimmed = [...sections];
+  for (let i = trimmed.length - 1; i >= 0 && out.length > max; i--) {
+    const [heading, ...rest] = trimmed[i].split("\n");
+    trimmed[i] = `${heading}\n${firstSentence(rest.join("\n"))}`;
+    out = assemble(trimmed);
+  }
+  if (out.length > max) out = out.slice(0, max).replace(/\s\S*$/, "").trimEnd();
+  return out;
 }
 
 interface Breakdown {
@@ -180,7 +207,7 @@ const CTA_TEXT: Record<CtaKey, string> = {
     `None repeated from Volume 1.`,
     `Support the page if you'd like, I'd appreciate it 🙏`,
     `xray2.mednoteslab.com`,
-  ].join("\n"),
+  ].join("\n\n"),
 
   rare: [
     `Some of these X-rays are so rare most doctors will never see them in person.`,
@@ -188,14 +215,14 @@ const CTA_TEXT: Record<CtaKey, string> = {
     `Look, guess, then flip for a simple breakdown.`,
     `If the weird ones hooked you, these are the next level 🙏`,
     `rare.mednoteslab.com`,
-  ].join("\n"),
+  ].join("\n\n"),
 
   vol1: [
     `If these weird X-rays have made you learn something, laugh, or question reality for a few seconds 😭`,
     `I put 20 of the most bizarre cases into a digital PDF.`,
     `And if you'd like to support the page, I'd genuinely appreciate it 🙏`,
     `xray.mednoteslab.com`,
-  ].join("\n"),
+  ].join("\n\n"),
 };
 
 const CTA_ROTATION: CtaKey[] = ["vol2", "rare", "vol1"];
