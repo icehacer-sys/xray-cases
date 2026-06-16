@@ -199,7 +199,7 @@ function placeholderXray(): Buffer {
 
 // ---------------------------------------------------------------------------
 // X-ray image prompt — assembled from the Condition's view + keyFindings
-// (captions.imagePrompt-style), including the "AI-generated illustration" tag.
+// (captions.imagePrompt-style).
 // ---------------------------------------------------------------------------
 
 function xrayPrompt(cond: Condition): string {
@@ -217,7 +217,7 @@ function xrayPrompt(cond: Condition): string {
     `grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.`,
     ``,
     `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
-    `No watermark. Add a small "AI-generated illustration" tag in a corner.`,
+    `No watermark.`,
   ].join("\n");
 }
 

@@ -7,7 +7,7 @@ light human review) posts the challenge to Threads, schedules the pinned answer 
 cross-posts a carousel to Instagram — all on a cloud schedule, no PC required.
 
 Only the X-ray is AI-generated; the slides are deterministically rendered (image models garble
-slide text), and every AI X-ray carries a small **"AI-generated illustration"** tag.
+slide text).
 
 ---
 
@@ -114,14 +114,12 @@ resolves to:
 `GITHUB_RAW_BASE` looks like `https://raw.githubusercontent.com/<user>/<repo>/<branch>` (set it in
 `.env`; see `.env.example`).
 
-### AI-generated illustrations — label them
+### Illustrations and disclaimer
 
 **Only the X-ray is AI-generated** — it is an illustration, not a real patient scan. The three IG
 slides are **rendered** from a template (deterministic text — image models garble slide text), and
-they embed the AI X-ray. Both the question and answer slides carry a small **"AI-generated
-illustration"** tag, the image prompt itself asks for that tag in a corner, and the Instagram
-caption ends with **"Educational entertainment only. Not medical advice."** Keep all of these — label
-the AI image as AI-generated and keep the not-medical-advice disclaimer in place.
+they embed the X-ray. The Instagram caption ends with **"Educational entertainment only. Not medical
+advice."** Keep that disclaimer in place.
 
 ---
 

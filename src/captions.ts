@@ -233,7 +233,7 @@ export function imagePrompt(c: Case): string {
     `grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.`,
     ``,
     `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
-    `No watermark. Add a small "AI-generated illustration" tag in a corner.`,
+    `No watermark.`,
   ].join("\n");
 }
 

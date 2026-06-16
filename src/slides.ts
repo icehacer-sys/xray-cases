@@ -1,9 +1,12 @@
 // Render the three Instagram carousel slides (question / answer / cta) from a
 // deterministic SVG template, then rasterize to PNG with @resvg/resvg-js. Image
 // models garble slide text, so ONLY the X-ray is AI-generated — everything on the
-// slides here is laid out by hand from the vetted Case/Condition fields. The look
-// matches the @mdnoteslab account: near-black navy HUD, faint grid, a cyan scanner
-// frame with corner brackets, orange tags/pills, clean white sans-serif text.
+// slides here is laid out by hand from the vetted Case/Condition fields.
+//
+// Design language ("Lightbox Clinical"): a deep near-black panel with a soft
+// gradient, the X-ray spotlit on a subtle glow inside a thin precise frame, one
+// confident cyan accent for the quiz, amber reserved for the answer reveal, and a
+// clean type hierarchy. No busy grid, no heavy pills — restraint is the point.
 
 import { Resvg } from "@resvg/resvg-js";
 import { config } from "./config.js";
@@ -14,23 +17,27 @@ import type { Case, Condition } from "./types.js";
 // ---------------------------------------------------------------------------
 
 const SIZE = 1080; // logical SVG canvas (square); raster is scaled to config.slideSize
-const MARGIN = 80; // outer text margin
+const MARGIN = 72; // outer text margin
 const CONTENT = SIZE - MARGIN * 2; // usable inner width
 
 const COL = {
-  bg: "#070b16", // near-black navy
-  grid: "#0f1a2e", // faint grid lines
-  panel: "#0c1322", // slightly lighter card fill
-  panelStroke: "#1c2740",
-  cyan: "#22d3ee",
-  orange: "#f59e0b",
-  white: "#f8fafc",
-  grey: "#7e8aa3",
-  dark: "#0a0f1c", // text drawn on top of orange pills
+  bgTop: "#0b1019", // gradient top
+  bgBot: "#05070d", // gradient bottom
+  panel: "#0e1626", // card fill
+  panelLine: "#1d2942", // card / hairline stroke
+  ink: "#f5f8fc", // primary text
+  sub: "#9aa7bd", // secondary text
+  faint: "#5b6886", // disclaimers / least-important
+  accent: "#2dd4ef", // primary cyan (quiz)
+  amber: "#fbbf24", // answer reveal accent
+  onAmber: "#1a1204", // text on amber fill
+  imgBg: "#02040a", // behind the X-ray
 };
 
 const FONT =
-  "Segoe UI, Arial, Helvetica, 'Liberation Sans', 'DejaVu Sans', sans-serif";
+  "Segoe UI, Inter, Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif";
+
+const HANDLE = "@mdnoteslab";
 
 // ---------------------------------------------------------------------------
 // Public API
@@ -63,81 +70,56 @@ function rasterize(svg: string): Buffer {
 // ---------------------------------------------------------------------------
 
 function questionSvg(c: Case, cond: Condition, xrayHref: string): string {
-  const caseTag = `CASE FILE ${pad2(c.number)}`;
-  const options = optionLines(cond);
-
-  // Title (wrapped) sits under the tag; the X-ray frame is centered; options stack
-  // below it; a "SWIPE TO REVEAL" pill anchors the bottom.
-  const titleLines = wrap(cond.igTitle.toUpperCase(), 18);
-  const titleFont = 60;
-  const titleLh = 70;
-
-  let y = 150;
   const parts: string[] = [];
 
-  // Orange "CASE FILE NN" tag pill (top-left).
-  parts.push(pill(MARGIN, y - 34, caseTag, 24, "left"));
-  y += 24;
+  // Header: wordmark (left) + case number (right) + hairline.
+  parts.push(text(MARGIN, 96, "WEIRD X-RAY CASE FILES", 26, COL.ink, 800, "start", 3));
+  parts.push(text(SIZE - MARGIN, 96, `CASE ${pad2(c.number)}`, 26, COL.accent, 800, "end", 2));
+  parts.push(divider(MARGIN, SIZE - MARGIN, 122, COL.panelLine));
 
-  // Bold white title.
-  parts.push(textBlock(titleLines, MARGIN, y + titleFont, titleFont, titleLh, COL.white, 800));
-  y += titleLines.length * titleLh + 26;
+  // Hook title (the igTitle), capped at 2 lines so the layout never overflows.
+  const titleFont = 54;
+  const titleLh = 62;
+  const titleLines = wrap(cond.igTitle.toUpperCase(), 17).slice(0, 2);
+  const titleBaseline = 192;
+  parts.push(textBlock(titleLines, MARGIN, titleBaseline, titleFont, titleLh, COL.ink, 800));
+  const titleBottom = titleBaseline + (titleLines.length - 1) * titleLh + 10;
 
-  // Cyan scanner frame holding the X-ray. Shrunk from 470 so a 2-line title (the
-  // common case for this pool) plus three wrapped options and the bottom pill all
-  // fit inside the 1080 canvas with margin to spare.
-  const frameSize = 320;
-  const frameX = (SIZE - frameSize) / 2;
-  const frameY = y;
-  parts.push(scannerFrame(frameX, frameY, frameSize, frameSize, xrayHref));
-  // Tiny AI-generated tag under the frame (right-aligned to the frame edge).
-  parts.push(
-    text(
-      frameX + frameSize,
-      frameY + frameSize + 24,
-      "AI-generated illustration",
-      18,
-      COL.grey,
-      400,
-      "end",
-    ),
-  );
-  y = frameY + frameSize + 30;
+  // X-ray hero, spotlit and centered.
+  const frame = 372;
+  const frameTop = titleBottom + 26;
+  parts.push(xrayPanel(SIZE / 2, frameTop, frame, xrayHref, true));
+  const imgBottom = frameTop + frame;
 
-  // Cyan prompt line.
-  parts.push(text(SIZE / 2, y + 30, "WHAT IS THE DIAGNOSIS?", 36, COL.cyan, 700, "middle"));
-  const optionsTop = y + 48;
+  // Quiz prompt.
+  const promptY = imgBottom + 64;
+  parts.push(text(SIZE / 2, promptY, "WHAT'S THE DIAGNOSIS?", 34, COL.accent, 800, "middle", 2));
 
-  // The "SWIPE TO REVEAL" pill is anchored at a fixed bottom position; the option
-  // block is laid out to END just above it. Bottom-anchoring (rather than letting the
-  // options run top-down into the pill) guarantees no overlap and a clean bottom edge
-  // regardless of how tall the title/options wrap. Measure each option's height first.
-  const optFont = 30;
-  const optLh = 38;
-  const optGap = 16; // space between consecutive options
-  const optHeights = options.map((opt) => {
-    const lines = wrap(opt.text, 34);
-    return { lines, h: Math.max(54, lines.length * optLh + 12) };
+  // Options, bottom-anchored just above the swipe cue so wrapping never collides.
+  const cueTop = SIZE - 122;
+  const optFont = 28;
+  const optLh = 36;
+  const chip = 46;
+  const rowGap = 14;
+  const options = optionLines(cond);
+  const measured = options.map((o) => {
+    const lines = wrap(o.text, 30);
+    return { lines, h: Math.max(chip, lines.length * optLh + 8) };
   });
-  const optionsBlockH =
-    optHeights.reduce((sum, o) => sum + o.h, 0) + optGap * (optHeights.length - 1);
-
-  const pillTop = SIZE - 96; // fixed home, matching the established design
-  // Start the block so its last option ends ~28px above the pill; never start it
-  // higher than optionsTop (a short title leaves a larger, harmless gap below the
-  // prompt line instead).
-  let optY = Math.max(optionsTop, pillTop - 28 - optionsBlockH);
-  optHeights.forEach((o, i) => {
-    const cy = optY + 22;
-    parts.push(circledLetter(MARGIN + 26, cy, options[i].letter));
-    parts.push(textBlock(o.lines, MARGIN + 72, optY + 32, optFont, optLh, COL.white, 500));
-    optY += o.h + optGap;
+  const blockH =
+    measured.reduce((s, m) => s + m.h, 0) + rowGap * (measured.length - 1);
+  let oy = Math.max(promptY + 34, cueTop - 30 - blockH);
+  measured.forEach((m, i) => {
+    parts.push(letterChip(MARGIN, oy, chip, options[i].letter));
+    const textTop = oy + (m.h - (m.lines.length - 1) * optLh) / 2 + optFont / 2 - 4;
+    parts.push(textBlock(m.lines, MARGIN + chip + 22, textTop, optFont, optLh, COL.ink, 600));
+    oy += m.h + rowGap;
   });
 
-  // Bottom "SWIPE TO REVEAL" pill, centered.
-  parts.push(pill(SIZE / 2, pillTop, "SWIPE TO REVEAL", 28, "center"));
+  // Swipe cue.
+  parts.push(swipeCue(SIZE / 2, cueTop));
 
-  return svgDoc(parts.join("\n"));
+  return svgDoc(parts.join("\n"), { cx: SIZE / 2, cy: frameTop + frame / 2 });
 }
 
 // ---------------------------------------------------------------------------
@@ -146,84 +128,58 @@ function questionSvg(c: Case, cond: Condition, xrayHref: string): string {
 
 function answerSvg(c: Case, cond: Condition, xrayHref: string): string {
   const parts: string[] = [];
-  let y = 96;
 
-  // Wordmark + cyan ANSWER tab on the same header row.
-  parts.push(text(MARGIN, y, "WEIRD X-RAY CASE FILES", 30, COL.white, 800, "start"));
-  parts.push(pill(SIZE - MARGIN, y - 26, "ANSWER", 24, "right"));
-  y += 34;
+  // Header: wordmark + amber ANSWER tag + hairline.
+  parts.push(text(MARGIN, 96, "WEIRD X-RAY CASE FILES", 26, COL.ink, 800, "start", 3));
+  parts.push(filledPill(SIZE - MARGIN, 70, "ANSWER", 24, "right", COL.amber, COL.onAmber));
+  parts.push(divider(MARGIN, SIZE - MARGIN, 122, COL.panelLine));
 
-  // Tighter X-ray in a cyan frame (right side), correct-answer box (left side).
-  const frameSize = 300;
-  const frameX = SIZE - MARGIN - frameSize;
-  const frameY = y;
-  parts.push(scannerFrame(frameX, frameY, frameSize, frameSize, xrayHref));
+  // Hero answer card: big diagnosis on the left, X-ray thumbnail on the right.
+  const cardY = 146;
+  const cardH = 212;
+  parts.push(panel(MARGIN, cardY, CONTENT, cardH, COL.panel, COL.panelLine, 2, 20));
+
+  const thumb = 168;
+  const thumbX = MARGIN + CONTENT - 24 - thumb;
+  const thumbY = cardY + (cardH - thumb) / 2;
+  parts.push(xrayPanel(thumbX + thumb / 2, thumbY, thumb, xrayHref, false));
+
+  const leftX = MARGIN + 32;
+  const leftW = thumbX - 24 - leftX;
+  parts.push(text(leftX, cardY + 52, "DIAGNOSIS", 22, COL.amber, 800, "start", 3));
+  const dxFont = 44;
+  const dxLh = 50;
+  const dxLines = wrap(c.diagnosis, Math.max(10, Math.floor(leftW / (dxFont * 0.6)))).slice(0, 2);
+  parts.push(textBlock(dxLines, leftX, cardY + 104, dxFont, dxLh, COL.ink, 800, leftW));
   parts.push(
-    text(
-      frameX + frameSize,
-      frameY + frameSize + 24,
-      "AI-generated illustration",
-      16,
-      COL.grey,
-      400,
-      "end",
-    ),
+    text(leftX, cardY + cardH - 34, `Correct answer: ${cond.igCorrect}`, 24, COL.sub, 600, "start"),
   );
 
-  // Correct-answer card to the left of the X-ray.
-  const boxW = frameX - MARGIN - 30;
-  const answerText = `Correct answer: ${cond.igCorrect}. ${c.diagnosis}`;
-  const ansLines = wrap(answerText, 22);
-  const boxH = ansLines.length * 40 + 48;
-  parts.push(roundRect(MARGIN, frameY, boxW, boxH, COL.panel, COL.cyan, 2));
-  parts.push(
-    textBlock(ansLines, MARGIN + 26, frameY + 50, 32, 40, COL.white, 700, boxW - 52),
-  );
-
-  // Resume the breakdown below whichever of the X-ray frame or the answer card is
-  // taller, so a long (multi-line) diagnosis box never overlaps the WHAT YOU SEE
-  // heading.
-  const boxBottom = frameY + boxH;
-  y = Math.max(frameY + frameSize, boxBottom) + 56;
-
-  // Breakdown sections: alternating cyan / orange headings + wrapped body lines.
-  // Body is sized down (22/28, wrap 78 — the original 64@26 physical line width) and
-  // the gaps are tuned so all four sections plus the footer fit above SIZE-56 even
-  // with the longest vetted facts in the pool. headGap (heading -> its own body) is
-  // kept smaller than trailGap (body -> next heading) so each heading groups visually
-  // with the paragraph it introduces rather than orphaning onto the previous one.
-  const bodyLh = 28;
-  const headGap = 32; // baseline advance from a heading to its first body line
-  const trailGap = 26; // gap from a body's last line to the next heading
+  // Breakdown: four vetted sections with accent headings + readable body.
+  let y = cardY + cardH + 50;
+  const bodyFont = 23;
+  const bodyLh = 31;
+  const headGap = 34;
+  const trailGap = 28;
   const sections: Array<{ color: string; head: string; body: string }> = [
-    { color: COL.cyan, head: "WHAT YOU SEE", body: cond.whatYouSee },
-    { color: COL.orange, head: "WHY IT MATTERS", body: cond.whyItMatters },
-    { color: COL.cyan, head: "WHAT DOCTORS LOOK FOR", body: cond.treatment },
-    { color: COL.orange, head: "SIMPLE TAKEAWAY", body: cond.takeaway },
+    { color: COL.accent, head: "WHAT YOU SEE", body: cond.whatYouSee },
+    { color: COL.amber, head: "WHY IT MATTERS", body: cond.whyItMatters },
+    { color: COL.accent, head: "WHAT DOCTORS LOOK FOR", body: cond.treatment },
+    { color: COL.amber, head: "SIMPLE TAKEAWAY", body: cond.takeaway },
   ];
-
   for (const s of sections) {
-    parts.push(text(MARGIN, y, s.head, 26, s.color, 800, "start"));
+    parts.push(`<rect x="${MARGIN}" y="${y - 18}" width="6" height="22" rx="3" fill="${s.color}"/>`);
+    parts.push(text(MARGIN + 20, y, s.head, 24, s.color, 800, "start", 1));
     y += headGap;
-    const bodyLines = wrap(s.body, 78);
-    parts.push(textBlock(bodyLines, MARGIN, y, 22, bodyLh, COL.white, 400, CONTENT));
-    y += (bodyLines.length - 1) * bodyLh + trailGap;
+    const lines = wrap(s.body, 76);
+    parts.push(textBlock(lines, MARGIN, y, bodyFont, bodyLh, COL.ink, 400, CONTENT));
+    y += (lines.length - 1) * bodyLh + trailGap;
   }
 
-  // Grey footer disclaimer.
-  parts.push(
-    text(
-      SIZE / 2,
-      SIZE - 56,
-      "Educational entertainment only. Not medical advice.",
-      22,
-      COL.grey,
-      400,
-      "middle",
-    ),
-  );
+  // Footer disclaimer + handle.
+  parts.push(text(SIZE / 2, SIZE - 50, "Educational entertainment only. Not medical advice.", 22, COL.faint, 400, "middle"));
 
-  return svgDoc(parts.join("\n"));
+  return svgDoc(parts.join("\n"), { cx: thumbX + thumb / 2, cy: thumbY + thumb / 2 });
 }
 
 // ---------------------------------------------------------------------------
@@ -234,48 +190,46 @@ function ctaSvg(): string {
   const parts: string[] = [];
   const cx = SIZE / 2;
 
-  // Centered wordmark.
-  parts.push(text(cx, 380, "WEIRD X-RAY CASE FILES", 38, COL.white, 800, "middle"));
+  parts.push(text(cx, 312, "WEIRD X-RAY CASE FILES", 30, COL.sub, 800, "middle", 4));
 
-  // Bold headline.
-  parts.push(text(cx, 480, "A NEW CASE EVERY DAY", 72, COL.white, 900, "middle"));
+  parts.push(text(cx, 452, "A NEW CASE", 80, COL.ink, 900, "middle", 1));
+  parts.push(text(cx, 548, "EVERY DAY", 80, COL.accent, 900, "middle", 1));
 
-  // Orange "FOLLOW FOR MORE" pill, centered.
-  parts.push(pill(cx, 560, "FOLLOW FOR MORE", 34, "center"));
+  // Short accent rule.
+  parts.push(`<rect x="${cx - 48}" y="592" width="96" height="5" rx="2.5" fill="${COL.amber}"/>`);
 
-  // Sub-line.
-  parts.push(text(cx, 700, "Can you think like a doctor?", 34, COL.cyan, 600, "middle"));
+  parts.push(text(cx, 678, "Can you think like a doctor?", 32, COL.sub, 500, "middle"));
 
-  // Grey footer disclaimer.
-  parts.push(
-    text(
-      cx,
-      SIZE - 56,
-      "Educational entertainment only. Not medical advice.",
-      22,
-      COL.grey,
-      400,
-      "middle",
-    ),
-  );
+  parts.push(outlinePill(cx, 728, `FOLLOW ${HANDLE}`, 30, COL.accent));
 
-  return svgDoc(parts.join("\n"));
+  parts.push(text(cx, SIZE - 50, "Educational entertainment only. Not medical advice.", 22, COL.faint, 400, "middle"));
+
+  return svgDoc(parts.join("\n"), { cx, cy: 500 });
 }
 
 // ---------------------------------------------------------------------------
-// SVG document scaffold: navy background + faint grid + everything else
+// SVG document scaffold: gradient background + soft spotlight + thin keyline
 // ---------------------------------------------------------------------------
 
-function svgDoc(body: string): string {
+function svgDoc(body: string, glow?: { cx: number; cy: number }): string {
+  const spotlight = glow
+    ? `<ellipse cx="${glow.cx}" cy="${glow.cy}" rx="520" ry="520" fill="url(#glow)"/>`
+    : "";
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${SIZE}" height="${SIZE}" viewBox="0 0 ${SIZE} ${SIZE}">
   <defs>
-    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-      <path d="M60 0 L0 0 0 60" fill="none" stroke="${COL.grid}" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${COL.bgTop}"/>
+      <stop offset="1" stop-color="${COL.bgBot}"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="${COL.accent}" stop-opacity="0.16"/>
+      <stop offset="0.55" stop-color="${COL.accent}" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="${COL.accent}" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect x="0" y="0" width="${SIZE}" height="${SIZE}" fill="${COL.bg}"/>
-  <rect x="0" y="0" width="${SIZE}" height="${SIZE}" fill="url(#grid)"/>
-  <rect x="20" y="20" width="${SIZE - 40}" height="${SIZE - 40}" fill="none" stroke="${COL.panelStroke}" stroke-width="2" rx="22"/>
+  <rect x="0" y="0" width="${SIZE}" height="${SIZE}" fill="url(#bg)"/>
+  ${spotlight}
+  <rect x="22" y="22" width="${SIZE - 44}" height="${SIZE - 44}" fill="none" stroke="${COL.panelLine}" stroke-width="1.5" rx="26"/>
 ${body}
 </svg>`;
 }
@@ -284,64 +238,96 @@ ${body}
 // Drawing primitives
 // ---------------------------------------------------------------------------
 
-/** A cyan rounded scanner frame with corner brackets enclosing the X-ray image. */
-function scannerFrame(x: number, y: number, w: number, h: number, href: string): string {
-  const pad = 14;
-  const ix = x + pad;
-  const iy = y + pad;
-  const iw = w - pad * 2;
-  const ih = h - pad * 2;
-  const clipId = `frameclip-${Math.round(x)}-${Math.round(y)}`;
-  const b = 36; // corner-bracket arm length
-  const bracket = (px: number, py: number, dx: number, dy: number) =>
-    `<path d="M ${px + dx * b} ${py} L ${px} ${py} L ${px} ${py + dy * b}" fill="none" stroke="${COL.cyan}" stroke-width="6" stroke-linecap="round"/>`;
+/** The X-ray on a soft glow inside a thin cyan frame with small corner ticks. */
+function xrayPanel(cx: number, topY: number, size: number, href: string, withGlow: boolean): string {
+  const x = cx - size / 2;
+  const y = topY;
+  const rx = 16;
+  const clip = `xc${Math.round(x)}-${Math.round(y)}`;
+  const parts: string[] = [];
+  if (withGlow) {
+    parts.push(`<ellipse cx="${cx}" cy="${y + size / 2}" rx="${size * 0.74}" ry="${size * 0.74}" fill="url(#glow)"/>`);
+  }
+  parts.push(`<clipPath id="${clip}"><rect x="${x}" y="${y}" width="${size}" height="${size}" rx="${rx}"/></clipPath>`);
+  parts.push(`<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="${rx}" fill="${COL.imgBg}"/>`);
+  parts.push(`<image x="${x}" y="${y}" width="${size}" height="${size}" href="${href}" preserveAspectRatio="xMidYMid slice" clip-path="url(#${clip})"/>`);
+  parts.push(`<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="${rx}" fill="none" stroke="${COL.accent}" stroke-width="2" stroke-opacity="0.55"/>`);
+  const arm = size > 250 ? 26 : 18;
+  const off = 13;
+  const sw = 3;
+  const tick = (px: number, py: number, dx: number, dy: number) =>
+    `<path d="M ${px + dx * arm} ${py} L ${px} ${py} L ${px} ${py + dy * arm}" fill="none" stroke="${COL.accent}" stroke-width="${sw}" stroke-linecap="round"/>`;
+  parts.push(tick(x + off, y + off, 1, 1));
+  parts.push(tick(x + size - off, y + off, -1, 1));
+  parts.push(tick(x + off, y + size - off, 1, -1));
+  parts.push(tick(x + size - off, y + size - off, -1, -1));
+  return parts.join("\n");
+}
 
+/** Outlined rounded-square letter marker (A/B/C). (x, y) is the top-left. */
+function letterChip(x: number, y: number, size: number, letter: string): string {
   return [
-    `<clipPath id="${clipId}"><rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" rx="10"/></clipPath>`,
-    `<rect x="${ix}" y="${iy}" width="${iw}" height="${ih}" rx="10" fill="#000000"/>`,
-    `<image x="${ix}" y="${iy}" width="${iw}" height="${ih}" href="${href}" preserveAspectRatio="xMidYMid slice" clip-path="url(#${clipId})"/>`,
-    `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="none" stroke="${COL.cyan}" stroke-width="3"/>`,
-    bracket(x + 6, y + 6, 1, 1),
-    bracket(x + w - 6, y + 6, -1, 1),
-    bracket(x + 6, y + h - 6, 1, -1),
-    bracket(x + w - 6, y + h - 6, -1, -1),
+    `<rect x="${x}" y="${y}" width="${size}" height="${size}" rx="12" fill="none" stroke="${COL.accent}" stroke-width="2"/>`,
+    `<text x="${x + size / 2}" y="${y + size / 2}" font-family="${FONT}" font-size="${Math.round(size * 0.5)}" font-weight="800" fill="${COL.accent}" text-anchor="middle" dominant-baseline="central">${esc(letter)}</text>`,
   ].join("\n");
 }
 
-/** Orange circled capital letter (option marker). */
-function circledLetter(cx: number, cy: number, letter: string): string {
+/** Outlined pill (cue / follow button). (cx, top) = center-x, top edge. */
+function outlinePill(cx: number, top: number, label: string, fontSize: number, color: string): string {
+  const padX = 30;
+  const h = fontSize + 30;
+  const w = approxTextWidth(label, fontSize) + padX * 2;
+  const left = cx - w / 2;
   return [
-    `<circle cx="${cx}" cy="${cy}" r="24" fill="${COL.orange}"/>`,
-    `<text x="${cx}" y="${cy}" font-family="${FONT}" font-size="28" font-weight="800" fill="${COL.dark}" text-anchor="middle" dominant-baseline="central">${esc(letter)}</text>`,
+    `<rect x="${left}" y="${top}" width="${w}" height="${h}" rx="${h / 2}" fill="none" stroke="${color}" stroke-width="2"/>`,
+    `<text x="${cx}" y="${top + h / 2}" font-family="${FONT}" font-size="${fontSize}" font-weight="800" fill="${color}" text-anchor="middle" dominant-baseline="central" letter-spacing="1">${esc(label)}</text>`,
   ].join("\n");
 }
 
-/**
- * An orange pill with dark text. `align` controls how (x, y) is interpreted:
- * "left" = x is the left edge, "right" = x is the right edge, "center" = x is the
- * horizontal center. y is the pill top.
- */
-function pill(x: number, y: number, label: string, fontSize: number, align: "left" | "right" | "center"): string {
+/** Outlined cue pill with a solid triangle arrow: "SWIPE TO REVEAL >". */
+function swipeCue(cx: number, top: number): string {
+  const label = "SWIPE TO REVEAL";
+  const fs = 26;
+  const padX = 30;
+  const arrow = 26;
+  const tw = approxTextWidth(label, fs) + fs * 0.4; // includes letter-spacing slack
+  const w = tw + padX * 2 + arrow;
+  const h = fs + 30;
+  const left = cx - w / 2;
+  const cy = top + h / 2;
+  const textCx = left + padX + tw / 2;
+  const ax = left + padX + tw + 16;
+  return [
+    `<rect x="${left}" y="${top}" width="${w}" height="${h}" rx="${h / 2}" fill="none" stroke="${COL.accent}" stroke-width="2"/>`,
+    `<text x="${textCx}" y="${cy}" font-family="${FONT}" font-size="${fs}" font-weight="800" fill="${COL.accent}" text-anchor="middle" dominant-baseline="central" letter-spacing="2">${esc(label)}</text>`,
+    `<path d="M ${ax} ${cy - 8} L ${ax + 13} ${cy} L ${ax} ${cy + 8} Z" fill="${COL.accent}"/>`,
+  ].join("\n");
+}
+
+/** A solid-color pill with contrasting text (used for the amber ANSWER tag). */
+function filledPill(x: number, y: number, label: string, fontSize: number, align: "left" | "right" | "center", fill: string, textColor: string): string {
   const padX = 22;
-  const h = fontSize + 24;
+  const h = fontSize + 22;
   const w = approxTextWidth(label, fontSize) + padX * 2;
   let left: number;
   if (align === "left") left = x;
   else if (align === "right") left = x - w;
   else left = x - w / 2;
-  const cx = left + w / 2;
-  const cy = y + h / 2;
   return [
-    `<rect x="${left}" y="${y}" width="${w}" height="${h}" rx="${h / 2}" fill="${COL.orange}"/>`,
-    `<text x="${cx}" y="${cy}" font-family="${FONT}" font-size="${fontSize}" font-weight="800" fill="${COL.dark}" text-anchor="middle" dominant-baseline="central" letter-spacing="1">${esc(label)}</text>`,
+    `<rect x="${left}" y="${y}" width="${w}" height="${h}" rx="${h / 2}" fill="${fill}"/>`,
+    `<text x="${left + w / 2}" y="${y + h / 2}" font-family="${FONT}" font-size="${fontSize}" font-weight="800" fill="${textColor}" text-anchor="middle" dominant-baseline="central" letter-spacing="1">${esc(label)}</text>`,
   ].join("\n");
 }
 
-function roundRect(x: number, y: number, w: number, h: number, fill: string, stroke: string, sw: number): string {
-  return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="16" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
+function panel(x: number, y: number, w: number, h: number, fill: string, stroke: string, sw: number, rx: number): string {
+  return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}" stroke="${stroke}" stroke-width="${sw}"/>`;
 }
 
-/** A single line of text. (x, y) is the text baseline anchor per `anchor`. */
+function divider(x1: number, x2: number, y: number, color: string): string {
+  return `<line x1="${x1}" y1="${y}" x2="${x2}" y2="${y}" stroke="${color}" stroke-width="1.5"/>`;
+}
+
+/** A single line of text. (x, y) is the baseline anchor per `anchor`. */
 function text(
   x: number,
   y: number,
@@ -350,15 +336,13 @@ function text(
   fill: string,
   weight: number,
   anchor: "start" | "middle" | "end" = "start",
+  letterSpacing = 0,
 ): string {
-  return `<text x="${x}" y="${y}" font-family="${FONT}" font-size="${fontSize}" font-weight="${weight}" fill="${fill}" text-anchor="${anchor}">${esc(s)}</text>`;
+  const ls = letterSpacing ? ` letter-spacing="${letterSpacing}"` : "";
+  return `<text x="${x}" y="${y}" font-family="${FONT}" font-size="${fontSize}" font-weight="${weight}" fill="${fill}" text-anchor="${anchor}"${ls}>${esc(s)}</text>`;
 }
 
-/**
- * A stack of pre-wrapped lines starting at baseline (x, firstBaselineY), advancing
- * by `lineHeight`. Optionally pre-wraps to `maxWidthPx` (when the caller passes raw
- * single-element lines that may still overflow).
- */
+/** A stack of pre-wrapped lines from baseline (x, firstBaselineY), advancing by lineHeight. */
 function textBlock(
   lines: string[],
   x: number,
