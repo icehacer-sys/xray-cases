@@ -27,9 +27,9 @@ export const config = {
   githubRawBase: (process.env.GITHUB_RAW_BASE ?? "").replace(/\/+$/, ""),
 
   // Scheduling: minutes after the challenge post to publish the answer / CTA.
-  // Answer 30 min after the challenge; CTA 30 min after the answer (= 60 after challenge).
-  answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 30),
-  ctaDelayMin: num("BOT_CTA_DELAY_MIN", 60),
+  // Answer 15 min after the challenge; CTA 60 min after the answer (= 75 after challenge).
+  answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 15),
+  ctaDelayMin: num("BOT_CTA_DELAY_MIN", 75),
 
   // Threads rejects a reply over this many characters, so the assembled answer is
   // trimmed to stay under it (blank-line spacing included).

@@ -54,8 +54,8 @@ jobs:
       BOT_CONFIRM_LIVE: "yes"
       BOT_INSTAGRAM: "off" # Threads only for now; re-enable once the OpenAI billing is fixed
       BOT_TOPIC_TAG: "Med Threads" # topic tag added to every challenge post
-      BOT_ANSWER_DELAY_MIN: "30" # answer posts 30 min after the challenge
-      BOT_CTA_DELAY_MIN: "60" # CTA posts 30 min after the answer (60 after the challenge)
+      BOT_ANSWER_DELAY_MIN: "15" # answer posts 15 min after the challenge
+      BOT_CTA_DELAY_MIN: "75" # CTA posts 60 min after the answer (75 after the challenge)
       BOT_MODEL: "claude-sonnet-4-6"
     steps:
       - uses: actions/checkout@v4
