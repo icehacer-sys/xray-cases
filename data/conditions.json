@@ -504,7 +504,7 @@
       "Hyperparathyroidism"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Madelung deformity",
