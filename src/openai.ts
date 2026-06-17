@@ -47,3 +47,48 @@ export async function generateXray(prompt: string): Promise<Buffer> {
   }
   return Buffer.from(b64, "base64");
 }
+
+/**
+ * Generate a 1024x1024 IG slide image with gpt-image-2. When `baseImage` is given (the
+ * case X-ray), uses the image-EDIT endpoint so the SAME X-ray is composited into the
+ * slide (keeps it consistent across slides + the Threads post); otherwise text->image.
+ */
+export async function generateSlideImage(prompt: string, baseImage?: Buffer): Promise<Buffer> {
+  const key = requireEnv("OPENAI_API_KEY");
+  let res: Response;
+  if (baseImage) {
+    const form = new FormData();
+    form.append("model", config.imageModel);
+    form.append("prompt", prompt);
+    form.append("size", "1024x1024");
+    form.append("n", "1");
+    form.append("image", new Blob([new Uint8Array(baseImage)], { type: "image/png" }), "xray.png");
+    res = await fetch("https://api.openai.com/v1/images/edits", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${key}` },
+      body: form,
+    });
+  } else {
+    res = await fetch("https://api.openai.com/v1/images/generations", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ model: config.imageModel, prompt, size: "1024x1024", quality: config.imageQuality, n: 1 }),
+    });
+  }
+
+  const text = await res.text();
+  let json: any;
+  try {
+    json = text ? JSON.parse(text) : {};
+  } catch {
+    throw new Error(`OpenAI images API returned non-JSON (${res.status}): ${text.slice(0, 200)}`);
+  }
+  if (!res.ok || json?.error) {
+    throw new Error(`OpenAI images API failed (${res.status}): ${json?.error?.message ?? text.slice(0, 200)}`);
+  }
+  const b64 = json?.data?.[0]?.b64_json;
+  if (!b64) {
+    throw new Error(`OpenAI images API returned no image: ${text.slice(0, 200)}`);
+  }
+  return Buffer.from(b64, "base64");
+}
