@@ -113,7 +113,7 @@ jobs:
             fi
             echo "::endgroup::"
             if [ $(( $(date +%s) - start )) -ge "$MAXSECS" ]; then break; fi
-            sleep 900
+            sleep 300
           done
           # Perpetual chain: always launch the next run so a loop is ALWAYS alive.
           # Each cycle only acts on due cases, so off-schedule runs just no-op.

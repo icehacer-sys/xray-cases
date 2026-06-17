@@ -20,9 +20,8 @@ import {
   generateIgCaption,
   pickCta,
   imagePrompt,
-  splitForThreads,
 } from "./captions.js";
-import { postImage, reply } from "./threads.js";
+import { postImage, reply, getReplies, getMyUsername, type SpoilerEntity } from "./threads.js";
 import { publishCarousel } from "./instagram.js";
 import type { Case } from "./types.js";
 
@@ -216,35 +215,26 @@ async function runPublish(cli: Cli): Promise<void> {
 
     if (answerDue && !stages.answerPostedAt) {
       const answerText = generated.threadsAnswer ?? (await generateThreadsAnswer(c));
-      // Threads caps each reply at 500 chars, so post the answer as a short self-reply
-      // chain (part 1 replies to the challenge, each later part replies to the prior).
-      const answerParts = splitForThreads(answerText);
 
       if (cli.mode === "dry-run") {
-        log(`\n[dry-run] would post ANSWER reply for ${c.folder} in ${answerParts.length} part(s):`);
-        answerParts.forEach((p, i) => log(`  --- part ${i + 1} (${p.length} chars) ---\n${p}`));
-        log("  Now pin the answer (part 1) in the app.");
+        log(`\n[dry-run] would post ANSWER reply (${answerText.length} chars) for ${c.folder}:`);
+        log(answerText);
+        log("  Now pin the answer in the app.");
       } else {
         if (!stages.threadsPostId) {
           log(`  skip ANSWER for ${c.folder}: missing threadsPostId in state`);
           continue;
         }
-        let parentId = stages.threadsPostId;
-        let firstAnswerId = "";
-        for (const part of answerParts) {
-          parentId = await reply(parentId, part);
-          if (!firstAnswerId) firstAnswerId = parentId;
-        }
-        // CTA threads under the LAST answer part so the chain reads in order; the reply
-        // bot detects the public answer from part 1's "Answer:" text independently.
+        // ONE reply (<=500 chars), with the diagnosis + breakdown blurred as a spoiler.
+        const answerCommentId = await reply(stages.threadsPostId, answerText, answerSpoiler(answerText));
         state.setStages(c.folder, {
-          answerCommentId: parentId,
+          answerCommentId,
           answerPostedAt: new Date().toISOString(),
         });
         c.stages = state.getStages(c.folder);
         saveCase(c);
-        log(`posted ANSWER for ${c.folder} in ${answerParts.length} part(s) -> first ${firstAnswerId}, last ${parentId}`);
-        log("  Now pin the answer (part 1) in the app.");
+        log(`posted ANSWER for ${c.folder} -> ${answerCommentId}`);
+        log("  Now pin the answer in the app.");
       }
       continue;
     }
@@ -260,15 +250,20 @@ async function runPublish(cli: Cli): Promise<void> {
         log(`\n[dry-run] would post CTA reply for ${c.folder}:`);
         log(ctaText);
       } else {
-        if (!stages.answerCommentId) {
-          log(`  skip CTA for ${c.folder}: missing answerCommentId in state`);
+        // Thread the CTA under the LIVE "Answer:" comment. The owner may have deleted the
+        // bot's answer and posted/pinned their own, so prefer the answer comment currently
+        // on the post; fall back to the stored id.
+        const liveAnswerId = stages.threadsPostId ? await findOwnerAnswerComment(stages.threadsPostId) : null;
+        const target = liveAnswerId ?? stages.answerCommentId;
+        if (!target) {
+          log(`  skip CTA for ${c.folder}: no answer comment to thread under`);
           continue;
         }
-        await reply(stages.answerCommentId, ctaText);
+        await reply(target, ctaText);
         state.setStages(c.folder, { ctaPostedAt: new Date().toISOString() });
         c.stages = state.getStages(c.folder);
         saveCase(c);
-        log(`posted CTA for ${c.folder}`);
+        log(`posted CTA for ${c.folder} under ${target}${liveAnswerId ? " (live answer)" : ""}`);
       }
     }
   }
@@ -299,6 +294,27 @@ async function tryPublishCarousel(c: Case, igCaption: string, state: State): Pro
 
 function errMsg(err: unknown): string {
   return err instanceof Error ? err.message : String(err);
+}
+
+// Blur everything after the "Answer:" label so the diagnosis + breakdown are a spoiler.
+function answerSpoiler(text: string): SpoilerEntity[] {
+  const m = text.match(/^\s*answer\s*:\s*/i);
+  const offset = m ? m[0].length : 0;
+  const length = text.length - offset;
+  return length > 0 ? [{ entity_type: "SPOILER", offset, length }] : [];
+}
+
+// Find the LIVE "Answer:" comment on a post (the owner may have deleted the bot's answer
+// and posted/pinned their own). Best-effort; returns null on any failure.
+async function findOwnerAnswerComment(postId: string): Promise<string | null> {
+  try {
+    const me = await getMyUsername();
+    const replies = await getReplies(postId);
+    const ans = replies.find((r) => (!me || r.username === me) && /^\s*answer\s*:/i.test(r.text ?? ""));
+    return ans?.id ?? null;
+  } catch {
+    return null;
+  }
 }
 
 async function main(): Promise<void> {

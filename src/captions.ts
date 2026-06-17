@@ -65,51 +65,30 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
     takeaway = takeaway ?? draft.takeaway;
   }
 
-  // Each section keeps its heading on its own line above the body; sections are
-  // separated by a blank line. The publisher splits this into a <=500-char Threads
-  // chain at post time via splitForThreads (Threads caps each post/reply at 500).
+  // Threads caps each reply at config.answerMaxChars (500), and the answer must be ONE
+  // reply (no chains). Build a single reply that includes as many WHOLE sections as fit
+  // (priority = declaration order); the full 4-section breakdown always lives on the IG
+  // answer slide, which has no length limit.
+  const head = `Answer: ${c.diagnosis}`;
   const sections = [
     `👀 What you see:\n${whatYouSee}`,
     `🦴 Why it matters:\n${whyItMatters}`,
-    `💊 Treatment:\n${treatment}`,
     `📝 Takeaway:\n${takeaway}`,
+    `💊 Treatment:\n${treatment}`,
   ];
-  return [`Answer: ${c.diagnosis}`, ...sections].join("\n\n");
+  const out = [head];
+  let len = head.length;
+  for (const s of sections) {
+    if (len + 2 + s.length > config.answerMaxChars) continue; // skip overflow; a later shorter section may still fit
+    out.push(s);
+    len += 2 + s.length;
+  }
+  return out.join("\n\n");
 }
 
-/**
- * Threads caps each post/reply at config.answerMaxChars (500). A longer answer is posted
- * as a short self-reply CHAIN: split on blank-line (section) boundaries, packing whole
- * sections into each part; a single oversized section is hard-wrapped at a word boundary.
- */
-export function splitForThreads(text: string, max = config.answerMaxChars): string[] {
-  const blocks = text.split(/\n{2,}/).flatMap((b) => (b.length > max ? hardWrap(b, max) : [b]));
-  const parts: string[] = [];
-  let cur = "";
-  for (const b of blocks) {
-    const candidate = cur ? `${cur}\n\n${b}` : b;
-    if (candidate.length > max && cur) {
-      parts.push(cur);
-      cur = b;
-    } else {
-      cur = candidate;
-    }
-  }
-  if (cur) parts.push(cur);
-  return parts.length ? parts : [text.slice(0, max)];
-}
-
-function hardWrap(s: string, max: number): string[] {
-  const out: string[] = [];
-  let r = s.trim();
-  while (r.length > max) {
-    let cut = r.lastIndexOf(" ", max);
-    if (cut <= 0) cut = max;
-    out.push(r.slice(0, cut).trim());
-    r = r.slice(cut).trim();
-  }
-  if (r) out.push(r);
-  return out;
+/** Normalize AI-drafted punctuation: em/en dashes -> hyphen; collapse runs of spaces. */
+export function cleanPunct(s: string): string {
+  return s.replace(/\s*[—–]\s*/g, " - ").replace(/[ \t]{2,}/g, " ").trim();
 }
 
 interface Breakdown {
@@ -144,10 +123,10 @@ async function draftBreakdown(c: Case): Promise<Breakdown> {
   const parsed = parseJsonObject(raw);
 
   return {
-    whatYouSee: str(parsed.whatYouSee),
-    whyItMatters: str(parsed.whyItMatters),
-    treatment: str(parsed.treatment),
-    takeaway: str(parsed.takeaway),
+    whatYouSee: cleanPunct(str(parsed.whatYouSee)),
+    whyItMatters: cleanPunct(str(parsed.whyItMatters)),
+    treatment: cleanPunct(str(parsed.treatment)),
+    takeaway: cleanPunct(str(parsed.takeaway)),
   };
 }
 
@@ -156,31 +135,25 @@ async function draftBreakdown(c: Case): Promise<Breakdown> {
 // ---------------------------------------------------------------------------
 
 export async function generateIgCaption(c: Case): Promise<string> {
-  const igHook = await draftIgHook(c);
+  const hookLines = (await draftIgHook(c))
+    .split("\n")
+    .map((l) => cleanPunct(l))
+    .filter((l) => l.length > 0);
 
+  // Exact owner-agreed IG format: a blank line between EVERY line, no emojis.
   return [
-    `Case File ${pad2(c.number)}. 🩻`,
-    ``,
-    igHook,
-    ``,
+    `Case File ${pad2(c.number)}.`,
+    ...hookLines,
     `A real condition most people have never seen.`,
-    ``,
-    `So before you swipe: A, B, or C? 👉`,
-    ``,
-    `Swipe for the answer then tell me if you got it. 👇`,
-    ``,
+    `So before you swipe: A, B, or C?`,
+    `Swipe for the answer then tell me if you got it.`,
     `New weird X-ray case every single day.`,
-    ``,
-    `Follow along and you'll read scans like a doctor. 🧠`,
-    ``,
+    `Follow along and you'll read scans like a doctor.`,
     `Want the free 5-case starter pack?`,
-    ``,
     `Comment SAMPLE and I'll send it.`,
-    ``,
     `Educational entertainment only. Not medical advice.`,
-    ``,
     `#radiology #xray #spotthediagnosis #medicalmystery #medstudent`,
-  ].join("\n");
+  ].join("\n\n");
 }
 
 async function draftIgHook(c: Case): Promise<string> {
@@ -188,8 +161,8 @@ async function draftIgHook(c: Case): Promise<string> {
     "You write short, punchy Instagram hooks for a daily X-ray diagnosis challenge in the " +
     "voice of @mdnoteslab: curious, a little dramatic, never clickbait-fake. Write 2-3 short " +
     "lines (each its own line). Build intrigue around the case WITHOUT naming the diagnosis. " +
-    "Do NOT use commas: keep each line short or join clauses with 'and'. " +
-    "No hashtags, no emojis, no quotation marks, no labels — just the lines.";
+    "Do NOT use commas (except a genuine list) and NO dashes or em dashes: keep each line short or join clauses with 'and'. " +
+    "No hashtags, no emojis, no quotation marks, no labels. Just the lines.";
 
   const user =
     `Diagnosis (do NOT reveal it): ${c.diagnosis}\n` +

@@ -96,12 +96,47 @@ export async function postImage(imageUrl: string, text: string): Promise<string>
   return publish(creationId);
 }
 
-/** Reply (text only) to an existing post/comment. Returns the reply's id. */
-export async function reply(replyToId: string, text: string): Promise<string> {
-  const creationId = await createContainer({
-    media_type: "TEXT",
-    text,
-    reply_to_id: replyToId,
-  });
+/** A character range to blur as a spoiler (Threads text_entities). */
+export interface SpoilerEntity {
+  entity_type: "SPOILER";
+  offset: number;
+  length: number;
+}
+
+/** Reply (text only) to an existing post/comment. Pass spoilers to blur ranges. */
+export async function reply(replyToId: string, text: string, spoilers?: SpoilerEntity[]): Promise<string> {
+  const params: Record<string, string> = { media_type: "TEXT", text, reply_to_id: replyToId };
+  if (spoilers && spoilers.length > 0) params.text_entities = JSON.stringify(spoilers);
+  const creationId = await createContainer(params);
   return publish(creationId);
+}
+
+/** GET a Threads endpoint and return parsed JSON. */
+async function get(path: string, query: Record<string, string>): Promise<any> {
+  const url = new URL(`${config.threadsBase}/${path}`);
+  for (const [k, v] of Object.entries(query)) url.searchParams.set(k, v);
+  const res = await fetch(url, { headers: { Authorization: `Bearer ${requireEnv("THREADS_ACCESS_TOKEN")}` } });
+  const text = await res.text();
+  let body: any;
+  try {
+    body = text ? JSON.parse(text) : {};
+  } catch {
+    body = { raw: text };
+  }
+  if (!res.ok) {
+    throw new Error(`Threads GET ${path} failed (${res.status}): ${body?.error?.message ?? text}`);
+  }
+  return body;
+}
+
+/** The authenticated account's username (to recognize its own replies). */
+export async function getMyUsername(): Promise<string> {
+  const me = await get("me", { fields: "username" });
+  return String(me?.username ?? "");
+}
+
+/** Top-level replies on a post (id + text + username), best-effort single page. */
+export async function getReplies(mediaId: string): Promise<Array<{ id: string; text?: string; username?: string }>> {
+  const body = await get(`${mediaId}/replies`, { fields: "id,text,username", limit: "100" });
+  return body?.data ?? [];
 }
