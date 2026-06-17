@@ -1,5 +1,5 @@
 {
-  "folder": "00001-ollier-disease",
+  "folder": "00002-ollier-disease",
   "number": 2,
   "diagnosis": "Ollier disease",
   "aliases": [
@@ -58,10 +58,8 @@
   "stages": {
     "threadsPostId": "17942265339236040",
     "challengePostedAt": "2026-06-17T19:12:40.713Z",
-    "igMediaId": "18364857064224586",
-    "igPostedAt": "2026-06-17T20:22:27.268Z",
-    "answerCommentId": "17923011030365450",
     "answerPostedAt": "2026-06-17T20:28:59.373Z",
-    "ctaPostedAt": "2026-06-17T20:44:07.753Z"
+    "igMediaId": "18103655282046424",
+    "igPostedAt": "2026-06-17T21:53:50.710Z"
   }
 }
