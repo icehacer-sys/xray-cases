@@ -79,11 +79,20 @@ async function publish(creationId: string): Promise<string> {
 
 /** Post an image challenge to Threads. Returns the published post id. */
 export async function postImage(imageUrl: string, text: string): Promise<string> {
-  const creationId = await createContainer({
-    media_type: "IMAGE",
-    image_url: imageUrl,
-    text,
-  });
+  const base: Record<string, string> = { media_type: "IMAGE", image_url: imageUrl, text };
+  const tag = config.topicTag;
+  let creationId: string;
+  if (tag) {
+    try {
+      creationId = await createContainer({ ...base, topic_tag: tag });
+    } catch (err) {
+      // If the API ever rejects the topic tag, never block the post — retry without it.
+      console.warn(`Threads topic_tag "${tag}" rejected (${(err as Error).message}); posting without it.`);
+      creationId = await createContainer(base);
+    }
+  } else {
+    creationId = await createContainer(base);
+  }
   return publish(creationId);
 }
 

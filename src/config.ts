@@ -39,6 +39,10 @@ export const config = {
   // Cross-post to Instagram too (Threads always posts).
   instagram: (process.env.BOT_INSTAGRAM ?? "on").toLowerCase() !== "off",
 
+  // Topic tag added to the Threads challenge post (one per post; the account always
+  // tags posts with this). Empty = no tag. Periods and ampersands are not allowed.
+  topicTag: (process.env.BOT_TOPIC_TAG ?? "Med Threads").trim(),
+
   // --- auto-generator ---
   // OpenAI image model for the X-ray (the only AI-generated image; slides are rendered).
   imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-2",

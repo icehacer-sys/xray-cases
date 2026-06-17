@@ -118,6 +118,8 @@ async function draftBreakdown(c: Case): Promise<Breakdown> {
     "diagnosis challenge. Be tight and factual. Use only well-known, established facts about " +
     "the named condition — never invent specific measurements, patient details, or studies. " +
     "Each field is ONE short line (a sentence or two). No emojis, no labels, no markdown. " +
+    "Do NOT use commas: write short sentences or join clauses with words like 'and' or 'with'. " +
+    "A comma is allowed ONLY when listing three or more items. " +
     "Respond ONLY with a JSON object using exactly these keys: " +
     "whatYouSee, whyItMatters, treatment, takeaway.";
 
@@ -179,6 +181,7 @@ async function draftIgHook(c: Case): Promise<string> {
     "You write short, punchy Instagram hooks for a daily X-ray diagnosis challenge in the " +
     "voice of @mdnoteslab: curious, a little dramatic, never clickbait-fake. Write 2-3 short " +
     "lines (each its own line). Build intrigue around the case WITHOUT naming the diagnosis. " +
+    "Do NOT use commas: keep each line short or join clauses with 'and'. " +
     "No hashtags, no emojis, no quotation marks, no labels — just the lines.";
 
   const user =
@@ -202,25 +205,25 @@ async function draftIgHook(c: Case): Promise<string> {
 
 const CTA_TEXT: Record<CtaKey, string> = {
   vol2: [
-    `If these weird X-rays made you learn something, laugh, or question reality for a second.`,
+    `If these weird X-rays made you learn something or laugh or question reality for a second.`,
     `I put 20 brand-new cases into a PDF.`,
     `None repeated from Volume 1.`,
-    `Support the page if you'd like, I'd appreciate it 🙏`,
+    `Support the page if you'd like and I'd appreciate it 🙏`,
     `xray2.mednoteslab.com`,
   ].join("\n\n"),
 
   rare: [
     `Some of these X-rays are so rare most doctors will never see them in person.`,
     `I collected 10 of the rarest findings in radiology into one PDF.`,
-    `Look, guess, then flip for a simple breakdown.`,
-    `If the weird ones hooked you, these are the next level 🙏`,
+    `Look then guess then flip for a simple breakdown.`,
+    `If the weird ones hooked you then these are the next level 🙏`,
     `rare.mednoteslab.com`,
   ].join("\n\n"),
 
   vol1: [
-    `If these weird X-rays have made you learn something, laugh, or question reality for a few seconds 😭`,
+    `If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭`,
     `I put 20 of the most bizarre cases into a digital PDF.`,
-    `And if you'd like to support the page, I'd genuinely appreciate it 🙏`,
+    `And if you'd like to support the page I'd genuinely appreciate it 🙏`,
     `xray.mednoteslab.com`,
   ].join("\n\n"),
 };

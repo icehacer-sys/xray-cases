@@ -8,10 +8,10 @@
   ],
   "symptom": "no symptoms; discovered incidentally on a routine chest film",
   "hook": "the heart was pointing to the right and the stomach bubble sat under the wrong lung",
-  "whatYouSee": "The heart points to the right and the stomach gas bubble and organs are all flipped to the opposite side, a mirror image of normal.",
-  "whyItMatters": "It is usually benign, but recognising it prevents diagnostic errors and missed lateralised disease; with primary ciliary dyskinesia it forms Kartagener syndrome.",
+  "whatYouSee": "The heart points to the right and the stomach gas bubble and organs are all flipped to the opposite side. It is a mirror image of normal.",
+  "whyItMatters": "It is usually benign but recognising it prevents diagnostic errors and missed lateralised disease; with primary ciliary dyskinesia it forms Kartagener syndrome.",
   "treatment": "No treatment is required for the mirror anatomy itself; associated conditions such as Kartagener syndrome are managed on their own.",
-  "takeaway": "A heart pointing right with flipped organs is situs inversus, a mirror-image body.",
+  "takeaway": "A heart pointing right with flipped organs is situs inversus. It is a mirror-image body.",
   "igOptions": [
     "A. Situs inversus totalis",
     "B. Tension pneumothorax",
@@ -36,10 +36,10 @@
     "hook": "the heart was pointing to the right and the stomach bubble sat under the wrong lung",
     "view": "PA chest",
     "keyFindings": "the cardiac apex and aortic arch on the right (dextrocardia) with the gastric air bubble under the right hemidiaphragm and liver shadow on the left, a complete mirror-image of normal anatomy",
-    "whatYouSee": "The heart points to the right and the stomach gas bubble and organs are all flipped to the opposite side, a mirror image of normal.",
-    "whyItMatters": "It is usually benign, but recognising it prevents diagnostic errors and missed lateralised disease; with primary ciliary dyskinesia it forms Kartagener syndrome.",
+    "whatYouSee": "The heart points to the right and the stomach gas bubble and organs are all flipped to the opposite side. It is a mirror image of normal.",
+    "whyItMatters": "It is usually benign but recognising it prevents diagnostic errors and missed lateralised disease; with primary ciliary dyskinesia it forms Kartagener syndrome.",
     "treatment": "No treatment is required for the mirror anatomy itself; associated conditions such as Kartagener syndrome are managed on their own.",
-    "takeaway": "A heart pointing right with flipped organs is situs inversus, a mirror-image body.",
+    "takeaway": "A heart pointing right with flipped organs is situs inversus. It is a mirror-image body.",
     "igTitle": "THE MIRROR BODY",
     "igOptions": [
       "Situs inversus totalis",
@@ -51,8 +51,8 @@
   },
   "generated": {
     "threadsCaption": "A patient came in with no symptoms; discovered incidentally on a routine chest film.\n\nThen the X-ray loaded 😭\n\nAnd the heart was pointing to the right and the stomach bubble sat under the wrong lung.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Situs inversus totalis\n\n👀 What you see:\nThe heart points to the right and the stomach gas bubble and organs are all flipped to the opposite side, a mirror image of normal.\n\n🦴 Why it matters:\nIt is usually benign, but recognising it prevents diagnostic errors and missed lateralised disease; with primary ciliary dyskinesia it forms Kartagener syndrome.\n\n💊 Treatment:\nNo treatment is required for the mirror anatomy itself; associated conditions such as Kartagener syndrome are managed on their own.\n\n📝 Takeaway:\nA heart pointing right with flipped organs is situs inversus, a mirror-image body.",
+    "threadsAnswer": "Answer: Situs inversus totalis\n\n👀 What you see:\nThe heart points to the right and the stomach gas bubble and organs are all flipped to the opposite side. It is a mirror image of normal.\n\n🦴 Why it matters:\nIt is usually benign but recognising it prevents diagnostic errors and missed lateralised disease; with primary ciliary dyskinesia it forms Kartagener syndrome.\n\n💊 Treatment:\nNo treatment is required for the mirror anatomy itself; associated conditions such as Kartagener syndrome are managed on their own.\n\n📝 Takeaway:\nA heart pointing right with flipped organs is situs inversus. It is a mirror-image body.",
     "igCaption": "Case File 03. 🩻\n\nEverything looked routine.\nThen the heart was on the wrong side.\nSometimes the body rewrites the map entirely.\n\nA real condition most people have never seen.\n\nSo before you swipe: A, B, or C? 👉\n\nSwipe for the answer then tell me if you got it. 👇\n\nNew weird X-ray case every single day.\n\nFollow along and you'll read scans like a doctor. 🧠\n\nWant the free 5-case starter pack?\n\nComment SAMPLE and I'll send it.\n\nEducational entertainment only. Not medical advice.\n\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
-    "ctaText": "If these weird X-rays have made you learn something, laugh, or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into a digital PDF.\n\nAnd if you'd like to support the page, I'd genuinely appreciate it 🙏\n\nxray.mednoteslab.com"
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into a digital PDF.\n\nAnd if you'd like to support the page I'd genuinely appreciate it 🙏\n\nxray.mednoteslab.com"
   }
 }
