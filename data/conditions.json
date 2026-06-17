@@ -1,7 +1,10 @@
 [
   {
     "diagnosis": "Cochlear implant",
-    "aliases": ["cochlear implant electrode", "inner ear implant"],
+    "aliases": [
+      "cochlear implant electrode",
+      "inner ear implant"
+    ],
     "symptom": "profound hearing loss treated with a surgically placed hearing device",
     "hook": "a tight little coil of wire was spiralling into the inner ear like a watch spring",
     "view": "AP and lateral skull",
@@ -11,13 +14,19 @@
     "treatment": "No treatment is needed for the device itself; it is programmed by the audiology team and MRI safety must be checked first.",
     "takeaway": "A tiny wire coil spiralling into the inner ear with a skull receiver is a cochlear implant.",
     "igTitle": "THE COIL IN THE SKULL",
-    "igOptions": ["Aneurysm coil", "Cochlear implant", "Retained wire"],
+    "igOptions": [
+      "Aneurysm coil",
+      "Cochlear implant",
+      "Retained wire"
+    ],
     "igCorrect": "B",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Gallstone ileus",
-    "aliases": ["gallstone small bowel obstruction"],
+    "aliases": [
+      "gallstone small bowel obstruction"
+    ],
     "symptom": "crampy abdominal pain and vomiting in an older patient with known gallstones",
     "hook": "the bowel had ballooned with gas and a stray stone had wandered far from the gallbladder",
     "view": "supine abdomen",
@@ -27,13 +36,20 @@
     "treatment": "Treatment is surgical removal of the obstructing stone with later attention to the gallbladder fistula.",
     "takeaway": "Bowel obstruction with air in the bile ducts and a stray stone is gallstone ileus.",
     "igTitle": "THE STONE THAT WANDERED",
-    "igOptions": ["Gallstone ileus", "Sigmoid volvulus", "Appendicitis"],
+    "igOptions": [
+      "Gallstone ileus",
+      "Sigmoid volvulus",
+      "Appendicitis"
+    ],
     "igCorrect": "A",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Pectus excavatum",
-    "aliases": ["funnel chest", "sunken chest"],
+    "aliases": [
+      "funnel chest",
+      "sunken chest"
+    ],
     "symptom": "a chest that visibly caved inward at the breastbone since the teenage years",
     "hook": "the heart looked shoved to the left and the front of the chest seemed to vanish into a hollow",
     "view": "PA and lateral chest",
@@ -43,13 +59,20 @@
     "treatment": "Mild cases are observed; significant deformity is corrected surgically with a bar that lifts the sternum.",
     "takeaway": "A sunken breastbone shifting the heart left with a blurred right heart border is pectus excavatum.",
     "igTitle": "THE VANISHING CHEST",
-    "igOptions": ["Cardiomegaly", "Pectus excavatum", "Right middle lobe collapse"],
+    "igOptions": [
+      "Cardiomegaly",
+      "Pectus excavatum",
+      "Right middle lobe collapse"
+    ],
     "igCorrect": "B",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Charcot joint",
-    "aliases": ["neuropathic arthropathy", "Charcot arthropathy"],
+    "aliases": [
+      "neuropathic arthropathy",
+      "Charcot arthropathy"
+    ],
     "symptom": "a swollen deformed foot that strangely did not hurt in a patient with long-standing diabetes",
     "hook": "the joint looked like a bag of crushed bone fragments yet the patient felt almost nothing",
     "view": "AP and lateral foot",
@@ -59,9 +82,13 @@
     "treatment": "Treatment is offloading and immobilisation with protected footwear and surgery is reserved for severe instability or deformity.",
     "takeaway": "A painlessly destroyed disorganised joint in a patient with neuropathy is a Charcot joint.",
     "igTitle": "THE PAINLESS RUIN",
-    "igOptions": ["Charcot joint", "Septic arthritis", "Severe osteoarthritis"],
+    "igOptions": [
+      "Charcot joint",
+      "Septic arthritis",
+      "Severe osteoarthritis"
+    ],
     "igCorrect": "A",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Maffucci syndrome",

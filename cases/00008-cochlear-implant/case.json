@@ -1,0 +1,58 @@
+{
+  "folder": "00008-cochlear-implant",
+  "number": 8,
+  "diagnosis": "Cochlear implant",
+  "aliases": [
+    "cochlear implant electrode",
+    "inner ear implant"
+  ],
+  "symptom": "profound hearing loss treated with a surgically placed hearing device",
+  "hook": "a tight little coil of wire was spiralling into the inner ear like a watch spring",
+  "whatYouSee": "A fine coiled wire spiralling into the cochlea with a small electronic receiver fixed to the skull behind the ear.",
+  "whyItMatters": "It is a surgically implanted device that restores hearing by stimulating the cochlear nerve so recognising it avoids mistaking the coil for a foreign body or lesion.",
+  "treatment": "No treatment is needed for the device itself; it is programmed by the audiology team and MRI safety must be checked first.",
+  "takeaway": "A tiny wire coil spiralling into the inner ear with a skull receiver is a cochlear implant.",
+  "igOptions": [
+    "A. Aneurysm coil",
+    "B. Cochlear implant",
+    "C. Retained wire"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-21T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Cochlear implant",
+    "aliases": [
+      "cochlear implant electrode",
+      "inner ear implant"
+    ],
+    "symptom": "profound hearing loss treated with a surgically placed hearing device",
+    "hook": "a tight little coil of wire was spiralling into the inner ear like a watch spring",
+    "view": "AP and lateral skull",
+    "keyFindings": "a coiled radiopaque electrode array spiralling into the cochlea with a receiver-stimulator package fixed to the skull behind the ear and a lead running to it",
+    "whatYouSee": "A fine coiled wire spiralling into the cochlea with a small electronic receiver fixed to the skull behind the ear.",
+    "whyItMatters": "It is a surgically implanted device that restores hearing by stimulating the cochlear nerve so recognising it avoids mistaking the coil for a foreign body or lesion.",
+    "treatment": "No treatment is needed for the device itself; it is programmed by the audiology team and MRI safety must be checked first.",
+    "takeaway": "A tiny wire coil spiralling into the inner ear with a skull receiver is a cochlear implant.",
+    "igTitle": "THE COIL IN THE SKULL",
+    "igOptions": [
+      "Aneurysm coil",
+      "Cochlear implant",
+      "Retained wire"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with profound hearing loss treated with a surgically placed hearing device.\n\nThen the X-ray loaded 😭\n\nAnd a tight little coil of wire was spiralling into the inner ear like a watch spring.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Cochlear implant\n\n👀 What you see:\nA fine coiled wire spiralling into the cochlea with a small electronic receiver fixed to the skull behind the ear.\n\n🦴 Why it matters:\nIt is a surgically implanted device that restores hearing by stimulating the cochlear nerve so recognising it avoids mistaking the coil for a foreign body or lesion.\n\n📝 Takeaway:\nA tiny wire coil spiralling into the inner ear with a skull receiver is a cochlear implant.",
+    "igCaption": "Case File 08.\n\nA coil of wire spiralling into bone like a watch spring frozen mid-wind\n\nSomeone decided to put hardware directly inside a human skull\n\nWhat do you see and what does it do\n\nA real condition most people have never seen.\n\nSo before you swipe: A, B, or C?\n\nSwipe for the answer then tell me if you got it.\n\nNew weird X-ray case every single day.\n\nFollow along and you'll read scans like a doctor.\n\nWant the free 5-case starter pack?\n\nComment SAMPLE and I'll send it.\n\nEducational entertainment only. Not medical advice.\n\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
+  }
+}
