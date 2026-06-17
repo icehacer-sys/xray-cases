@@ -20,6 +20,7 @@ import {
   generateIgCaption,
   pickCta,
   imagePrompt,
+  splitForThreads,
 } from "./captions.js";
 import { postImage, reply } from "./threads.js";
 import { publishCarousel } from "./instagram.js";
@@ -215,25 +216,35 @@ async function runPublish(cli: Cli): Promise<void> {
 
     if (answerDue && !stages.answerPostedAt) {
       const answerText = generated.threadsAnswer ?? (await generateThreadsAnswer(c));
+      // Threads caps each reply at 500 chars, so post the answer as a short self-reply
+      // chain (part 1 replies to the challenge, each later part replies to the prior).
+      const answerParts = splitForThreads(answerText);
 
       if (cli.mode === "dry-run") {
-        log(`\n[dry-run] would post ANSWER reply for ${c.folder}:`);
-        log(answerText);
-        log("  Now pin the answer in the app.");
+        log(`\n[dry-run] would post ANSWER reply for ${c.folder} in ${answerParts.length} part(s):`);
+        answerParts.forEach((p, i) => log(`  --- part ${i + 1} (${p.length} chars) ---\n${p}`));
+        log("  Now pin the answer (part 1) in the app.");
       } else {
         if (!stages.threadsPostId) {
           log(`  skip ANSWER for ${c.folder}: missing threadsPostId in state`);
           continue;
         }
-        const answerCommentId = await reply(stages.threadsPostId, answerText);
+        let parentId = stages.threadsPostId;
+        let firstAnswerId = "";
+        for (const part of answerParts) {
+          parentId = await reply(parentId, part);
+          if (!firstAnswerId) firstAnswerId = parentId;
+        }
+        // CTA threads under the LAST answer part so the chain reads in order; the reply
+        // bot detects the public answer from part 1's "Answer:" text independently.
         state.setStages(c.folder, {
-          answerCommentId,
+          answerCommentId: parentId,
           answerPostedAt: new Date().toISOString(),
         });
         c.stages = state.getStages(c.folder);
         saveCase(c);
-        log(`posted ANSWER for ${c.folder} -> ${answerCommentId}`);
-        log("  Now pin the answer in the app.");
+        log(`posted ANSWER for ${c.folder} in ${answerParts.length} part(s) -> first ${firstAnswerId}, last ${parentId}`);
+        log("  Now pin the answer (part 1) in the app.");
       }
       continue;
     }

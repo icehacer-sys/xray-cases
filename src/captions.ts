@@ -65,43 +65,50 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
     takeaway = takeaway ?? draft.takeaway;
   }
 
-  // Each section keeps its heading on its own line above the body (single newline);
-  // sections are separated by a blank line. clampAnswer guarantees the whole thing
-  // stays under config.answerMaxChars so Threads will accept the reply.
+  // Each section keeps its heading on its own line above the body; sections are
+  // separated by a blank line. The publisher splits this into a <=500-char Threads
+  // chain at post time via splitForThreads (Threads caps each post/reply at 500).
   const sections = [
     `👀 What you see:\n${whatYouSee}`,
     `🦴 Why it matters:\n${whyItMatters}`,
     `💊 Treatment:\n${treatment}`,
     `📝 Takeaway:\n${takeaway}`,
   ];
-  return clampAnswer(`Answer: ${c.diagnosis}`, sections);
-}
-
-/** First sentence of a body (used when an answer must be shortened to fit). */
-function firstSentence(s: string): string {
-  const m = s.match(/^.*?[.!?](?=\s|$)/);
-  return (m ? m[0] : s).trim();
+  return [`Answer: ${c.diagnosis}`, ...sections].join("\n\n");
 }
 
 /**
- * Assemble the answer (head + blank-line-separated sections) and guarantee it fits
- * under config.answerMaxChars. If it's too long, trim section bodies to their first
- * sentence from the LAST section toward the first (keeping "what you see" / "why it
- * matters" fullest); as a last resort, hard-cut at a word boundary.
+ * Threads caps each post/reply at config.answerMaxChars (500). A longer answer is posted
+ * as a short self-reply CHAIN: split on blank-line (section) boundaries, packing whole
+ * sections into each part; a single oversized section is hard-wrapped at a word boundary.
  */
-function clampAnswer(head: string, sections: string[]): string {
-  const max = config.answerMaxChars;
-  const assemble = (secs: string[]) => [head, ...secs].join("\n\n");
-  let out = assemble(sections);
-  if (out.length <= max) return out;
-
-  const trimmed = [...sections];
-  for (let i = trimmed.length - 1; i >= 0 && out.length > max; i--) {
-    const [heading, ...rest] = trimmed[i].split("\n");
-    trimmed[i] = `${heading}\n${firstSentence(rest.join("\n"))}`;
-    out = assemble(trimmed);
+export function splitForThreads(text: string, max = config.answerMaxChars): string[] {
+  const blocks = text.split(/\n{2,}/).flatMap((b) => (b.length > max ? hardWrap(b, max) : [b]));
+  const parts: string[] = [];
+  let cur = "";
+  for (const b of blocks) {
+    const candidate = cur ? `${cur}\n\n${b}` : b;
+    if (candidate.length > max && cur) {
+      parts.push(cur);
+      cur = b;
+    } else {
+      cur = candidate;
+    }
   }
-  if (out.length > max) out = out.slice(0, max).replace(/\s\S*$/, "").trimEnd();
+  if (cur) parts.push(cur);
+  return parts.length ? parts : [text.slice(0, max)];
+}
+
+function hardWrap(s: string, max: number): string[] {
+  const out: string[] = [];
+  let r = s.trim();
+  while (r.length > max) {
+    let cut = r.lastIndexOf(" ", max);
+    if (cut <= 0) cut = max;
+    out.push(r.slice(0, cut).trim());
+    r = r.slice(cut).trim();
+  }
+  if (r) out.push(r);
   return out;
 }
 

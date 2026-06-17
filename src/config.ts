@@ -31,9 +31,9 @@ export const config = {
   answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 15),
   ctaDelayMin: num("BOT_CTA_DELAY_MIN", 75),
 
-  // Threads rejects a reply over this many characters, so the assembled answer is
-  // trimmed to stay under it (blank-line spacing included).
-  answerMaxChars: num("BOT_ANSWER_MAX_CHARS", 1000),
+  // Threads caps each post/reply at 500 characters, so a long answer is posted as a
+  // short self-reply chain split on section boundaries (see captions.splitForThreads).
+  answerMaxChars: num("BOT_ANSWER_MAX_CHARS", 500),
 
   activeTz: process.env.BOT_ACTIVE_TZ ?? "Africa/Cairo",
 
