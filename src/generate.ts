@@ -27,7 +27,7 @@ import {
   pickCta,
 } from "./captions.js";
 import { generateXray } from "./openai.js";
-import { renderSlides } from "./slides.js";
+import { generateSlides } from "./slidegen.js";
 import type { Case, Condition } from "./types.js";
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -283,13 +283,14 @@ async function generateOne(
   const dir = join(projectRoot, config.casesDir, folder);
   mkdirSync(dir, { recursive: true });
 
-  // 1. X-ray (the ONLY AI-generated image; slides are rendered).
+  // 1. X-ray (gpt-image-2). In mock mode use a placeholder.
   const xrayPng = mock ? placeholderXray() : await generateXray(xrayPrompt(cond));
   writeFileSync(join(dir, "xray.png"), xrayPng);
 
-  // 2. Assemble the Case, then render the 3 IG slides from the deterministic template.
+  // 2. Assemble the Case, then generate the 3 IG slides with gpt-image-2 (owner chose
+  //    AI slides over the rendered template; the X-ray is composited via image-edit).
   const c = buildCase(cond, folder, number, postAt);
-  const slides = renderSlides(c, cond, xrayPng);
+  const slides = await generateSlides(c, cond, xrayPng);
   writeFileSync(join(dir, "question.png"), slides.question);
   writeFileSync(join(dir, "answer.png"), slides.answer);
   writeFileSync(join(dir, "cta.png"), slides.cta);

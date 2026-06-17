@@ -8,10 +8,6 @@ import type { Case, Condition } from "./types.js";
 
 const LETTERS = ["A", "B", "C"] as const;
 
-function pad2(n?: number): string {
-  return String(n ?? 1).padStart(2, "0");
-}
-
 const STYLE =
   "A 1080x1080 square Instagram slide for a medical 'guess the diagnosis' series. " +
   "Deep navy background (#070b16) with cyan (#22d3ee) accents and clean white sans-serif text. " +
@@ -19,17 +15,16 @@ const STYLE =
   "missing, or misspelled words. Modern, minimal, high-contrast, professional medical look.";
 
 export async function generateSlides(
-  c: Case,
+  _c: Case,
   cond: Condition,
   xrayPng: Buffer,
 ): Promise<{ question: Buffer; answer: Buffer; cta: Buffer }> {
-  const num = pad2(c.number);
   const options = cond.igOptions.map((o, i) => `${LETTERS[i]}  ${o}`).join("\n");
 
   const questionPrompt =
     `${STYLE} Use the PROVIDED X-ray exactly as given (do not redraw, alter, or replace it), ` +
-    `placed centered inside a cyan-bordered scanner frame. Small label top-left "WEIRD X-RAY CASE FILES" ` +
-    `and top-right "CASE ${num}". Bold headline near the top: "${cond.igTitle}". Below the X-ray a cyan ` +
+    `placed centered inside a cyan-bordered scanner frame. Small label top-left "WEIRD X-RAY CASE FILES". ` +
+    `Bold headline near the top: "${cond.igTitle}". Below the X-ray a cyan ` +
     `line "WHAT IS THE DIAGNOSIS?" then three answer options each on its own line:\n${options}\n` +
     `A small pill at the very bottom reads "SWIPE TO REVEAL".`;
 
