@@ -14,14 +14,21 @@ function client(): Anthropic {
 }
 
 const SYSTEM =
-  "You check an image (usually a medical X-ray) for visible EXTERNAL GENITALIA or explicit groin " +
-  "soft-tissue that an automated nudity filter might flag. Bones, the bony pelvis, and faint internal " +
-  "shadows are NOT genitalia and must NOT be reported. Only report a region when external genital " +
-  "soft-tissue is actually visible. Respond with ONLY a JSON object.";
+  "You check an image (usually a medical X-ray) for any visible EXTERNAL GENITAL or GROIN region that an " +
+  "automated nudity filter on Instagram or Threads might flag. On a FRONTAL pelvic, hip, lower-abdomen, or " +
+  "lower-body/leg X-ray the external genital area (the soft-tissue region between the upper thighs and below " +
+  "the pubic bones) is usually visible and MUST be flagged for blurring even when it is faint or only a " +
+  "soft-tissue shadow. Err STRONGLY on the side of flagging: if any groin or genital soft tissue is in frame, " +
+  "flag it. Return present=false ONLY when the image clearly has no groin in frame (for example a skull, " +
+  "chest, hand, arm, or foot X-ray). Respond with ONLY a JSON object.";
 
 const USER = [
-  "Is there visible external genitalia (penis, scrotum, vulva) or explicit groin soft-tissue in this image?",
-  "If yes, give a GENEROUS bounding box around it as fractions of the image width/height (0 to 1).",
+  "Is any external genital or groin region visible in this image (including a faint soft-tissue shadow",
+  "between the upper thighs on a frontal pelvic or lower-body X-ray)?",
+  "If yes, give a TIGHT bounding box covering ONLY the external genital soft tissue (the central bulge",
+  "between the upper thighs, just below the pubic bones) with a small margin. Do NOT extend the box over the",
+  "femurs, hip bones, knees, or lower legs — keep it focused on the genital area so diagnostic bones stay",
+  "sharp. The box is normally small and centered horizontally.",
   'Return ONLY: {"present": boolean, "box": {"x": number, "y": number, "w": number, "h": number}}',
   "x,y = top-left corner; w,h = width,height; all 0-1 fractions. If present is false, box may be zeros.",
 ].join("\n");
@@ -65,25 +72,34 @@ export async function censorXray(png: Buffer): Promise<{ png: Buffer; result: Ce
   if (!parsed?.present || !parsed.box) return { png, result: { censored: false } };
 
   try {
-    const meta = await sharp(png).metadata();
-    const W = meta.width ?? 0;
-    const H = meta.height ?? 0;
-    if (!W || !H) return { png, result: { censored: false } };
-
-    const pad = 0.02; // grow the box slightly for safety
-    const x = Math.max(0, (Number(parsed.box.x) || 0) - pad);
-    const y = Math.max(0, (Number(parsed.box.y) || 0) - pad);
-    const left = Math.round(x * W);
-    const top = Math.round(y * H);
-    const width = Math.min(W - left, Math.round(((Number(parsed.box.w) || 0) + pad * 2) * W));
-    const height = Math.min(H - top, Math.round(((Number(parsed.box.h) || 0) + pad * 2) * H));
-    if (width < 8 || height < 8) return { png, result: { censored: false } };
-
-    const sigma = Math.max(15, Math.round(width / 10));
-    const region = await sharp(png).extract({ left, top, width, height }).blur(sigma).toBuffer();
-    const out = await sharp(png).composite([{ input: region, left, top }]).png().toBuffer();
-    return { png: out, result: { censored: true, box: { x, y, w: width / W, h: height / H } } };
+    const pad = 0.035; // grow the detected box for safety against imprecise model coordinates
+    const box = {
+      x: Math.max(0, (Number(parsed.box.x) || 0) - pad),
+      y: Math.max(0, (Number(parsed.box.y) || 0) - pad),
+      w: (Number(parsed.box.w) || 0) + pad * 2,
+      h: (Number(parsed.box.h) || 0) + pad * 2,
+    };
+    const out = await blurBox(png, box);
+    if (out === png) return { png, result: { censored: false } };
+    return { png: out, result: { censored: true, box } };
   } catch {
     return { png, result: { censored: false } }; // any sharp error → leave unchanged
   }
+}
+
+/** Heavily blur a normalized [0-1] box of a PNG (no detection). Returns the input unchanged
+ *  if the box is degenerate. Exported so a known region can be censored directly. */
+export async function blurBox(png: Buffer, box: { x: number; y: number; w: number; h: number }): Promise<Buffer> {
+  const meta = await sharp(png).metadata();
+  const W = meta.width ?? 0;
+  const H = meta.height ?? 0;
+  if (!W || !H) return png;
+  const left = Math.max(0, Math.round(box.x * W));
+  const top = Math.max(0, Math.round(box.y * H));
+  const width = Math.min(W - left, Math.round(box.w * W));
+  const height = Math.min(H - top, Math.round(box.h * H));
+  if (width < 8 || height < 8) return png;
+  const sigma = Math.max(18, Math.round(width / 8));
+  const region = await sharp(png).extract({ left, top, width, height }).blur(sigma).toBuffer();
+  return sharp(png).composite([{ input: region, left, top }]).png().toBuffer();
 }

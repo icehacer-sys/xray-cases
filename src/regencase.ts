@@ -10,7 +10,7 @@ import { fileURLToPath } from "node:url";
 import { config } from "./config.js";
 import { generateXray } from "./openai.js";
 import { generateSlides } from "./slidegen.js";
-import { censorXray } from "./censor.js";
+import { censorXray, blurBox } from "./censor.js";
 import type { Case, Condition } from "./types.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -100,7 +100,18 @@ if (mode === "xray") {
     slidesBlurred = slidesBlurred || r.result.censored;
   }
   console.log(`censored ${folder}: xray ${x.result.censored ? "blurred" : "clean"}, slides ${slidesBlurred ? "blurred" : "clean"}`);
+} else if (mode === "blurbox") {
+  // Explicit blur of a known normalized box on xray.png (fallback when auto-detection misplaces it).
+  //   npx tsx src/regencase.ts <folder> blurbox <x> <y> <w> <h>   (each 0-1)
+  const [x, y, w, h] = process.argv.slice(4).map(Number);
+  if ([x, y, w, h].some((v) => !Number.isFinite(v))) {
+    console.error("blurbox needs: x y w h (each a 0-1 fraction)");
+    process.exit(1);
+  }
+  const out = await blurBox(readFileSync(join(dir, "xray.png")), { x, y, w, h });
+  writeFileSync(join(dir, "xray.png"), out);
+  console.log(`blurred explicit box [x=${x} y=${y} w=${w} h=${h}] on ${folder} xray.png`);
 } else {
-  console.error(`unknown mode "${mode}" (use xray|slides|censor)`);
+  console.error(`unknown mode "${mode}" (use xray|slides|censor|blurbox)`);
   process.exit(1);
 }

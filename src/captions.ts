@@ -142,6 +142,9 @@ export async function generateIgCaption(c: Case): Promise<string> {
 
   // Owner-agreed IG format: a blank line between EVERY line, with a few tasteful emojis for
   // character (one per structural line; the dynamic hook lines and the disclaimer stay clean).
+  // Instagram COLLAPSES empty lines, so a plain "\n\n" loses the spacing on IG; we join with a
+  // U+2800 (Braille blank) spacer line so the blank line survives. Threads renders it fine too.
+  const SPACER = "\n⠀\n";
   return [
     `Case File ${pad2(c.number)} 🩻`,
     ...hookLines,
@@ -154,7 +157,7 @@ export async function generateIgCaption(c: Case): Promise<string> {
     `Comment SAMPLE and I'll send it your way 📩`,
     `Educational entertainment only. Not medical advice.`,
     `#radiology #xray #spotthediagnosis #medicalmystery #medstudent`,
-  ].join("\n\n");
+  ].join(SPACER);
 }
 
 async function draftIgHook(c: Case): Promise<string> {
