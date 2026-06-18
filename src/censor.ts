@@ -107,7 +107,7 @@ export async function blurBox(png: Buffer, box: { x: number; y: number; w: numbe
     `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">` +
       `<defs><radialGradient id="g" cx="50%" cy="50%" r="50%">` +
       `<stop offset="0%" stop-color="#fff" stop-opacity="1"/>` +
-      `<stop offset="58%" stop-color="#fff" stop-opacity="1"/>` +
+      `<stop offset="80%" stop-color="#fff" stop-opacity="1"/>` +
       `<stop offset="100%" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>` +
       `<rect width="${width}" height="${height}" fill="url(#g)"/></svg>`,
   );
