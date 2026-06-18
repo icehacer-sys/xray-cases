@@ -1,7 +1,10 @@
 [
   {
     "diagnosis": "Retrosternal goiter",
-    "aliases": ["substernal goitre", "retrosternal thyroid"],
+    "aliases": [
+      "substernal goitre",
+      "retrosternal thyroid"
+    ],
     "symptom": "a slowly enlarging neck with breathlessness and trouble swallowing when lying flat",
     "hook": "a big soft tissue mass was pushing down from the neck into the top of the chest and shoving the windpipe sideways",
     "view": "PA chest",
@@ -11,13 +14,19 @@
     "treatment": "Treatment is surgical removal when it compresses nearby structures or keeps growing.",
     "takeaway": "A neck mass diving behind the breastbone and shoving the trachea is a retrosternal goiter.",
     "igTitle": "THE MASS THAT DIVES",
-    "igOptions": ["Lymphoma", "Retrosternal goiter", "Aortic aneurysm"],
+    "igOptions": [
+      "Lymphoma",
+      "Retrosternal goiter",
+      "Aortic aneurysm"
+    ],
     "igCorrect": "B",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Massive ovarian cyst",
-    "aliases": ["giant ovarian cyst"],
+    "aliases": [
+      "giant ovarian cyst"
+    ],
     "symptom": "a steadily swelling abdomen mistaken for weight gain or pregnancy",
     "hook": "a single enormous fluid filled balloon was filling almost the whole abdomen and pushing the bowel aside",
     "view": "supine abdomen",
@@ -27,13 +36,20 @@
     "treatment": "Treatment is surgical removal with histology to exclude malignancy.",
     "takeaway": "A giant smooth mass filling the abdomen and shoving bowel to the sides is a massive ovarian cyst.",
     "igTitle": "THE BALLOON INSIDE",
-    "igOptions": ["Massive ovarian cyst", "Ascites", "Bladder distension"],
+    "igOptions": [
+      "Massive ovarian cyst",
+      "Ascites",
+      "Bladder distension"
+    ],
     "igCorrect": "A",
     "used": false
   },
   {
     "diagnosis": "Pycnodysostosis",
-    "aliases": ["pyknodysostosis", "Toulouse-Lautrec syndrome"],
+    "aliases": [
+      "pyknodysostosis",
+      "Toulouse-Lautrec syndrome"
+    ],
     "symptom": "short stature with bones that fractured easily and a small receding jaw",
     "hook": "the bones were strikingly dense and white yet the fingertips looked dissolved away at the very tips",
     "view": "AP hand and skull",
@@ -43,13 +59,20 @@
     "treatment": "Care is supportive with fracture management and dental and orthopaedic follow up.",
     "takeaway": "Dense brittle bones with dissolved fingertips and a small jaw point to pycnodysostosis.",
     "igTitle": "DENSE BUT BRITTLE",
-    "igOptions": ["Osteopetrosis", "Pycnodysostosis", "Osteogenesis imperfecta"],
+    "igOptions": [
+      "Osteopetrosis",
+      "Pycnodysostosis",
+      "Osteogenesis imperfecta"
+    ],
     "igCorrect": "B",
     "used": false
   },
   {
     "diagnosis": "Gardner syndrome",
-    "aliases": ["Gardner syndrome osteomas", "familial adenomatous polyposis with osteomas"],
+    "aliases": [
+      "Gardner syndrome osteomas",
+      "familial adenomatous polyposis with osteomas"
+    ],
     "symptom": "multiple hard painless lumps on the skull and jaw with a strong family history of bowel polyps",
     "hook": "several dense bony knobs were studded across the skull and jaw like little stones",
     "view": "skull and facial bones",
@@ -59,13 +82,19 @@
     "treatment": "The osteomas are removed only if symptomatic but the key step is urgent colorectal screening and management of the polyps.",
     "takeaway": "Multiple bony knobs on the skull and jaw can be Gardner syndrome which demands bowel cancer screening.",
     "igTitle": "STONES ON THE SKULL",
-    "igOptions": ["Fibrous dysplasia", "Gardner syndrome", "Multiple myeloma"],
+    "igOptions": [
+      "Fibrous dysplasia",
+      "Gardner syndrome",
+      "Multiple myeloma"
+    ],
     "igCorrect": "B",
     "used": false
   },
   {
     "diagnosis": "Caffey disease",
-    "aliases": ["infantile cortical hyperostosis"],
+    "aliases": [
+      "infantile cortical hyperostosis"
+    ],
     "symptom": "an irritable infant with hard tender swelling along the jaw and limbs",
     "hook": "the baby's jaw and long bones were wrapped in thick new layers of bone like tree bark",
     "view": "mandible and long bones",
@@ -75,13 +104,20 @@
     "treatment": "It usually settles on its own and anti inflammatories help symptoms in severe cases.",
     "takeaway": "Thick new bone on the jaw and limbs of a young baby is Caffey disease.",
     "igTitle": "THE BABY IN BARK",
-    "igOptions": ["Caffey disease", "Osteomyelitis", "Scurvy"],
+    "igOptions": [
+      "Caffey disease",
+      "Osteomyelitis",
+      "Scurvy"
+    ],
     "igCorrect": "A",
     "used": false
   },
   {
     "diagnosis": "Engelmann disease",
-    "aliases": ["progressive diaphyseal dysplasia", "Camurati-Engelmann disease"],
+    "aliases": [
+      "progressive diaphyseal dysplasia",
+      "Camurati-Engelmann disease"
+    ],
     "symptom": "leg pain a waddling walk and weak muscles in a child or young adult",
     "hook": "the shafts of the long bones were thickened and dense while the ends stayed normal",
     "view": "AP long bones",
@@ -91,13 +127,20 @@
     "treatment": "Treatment is supportive and steroids are used for bone pain in some patients.",
     "takeaway": "Dense thickened long bone shafts with normal ends point to Engelmann disease.",
     "igTitle": "THICK IN THE MIDDLE",
-    "igOptions": ["Engelmann disease", "Paget's disease", "Osteopetrosis"],
+    "igOptions": [
+      "Engelmann disease",
+      "Paget's disease",
+      "Osteopetrosis"
+    ],
     "igCorrect": "A",
     "used": false
   },
   {
     "diagnosis": "Hand-Schuller-Christian disease",
-    "aliases": ["Langerhans cell histiocytosis", "chronic disseminated histiocytosis"],
+    "aliases": [
+      "Langerhans cell histiocytosis",
+      "chronic disseminated histiocytosis"
+    ],
     "symptom": "a child with skull lumps excessive thirst and bulging eyes",
     "hook": "the skull had several map like holes punched clean through it with sharp edges",
     "view": "lateral skull",
@@ -107,13 +150,20 @@
     "treatment": "Treatment ranges from observation to chemotherapy depending on how many systems are involved.",
     "takeaway": "Map like punched out skull holes in a thirsty child suggest Hand-Schuller-Christian disease.",
     "igTitle": "THE MAP ON THE SKULL",
-    "igOptions": ["Multiple myeloma", "Hand-Schuller-Christian disease", "Bone metastases"],
+    "igOptions": [
+      "Multiple myeloma",
+      "Hand-Schuller-Christian disease",
+      "Bone metastases"
+    ],
     "igCorrect": "B",
     "used": false
   },
   {
     "diagnosis": "Sclerosteosis",
-    "aliases": ["Van Buchem disease", "cranial hyperostosis"],
+    "aliases": [
+      "Van Buchem disease",
+      "cranial hyperostosis"
+    ],
     "symptom": "a tall heavy boned person with facial swelling and progressive facial weakness and hearing loss",
     "hook": "every bone looked massively overgrown and dense especially the skull which had thickened enormously",
     "view": "skull and tubular bones",
@@ -123,13 +173,20 @@
     "treatment": "Care is supportive with surgery to decompress trapped nerves or the brainstem when needed.",
     "takeaway": "A massively dense overgrown skull with trapped facial nerves points to sclerosteosis.",
     "igTitle": "TOO MUCH BONE",
-    "igOptions": ["Sclerosteosis", "Acromegaly", "Paget's disease"],
+    "igOptions": [
+      "Sclerosteosis",
+      "Acromegaly",
+      "Paget's disease"
+    ],
     "igCorrect": "A",
     "used": false
   },
   {
     "diagnosis": "Bone sarcoidosis",
-    "aliases": ["sarcoid dactylitis", "lacy phalanges"],
+    "aliases": [
+      "sarcoid dactylitis",
+      "lacy phalanges"
+    ],
     "symptom": "swollen sausage like fingers in someone with known lung sarcoidosis",
     "hook": "the small bones of the fingers had a delicate lace like honeycomb pattern eaten into them",
     "view": "PA hand",
@@ -139,13 +196,19 @@
     "treatment": "Treatment is of the underlying sarcoidosis with steroids or other immune therapy when active.",
     "takeaway": "A lace like honeycomb pattern in swollen fingers points to bone sarcoidosis.",
     "igTitle": "THE LACE IN THE BONES",
-    "igOptions": ["Rheumatoid arthritis", "Bone sarcoidosis", "Gout"],
+    "igOptions": [
+      "Rheumatoid arthritis",
+      "Bone sarcoidosis",
+      "Gout"
+    ],
     "igCorrect": "B",
     "used": false
   },
   {
     "diagnosis": "Proteus syndrome",
-    "aliases": ["overgrowth syndrome"],
+    "aliases": [
+      "overgrowth syndrome"
+    ],
     "symptom": "progressive lopsided overgrowth of part of the body since childhood with huge distorted feet",
     "hook": "one side of the body and the feet had overgrown grotesquely with massively enlarged bones",
     "view": "feet and affected limb",
@@ -155,7 +218,11 @@
     "treatment": "Care is supportive and orthopaedic with surgery to debulk or correct disabling overgrowth.",
     "takeaway": "Progressive lopsided overgrowth with giant distorted bones and digits suggests Proteus syndrome.",
     "igTitle": "THE OVERGROWTH",
-    "igOptions": ["Proteus syndrome", "Neurofibromatosis", "Klippel-Trenaunay syndrome"],
+    "igOptions": [
+      "Proteus syndrome",
+      "Neurofibromatosis",
+      "Klippel-Trenaunay syndrome"
+    ],
     "igCorrect": "A",
     "used": false
   },
