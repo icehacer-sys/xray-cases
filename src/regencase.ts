@@ -1,0 +1,87 @@
+// One-off maintenance: regenerate the X-ray and/or slides for an EXISTING queued case,
+// keeping its case.json + captions. Used to replace a weak or defective image. Always
+// eyeball the new X-ray before rendering slides / posting.
+//   npx tsx src/regencase.ts <folder> xray     regenerate just xray.png (hardened prompt + per-case emphasis)
+//   npx tsx src/regencase.ts <folder> slides   re-render the 3 slides from the current xray.png
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+import { config } from "./config.js";
+import { generateXray } from "./openai.js";
+import { generateSlides } from "./slidegen.js";
+import type { Case, Condition } from "./types.js";
+
+const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const folder = process.argv[2];
+const mode = (process.argv[3] ?? "xray").toLowerCase(); // "xray" | "slides"
+if (!folder) {
+  console.error("usage: regencase <folder> <xray|slides>");
+  process.exit(1);
+}
+
+// Per-case prompt emphasis to strengthen the weak diagnostic feature the QA flagged.
+const EMPHASIS: Record<string, string> = {
+  "00005-achondroplasia":
+    "Make the diagnosis unmistakable: show the classic achondroplasia pelvis with squared short iliac wings, " +
+    "a champagne-glass pelvic inlet, narrow sacrosciatic notches, and horizontal flat acetabular roofs. Keep " +
+    "any overlying bowel gas minimal and clean with no smudged or blotchy texture.",
+  "00006-cochlear-implant":
+    "Make the cochlear implant unmistakable: a small round receiver-stimulator package fixed to the skull just " +
+    "behind the ear, connected by a thin lead to a fine, tightly COILED electrode array spiralling into the " +
+    "cochlea (the classic 'watch-spring' coil in the petrous temporal bone). Render that coil crisply and " +
+    "clearly. Exactly ONE implant.",
+  "00007-gallstone-ileus":
+    "Make the diagnosis unmistakable via the Rigler triad: multiple dilated gas-filled small-bowel loops " +
+    "(obstruction), branching lucent gas in the biliary tree (pneumobilia) in the right upper quadrant, and a " +
+    "single well-defined laminated ectopic gallstone in the right lower quadrant. The gallstone must be clearly visible.",
+};
+
+const dir = join(root, config.casesDir, folder);
+const casePath = join(dir, "case.json");
+if (!existsSync(casePath)) {
+  console.error(`no case.json at ${casePath}`);
+  process.exit(1);
+}
+const c = JSON.parse(readFileSync(casePath, "utf8")) as Case;
+const cond = c.condition as Condition | undefined;
+if (!cond) {
+  console.error(`case ${folder} has no .condition to rebuild from`);
+  process.exit(1);
+}
+
+function xrayPrompt(): string {
+  const lines = [
+    `Create a realistic, de-identified ${cond!.view} X-ray for a medical diagnosis challenge.`,
+    ``,
+    `Show classic ${cond!.diagnosis}: ${cond!.keyFindings}.`,
+    ``,
+    `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs. Do NOT`,
+    `duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired structure`,
+    `unless the pathology only changes a structure's position, shape, or density. Represent the pathology as a`,
+    `change to a SINGLE structure, never an added duplicate. No melted, smeared, doubled, or garbled bone.`,
+    ``,
+    `Prioritize clinical realism over symmetry. A genuine abnormal finding, not a perfect textbook diagram.`,
+    `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain. Diagnostic-quality`,
+    `radiograph, authentic grayscale contrast, natural X-ray grain, no cinematic glow, no artificial`,
+    `sharpening, no labels, arrows, or annotations. De-identified. No identifiers, branding, or watermark.`,
+  ];
+  const emph = EMPHASIS[folder];
+  if (emph) lines.push(``, emph);
+  return lines.join("\n");
+}
+
+if (mode === "xray") {
+  const png = await generateXray(xrayPrompt());
+  writeFileSync(join(dir, "xray.png"), png);
+  console.log(`regenerated xray.png for ${folder} (${cond.diagnosis}) — REVIEW it before rendering slides`);
+} else if (mode === "slides") {
+  const xrayPng = readFileSync(join(dir, "xray.png"));
+  const slides = await generateSlides(c, cond, xrayPng);
+  writeFileSync(join(dir, "question.png"), slides.question);
+  writeFileSync(join(dir, "answer.png"), slides.answer);
+  writeFileSync(join(dir, "cta.png"), slides.cta);
+  console.log(`re-rendered 3 slides for ${folder} (${cond.diagnosis})`);
+} else {
+  console.error(`unknown mode "${mode}" (use xray|slides)`);
+  process.exit(1);
+}
