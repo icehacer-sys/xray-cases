@@ -43,6 +43,12 @@ export interface Case {
    *  you swap in your own X-ray (the manual workflow). */
   condition?: Condition;
 
+  /** Set by the generator's X-ray anatomy-QA gate when the image fails verification after
+   *  all retries. The publisher HARD-BLOCKS these (no auto-post, even with BOT_AUTO_APPROVE)
+   *  until a human regenerates the X-ray and clears the flag. */
+  needsReview?: boolean;
+  verifyDefects?: string[];
+
   // --- filled by the tool ---
   generated?: {
     threadsCaption?: string;

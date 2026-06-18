@@ -143,6 +143,12 @@ async function runPublish(cli: Cli): Promise<void> {
       // (unless BOT_AUTO_APPROVE is on). Hand-made cases (source !== "generated") are
       // exempt, matching the documented manual workflow. Skip without advancing any
       // stage so a later run picks it up once approved.
+      // Hard block: a generated X-ray that failed anatomy QA must NOT auto-post, even with
+      // BOT_AUTO_APPROVE on. The owner regenerates the image and clears needsReview.
+      if (c.needsReview === true) {
+        log(`needs manual review (failed X-ray QA): ${c.folder} — ${(c.verifyDefects ?? []).join("; ")}`);
+        continue;
+      }
       if (c.source === "generated" && !(c.approved === true || config.autoApprove)) {
         log(`awaiting approval: ${c.folder}`);
         continue;

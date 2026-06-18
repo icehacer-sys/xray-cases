@@ -28,6 +28,7 @@ import {
 } from "./captions.js";
 import { generateXray } from "./openai.js";
 import { generateSlides } from "./slidegen.js";
+import { verifyXray, type XrayVerdict } from "./verify.js";
 import type { Case, Condition } from "./types.js";
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -202,11 +203,18 @@ function placeholderXray(): Buffer {
 // (captions.imagePrompt-style).
 // ---------------------------------------------------------------------------
 
-function xrayPrompt(cond: Condition): string {
-  return [
+function xrayPrompt(cond: Condition, avoid: string[] = []): string {
+  const lines = [
     `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
     ``,
     `Show classic ${cond.diagnosis}: ${cond.keyFindings}.`,
+    ``,
+    `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs.`,
+    `Do NOT duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired`,
+    `structure (one scapula and one clavicle per side, the normal count of ribs, fingers, and vertebrae)`,
+    `unless the pathology itself only changes a structure's position, shape, or density. Represent the`,
+    `pathology as a change to a SINGLE structure, never as an added duplicate. No melted, smeared, doubled,`,
+    `or garbled bone.`,
     ``,
     `Prioritize clinical realism over symmetry. Make it look like a genuine abnormal finding,`,
     `not a perfect textbook diagram.`,
@@ -218,7 +226,11 @@ function xrayPrompt(cond: Condition): string {
     ``,
     `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
     `No watermark.`,
-  ].join("\n");
+  ];
+  if (avoid.length) {
+    lines.push(``, `Avoid these specific errors from a previous attempt: ${avoid.slice(0, 4).join("; ")}.`);
+  }
+  return lines.join("\n");
 }
 
 // ---------------------------------------------------------------------------
@@ -283,17 +295,43 @@ async function generateOne(
   const dir = join(projectRoot, config.casesDir, folder);
   mkdirSync(dir, { recursive: true });
 
-  // 1. X-ray (gpt-image-2). In mock mode use a placeholder.
-  const xrayPng = mock ? placeholderXray() : await generateXray(xrayPrompt(cond));
+  // 1. X-ray (gpt-image-2) behind the anatomy-QA gate. Regenerate on a critical AI artifact
+  //    (duplicated/extra bones, wrong body part, melted bone) up to xrayMaxAttempts, feeding
+  //    the detected defects back into the prompt to steer away from them. A persistent failure
+  //    is queued with needsReview so the publisher never auto-posts a defective image.
+  let xrayPng = mock ? placeholderXray() : await generateXray(xrayPrompt(cond));
+  let verdict: XrayVerdict | undefined;
+  if (!mock && config.xrayVerify) {
+    const avoid: string[] = [];
+    for (let attempt = 1; attempt <= config.xrayMaxAttempts; attempt++) {
+      verdict = await verifyXray(xrayPng, cond);
+      if (verdict.ok) {
+        if (attempt > 1) log(`    X-ray QA passed on attempt ${attempt}.`);
+        break;
+      }
+      log(`    ⚠ X-ray QA rejected (attempt ${attempt}/${config.xrayMaxAttempts}, ${verdict.severity}): ${verdict.defects.join(" | ")}`);
+      avoid.push(...verdict.defects);
+      if (attempt < config.xrayMaxAttempts) xrayPng = await generateXray(xrayPrompt(cond, avoid));
+    }
+  }
   writeFileSync(join(dir, "xray.png"), xrayPng);
 
-  // 2. Assemble the Case, then generate the 3 IG slides with gpt-image-2 (owner chose
-  //    AI slides over the rendered template; the X-ray is composited via image-edit).
+  // 2. Assemble the Case. If the X-ray failed QA after all retries, flag needsReview and
+  //    SKIP slide rendering (the slides would just embed the bad image, and it cannot post
+  //    until the owner regenerates the X-ray and clears the flag).
   const c = buildCase(cond, folder, number, postAt);
-  const slides = await generateSlides(c, cond, xrayPng);
-  writeFileSync(join(dir, "question.png"), slides.question);
-  writeFileSync(join(dir, "answer.png"), slides.answer);
-  writeFileSync(join(dir, "cta.png"), slides.cta);
+  const failed = !!(verdict && !verdict.ok);
+  if (failed) {
+    c.needsReview = true;
+    c.verifyDefects = verdict!.defects;
+    log(`    ⛔ ${cond.diagnosis} failed X-ray QA after ${config.xrayMaxAttempts} attempts — queued with needsReview (will NOT auto-post); slides skipped.`);
+  } else {
+    // 3 IG slides with gpt-image-2 (the X-ray is composited via image-edit).
+    const slides = await generateSlides(c, cond, xrayPng);
+    writeFileSync(join(dir, "question.png"), slides.question);
+    writeFileSync(join(dir, "answer.png"), slides.answer);
+    writeFileSync(join(dir, "cta.png"), slides.cta);
+  }
 
   // 3. Pre-draft captions, then persist the case (approved:false, source:"generated").
   await predraftCaptions(c);

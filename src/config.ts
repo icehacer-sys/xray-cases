@@ -66,6 +66,15 @@ export const config = {
   // Skip the human review gate and post generated cases automatically. Off by default
   // (generated medical images should be eyeballed before they publish).
   autoApprove: (process.env.BOT_AUTO_APPROVE ?? "off").toLowerCase() === "on",
+
+  // X-ray anatomy QA. Before a generated case is queued, a Claude vision pass checks the
+  // gpt-image-2 X-ray for AI artifacts (duplicated/extra bones, wrong body part, melted
+  // bone). A failed X-ray is regenerated up to xrayMaxAttempts; if it still fails it is
+  // queued with needsReview so it NEVER auto-posts. Motivated by the duplicated-scapula
+  // Sprengel incident. Set BOT_XRAY_VERIFY=off to disable (not recommended).
+  xrayVerify: (process.env.BOT_XRAY_VERIFY ?? "on").toLowerCase() !== "off",
+  xrayVerifyModel: process.env.BOT_XRAY_VERIFY_MODEL ?? process.env.BOT_MODEL ?? "claude-sonnet-4-6",
+  xrayMaxAttempts: num("BOT_XRAY_MAX_ATTEMPTS", 3),
   // 1080x1080 slide canvas.
   slideSize: num("BOT_SLIDE_SIZE", 1080),
 
