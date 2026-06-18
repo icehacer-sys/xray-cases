@@ -103,3 +103,24 @@ export async function blurBox(png: Buffer, box: { x: number; y: number; w: numbe
   const region = await sharp(png).extract({ left, top, width, height }).blur(sigma).toBuffer();
   return sharp(png).composite([{ input: region, left, top }]).png().toBuffer();
 }
+
+/** Blur genitalia repeatedly until a detection pass finds none (compensates for imprecise
+ *  single-shot box placement). Returns the censored PNG, whether anything was blurred, and
+ *  whether genitalia are STILL detected after maxPasses (caller should hold those for review
+ *  so exposed genitalia can never auto-post). */
+export async function censorUntilClean(
+  png: Buffer,
+  maxPasses = 3,
+): Promise<{ png: Buffer; blurred: boolean; stillExposed: boolean }> {
+  let cur = png;
+  let blurred = false;
+  let lastDetected = false;
+  for (let i = 0; i < maxPasses; i++) {
+    const r = await censorXray(cur);
+    lastDetected = r.result.censored;
+    if (lastDetected) blurred = true;
+    cur = r.png;
+    if (!lastDetected) break; // a pass found nothing → clean
+  }
+  return { png: cur, blurred, stillExposed: lastDetected };
+}

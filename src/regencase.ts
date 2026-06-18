@@ -101,16 +101,19 @@ if (mode === "xray") {
   }
   console.log(`censored ${folder}: xray ${x.result.censored ? "blurred" : "clean"}, slides ${slidesBlurred ? "blurred" : "clean"}`);
 } else if (mode === "blurbox") {
-  // Explicit blur of a known normalized box on xray.png (fallback when auto-detection misplaces it).
-  //   npx tsx src/regencase.ts <folder> blurbox <x> <y> <w> <h>   (each 0-1)
-  const [x, y, w, h] = process.argv.slice(4).map(Number);
-  if ([x, y, w, h].some((v) => !Number.isFinite(v))) {
-    console.error("blurbox needs: x y w h (each a 0-1 fraction)");
+  // Explicit tight blur of a known normalized box on a specific image (the reliable path: blur
+  // the FINAL image directly, never via a gpt re-composite which moves/restores the region).
+  //   npx tsx src/regencase.ts <folder> blurbox <file: xray|question|answer|cta> <x> <y> <w> <h>  (0-1)
+  const file = process.argv[4];
+  const [x, y, w, h] = process.argv.slice(5).map(Number);
+  if (!file || [x, y, w, h].some((v) => !Number.isFinite(v))) {
+    console.error("blurbox needs: <file: xray|question|answer|cta> x y w h (each a 0-1 fraction)");
     process.exit(1);
   }
-  const out = await blurBox(readFileSync(join(dir, "xray.png")), { x, y, w, h });
-  writeFileSync(join(dir, "xray.png"), out);
-  console.log(`blurred explicit box [x=${x} y=${y} w=${w} h=${h}] on ${folder} xray.png`);
+  const fp = join(dir, file.endsWith(".png") ? file : `${file}.png`);
+  const out = await blurBox(readFileSync(fp), { x, y, w, h });
+  writeFileSync(fp, out);
+  console.log(`blurred box [x=${x} y=${y} w=${w} h=${h}] on ${folder}/${file}`);
 } else {
   console.error(`unknown mode "${mode}" (use xray|slides|censor|blurbox)`);
   process.exit(1);
