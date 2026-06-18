@@ -74,20 +74,19 @@ function xrayPrompt(): string {
 }
 
 if (mode === "xray") {
-  let png = await generateXray(xrayPrompt());
-  const r = await censorXray(png);
-  png = r.png;
+  // Generate a CLEAN X-ray (no auto-censor — auto-placement is unreliable; blur manually
+  // afterward with `grid` + `blurbox`).
+  const png = await generateXray(xrayPrompt());
   writeFileSync(join(dir, "xray.png"), png);
-  console.log(`regenerated xray.png for ${folder} (${cond.diagnosis})${r.result.censored ? " [genital region blurred]" : ""} — REVIEW it before rendering slides`);
+  console.log(`regenerated CLEAN xray.png for ${folder} (${cond.diagnosis}) — grid + blurbox the genitals before posting`);
 } else if (mode === "slides") {
+  // Render CLEAN slides from the current xray.png (blur genitals afterward with grid + blurbox).
   const xrayPng = readFileSync(join(dir, "xray.png"));
   const slides = await generateSlides(c, cond, xrayPng);
-  slides.question = (await censorXray(slides.question)).png;
-  slides.answer = (await censorXray(slides.answer)).png;
   writeFileSync(join(dir, "question.png"), slides.question);
   writeFileSync(join(dir, "answer.png"), slides.answer);
   writeFileSync(join(dir, "cta.png"), slides.cta);
-  console.log(`re-rendered 3 slides for ${folder} (${cond.diagnosis})`);
+  console.log(`re-rendered 3 CLEAN slides for ${folder} (${cond.diagnosis}) — grid + blurbox the genitals before posting`);
 } else if (mode === "censor") {
   // Blur genitalia on the existing images in place (no regeneration).
   const x = await censorXray(readFileSync(join(dir, "xray.png")));

@@ -99,9 +99,20 @@ export async function blurBox(png: Buffer, box: { x: number; y: number; w: numbe
   const width = Math.min(W - left, Math.round(box.w * W));
   const height = Math.min(H - top, Math.round(box.h * H));
   if (width < 8 || height < 8) return png;
-  const sigma = Math.max(18, Math.round(width / 8));
-  const region = await sharp(png).extract({ left, top, width, height }).blur(sigma).toBuffer();
-  return sharp(png).composite([{ input: region, left, top }]).png().toBuffer();
+  const sigma = Math.max(18, Math.round(Math.min(width, height) / 6));
+  // Blur the region, then feather its edges with a radial alpha mask so it reads as a soft
+  // smudge rather than a hard rectangle.
+  const blurred = await sharp(png).extract({ left, top, width, height }).blur(sigma).ensureAlpha().toBuffer();
+  const mask = Buffer.from(
+    `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">` +
+      `<defs><radialGradient id="g" cx="50%" cy="50%" r="50%">` +
+      `<stop offset="0%" stop-color="#fff" stop-opacity="1"/>` +
+      `<stop offset="58%" stop-color="#fff" stop-opacity="1"/>` +
+      `<stop offset="100%" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>` +
+      `<rect width="${width}" height="${height}" fill="url(#g)"/></svg>`,
+  );
+  const feathered = await sharp(blurred).composite([{ input: mask, blend: "dest-in" }]).png().toBuffer();
+  return sharp(png).composite([{ input: feathered, left, top }]).png().toBuffer();
 }
 
 /** Blur genitalia repeatedly until a detection pass finds none (compensates for imprecise
