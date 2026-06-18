@@ -243,7 +243,7 @@ async function runPublish(cli: Cli): Promise<void> {
     const ctaDue =
       now.getTime() >= challengePostedAt.getTime() + config.ctaDelayMin * MINUTE_MS;
 
-    if (ctaDue && stages.answerPostedAt && !stages.ctaPostedAt) {
+    if (config.ctaReply && ctaDue && stages.answerPostedAt && !stages.ctaPostedAt) {
       const ctaText = generated.ctaText ?? pickCta(c).text;
 
       if (cli.mode === "dry-run") {

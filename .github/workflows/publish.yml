@@ -59,6 +59,7 @@ jobs:
       BOT_TOPIC_TAG: "Med Threads" # topic tag added to every challenge post
       BOT_ANSWER_DELAY_MIN: "15" # answer posts 15 min after the challenge
       BOT_CTA_DELAY_MIN: "75" # CTA posts 60 min after the answer (75 after the challenge)
+      BOT_CTA_REPLY: "off" # owner posts the CTA manually so the Gumroad cover preview shows; bot does not auto-reply the CTA
       BOT_MODEL: "claude-sonnet-4-6"
     steps:
       - uses: actions/checkout@v4

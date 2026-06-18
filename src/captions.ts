@@ -206,9 +206,24 @@ const CTA_TEXT: Record<CtaKey, string> = {
     `And if you'd like to support the page I'd genuinely appreciate it 🙏`,
     `xray.mednoteslab.com`,
   ].join("\n\n"),
+
+  spotit: [
+    `If these weird X-rays keep pulling you in.`,
+    `I put 50 of the strangest ones ever into a book.`,
+    `Take your guess then flip for the answer and the true story behind each one.`,
+    `spot.mednoteslab.com`,
+  ].join("\n\n"),
+
+  collection: [
+    `If you cannot get enough of these weird X-rays.`,
+    `I bundled every collection into one library.`,
+    `Volume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.`,
+    `Over a hundred strange real X-rays with all the answers.`,
+    `mednoteslab.gumroad.com/l/collection`,
+  ].join("\n\n"),
 };
 
-const CTA_ROTATION: CtaKey[] = ["vol2", "rare", "vol1"];
+const CTA_ROTATION: CtaKey[] = ["spotit", "collection", "rare", "vol2", "vol1"];
 
 export function pickCta(c: Case): { key: CtaKey; text: string } {
   if (c.cta) {

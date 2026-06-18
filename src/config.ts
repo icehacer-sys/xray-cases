@@ -40,6 +40,11 @@ export const config = {
   // Cross-post to Instagram too (Threads always posts).
   instagram: (process.env.BOT_INSTAGRAM ?? "on").toLowerCase() !== "off",
 
+  // Auto-post the CTA as a reply under the pinned answer. Off by default: the owner posts
+  // the CTA manually so the Gumroad link renders its cover-image preview (a bot sub-reply
+  // does not show the preview). Stage 3 is skipped entirely when this is off.
+  ctaReply: (process.env.BOT_CTA_REPLY ?? "off").toLowerCase() === "on",
+
   // Topic tag added to the Threads challenge post (one per post; the account always
   // tags posts with this). Empty = no tag. Periods and ampersands are not allowed.
   topicTag: (process.env.BOT_TOPIC_TAG ?? "Med Threads").trim(),
@@ -76,7 +81,7 @@ export const config = {
 // challengePostedAt + answerDelayMin. If ctaDelayMin <= answerDelayMin the CTA becomes
 // eligible no later than the answer, collapsing them into adjacent ~15-min loops. Fail
 // fast on a reversed/equal config instead of silently posting answer + CTA back-to-back.
-if (config.ctaDelayMin <= config.answerDelayMin) {
+if (config.ctaReply && config.ctaDelayMin <= config.answerDelayMin) {
   throw new Error(
     `BOT_CTA_DELAY_MIN (${config.ctaDelayMin}) must be greater than ` +
       `BOT_ANSWER_DELAY_MIN (${config.answerDelayMin}).`,

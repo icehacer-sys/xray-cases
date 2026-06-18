@@ -3,3 +3,6 @@ node_modules/
 *.log
 .DS_Store
 products/
+
+# Paid-product (Could You Spot It) generation tooling — stays local, never on the public repo
+src/book*.ts

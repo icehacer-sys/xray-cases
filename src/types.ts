@@ -61,7 +61,7 @@ export interface Case {
   };
 }
 
-export type CtaKey = "vol2" | "rare" | "vol1";
+export type CtaKey = "spotit" | "collection" | "vol2" | "rare" | "vol1";
 
 /** A resolved public image URL for a case file (built from config.githubRawBase). */
 export type ImageUrl = string;
