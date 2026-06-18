@@ -11,6 +11,7 @@ import { config } from "./config.js";
 import { generateXray } from "./openai.js";
 import { generateSlides } from "./slidegen.js";
 import { censorXray, blurBox } from "./censor.js";
+import sharp from "sharp";
 import type { Case, Condition } from "./types.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -114,6 +115,35 @@ if (mode === "xray") {
   const out = await blurBox(readFileSync(fp), { x, y, w, h });
   writeFileSync(fp, out);
   console.log(`blurred box [x=${x} y=${y} w=${w} h=${h}] on ${folder}/${file}`);
+} else if (mode === "grid") {
+  // Overlay a 0-1 coordinate grid (lines every 0.05, labels every 0.1) so an exact blur box
+  // can be read off the image. Writes _grid_<file>.png next to it (not committed).
+  //   npx tsx src/regencase.ts <folder> grid <file: xray|question|answer>
+  const file = process.argv[4] ?? "xray";
+  const fp = join(dir, file.endsWith(".png") ? file : `${file}.png`);
+  const png = readFileSync(fp);
+  const meta = await sharp(png).metadata();
+  const W = meta.width ?? 1024;
+  const H = meta.height ?? 1024;
+  let g = `<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">`;
+  for (let i = 1; i < 20; i++) {
+    const x = Math.round((W * i) / 20);
+    const y = Math.round((H * i) / 20);
+    const wide = i % 2 === 0;
+    g += `<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="red" stroke-opacity="${wide ? 0.7 : 0.3}" stroke-width="1"/>`;
+    g += `<line x1="0" y1="${y}" x2="${W}" y2="${y}" stroke="red" stroke-opacity="${wide ? 0.7 : 0.3}" stroke-width="1"/>`;
+  }
+  for (let i = 1; i < 10; i++) {
+    const x = Math.round((W * i) / 10);
+    const y = Math.round((H * i) / 10);
+    g += `<text x="${x + 2}" y="22" fill="yellow" font-size="22" font-family="sans-serif">.${i}</text>`;
+    g += `<text x="4" y="${y - 4}" fill="yellow" font-size="22" font-family="sans-serif">.${i}</text>`;
+  }
+  g += `</svg>`;
+  const out = await sharp(png).composite([{ input: Buffer.from(g), top: 0, left: 0 }]).png().toBuffer();
+  const outPath = join(dir, `_grid_${file}.png`);
+  writeFileSync(outPath, out);
+  console.log(outPath);
 } else {
   console.error(`unknown mode "${mode}" (use xray|slides|censor|blurbox)`);
   process.exit(1);

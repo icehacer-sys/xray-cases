@@ -352,12 +352,18 @@ async function generateOne(
     writeFileSync(join(dir, "answer.png"), slides.answer);
     writeFileSync(join(dir, "cta.png"), slides.cta);
 
-    // Safety net: if genitalia are still detectable on the X-ray or a slide after auto-censor,
-    // hold the case for manual review — never auto-post exposed genitalia.
-    if (genitalExposed) {
+    // Safety: ANY case where genitalia were detected is HELD for manual review. Auto-blur
+    // placement on faint X-ray genitalia is unreliable (it can land on the wrong spot), so a
+    // human verifies/tightens the blur with `regencase <folder> grid <file>` then
+    // `regencase <folder> blurbox <file> x y w h`, and clears needsReview before it can post.
+    if (xrayHadGenitals || genitalExposed) {
       c.needsReview = true;
-      c.verifyDefects = ["genitalia still visible after auto-censor — blur manually with `regencase <folder> blurbox <file> x y w h` then clear needsReview"];
-      log(`    ⛔ ${cond.diagnosis}: genitalia still exposed after censor — queued with needsReview (will NOT auto-post).`);
+      c.verifyDefects = [
+        genitalExposed
+          ? "genitalia still visible after auto-censor — blur manually (regencase grid + blurbox) then clear needsReview"
+          : "genitalia detected and auto-blurred — verify the blur is tight + correctly placed (regencase grid + blurbox) then clear needsReview",
+      ];
+      log(`    ⛔ ${cond.diagnosis}: genitalia detected — queued with needsReview (auto-blur applied, human must verify placement before posting).`);
     }
   }
 
