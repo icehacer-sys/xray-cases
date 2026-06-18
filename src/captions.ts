@@ -140,17 +140,18 @@ export async function generateIgCaption(c: Case): Promise<string> {
     .map((l) => cleanPunct(l))
     .filter((l) => l.length > 0);
 
-  // Exact owner-agreed IG format: a blank line between EVERY line, no emojis.
+  // Owner-agreed IG format: a blank line between EVERY line, with a few tasteful emojis for
+  // character (one per structural line; the dynamic hook lines and the disclaimer stay clean).
   return [
-    `Case File ${pad2(c.number)}.`,
+    `Case File ${pad2(c.number)} 🩻`,
     ...hookLines,
-    `A real condition most people have never seen.`,
-    `So before you swipe: A, B, or C?`,
-    `Swipe for the answer then tell me if you got it.`,
-    `New weird X-ray case every single day.`,
-    `Follow along and you'll read scans like a doctor.`,
-    `Want the free 5-case starter pack?`,
-    `Comment SAMPLE and I'll send it.`,
+    `A real condition most people have never seen 🤯`,
+    `So before you swipe: A, B, or C? 🤔`,
+    `Swipe for the answer then tell me if you got it 👇`,
+    `A new weird X-ray case every single day 🗓️`,
+    `Follow along and you'll start reading scans like a doctor 🧠`,
+    `Want the free 5-case starter pack? 🎁`,
+    `Comment SAMPLE and I'll send it your way 📩`,
     `Educational entertainment only. Not medical advice.`,
     `#radiology #xray #spotthediagnosis #medicalmystery #medstudent`,
   ].join("\n\n");

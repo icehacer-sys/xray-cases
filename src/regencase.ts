@@ -3,12 +3,14 @@
 // eyeball the new X-ray before rendering slides / posting.
 //   npx tsx src/regencase.ts <folder> xray     regenerate just xray.png (hardened prompt + per-case emphasis)
 //   npx tsx src/regencase.ts <folder> slides   re-render the 3 slides from the current xray.png
+//   npx tsx src/regencase.ts <folder> censor   blur genitalia on the existing xray.png + slides in place
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { config } from "./config.js";
 import { generateXray } from "./openai.js";
 import { generateSlides } from "./slidegen.js";
+import { censorXray } from "./censor.js";
 import type { Case, Condition } from "./types.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -71,17 +73,34 @@ function xrayPrompt(): string {
 }
 
 if (mode === "xray") {
-  const png = await generateXray(xrayPrompt());
+  let png = await generateXray(xrayPrompt());
+  const r = await censorXray(png);
+  png = r.png;
   writeFileSync(join(dir, "xray.png"), png);
-  console.log(`regenerated xray.png for ${folder} (${cond.diagnosis}) — REVIEW it before rendering slides`);
+  console.log(`regenerated xray.png for ${folder} (${cond.diagnosis})${r.result.censored ? " [genital region blurred]" : ""} — REVIEW it before rendering slides`);
 } else if (mode === "slides") {
   const xrayPng = readFileSync(join(dir, "xray.png"));
   const slides = await generateSlides(c, cond, xrayPng);
+  slides.question = (await censorXray(slides.question)).png;
+  slides.answer = (await censorXray(slides.answer)).png;
   writeFileSync(join(dir, "question.png"), slides.question);
   writeFileSync(join(dir, "answer.png"), slides.answer);
   writeFileSync(join(dir, "cta.png"), slides.cta);
   console.log(`re-rendered 3 slides for ${folder} (${cond.diagnosis})`);
+} else if (mode === "censor") {
+  // Blur genitalia on the existing images in place (no regeneration).
+  const x = await censorXray(readFileSync(join(dir, "xray.png")));
+  writeFileSync(join(dir, "xray.png"), x.png);
+  let slidesBlurred = false;
+  for (const f of ["question.png", "answer.png"]) {
+    const p = join(dir, f);
+    if (!existsSync(p)) continue;
+    const r = await censorXray(readFileSync(p));
+    writeFileSync(p, r.png);
+    slidesBlurred = slidesBlurred || r.result.censored;
+  }
+  console.log(`censored ${folder}: xray ${x.result.censored ? "blurred" : "clean"}, slides ${slidesBlurred ? "blurred" : "clean"}`);
 } else {
-  console.error(`unknown mode "${mode}" (use xray|slides)`);
+  console.error(`unknown mode "${mode}" (use xray|slides|censor)`);
   process.exit(1);
 }

@@ -29,6 +29,7 @@ import {
 import { generateXray } from "./openai.js";
 import { generateSlides } from "./slidegen.js";
 import { verifyXray, type XrayVerdict } from "./verify.js";
+import { censorXray } from "./censor.js";
 import type { Case, Condition } from "./types.js";
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -314,6 +315,14 @@ async function generateOne(
       if (attempt < config.xrayMaxAttempts) xrayPng = await generateXray(xrayPrompt(cond, avoid));
     }
   }
+  // Blur external genitalia (if any) so Threads/IG do not flag the post as sensitive/adult.
+  let censored = false;
+  if (!mock && config.censorGenitals) {
+    const r = await censorXray(xrayPng);
+    xrayPng = r.png;
+    censored = r.result.censored;
+    if (censored) log(`    🔒 blurred a genital region on the X-ray`);
+  }
   writeFileSync(join(dir, "xray.png"), xrayPng);
 
   // 2. Assemble the Case. If the X-ray failed QA after all retries, flag needsReview and
@@ -326,8 +335,14 @@ async function generateOne(
     c.verifyDefects = verdict!.defects;
     log(`    ⛔ ${cond.diagnosis} failed X-ray QA after ${config.xrayMaxAttempts} attempts — queued with needsReview (will NOT auto-post); slides skipped.`);
   } else {
-    // 3 IG slides with gpt-image-2 (the X-ray is composited via image-edit).
+    // 3 IG slides with gpt-image-2 (the X-ray is composited via image-edit). The composite
+    // can restore detail, so if the X-ray needed censoring, re-blur the two slides that embed
+    // it (the CTA slide has no X-ray).
     const slides = await generateSlides(c, cond, xrayPng);
+    if (censored && config.censorGenitals) {
+      slides.question = (await censorXray(slides.question)).png;
+      slides.answer = (await censorXray(slides.answer)).png;
+    }
     writeFileSync(join(dir, "question.png"), slides.question);
     writeFileSync(join(dir, "answer.png"), slides.answer);
     writeFileSync(join(dir, "cta.png"), slides.cta);

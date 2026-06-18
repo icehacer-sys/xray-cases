@@ -75,6 +75,11 @@ export const config = {
   xrayVerify: (process.env.BOT_XRAY_VERIFY ?? "on").toLowerCase() !== "off",
   xrayVerifyModel: process.env.BOT_XRAY_VERIFY_MODEL ?? process.env.BOT_MODEL ?? "claude-sonnet-4-6",
   xrayMaxAttempts: num("BOT_XRAY_MAX_ATTEMPTS", 3),
+
+  // Blur external genitalia on generated images (X-ray + composited slides) so Threads/IG
+  // do not flag the post as sensitive/adult. A Claude vision pass locates the region; fails
+  // open if nothing is found. Set BOT_CENSOR_GENITALS=off to disable.
+  censorGenitals: (process.env.BOT_CENSOR_GENITALS ?? "on").toLowerCase() !== "off",
   // 1080x1080 slide canvas.
   slideSize: num("BOT_SLIDE_SIZE", 1080),
 

@@ -57,6 +57,7 @@ jobs:
       BOT_INSTAGRAM: "on" # cross-post the carousel to Instagram (slides embed the GPT X-ray)
       BOT_AUTO_APPROVE: "on" # owner trusts gpt-image-2: generated cases post without manual review
       BOT_XRAY_VERIFY: "on" # Claude vision checks each generated X-ray for AI anatomy defects; failures are regenerated or held for review
+      BOT_CENSOR_GENITALS: "on" # blur external genitalia on the X-ray + slides so Threads/IG don't flag the post as sensitive
       BOT_TOPIC_TAG: "Med Threads" # topic tag added to every challenge post
       BOT_ANSWER_DELAY_MIN: "15" # answer posts 15 min after the challenge
       BOT_CTA_DELAY_MIN: "75" # CTA posts 60 min after the answer (75 after the challenge)
