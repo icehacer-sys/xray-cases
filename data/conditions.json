@@ -66,7 +66,8 @@
       "Osteogenesis imperfecta"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Gardner syndrome",
@@ -89,7 +90,8 @@
       "Multiple myeloma"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Caffey disease",
@@ -111,7 +113,8 @@
       "Scurvy"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Engelmann disease",
@@ -134,7 +137,8 @@
       "Osteopetrosis"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Hand-Schuller-Christian disease",
@@ -157,7 +161,8 @@
       "Bone metastases"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Sclerosteosis",
@@ -180,7 +185,8 @@
       "Paget's disease"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Bone sarcoidosis",
@@ -203,7 +209,8 @@
       "Gout"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Proteus syndrome",
@@ -225,7 +232,8 @@
       "Klippel-Trenaunay syndrome"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Cochlear implant",

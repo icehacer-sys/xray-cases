@@ -42,6 +42,7 @@ interface Cli {
   count: number;
   mock: boolean;
   topup: boolean;
+  diagnosis?: string;
 }
 
 function parseArgs(argv: string[]): Cli {
@@ -49,12 +50,18 @@ function parseArgs(argv: string[]): Cli {
   let count = 1;
   let mock = false;
   let topup = false;
+  let diagnosis: string | undefined;
 
   for (let i = 0; i < args.length; i++) {
     const a = args[i];
     if (a === "--mock") mock = true;
     else if (a === "--topup") topup = true;
-    else if (a === "--count") {
+    else if (a === "--diagnosis") {
+      diagnosis = args[++i];
+      if (!diagnosis) throw new Error("--diagnosis expects a value, e.g. --diagnosis \"Proteus syndrome\".");
+    } else if (a.startsWith("--diagnosis=")) {
+      diagnosis = a.slice("--diagnosis=".length);
+    } else if (a === "--count") {
       const n = Number(args[++i]);
       if (!Number.isFinite(n) || n < 1) {
         throw new Error(`--count expects a positive integer, got "${args[i]}".`);
@@ -71,7 +78,7 @@ function parseArgs(argv: string[]): Cli {
     }
   }
 
-  return { count, mock, topup };
+  return { count, mock, topup, diagnosis };
 }
 
 function log(...parts: unknown[]): void {
@@ -405,13 +412,23 @@ async function main(): Promise<void> {
   const results: GenResult[] = [];
 
   for (let i = 0; i < target; i++) {
-    // Pick the first condition that is neither already burned (pool flag) nor a
-    // diagnosis we've ever posted (history). Guarantees no case is ever repeated.
-    const cond = conditions.find(
-      (c) => c.used !== true && c.skipPublic !== true && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
-    );
+    // Pick the condition to generate. With --diagnosis, target that exact one (deliberate
+    // selection of a strong/shocking case, bypassing array order and the skipPublic flag — but
+    // never a diagnosis we've already produced). Otherwise pick the first condition that is
+    // neither already burned (pool flag) nor a diagnosis we've ever posted (history).
+    const cond = cli.diagnosis
+      ? conditions.find(
+          (c) => c.diagnosis.toLowerCase() === cli.diagnosis!.toLowerCase() && c.used !== true,
+        )
+      : conditions.find(
+          (c) => c.used !== true && c.skipPublic !== true && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
+        );
     if (!cond) {
-      log(`no fresh conditions left after ${results.length} case(s); add new ones to ${config.conditionsFile}.`);
+      log(
+        cli.diagnosis
+          ? `--diagnosis "${cli.diagnosis}" not found in ${config.conditionsFile} (or already used).`
+          : `no fresh conditions left after ${results.length} case(s); add new ones to ${config.conditionsFile}.`,
+      );
       break;
     }
 
