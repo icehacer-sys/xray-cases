@@ -217,11 +217,11 @@
     "aliases": [
       "overgrowth syndrome"
     ],
-    "symptom": "progressive lopsided overgrowth of part of the body since childhood with huge distorted feet",
-    "hook": "one side of the body and the feet had overgrown grotesquely with massively enlarged bones",
-    "view": "feet and affected limb",
-    "keyFindings": "asymmetric overgrowth with enlarged distorted bones and macrodactyly and thickened soft tissues affecting part of the body in a mosaic pattern",
-    "whatYouSee": "Wildly enlarged and distorted bones on one part of the body with giant digits.",
+    "symptom": "progressive lopsided overgrowth since childhood with one grotesquely enlarged foot and giant toes",
+    "hook": "one foot had overgrown grotesquely with massively enlarged bones and giant toes",
+    "view": "dorsoplantar (AP) radiograph of a single grossly enlarged foot cropped at the ankle with no leg pelvis or groin in frame and one view filling the frame",
+    "keyFindings": "gross macrodactyly with one or more massively overgrown giant toes two to three times the normal size and greatly enlarged distorted metatarsals and phalanges giving a monstrously enlarged misshapen foot",
+    "whatYouSee": "A wildly enlarged distorted foot with giant overgrown toes.",
     "whyItMatters": "It is a rare mosaic overgrowth disorder that enlarges bones and tissues progressively and asymmetrically and can cause severe deformity and complications.",
     "treatment": "Care is supportive and orthopaedic with surgery to debulk or correct disabling overgrowth.",
     "takeaway": "Progressive lopsided overgrowth with giant distorted bones and digits suggests Proteus syndrome.",
@@ -232,8 +232,8 @@
       "Klippel-Trenaunay syndrome"
     ],
     "igCorrect": "A",
-    "used": false,
-    "skipPublic": true
+    "used": true,
+    "skipPublic": false
   },
   {
     "diagnosis": "Cochlear implant",
@@ -880,6 +880,78 @@
       "Button battery",
       "Coin in the oesophagus",
       "Calcified node"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Swallowed sword",
+    "aliases": [
+      "sword swallowing",
+      "ingested sword",
+      "sword swallower"
+    ],
+    "symptom": "chest discomfort after a sword swallowing performance",
+    "hook": "a full length sword ran straight down the throat and chest into the stomach",
+    "view": "AP chest and upper abdomen only cropped at the lower ribs with no pelvis or groin in frame",
+    "keyFindings": "a long straight radiopaque sword blade extending from the neck down the midline of the chest along the path of the oesophagus into the stomach in the upper abdomen with otherwise normal chest and upper abdomen anatomy and no pelvis or groin in the frame",
+    "whatYouSee": "A long straight metal blade running down the throat and chest into the stomach.",
+    "whyItMatters": "Sword swallowing is a performance feat that can perforate the food pipe and cause a life threatening chest infection.",
+    "treatment": "Most cases pass uneventfully but a perforation needs urgent surgery and antibiotics.",
+    "takeaway": "A long straight blade running down the food pipe into the stomach is a swallowed sword.",
+    "igTitle": "THE SWORD INSIDE",
+    "igOptions": [
+      "Surgical chest drain",
+      "Swallowed sword",
+      "Spinal fixation rod"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Nail gun injury to the skull",
+    "aliases": [
+      "nail in the skull",
+      "penetrating nail",
+      "cranial nail gun injury"
+    ],
+    "symptom": "a headache and a small scalp wound after a nail gun misfired at work",
+    "hook": "a full construction nail was buried deep inside the skull",
+    "view": "lateral skull radiograph one view filling the frame with no other body part",
+    "keyFindings": "a single long radiopaque construction nail penetrating the cranial vault with its flat head outside the skull and its pointed tip lodged deep within the brain",
+    "whatYouSee": "A long construction nail driven straight through the skull into the brain.",
+    "whyItMatters": "A nail gun can drive a nail into the brain through a tiny entry wound so the injury is easily missed without an X-ray.",
+    "treatment": "It needs urgent neurosurgery to remove the nail and control bleeding and infection.",
+    "takeaway": "A radiopaque nail crossing the skull into the brain is a penetrating nail gun injury.",
+    "igTitle": "THE BAD DAY AT WORK",
+    "igOptions": [
+      "Surgical clip",
+      "Bone tumour",
+      "Nail gun injury"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  {
+    "diagnosis": "Tooth in the nasal cavity",
+    "aliases": [
+      "intranasal tooth",
+      "ectopic tooth",
+      "supernumerary nasal tooth"
+    ],
+    "symptom": "a blocked nose with crusting and a foul smell for months",
+    "hook": "a fully formed tooth was growing inside the nasal cavity",
+    "view": "Waters view of the facial bones and nasal cavity one view filling the frame",
+    "keyFindings": "a fully formed radiopaque tooth with a recognisable crown and root lying within the nasal cavity instead of the upper jaw",
+    "whatYouSee": "A real tooth growing inside the nose.",
+    "whyItMatters": "An ectopic tooth can erupt into the nose and cause blockage infection and a foul discharge until it is removed.",
+    "treatment": "It is removed with a minor endoscopic procedure through the nose.",
+    "takeaway": "A tooth shaped density inside the nasal cavity is an ectopic intranasal tooth.",
+    "igTitle": "THE BLOCKED NOSE",
+    "igOptions": [
+      "Nasal polyp",
+      "Ectopic tooth",
+      "Foreign bead"
     ],
     "igCorrect": "B",
     "used": true

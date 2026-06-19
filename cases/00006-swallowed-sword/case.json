@@ -1,0 +1,60 @@
+{
+  "folder": "00006-swallowed-sword",
+  "number": 6,
+  "diagnosis": "Swallowed sword",
+  "aliases": [
+    "sword swallowing",
+    "ingested sword",
+    "sword swallower"
+  ],
+  "symptom": "chest discomfort after a sword swallowing performance",
+  "hook": "a full length sword ran straight down the throat and chest into the stomach",
+  "whatYouSee": "A long straight metal blade running down the throat and chest into the stomach.",
+  "whyItMatters": "Sword swallowing is a performance feat that can perforate the food pipe and cause a life threatening chest infection.",
+  "treatment": "Most cases pass uneventfully but a perforation needs urgent surgery and antibiotics.",
+  "takeaway": "A long straight blade running down the food pipe into the stomach is a swallowed sword.",
+  "igOptions": [
+    "A. Surgical chest drain",
+    "B. Swallowed sword",
+    "C. Spinal fixation rod"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-20T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Swallowed sword",
+    "aliases": [
+      "sword swallowing",
+      "ingested sword",
+      "sword swallower"
+    ],
+    "symptom": "chest discomfort after a sword swallowing performance",
+    "hook": "a full length sword ran straight down the throat and chest into the stomach",
+    "view": "AP chest and upper abdomen only cropped at the lower ribs with no pelvis or groin in frame",
+    "keyFindings": "a long straight radiopaque sword blade extending from the neck down the midline of the chest along the path of the oesophagus into the stomach in the upper abdomen with otherwise normal chest and upper abdomen anatomy and no pelvis or groin in the frame",
+    "whatYouSee": "A long straight metal blade running down the throat and chest into the stomach.",
+    "whyItMatters": "Sword swallowing is a performance feat that can perforate the food pipe and cause a life threatening chest infection.",
+    "treatment": "Most cases pass uneventfully but a perforation needs urgent surgery and antibiotics.",
+    "takeaway": "A long straight blade running down the food pipe into the stomach is a swallowed sword.",
+    "igTitle": "THE SWORD INSIDE",
+    "igOptions": [
+      "Surgical chest drain",
+      "Swallowed sword",
+      "Spinal fixation rod"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with chest discomfort after a sword swallowing performance.\n\nThen the X-ray loaded 😭\n\nAnd a full length sword ran straight down the throat and chest into the stomach.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Swallowed sword\n\n👀 What you see:\nA long straight metal blade running down the throat and chest into the stomach.\n\n🦴 Why it matters:\nSword swallowing is a performance feat that can perforate the food pipe and cause a life threatening chest infection.\n\n💊 Treatment:\nMost cases pass uneventfully but a perforation needs urgent surgery and antibiotics.",
+    "igCaption": "Case File 06 🩻\n⠀\nHe complained of chest discomfort after his performance.\n⠀\nThe X-ray revealed something we genuinely were not ready for.\n⠀\nSome people really do commit to their craft.\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\nVolume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.\n\nOver a hundred strange real X-rays with all the answers.\n\nmednoteslab.gumroad.com/l/collection"
+  }
+}

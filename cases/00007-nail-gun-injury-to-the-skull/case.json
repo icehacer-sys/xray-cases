@@ -1,0 +1,60 @@
+{
+  "folder": "00007-nail-gun-injury-to-the-skull",
+  "number": 7,
+  "diagnosis": "Nail gun injury to the skull",
+  "aliases": [
+    "nail in the skull",
+    "penetrating nail",
+    "cranial nail gun injury"
+  ],
+  "symptom": "a headache and a small scalp wound after a nail gun misfired at work",
+  "hook": "a full construction nail was buried deep inside the skull",
+  "whatYouSee": "A long construction nail driven straight through the skull into the brain.",
+  "whyItMatters": "A nail gun can drive a nail into the brain through a tiny entry wound so the injury is easily missed without an X-ray.",
+  "treatment": "It needs urgent neurosurgery to remove the nail and control bleeding and infection.",
+  "takeaway": "A radiopaque nail crossing the skull into the brain is a penetrating nail gun injury.",
+  "igOptions": [
+    "A. Surgical clip",
+    "B. Bone tumour",
+    "C. Nail gun injury"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-21T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Nail gun injury to the skull",
+    "aliases": [
+      "nail in the skull",
+      "penetrating nail",
+      "cranial nail gun injury"
+    ],
+    "symptom": "a headache and a small scalp wound after a nail gun misfired at work",
+    "hook": "a full construction nail was buried deep inside the skull",
+    "view": "lateral skull radiograph one view filling the frame with no other body part",
+    "keyFindings": "a single long radiopaque construction nail penetrating the cranial vault with its flat head outside the skull and its pointed tip lodged deep within the brain",
+    "whatYouSee": "A long construction nail driven straight through the skull into the brain.",
+    "whyItMatters": "A nail gun can drive a nail into the brain through a tiny entry wound so the injury is easily missed without an X-ray.",
+    "treatment": "It needs urgent neurosurgery to remove the nail and control bleeding and infection.",
+    "takeaway": "A radiopaque nail crossing the skull into the brain is a penetrating nail gun injury.",
+    "igTitle": "THE BAD DAY AT WORK",
+    "igOptions": [
+      "Surgical clip",
+      "Bone tumour",
+      "Nail gun injury"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with a headache and a small scalp wound after a nail gun misfired at work.\n\nThen the X-ray loaded 😭\n\nAnd a full construction nail was buried deep inside the skull.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Nail gun injury to the skull\n\n👀 What you see:\nA long construction nail driven straight through the skull into the brain.\n\n🦴 Why it matters:\nA nail gun can drive a nail into the brain through a tiny entry wound so the injury is easily missed without an X-ray.\n\n💊 Treatment:\nIt needs urgent neurosurgery to remove the nail and control bleeding and infection.",
+    "igCaption": "Case File 07 🩻\n⠀\nHe came in with a headache and a small cut on his head.\n⠀\nThe X-ray stopped everyone in the room cold.\n⠀\nSomething from the job site made it all the way inside his skull.\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
+  }
+}

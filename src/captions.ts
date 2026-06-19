@@ -70,12 +70,13 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
   // (priority = declaration order); the full 4-section breakdown always lives on the IG
   // answer slide, which has no length limit.
   const head = `Answer: ${c.diagnosis}`;
+  // Owner wants the answer comment to carry Treatment, not the Takeaway (2026-06-19).
   const sections = [
     `👀 What you see:\n${whatYouSee}`,
     `🦴 Why it matters:\n${whyItMatters}`,
-    `📝 Takeaway:\n${takeaway}`,
     `💊 Treatment:\n${treatment}`,
   ];
+  void takeaway; // still drafted (kept for the breakdown) but no longer shown in the reply
   const out = [head];
   let len = head.length;
   for (const s of sections) {

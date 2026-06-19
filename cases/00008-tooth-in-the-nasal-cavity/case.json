@@ -1,0 +1,60 @@
+{
+  "folder": "00008-tooth-in-the-nasal-cavity",
+  "number": 8,
+  "diagnosis": "Tooth in the nasal cavity",
+  "aliases": [
+    "intranasal tooth",
+    "ectopic tooth",
+    "supernumerary nasal tooth"
+  ],
+  "symptom": "a blocked nose with crusting and a foul smell for months",
+  "hook": "a fully formed tooth was growing inside the nasal cavity",
+  "whatYouSee": "A real tooth growing inside the nose.",
+  "whyItMatters": "An ectopic tooth can erupt into the nose and cause blockage infection and a foul discharge until it is removed.",
+  "treatment": "It is removed with a minor endoscopic procedure through the nose.",
+  "takeaway": "A tooth shaped density inside the nasal cavity is an ectopic intranasal tooth.",
+  "igOptions": [
+    "A. Nasal polyp",
+    "B. Ectopic tooth",
+    "C. Foreign bead"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-22T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Tooth in the nasal cavity",
+    "aliases": [
+      "intranasal tooth",
+      "ectopic tooth",
+      "supernumerary nasal tooth"
+    ],
+    "symptom": "a blocked nose with crusting and a foul smell for months",
+    "hook": "a fully formed tooth was growing inside the nasal cavity",
+    "view": "Waters view of the facial bones and nasal cavity one view filling the frame",
+    "keyFindings": "a fully formed radiopaque tooth with a recognisable crown and root lying within the nasal cavity instead of the upper jaw",
+    "whatYouSee": "A real tooth growing inside the nose.",
+    "whyItMatters": "An ectopic tooth can erupt into the nose and cause blockage infection and a foul discharge until it is removed.",
+    "treatment": "It is removed with a minor endoscopic procedure through the nose.",
+    "takeaway": "A tooth shaped density inside the nasal cavity is an ectopic intranasal tooth.",
+    "igTitle": "THE BLOCKED NOSE",
+    "igOptions": [
+      "Nasal polyp",
+      "Ectopic tooth",
+      "Foreign bead"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with a blocked nose with crusting and a foul smell for months.\n\nThen the X-ray loaded 😭\n\nAnd a fully formed tooth was growing inside the nasal cavity.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Tooth in the nasal cavity\n\n👀 What you see:\nA real tooth growing inside the nose.\n\n🦴 Why it matters:\nAn ectopic tooth can erupt into the nose and cause blockage infection and a foul discharge until it is removed.\n\n💊 Treatment:\nIt is removed with a minor endoscopic procedure through the nose.",
+    "igCaption": "Case File 08 🩻\n⠀\nMonths of a blocked nose and a smell no one could explain.\n⠀\nThe X-ray revealed something that had no business being there.\n⠀\nCan you spot what was hiding above the mouth?\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
+  }
+}
