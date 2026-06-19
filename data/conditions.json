@@ -942,7 +942,7 @@
     "symptom": "a blocked nose with crusting and a foul smell for months",
     "hook": "a fully formed tooth was growing inside the nasal cavity",
     "view": "Waters view of the facial bones and nasal cavity one view filling the frame",
-    "keyFindings": "a fully formed radiopaque tooth with a recognisable crown and root lying within the nasal cavity instead of the upper jaw",
+    "keyFindings": "a single large and unmistakably tooth shaped radiopaque density with a clear pointed crown and root that is obviously a whole tooth sitting high inside the nasal cavity well above the upper tooth row so it clearly looks out of place",
     "whatYouSee": "A real tooth growing inside the nose.",
     "whyItMatters": "An ectopic tooth can erupt into the nose and cause blockage infection and a foul discharge until it is removed.",
     "treatment": "It is removed with a minor endoscopic procedure through the nose.",
@@ -955,5 +955,140 @@
     ],
     "igCorrect": "B",
     "used": true
+  },
+  {
+    "diagnosis": "Swallowed coins",
+    "aliases": [
+      "multiple swallowed coins",
+      "coin ingestion",
+      "pica coins"
+    ],
+    "symptom": "a child who swallowed a handful of coins from a piggy bank",
+    "hook": "the stomach was packed with a pile of swallowed coins",
+    "view": "AP chest and upper abdomen cropped at the navel with no pelvis or groin in frame",
+    "keyFindings": "a cluster of round radiopaque coins of varying sizes piled together in the stomach in the upper abdomen with normal surrounding anatomy and no pelvis or groin in the frame",
+    "whatYouSee": "A pile of round coins stacked together inside the stomach.",
+    "whyItMatters": "Most swallowed coins pass on their own but a coin stuck in the food pipe or a swallowed battery can burn through the wall and needs urgent removal.",
+    "treatment": "Small coins in the stomach are watched and usually pass while a stuck coin is removed by endoscopy.",
+    "takeaway": "A pile of round metal discs in the stomach is swallowed coins.",
+    "igTitle": "THE PIGGY BANK",
+    "igOptions": [
+      "Gallstones",
+      "Swallowed coins",
+      "Calcified nodes"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Swallowed light bulb",
+    "aliases": [
+      "ingested light bulb",
+      "light bulb in stomach"
+    ],
+    "symptom": "stomach pain after swallowing a light bulb on a dare",
+    "hook": "a whole intact light bulb was sitting inside the stomach",
+    "view": "AP chest and upper abdomen cropped at the navel with no pelvis or groin in frame",
+    "keyFindings": "the outline of a whole intact light bulb with its rounded glass top and threaded metal base lying within the stomach in the upper abdomen with no pelvis or groin in the frame",
+    "whatYouSee": "A whole light bulb sitting inside the stomach.",
+    "whyItMatters": "A swallowed glass bulb can break and cut the gut so it often needs careful removal.",
+    "treatment": "It is usually removed by endoscopy or surgery before it can shatter.",
+    "takeaway": "The outline of a bulb in the stomach is a swallowed light bulb.",
+    "igTitle": "A BRIGHT IDEA",
+    "igOptions": [
+      "Swallowed light bulb",
+      "Stomach tumour",
+      "Large gallstone"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Swallowed safety pin",
+    "aliases": [
+      "open safety pin",
+      "ingested safety pin"
+    ],
+    "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
+    "hook": "an open safety pin was stuck in the food pipe with its point upward",
+    "view": "AP chest and neck of an infant one view filling the frame with no pelvis or groin",
+    "keyFindings": "an open safety pin lodged in the upper food pipe at the level of the neck or chest with its sharp point open and the spring clearly visible",
+    "whatYouSee": "An open safety pin stuck in the food pipe.",
+    "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
+    "treatment": "It is removed urgently by endoscopy.",
+    "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
+    "igTitle": "PINNED",
+    "igOptions": [
+      "Safety pin",
+      "Hair clip",
+      "Coin"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Impalement by a metal rod",
+    "aliases": [
+      "rebar impalement",
+      "impaled chest",
+      "penetrating rod"
+    ],
+    "symptom": "a fall onto a steel rod at a construction site",
+    "hook": "a long steel rod had passed straight through the chest",
+    "view": "AP chest one view filling the frame with no pelvis or groin",
+    "keyFindings": "a long straight thick radiopaque metal rod passing through the chest cavity crossing the lung fields with the surrounding ribs and chest anatomy otherwise intact",
+    "whatYouSee": "A long steel rod passing straight through the chest.",
+    "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
+    "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
+    "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+    "igTitle": "THE CONSTRUCTION SITE",
+    "igOptions": [
+      "Chest drain",
+      "Impaled rod",
+      "Spinal rod"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Gas gangrene",
+    "aliases": [
+      "clostridial myonecrosis",
+      "gas in the tissues"
+    ],
+    "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
+    "hook": "the muscles of the limb were full of spreading gas bubbles",
+    "view": "AP radiograph of a lower leg one view filling the frame with no pelvis or groin",
+    "keyFindings": "multiple dark gas bubbles and streaks of gas tracking through the soft tissues and muscle planes of the limb giving a feathery bubbly pattern with the bone intact",
+    "whatYouSee": "Bubbles of gas spreading through the muscles of the limb.",
+    "whyItMatters": "Gas in the muscle means a fast spreading flesh eating infection that can kill within hours.",
+    "treatment": "It needs emergency surgery to cut away dead tissue plus strong antibiotics.",
+    "takeaway": "Gas bubbles tracking through the muscles is gas gangrene a surgical emergency.",
+    "igTitle": "THE SPREADING WOUND",
+    "igOptions": [
+      "Gas gangrene",
+      "Fat necrosis",
+      "Old haematoma"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Fetus in fetu",
+    "aliases": [
+      "fetus-in-fetu",
+      "twin in abdomen"
+    ],
+    "symptom": "a baby with a slowly growing belly mass since birth",
+    "hook": "a small malformed twin skeleton was hidden inside the abdomen of the baby",
+    "view": "AP upper abdomen of an infant cropped at the navel with no pelvis or groin in frame",
+    "keyFindings": "a small malformed mass within the infant upper abdomen containing recognisable fetal type bones such as a curved spine and limb bones representing an enclosed undeveloped twin",
+    "whatYouSee": "A tiny malformed skeleton hidden inside the infant abdomen.",
+    "whyItMatters": "It is a rare anomaly where an undeveloped twin is enclosed within the body of the other twin and is removed surgically.",
+    "treatment": "It is removed with surgery and the child usually does well.",
+    "takeaway": "Recognisable fetal bones inside an infant abdomen is a fetus in fetu.",
+    "igTitle": "THE GROWING BELLY",
+    "igOptions": [
+      "Teratoma",
+      "Fetus in fetu",
+      "Neuroblastoma"
+    ],
+    "igCorrect": "B",
+    "skipPublic": true
   }
 ]
