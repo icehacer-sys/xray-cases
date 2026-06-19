@@ -977,7 +977,8 @@
       "Swallowed coins",
       "Calcified nodes"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Swallowed light bulb",
@@ -999,7 +1000,8 @@
       "Stomach tumour",
       "Large gallstone"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "used": true
   },
   {
     "diagnosis": "Swallowed safety pin",

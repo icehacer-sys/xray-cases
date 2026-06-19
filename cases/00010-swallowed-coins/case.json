@@ -1,0 +1,60 @@
+{
+  "folder": "00010-swallowed-coins",
+  "number": 10,
+  "diagnosis": "Swallowed coins",
+  "aliases": [
+    "multiple swallowed coins",
+    "coin ingestion",
+    "pica coins"
+  ],
+  "symptom": "a child who swallowed a handful of coins from a piggy bank",
+  "hook": "the stomach was packed with a pile of swallowed coins",
+  "whatYouSee": "A pile of round coins stacked together inside the stomach.",
+  "whyItMatters": "Most swallowed coins pass on their own but a coin stuck in the food pipe or a swallowed battery can burn through the wall and needs urgent removal.",
+  "treatment": "Small coins in the stomach are watched and usually pass while a stuck coin is removed by endoscopy.",
+  "takeaway": "A pile of round metal discs in the stomach is swallowed coins.",
+  "igOptions": [
+    "A. Gallstones",
+    "B. Swallowed coins",
+    "C. Calcified nodes"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-24T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Swallowed coins",
+    "aliases": [
+      "multiple swallowed coins",
+      "coin ingestion",
+      "pica coins"
+    ],
+    "symptom": "a child who swallowed a handful of coins from a piggy bank",
+    "hook": "the stomach was packed with a pile of swallowed coins",
+    "view": "AP chest and upper abdomen cropped at the navel with no pelvis or groin in frame",
+    "keyFindings": "a cluster of round radiopaque coins of varying sizes piled together in the stomach in the upper abdomen with normal surrounding anatomy and no pelvis or groin in the frame",
+    "whatYouSee": "A pile of round coins stacked together inside the stomach.",
+    "whyItMatters": "Most swallowed coins pass on their own but a coin stuck in the food pipe or a swallowed battery can burn through the wall and needs urgent removal.",
+    "treatment": "Small coins in the stomach are watched and usually pass while a stuck coin is removed by endoscopy.",
+    "takeaway": "A pile of round metal discs in the stomach is swallowed coins.",
+    "igTitle": "THE PIGGY BANK",
+    "igOptions": [
+      "Gallstones",
+      "Swallowed coins",
+      "Calcified nodes"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with a child who swallowed a handful of coins from a piggy bank.\n\nThen the X-ray loaded 😭\n\nAnd the stomach was packed with a pile of swallowed coins.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Swallowed coins\n\n👀 What you see:\nA pile of round coins stacked together inside the stomach.\n\n🦴 Why it matters:\nMost swallowed coins pass on their own but a coin stuck in the food pipe or a swallowed battery can burn through the wall and needs urgent removal.\n\n💊 Treatment:\nSmall coins in the stomach are watched and usually pass while a stuck coin is removed by endoscopy.",
+    "igCaption": "Case File 10 🩻\n⠀\nA child emptied their piggy bank the wrong way.\n⠀\nThe X-ray is somehow both funny and alarming.\n⠀\nCan you count how many are in there?\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into a digital PDF.\n\nAnd if you'd like to support the page I'd genuinely appreciate it 🙏\n\nxray.mednoteslab.com"
+  }
+}
