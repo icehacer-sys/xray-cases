@@ -73,7 +73,9 @@ export async function verifyXray(png: Buffer, cond: Condition): Promise<XrayVerd
     .map((b) => b.text)
     .join("")
     .trim();
-  const json = text.replace(/^```(?:json)?/i, "").replace(/```$/, "").trim();
+  // The model sometimes wraps the JSON in prose or code fences; extract the object itself.
+  const m = text.match(/\{[\s\S]*\}/);
+  const json = (m ? m[0] : text).trim();
   let p: Record<string, unknown>;
   try {
     p = JSON.parse(json) as Record<string, unknown>;

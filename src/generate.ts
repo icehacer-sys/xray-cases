@@ -408,7 +408,7 @@ async function main(): Promise<void> {
     // Pick the first condition that is neither already burned (pool flag) nor a
     // diagnosis we've ever posted (history). Guarantees no case is ever repeated.
     const cond = conditions.find(
-      (c) => c.used !== true && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
+      (c) => c.used !== true && c.skipPublic !== true && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
     );
     if (!cond) {
       log(`no fresh conditions left after ${results.length} case(s); add new ones to ${config.conditionsFile}.`);

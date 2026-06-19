@@ -42,7 +42,8 @@
       "Bladder distension"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Pycnodysostosis",
@@ -430,7 +431,8 @@
       "Paget disease"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Melorheostosis",
@@ -523,7 +525,8 @@
       "Nephrocalcinosis"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Sigmoid volvulus",
@@ -661,7 +664,8 @@
       "Calcified fibroid"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Gossypiboma",
@@ -776,7 +780,8 @@
       "Rickets"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Achondroplasia",
@@ -799,7 +804,8 @@
       "Mucopolysaccharidosis"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Paget disease of bone",

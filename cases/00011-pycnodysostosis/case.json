@@ -1,0 +1,58 @@
+{
+  "folder": "00011-pycnodysostosis",
+  "number": 11,
+  "diagnosis": "Pycnodysostosis",
+  "aliases": [
+    "pyknodysostosis",
+    "Toulouse-Lautrec syndrome"
+  ],
+  "symptom": "short stature with bones that fractured easily and a small receding jaw",
+  "hook": "the bones were strikingly dense and white yet the fingertips looked dissolved away at the very tips",
+  "whatYouSee": "Uniformly dense white bones with the fingertip bones partly dissolved and an underdeveloped jaw.",
+  "whyItMatters": "It is an inherited sclerosing bone disease that makes bone dense yet brittle so fractures are common despite all the density.",
+  "treatment": "Care is supportive with fracture management and dental and orthopaedic follow up.",
+  "takeaway": "Dense brittle bones with dissolved fingertips and a small jaw point to pycnodysostosis.",
+  "igOptions": [
+    "A. Osteopetrosis",
+    "B. Pycnodysostosis",
+    "C. Osteogenesis imperfecta"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-20T20:59:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Pycnodysostosis",
+    "aliases": [
+      "pyknodysostosis",
+      "Toulouse-Lautrec syndrome"
+    ],
+    "symptom": "short stature with bones that fractured easily and a small receding jaw",
+    "hook": "the bones were strikingly dense and white yet the fingertips looked dissolved away at the very tips",
+    "view": "AP hand and skull",
+    "keyFindings": "diffusely dense sclerotic bones with acro-osteolysis of the distal phalanges plus open skull sutures and a small obtuse mandible",
+    "whatYouSee": "Uniformly dense white bones with the fingertip bones partly dissolved and an underdeveloped jaw.",
+    "whyItMatters": "It is an inherited sclerosing bone disease that makes bone dense yet brittle so fractures are common despite all the density.",
+    "treatment": "Care is supportive with fracture management and dental and orthopaedic follow up.",
+    "takeaway": "Dense brittle bones with dissolved fingertips and a small jaw point to pycnodysostosis.",
+    "igTitle": "DENSE BUT BRITTLE",
+    "igOptions": [
+      "Osteopetrosis",
+      "Pycnodysostosis",
+      "Osteogenesis imperfecta"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with short stature with bones that fractured easily and a small receding jaw.\n\nThen the X-ray loaded 😭\n\nAnd the bones were strikingly dense and white yet the fingertips looked dissolved away at the very tips.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Pycnodysostosis\n\n👀 What you see:\nUniformly dense white bones with the fingertip bones partly dissolved and an underdeveloped jaw.\n\n🦴 Why it matters:\nIt is an inherited sclerosing bone disease that makes bone dense yet brittle so fractures are common despite all the density.\n\n📝 Takeaway:\nDense brittle bones with dissolved fingertips and a small jaw point to pycnodysostosis.\n\n💊 Treatment:\nCare is supportive with fracture management and dental and orthopaedic follow up.",
+    "igCaption": "Case File 11 🩻\n⠀\nDense white bones that shatter like glass\n⠀\nA jaw that never quite finished forming\n⠀\nAnd fingertips that seem to be quietly disappearing\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nspot.mednoteslab.com"
+  }
+}

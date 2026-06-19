@@ -95,4 +95,7 @@ export interface Condition {
   igCorrect: "A" | "B" | "C"; // which option is right
   /** Set true once the generator has produced a case from it (so it is never reused). */
   used?: boolean;
+  /** Set true to permanently exclude from auto-generation (e.g. pelvic/groin/full-lower-body
+   *  views that Meta suppresses as sensitive). The generator never picks these. */
+  skipPublic?: boolean;
 }

@@ -64,7 +64,8 @@ export async function censorXray(png: Buffer): Promise<{ png: Buffer; result: Ce
       .map((b) => b.text)
       .join("")
       .trim();
-    parsed = JSON.parse(text.replace(/^```(?:json)?/i, "").replace(/```$/, "").trim());
+    const m = text.match(/\{[\s\S]*\}/);
+    parsed = JSON.parse((m ? m[0] : text).trim());
   } catch {
     return { png, result: { censored: false } }; // detection failed (e.g. no key) → leave unchanged
   }
