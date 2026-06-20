@@ -1117,5 +1117,254 @@
     ],
     "igCorrect": "B",
     "used": true
+  },
+  {
+    "diagnosis": "Pneumatosis intestinalis",
+    "aliases": [
+      "pneumatosis cystoides intestinalis",
+      "gas cysts in the bowel wall"
+    ],
+    "symptom": "ordinary bloating and a bit too much gas after meals that they just lived with",
+    "hook": "the wall of the bowel was lined with rows of bubbles like a strip of bubble wrap",
+    "view": "AP abdomen radiograph cropped at the navel showing the bowel with no pelvis or groin in frame",
+    "keyFindings": "multiple small lucent gas cysts and linear streaks of gas lining the wall of the bowel loops giving a bubbly beaded bubble-wrap appearance",
+    "whatYouSee": "The bowel wall lined with rows of little gas bubbles like bubble wrap.",
+    "whyItMatters": "Gas in the bowel wall can be harmless or a sign of dying bowel so it always needs checking.",
+    "treatment": "Mild cases are watched while a sick bowel needs urgent surgery.",
+    "takeaway": "Bubbles lining the bowel wall is pneumatosis intestinalis.",
+    "igTitle": "THE BUBBLE WRAP GUT",
+    "igOptions": [
+      "Trapped wind",
+      "Pneumatosis intestinalis",
+      "Bowel cancer"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Emphysematous pyelonephritis",
+    "aliases": [
+      "gas in the kidney",
+      "gas forming kidney infection"
+    ],
+    "symptom": "what felt like a stubborn urine infection and a dull ache in the side that would not quit",
+    "hook": "the kidney was puffed up and fizzing with gas like a slice of half melted Swiss cheese",
+    "view": "AP abdomen radiograph of the flank and kidney cropped at the navel with no pelvis or groin in frame",
+    "keyFindings": "mottled and streaky lucent gas bubbling through and around the swollen kidney in the flank giving a foamy Swiss-cheese pattern over the renal shadow",
+    "whatYouSee": "A kidney bubbling and fizzing with gas like Swiss cheese.",
+    "whyItMatters": "Gas forming bacteria are destroying the kidney from inside and it can kill fast without urgent treatment.",
+    "treatment": "It needs urgent antibiotics drainage and sometimes removal of the kidney.",
+    "takeaway": "Gas bubbling through the kidney is emphysematous pyelonephritis.",
+    "igTitle": "THE FIZZING KIDNEY",
+    "igOptions": [
+      "Kidney stone",
+      "Emphysematous pyelonephritis",
+      "Simple cyst"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Pulmonary hamartoma",
+    "aliases": [
+      "popcorn calcification",
+      "lung hamartoma"
+    ],
+    "symptom": "a little cough that lingered after a cold so they got a routine chest film",
+    "hook": "a round lump in the lung was studded with chunky white flecks like a handful of popcorn turned to stone",
+    "view": "PA chest radiograph showing the lungs (one view, no pelvis or groin)",
+    "keyFindings": "a large well defined round lung nodule densely packed with chunky clustered popcorn-like calcifications standing out bright white so it clearly looks like a clump of popcorn turned to stone sitting in the lung",
+    "whatYouSee": "A round lump in the lung full of popcorn made of stone.",
+    "whyItMatters": "It is a harmless benign tumour but the popcorn pattern helps tell it apart from cancer.",
+    "treatment": "It is usually just watched and only removed if it grows or causes trouble.",
+    "takeaway": "A lung nodule with popcorn calcification is a hamartoma.",
+    "igTitle": "THE POPCORN LUNG",
+    "igOptions": [
+      "Lung cancer",
+      "Pulmonary hamartoma",
+      "Pneumonia"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Ameloblastoma",
+    "aliases": [
+      "soap bubble jaw tumour",
+      "ameloblastoma of the mandible"
+    ],
+    "symptom": "a swollen gum they blamed on a bad wisdom tooth",
+    "hook": "the jawbone was blown out from inside into a cluster of soap bubbles",
+    "view": "panoramic radiograph of the mandible (one view, no pelvis or groin)",
+    "keyFindings": "a multilocular expansile lucent lesion blowing out the mandible into a soap-bubble pattern of rounded loculations",
+    "whatYouSee": "A jawbone ballooned from inside into soap bubbles.",
+    "whyItMatters": "It is a benign but locally aggressive tumour that keeps growing and destroying the jaw if left.",
+    "treatment": "It is removed with surgery and the jaw is often reconstructed.",
+    "takeaway": "A multilocular soap bubble lesion of the jaw is an ameloblastoma.",
+    "igTitle": "THE SOAP BUBBLE JAW",
+    "igOptions": [
+      "Abscess",
+      "Ameloblastoma",
+      "Cyst"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Pulmonary alveolar microlithiasis",
+    "aliases": [
+      "sandstorm lung",
+      "sand lungs"
+    ],
+    "symptom": "slowly creeping breathlessness over years that felt like just getting unfit",
+    "hook": "both lungs were filled top to bottom with countless tiny dense grains like a bag of sand poured into the chest",
+    "view": "PA chest radiograph showing both lungs (one view, no pelvis or groin)",
+    "keyFindings": "innumerable tiny dense micronodules filling both lungs from top to bottom giving a fine sandstorm-like whiteout",
+    "whatYouSee": "Lungs filled with countless tiny grains like sand.",
+    "whyItMatters": "Tiny stones build up in the air sacs over years and slowly stiffen the lungs.",
+    "treatment": "There is no cure and severe cases may need a lung transplant.",
+    "takeaway": "Lungs full of tiny sand-like stones is alveolar microlithiasis.",
+    "igTitle": "THE SANDSTORM LUNGS",
+    "igOptions": [
+      "Tuberculosis",
+      "Pulmonary alveolar microlithiasis",
+      "Pneumonia"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Calcific constrictive pericarditis",
+    "aliases": [
+      "armoured heart",
+      "calcified pericardium"
+    ],
+    "symptom": "swollen ankles and getting puffed on the stairs that they put down to age",
+    "hook": "a hard white shell of calcium was wrapped right around the heart like an eggshell",
+    "view": "lateral chest radiograph showing the heart (one view, no pelvis or groin)",
+    "keyFindings": "a curvilinear dense white rim of calcification encasing the heart like a shell",
+    "whatYouSee": "The heart sealed inside a hard eggshell of calcium.",
+    "whyItMatters": "The stiff calcified shell stops the heart filling properly and causes heart failure.",
+    "treatment": "The thickened shell is peeled off the heart with surgery.",
+    "takeaway": "A calcium shell around the heart is constrictive pericarditis.",
+    "igTitle": "THE ARMOURED HEART",
+    "igOptions": [
+      "Heart attack",
+      "Calcific constrictive pericarditis",
+      "Enlarged heart"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Portal venous gas",
+    "aliases": [
+      "hepatic portal venous gas",
+      "gas in the liver veins"
+    ],
+    "symptom": "vague belly cramps and just feeling off like a stomach bug that would pass",
+    "hook": "the liver was veined through with branching dark channels of air like a bolt of lightning frozen inside it",
+    "view": "AP abdomen radiograph of the upper abdomen and liver cropped at the navel with no pelvis or groin",
+    "keyFindings": "branching tubular lucent gas reaching out to the edge of the liver like a tree or lightning pattern",
+    "whatYouSee": "Branching air spreading through the liver like lightning.",
+    "whyItMatters": "Air in the liver veins often means the bowel is dying and is a medical emergency.",
+    "treatment": "It usually needs urgent surgery to treat the dying bowel behind it.",
+    "takeaway": "Branching gas reaching the edge of the liver is portal venous gas.",
+    "igTitle": "THE LIGHTNING LIVER",
+    "igOptions": [
+      "Fatty liver",
+      "Portal venous gas",
+      "Gallstones"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Chronic pancreatitis with calcification",
+    "aliases": [
+      "pancreatic calcifications",
+      "calcified pancreas"
+    ],
+    "symptom": "a grumbling ache in the upper belly after eating that got brushed off as indigestion",
+    "hook": "the pancreas was dusted edge to edge with tiny white stones like gravel scattered across the upper belly",
+    "view": "AP abdomen radiograph of the upper abdomen cropped at the navel with no pelvis or groin",
+    "keyFindings": "multiple coarse and punctate calcifications scattered across the pancreas in the upper abdomen like a band of gravel",
+    "whatYouSee": "The pancreas scattered with tiny stones like gravel.",
+    "whyItMatters": "It is the hallmark of a pancreas scarred by years of inflammation often from alcohol.",
+    "treatment": "Care is pain control enzyme tablets and stopping alcohol.",
+    "takeaway": "Gravel-like calcification across the pancreas is chronic pancreatitis.",
+    "igTitle": "THE GRAVEL PANCREAS",
+    "igOptions": [
+      "Kidney stones",
+      "Chronic pancreatitis",
+      "Gallstones"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Pulmonary hydatid cyst",
+    "aliases": [
+      "lung hydatid",
+      "echinococcus lung cyst",
+      "water lily sign"
+    ],
+    "symptom": "a dry nagging cough and a bit of breathlessness they blamed on being unfit",
+    "hook": "a huge round water balloon was sitting in the lung and the burst skin floated on the fluid like a water lily",
+    "view": "PA chest radiograph showing the lung (one view, no pelvis or groin)",
+    "keyFindings": "a large round cyst in the lung with an air-fluid level and a crumpled floating membrane giving the water-lily sign",
+    "whatYouSee": "A water balloon in the lung with a lily floating on top.",
+    "whyItMatters": "It is a tapeworm cyst grown in the lung and bursting it can cause a severe allergic reaction.",
+    "treatment": "It is removed with surgery along with antiparasitic medicine.",
+    "takeaway": "A lung cyst with a floating membrane is a hydatid cyst.",
+    "igTitle": "THE WATER LILY LUNG",
+    "igOptions": [
+      "Abscess",
+      "Pulmonary hydatid cyst",
+      "Tumour"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Craniofacial fibrous dysplasia",
+    "aliases": [
+      "leontiasis ossea",
+      "ground glass facial bones"
+    ],
+    "symptom": "a puffy cheek they figured was a sinus infection that would not clear",
+    "hook": "the facial bones had turned to frosted glass and swelled out like rising bread dough",
+    "view": "Waters view of the facial bones and skull (one view, no pelvis or groin)",
+    "keyFindings": "expansile hazy ground-glass bone replacing and swelling the facial bones and skull",
+    "whatYouSee": "Facial bones turned to frosted glass and swollen like dough.",
+    "whyItMatters": "Normal bone is replaced by weak fibrous tissue that swells and deforms the face.",
+    "treatment": "Care is supportive with surgery to reshape disabling overgrowth.",
+    "takeaway": "Ground-glass swelling of the facial bones is fibrous dysplasia.",
+    "igTitle": "THE FROSTED GLASS FACE",
+    "igOptions": [
+      "Sinus infection",
+      "Fibrous dysplasia",
+      "Bone cancer"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Pindborg tumor",
+    "aliases": [
+      "calcifying epithelial odontogenic tumor",
+      "driven snow jaw"
+    ],
+    "symptom": "a firm spot on the gum they kept poking with their tongue",
+    "hook": "the jaw was filling up with flecks like a snow flurry frozen inside the bone",
+    "view": "panoramic radiograph of the jaw (one view, no pelvis or groin)",
+    "keyFindings": "a lucent jaw lesion scattered with radiopaque flecks giving a driven-snow appearance",
+    "whatYouSee": "A jaw filling with flecks like frozen snow.",
+    "whyItMatters": "It is a rare jaw tumour that slowly expands the bone and needs removing.",
+    "treatment": "It is removed with surgery.",
+    "takeaway": "A jaw lesion with driven-snow flecks is a Pindborg tumour.",
+    "igTitle": "THE SNOWSTORM JAW",
+    "igOptions": [
+      "Cyst",
+      "Pindborg tumor",
+      "Abscess"
+    ],
+    "igCorrect": "B"
   }
 ]

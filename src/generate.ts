@@ -43,6 +43,7 @@ interface Cli {
   mock: boolean;
   topup: boolean;
   diagnosis?: string;
+  threadsOnly: boolean;
 }
 
 function parseArgs(argv: string[]): Cli {
@@ -51,11 +52,13 @@ function parseArgs(argv: string[]): Cli {
   let mock = false;
   let topup = false;
   let diagnosis: string | undefined;
+  let threadsOnly = false;
 
   for (let i = 0; i < args.length; i++) {
     const a = args[i];
     if (a === "--mock") mock = true;
     else if (a === "--topup") topup = true;
+    else if (a === "--threads-only") threadsOnly = true;
     else if (a === "--diagnosis") {
       diagnosis = args[++i];
       if (!diagnosis) throw new Error("--diagnosis expects a value, e.g. --diagnosis \"Proteus syndrome\".");
@@ -78,7 +81,7 @@ function parseArgs(argv: string[]): Cli {
     }
   }
 
-  return { count, mock, topup, diagnosis };
+  return { count, mock, topup, diagnosis, threadsOnly };
 }
 
 function log(...parts: unknown[]): void {
@@ -245,10 +248,10 @@ function xrayPrompt(cond: Condition, avoid: string[] = []): string {
 // Pre-draft captions (mirror index.ts ensureGenerated): caption/answer/ig/cta.
 // ---------------------------------------------------------------------------
 
-async function predraftCaptions(c: Case): Promise<void> {
+async function predraftCaptions(c: Case, threadsOnly = false): Promise<void> {
   const threadsCaption = generateThreadsCaption(c);
   const threadsAnswer = await generateThreadsAnswer(c);
-  const igCaption = await generateIgCaption(c);
+  const igCaption = threadsOnly ? "" : await generateIgCaption(c);
   const ctaText = pickCta(c).text;
   c.generated = { threadsCaption, threadsAnswer, igCaption, ctaText };
 }
@@ -258,7 +261,7 @@ async function predraftCaptions(c: Case): Promise<void> {
 // so captions/slides use the owner-vetted facts).
 // ---------------------------------------------------------------------------
 
-function buildCase(cond: Condition, folder: string, number: number, postAt: Date): Case {
+function buildCase(cond: Condition, folder: string, number: number, postAt: Date, threadsOnly = false): Case {
   const igOptions = cond.igOptions.map(
     (opt, i) => `${"ABC"[i]}. ${opt}`,
   );
@@ -275,7 +278,7 @@ function buildCase(cond: Condition, folder: string, number: number, postAt: Date
     takeaway: cond.takeaway,
     igOptions,
     threadsImage: "xray.png",
-    igSlides: ["question.png", "answer.png", "cta.png"],
+    igSlides: threadsOnly ? [] : ["question.png", "answer.png", "cta.png"],
     postAt: postAt.toISOString(),
     approved: false,
     source: "generated",
@@ -298,6 +301,7 @@ async function generateOne(
   number: number,
   postAt: Date,
   mock: boolean,
+  threadsOnly: boolean,
 ): Promise<GenResult> {
   const folder = `${pad5(number)}-${slug(cond.diagnosis)}`;
   const dir = join(projectRoot, config.casesDir, folder);
@@ -337,7 +341,7 @@ async function generateOne(
   writeFileSync(join(dir, "xray.png"), xrayPng);
 
   // 2. Assemble the Case. If the X-ray failed anatomy QA, flag needsReview and SKIP slides.
-  const c = buildCase(cond, folder, number, postAt);
+  const c = buildCase(cond, folder, number, postAt, threadsOnly);
   const failed = !!(verdict && !verdict.ok);
   if (failed) {
     c.needsReview = true;
@@ -347,17 +351,19 @@ async function generateOne(
     // 3 IG slides with gpt-image-2 (X-ray composited via image-edit). The composite can
     // RESTORE genital detail, so when the X-ray had genitalia, blur the two slides that embed
     // it directly (multi-pass). The CTA slide has no X-ray.
-    const slides = await generateSlides(c, cond, xrayPng);
-    if (config.censorGenitals && xrayHadGenitals) {
-      const q = await censorUntilClean(slides.question);
-      const a = await censorUntilClean(slides.answer);
-      slides.question = q.png;
-      slides.answer = a.png;
-      if (q.stillExposed || a.stillExposed) genitalExposed = true;
+    if (!threadsOnly) {
+      const slides = await generateSlides(c, cond, xrayPng);
+      if (config.censorGenitals && xrayHadGenitals) {
+        const q = await censorUntilClean(slides.question);
+        const a = await censorUntilClean(slides.answer);
+        slides.question = q.png;
+        slides.answer = a.png;
+        if (q.stillExposed || a.stillExposed) genitalExposed = true;
+      }
+      writeFileSync(join(dir, "question.png"), slides.question);
+      writeFileSync(join(dir, "answer.png"), slides.answer);
+      writeFileSync(join(dir, "cta.png"), slides.cta);
     }
-    writeFileSync(join(dir, "question.png"), slides.question);
-    writeFileSync(join(dir, "answer.png"), slides.answer);
-    writeFileSync(join(dir, "cta.png"), slides.cta);
 
     // Safety: ANY case where genitalia were detected is HELD for manual review. Auto-blur
     // placement on faint X-ray genitalia is unreliable (it can land on the wrong spot), so a
@@ -375,7 +381,7 @@ async function generateOne(
   }
 
   // 3. Pre-draft captions, then persist the case (approved:false, source:"generated").
-  await predraftCaptions(c);
+  await predraftCaptions(c, threadsOnly);
   saveCase(c);
 
   return { diagnosis: cond.diagnosis, folder, postAt: c.postAt };
@@ -449,7 +455,7 @@ async function main(): Promise<void> {
     cond.used = true;
     saveConditions(conditions);
 
-    const result = await generateOne(cond, number, postAt, cli.mock);
+    const result = await generateOne(cond, number, postAt, cli.mock, cli.threadsOnly);
     results.push(result);
 
     log(`generated #${number} ${result.diagnosis} -> cases/${result.folder} (postAt ${result.postAt})`);

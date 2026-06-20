@@ -95,7 +95,7 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             echo "rebuild: regenerate kept cases' gpt-image-2 slides, then top up the queue"
             npx tsx src/render.ts || echo "render errored, continuing"
-            npm run generate -- --topup || echo "topup errored, continuing"
+            npm run generate -- --topup --threads-only || echo "topup errored, continuing"
             if [ -n "$(git status --porcelain cases data/conditions.json data/used-diagnoses.json)" ]; then
               git add cases data/conditions.json data/used-diagnoses.json
               git commit -m "chore: rebuild gpt-image-2 slides + top up queue [skip ci]"
@@ -124,7 +124,7 @@ jobs:
           # approved:false, so the review gate still holds them until a human approves
           # (BOT_AUTO_APPROVE stays unset). Commit the new cases/** + conditions.json.
           echo "::group::queue top-up ($(date -u +%H:%M) UTC)"
-          npm run generate -- --topup || echo "top-up errored, continuing"
+          npm run generate -- --topup --threads-only || echo "top-up errored, continuing"
           if [ -n "$(git status --porcelain cases data/conditions.json)" ]; then
             git add cases data/conditions.json
             git commit -m "chore: top up case queue [skip ci]"

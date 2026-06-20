@@ -1,17 +1,17 @@
 {
   "folder": "00012-swallowed-safety-pin",
   "number": 12,
-  "diagnosis": "Swallowed safety pin",
+  "diagnosis": "Calcific constrictive pericarditis",
   "aliases": [
-    "open safety pin",
-    "ingested safety pin"
+    "armoured heart",
+    "calcified pericardium"
   ],
-  "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
-  "hook": "an open safety pin was stuck in the food pipe with its point upward",
-  "whatYouSee": "An open safety pin stuck in the food pipe.",
-  "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
-  "treatment": "It is removed urgently by endoscopy.",
-  "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
+  "symptom": "swollen ankles and getting puffed on the stairs that they put down to age",
+  "hook": "a hard white shell of calcium was wrapped right around the heart like an eggshell",
+  "whatYouSee": "The heart sealed inside a hard eggshell of calcium.",
+  "whyItMatters": "The stiff calcified shell stops the heart filling properly and causes heart failure.",
+  "treatment": "The thickened shell is peeled off the heart with surgery.",
+  "takeaway": "A calcium shell around the heart is constrictive pericarditis.",
   "igOptions": [
     "A. Safety pin",
     "B. Hair clip",
@@ -24,34 +24,32 @@
     "cta.png"
   ],
   "postAt": "2026-06-26T18:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
-    "diagnosis": "Swallowed safety pin",
+    "diagnosis": "Calcific constrictive pericarditis",
     "aliases": [
-      "open safety pin",
-      "ingested safety pin"
+      "armoured heart",
+      "calcified pericardium"
     ],
-    "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
-    "hook": "an open safety pin was stuck in the food pipe with its point upward",
-    "view": "AP chest and neck of an infant one view filling the frame with no pelvis or groin",
-    "keyFindings": "an open safety pin lodged in the upper food pipe at the level of the neck or chest with its sharp point open and the spring clearly visible",
-    "whatYouSee": "An open safety pin stuck in the food pipe.",
-    "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
-    "treatment": "It is removed urgently by endoscopy.",
-    "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
-    "igTitle": "PINNED",
+    "symptom": "swollen ankles and getting puffed on the stairs that they put down to age",
+    "hook": "a hard white shell of calcium was wrapped right around the heart like an eggshell",
+    "view": "lateral chest radiograph showing the heart (one view, no pelvis or groin)",
+    "keyFindings": "a curvilinear dense white rim of calcification encasing the heart like a shell",
+    "whatYouSee": "The heart sealed inside a hard eggshell of calcium.",
+    "whyItMatters": "The stiff calcified shell stops the heart filling properly and causes heart failure.",
+    "treatment": "The thickened shell is peeled off the heart with surgery.",
+    "takeaway": "A calcium shell around the heart is constrictive pericarditis.",
+    "igTitle": "THE ARMOURED HEART",
     "igOptions": [
-      "Safety pin",
-      "Hair clip",
-      "Coin"
+      "Heart attack",
+      "Calcific constrictive pericarditis",
+      "Enlarged heart"
     ],
-    "igCorrect": "A",
+    "igCorrect": "B",
     "used": true
   },
   "generated": {
-    "threadsCaption": "A patient came in with an infant drooling and refusing feeds after swallowing a safety pin.\n\nThen the X-ray loaded 😭\n\nAnd an open safety pin was stuck in the food pipe with its point upward.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Swallowed safety pin\n\n👀 What you see:\nAn open safety pin stuck in the food pipe.\n\n🦴 Why it matters:\nAn open sharp pin can tear the food pipe so it must come out quickly.\n\n💊 Treatment:\nIt is removed urgently by endoscopy.",
     "igCaption": "Case File 12 🩻\n⠀\nSomething sharp is caught where it should never be\n⠀\nAn infant who stopped feeding and started drooling tells you everything\n⠀\nThe X-ray shows exactly why this one cannot wait\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
     "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\nVolume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.\n\nOver a hundred strange real X-rays with all the answers.\n\nmednoteslab.gumroad.com/l/collection"
   }

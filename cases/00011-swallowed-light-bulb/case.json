@@ -1,17 +1,17 @@
 {
   "folder": "00011-swallowed-light-bulb",
   "number": 11,
-  "diagnosis": "Swallowed light bulb",
+  "diagnosis": "Pulmonary alveolar microlithiasis",
   "aliases": [
-    "ingested light bulb",
-    "light bulb in stomach"
+    "sandstorm lung",
+    "sand lungs"
   ],
-  "symptom": "stomach pain after swallowing a light bulb on a dare",
-  "hook": "a whole intact light bulb was sitting inside the stomach",
-  "whatYouSee": "A whole light bulb sitting inside the stomach.",
-  "whyItMatters": "A swallowed glass bulb can break and cut the gut so it often needs careful removal.",
-  "treatment": "It is usually removed by endoscopy or surgery before it can shatter.",
-  "takeaway": "The outline of a bulb in the stomach is a swallowed light bulb.",
+  "symptom": "slowly creeping breathlessness over years that felt like just getting unfit",
+  "hook": "both lungs were filled top to bottom with countless tiny dense grains like a bag of sand poured into the chest",
+  "whatYouSee": "Lungs filled with countless tiny grains like sand.",
+  "whyItMatters": "Tiny stones build up in the air sacs over years and slowly stiffen the lungs.",
+  "treatment": "There is no cure and severe cases may need a lung transplant.",
+  "takeaway": "Lungs full of tiny sand-like stones is alveolar microlithiasis.",
   "igOptions": [
     "A. Swallowed light bulb",
     "B. Stomach tumour",
@@ -24,34 +24,32 @@
     "cta.png"
   ],
   "postAt": "2026-06-25T18:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
-    "diagnosis": "Swallowed light bulb",
+    "diagnosis": "Pulmonary alveolar microlithiasis",
     "aliases": [
-      "ingested light bulb",
-      "light bulb in stomach"
+      "sandstorm lung",
+      "sand lungs"
     ],
-    "symptom": "stomach pain after swallowing a light bulb on a dare",
-    "hook": "a whole intact light bulb was sitting inside the stomach",
-    "view": "AP chest and upper abdomen cropped at the navel with no pelvis or groin in frame",
-    "keyFindings": "the outline of a whole intact light bulb with its rounded glass top and threaded metal base lying within the stomach in the upper abdomen with no pelvis or groin in the frame",
-    "whatYouSee": "A whole light bulb sitting inside the stomach.",
-    "whyItMatters": "A swallowed glass bulb can break and cut the gut so it often needs careful removal.",
-    "treatment": "It is usually removed by endoscopy or surgery before it can shatter.",
-    "takeaway": "The outline of a bulb in the stomach is a swallowed light bulb.",
-    "igTitle": "A BRIGHT IDEA",
+    "symptom": "slowly creeping breathlessness over years that felt like just getting unfit",
+    "hook": "both lungs were filled top to bottom with countless tiny dense grains like a bag of sand poured into the chest",
+    "view": "PA chest radiograph showing both lungs (one view, no pelvis or groin)",
+    "keyFindings": "innumerable tiny dense micronodules filling both lungs from top to bottom giving a fine sandstorm-like whiteout",
+    "whatYouSee": "Lungs filled with countless tiny grains like sand.",
+    "whyItMatters": "Tiny stones build up in the air sacs over years and slowly stiffen the lungs.",
+    "treatment": "There is no cure and severe cases may need a lung transplant.",
+    "takeaway": "Lungs full of tiny sand-like stones is alveolar microlithiasis.",
+    "igTitle": "THE SANDSTORM LUNGS",
     "igOptions": [
-      "Swallowed light bulb",
-      "Stomach tumour",
-      "Large gallstone"
+      "Tuberculosis",
+      "Pulmonary alveolar microlithiasis",
+      "Pneumonia"
     ],
-    "igCorrect": "A",
+    "igCorrect": "B",
     "used": true
   },
   "generated": {
-    "threadsCaption": "A patient came in with stomach pain after swallowing a light bulb on a dare.\n\nThen the X-ray loaded 😭\n\nAnd a whole intact light bulb was sitting inside the stomach.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Swallowed light bulb\n\n👀 What you see:\nA whole light bulb sitting inside the stomach.\n\n🦴 Why it matters:\nA swallowed glass bulb can break and cut the gut so it often needs careful removal.\n\n💊 Treatment:\nIt is usually removed by endoscopy or surgery before it can shatter.",
     "igCaption": "Case File 11 🩻\n⠀\nA dare went wrong and now we have the weirdest stomach X-ray of the week.\n⠀\nThe shape is unmistakable and somehow perfectly intact.\n⠀\nWhat do you do with a patient whose stomach is literally glowing with bad decisions.\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nspot.mednoteslab.com"
   }
