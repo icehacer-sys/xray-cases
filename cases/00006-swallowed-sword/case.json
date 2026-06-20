@@ -64,5 +64,9 @@
     "igPostedAt": "2026-06-20T18:03:22.745Z",
     "answerCommentId": "18136204207562948",
     "answerPostedAt": "2026-06-20T18:18:37.637Z"
-  }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "HELD 2026-06-20: repeat of the 06-10 sword (124K) + foreign-body category is the engagement FLOOR; replace with an on-formula visceral case"
+  ]
 }
