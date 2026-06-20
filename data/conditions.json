@@ -1094,5 +1094,28 @@
     ],
     "igCorrect": "B",
     "skipPublic": true
+  },
+  {
+    "diagnosis": "Mediastinal teratoma",
+    "aliases": [
+      "mediastinal dermoid",
+      "teratoma in the chest"
+    ],
+    "symptom": "a vague pressure in the chest and a cough they kept blaming on a chest infection",
+    "hook": "there was a fully formed human tooth sitting in a mass right in the middle of the chest",
+    "view": "AP chest radiograph centered on the mediastinum between the lungs (one view filling the frame, no pelvis or groin)",
+    "keyFindings": "an anterior mediastinal soft tissue mass between the lungs containing ONE large unmistakable fully formed human tooth shaped exactly like a real molar with a bright white crown and clear roots standing out sharply against the darker mass so it is obviously a tooth in the chest",
+    "whatYouSee": "A mass in the middle of the chest with a real human tooth inside it.",
+    "whyItMatters": "A teratoma grows from stray germ cells and can contain teeth hair and bone and is removed surgically.",
+    "treatment": "It is removed with surgery and is usually cured once it is taken out.",
+    "takeaway": "A chest mass that contains a tooth is a mediastinal teratoma.",
+    "igTitle": "THE TOOTH IN THE CHEST",
+    "igOptions": [
+      "Lung tumour",
+      "Mediastinal teratoma",
+      "Enlarged lymph node"
+    ],
+    "igCorrect": "B",
+    "used": true
   }
 ]

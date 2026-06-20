@@ -182,7 +182,7 @@ async function runPublish(cli: Cli): Promise<void> {
         // here is NOT terminal: because the carousel is keyed off the unset
         // `igPostedAt` (see the dedicated stage below), a later run retries it
         // independently of the now-completed challenge stage.
-        if (config.instagram) {
+        if (config.instagram && c.igSlides?.length) {
           await tryPublishCarousel(c, generated.igCaption!, state);
         }
 
@@ -205,7 +205,7 @@ async function runPublish(cli: Cli): Promise<void> {
     // IMPORTANT: do NOT block the answer/CTA stages on IG. A retry only consumes the
     // one-stage-per-run budget (`continue`) when it actually publishes this run; on a
     // failed retry (or in dry-run) we fall through so the answer/CTA still proceed.
-    if (cli.mode !== "dry-run" && config.instagram && !stages.igPostedAt) {
+    if (cli.mode !== "dry-run" && config.instagram && c.igSlides?.length && !stages.igPostedAt) {
       await tryPublishCarousel(c, generated.igCaption ?? (await generateIgCaption(c)), state);
       if (state.getStages(c.folder).igPostedAt) {
         c.stages = state.getStages(c.folder);
