@@ -1,0 +1,60 @@
+{
+  "folder": "00013-impalement-by-a-metal-rod",
+  "number": 13,
+  "diagnosis": "Impalement by a metal rod",
+  "aliases": [
+    "rebar impalement",
+    "impaled chest",
+    "penetrating rod"
+  ],
+  "symptom": "a fall onto a steel rod at a construction site",
+  "hook": "a long steel rod had passed straight through the chest",
+  "whatYouSee": "A long steel rod passing straight through the chest.",
+  "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
+  "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
+  "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+  "igOptions": [
+    "A. Chest drain",
+    "B. Impaled rod",
+    "C. Spinal rod"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [
+    "question.png",
+    "answer.png",
+    "cta.png"
+  ],
+  "postAt": "2026-06-27T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Impalement by a metal rod",
+    "aliases": [
+      "rebar impalement",
+      "impaled chest",
+      "penetrating rod"
+    ],
+    "symptom": "a fall onto a steel rod at a construction site",
+    "hook": "a long steel rod had passed straight through the chest",
+    "view": "AP chest one view filling the frame with no pelvis or groin",
+    "keyFindings": "a long straight thick radiopaque metal rod passing through the chest cavity crossing the lung fields with the surrounding ribs and chest anatomy otherwise intact",
+    "whatYouSee": "A long steel rod passing straight through the chest.",
+    "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
+    "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
+    "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+    "igTitle": "THE CONSTRUCTION SITE",
+    "igOptions": [
+      "Chest drain",
+      "Impaled rod",
+      "Spinal rod"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with a fall onto a steel rod at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a long steel rod had passed straight through the chest.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA long steel rod passing straight through the chest.\n\n🦴 Why it matters:\nAn impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.\n\n💊 Treatment:\nIt is removed in the operating room with the chest opened to control bleeding.",
+    "igCaption": "Case File 13 🩻\n⠀\nA steel rod went in and did not come out the way you expect\n⠀\nThe X-ray will make you hold your breath\n⠀\nHow is this person still alive\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
+  }
+}
