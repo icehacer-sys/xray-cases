@@ -1,0 +1,54 @@
+{
+  "folder": "00014-gas-gangrene",
+  "number": 14,
+  "diagnosis": "Gas gangrene",
+  "aliases": [
+    "clostridial myonecrosis",
+    "gas in the tissues"
+  ],
+  "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
+  "hook": "the muscles of the limb were full of spreading gas bubbles",
+  "whatYouSee": "Bubbles of gas spreading through the muscles of the limb.",
+  "whyItMatters": "Gas in the muscle means a fast spreading flesh eating infection that can kill within hours.",
+  "treatment": "It needs emergency surgery to cut away dead tissue plus strong antibiotics.",
+  "takeaway": "Gas bubbles tracking through the muscles is gas gangrene a surgical emergency.",
+  "igOptions": [
+    "A. Gas gangrene",
+    "B. Fat necrosis",
+    "C. Old haematoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-28T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Gas gangrene",
+    "aliases": [
+      "clostridial myonecrosis",
+      "gas in the tissues"
+    ],
+    "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
+    "hook": "the muscles of the limb were full of spreading gas bubbles",
+    "view": "AP radiograph of a lower leg one view filling the frame with no pelvis or groin",
+    "keyFindings": "multiple dark gas bubbles and streaks of gas tracking through the soft tissues and muscle planes of the limb giving a feathery bubbly pattern with the bone intact",
+    "whatYouSee": "Bubbles of gas spreading through the muscles of the limb.",
+    "whyItMatters": "Gas in the muscle means a fast spreading flesh eating infection that can kill within hours.",
+    "treatment": "It needs emergency surgery to cut away dead tissue plus strong antibiotics.",
+    "takeaway": "Gas bubbles tracking through the muscles is gas gangrene a surgical emergency.",
+    "igTitle": "THE SPREADING WOUND",
+    "igOptions": [
+      "Gas gangrene",
+      "Fat necrosis",
+      "Old haematoma"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with a rapidly swelling painful leg with a foul wound after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the muscles of the limb were full of spreading gas bubbles.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Gas gangrene\n\n👀 What you see:\nBubbles of gas spreading through the muscles of the limb.\n\n🦴 Why it matters:\nGas in the muscle means a fast spreading flesh eating infection that can kill within hours.\n\n💊 Treatment:\nIt needs emergency surgery to cut away dead tissue plus strong antibiotics.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
+  }
+}

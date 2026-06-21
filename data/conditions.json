@@ -1070,7 +1070,8 @@
       "Fat necrosis",
       "Old haematoma"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "used": true
   },
   {
     "diagnosis": "Fetus in fetu",
