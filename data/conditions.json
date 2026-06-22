@@ -1352,7 +1352,8 @@
       "Fibrous dysplasia",
       "Bone cancer"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Pindborg tumor",
