@@ -416,7 +416,8 @@
       "Carotid dissection"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Osteopoikilosis",
@@ -463,7 +464,8 @@
       "Chronic osteomyelitis"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Fibrodysplasia ossificans progressiva",
@@ -487,7 +489,8 @@
       "Dermatomyositis"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Giant gallstone",
@@ -696,7 +699,8 @@
       "Haematoma"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Rhinolith",
@@ -719,7 +723,8 @@
       "Inverted papilloma"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "skipPublic": true
   },
   {
     "diagnosis": "Cervical rib",
