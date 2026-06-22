@@ -1305,7 +1305,8 @@
       "Chronic pancreatitis",
       "Gallstones"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Pulmonary hydatid cyst",
@@ -1328,7 +1329,8 @@
       "Pulmonary hydatid cyst",
       "Tumour"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Craniofacial fibrous dysplasia",

@@ -1,54 +1,54 @@
 {
   "folder": "00014-gas-gangrene",
   "number": 14,
-  "diagnosis": "Gas gangrene",
+  "diagnosis": "Pulmonary hydatid cyst",
   "aliases": [
-    "clostridial myonecrosis",
-    "gas in the tissues"
+    "lung hydatid",
+    "echinococcus lung cyst",
+    "water lily sign"
   ],
-  "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
-  "hook": "the muscles of the limb were full of spreading gas bubbles",
-  "whatYouSee": "Bubbles of gas spreading through the muscles of the limb.",
-  "whyItMatters": "Gas in the muscle means a fast spreading flesh eating infection that can kill within hours.",
-  "treatment": "It needs emergency surgery to cut away dead tissue plus strong antibiotics.",
-  "takeaway": "Gas bubbles tracking through the muscles is gas gangrene a surgical emergency.",
+  "symptom": "a dry nagging cough and a bit of breathlessness they blamed on being unfit",
+  "hook": "a huge round water balloon was sitting in the lung and the burst skin floated on the fluid like a water lily",
+  "whatYouSee": "A water balloon in the lung with a lily floating on top.",
+  "whyItMatters": "It is a tapeworm cyst grown in the lung and bursting it can cause a severe allergic reaction.",
+  "treatment": "It is removed with surgery along with antiparasitic medicine.",
+  "takeaway": "A lung cyst with a floating membrane is a hydatid cyst.",
   "igOptions": [
-    "A. Gas gangrene",
-    "B. Fat necrosis",
-    "C. Old haematoma"
+    "A. Abscess",
+    "B. Pulmonary hydatid cyst",
+    "C. Tumour"
   ],
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-06-27T18:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
-    "diagnosis": "Gas gangrene",
+    "diagnosis": "Pulmonary hydatid cyst",
     "aliases": [
-      "clostridial myonecrosis",
-      "gas in the tissues"
+      "lung hydatid",
+      "echinococcus lung cyst",
+      "water lily sign"
     ],
-    "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
-    "hook": "the muscles of the limb were full of spreading gas bubbles",
-    "view": "AP radiograph of a lower leg one view filling the frame with no pelvis or groin",
-    "keyFindings": "multiple dark gas bubbles and streaks of gas tracking through the soft tissues and muscle planes of the limb giving a feathery bubbly pattern with the bone intact",
-    "whatYouSee": "Bubbles of gas spreading through the muscles of the limb.",
-    "whyItMatters": "Gas in the muscle means a fast spreading flesh eating infection that can kill within hours.",
-    "treatment": "It needs emergency surgery to cut away dead tissue plus strong antibiotics.",
-    "takeaway": "Gas bubbles tracking through the muscles is gas gangrene a surgical emergency.",
-    "igTitle": "THE SPREADING WOUND",
+    "symptom": "a dry nagging cough and a bit of breathlessness they blamed on being unfit",
+    "hook": "a huge round water balloon was sitting in the lung and the burst skin floated on the fluid like a water lily",
+    "view": "PA chest radiograph showing the lung (one view, no pelvis or groin)",
+    "keyFindings": "a large round cyst in the lung with an air-fluid level and a crumpled floating membrane giving the water-lily sign",
+    "whatYouSee": "A water balloon in the lung with a lily floating on top.",
+    "whyItMatters": "It is a tapeworm cyst grown in the lung and bursting it can cause a severe allergic reaction.",
+    "treatment": "It is removed with surgery along with antiparasitic medicine.",
+    "takeaway": "A lung cyst with a floating membrane is a hydatid cyst.",
+    "igTitle": "THE WATER LILY LUNG",
     "igOptions": [
-      "Gas gangrene",
-      "Fat necrosis",
-      "Old haematoma"
+      "Abscess",
+      "Pulmonary hydatid cyst",
+      "Tumour"
     ],
-    "igCorrect": "A",
+    "igCorrect": "B",
     "used": true
   },
   "generated": {
-    "threadsCaption": "A patient came in with a rapidly swelling painful leg with a foul wound after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the muscles of the limb were full of spreading gas bubbles.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Gas gangrene\n\n👀 What you see:\nBubbles of gas spreading through the muscles of the limb.\n\n🦴 Why it matters:\nGas in the muscle means a fast spreading flesh eating infection that can kill within hours.\n\n💊 Treatment:\nIt needs emergency surgery to cut away dead tissue plus strong antibiotics.",
     "igCaption": "",
-    "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
+    "ctaText": ""
   }
 }

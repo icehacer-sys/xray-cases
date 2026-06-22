@@ -1,60 +1,52 @@
 {
   "folder": "00013-impalement-by-a-metal-rod",
   "number": 13,
-  "diagnosis": "Impalement by a metal rod",
+  "diagnosis": "Chronic pancreatitis with calcification",
   "aliases": [
-    "rebar impalement",
-    "impaled chest",
-    "penetrating rod"
+    "pancreatic calcifications",
+    "calcified pancreas"
   ],
-  "symptom": "a fall onto a steel rod at a construction site",
-  "hook": "a long steel rod had passed straight through the chest",
-  "whatYouSee": "A long steel rod passing straight through the chest.",
-  "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
-  "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
-  "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+  "symptom": "a grumbling ache in the upper belly after eating that got brushed off as indigestion",
+  "hook": "the pancreas was dusted edge to edge with tiny white stones like gravel scattered across the upper belly",
+  "whatYouSee": "The pancreas scattered with tiny stones like gravel.",
+  "whyItMatters": "It is the hallmark of a pancreas scarred by years of inflammation often from alcohol.",
+  "treatment": "Care is pain control enzyme tablets and stopping alcohol.",
+  "takeaway": "Gravel-like calcification across the pancreas is chronic pancreatitis.",
   "igOptions": [
-    "A. Chest drain",
-    "B. Impaled rod",
-    "C. Spinal rod"
+    "A. Kidney stones",
+    "B. Chronic pancreatitis",
+    "C. Gallstones"
   ],
   "threadsImage": "xray.png",
-  "igSlides": [
-    "question.png",
-    "answer.png",
-    "cta.png"
-  ],
+  "igSlides": [],
   "postAt": "2026-06-26T18:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
-    "diagnosis": "Impalement by a metal rod",
+    "diagnosis": "Chronic pancreatitis with calcification",
     "aliases": [
-      "rebar impalement",
-      "impaled chest",
-      "penetrating rod"
+      "pancreatic calcifications",
+      "calcified pancreas"
     ],
-    "symptom": "a fall onto a steel rod at a construction site",
-    "hook": "a long steel rod had passed straight through the chest",
-    "view": "AP chest one view filling the frame with no pelvis or groin",
-    "keyFindings": "a long straight thick radiopaque metal rod passing through the chest cavity crossing the lung fields with the surrounding ribs and chest anatomy otherwise intact",
-    "whatYouSee": "A long steel rod passing straight through the chest.",
-    "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
-    "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
-    "takeaway": "A long metal rod crossing the chest is an impalement injury.",
-    "igTitle": "THE CONSTRUCTION SITE",
+    "symptom": "a grumbling ache in the upper belly after eating that got brushed off as indigestion",
+    "hook": "the pancreas was dusted edge to edge with tiny white stones like gravel scattered across the upper belly",
+    "view": "AP abdomen radiograph of the upper abdomen cropped at the navel with no pelvis or groin",
+    "keyFindings": "multiple coarse and punctate calcifications scattered across the pancreas in the upper abdomen like a band of gravel",
+    "whatYouSee": "The pancreas scattered with tiny stones like gravel.",
+    "whyItMatters": "It is the hallmark of a pancreas scarred by years of inflammation often from alcohol.",
+    "treatment": "Care is pain control enzyme tablets and stopping alcohol.",
+    "takeaway": "Gravel-like calcification across the pancreas is chronic pancreatitis.",
+    "igTitle": "THE GRAVEL PANCREAS",
     "igOptions": [
-      "Chest drain",
-      "Impaled rod",
-      "Spinal rod"
+      "Kidney stones",
+      "Chronic pancreatitis",
+      "Gallstones"
     ],
     "igCorrect": "B",
     "used": true
   },
   "generated": {
-    "threadsCaption": "A patient came in with a fall onto a steel rod at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a long steel rod had passed straight through the chest.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA long steel rod passing straight through the chest.\n\n🦴 Why it matters:\nAn impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.\n\n💊 Treatment:\nIt is removed in the operating room with the chest opened to control bleeding.",
-    "igCaption": "Case File 13 🩻\n⠀\nA steel rod went in and did not come out the way you expect\n⠀\nThe X-ray will make you hold your breath\n⠀\nHow is this person still alive\n⠀\nA real condition most people have never seen 🤯\n⠀\nSo before you swipe: A, B, or C? 🤔\n⠀\nSwipe for the answer then tell me if you got it 👇\n⠀\nA new weird X-ray case every single day 🗓️\n⠀\nFollow along and you'll start reading scans like a doctor 🧠\n⠀\nWant the free 5-case starter pack? 🎁\n⠀\nComment SAMPLE and I'll send it your way 📩\n⠀\nEducational entertainment only. Not medical advice.\n⠀\n#radiology #xray #spotthediagnosis #medicalmystery #medstudent",
-    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
+    "igCaption": "",
+    "ctaText": ""
   }
 }
