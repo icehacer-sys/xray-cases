@@ -1277,7 +1277,8 @@
       "Portal venous gas",
       "Gallstones"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Chronic pancreatitis with calcification",
