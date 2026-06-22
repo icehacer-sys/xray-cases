@@ -53,12 +53,18 @@
       "igPostedAt": "2026-06-21T18:02:01.165Z",
       "answerCommentId": "17922418842375388",
       "answerPostedAt": "2026-06-21T18:17:15.999Z"
+    },
+    "00009-charcot-joint": {
+      "threadsPostId": "18400630828086227",
+      "challengePostedAt": "2026-06-22T18:04:41.671Z",
+      "igMediaId": "18140447623541408",
+      "igPostedAt": "2026-06-22T18:05:05.360Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-06-21",
+      "date": "2026-06-22",
       "count": 0
     }
   }
