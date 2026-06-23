@@ -61,12 +61,18 @@
       "igPostedAt": "2026-06-22T18:05:05.360Z",
       "answerCommentId": "17971347699072851",
       "answerPostedAt": "2026-06-22T18:20:18.490Z"
+    },
+    "00010-swallowed-coins": {
+      "threadsPostId": "18089802926570889",
+      "challengePostedAt": "2026-06-23T18:01:08.637Z",
+      "igMediaId": "18000812417770369",
+      "igPostedAt": "2026-06-23T18:01:29.020Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-06-22",
+      "date": "2026-06-23",
       "count": 0
     }
   }
