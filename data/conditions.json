@@ -1375,6 +1375,7 @@
       "Pindborg tumor",
       "Abscess"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   }
 ]
