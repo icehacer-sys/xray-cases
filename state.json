@@ -69,12 +69,18 @@
       "igPostedAt": "2026-06-23T18:01:29.020Z",
       "answerCommentId": "18601895926055922",
       "answerPostedAt": "2026-06-23T18:16:43.111Z"
+    },
+    "00011-swallowed-light-bulb": {
+      "threadsPostId": "18101311792887870",
+      "challengePostedAt": "2026-06-24T18:02:39.833Z",
+      "igMediaId": "18194140213370253",
+      "igPostedAt": "2026-06-24T18:02:56.463Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-06-23",
+      "date": "2026-06-24",
       "count": 0
     }
   }
