@@ -77,12 +77,18 @@
       "igPostedAt": "2026-06-24T18:02:56.463Z",
       "answerCommentId": "18106590698319509",
       "answerPostedAt": "2026-06-24T18:18:06.869Z"
+    },
+    "00012-swallowed-safety-pin": {
+      "threadsPostId": "17888635365580011",
+      "challengePostedAt": "2026-06-25T18:03:01.956Z",
+      "igMediaId": "17955509219983090",
+      "igPostedAt": "2026-06-25T18:03:25.739Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "count": 0
     }
   }

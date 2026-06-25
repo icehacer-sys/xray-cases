@@ -46,7 +46,10 @@
     "used": true
   },
   "generated": {
+    "threadsCaption": "A patient came in with a grumbling ache in the upper belly after eating that got brushed off as indigestion.\n\nThen the X-ray loaded 😭\n\nAnd the pancreas was dusted edge to edge with tiny white stones like gravel scattered across the upper belly.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Chronic pancreatitis with calcification\n\n👀 What you see:\nThe pancreas scattered with tiny stones like gravel.\n\n🦴 Why it matters:\nIt is the hallmark of a pancreas scarred by years of inflammation often from alcohol.\n\n💊 Treatment:\nCare is pain control enzyme tablets and stopping alcohol.",
     "igCaption": "",
     "ctaText": ""
-  }
+  },
+  "stages": {}
 }
