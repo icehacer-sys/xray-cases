@@ -48,7 +48,10 @@
     "used": true
   },
   "generated": {
+    "threadsCaption": "A patient came in with a dry nagging cough and a bit of breathlessness they blamed on being unfit.\n\nThen the X-ray loaded 😭\n\nAnd a huge round water balloon was sitting in the lung and the burst skin floated on the fluid like a water lily.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Pulmonary hydatid cyst\n\n👀 What you see:\nA water balloon in the lung with a lily floating on top.\n\n🦴 Why it matters:\nIt is a tapeworm cyst grown in the lung and bursting it can cause a severe allergic reaction.\n\n💊 Treatment:\nIt is removed with surgery along with antiparasitic medicine.",
     "igCaption": "",
     "ctaText": ""
-  }
+  },
+  "stages": {}
 }
