@@ -1,0 +1,57 @@
+{
+  "folder": "00022-calcinosis-universalis",
+  "number": 22,
+  "diagnosis": "Calcinosis universalis",
+  "aliases": [
+    "calcinosis cutis universalis",
+    "dystrophic calcinosis",
+    "soft tissue calcinosis"
+  ],
+  "symptom": "an achy stiff arm with hard tender bumps under the skin that sometimes leaked a chalky white paste",
+  "hook": "the whole arm was filling up with hundreds of bright white stones scattered through the soft tissue",
+  "whatYouSee": "The skin and muscle around the arm are stuffed with hundreds of bright white specks lumps and sheets like someone poured gravel and crushed chalk under the skin. The bones look ordinary so the white storm sitting outside them is clearly in the wrong place.",
+  "whyItMatters": "This is the body laying down real calcium in the soft tissue where none belongs usually driven by an autoimmune muscle disease. The deposits can break the skin lock joints and get infected.",
+  "treatment": "Doctors treat the underlying autoimmune disease to calm the inflammation and sometimes remove stubborn painful or infected lumps surgically.",
+  "takeaway": "When the soft tissue around a limb is packed with hundreds of chalky deposits while the bones stay normal the body is making calcium in all the wrong places.",
+  "igOptions": [
+    "A. Calcium building up in the soft tissue",
+    "B. Hundreds of swallowed pebbles",
+    "C. Shotgun pellets from an old injury"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-30T18:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Calcinosis universalis",
+    "aliases": [
+      "calcinosis cutis universalis",
+      "dystrophic calcinosis",
+      "soft tissue calcinosis"
+    ],
+    "symptom": "an achy stiff arm with hard tender bumps under the skin that sometimes leaked a chalky white paste",
+    "hook": "the whole arm was filling up with hundreds of bright white stones scattered through the soft tissue",
+    "view": "AP forearm and hand radiograph showing the soft tissues around the bones (no pelvis or groin)",
+    "keyFindings": "countless bright white flecks plates and ropes of calcium packed through the muscles and skin around the bones while the bones themselves look normal",
+    "whatYouSee": "The skin and muscle around the arm are stuffed with hundreds of bright white specks lumps and sheets like someone poured gravel and crushed chalk under the skin. The bones look ordinary so the white storm sitting outside them is clearly in the wrong place.",
+    "whyItMatters": "This is the body laying down real calcium in the soft tissue where none belongs usually driven by an autoimmune muscle disease. The deposits can break the skin lock joints and get infected.",
+    "treatment": "Doctors treat the underlying autoimmune disease to calm the inflammation and sometimes remove stubborn painful or infected lumps surgically.",
+    "takeaway": "When the soft tissue around a limb is packed with hundreds of chalky deposits while the bones stay normal the body is making calcium in all the wrong places.",
+    "igTitle": "THE ARM FULL OF STONES",
+    "igOptions": [
+      "Calcium building up in the soft tissue",
+      "Hundreds of swallowed pebbles",
+      "Shotgun pellets from an old injury"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with an achy stiff arm with hard tender bumps under the skin that sometimes leaked a chalky white paste.\n\nThen the X-ray loaded 😭\n\nAnd the whole arm was filling up with hundreds of bright white stones scattered through the soft tissue.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Calcinosis universalis\n\n👀 What you see:\nThe skin and muscle around the arm are stuffed with hundreds of bright white specks lumps and sheets like someone poured gravel and crushed chalk under the skin. The bones look ordinary so the white storm sitting outside them is clearly in the wrong place.\n\n💊 Treatment:\nDoctors treat the underlying autoimmune disease to calm the inflammation and sometimes remove stubborn painful or infected lumps surgically.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\nVolume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.\n\nOver a hundred strange real X-rays with all the answers.\n\nmednoteslab.gumroad.com/l/collection"
+  },
+  "needsReview": false
+}

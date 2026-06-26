@@ -1,0 +1,59 @@
+{
+  "folder": "00019-intrathoracic-stomach-with-gastric-volvulus",
+  "number": 19,
+  "diagnosis": "Intrathoracic stomach with gastric volvulus",
+  "aliases": [
+    "gastric volvulus",
+    "upside-down stomach",
+    "giant paraesophageal hernia",
+    "intrathoracic stomach"
+  ],
+  "symptom": "feeling bloated and out of breath after dinner with burps that would not come up",
+  "hook": "the whole stomach had climbed up into the chest and flipped upside down like a balloon that floated up and rolled over",
+  "whatYouSee": "A big balloon of air with a flat liquid line floating high inside the chest right behind the heart. It looks like a second stomach parked between the lungs. Down below where the stomach belongs there is nothing because the whole organ moved north.",
+  "whyItMatters": "When the stomach slides up into the chest and twists on itself it can kink shut at both ends so nothing passes and the blood supply to the wall gets choked off. That makes it a true emergency because a strangled twisted stomach can die within hours.",
+  "treatment": "Emergency decompression with a stomach tube if it will pass then urgent surgery to untwist the stomach pull it back below the diaphragm and close the gap so it cannot slide up again.",
+  "takeaway": "Your stomach is supposed to live in your belly. Here it floated up into the chest and rolled over so the burp that would not come up was the warning.",
+  "igOptions": [
+    "A. A collapsed lung full of air",
+    "B. The whole stomach flipped up into the chest",
+    "C. A giant air pocket around the heart"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-27T18:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Intrathoracic stomach with gastric volvulus",
+    "aliases": [
+      "gastric volvulus",
+      "upside-down stomach",
+      "giant paraesophageal hernia",
+      "intrathoracic stomach"
+    ],
+    "symptom": "feeling bloated and out of breath after dinner with burps that would not come up",
+    "hook": "the whole stomach had climbed up into the chest and flipped upside down like a balloon that floated up and rolled over",
+    "view": "upright PA chest radiograph showing the heart and lungs (one view no pelvis or groin)",
+    "keyFindings": "a large round gas-filled pouch with a flat air-fluid level sitting behind and above the heart inside the chest where lung should be and the normal stomach bubble absent below the diaphragm",
+    "whatYouSee": "A big balloon of air with a flat liquid line floating high inside the chest right behind the heart. It looks like a second stomach parked between the lungs. Down below where the stomach belongs there is nothing because the whole organ moved north.",
+    "whyItMatters": "When the stomach slides up into the chest and twists on itself it can kink shut at both ends so nothing passes and the blood supply to the wall gets choked off. That makes it a true emergency because a strangled twisted stomach can die within hours.",
+    "treatment": "Emergency decompression with a stomach tube if it will pass then urgent surgery to untwist the stomach pull it back below the diaphragm and close the gap so it cannot slide up again.",
+    "takeaway": "Your stomach is supposed to live in your belly. Here it floated up into the chest and rolled over so the burp that would not come up was the warning.",
+    "igTitle": "THE STOMACH IN THE CHEST",
+    "igOptions": [
+      "A collapsed lung full of air",
+      "The whole stomach flipped up into the chest",
+      "A giant air pocket around the heart"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with feeling bloated and out of breath after dinner with burps that would not come up.\n\nThen the X-ray loaded 😭\n\nAnd the whole stomach had climbed up into the chest and flipped upside down like a balloon that floated up and rolled over.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Intrathoracic stomach with gastric volvulus\n\n👀 What you see:\nA big balloon of air with a flat liquid line floating high inside the chest right behind the heart. It looks like a second stomach parked between the lungs. Down below where the stomach belongs there is nothing because the whole organ moved north.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
+  },
+  "needsReview": false
+}

@@ -1,0 +1,59 @@
+{
+  "folder": "00023-giant-submandibular-sialolith",
+  "number": 23,
+  "diagnosis": "Giant submandibular sialolith",
+  "aliases": [
+    "sialolithiasis",
+    "salivary gland stone",
+    "salivary duct calculus",
+    "submandibular stone"
+  ],
+  "symptom": "a dull ache under the jaw that swelled up at every meal then settled an hour later for months",
+  "hook": "the spit gland had grown a hard rock that was plugging the drain like a cork",
+  "whatYouSee": "A bright white pebble parked under the jaw exactly where soft spit-gland tissue should be. A literal stone glowing inside a gland that only makes liquid.",
+  "whyItMatters": "Saliva keeps backing up behind the stone so the gland swells and balloons at meals and can get infected which turns a nuisance ache into a hot abscess in the neck.",
+  "treatment": "Small stones flush out with sour candy massage and fluids while big lodged ones are removed by a scope through the duct a small incision under the tongue or taking out the whole gland.",
+  "takeaway": "A gland built to make pure liquid can mineralize its own saliva into a stone big enough to dam the flow and show up like a marble on a flat X-ray.",
+  "igOptions": [
+    "A. A swallowed pebble stuck under the tongue",
+    "B. A stone the gland grew from its own saliva",
+    "C. A piece of broken tooth that migrated"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-01T18:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Giant submandibular sialolith",
+    "aliases": [
+      "sialolithiasis",
+      "salivary gland stone",
+      "salivary duct calculus",
+      "submandibular stone"
+    ],
+    "symptom": "a dull ache under the jaw that swelled up at every meal then settled an hour later for months",
+    "hook": "the spit gland had grown a hard rock that was plugging the drain like a cork",
+    "view": "lateral lower-jaw and floor-of-mouth radiograph of the neck region (no pelvis or groin)",
+    "keyFindings": "a single dense bright white stone the size of a bean sitting under the jaw along the saliva duct below the jawbone with sharp rounded edges",
+    "whatYouSee": "A bright white pebble parked under the jaw exactly where soft spit-gland tissue should be. A literal stone glowing inside a gland that only makes liquid.",
+    "whyItMatters": "Saliva keeps backing up behind the stone so the gland swells and balloons at meals and can get infected which turns a nuisance ache into a hot abscess in the neck.",
+    "treatment": "Small stones flush out with sour candy massage and fluids while big lodged ones are removed by a scope through the duct a small incision under the tongue or taking out the whole gland.",
+    "takeaway": "A gland built to make pure liquid can mineralize its own saliva into a stone big enough to dam the flow and show up like a marble on a flat X-ray.",
+    "igTitle": "THE STONE IN THE SPIT GLAND",
+    "igOptions": [
+      "A swallowed pebble stuck under the tongue",
+      "A stone the gland grew from its own saliva",
+      "A piece of broken tooth that migrated"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with a dull ache under the jaw that swelled up at every meal then settled an hour later for months.\n\nThen the X-ray loaded 😭\n\nAnd the spit gland had grown a hard rock that was plugging the drain like a cork.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Giant submandibular sialolith\n\n👀 What you see:\nA bright white pebble parked under the jaw exactly where soft spit-gland tissue should be. A literal stone glowing inside a gland that only makes liquid.\n\n🦴 Why it matters:\nSaliva keeps backing up behind the stone so the gland swells and balloons at meals and can get infected which turns a nuisance ache into a hot abscess in the neck.",
+    "igCaption": "",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
+  },
+  "needsReview": false
+}

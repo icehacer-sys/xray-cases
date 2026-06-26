@@ -1377,5 +1377,153 @@
     ],
     "igCorrect": "B",
     "used": true
+  },
+  {
+    "diagnosis": "Calcified meningioma",
+    "aliases": [
+      "brain stone",
+      "calcified intracranial meningioma",
+      "ossified meningioma",
+      "psammomatous meningioma"
+    ],
+    "symptom": "headaches that got brushed off for years and a bit of forgetfulness blamed on getting older",
+    "hook": "a solid white stone had grown deep inside the skull pressing on the brain like a pebble dropped into the head",
+    "view": "lateral skull radiograph (one view of the head only no pelvis or groin)",
+    "keyFindings": "a large densely calcified mass deep inside the skull that is as bright white as bone with a sharply defined rounded pebble-like outline pressing on the brain",
+    "whatYouSee": "a bright white lump deep inside the skull that looks exactly like a smooth stone dropped into the head. It is not metal and it was not swallowed. It is a tumor the brain lining slowly grew and then turned rock hard over years.",
+    "whyItMatters": "Meningiomas grow from the thin membrane that wraps the brain and most are slow and harmless. When one sits long enough it can soak up calcium until the whole mass hardens into a literal stone that glows white on a plain X-ray. By then it can quietly press on the brain and cause the vague headaches and memory slips that are so easy to ignore.",
+    "treatment": "Doctors confirm it with a CT or MRI scan and watch small calm ones with repeat imaging. A growing or symptom causing tumor is removed by neurosurgery and sometimes treated with focused radiation.",
+    "takeaway": "Your brain has a lining and that lining can grow a tumor that slowly turns to stone. Headaches you keep ignoring are sometimes worth a real look.",
+    "igTitle": "THE STONE IN THE SKULL",
+    "igOptions": [
+      "A swallowed marble stuck in the sinus",
+      "A tumor that turned to stone",
+      "A bullet fragment from an old injury"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Intrathoracic stomach with gastric volvulus",
+    "aliases": [
+      "gastric volvulus",
+      "upside-down stomach",
+      "giant paraesophageal hernia",
+      "intrathoracic stomach"
+    ],
+    "symptom": "feeling bloated and out of breath after dinner with burps that would not come up",
+    "hook": "the whole stomach had climbed up into the chest and flipped upside down like a balloon that floated up and rolled over",
+    "view": "upright PA chest radiograph showing the heart and lungs (one view no pelvis or groin)",
+    "keyFindings": "a large round gas-filled pouch with a flat air-fluid level sitting behind and above the heart inside the chest where lung should be and the normal stomach bubble absent below the diaphragm",
+    "whatYouSee": "A big balloon of air with a flat liquid line floating high inside the chest right behind the heart. It looks like a second stomach parked between the lungs. Down below where the stomach belongs there is nothing because the whole organ moved north.",
+    "whyItMatters": "When the stomach slides up into the chest and twists on itself it can kink shut at both ends so nothing passes and the blood supply to the wall gets choked off. That makes it a true emergency because a strangled twisted stomach can die within hours.",
+    "treatment": "Emergency decompression with a stomach tube if it will pass then urgent surgery to untwist the stomach pull it back below the diaphragm and close the gap so it cannot slide up again.",
+    "takeaway": "Your stomach is supposed to live in your belly. Here it floated up into the chest and rolled over so the burp that would not come up was the warning.",
+    "igTitle": "THE STOMACH IN THE CHEST",
+    "igOptions": [
+      "A collapsed lung full of air",
+      "The whole stomach flipped up into the chest",
+      "A giant air pocket around the heart"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Massive splenomegaly",
+    "aliases": [
+      "giant spleen",
+      "enlarged spleen",
+      "splenomegaly"
+    ],
+    "symptom": "a belt that kept feeling tighter that got blamed on a creeping beer gut",
+    "hook": "the spleen had quietly grown into a solid organ the size of a football crushing everything around it",
+    "view": "AP abdominal radiograph of the mid and upper abdomen cropped above the pelvis (no pelvis or groin)",
+    "keyFindings": "an enormous smooth white soft-tissue mass filling the entire upper-left abdomen and crossing the midline shoving every loop of dark bowel gas down and to the right",
+    "whatYouSee": "One smooth white blob swallows almost the whole left side of the belly and pushes every gas-filled gut loop into a thin crescent in the right corner.",
+    "whyItMatters": "A normal spleen is fist-sized and tucked under the ribs where a flat film never shows it. Blood and marrow diseases can drive it to swell ten to twenty times normal and one knock can rupture it into a fatal internal bleed.",
+    "treatment": "Doctors hunt the cause with blood counts and a marrow biopsy then treat the underlying disease. In severe cases the spleen is removed surgically followed by lifelong vaccines to cover the lost organ.",
+    "takeaway": "An organ the size of your fist can silently balloon into a football and the only clue is a belt that suddenly will not close.",
+    "igTitle": "THE FOOTBALL SPLEEN",
+    "igOptions": [
+      "A swollen liver",
+      "A giant spleen grown 15 times normal",
+      "A stomach full of trapped gas"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Massive substernal goiter",
+    "aliases": [
+      "retrosternal goiter",
+      "substernal thyroid",
+      "plunging goiter",
+      "intrathoracic goiter"
+    ],
+    "symptom": "clearing the throat a lot and feeling like shirt collars got tight with trouble breathing when lying flat",
+    "hook": "a gland in the neck had grown down into the chest and shoved the windpipe sideways into a bent straw",
+    "view": "frontal PA chest and lower neck radiograph showing the windpipe air column (no pelvis or groin)",
+    "keyFindings": "a huge soft-tissue mass filling the lower neck and diving behind the breastbone that pushes the dark air column of the trachea far to one side and squeezes it into a curved narrow slit",
+    "whatYouSee": "The windpipe normally runs straight down the middle like a black drinking straw. Here a giant gray lump in the neck has bent the straw sideways into a banana shape and pinched it nearly shut.",
+    "whyItMatters": "A thyroid this enlarged can slide down behind the breastbone and slowly choke the airway. People often barely notice until they cannot lie flat or breathe through the squeeze.",
+    "treatment": "Surgery to remove the overgrown thyroid which frees the trapped windpipe and lets it spring back toward the midline.",
+    "takeaway": "A gland in your neck can grow big enough to shove your own windpipe out of the way and bend it like a straw.",
+    "igTitle": "THE BENT WINDPIPE",
+    "igOptions": [
+      "A swallowed object stuck in the throat",
+      "A giant overgrown thyroid",
+      "A broken collarbone pressing in"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Calcinosis universalis",
+    "aliases": [
+      "calcinosis cutis universalis",
+      "dystrophic calcinosis",
+      "soft tissue calcinosis"
+    ],
+    "symptom": "an achy stiff arm with hard tender bumps under the skin that sometimes leaked a chalky white paste",
+    "hook": "the whole arm was filling up with hundreds of bright white stones scattered through the soft tissue",
+    "view": "AP forearm and hand radiograph showing the soft tissues around the bones (no pelvis or groin)",
+    "keyFindings": "countless bright white flecks plates and ropes of calcium packed through the muscles and skin around the bones while the bones themselves look normal",
+    "whatYouSee": "The skin and muscle around the arm are stuffed with hundreds of bright white specks lumps and sheets like someone poured gravel and crushed chalk under the skin. The bones look ordinary so the white storm sitting outside them is clearly in the wrong place.",
+    "whyItMatters": "This is the body laying down real calcium in the soft tissue where none belongs usually driven by an autoimmune muscle disease. The deposits can break the skin lock joints and get infected.",
+    "treatment": "Doctors treat the underlying autoimmune disease to calm the inflammation and sometimes remove stubborn painful or infected lumps surgically.",
+    "takeaway": "When the soft tissue around a limb is packed with hundreds of chalky deposits while the bones stay normal the body is making calcium in all the wrong places.",
+    "igTitle": "THE ARM FULL OF STONES",
+    "igOptions": [
+      "Calcium building up in the soft tissue",
+      "Hundreds of swallowed pebbles",
+      "Shotgun pellets from an old injury"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Giant submandibular sialolith",
+    "aliases": [
+      "sialolithiasis",
+      "salivary gland stone",
+      "salivary duct calculus",
+      "submandibular stone"
+    ],
+    "symptom": "a dull ache under the jaw that swelled up at every meal then settled an hour later for months",
+    "hook": "the spit gland had grown a hard rock that was plugging the drain like a cork",
+    "view": "lateral lower-jaw and floor-of-mouth radiograph of the neck region (no pelvis or groin)",
+    "keyFindings": "a single dense bright white stone the size of a bean sitting under the jaw along the saliva duct below the jawbone with sharp rounded edges",
+    "whatYouSee": "A bright white pebble parked under the jaw exactly where soft spit-gland tissue should be. A literal stone glowing inside a gland that only makes liquid.",
+    "whyItMatters": "Saliva keeps backing up behind the stone so the gland swells and balloons at meals and can get infected which turns a nuisance ache into a hot abscess in the neck.",
+    "treatment": "Small stones flush out with sour candy massage and fluids while big lodged ones are removed by a scope through the duct a small incision under the tongue or taking out the whole gland.",
+    "takeaway": "A gland built to make pure liquid can mineralize its own saliva into a stone big enough to dam the flow and show up like a marble on a flat X-ray.",
+    "igTitle": "THE STONE IN THE SPIT GLAND",
+    "igOptions": [
+      "A swallowed pebble stuck under the tongue",
+      "A stone the gland grew from its own saliva",
+      "A piece of broken tooth that migrated"
+    ],
+    "igCorrect": "B",
+    "used": true
   }
 ]
