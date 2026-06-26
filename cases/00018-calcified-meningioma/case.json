@@ -1,0 +1,59 @@
+{
+  "folder": "00018-calcified-meningioma",
+  "number": 18,
+  "diagnosis": "Calcified meningioma",
+  "aliases": [
+    "brain stone",
+    "calcified intracranial meningioma",
+    "ossified meningioma",
+    "psammomatous meningioma"
+  ],
+  "symptom": "headaches that got brushed off for years and a bit of forgetfulness blamed on getting older",
+  "hook": "a solid white stone had grown deep inside the skull pressing on the brain like a pebble dropped into the head",
+  "whatYouSee": "a bright white lump deep inside the skull that looks exactly like a smooth stone dropped into the head. It is not metal and it was not swallowed. It is a tumor the brain lining slowly grew and then turned rock hard over years.",
+  "whyItMatters": "Meningiomas grow from the thin membrane that wraps the brain and most are slow and harmless. When one sits long enough it can soak up calcium until the whole mass hardens into a literal stone that glows white on a plain X-ray. By then it can quietly press on the brain and cause the vague headaches and memory slips that are so easy to ignore.",
+  "treatment": "Doctors confirm it with a CT or MRI scan and watch small calm ones with repeat imaging. A growing or symptom causing tumor is removed by neurosurgery and sometimes treated with focused radiation.",
+  "takeaway": "Your brain has a lining and that lining can grow a tumor that slowly turns to stone. Headaches you keep ignoring are sometimes worth a real look.",
+  "igOptions": [
+    "A. A swallowed marble stuck in the sinus",
+    "B. A tumor that turned to stone",
+    "C. A bullet fragment from an old injury"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-26T20:50:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Calcified meningioma",
+    "aliases": [
+      "brain stone",
+      "calcified intracranial meningioma",
+      "ossified meningioma",
+      "psammomatous meningioma"
+    ],
+    "symptom": "headaches that got brushed off for years and a bit of forgetfulness blamed on getting older",
+    "hook": "a solid white stone had grown deep inside the skull pressing on the brain like a pebble dropped into the head",
+    "view": "lateral skull radiograph (one view of the head only no pelvis or groin)",
+    "keyFindings": "a large densely calcified mass deep inside the skull that is as bright white as bone with a sharply defined rounded pebble-like outline pressing on the brain",
+    "whatYouSee": "a bright white lump deep inside the skull that looks exactly like a smooth stone dropped into the head. It is not metal and it was not swallowed. It is a tumor the brain lining slowly grew and then turned rock hard over years.",
+    "whyItMatters": "Meningiomas grow from the thin membrane that wraps the brain and most are slow and harmless. When one sits long enough it can soak up calcium until the whole mass hardens into a literal stone that glows white on a plain X-ray. By then it can quietly press on the brain and cause the vague headaches and memory slips that are so easy to ignore.",
+    "treatment": "Doctors confirm it with a CT or MRI scan and watch small calm ones with repeat imaging. A growing or symptom causing tumor is removed by neurosurgery and sometimes treated with focused radiation.",
+    "takeaway": "Your brain has a lining and that lining can grow a tumor that slowly turns to stone. Headaches you keep ignoring are sometimes worth a real look.",
+    "igTitle": "THE STONE IN THE SKULL",
+    "igOptions": [
+      "A swallowed marble stuck in the sinus",
+      "A tumor that turned to stone",
+      "A bullet fragment from an old injury"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with headaches that got brushed off for years and a bit of forgetfulness blamed on getting older.\n\nThen the X-ray loaded 😭\n\nAnd a solid white stone had grown deep inside the skull pressing on the brain like a pebble dropped into the head.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Calcified meningioma\n\n👀 What you see:\na bright white lump deep inside the skull that looks exactly like a smooth stone dropped into the head. It is not metal and it was not swallowed. It is a tumor the brain lining slowly grew and then turned rock hard over years.\n\n💊 Treatment:\nDoctors confirm it with a CT or MRI scan and watch small calm ones with repeat imaging. A growing or symptom causing tumor is removed by neurosurgery and sometimes treated with focused radiation.",
+    "igCaption": "",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
+  },
+  "needsReview": false
+}
