@@ -1,0 +1,29 @@
+{
+  "folder": "00025-swallowed-cutlery",
+  "number": 25,
+  "diagnosis": "Swallowed fork",
+  "aliases": [
+    "ingested fork",
+    "swallowed cutlery",
+    "swallowed dinner fork",
+    "metallic foreign body in the stomach"
+  ],
+  "symptom": "chest pain and trouble swallowing after a night out",
+  "hook": "a full dinner fork was sitting in the stomach",
+  "whatYouSee": "A complete metal dinner fork lying in the stomach with the prongs pointing down. The handle and four tines are unmistakable against the soft tissue.",
+  "whyItMatters": "A swallowed fork can scratch tear or perforate the gut wall and the prongs can snag on the way through. Most need to come out before they cause damage.",
+  "treatment": "Usually removed with an endoscopy where a camera and a grabber pull it out through the mouth. Surgery if it has gone deeper or caused a tear.",
+  "takeaway": "Cutlery does not belong in the stomach. This one was swallowed whole and had to be fished back out.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-27T22:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with chest pain and trouble swallowing after a night out.\n\nThen the X-ray loaded 😳\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: a swallowed fork 🍴\n\nYep. A full dinner fork sitting in the stomach.\n\nSwallowed cutlery happens more than you'd think and it usually needs an endoscopy to pull it out before it tears the gut wall.\n\nYou knew this one the second the X-ray loaded.",
+    "igCaption": "",
+    "ctaText": "This one is from Weird X-Ray Case Files Volume 2.\n\n20 cases this wild and none repeated from Volume 1.\n\nxray2.mednoteslab.com"
+  }
+}
