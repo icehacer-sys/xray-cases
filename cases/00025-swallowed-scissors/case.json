@@ -1,0 +1,28 @@
+{
+  "folder": "00025-swallowed-scissors",
+  "number": 25,
+  "diagnosis": "Swallowed scissors",
+  "aliases": [
+    "ingested scissors",
+    "swallowed metal scissors",
+    "sharp metallic foreign body in the stomach"
+  ],
+  "symptom": "belly pain and not much of an explanation",
+  "hook": "a full pair of scissors was sitting in the stomach",
+  "whatYouSee": "A complete pair of metal scissors in the stomach with the two finger loops up top and the closed blades pointing down. It is unmistakable bright white against the soft tissue.",
+  "whyItMatters": "Swallowed sharp metal is a real emergency because the points can scratch tear or perforate the gut on the way through. Sharp objects in the stomach usually need to come out urgently.",
+  "treatment": "Removed with an urgent endoscopy where a camera and grabber pull it out through the mouth. Surgery if it has moved past reach or already caused a tear.",
+  "takeaway": "Scissors do not belong in the stomach. The points are the danger so this one comes out fast.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-27T22:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with belly pain and not much of an explanation.\n\nThen the X-ray loaded 😳\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: a swallowed pair of scissors ✂️\n\nYes. A full pair of scissors sitting in the stomach.\n\nSwallowed sharp metal is a real emergency because the points can tear the gut on the way through. This usually comes out with an urgent endoscopy and sometimes surgery.\n\nYou saw it the second the X-ray loaded.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these I put the wildest real cases in one free set.\n\nhopital.mednoteslab.com"
+  }
+}
