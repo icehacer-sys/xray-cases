@@ -12,7 +12,7 @@
   "hook": "the face came out stretched into a screaming skull",
   "whatYouSee": "A face smeared into a screaming skull because the patient moved while the scanner was sweeping.",
   "whyItMatters": "Nothing is wrong with this person. It is a pure artifact and the real danger is reading the smearing as a true deformity or disease.",
-  "treatment": "Hold still and rescan. A clean still image looks completely normal.",
+  "treatment": "",
   "takeaway": "A face smeared into a scream is a motion artifact not a disease.",
   "igOptions": [
     "A. A real skull deformity",
@@ -38,7 +38,7 @@
     "keyFindings": "the face and skull smeared and stacked into a screaming-skull shape from patient movement during the scanner sweep with the surrounding anatomy stretched out of line",
     "whatYouSee": "A face smeared into a screaming skull because the patient moved while the scanner was sweeping.",
     "whyItMatters": "Nothing is wrong with this person. It is a pure artifact and the real danger is reading the smearing as a true deformity or disease.",
-    "treatment": "Hold still and rescan. A clean still image looks completely normal.",
+    "treatment": "",
     "takeaway": "A face smeared into a scream is a motion artifact not a disease.",
     "igTitle": "THE SCREAMING SCAN",
     "igOptions": [
@@ -51,7 +51,7 @@
   },
   "generated": {
     "threadsCaption": "A patient came in for a routine scan feeling totally fine.\n\nThen the scan loaded 😳\n\nAnd the face came out stretched into a screaming skull.\n\nQuick challenge 🩻\n\nWhat happened to this image?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Motion artifact\n\n👀 What you see:\nA face smeared into a screaming skull. This is a CT scout image and the patient moved while the scanner was sweeping so the body got stretched and stacked out of line.\n\n🦴 Why it matters:\nNothing is wrong with this person. It is a pure artifact. The real risk is reading smearing like this as a true deformity or disease.\n\n💊 The fix:\nHold still and rescan. A clean still image looks completely normal.",
+    "threadsAnswer": "Answer: Motion artifact\n\n👀 What you see:\nA face smeared into a screaming skull. This is a CT scout image and the patient moved while the scanner was sweeping so the body got stretched and stacked out of line.\n\n🦴 Why it matters:\nNothing is wrong with this person. It is a pure artifact. The real risk is reading smearing like this as a true deformity or disease.",
     "igCaption": "",
     "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
   },

@@ -62,7 +62,9 @@ export function generateThreadsCaption(c: Case): string {
 export async function generateThreadsAnswer(c: Case): Promise<string> {
   let { whatYouSee, whyItMatters, treatment, takeaway } = c;
 
-  if (!whatYouSee || !whyItMatters || !treatment || !takeaway) {
+  // treatment is intentionally blank for non-disease cases (artifacts, normal variants), so a
+  // blank one must NOT trigger a re-draft; only re-draft when the descriptive fields are missing.
+  if (!whatYouSee || !whyItMatters || !takeaway) {
     const draft = await draftBreakdown(c);
     whatYouSee = whatYouSee ?? draft.whatYouSee;
     whyItMatters = whyItMatters ?? draft.whyItMatters;
@@ -75,10 +77,13 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
   // until the budget runs out. Order matters: Treatment sits BEFORE "Why it matters" so the
   // Tx is never the section dropped (owner: keep the Tx, 2026-06-19/28). The full untrimmed
   // 4-section breakdown still lives on the IG answer slide, which has no length limit.
+  // Non-disease cases (a motion artifact, a normal variant) have no treatment: leave `treatment`
+  // blank and the Tx section is omitted entirely (owner: no Tx when it is not a disease, 2026-06-28).
   const head = `Answer: ${c.diagnosis}`;
+  const txSection = treatment && treatment.trim() ? `💊 Treatment:\n${clamp(treatment, 170)}` : null;
   const sections = [
     `👀 What you see:\n${clamp(whatYouSee, 200)}`,
-    `💊 Treatment:\n${clamp(treatment, 170)}`,
+    ...(txSection ? [txSection] : []),
     `🦴 Why it matters:\n${clamp(whyItMatters, 170)}`,
   ];
   void takeaway; // still drafted (kept for the breakdown) but no longer shown in the reply
