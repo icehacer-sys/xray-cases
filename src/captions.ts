@@ -40,10 +40,15 @@ async function ask(system: string, user: string, maxTokens = 600): Promise<strin
 // ---------------------------------------------------------------------------
 
 export function generateThreadsCaption(c: Case): string {
+  // The SAME fixed format the audience knows — only the symptom + hook vary. Cap them so the
+  // caption can't creep over the limit as drafted fields get wordier (boilerplate ~110 chars,
+  // so symptom+hook capped here keeps the whole caption comfortably under Threads' 500).
+  const symptom = clamp(c.symptom, 130);
+  const hook = clamp(c.hook, 190);
   return [
-    `A patient came in with ${c.symptom}.`,
+    `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
-    `And ${c.hook}.`,
+    `And ${hook}.`,
     `Quick diagnosis challenge 🩻`,
     `What's the most likely diagnosis?`,
     `Wild guesses are welcome 👀`,
@@ -65,16 +70,16 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
     takeaway = takeaway ?? draft.takeaway;
   }
 
-  // Threads caps each reply at config.answerMaxChars (500), and the answer must be ONE
-  // reply (no chains). Build a single reply that includes as many WHOLE sections as fit
-  // (priority = declaration order); the full 4-section breakdown always lives on the IG
-  // answer slide, which has no length limit.
+  // Threads caps each reply at config.answerMaxChars (500) and the answer must be ONE reply
+  // (no chains, no truncation). Each section is length-clamped, then added in PRIORITY order
+  // until the budget runs out. Order matters: Treatment sits BEFORE "Why it matters" so the
+  // Tx is never the section dropped (owner: keep the Tx, 2026-06-19/28). The full untrimmed
+  // 4-section breakdown still lives on the IG answer slide, which has no length limit.
   const head = `Answer: ${c.diagnosis}`;
-  // Owner wants the answer comment to carry Treatment, not the Takeaway (2026-06-19).
   const sections = [
-    `👀 What you see:\n${whatYouSee}`,
-    `🦴 Why it matters:\n${whyItMatters}`,
-    `💊 Treatment:\n${treatment}`,
+    `👀 What you see:\n${clamp(whatYouSee, 200)}`,
+    `💊 Treatment:\n${clamp(treatment, 170)}`,
+    `🦴 Why it matters:\n${clamp(whyItMatters, 170)}`,
   ];
   void takeaway; // still drafted (kept for the breakdown) but no longer shown in the reply
   const out = [head];
@@ -90,6 +95,17 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
 /** Normalize AI-drafted punctuation: em/en dashes -> hyphen; collapse runs of spaces. */
 export function cleanPunct(s: string): string {
   return s.replace(/\s*[—–]\s*/g, " - ").replace(/[ \t]{2,}/g, " ").trim();
+}
+
+/** Trim to <= max chars at a sentence boundary, else a word boundary (never mid-word). */
+export function clamp(s: string, max: number): string {
+  s = s.trim();
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const sentence = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (sentence > max * 0.55) return cut.slice(0, sentence + 1).trim();
+  const space = cut.lastIndexOf(" ");
+  return (space > 0 ? cut.slice(0, space) : cut).trim().replace(/[.,;:]$/, "");
 }
 
 interface Breakdown {
