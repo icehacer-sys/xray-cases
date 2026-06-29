@@ -1,0 +1,57 @@
+{
+  "folder": "00026-tooth-in-nasal-cavity",
+  "number": 26,
+  "diagnosis": "Tooth in the nasal cavity",
+  "aliases": [
+    "intranasal tooth",
+    "ectopic tooth",
+    "supernumerary nasal tooth"
+  ],
+  "symptom": "a blocked nose with crusting and a foul smell for months",
+  "hook": "a fully formed tooth was growing inside the nasal cavity",
+  "whatYouSee": "A real tooth growing inside the nose.",
+  "whyItMatters": "An ectopic tooth can erupt into the nose and cause blockage infection and a foul discharge until it is removed.",
+  "treatment": "It is removed with a minor endoscopic procedure through the nose.",
+  "takeaway": "A tooth shaped density inside the nasal cavity is an ectopic intranasal tooth.",
+  "igOptions": [
+    "A. Nasal polyp",
+    "B. Ectopic tooth",
+    "C. Foreign bead"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-29T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "condition": {
+    "diagnosis": "Tooth in the nasal cavity",
+    "aliases": [
+      "intranasal tooth",
+      "ectopic tooth",
+      "supernumerary nasal tooth"
+    ],
+    "symptom": "a blocked nose with crusting and a foul smell for months",
+    "hook": "a fully formed tooth was growing inside the nasal cavity",
+    "view": "Waters view of the facial bones and nasal cavity one view filling the frame",
+    "keyFindings": "a single large and unmistakably tooth shaped radiopaque density with a clear pointed crown and root that is obviously a whole tooth sitting high inside the nasal cavity well above the upper tooth row so it clearly looks out of place",
+    "whatYouSee": "A real tooth growing inside the nose.",
+    "whyItMatters": "An ectopic tooth can erupt into the nose and cause blockage infection and a foul discharge until it is removed.",
+    "treatment": "It is removed with a minor endoscopic procedure through the nose.",
+    "takeaway": "A tooth shaped density inside the nasal cavity is an ectopic intranasal tooth.",
+    "igTitle": "THE BLOCKED NOSE",
+    "igOptions": [
+      "Nasal polyp",
+      "Ectopic tooth",
+      "Foreign bead"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  "generated": {
+    "threadsCaption": "A patient came in with a blocked nose and a foul smell that would not quit for months.\n\nThen the X-ray loaded 😳\n\nAnd something solid was sitting high up inside the nose where nothing should be.\n\nQuick diagnosis challenge 🩻\n\nWhat is the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Tooth in the nasal cavity\n\n👀 What you see:\nA real tooth growing inside the nose. A fully formed tooth with a crown and a root sitting high in the nasal cavity well above where any tooth belongs.\n\n💊 Treatment:\nIt is removed with a minor endoscopic procedure through the nose.\n\n🦴 Why it matters:\nAn ectopic tooth like this blocks the nose and causes infection and a foul discharge until it is taken out.",
+    "igCaption": "",
+    "ctaText": "If a tooth growing in someone's nose made you do a double take.\n\nI pulled every weird dental and tooth case I have into one PDF.\n\nImpacted teeth, extra teeth, teeth in places they should never be.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\n[Dental Edition link]"
+  },
+  "needsReview": false
+}
