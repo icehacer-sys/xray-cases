@@ -1,0 +1,57 @@
+{
+  "folder": "00026-complex-odontoma",
+  "number": 26,
+  "diagnosis": "Complex odontoma",
+  "aliases": [
+    "odontoma",
+    "complex odontoma",
+    "odontome"
+  ],
+  "symptom": "a back tooth that never came through and a hard lump in the jaw",
+  "hook": "a dense knot of tooth material was blocking the way",
+  "whatYouSee": "A dense knot of tooth material packed into the jaw.",
+  "whyItMatters": "An odontoma is a benign growth of dental tissue that can block a tooth from erupting.",
+  "treatment": "It is removed and the blocked tooth can then come in.",
+  "takeaway": "A dense knot of tooth material blocking a tooth is a complex odontoma.",
+  "igOptions": [
+    "A. A cyst",
+    "B. Complex odontoma",
+    "C. Condensing osteitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-29T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "condition": {
+    "diagnosis": "Complex odontoma",
+    "aliases": [
+      "odontoma",
+      "complex odontoma",
+      "odontome"
+    ],
+    "symptom": "a back tooth that never came through and a hard lump in the jaw",
+    "hook": "a dense knot of tooth material was blocking the way",
+    "view": "panoramic dental radiograph",
+    "keyFindings": "a dense irregular cauliflower-like radiopaque mass surrounded by a thin dark lucent rim sitting in the jaw and blocking an unerupted molar from erupting",
+    "whatYouSee": "A dense knot of tooth material packed into the jaw.",
+    "whyItMatters": "An odontoma is a benign growth of dental tissue that can block a tooth from erupting.",
+    "treatment": "It is removed and the blocked tooth can then come in.",
+    "takeaway": "A dense knot of tooth material blocking a tooth is a complex odontoma.",
+    "igTitle": "THE STONE NEST",
+    "igOptions": [
+      "A cyst",
+      "Complex odontoma",
+      "Condensing osteitis"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  "generated": {
+    "threadsCaption": "A patient came in because a back tooth never came through and there was a hard lump in the jaw.\n\nThen the X-ray loaded 😳\n\nAnd a dense knot of something was packed into the bone blocking the way.\n\nQuick diagnosis challenge 🩻\n\nWhat is the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Complex odontoma\n\n👀 What you see:\nA dense irregular knot of tooth material with a thin dark rim packed into the jaw and blocking a molar from coming through.\n\n💊 Treatment:\nIt is removed and the blocked tooth can then come in.\n\n🦴 Why it matters:\nAn odontoma is a benign growth of dental tissue but it can trap a tooth and stop it erupting until it is taken out.",
+    "igCaption": "",
+    "ctaText": "If a knot of teeth packed into someone's jaw made you look twice.\n\nI pulled every weird dental and tooth case I have into one PDF.\n\nImpacted teeth, extra teeth, teeth in places they should never be.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\n[Dental Edition link]"
+  },
+  "needsReview": false
+}
