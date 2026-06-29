@@ -54,7 +54,7 @@ jobs:
       THREADS_USER_ID: me
       GITHUB_RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
       BOT_CONFIRM_LIVE: "yes"
-      BOT_INSTAGRAM: "on" # cross-post the carousel to Instagram (slides embed the GPT X-ray)
+      BOT_INSTAGRAM: "off" # IG discontinued -- Threads only (owner, 2026-06-29)
       BOT_AUTO_APPROVE: "on" # owner trusts gpt-image-2: generated cases post without manual review
       BOT_XRAY_VERIFY: "on" # Claude vision checks each generated X-ray for AI anatomy defects; failures are regenerated or held for review
       BOT_CENSOR_GENITALS: "on" # blur external genitalia on the X-ray + slides so Threads/IG don't flag the post as sensitive
