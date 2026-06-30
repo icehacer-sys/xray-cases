@@ -127,12 +127,16 @@
       "challengePostedAt": "2026-06-29T19:04:23.215Z",
       "answerCommentId": "17856553989680717",
       "answerPostedAt": "2026-06-29T19:24:38.446Z"
+    },
+    "00027-gardner-syndrome": {
+      "threadsPostId": "18209169658341951",
+      "challengePostedAt": "2026-06-30T18:03:24.814Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "count": 0
     }
   }
