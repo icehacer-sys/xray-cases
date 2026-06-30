@@ -1,0 +1,58 @@
+{
+  "folder": "00027-gardner-syndrome",
+  "number": 27,
+  "diagnosis": "Gardner syndrome",
+  "aliases": [
+    "gardner syndrome",
+    "gardner's syndrome",
+    "familial adenomatous polyposis"
+  ],
+  "symptom": "hard lumps on the jaw and teeth that would not come in",
+  "hook": "the jaw was packed with extra teeth and dense bony bumps",
+  "whatYouSee": "A jaw crowded with many extra unerupted teeth and several dense bony lumps.",
+  "whyItMatters": "Gardner syndrome also fills the bowel with polyps that can turn into cancer so the teeth can be the first warning.",
+  "treatment": "The teeth and lumps are managed by the dentist but the bigger step is a referral.",
+  "takeaway": "A jaw full of extra teeth and bony lumps can be a sign of Gardner syndrome.",
+  "igOptions": [
+    "A. Cleidocranial dysplasia",
+    "B. Gardner syndrome",
+    "C. Multiple odontomas"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-06-30T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "condition": {
+    "diagnosis": "Gardner syndrome",
+    "aliases": [
+      "gardner syndrome",
+      "gardner's syndrome",
+      "familial adenomatous polyposis"
+    ],
+    "symptom": "hard lumps on the jaw and teeth that would not come in",
+    "hook": "the jaw was packed with extra teeth and dense bony bumps",
+    "view": "panoramic dental radiograph",
+    "keyFindings": "several dense bony osteomas in the jaws along with multiple extra unerupted and supernumerary teeth scattered through both jaws",
+    "whatYouSee": "A jaw crowded with many extra unerupted teeth and several dense bony lumps.",
+    "whyItMatters": "Gardner syndrome also fills the bowel with polyps that can turn into cancer so the teeth can be the first warning.",
+    "treatment": "The teeth and lumps are managed by the dentist but the bigger step is a referral.",
+    "takeaway": "A jaw full of extra teeth and bony lumps can be a sign of Gardner syndrome.",
+    "igTitle": "THE OSTEOMA CLUB",
+    "igOptions": [
+      "Cleidocranial dysplasia",
+      "Gardner syndrome",
+      "Multiple odontomas"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  "generated": {
+    "threadsCaption": "A young patient had hard lumps on the jaw and teeth that would not come in.\n\nThen the X-ray loaded 😳\n\nAnd the jaw was packed with extra teeth and dense bony bumps.\n\nQuick diagnosis challenge 🩻\n\nWhat is the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Gardner syndrome\n\n👀 What you see:\nA jaw crowded with many extra unerupted teeth and several dense bony lumps called osteomas.\n\n💊 Treatment:\nThe teeth and lumps are managed by the dentist but the bigger step is a referral.\n\n🦴 Why it matters:\nGardner syndrome also fills the bowel with polyps that can turn into cancer so the teeth can be the first warning.",
+    "igCaption": "",
+    "ctaText": "If a jaw packed with extra teeth made you look twice.\n\nI pulled every weird dental and jaw case I have into one PDF.\n\nImpacted teeth, extra teeth, tumors and cysts you might see once in a career.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nfield.mednoteslab.com"
+  },
+  "needsReview": false,
+  "stages": {}
+}
