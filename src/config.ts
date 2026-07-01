@@ -61,9 +61,9 @@ export const config = {
   // Keep this many approved-or-pending cases queued ahead.
   queueTarget: num("BOT_QUEUE_TARGET", 7),
   // Daily slot (UTC hour) the generator schedules new cases at.
-  // 18:00 UTC = 9 PM Cairo (UTC+3), matching the reply bot's 21-9 active window. (Reverted from a
-  // 4 AM US-prime trial: timing proved secondary to content, and 9 PM keeps the owner awake to engage.)
-  postHourUtc: num("BOT_POST_HOUR_UTC", 18),
+  // 19:00 UTC = 10 PM Cairo (UTC+3), matching the reply bot's 22-10 active window. (Changed from
+  // 9 PM to 10 PM on 2026-07-01 by owner request.)
+  postHourUtc: num("BOT_POST_HOUR_UTC", 19),
   // Skip the human review gate and post generated cases automatically. Off by default
   // (generated medical images should be eyeballed before they publish).
   autoApprove: (process.env.BOT_AUTO_APPROVE ?? "off").toLowerCase() === "on",
