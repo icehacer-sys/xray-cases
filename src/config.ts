@@ -49,6 +49,12 @@ export const config = {
   // genuine early access (a real reason to follow it). 0 = post at the same time as Threads.
   fbLeadMin: num("BOT_FB_LEAD_MIN", 10),
 
+  // Only Facebook-post cases whose challenge posted within this many hours. Without this the
+  // Stage-1c retry backfills the ENTIRE historical catalog onto a newly-connected Page in one
+  // burst (every past Threads case has challengePostedAt set but no fbPostedAt). 12h keeps it
+  // to just today's case going forward.
+  fbBackfillHours: num("BOT_FB_BACKFILL_HOURS", 12),
+
   // Auto-post the CTA as a reply under the pinned answer. Off by default: the owner posts
   // the CTA manually so the Gumroad link renders its cover-image preview (a bot sub-reply
   // does not show the preview). Stage 3 is skipped entirely when this is off.

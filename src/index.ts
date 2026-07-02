@@ -236,7 +236,13 @@ async function runPublish(cli: Cli): Promise<void> {
     // --- Stage 1c: retry the Facebook photo --------------------------------------------
     // Same rationale as Stage 1b: the Stage-1 FB post is best-effort and never re-runs, so
     // retry here while enabled and not yet posted. Never blocks the answer/CTA stages.
-    if (cli.mode !== "dry-run" && config.facebook && !stages.fbPostedAt && generated.threadsCaption) {
+    if (
+      cli.mode !== "dry-run" &&
+      config.facebook &&
+      !stages.fbPostedAt &&
+      generated.threadsCaption &&
+      now.getTime() - challengePostedAt.getTime() < config.fbBackfillHours * 3_600_000
+    ) {
       await tryPostFacebook(c, generated.threadsCaption, state);
       if (state.getStages(c.folder).fbPostedAt) {
         c.stages = state.getStages(c.folder);
