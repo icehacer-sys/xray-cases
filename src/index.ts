@@ -23,6 +23,7 @@ import {
 } from "./captions.js";
 import { postImage, reply, getReplies, getMyUsername, type SpoilerEntity } from "./threads.js";
 import { publishCarousel } from "./instagram.js";
+import { postPhoto } from "./facebook.js";
 import type { Case } from "./types.js";
 
 const MINUTE_MS = 60_000;
@@ -132,6 +133,23 @@ async function runPublish(cli: Cli): Promise<void> {
         log(`  image: ${imageUrl(c.folder, c.threadsImage)}`);
         log(generated.threadsCaption);
       }
+
+      // Facebook gets the challenge a few minutes BEFORE Threads (early access for FB
+      // followers). Fires once, in the window [postAt - fbLeadMin, postAt), and only after
+      // passing the same review/approval/dedup gates as Threads. It does NOT lock the
+      // diagnosis — Threads still owns that when it posts the challenge at postAt.
+      if (
+        cli.mode !== "dry-run" &&
+        config.facebook &&
+        config.fbLeadMin > 0 &&
+        !stages.fbPostedAt &&
+        now.getTime() >= postAt.getTime() - config.fbLeadMin * MINUTE_MS &&
+        !challengeBlockReason(c)
+      ) {
+        await tryPostFacebook(c, generated.threadsCaption!, state);
+        c.stages = state.getStages(c.folder);
+        saveCase(c);
+      }
       continue;
     }
 
@@ -145,18 +163,11 @@ async function runPublish(cli: Cli): Promise<void> {
       // stage so a later run picks it up once approved.
       // Hard block: a generated X-ray that failed anatomy QA must NOT auto-post, even with
       // BOT_AUTO_APPROVE on. The owner regenerates the image and clears needsReview.
-      if (c.needsReview === true) {
-        log(`needs manual review (failed X-ray QA): ${c.folder} — ${(c.verifyDefects ?? []).join("; ")}`);
-        continue;
-      }
-      if (c.source === "generated" && !(c.approved === true || config.autoApprove)) {
-        log(`awaiting approval: ${c.folder}`);
-        continue;
-      }
-
-      // Never repeat a diagnosis we've already posted (history seed + earlier cases).
-      if (isUsedDiagnosis(loadUsedDiagnoses(), c.diagnosis, c.aliases ?? [])) {
-        log(`duplicate diagnosis, skipping ${c.folder} ("${c.diagnosis}" already used)`);
+      // Review + approval + dedup gates, shared with the early Facebook cross-post (see
+      // challengeBlockReason) so FB never publishes something Threads wouldn't.
+      const block = challengeBlockReason(c);
+      if (block) {
+        log(block);
         continue;
       }
 
@@ -186,6 +197,13 @@ async function runPublish(cli: Cli): Promise<void> {
           await tryPublishCarousel(c, generated.igCaption!, state);
         }
 
+        // Best-effort Facebook Page photo — unless it already went out early (fbLeadMin).
+        // Same non-blocking contract as IG: keyed off the unset `fbPostedAt`, a failure
+        // here is retried by the dedicated stage below.
+        if (config.facebook && !stages.fbPostedAt) {
+          await tryPostFacebook(c, generated.threadsCaption!, state);
+        }
+
         // mirror stages into case.json for review
         c.stages = state.getStages(c.folder);
         saveCase(c);
@@ -213,6 +231,18 @@ async function runPublish(cli: Cli): Promise<void> {
         continue; // published this run — that's this case's stage for the run
       }
       // else: IG still failing; fall through so the answer/CTA aren't held hostage.
+    }
+
+    // --- Stage 1c: retry the Facebook photo --------------------------------------------
+    // Same rationale as Stage 1b: the Stage-1 FB post is best-effort and never re-runs, so
+    // retry here while enabled and not yet posted. Never blocks the answer/CTA stages.
+    if (cli.mode !== "dry-run" && config.facebook && !stages.fbPostedAt && generated.threadsCaption) {
+      await tryPostFacebook(c, generated.threadsCaption, state);
+      if (state.getStages(c.folder).fbPostedAt) {
+        c.stages = state.getStages(c.folder);
+        saveCase(c);
+        continue; // published this run — that's this case's stage for the run
+      }
     }
 
     // --- Stage 2: pinned answer ---------------------------------------------------------
@@ -295,6 +325,43 @@ async function tryPublishCarousel(c: Case, igCaption: string, state: State): Pro
     log(`  cross-posted IG carousel for ${c.folder} -> ${igMediaId}`);
   } catch (err) {
     log(`  IG carousel failed for ${c.folder} (will retry next run): ${errMsg(err)}`);
+  }
+}
+
+/**
+ * Reasons a challenge must NOT publish yet: failed X-ray QA (needsReview), a generated
+ * case awaiting approval, or a diagnosis already used. Returns a ready-to-log message, or
+ * null if it's clear to post. Shared by the Threads challenge (Stage 1) and the early
+ * Facebook cross-post so Facebook never bypasses these gates.
+ */
+function challengeBlockReason(c: Case): string | null {
+  if (c.needsReview === true) {
+    return `needs manual review (failed X-ray QA): ${c.folder} — ${(c.verifyDefects ?? []).join("; ")}`;
+  }
+  if (c.source === "generated" && !(c.approved === true || config.autoApprove)) {
+    return `awaiting approval: ${c.folder}`;
+  }
+  if (isUsedDiagnosis(loadUsedDiagnoses(), c.diagnosis, c.aliases ?? [])) {
+    return `duplicate diagnosis, skipping ${c.folder} ("${c.diagnosis}" already used)`;
+  }
+  return null;
+}
+
+/**
+ * Best-effort Facebook Page photo. On success records fbPostId + fbPostedAt; on failure
+ * logs and returns without throwing, leaving fbPostedAt unset so a later run retries
+ * (see Stage 1c). Never aborts the Threads flow.
+ */
+async function tryPostFacebook(c: Case, caption: string, state: State): Promise<void> {
+  try {
+    const fbPostId = await postPhoto(imageUrl(c.folder, c.threadsImage), caption);
+    state.setStages(c.folder, {
+      fbPostId,
+      fbPostedAt: new Date().toISOString(),
+    });
+    log(`  cross-posted Facebook photo for ${c.folder} -> ${fbPostId}`);
+  } catch (err) {
+    log(`  Facebook post failed for ${c.folder} (will retry next run): ${errMsg(err)}`);
   }
 }
 

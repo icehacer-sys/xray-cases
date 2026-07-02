@@ -21,6 +21,7 @@ export const config = {
   // API hosts (pinned versions)
   threadsBase: "https://graph.threads.net/v1.0",
   igBase: process.env.IG_GRAPH_BASE ?? "https://graph.instagram.com/v21.0",
+  fbBase: process.env.FB_GRAPH_BASE ?? "https://graph.facebook.com/v21.0",
   threadsUserId: process.env.THREADS_USER_ID ?? "me",
 
   // Public base for image URLs (see .env.example). Trailing slash trimmed.
@@ -39,6 +40,14 @@ export const config = {
 
   // Cross-post to Instagram too (Threads always posts).
   instagram: (process.env.BOT_INSTAGRAM ?? "on").toLowerCase() !== "off",
+
+  // Cross-post the daily challenge photo to the Facebook Page too. Off until a Page token
+  // is configured (FB_PAGE_ID + FB_PAGE_ACCESS_TOKEN); flip BOT_FACEBOOK=on to enable.
+  facebook: (process.env.BOT_FACEBOOK ?? "off").toLowerCase() === "on",
+
+  // Post the challenge to Facebook this many minutes BEFORE Threads, giving the FB page
+  // genuine early access (a real reason to follow it). 0 = post at the same time as Threads.
+  fbLeadMin: num("BOT_FB_LEAD_MIN", 10),
 
   // Auto-post the CTA as a reply under the pinned answer. Off by default: the owner posts
   // the CTA manually so the Gumroad link renders its cover-image preview (a bot sub-reply
