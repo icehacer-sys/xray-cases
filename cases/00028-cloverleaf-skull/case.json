@@ -1,0 +1,58 @@
+{
+  "folder": "00028-cloverleaf-skull",
+  "number": 28,
+  "diagnosis": "Cloverleaf skull",
+  "aliases": [
+    "cloverleaf skull",
+    "craniosynostosis",
+    "kleeblattschadel"
+  ],
+  "symptom": "a newborn skull that looked oddly shaped",
+  "hook": "the skull had grown into three strange lobes",
+  "whatYouSee": "A baby skull split into three bulging lobes with a deep pinch at the temples and forehead.",
+  "whyItMatters": "The skull seams fused before birth so the growing brain pushed the bone out into whatever gaps were left.",
+  "treatment": "Surgery early in life reshapes the skull and gives the growing brain room.",
+  "takeaway": "A skull can only grow where its seams still let it.",
+  "igOptions": [
+    "A. Birth-related molding",
+    "B. Cloverleaf skull",
+    "C. Hydrocephalus"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-02T19:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "condition": {
+    "diagnosis": "Cloverleaf skull",
+    "aliases": [
+      "cloverleaf skull",
+      "craniosynostosis",
+      "kleeblattschadel"
+    ],
+    "symptom": "a newborn skull that looked oddly shaped",
+    "hook": "the skull had grown into three strange lobes",
+    "view": "frontal skull radiograph",
+    "keyFindings": "a newborn skull bulging into three distinct lobes with deep constrictions at the sutures giving a trilobed cloverleaf shape",
+    "whatYouSee": "A baby skull split into three bulging lobes with a deep pinch at the temples and forehead.",
+    "whyItMatters": "The skull seams fused before birth so the growing brain pushed the bone out into whatever gaps were left.",
+    "treatment": "Surgery early in life reshapes the skull and gives the growing brain room.",
+    "takeaway": "A skull can only grow where its seams still let it.",
+    "igTitle": "THE THREE-LOBED HEAD",
+    "igOptions": [
+      "Birth-related molding",
+      "Cloverleaf skull",
+      "Hydrocephalus"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  "generated": {
+    "threadsCaption": "A newborn came in and the shape of the head looked wrong from across the room.\n\nThen the X-ray loaded 😳\n\nAnd the skull had grown into three strange lobes.\n\nQuick diagnosis challenge 🩻\n\nWhat is the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Cloverleaf skull\n\n👀 What you see:\nA baby skull split into three bulging lobes with a deep pinch at the temples and forehead.\n\n💊 Treatment:\nSurgery early in life reshapes the skull and gives the growing brain room.\n\n🦴 Why it matters:\nThe skull seams fused before birth so the brain pushed the bone out into whatever gaps were left. It is a rare form of craniosynostosis.",
+    "igCaption": "",
+    "ctaText": "If a newborn skull growing into three lobes made you look twice.\n\nVolume 3 just dropped. Twenty brand new cases this strange.\n\nEvery one with the answer and the true story.\n\nGrab it while it is fresh 🙏\n\nxray3.mednoteslab.com"
+  },
+  "needsReview": false,
+  "stages": {}
+}
