@@ -32,8 +32,8 @@ export const config = {
   answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 20),
   ctaDelayMin: num("BOT_CTA_DELAY_MIN", 75),
 
-  // Threads caps each post/reply at 500 characters, so a long answer is posted as a
-  // short self-reply chain split on section boundaries (see captions.splitForThreads).
+  // Threads caps each post/reply at 500 characters. The answer is built to fit ONE reply,
+  // dropping lower-priority sections in order (Tx before Why) rather than splitting into a chain.
   answerMaxChars: num("BOT_ANSWER_MAX_CHARS", 500),
 
   activeTz: process.env.BOT_ACTIVE_TZ ?? "Africa/Cairo",

@@ -464,7 +464,10 @@ async function main(): Promise<void> {
     // neither already burned (pool flag) nor a diagnosis we've ever posted (history).
     const cond = cli.diagnosis
       ? conditions.find(
-          (c) => c.diagnosis.toLowerCase() === cli.diagnosis!.toLowerCase() && c.used !== true,
+          (c) =>
+            c.diagnosis.toLowerCase() === cli.diagnosis!.toLowerCase() &&
+            c.used !== true &&
+            !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
         )
       : conditions.find(
           (c) => c.used !== true && c.skipPublic !== true && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
