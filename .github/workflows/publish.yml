@@ -59,7 +59,7 @@ jobs:
       GITHUB_RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
       BOT_CONFIRM_LIVE: "yes"
       BOT_INSTAGRAM: "off" # IG discontinued -- Threads only (owner, 2026-06-29)
-      BOT_FACEBOOK: "on" # cross-post the daily challenge to the FB Page (needs FB_PAGE_ID + FB_PAGE_ACCESS_TOKEN secrets)
+      BOT_FACEBOOK: "off" # FB dropped — Threads only (owner deleted the Page over the "AI info" label, 2026-07-03). Off also disables the FB answer-comment (that stage requires BOT_FACEBOOK). Flip to "on" to restore.
       BOT_FB_LEAD_MIN: "10" # Facebook gets the challenge ~10 min before Threads (early access for FB followers)
       BOT_AUTO_APPROVE: "on" # owner trusts gpt-image-2: generated cases post without manual review
       BOT_XRAY_VERIFY: "on" # Claude vision checks each generated X-ray for AI anatomy defects; failures are regenerated or held for review
