@@ -18,6 +18,8 @@ import {
   generateThreadsCaption,
   generateThreadsAnswer,
   generateIgCaption,
+  generateSeedComment,
+  draftEngagement,
   pickCta,
   imagePrompt,
 } from "./captions.js";
@@ -68,6 +70,16 @@ async function ensureGenerated(c: Case, state: State): Promise<NonNullable<Case[
     existing.ctaText == null;
 
   if (!need) return existing as NonNullable<Case["generated"]>;
+
+  // Draft the engagement fields (difficulty / layperson question / seed hint) before rendering
+  // the caption, so numbering, the layperson line, and the first-comment seed are all populated
+  // together. Skipped when they already exist (backfilled + generator-drafted cases carry them).
+  if (c.difficulty == null || c.laypersonQuestion == null || c.seedHint == null) {
+    const e = await draftEngagement(c);
+    c.difficulty ??= e.difficulty;
+    c.laypersonQuestion ??= e.laypersonQuestion;
+    c.seedHint ??= e.seedHint;
+  }
 
   const threadsCaption = existing.threadsCaption ?? generateThreadsCaption(c);
   const threadsAnswer = existing.threadsAnswer ?? (await generateThreadsAnswer(c));
@@ -211,6 +223,26 @@ async function runPublish(cli: Cli): Promise<void> {
         // mirror stages into case.json for review
         c.stages = state.getStages(c.folder);
         saveCase(c);
+
+        // Instant seed comment: the author's first reply, dropped seconds after the case posts,
+        // to manufacture the early-window reply velocity Threads uses to decide reach and to break
+        // the empty-thread freeze (nobody wants to be the first guesser). Best-effort and posted
+        // ONCE in this same run — seeding only helps in the first minutes, so a failure is not
+        // retried late. A substantive hint (not "comment below") stays clear of Meta's bait demotion.
+        if (config.seedComment && !state.getStages(c.folder).seedPostedAt) {
+          const seedText = generateSeedComment(c);
+          if (seedText) {
+            try {
+              const seedCommentId = await reply(threadsPostId, seedText);
+              state.setStages(c.folder, { seedCommentId, seedPostedAt: new Date().toISOString() });
+              c.stages = state.getStages(c.folder);
+              saveCase(c);
+              log(`  seeded first comment for ${c.folder} -> ${seedCommentId}`);
+            } catch (err) {
+              log(`  seed comment failed for ${c.folder} (skipped — seeding is early-window only): ${errMsg(err)}`);
+            }
+          }
+        }
       }
       continue; // one stage per case per run
     }

@@ -23,6 +23,12 @@ export interface Case {
   whyItMatters?: string;
   treatment?: string;
   takeaway?: string;
+  /** Engagement fields — drafted by captions.draftEngagement, all NON-spoiling. `difficulty`
+   *  (1-5) renders as "Difficulty x/5"; `laypersonQuestion` is the no-medical-knowledge secondary
+   *  ask; `seedHint` is the author's first-comment nudge auto-posted seconds after the challenge. */
+  difficulty?: number;
+  laypersonQuestion?: string;
+  seedHint?: string;
   /** IG slide A/B/C options as shown on the user's slide image (for context only). */
   igOptions?: string[];
 
@@ -59,6 +65,8 @@ export interface Case {
   stages?: {
     challengePostedAt?: string;
     threadsPostId?: string;
+    seedPostedAt?: string;
+    seedCommentId?: string;
     answerPostedAt?: string;
     answerCommentId?: string;
     ctaPostedAt?: string;

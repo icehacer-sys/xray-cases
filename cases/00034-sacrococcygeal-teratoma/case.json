@@ -25,10 +25,13 @@
   "source": "manual",
   "needsReview": false,
   "generated": {
-    "threadsCaption": "A patient came in with a firm swelling low at the base of the spine that the pregnancy scan already flagged.\n\nThen the X-ray loaded 😭\n\nAnd a large mass at the base of the spine was flecked with tiny calcium spots and small pockets of fat.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Sacrococcygeal teratoma\n\n👀 What you see:\nA large mass at the base of the spine flecked with scattered calcifications and small pockets of fat.\n\n💊 Treatment:\nSurgeons remove the whole mass along with the tailbone and then follow the child for any regrowth.\n\n🦴 Why it matters:\nA tumor made of several tissue types has been growing near the tailbone since early in the pregnancy and can even contain fragments of tooth or bone.",
+    "threadsCaption": "A patient came in with a firm swelling low at the base of the spine that the pregnancy scan already flagged.\n\nThen the X-ray loaded 😭\n\nAnd a large mass at the base of the spine was flecked with tiny calcium spots and small pockets of fat.\n\nCase #73 🩻 Difficulty 4/5\n\nMedics: your diagnosis?\n\nEveryone else: What surprised you most about where this mass sits?\n\nAnswer in 45 min 👀 no spoilers from me till then",
+    "threadsAnswer": "Answer: Sacrococcygeal teratoma\n\n👀 What you see:\nA large mass at the base of the spine flecked with scattered calcifications and small pockets of fat.\n\n🦴 Why it matters:\nA tumor made of several tissue types has been growing near the tailbone since early in the pregnancy and can even contain fragments of tooth or bone.\n\n💊 Treatment:\n\nSurgeons remove the whole mass along with the tailbone and then follow the child for any regrowth.",
     "igCaption": "",
     "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
   },
-  "stages": {}
+  "stages": {},
+  "difficulty": 4,
+  "laypersonQuestion": "What surprised you most about where this mass sits?",
+  "seedHint": "Look at the base of the spine and count the bright flecks. Solid or hollow?"
 }

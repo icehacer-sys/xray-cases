@@ -28,9 +28,21 @@ export const config = {
   githubRawBase: (process.env.GITHUB_RAW_BASE ?? "").replace(/\/+$/, ""),
 
   // Scheduling: minutes after the challenge post to publish the answer / CTA.
-  // Answer 20 min after the challenge; CTA 55 min after the answer (= 75 after challenge).
-  answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 20),
-  ctaDelayMin: num("BOT_CTA_DELAY_MIN", 75),
+  // Answer 45 min after the challenge (moved from 20 on 2026-07-03: a 20-min reveal closed the
+  // guessing game inside the ~first-hour window Threads uses to judge reach; 45 keeps the whole
+  // window a live game and the answer reply itself re-bumps the thread late in the window).
+  answerDelayMin: num("BOT_ANSWER_DELAY_MIN", 45),
+  ctaDelayMin: num("BOT_CTA_DELAY_MIN", 100),
+
+  // Public case number = case.number + this offset, so "Case #N" reflects the account's true
+  // cumulative post count (the folder numbers are pipeline-internal and far lower). Set via
+  // BOT_CASE_NUMBER_OFFSET once the owner's real running total is known.
+  caseNumberOffset: num("BOT_CASE_NUMBER_OFFSET", 0),
+
+  // Auto-post the author's first reply (a non-spoiling hint) seconds after the challenge posts,
+  // to manufacture the early-window reply velocity Threads ranks on. Off by default; the workflow
+  // sets BOT_SEED_COMMENT=on. Substantive hints only (never "comment below" — Meta demotes bait).
+  seedComment: (process.env.BOT_SEED_COMMENT ?? "off").toLowerCase() === "on",
 
   // Threads caps each post/reply at 500 characters. The answer is built to fit ONE reply,
   // dropping lower-priority sections in order (Tx before Why) rather than splitting into a chain.

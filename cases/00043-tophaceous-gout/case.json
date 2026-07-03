@@ -26,10 +26,13 @@
   "source": "manual",
   "needsReview": false,
   "generated": {
-    "threadsCaption": "A patient came in with years of big toe flare-ups and now lumpy swollen fingers and one knuckle that leaked a chalky paste.\n\nThen the X-ray loaded 😭\n\nAnd lumpy masses were bulging from several finger joints with punched-out holes in the bone beneath them.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Tophaceous gout\n\n👀 What you see:\nLumpy dense masses bulging out from several finger joints with punched-out holes in the bone right beneath them.\n\n💊 Treatment:\nUrate-lowering drugs like allopurinol slowly dissolve the deposits and flare treatment settles the acute attacks.\n\n🦴 Why it matters:\nYears of high uric acid let hard chalky crystal deposits build up around the joints until they physically ate into the bone.",
+    "threadsCaption": "A patient came in with years of big toe flare-ups and now lumpy swollen fingers and one knuckle that leaked a chalky paste.\n\nThen the X-ray loaded 😭\n\nAnd lumpy masses were bulging from several finger joints with punched-out holes in the bone beneath them.\n\nCase #82 🩻 Difficulty 3/5\n\nMedics: your diagnosis?\n\nEveryone else: What do you think leaked out of that knuckle?\n\nAnswer in 45 min 👀 no spoilers from me till then",
+    "threadsAnswer": "Answer: Tophaceous gout\n\n👀 What you see:\nLumpy dense masses bulging out from several finger joints with punched-out holes in the bone right beneath them.\n\n🦴 Why it matters:\nYears of high uric acid let hard chalky crystal deposits build up around the joints until they physically ate into the bone.\n\n💊 Treatment:\n\nUrate-lowering drugs like allopurinol slowly dissolve the deposits and flare treatment settles the acute attacks.",
     "igCaption": "",
     "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
   },
-  "stages": {}
+  "stages": {},
+  "difficulty": 3,
+  "laypersonQuestion": "What do you think leaked out of that knuckle?",
+  "seedHint": "Look at those bone edges - smooth erosion or something punching clean holes through?"
 }

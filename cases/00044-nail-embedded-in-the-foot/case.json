@@ -26,10 +26,13 @@
   "source": "manual",
   "needsReview": false,
   "generated": {
-    "threadsCaption": "A patient came in with a foot that stepped through a stray board on site and will not stop throbbing.\n\nThen the X-ray loaded 😭\n\nAnd a long metal spike had driven straight through the foot between two bones.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Nail embedded in the foot\n\n👀 What you see:\nA long metal nail driven straight through the soft tissue of the foot between two bones.\n\n💊 Treatment:\nPull the spike and clean the wound and cover tetanus and start antibiotics because deep punctures infect easily.\n\n🦴 Why it matters:\nA puncture this deep can carry bacteria straight into the joint or bone and turn a simple step into a serious infection risk.",
+    "threadsCaption": "A patient came in with a foot that stepped through a stray board on site and will not stop throbbing.\n\nThen the X-ray loaded 😭\n\nAnd a long metal spike had driven straight through the foot between two bones.\n\nCase #83 🩻 Difficulty 1/5\n\nMedics: your diagnosis?\n\nEveryone else: What would you do if this happened to you?\n\nAnswer in 45 min 👀 no spoilers from me till then",
+    "threadsAnswer": "Answer: Nail embedded in the foot\n\n👀 What you see:\nA long metal nail driven straight through the soft tissue of the foot between two bones.\n\n🦴 Why it matters:\nA puncture this deep can carry bacteria straight into the joint or bone and turn a simple step into a serious infection risk.\n\n💊 Treatment:\n\nPull the spike and clean the wound and cover tetanus and start antibiotics because deep punctures infect easily.",
     "igCaption": "",
     "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
   },
-  "stages": {}
+  "stages": {},
+  "difficulty": 1,
+  "laypersonQuestion": "What would you do if this happened to you?",
+  "seedHint": "Look at how straight and deep that object goes and count how many bones it missed."
 }

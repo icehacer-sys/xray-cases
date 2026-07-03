@@ -1,6 +1,6 @@
 {
-  "folder": "00020-massive-splenomegaly",
-  "number": 20,
+  "folder": "00048-massive-splenomegaly",
+  "number": 48,
   "diagnosis": "Massive splenomegaly",
   "aliases": [
     "giant spleen",
@@ -48,10 +48,13 @@
     "used": true
   },
   "generated": {
-    "threadsCaption": "A patient came in with a belt that kept feeling tighter that got blamed on a creeping beer gut.\n\nThen the X-ray loaded 😭\n\nAnd the spleen had quietly grown into a solid organ the size of a football crushing everything around it.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Massive splenomegaly\n\n👀 What you see:\nOne smooth white blob swallows almost the whole left side of the belly and pushes every gas-filled gut loop into a thin crescent in the right corner.\n\n🦴 Why it matters:\nA normal spleen is fist-sized and tucked under the ribs where a flat film never shows it. Blood and marrow diseases can drive it to swell ten to twenty times normal and one knock can rupture it into a fatal internal bleed.",
+    "threadsCaption": "A patient came in with a belt that kept feeling tighter that got blamed on a creeping beer gut.\n\nThen the X-ray loaded 😭\n\nAnd the spleen had quietly grown into a solid organ the size of a football crushing everything around it.\n\nCase #87 🩻 Difficulty 3/5\n\nMedics: your diagnosis?\n\nEveryone else: What organ is taking up most of this belly?\n\nAnswer in 45 min 👀 no spoilers from me till then",
+    "threadsAnswer": "Answer: Massive splenomegaly\n\n👀 What you see:\nOne smooth white blob swallows almost the whole left side of the belly and pushes every gas-filled gut loop into a thin crescent in the right corner.\n\n🦴 Why it matters:\nA normal spleen is fist-sized and tucked under the ribs where a flat film never shows it. Blood and marrow diseases can drive it to swell ten to twenty times normal and\n\n💊 Treatment:\n\nDoctors hunt the cause with blood counts and a marrow biopsy then treat the underlying disease.",
     "igCaption": "",
     "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into a digital PDF.\n\nAnd if you'd like to support the page I'd genuinely appreciate it 🙏\n\nxray.mednoteslab.com"
   },
-  "needsReview": false
+  "needsReview": false,
+  "difficulty": 3,
+  "laypersonQuestion": "What organ is taking up most of this belly?",
+  "seedHint": "Look left of center and ask yourself if that shadow belongs to one organ or two."
 }

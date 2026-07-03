@@ -24,6 +24,7 @@ import {
   generateThreadsCaption,
   generateThreadsAnswer,
   generateIgCaption,
+  draftEngagement,
   pickCta,
 } from "./captions.js";
 import { generateXray } from "./openai.js";
@@ -282,6 +283,14 @@ function xrayPrompt(cond: Condition, avoid: string[] = []): string {
 // ---------------------------------------------------------------------------
 
 async function predraftCaptions(c: Case, threadsOnly = false): Promise<void> {
+  // Draft the non-spoiling engagement fields first so the caption can render the difficulty +
+  // layperson question and the seed comment has its hint.
+  if (c.difficulty == null || c.laypersonQuestion == null || c.seedHint == null) {
+    const e = await draftEngagement(c);
+    c.difficulty ??= e.difficulty;
+    c.laypersonQuestion ??= e.laypersonQuestion;
+    c.seedHint ??= e.seedHint;
+  }
   const threadsCaption = generateThreadsCaption(c);
   const threadsAnswer = await generateThreadsAnswer(c);
   const igCaption = threadsOnly ? "" : await generateIgCaption(c);

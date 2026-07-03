@@ -40,19 +40,86 @@ async function ask(system: string, user: string, maxTokens = 600): Promise<strin
 // ---------------------------------------------------------------------------
 
 export function generateThreadsCaption(c: Case): string {
-  // The SAME fixed format the audience knows — only the symptom + hook vary. Cap them so the
-  // caption can't creep over the limit as drafted fields get wordier (boilerplate ~110 chars,
-  // so symptom+hook capped here keeps the whole caption comfortably under Threads' 500).
-  const symptom = clamp(c.symptom, 130);
-  const hook = clamp(c.hook, 190);
-  return [
+  // The SAME fixed skeleton the audience knows (patient -> X-ray -> hook) plus four durable
+  // reach upgrades layered in: a public Case number for collectibility, a guess-difficulty, a
+  // layperson secondary question so the non-medical majority can reply too, and a reveal-time
+  // nudge that drives "guess now / come back" behaviour. Fields are clamped so the whole caption
+  // stays under Threads' 500-char cap even in the worst case.
+  const symptom = clamp(c.symptom, 110);
+  const hook = clamp(c.hook, 150);
+
+  // Public number reflects the account's true running total (folder numbers are internal + low).
+  const caseNo = (c.number ?? 1) + config.caseNumberOffset;
+  const d = c.difficulty;
+  const diffPart = d && d >= 1 && d <= 5 ? ` Difficulty ${Math.round(d)}/5` : "";
+
+  const lp = c.laypersonQuestion?.trim();
+
+  const blocks = [
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
     `And ${hook}.`,
-    `Quick diagnosis challenge 🩻`,
-    `What's the most likely diagnosis?`,
-    `Wild guesses are welcome 👀`,
-  ].join("\n\n");
+    `Case #${caseNo} 🩻${diffPart}`,
+  ];
+  // The two audience questions EACH get their own block so a blank line sits between them (owner
+  // spacing, 2026-07-03). An older/hand-made case with no layperson question falls back to the
+  // single classic ask.
+  if (lp) blocks.push(`Medics: your diagnosis?`, `Everyone else: ${clamp(lp, 55)}`);
+  else blocks.push(`What's the most likely diagnosis?`);
+  blocks.push(`Answer in ${config.answerDelayMin} min 👀 no spoilers from me till then`);
+
+  return blocks.join("\n\n");
+}
+
+// ---------------------------------------------------------------------------
+// Engagement fields — one Claude draft producing the difficulty rating, the
+// layperson secondary question, and the first-comment seed hint. All NON-spoiling.
+// ---------------------------------------------------------------------------
+
+export interface Engagement {
+  difficulty: number; // 1-5
+  laypersonQuestion: string;
+  seedHint: string;
+}
+
+export async function draftEngagement(c: Case): Promise<Engagement> {
+  const system =
+    "You write engagement copy for @mdnoteslab, a daily 'guess the weird X-ray diagnosis' account. " +
+    "Voice: punchy, curious, plain-spoken. CRITICAL RULES: do NOT use commas anywhere (write short " +
+    "sentences or join clauses with 'and'); a comma is allowed ONLY inside a list of three or more items. " +
+    "NEVER name, spell, abbreviate, or give away the diagnosis or its specific category — these run BEFORE " +
+    "the answer is revealed. No emojis, no hashtags, no quotation marks, no labels. " +
+    "Respond ONLY with a JSON object using exactly these keys: difficulty, laypersonQuestion, seedHint.";
+
+  const user =
+    `Diagnosis (NEVER reveal or hint the name): ${c.diagnosis}\n` +
+    `Presenting symptom: ${c.symptom}\n` +
+    `What the X-ray looks like: ${c.hook}\n\n` +
+    `Produce:\n` +
+    `- difficulty: an integer 1 to 5 for how hard this is to guess from the X-ray for a mixed medical + lay ` +
+    `audience (1 = an obvious foreign object anyone names, 5 = a subtle or obscure finding).\n` +
+    `- laypersonQuestion: ONE short question under 55 characters that someone with NO medical knowledge can ` +
+    `answer about this image or story (a gut reaction or curiosity, never asking for the diagnosis). End with '?'.\n` +
+    `- seedHint: ONE short line under 90 characters to post as the first comment that makes people look closer ` +
+    `WITHOUT revealing the answer (point at where or what to notice or pose a simple either/or).`;
+
+  const raw = await ask(system, user, 300);
+  const p = parseJsonObject(raw);
+  let d = Math.round(Number(p.difficulty));
+  if (!Number.isFinite(d) || d < 1) d = 3;
+  if (d > 5) d = 5;
+  const strip = (s: string) => cleanPunct(s).replace(/^["']+|["']+$/g, "").trim();
+  return {
+    difficulty: d,
+    laypersonQuestion: strip(str(p.laypersonQuestion)),
+    seedHint: strip(str(p.seedHint)),
+  };
+}
+
+/** The author's first-comment seed text (the drafted non-spoiling hint), or null if none. */
+export function generateSeedComment(c: Case): string | null {
+  const hint = c.seedHint?.trim();
+  return hint ? clamp(hint, 120) : null;
 }
 
 // ---------------------------------------------------------------------------
@@ -72,29 +139,33 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
     takeaway = takeaway ?? draft.takeaway;
   }
 
-  // Threads caps each reply at config.answerMaxChars (500) and the answer must be ONE reply
-  // (no chains, no truncation). Each section is length-clamped, then added in PRIORITY order
-  // until the budget runs out. Order matters: Treatment sits BEFORE "Why it matters" so the
-  // Tx is never the section dropped (owner: keep the Tx, 2026-06-19/28). The full untrimmed
-  // 4-section breakdown still lives on the IG answer slide, which has no length limit.
-  // Non-disease cases (a motion artifact, a normal variant) have no treatment: leave `treatment`
-  // blank and the Tx section is omitted entirely (owner: no Tx when it is not a disease, 2026-06-28).
+  // Threads caps each reply at config.answerMaxChars (500) and the answer must be ONE reply (no
+  // chains, no truncation). DISPLAY order (owner, 2026-07-03): What you see -> Why it matters ->
+  // Treatment (Tx last, with a blank line under its label). The DROP order is decoupled from the
+  // display order via `keep`: when the budget is tight the LEAST-important section (Why it matters)
+  // is skipped first and the Treatment stays protected (owner: never drop the Tx, 2026-06-19/28) —
+  // so Tx renders last but is never the one cut. The full untrimmed 4-section breakdown still lives
+  // on the IG answer slide, which has no length limit. Non-disease cases (a motion artifact, a
+  // normal variant) have no treatment: the Tx section is omitted entirely (owner, 2026-06-28).
   const head = `Answer: ${c.diagnosis}`;
-  const txSection = treatment && treatment.trim() ? `💊 Treatment:\n${clamp(treatment, 170)}` : null;
-  const sections = [
-    `👀 What you see:\n${clamp(whatYouSee, 200)}`,
-    ...(txSection ? [txSection] : []),
-    `🦴 Why it matters:\n${clamp(whyItMatters, 170)}`,
+  const secs = [
+    { display: 0, keep: 3, text: `👀 What you see:\n${clamp(whatYouSee, 200)}` },
+    { display: 1, keep: 1, text: `🦴 Why it matters:\n${clamp(whyItMatters, 170)}` },
+    ...(treatment && treatment.trim()
+      ? [{ display: 2, keep: 2, text: `💊 Treatment:\n\n${clamp(treatment, 170)}` }]
+      : []),
   ];
   void takeaway; // still drafted (kept for the breakdown) but no longer shown in the reply
-  const out = [head];
+  // Select by keep-priority within the 500 budget, then emit in display order.
+  const chosen: typeof secs = [];
   let len = head.length;
-  for (const s of sections) {
-    if (len + 2 + s.length > config.answerMaxChars) continue; // skip overflow; a later shorter section may still fit
-    out.push(s);
-    len += 2 + s.length;
+  for (const s of [...secs].sort((a, b) => b.keep - a.keep)) {
+    if (len + 2 + s.text.length > config.answerMaxChars) continue; // skip overflow; a shorter one may still fit
+    chosen.push(s);
+    len += 2 + s.text.length;
   }
-  return out.join("\n\n");
+  chosen.sort((a, b) => a.display - b.display);
+  return [head, ...chosen.map((s) => s.text)].join("\n\n");
 }
 
 /** Normalize AI-drafted punctuation: em/en dashes -> hyphen; collapse runs of spaces. */
