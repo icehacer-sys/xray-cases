@@ -1,0 +1,35 @@
+{
+  "folder": "00036-giant-renal-angiomyolipoma",
+  "number": 36,
+  "diagnosis": "Giant renal angiomyolipoma",
+  "aliases": [
+    "renal angiomyolipoma",
+    "angiomyolipoma",
+    "AML",
+    "giant renal AML"
+  ],
+  "symptom": "a lifelong skin condition and a history of seizures and a scan that unexpectedly flagged the kidney",
+  "hook": "a huge mass full of fat and vessels was ballooning out of one kidney and crowding everything around it",
+  "whatYouSee": "A huge fat-and-vessel-filled mass ballooning out from one kidney and crowding the space around it.",
+  "whyItMatters": "A genetic condition let a benign tumor made of fat muscle and blood vessels grow slowly for years until it dwarfed the kidney it came from.",
+  "treatment": "Cutting off its blood supply by embolization shrinks it and mTOR drugs like everolimus help when tuberous sclerosis is behind it.",
+  "takeaway": "A benign tumor can still grow bigger than the organ that grew it.",
+  "igOptions": [
+    "A. A giant renal angiomyolipoma",
+    "B. A simple kidney cyst",
+    "C. Kidney stones"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-10T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a lifelong skin condition and a history of seizures and a scan that unexpectedly flagged the kidney.\n\nThen the X-ray loaded 😭\n\nAnd a huge mass full of fat and vessels was ballooning out of one kidney and crowding everything around it.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Giant renal angiomyolipoma\n\n👀 What you see:\nA huge fat-and-vessel-filled mass ballooning out from one kidney and crowding the space around it.\n\n💊 Treatment:\nCutting off its blood supply by embolization shrinks it and mTOR drugs like everolimus help when tuberous sclerosis is behind it.\n\n🦴 Why it matters:\nA genetic condition let a benign tumor made of fat muscle and blood vessels grow slowly for years until it dwarfed the kidney it came from.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nspot.mednoteslab.com"
+  },
+  "stages": {}
+}

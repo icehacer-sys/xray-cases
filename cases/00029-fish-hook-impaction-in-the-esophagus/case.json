@@ -1,0 +1,35 @@
+{
+  "folder": "00029-fish-hook-impaction-in-the-esophagus",
+  "number": 29,
+  "diagnosis": "Fish hook impaction in the esophagus",
+  "aliases": [
+    "fish hook impaction",
+    "esophageal foreign body",
+    "swallowed fish hook",
+    "fishhook impaction"
+  ],
+  "symptom": "something that snagged going down and a pain high behind the breastbone that will not ease",
+  "hook": "a small curved piece of metal was caught sideways in the food pipe with its barb dug into the wall",
+  "whatYouSee": "A small curved metal hook with its barb caught sideways in the food pipe.",
+  "whyItMatters": "The barb that is built to hold a fish in place holds just as well in soft human tissue and will not slide back out on its own.",
+  "treatment": "It comes out with an endoscope guided down the food pipe so the barb can be freed without tearing tissue.",
+  "takeaway": "A hook does not care what it catches.",
+  "igOptions": [
+    "A. A fish bone stuck in the throat",
+    "B. A fish hook lodged in the esophagus",
+    "C. A swallowed coin"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-03T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with something that snagged going down and a pain high behind the breastbone that will not ease.\n\nThen the X-ray loaded 😭\n\nAnd a small curved piece of metal was caught sideways in the food pipe with its barb dug into the wall.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Fish hook impaction in the esophagus\n\n👀 What you see:\nA small curved metal hook with its barb caught sideways in the food pipe.\n\n💊 Treatment:\nIt comes out with an endoscope guided down the food pipe so the barb can be freed without tearing tissue.\n\n🦴 Why it matters:\nThe barb that is built to hold a fish in place holds just as well in soft human tissue and will not slide back out on its own.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
+  },
+  "stages": {}
+}

@@ -1,0 +1,35 @@
+{
+  "folder": "00030-chronic-osteomyelitis-with-sequestrum",
+  "number": 30,
+  "diagnosis": "Chronic osteomyelitis with sequestrum",
+  "aliases": [
+    "chronic osteomyelitis",
+    "sequestrum",
+    "chronic bone infection",
+    "osteomyelitis with sequestrum"
+  ],
+  "symptom": "a years-old leg fracture that never stopped draining and a small skin tract that still weeps",
+  "hook": "a dense fragment was floating inside a hollowed-out pocket ringed by a thick wall of bone",
+  "whatYouSee": "A dense floating fragment of dead bone sitting inside a hollowed-out cavity ringed by thickened living bone.",
+  "whyItMatters": "Infection cut the blood supply to a piece of bone so that fragment died in place while the bone around it kept building a thick wall to contain it.",
+  "treatment": "Surgeons cut out the dead bone and clean the cavity and then a long course of antibiotics clears the infection.",
+  "takeaway": "Bone can die and stay right where it was.",
+  "igOptions": [
+    "A. Chronic osteomyelitis with a sequestrum",
+    "B. A healing stress fracture",
+    "C. A bone cyst"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-04T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a years-old leg fracture that never stopped draining and a small skin tract that still weeps.\n\nThen the X-ray loaded 😭\n\nAnd a dense fragment was floating inside a hollowed-out pocket ringed by a thick wall of bone.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Chronic osteomyelitis with sequestrum\n\n👀 What you see:\nA dense floating fragment of dead bone sitting inside a hollowed-out cavity ringed by thickened living bone.\n\n💊 Treatment:\nSurgeons cut out the dead bone and clean the cavity and then a long course of antibiotics clears the infection.\n\n🦴 Why it matters:\nInfection cut the blood supply to a piece of bone so that fragment died in place while the bone around it kept building a thick wall to contain it.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into a digital PDF.\n\nAnd if you'd like to support the page I'd genuinely appreciate it 🙏\n\nxray.mednoteslab.com"
+  },
+  "stages": {}
+}

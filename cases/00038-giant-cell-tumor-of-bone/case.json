@@ -1,0 +1,35 @@
+{
+  "folder": "00038-giant-cell-tumor-of-bone",
+  "number": 38,
+  "diagnosis": "Giant cell tumor of bone",
+  "aliases": [
+    "giant cell tumor of bone",
+    "GCT",
+    "osteoclastoma",
+    "giant cell tumour of bone"
+  ],
+  "symptom": "a knee that has ached for months with mild swelling that will not settle",
+  "hook": "a cluster of round empty chambers was packed into the end of the bone like a mass of soap bubbles",
+  "whatYouSee": "A cluster of round lucent chambers packed together at the end of the bone like a mass of soap bubbles.",
+  "whyItMatters": "A benign but locally aggressive tumor has hollowed out the end of the bone into these bubble-like chambers and can weaken it enough to fracture.",
+  "treatment": "Surgeons scrape out the tumor and fill the cavity and denosumab can shrink it when surgery is not enough.",
+  "takeaway": "A bone can look like it is filled with bubbles and still hold your whole body weight.",
+  "igOptions": [
+    "A. A stress fracture",
+    "B. A giant cell tumor of bone",
+    "C. Early arthritis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-12T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a knee that has ached for months with mild swelling that will not settle.\n\nThen the X-ray loaded 😭\n\nAnd a cluster of round empty chambers was packed into the end of the bone like a mass of soap bubbles.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Giant cell tumor of bone\n\n👀 What you see:\nA cluster of round lucent chambers packed together at the end of the bone like a mass of soap bubbles.\n\n💊 Treatment:\nSurgeons scrape out the tumor and fill the cavity and denosumab can shrink it when surgery is not enough.\n\n🦴 Why it matters:\nA benign but locally aggressive tumor has hollowed out the end of the bone into these bubble-like chambers and can weaken it enough to fracture.",
+    "igCaption": "",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 🙏\n\nrare.mednoteslab.com"
+  },
+  "stages": {}
+}

@@ -1,0 +1,34 @@
+{
+  "folder": "00039-aneurysmal-bone-cyst",
+  "number": 39,
+  "diagnosis": "Aneurysmal bone cyst",
+  "aliases": [
+    "aneurysmal bone cyst",
+    "ABC",
+    "aneurysmal bone cyst of bone"
+  ],
+  "symptom": "a dull ache in one shin that has been building for weeks with no injury to explain it",
+  "hook": "one stretch of bone was blown outward into a thin-walled balloon far wider than the bone beside it",
+  "whatYouSee": "One section of bone blown outward into a thin-walled balloon shape far wider than the bone beside it.",
+  "whyItMatters": "Blood-filled cavities have expanded inside the bone and stretched its shell outward faster than the bone can reinforce it.",
+  "treatment": "Surgeons scrape out the cyst and pack the space with bone graft and injections can help close it.",
+  "takeaway": "A bone can blow up like a balloon and still hold its shape.",
+  "igOptions": [
+    "A. An aneurysmal bone cyst",
+    "B. A simple fracture",
+    "C. Osteomyelitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-13T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a dull ache in one shin that has been building for weeks with no injury to explain it.\n\nThen the X-ray loaded 😭\n\nAnd one stretch of bone was blown outward into a thin-walled balloon far wider than the bone beside it.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Aneurysmal bone cyst\n\n👀 What you see:\nOne section of bone blown outward into a thin-walled balloon shape far wider than the bone beside it.\n\n💊 Treatment:\nSurgeons scrape out the cyst and pack the space with bone graft and injections can help close it.\n\n🦴 Why it matters:\nBlood-filled cavities have expanded inside the bone and stretched its shell outward faster than the bone can reinforce it.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
+  },
+  "stages": {}
+}

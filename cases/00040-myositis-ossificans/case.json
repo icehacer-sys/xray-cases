@@ -1,0 +1,34 @@
+{
+  "folder": "00040-myositis-ossificans",
+  "number": 40,
+  "diagnosis": "Myositis ossificans",
+  "aliases": [
+    "myositis ossificans",
+    "heterotopic ossification",
+    "myositis ossificans traumatica"
+  ],
+  "symptom": "a hard hit to the thigh and a bruise that never faded and a firm lump weeks later",
+  "hook": "a shell of new bone was forming inside the thigh muscle with a hard white rim around a softer center",
+  "whatYouSee": "A dense shell of new bone forming in the soft tissue of the thigh with a rim of solid white bone around a softer center.",
+  "whyItMatters": "A deep bruise triggered the muscle to lay down real bone tissue in a place bone was never meant to be.",
+  "treatment": "Rest and gentle physio while it settles and surgery only later if a mature lump keeps getting in the way.",
+  "takeaway": "A bruise can heal itself right into bone.",
+  "igOptions": [
+    "A. A soft tissue sarcoma",
+    "B. Myositis ossificans",
+    "C. A blood clot"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-14T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a hard hit to the thigh and a bruise that never faded and a firm lump weeks later.\n\nThen the X-ray loaded 😭\n\nAnd a shell of new bone was forming inside the thigh muscle with a hard white rim around a softer center.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Myositis ossificans\n\n👀 What you see:\nA dense shell of new bone forming in the soft tissue of the thigh with a rim of solid white bone around a softer center.\n\n💊 Treatment:\nRest and gentle physio while it settles and surgery only later if a mature lump keeps getting in the way.\n\n🦴 Why it matters:\nA deep bruise triggered the muscle to lay down real bone tissue in a place bone was never meant to be.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into a digital PDF.\n\nAnd if you'd like to support the page I'd genuinely appreciate it 🙏\n\nxray.mednoteslab.com"
+  },
+  "stages": {}
+}

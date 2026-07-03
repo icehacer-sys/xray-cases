@@ -1,0 +1,34 @@
+{
+  "folder": "00041-osteochondroma",
+  "number": 41,
+  "diagnosis": "Osteochondroma",
+  "aliases": [
+    "osteochondroma",
+    "osteocartilaginous exostosis",
+    "exostosis"
+  ],
+  "symptom": "a hard painless bump near the knee that has grown for years and now catches on things",
+  "hook": "a bony spur was jutting off the shaft with its shell flowing straight into the parent bone like a branch",
+  "whatYouSee": "A bony spur jutting off the shaft of the bone with its own cortex flowing straight into the parent bone like a branch off a tree.",
+  "whyItMatters": "A cap of cartilage kept quietly adding bone to one spot for years the same way normal growth plates do until it formed its own antler-like spur.",
+  "treatment": "Leave it alone if it stays quiet and remove it surgically only when it hurts or catches or starts to change.",
+  "takeaway": "A bone can grow its own second bone right out of its side.",
+  "igOptions": [
+    "A. A calcified tendon",
+    "B. An osteochondroma",
+    "C. A healed fracture callus"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-15T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a hard painless bump near the knee that has grown for years and now catches on things.\n\nThen the X-ray loaded 😭\n\nAnd a bony spur was jutting off the shaft with its shell flowing straight into the parent bone like a branch.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Osteochondroma\n\n👀 What you see:\nA bony spur jutting off the shaft of the bone with its own cortex flowing straight into the parent bone like a branch off a tree.\n\n💊 Treatment:\nLeave it alone if it stays quiet and remove it surgically only when it hurts or catches or starts to change.\n\n🦴 Why it matters:\nA cap of cartilage kept quietly adding bone to one spot for years the same way normal growth plates do until it formed its own antler-like spur.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nspot.mednoteslab.com"
+  },
+  "stages": {}
+}

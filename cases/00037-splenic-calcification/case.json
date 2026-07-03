@@ -1,0 +1,35 @@
+{
+  "folder": "00037-splenic-calcification",
+  "number": 37,
+  "diagnosis": "Splenic calcification (histoplasmosis)",
+  "aliases": [
+    "splenic calcification",
+    "splenic calcifications",
+    "healed histoplasmosis",
+    "histoplasmosis"
+  ],
+  "symptom": "a fall and no memory of ever being sick",
+  "hook": "dozens of small round white dots were scattered across the spleen like a sky full of stars",
+  "whatYouSee": "Dozens of small round white dots scattered evenly across the spleen like a sky full of stars.",
+  "whyItMatters": "A fungal infection years ago left tiny scars that slowly calcified as the body sealed each one off for good.",
+  "treatment": "Nothing needs treating because these are old healed scars so the finding is simply noted and left alone.",
+  "takeaway": "A spleen can carry its own night sky and never say a word about it.",
+  "igOptions": [
+    "A. Splenic calcifications from an old healed infection",
+    "B. Splenic cancer",
+    "C. Kidney stones overlying the spleen"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-11T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a fall and no memory of ever being sick.\n\nThen the X-ray loaded 😭\n\nAnd dozens of small round white dots were scattered across the spleen like a sky full of stars.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Splenic calcification (histoplasmosis)\n\n👀 What you see:\nDozens of small round white dots scattered evenly across the spleen like a sky full of stars.\n\n💊 Treatment:\nNothing needs treating because these are old healed scars so the finding is simply noted and left alone.\n\n🦴 Why it matters:\nA fungal infection years ago left tiny scars that slowly calcified as the body sealed each one off for good.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\nVolume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.\n\nOver a hundred strange real X-rays with all the answers.\n\nmednoteslab.gumroad.com/l/collection"
+  },
+  "stages": {}
+}

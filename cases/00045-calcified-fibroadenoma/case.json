@@ -1,0 +1,35 @@
+{
+  "folder": "00045-calcified-fibroadenoma",
+  "number": 45,
+  "diagnosis": "Calcified fibroadenoma",
+  "aliases": [
+    "calcified fibroadenoma",
+    "fibroadenoma",
+    "involuting fibroadenoma",
+    "popcorn calcification"
+  ],
+  "symptom": "a firm breast lump felt on and off for years that never really changes size",
+  "hook": "a round dense lump was packed with coarse clumps of calcium that looked exactly like popcorn",
+  "whatYouSee": "A round dense lump packed with coarse clumped calcifications that look exactly like a piece of popcorn.",
+  "whyItMatters": "A benign breast lump slowly calcified over years as its blood supply faded and it is one of the most reassuring patterns a mammogram can show.",
+  "treatment": "Nothing needs doing because the popcorn pattern is classic and benign so the lump is just followed at routine checks.",
+  "takeaway": "Not every lump is a warning. Some just turn into popcorn.",
+  "igOptions": [
+    "A. Breast cancer",
+    "B. A simple cyst",
+    "C. A calcified fibroadenoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-19T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a firm breast lump felt on and off for years that never really changes size.\n\nThen the X-ray loaded 😭\n\nAnd a round dense lump was packed with coarse clumps of calcium that looked exactly like popcorn.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Calcified fibroadenoma\n\n👀 What you see:\nA round dense lump packed with coarse clumped calcifications that look exactly like a piece of popcorn.\n\n💊 Treatment:\nNothing needs doing because the popcorn pattern is classic and benign so the lump is just followed at routine checks.\n\n🦴 Why it matters:\nA benign breast lump slowly calcified over years as its blood supply faded and it is one of the most reassuring patterns a mammogram can show.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into a digital PDF.\n\nAnd if you'd like to support the page I'd genuinely appreciate it 🙏\n\nxray.mednoteslab.com"
+  },
+  "stages": {}
+}

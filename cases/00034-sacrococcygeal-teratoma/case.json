@@ -1,0 +1,34 @@
+{
+  "folder": "00034-sacrococcygeal-teratoma",
+  "number": 34,
+  "diagnosis": "Sacrococcygeal teratoma",
+  "aliases": [
+    "sacrococcygeal teratoma",
+    "SCT",
+    "tailbone teratoma"
+  ],
+  "symptom": "a firm swelling low at the base of the spine that the pregnancy scan already flagged",
+  "hook": "a large mass at the base of the spine was flecked with tiny calcium spots and small pockets of fat",
+  "whatYouSee": "A large mass at the base of the spine flecked with scattered calcifications and small pockets of fat.",
+  "whyItMatters": "A tumor made of several tissue types has been growing near the tailbone since early in the pregnancy and can even contain fragments of tooth or bone.",
+  "treatment": "Surgeons remove the whole mass along with the tailbone and then follow the child for any regrowth.",
+  "takeaway": "A tumor can carry pieces of tissue that have no business being there.",
+  "igOptions": [
+    "A. A meningocele",
+    "B. Sacrococcygeal teratoma",
+    "C. A simple fatty lump"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-08T18:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "needsReview": false,
+  "generated": {
+    "threadsCaption": "A patient came in with a firm swelling low at the base of the spine that the pregnancy scan already flagged.\n\nThen the X-ray loaded 😭\n\nAnd a large mass at the base of the spine was flecked with tiny calcium spots and small pockets of fat.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Sacrococcygeal teratoma\n\n👀 What you see:\nA large mass at the base of the spine flecked with scattered calcifications and small pockets of fat.\n\n💊 Treatment:\nSurgeons remove the whole mass along with the tailbone and then follow the child for any regrowth.\n\n🦴 Why it matters:\nA tumor made of several tissue types has been growing near the tailbone since early in the pregnancy and can even contain fragments of tooth or bone.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays made you learn something or laugh or question reality for a second.\n\nI put 20 brand-new cases into a PDF.\n\nNone repeated from Volume 1.\n\nSupport the page if you'd like and I'd appreciate it 🙏\n\nxray2.mednoteslab.com"
+  },
+  "stages": {}
+}
