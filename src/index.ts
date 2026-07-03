@@ -244,10 +244,11 @@ async function runPublish(cli: Cli): Promise<void> {
       cli.mode !== "dry-run" &&
       config.facebook &&
       !stages.fbPostedAt &&
-      generated.threadsCaption &&
       now.getTime() - challengePostedAt.getTime() < config.fbBackfillHours * 3_600_000
     ) {
-      await tryPostFacebook(c, generated.threadsCaption, state);
+      // Fall back to a freshly-built caption if the drafted one is missing (mirrors the IG retry),
+      // so a lost case.json `generated` block doesn't silently drop the FB post forever.
+      await tryPostFacebook(c, generated.threadsCaption ?? generateThreadsCaption(c), state);
       if (state.getStages(c.folder).fbPostedAt) {
         c.stages = state.getStages(c.folder);
         saveCase(c);

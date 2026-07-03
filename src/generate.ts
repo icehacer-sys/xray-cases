@@ -364,11 +364,13 @@ async function generateOne(
   // after the passes the case is held for manual review so exposed genitalia can NEVER auto-post.
   let xrayHadGenitals = false;
   let genitalExposed = false;
+  let censorFailed = false;
   if (!mock && config.censorGenitals) {
     const r = await censorUntilClean(xrayPng);
     xrayPng = r.png;
     xrayHadGenitals = r.blurred || r.stillExposed;
     genitalExposed = r.stillExposed;
+    censorFailed = r.detectionFailed;
     if (r.blurred) log(`    🔒 blurred genital region on the X-ray`);
   }
   writeFileSync(join(dir, "xray.png"), xrayPng);
@@ -402,14 +404,19 @@ async function generateOne(
     // placement on faint X-ray genitalia is unreliable (it can land on the wrong spot), so a
     // human verifies/tightens the blur with `regencase <folder> grid <file>` then
     // `regencase <folder> blurbox <file> x y w h`, and clears needsReview before it can post.
-    if (xrayHadGenitals || genitalExposed) {
+    // Detection that ERRORED (API hiccup) on a groin-relevant view cannot confirm the image is
+    // clean, so hold it for review rather than fail-open into a possibly-uncensored post.
+    const censorUnverified = censorFailed && /pelvi|hip|abdom|lower|groin|femur|leg|thigh/i.test(cond.view);
+    if (xrayHadGenitals || genitalExposed || censorUnverified) {
       c.needsReview = true;
       c.verifyDefects = [
         genitalExposed
           ? "genitalia still visible after auto-censor — blur manually (regencase grid + blurbox) then clear needsReview"
-          : "genitalia detected and auto-blurred — verify the blur is tight + correctly placed (regencase grid + blurbox) then clear needsReview",
+          : censorUnverified
+            ? "genital-censor detection errored on a groin-relevant view — verify no genitalia are exposed (regencase grid) then clear needsReview"
+            : "genitalia detected and auto-blurred — verify the blur is tight + correctly placed (regencase grid + blurbox) then clear needsReview",
       ];
-      log(`    ⛔ ${cond.diagnosis}: genitalia detected — queued with needsReview (auto-blur applied, human must verify placement before posting).`);
+      log(`    ⛔ ${cond.diagnosis}: ${censorUnverified && !xrayHadGenitals ? "genital-censor could not verify (detection errored)" : "genitalia detected"} — queued with needsReview.`);
     }
   }
 

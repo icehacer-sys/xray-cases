@@ -36,6 +36,10 @@ const USER = [
 export interface CensorResult {
   censored: boolean;
   box?: { x: number; y: number; w: number; h: number };
+  /** True when a detection/processing error stopped us from VERIFYING the image is clean (as
+   *  opposed to a confirmed "nothing to blur"). The caller holds groin-relevant views for review
+   *  rather than fail-open into an uncensored post. */
+  error?: boolean;
 }
 
 /** Blur external genitalia on a PNG if present. Fails open (returns the input unchanged) on
@@ -67,7 +71,7 @@ export async function censorXray(png: Buffer): Promise<{ png: Buffer; result: Ce
     const m = text.match(/\{[\s\S]*\}/);
     parsed = JSON.parse((m ? m[0] : text).trim());
   } catch {
-    return { png, result: { censored: false } }; // detection failed (e.g. no key) → leave unchanged
+    return { png, result: { censored: false, error: true } }; // detection failed (e.g. no key/timeout)
   }
 
   if (!parsed?.present || !parsed.box) return { png, result: { censored: false } };
@@ -84,7 +88,7 @@ export async function censorXray(png: Buffer): Promise<{ png: Buffer; result: Ce
     if (out === png) return { png, result: { censored: false } };
     return { png: out, result: { censored: true, box } };
   } catch {
-    return { png, result: { censored: false } }; // any sharp error → leave unchanged
+    return { png, result: { censored: false, error: true } }; // any sharp/processing error
   }
 }
 
@@ -123,16 +127,18 @@ export async function blurBox(png: Buffer, box: { x: number; y: number; w: numbe
 export async function censorUntilClean(
   png: Buffer,
   maxPasses = 3,
-): Promise<{ png: Buffer; blurred: boolean; stillExposed: boolean }> {
+): Promise<{ png: Buffer; blurred: boolean; stillExposed: boolean; detectionFailed: boolean }> {
   let cur = png;
   let blurred = false;
   let lastDetected = false;
+  let detectionFailed = false;
   for (let i = 0; i < maxPasses; i++) {
     const r = await censorXray(cur);
     lastDetected = r.result.censored;
+    detectionFailed = !!r.result.error;
     if (lastDetected) blurred = true;
     cur = r.png;
-    if (!lastDetected) break; // a pass found nothing → clean
+    if (!lastDetected) break; // a pass censored nothing → clean, OR errored (see detectionFailed)
   }
-  return { png: cur, blurred, stillExposed: lastDetected };
+  return { png: cur, blurred, stillExposed: lastDetected, detectionFailed };
 }
