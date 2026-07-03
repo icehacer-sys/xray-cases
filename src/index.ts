@@ -23,7 +23,7 @@ import {
 } from "./captions.js";
 import { postImage, reply, getReplies, getMyUsername, type SpoilerEntity } from "./threads.js";
 import { publishCarousel } from "./instagram.js";
-import { postPhoto } from "./facebook.js";
+import { postPhoto, postComment } from "./facebook.js";
 import type { Case } from "./types.js";
 
 const MINUTE_MS = 60_000;
@@ -256,6 +256,27 @@ async function runPublish(cli: Cli): Promise<void> {
       }
     }
 
+    // --- Stage 1d: Facebook answer comment ----------------------------------------------
+    // The FB mirror of the Threads pinned answer: ~answerDelayMin after the FB PHOTO posted
+    // (fbPostedAt, NOT challengePostedAt — with fbLeadMin the photo goes out early, so FB
+    // followers get the early reveal too). Best-effort like 1b/1c but it NEVER consumes the
+    // one-stage-per-run budget (no `continue`): with fbLeadMin=0 this and the Threads answer
+    // come due in the same run, and the Threads answer must not slip a poll. fbBackfillHours
+    // guards the historical catalog from getting an answer comment burst on first deploy.
+    if (
+      cli.mode !== "dry-run" &&
+      config.facebook &&
+      config.fbAnswer &&
+      stages.fbPostedAt &&
+      stages.fbPostId &&
+      !stages.fbAnswerPostedAt &&
+      now.getTime() >= new Date(stages.fbPostedAt).getTime() + config.answerDelayMin * MINUTE_MS &&
+      now.getTime() - new Date(stages.fbPostedAt).getTime() < config.fbBackfillHours * 3_600_000
+    ) {
+      await tryPostFacebookAnswer(c, state);
+      // fall through — Stage 2 (Threads answer) may be due in this same run
+    }
+
     // --- Stage 2: pinned answer ---------------------------------------------------------
     const answerDue =
       now.getTime() >= challengePostedAt.getTime() + config.answerDelayMin * MINUTE_MS;
@@ -376,6 +397,34 @@ async function tryPostFacebook(c: Case, caption: string, state: State): Promise<
     log(`  cross-posted Facebook photo for ${c.folder} -> ${fbPostId}`);
   } catch (err) {
     log(`  Facebook post failed for ${c.folder} (will retry next run): ${errMsg(err)}`);
+  }
+}
+
+// Lead-in above the FB answer so the diagnosis never shows in the feed's top-comment snippet
+// (FB has no spoiler entity; the reveal lives one tap away on the post page).
+const FB_ANSWER_LEAD = "ANSWER below 👇 no peeking if you're still guessing 👀";
+
+/**
+ * Best-effort Facebook answer comment — the FB mirror of the Threads pinned answer (Stage 2),
+ * reusing the SAME generated.threadsAnswer text. On success records fbAnswerCommentId +
+ * fbAnswerPostedAt; on failure logs and returns without throwing, leaving fbAnswerPostedAt
+ * unset so a later run retries (see Stage 1d). Never aborts the Threads flow.
+ */
+async function tryPostFacebookAnswer(c: Case, state: State): Promise<void> {
+  const stages = state.getStages(c.folder);
+  if (!stages.fbPostId) return; // photo id never recorded — nothing to comment on
+  try {
+    const answerText = c.generated?.threadsAnswer ?? (await generateThreadsAnswer(c));
+    const fbAnswerCommentId = await postComment(stages.fbPostId, `${FB_ANSWER_LEAD}\n\n${answerText}`);
+    state.setStages(c.folder, {
+      fbAnswerCommentId,
+      fbAnswerPostedAt: new Date().toISOString(),
+    });
+    c.stages = state.getStages(c.folder);
+    saveCase(c);
+    log(`  commented Facebook ANSWER for ${c.folder} -> ${fbAnswerCommentId}`);
+  } catch (err) {
+    log(`  Facebook answer comment failed for ${c.folder} (will retry next run): ${errMsg(err)}`);
   }
 }
 

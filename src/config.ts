@@ -55,6 +55,12 @@ export const config = {
   // to just today's case going forward.
   fbBackfillHours: num("BOT_FB_BACKFILL_HOURS", 12),
 
+  // Comment the answer on the Facebook challenge post ~answerDelayMin after the FB PHOTO
+  // posted (the FB mirror of the Threads pinned answer). FB has no spoiler formatting, so a
+  // lead-in line hides the diagnosis from the feed's top-comment snippet. On by default; only
+  // effective while BOT_FACEBOOK=on. Set BOT_FB_ANSWER=off to disable.
+  fbAnswer: (process.env.BOT_FB_ANSWER ?? "on").toLowerCase() !== "off",
+
   // Auto-post the CTA as a reply under the pinned answer. Off by default: the owner posts
   // the CTA manually so the Gumroad link renders its cover-image preview (a bot sub-reply
   // does not show the preview). Stage 3 is skipped entirely when this is off.

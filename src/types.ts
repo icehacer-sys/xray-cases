@@ -66,6 +66,8 @@ export interface Case {
     igMediaId?: string;
     fbPostedAt?: string;
     fbPostId?: string;
+    fbAnswerPostedAt?: string;
+    fbAnswerCommentId?: string;
   };
 }
 

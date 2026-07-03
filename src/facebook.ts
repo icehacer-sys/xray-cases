@@ -41,3 +41,12 @@ export async function postPhoto(imageUrl: string, caption: string): Promise<stri
   const body = await fbPost(`${pageId}/photos`, { url: imageUrl, caption });
   return String(body.post_id ?? body.id ?? "");
 }
+
+/**
+ * Post a comment on a Page object (a feed post / photo story) as the Page. Returns the
+ * new comment id. Requires the Page token to include pages_manage_engagement.
+ */
+export async function postComment(objectId: string, message: string): Promise<string> {
+  const body = await fbPost(`${objectId}/comments`, { message });
+  return String(body.id ?? "");
+}
