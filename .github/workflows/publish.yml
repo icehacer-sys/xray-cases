@@ -92,6 +92,21 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           MAXSECS: "19800" # ~5.5h per run, then it launches the next (under the 6h job limit)
         run: |
+          # Push local commits, retrying rebase+push. Runs every loop (not only when the tree is
+          # freshly dirty) so a push that failed on a previous loop is genuinely retried instead of
+          # being lost at the next hand-off. On a rebase conflict it aborts (never leaves the repo
+          # mid-rebase, which used to break every later push in the run) and retries.
+          sync_repo() {
+            for attempt in 1 2 3; do
+              if ! git pull --rebase --autostash origin "${GITHUB_REF_NAME}"; then
+                git rebase --abort 2>/dev/null || true
+                echo "rebase failed (attempt $attempt/3), retrying in 3s"; sleep 3; continue
+              fi
+              if git push; then return 0; fi
+              echo "push failed (attempt $attempt/3), retrying in 3s"; sleep 3
+            done
+            echo "WARNING: git sync failed after 3 attempts; will retry next loop"; return 0
+          }
           if [ "$MODE" = "dry" ]; then
             npm run dry
             exit 0
@@ -105,9 +120,8 @@ jobs:
             if [ -n "$(git status --porcelain cases data/conditions.json data/used-diagnoses.json)" ]; then
               git add cases data/conditions.json data/used-diagnoses.json
               git commit -m "chore: rebuild gpt-image-2 slides + top up queue [skip ci]"
-              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" >/dev/null 2>&1 || true
-              git push || echo "push failed"
             fi
+            sync_repo
             exit 0
           fi
           if [ "$MODE" = "slidesample" ]; then
@@ -117,38 +131,42 @@ jobs:
             if [ -n "$(git status --porcelain cases)" ]; then
               git add cases/00001-ollier-disease/*-ai.png
               git commit -m "chore: gpt-image-2 slide sample [skip ci]"
-              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" >/dev/null 2>&1 || true
-              git push || echo "push failed"
             fi
+            sync_repo
             exit 0
           fi
           git config user.name "xray-poster"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # Top up the queue once per chain run, before the polling loop. Generates new
           # cases (AI X-ray + rendered slides) until pending+approved unposted cases reach
-          # BOT_QUEUE_TARGET; no-ops when the queue is already full. New cases land as
-          # approved:false, so the review gate still holds them until a human approves
-          # (BOT_AUTO_APPROVE stays unset). Commit the new cases/** + conditions.json.
+          # BOT_QUEUE_TARGET; no-ops when the queue is already full. BOT_AUTO_APPROVE is ON
+          # (see the env block), so generated cases post without manual approval — the safety
+          # gate is the Claude X-ray anatomy QA, which flags a failed image needsReview and
+          # NEVER auto-posts it (auto-approve does not bypass needsReview). Commit new cases/**
+          # + conditions.json + the used-diagnoses lock so the no-repeat history survives restarts.
           echo "::group::queue top-up ($(date -u +%H:%M) UTC)"
           npm run generate -- --topup --threads-only || echo "top-up errored, continuing"
-          if [ -n "$(git status --porcelain cases data/conditions.json)" ]; then
-            git add cases data/conditions.json
+          if [ -n "$(git status --porcelain cases data/conditions.json data/used-diagnoses.json)" ]; then
+            git add cases data/conditions.json data/used-diagnoses.json
             git commit -m "chore: top up case queue [skip ci]"
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" >/dev/null 2>&1 || true
-            git push || echo "push failed; will retry next loop"
           fi
+          sync_repo
           echo "::endgroup::"
           start=$(date +%s)
+          fails=0
           for i in $(seq 1 60); do
             echo "::group::poll $i ($(date -u +%H:%M) UTC)"
-            npm run live || echo "iteration $i errored, continuing"
-            if [ -n "$(git status --porcelain state.json cases)" ]; then
-              git add state.json cases
+            if npm run live; then fails=0; else fails=$((fails+1)); echo "iteration $i errored ($fails in a row)"; fi
+            if [ -n "$(git status --porcelain state.json cases data/used-diagnoses.json)" ]; then
+              git add state.json cases data/used-diagnoses.json
               git commit -m "chore: update poster state [skip ci]"
-              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" >/dev/null 2>&1 || true
-              git push || echo "push failed; will retry next loop"
             fi
+            sync_repo
             echo "::endgroup::"
+            # Surface a real outage (dead token, Anthropic billing, ...) that the per-iteration
+            # '|| continue' would otherwise hide behind a green run: after 6 consecutive failures,
+            # fail the job so GitHub emails. The */30 cron restarts the chain.
+            if [ "$fails" -ge 6 ]; then echo "::error::$fails consecutive live failures — aborting so the outage surfaces"; exit 1; fi
             if [ $(( $(date +%s) - start )) -ge "$MAXSECS" ]; then break; fi
             sleep 300
           done
