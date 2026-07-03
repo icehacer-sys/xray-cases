@@ -5,7 +5,7 @@
 //   BOT_CASE_NUMBER_OFFSET=<n> BOT_ANSWER_DELAY_MIN=45 npx tsx src/backfillengagement.ts
 import { loadCases, saveCase } from "./cases.js";
 import { State } from "./state.js";
-import { generateThreadsCaption, generateThreadsAnswer, draftEngagement } from "./captions.js";
+import { generateThreadsCaption, generateThreadsAnswer, draftEngagement, pickCta } from "./captions.js";
 import { config } from "./config.js";
 
 async function main(): Promise<void> {
@@ -28,7 +28,8 @@ async function main(): Promise<void> {
     }
     const caption = generateThreadsCaption(c);
     const answer = await generateThreadsAnswer(c); // re-render with the new section order (no re-draft: fields present)
-    c.generated = { ...(c.generated ?? {}), threadsCaption: caption, threadsAnswer: answer };
+    const ctaText = pickCta(c).text; // pick up the new free-pack-weighted rotation
+    c.generated = { ...(c.generated ?? {}), threadsCaption: caption, threadsAnswer: answer, ctaText };
     saveCase(c);
 
     const len = caption.length;

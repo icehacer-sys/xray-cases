@@ -281,6 +281,17 @@ async function draftIgHook(c: Case): Promise<string> {
 // ---------------------------------------------------------------------------
 
 const CTA_TEXT: Record<CtaKey, string> = {
+  // Free lead magnet (email capture at Gumroad $0+ checkout) — the top of the funnel. Weighted
+  // heavily in the rotation below: a free pack pulls far more downloads (= emails) than a paid PDF,
+  // and the email list is what durably sells the paid collection.
+  hopital: [
+    `If these weird X-rays keep pulling you in.`,
+    `I put 5 of the strangest into a free pack.`,
+    `Guess hopital then flip for what each one really is.`,
+    `Grab it free.`,
+    `hopital.mednoteslab.com`,
+  ].join("\n\n"),
+
   vol2: [
     `If these weird X-rays made you learn something or laugh or question reality for a second.`,
     `I put 20 brand-new cases into a PDF.`,
@@ -320,7 +331,10 @@ const CTA_TEXT: Record<CtaKey, string> = {
   ].join("\n\n"),
 };
 
-const CTA_ROTATION: CtaKey[] = ["spotit", "collection", "rare", "vol2", "vol1"];
+// Free pack every other slot (top-of-funnel email capture), the rest rotate the paid products
+// (the complete collection first, then the individual sets). ctaReply is off so this only drafts
+// a SUGGESTED cta into case.json — the owner posts it manually and can still swap.
+const CTA_ROTATION: CtaKey[] = ["hopital", "collection", "hopital", "spotit", "hopital", "rare"];
 
 export function pickCta(c: Case): { key: CtaKey; text: string } {
   if (c.cta) {
