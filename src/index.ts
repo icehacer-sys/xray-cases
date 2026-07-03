@@ -116,6 +116,10 @@ async function runPublish(cli: Cli): Promise<void> {
   log(`xray-poster ${cli.mode} @ ${now.toISOString()} — ${cases.length} case(s)`);
 
   for (const c of cases) {
+    // Per-case isolation: one poisoned case (a deleted post, a 404 image URL, an owner-edited
+    // answer over 500 chars) must NEVER abort the whole run — otherwise it crash-loops every
+    // poll and today's due case never posts. Log it and carry on to the next case.
+    try {
     const postAt = new Date(c.postAt);
     const dueNow = postAt.getTime() <= now.getTime();
     // Dry-run is a preview tool: draft (and show) captions for any upcoming case,
@@ -307,6 +311,9 @@ async function runPublish(cli: Cli): Promise<void> {
         saveCase(c);
         log(`posted CTA for ${c.folder} under ${target}${liveAnswerId ? " (live answer)" : ""}`);
       }
+    }
+    } catch (err) {
+      log(`  ⚠ case ${c.folder} failed this run (isolated — will retry next run): ${errMsg(err)}`);
     }
   }
 

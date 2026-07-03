@@ -1,7 +1,7 @@
 // Queue loader: reads cases/<folder>/case.json files, resolves public image URLs,
 // and writes cases back (so generated drafts + stages persist for the user to review).
 
-import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, renameSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { config } from "./config.js";
@@ -75,12 +75,15 @@ export function normalizeDx(s: string): string {
 
 function readUsedRaw(): string[] {
   if (!existsSync(usedFile)) return [];
+  let arr: unknown;
   try {
-    const arr = JSON.parse(readFileSync(usedFile, "utf8"));
-    return Array.isArray(arr) ? (arr as string[]) : [];
+    arr = JSON.parse(readFileSync(usedFile, "utf8"));
   } catch {
-    return [];
+    // Fail CLOSED: a truncated/corrupt dedup file must NEVER silently read as "empty" — that
+    // would make every diagnosis look fresh and let a posted case repeat. Refuse loudly instead.
+    throw new Error(`used-diagnoses.json is not valid JSON — refusing to run the no-repeat gate blind. Fix ${usedFile}.`);
   }
+  return Array.isArray(arr) ? (arr as string[]) : [];
 }
 
 /** The set of normalized diagnosis names (incl. aliases) that have already been used. */
@@ -106,5 +109,11 @@ export function addUsedDiagnosis(name: string, aliases: string[] = []): void {
       changed = true;
     }
   }
-  if (changed) writeFileSync(usedFile, JSON.stringify(arr, null, 2) + "\n", "utf8");
+  if (changed) {
+    // Atomic write (tmp + rename) so a crash mid-write can't truncate the dedup file and wipe
+    // the posted-diagnosis history — the same guarantee state.json already uses.
+    const tmp = `${usedFile}.tmp`;
+    writeFileSync(tmp, JSON.stringify(arr, null, 2) + "\n", "utf8");
+    renameSync(tmp, usedFile);
+  }
 }

@@ -215,10 +215,35 @@ function placeholderXray(): Buffer {
 // ---------------------------------------------------------------------------
 
 function xrayPrompt(cond: Condition, avoid: string[] = []): string {
+  const view = cond.view.toLowerCase();
+  // Region-specific realism blocks: gpt-image-2's two failure modes are dental arches and
+  // overlapping paired bones, so give the view-appropriate anatomy constraint explicitly.
+  const region: string[] = [];
+  if (/panoram|jaw|mandible|dental|teeth|tooth|odont/.test(view)) {
+    region.push(
+      `TEETH: render a SINGLE continuous dental arch per jaw — every tooth seated in the alveolar bone along`,
+      `one smooth curve, with NO floating, tilted-into-space, duplicated, fused, or extra teeth beyond the`,
+      `stated pathology. Use ONE age-appropriate dentition (a normal adult set OR a normal child set, never a`,
+      `chaotic mix). Upper and lower arches mirror-consistent in tooth count and spacing. Every tooth except`,
+      `the described lesion is normal and correctly positioned.`,
+    );
+  }
+  if (/forearm|radius|ulna|\bleg\b|tibia|fibula/.test(view)) {
+    region.push(`Two parallel long bones (radius and ulna, or tibia and fibula) separated by an interosseous space — never a single fused bone.`);
+  }
+  if (/hand|foot|digit|toe|finger/.test(view)) {
+    region.push(`Five digits with the correct phalanx count (thumb/big toe two, the others three); do not add, drop, merge, or detach a digit.`);
+  }
+  if (/chest|thorax|lung/.test(view)) {
+    region.push(`Lung markings are fine BRANCHING vessels tapering to the periphery, not uniform speckled static; symmetric ribcage, one heart shadow, one hemidiaphragm per side.`);
+  }
   const lines = [
     `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
     ``,
     `Show classic ${cond.diagnosis}: ${cond.keyFindings}.`,
+    ``,
+    `Render exactly ONE primary abnormality — the finding above. Everything else on the film is`,
+    `unremarkable, normal anatomy. Do not scatter extra lesions, densities, or incidental abnormalities.`,
     ``,
     `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs.`,
     `Do NOT duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired`,
@@ -227,8 +252,11 @@ function xrayPrompt(cond: Condition, avoid: string[] = []): string {
     `pathology as a change to a SINGLE structure, never as an added duplicate. No melted, smeared, doubled,`,
     `or garbled bone.`,
     ``,
-    `Prioritize clinical realism over symmetry. Make it look like a genuine abnormal finding,`,
-    `not a perfect textbook diagram.`,
+    `The PATHOLOGY may be irregular or asymmetric — that is expected. But every NON-pathological paired`,
+    `structure (both forearm bones, both sides of the jaw and dental arch, the ribs, the orbits) must stay`,
+    `bilaterally consistent, correctly counted, and cleanly superimposed where structures overlap. Make it`,
+    `look like a genuine abnormal finding, not a perfect textbook diagram.`,
+    ...(region.length ? ["", ...region] : []),
     ``,
     `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain.`,
     ``,
@@ -237,6 +265,11 @@ function xrayPrompt(cond: Condition, avoid: string[] = []): string {
     ``,
     `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
     `No watermark.`,
+    ``,
+    `Avoid these AI artifacts: duplicated or mirrored bones, a floating bone or tooth detached from the`,
+    `skeleton, merged or melted cortical bone, teeth outside the arch, an extra scapula/clavicle/rib, the`,
+    `wrong number of fingers or toes, a single fused forearm bone, and uniform stippled noise standing in for`,
+    `real tissue texture.`,
   ];
   if (avoid.length) {
     lines.push(``, `Avoid these specific errors from a previous attempt: ${avoid.slice(0, 4).join("; ")}.`);

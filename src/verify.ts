@@ -32,9 +32,33 @@ const SYSTEM =
   "pathology (deformity, fracture, fragmentation, a medical device) is EXPECTED and must NOT be flagged — " +
   "only flag AI artifacts. A real defect that slipped through once: a Sprengel deformity X-ray that drew " +
   "TWO scapulae on one side (a normal one PLUS an extra elevated one) instead of a single high scapula. " +
+  "A CORRECT primary lesion does NOT rescue an image whose surrounding NON-pathological anatomy is impossible " +
+  "— judge the WHOLE film. Flag critical if EITHER the primary finding is wrong or absent, OR any " +
+  "non-pathological structure has an AI impossibility (a floating or duplicated bone or tooth, a garbled or " +
+  "incoherent dental arch, a fused paired bone, the wrong digit count). " +
   "Respond with ONLY a JSON object and no other text.";
 
 function userPrompt(cond: Condition): string {
+  const view = cond.view.toLowerCase();
+  const extra: string[] = [];
+  if (/panoram|jaw|mandible|dental|teeth|tooth|odont/.test(view)) {
+    extra.push(
+      `TEETH CHECK (this view shows teeth): count the teeth in the upper arch and the lower arch. Confirm a`,
+      `SINGLE continuous arch per jaw with every tooth seated in alveolar bone — no floating, duplicated,`,
+      `fused, or supernumerary teeth beyond the stated pathology — and ONE age-appropriate dentition (not a`,
+      `chaotic adult/baby mix), left-right mirror-consistent in count and spacing. Chaotic, floating, or`,
+      `duplicated dentition is a CRITICAL AI artifact even when the primary lesion is rendered correctly.`,
+    );
+  }
+  if (/forearm|radius|ulna|\bleg\b|tibia|fibula/.test(view)) {
+    extra.push(`PAIRED-BONE CHECK: confirm TWO parallel long bones (radius+ulna or tibia+fibula), never one fused bone.`);
+  }
+  if (/hand|foot|digit|toe|finger/.test(view)) {
+    extra.push(`DIGIT CHECK: confirm the correct digit count (thumb/big toe two phalanges, the others three); none added, dropped, merged, or detached.`);
+  }
+  if (/shoulder|chest|thorax|clavicle|scapula/.test(view)) {
+    extra.push(`PAIRED-STRUCTURE CHECK: exactly one scapula and one clavicle per side, a symmetric rib count, one heart shadow.`);
+  }
   return [
     `Expected diagnosis: ${cond.diagnosis}`,
     `Expected view: ${cond.view}`,
@@ -43,12 +67,14 @@ function userPrompt(cond: Condition): string {
     `Examine the attached X-ray systematically: count paired structures, trace each bone, count`,
     `digits/ribs/vertebrae, confirm every organ/device is singular and correctly placed, and confirm the`,
     `body part and view match. Distinguish real pathology from AI duplication/garbling artifacts.`,
+    ...(extra.length ? ["", ...extra] : []),
     ``,
     `Return ONLY this JSON:`,
     `{"plausible": boolean, "depictsDiagnosis": boolean, "correctBodyPart": boolean, "defects": [string], "severity": "pass"|"minor"|"critical"}`,
     `severity = "critical" if there is any clear AI anatomical impossibility (duplicated/extra bone or organ,`,
-    `wrong number of limbs/digits, wrong body part) — these must not post. "minor" for small but believable`,
-    `imperfections. "pass" if it is a believable radiograph of the diagnosis.`,
+    `wrong number of limbs/digits, wrong body part, or a garbled/floating/duplicated dental arch) — these must`,
+    `not post. "minor" for small but believable imperfections. "pass" only if it is a believable radiograph of`,
+    `the diagnosis WITH coherent surrounding anatomy.`,
   ].join("\n");
 }
 
@@ -93,13 +119,22 @@ export async function verifyXray(png: Buffer, cond: Condition): Promise<XrayVerd
   }
   const severity: XrayVerdict["severity"] =
     p.severity === "critical" ? "critical" : p.severity === "minor" ? "minor" : "pass";
+  const depictsDiagnosis = !!p.depictsDiagnosis;
+  const correctBodyPart = !!p.correctBodyPart;
+  const defects = Array.isArray(p.defects) ? p.defects.map(String) : [];
+  // A believable film that shows the WRONG body part, or does not actually depict the expected
+  // pathology, is as bad as an AI artifact for a "guess the diagnosis" post — the pinned answer
+  // would name something the image doesn't show. Fail QA on those too (not just anatomical
+  // impossibilities), so the case regenerates and, if it keeps failing, is held for review.
+  if (!correctBodyPart) defects.push(`wrong body part or view (expected ${cond.view})`);
+  if (!depictsDiagnosis) defects.push(`image does not convincingly show ${cond.diagnosis}`);
   return {
-    ok: severity !== "critical",
+    ok: severity !== "critical" && depictsDiagnosis && correctBodyPart,
     severity,
     plausible: !!p.plausible,
-    depictsDiagnosis: !!p.depictsDiagnosis,
-    correctBodyPart: !!p.correctBodyPart,
-    defects: Array.isArray(p.defects) ? p.defects.map(String) : [],
+    depictsDiagnosis,
+    correctBodyPart,
+    defects,
     raw: text,
   };
 }
