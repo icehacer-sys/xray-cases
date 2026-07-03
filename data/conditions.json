@@ -1525,5 +1525,77 @@
     ],
     "igCorrect": "B",
     "used": true
+  },
+  {
+    "diagnosis": "Swallowed spoon",
+    "aliases": [
+      "ingested spoon",
+      "gastric spoon foreign body",
+      "swallowed a spoon"
+    ],
+    "symptom": "a swallowed object after a dare and a heavy dragging feeling in the gut but no real pain",
+    "hook": "a whole metal spoon was lying inside the stomach handle down",
+    "view": "AP upper abdomen",
+    "keyFindings": "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
+    "whatYouSee": "A full metal spoon is sitting inside the stomach with the bowl and handle clearly outlined.",
+    "whyItMatters": "A long rigid object like this will not pass through the twists of the gut on its own and can press on or tear the wall if it is left.",
+    "treatment": "It is lifted out with an endoscope passed down into the stomach so nothing has to be cut open.",
+    "takeaway": "The stomach will hold far more than anyone expects.",
+    "igTitle": "THE SPOON",
+    "igOptions": [
+      "A calcified mass",
+      "A swallowed spoon",
+      "A surgical clip"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Swallowed keys",
+    "aliases": [
+      "ingested keys",
+      "key foreign body",
+      "swallowed a set of keys"
+    ],
+    "symptom": "a swallowed handful of metal after a bet and now a strange dragging weight low in the chest",
+    "hook": "a full set of keys on a ring was sitting inside the stomach",
+    "view": "AP upper abdomen",
+    "keyFindings": "a clustered set of metal keys joined on a ring outlined inside the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the individual key teeth visible",
+    "whatYouSee": "A set of keys on a ring is sitting inside the stomach with the separate keys clearly outlined.",
+    "whyItMatters": "The jagged edges can catch on the gut wall and the ring can snag which stops the whole cluster from passing on its own.",
+    "treatment": "The whole bunch is removed with an endoscope guided down into the stomach.",
+    "takeaway": "Not everything that goes down is meant to come back the same way.",
+    "igTitle": "THE KEYS",
+    "igOptions": [
+      "A swallowed set of keys",
+      "Gallstones",
+      "A stack of coins"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Chilaiditi syndrome",
+    "aliases": [
+      "chilaiditi sign",
+      "colonic interposition",
+      "chilaiditi"
+    ],
+    "symptom": "a vague upper belly discomfort and a bit of bloating that came and went for weeks",
+    "hook": "a loop of bowel had slipped up between the liver and the diaphragm where nothing is meant to sit",
+    "view": "erect PA chest",
+    "keyFindings": "a gas filled loop of large bowel wedged between the top of the liver and the right dome of the diaphragm with visible bowel folds inside the gas that mark it as colon and not free air",
+    "whatYouSee": "A pocket of bowel gas is sitting up between the liver and the right side of the diaphragm where only solid liver should be.",
+    "whyItMatters": "It is usually harmless but it can be mistaken for dangerous free air under the diaphragm which sends people to surgery they never needed.",
+    "treatment": "When it causes no trouble it is left alone. Only the rare loop that twists or blocks needs an operation.",
+    "takeaway": "Sometimes the scariest looking scan is the one that needs nothing at all.",
+    "igTitle": "THE GAS UNDER THE LIVER",
+    "igOptions": [
+      "A hole in the bowel",
+      "Bowel trapped above the liver",
+      "An enlarged gallbladder"
+    ],
+    "igCorrect": "B",
+    "used": true
   }
 ]

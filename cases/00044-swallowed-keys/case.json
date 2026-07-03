@@ -1,0 +1,59 @@
+{
+  "folder": "00044-swallowed-keys",
+  "number": 44,
+  "diagnosis": "Swallowed keys",
+  "aliases": [
+    "ingested keys",
+    "key foreign body",
+    "swallowed a set of keys"
+  ],
+  "symptom": "a swallowed handful of metal after a bet and now a strange dragging weight low in the chest",
+  "hook": "a full set of keys on a ring was sitting inside the stomach",
+  "whatYouSee": "A set of keys on a ring is sitting inside the stomach with the separate keys clearly outlined.",
+  "whyItMatters": "The jagged edges can catch on the gut wall and the ring can snag which stops the whole cluster from passing on its own.",
+  "treatment": "The whole bunch is removed with an endoscope guided down into the stomach.",
+  "takeaway": "Not everything that goes down is meant to come back the same way.",
+  "igOptions": [
+    "A. A swallowed set of keys",
+    "B. Gallstones",
+    "C. A stack of coins"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-18T18:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Swallowed keys",
+    "aliases": [
+      "ingested keys",
+      "key foreign body",
+      "swallowed a set of keys"
+    ],
+    "symptom": "a swallowed handful of metal after a bet and now a strange dragging weight low in the chest",
+    "hook": "a full set of keys on a ring was sitting inside the stomach",
+    "view": "AP upper abdomen",
+    "keyFindings": "a clustered set of metal keys joined on a ring outlined inside the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the individual key teeth visible",
+    "whatYouSee": "A set of keys on a ring is sitting inside the stomach with the separate keys clearly outlined.",
+    "whyItMatters": "The jagged edges can catch on the gut wall and the ring can snag which stops the whole cluster from passing on its own.",
+    "treatment": "The whole bunch is removed with an endoscope guided down into the stomach.",
+    "takeaway": "Not everything that goes down is meant to come back the same way.",
+    "igTitle": "THE KEYS",
+    "igOptions": [
+      "A swallowed set of keys",
+      "Gallstones",
+      "A stack of coins"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 1,
+  "laypersonQuestion": "What would make someone swallow this on a bet?",
+  "seedHint": "Look at the shape in the stomach and count how many pieces you can spot.",
+  "generated": {
+    "threadsCaption": "A patient came in with a swallowed handful of metal after a bet and now a strange dragging weight low in the chest.\n\nThen the X-ray loaded 😭\n\nAnd a full set of keys on a ring was sitting inside the stomach.\n\nCase #83 🩻 Difficulty 1/5\n\nMedics: your diagnosis?\n\nEveryone else: What would make someone swallow this on a bet?\n\nAnswer in 45 min 👀 no spoilers from me till then",
+    "threadsAnswer": "Answer: Swallowed keys\n\n👀 What you see:\nA set of keys on a ring is sitting inside the stomach with the separate keys clearly outlined.\n\n🦴 Why it matters:\nThe jagged edges can catch on the gut wall and the ring can snag which stops the whole cluster from passing on its own.\n\n💊 Treatment:\n\nThe whole bunch is removed with an endoscope guided down into the stomach.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\nVolume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.\n\nOver a hundred strange real X-rays with all the answers.\n\nmednoteslab.gumroad.com/l/collection"
+  }
+}
