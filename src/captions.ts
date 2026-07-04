@@ -40,35 +40,19 @@ async function ask(system: string, user: string, maxTokens = 600): Promise<strin
 // ---------------------------------------------------------------------------
 
 export function generateThreadsCaption(c: Case): string {
-  // The SAME fixed skeleton the audience knows (patient -> X-ray -> hook) plus four durable
-  // reach upgrades layered in: a public Case number for collectibility, a guess-difficulty, a
-  // layperson secondary question so the non-medical majority can reply too, and a reveal-time
-  // nudge that drives "guess now / come back" behaviour. Fields are clamped so the whole caption
-  // stays under Threads' 500-char cap even in the worst case.
-  const symptom = clamp(c.symptom, 110);
-  const hook = clamp(c.hook, 150);
-
-  // Public number reflects the account's true running total (folder numbers are internal + low).
-  const caseNo = (c.number ?? 1) + config.caseNumberOffset;
-  const d = c.difficulty;
-  const diffPart = d && d >= 1 && d <= 5 ? ` Difficulty ${Math.round(d)}/5` : "";
-
-  const lp = c.laypersonQuestion?.trim();
-
-  const blocks = [
+  // The ORIGINAL fixed format the audience knows — only the symptom + hook vary (owner reverted the
+  // Case#/difficulty/layperson/reveal-line experiment on 2026-07-04 after those posts underperformed).
+  // Cap symptom+hook so the caption stays well under Threads' 500-char limit.
+  const symptom = clamp(c.symptom, 130);
+  const hook = clamp(c.hook, 190);
+  return [
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
     `And ${hook}.`,
-    `Case #${caseNo} 🩻${diffPart}`,
-  ];
-  // The two audience questions EACH get their own block so a blank line sits between them (owner
-  // spacing, 2026-07-03). An older/hand-made case with no layperson question falls back to the
-  // single classic ask.
-  if (lp) blocks.push(`Medics: your diagnosis?`, `Everyone else: ${clamp(lp, 55)}`);
-  else blocks.push(`What's the most likely diagnosis?`);
-  blocks.push(`Answer in ${config.answerDelayMin} min 👀 no spoilers from me till then`);
-
-  return blocks.join("\n\n");
+    `Quick diagnosis challenge 🩻`,
+    `What's the most likely diagnosis?`,
+    `Wild guesses are welcome 👀`,
+  ].join("\n\n");
 }
 
 // ---------------------------------------------------------------------------
