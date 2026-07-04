@@ -125,7 +125,7 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
 
   // Threads caps each reply at config.answerMaxChars (500) and the answer must be ONE reply (no
   // chains, no truncation). DISPLAY order (owner, 2026-07-03): What you see -> Why it matters ->
-  // Treatment (Tx last, with a blank line under its label). The DROP order is decoupled from the
+  // Treatment (Tx last, body on the very next line — no blank line under its label). The DROP order is decoupled from the
   // display order via `keep`: when the budget is tight the LEAST-important section (Why it matters)
   // is skipped first and the Treatment stays protected (owner: never drop the Tx, 2026-06-19/28) —
   // so Tx renders last but is never the one cut. The full untrimmed 4-section breakdown still lives
@@ -136,7 +136,7 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
     { display: 0, keep: 3, text: `👀 What you see:\n${clamp(whatYouSee, 200)}` },
     { display: 1, keep: 1, text: `🦴 Why it matters:\n${clamp(whyItMatters, 170)}` },
     ...(treatment && treatment.trim()
-      ? [{ display: 2, keep: 2, text: `💊 Treatment:\n\n${clamp(treatment, 170)}` }]
+      ? [{ display: 2, keep: 2, text: `💊 Treatment:\n${clamp(treatment, 170)}` }]
       : []),
   ];
   void takeaway; // still drafted (kept for the breakdown) but no longer shown in the reply
