@@ -1647,5 +1647,143 @@
     "igCorrect": "B",
     "used": true,
     "skipPublic": true
+  },
+  {
+    "diagnosis": "Gorham disease",
+    "aliases": [
+      "Gorham-Stout disease",
+      "Vanishing bone disease"
+    ],
+    "symptom": "a limb that aches and feels weak and a piece of bone seen on an older X-ray that has now faded away",
+    "hook": "the bone did not break or crack it simply dissolved and vanished",
+    "view": "AP radiograph of the femur",
+    "keyFindings": "AP radiograph of the mid femur showing a segment of the diaphysis that has progressively resorbed and dissolved away leaving a gap in the shaft with tapered pointed sucked-candy bone ends and no fracture line and no callus forming around the defect",
+    "whatYouSee": "A section of the shaft is gone. The bone ends taper to sharp points and melt into empty space with nothing bridging the gap.",
+    "whyItMatters": "A rare disease lets bone be eaten away and replaced by extra blood and lymph vessels so the bone slowly disappears instead of healing.",
+    "treatment": "There is no set cure so doctors try radiation and bone strengthening drugs and drugs that block vessel growth to halt the loss and may rebuild the gap with grafts.",
+    "takeaway": "Sometimes bone does not break. It disappears.",
+    "igTitle": "THE VANISHING BONE",
+    "igOptions": [
+      "Bone dissolving away",
+      "Healed fracture",
+      "Normal bone"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Neurofibromatosis type 1",
+    "aliases": [
+      "NF1",
+      "Ribbon ribs"
+    ],
+    "symptom": "a chest X-ray that looks wrong in a way that is hard to place and ribs that curve like wavy ribbons instead of straight bars",
+    "hook": "the ribs look like someone swapped straight bones for rippling ribbons",
+    "view": "AP chest radiograph",
+    "keyFindings": "AP chest radiograph showing the posterior ribs with a wavy undulating ribbon-like contour instead of smooth flat bars with thinned twisted notched rib margins seen on both sides of the chest",
+    "whatYouSee": "Both sets of ribs have a wavy twisted edge and look thin and ribbon-like instead of smooth and flat.",
+    "whyItMatters": "A rare inherited condition reshapes bone and nerve tissue and can twist the ribs and bow the long bones and curve the spine.",
+    "treatment": "There is no cure so doctors watch the bones and nerves over time and treat curved spines and bowed limbs and nerve tumors as they appear.",
+    "takeaway": "Some skeletons are simply built with a wave.",
+    "igTitle": "THE RIBBON RIBS",
+    "igOptions": [
+      "Wavy ribbon-like ribs",
+      "Multiple healing rib fractures",
+      "Normal ribs"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Dyke-Davidoff-Masson syndrome",
+    "aliases": [
+      "Cerebral hemiatrophy",
+      "Dyke-Davidoff-Masson malformation"
+    ],
+    "symptom": "weakness on one side of the body for years and a head that looks lopsided and thicker on one side",
+    "hook": "one half of the skull is smaller and thicker than the other half",
+    "view": "AP skull radiograph",
+    "keyFindings": "Frontal AP skull radiograph with striking left-right asymmetry where one half of the skull vault is smaller and its bone is visibly thicker and denser than the other side and the frontal sinus and paranasal air spaces on the smaller side are enlarged and over-inflated and the midline is pulled toward the smaller half",
+    "whatYouSee": "One side of the skull is smaller and the bone is thicker. The air spaces on that side are blown up and enlarged.",
+    "whyItMatters": "When one half of the brain grows less the skull shrinks and thickens to fill the empty space. This usually follows an early brain injury or a stroke on that side.",
+    "treatment": "There is no way to reverse the shrinkage. Care targets the symptoms and can include seizure medicines and physical therapy and learning support.",
+    "takeaway": "The skull quietly reshapes itself around the brain inside it.",
+    "igTitle": "THE UNEVEN SKULL",
+    "igOptions": [
+      "One half smaller and thicker",
+      "Skull fracture",
+      "Normal skull"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Ainhum",
+    "aliases": [
+      "Dactylolysis spontanea",
+      "Spontaneous toe amputation"
+    ],
+    "symptom": "a deep groove around the base of a small toe that has slowly tightened over years",
+    "hook": "a fibrous band is slowly strangling the toe like a thread pulled tighter every year",
+    "view": "dorsoplantar foot radiograph",
+    "keyFindings": "Dorsoplantar radiograph of the foot showing a deep soft tissue groove encircling the base of the fifth toe with the bone beyond the groove narrowed and tapering and progressive resorption of the small toe phalanx while the other toes and the midfoot look normal",
+    "whatYouSee": "A tight groove squeezes the base of the little toe and the bone past it is thinning away.",
+    "whyItMatters": "The band chokes off blood and slowly whittles the bone until the toe falls off on its own. It almost always strikes the fifth toe.",
+    "treatment": "Caught early a surgeon can release the band with a small skin operation called a Z-plasty. Once the toe is nearly severed removal is the usual fix.",
+    "takeaway": "A toe can be lost without a single cut.",
+    "igTitle": "THE LOST TOE",
+    "igOptions": [
+      "A band cutting off a toe",
+      "Old toe fracture",
+      "Normal toe"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Erlenmeyer flask deformity",
+    "aliases": [
+      "Metaphyseal undertubulation",
+      "Gaucher bone change"
+    ],
+    "symptom": "a knee X-ray showing the lower thigh bone flaring out widely at the end and shaped like a laboratory flask",
+    "hook": "the thigh bone forgot to slim down and grew a flask shape instead",
+    "view": "AP radiograph of both knees",
+    "keyFindings": "AP view of both knees where the lower end of each thigh bone widens and flares outward and fails to narrow into the normal shaft so the metaphysis looks like the rounded base of a laboratory flask with a thin outer cortex over the flared area and symmetric involvement of both knees",
+    "whatYouSee": "The ends of the long bones look widened and under-shaped like the base of a flask.",
+    "whyItMatters": "A rare bone modeling disorder stops the metaphysis from narrowing as the child grows. Failed remodeling can point to storage diseases like Gaucher or to bone dysplasias.",
+    "treatment": "There is no fix for the shape itself and care targets the underlying cause. Gaucher disease is treated with enzyme replacement and dysplasias are watched over time.",
+    "takeaway": "Bone has to be sculpted as it grows and sometimes the sculpting fails.",
+    "igTitle": "THE FLASK BONES",
+    "igOptions": [
+      "Flask-shaped flaring bone ends",
+      "Healing fracture",
+      "Normal bone"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Tumoral calcinosis",
+    "aliases": [
+      "Teutschlander disease",
+      "Lipocalcinogranulomatosis"
+    ],
+    "symptom": "firm painless lumps near a large joint and an X-ray that shows dense cloud-like masses of calcium",
+    "hook": "the film shows chalky clouds piling up beside the hip",
+    "view": "AP radiograph of the hip",
+    "keyFindings": "Large dense cloud-like masses of calcium sit in the soft tissue around the hip joint on a frontal AP radiograph with lobulated chalky deposits that have a fluffy cotton or chicken-wire look clustered outside the bone near the greater trochanter while the femur and pelvis stay intact",
+    "whatYouSee": "Big dense cloud-like deposits of calcium in the soft tissue around a large joint.",
+    "whyItMatters": "A rare disorder of mineral balance lets calcium pile up outside the bone and the lumps can grow large and limit movement.",
+    "treatment": "Doctors check calcium and phosphate levels and lower them with diet or medication and they may remove large masses that cause trouble.",
+    "takeaway": "The body can store chalk until it forms clouds.",
+    "igTitle": "THE CHALK CLOUDS",
+    "igOptions": [
+      "Large calcium masses around the joint",
+      "Bone tumor",
+      "Normal joint"
+    ],
+    "igCorrect": "A",
+    "used": true
   }
 ]

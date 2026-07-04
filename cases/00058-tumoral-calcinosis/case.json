@@ -1,0 +1,57 @@
+{
+  "folder": "00058-tumoral-calcinosis",
+  "number": 58,
+  "diagnosis": "Tumoral calcinosis",
+  "aliases": [
+    "Teutschlander disease",
+    "Lipocalcinogranulomatosis"
+  ],
+  "symptom": "firm painless lumps near a large joint and an X-ray that shows dense cloud-like masses of calcium",
+  "hook": "the film shows chalky clouds piling up beside the hip",
+  "whatYouSee": "Big dense cloud-like deposits of calcium in the soft tissue around a large joint.",
+  "whyItMatters": "A rare disorder of mineral balance lets calcium pile up outside the bone and the lumps can grow large and limit movement.",
+  "treatment": "Doctors check calcium and phosphate levels and lower them with diet or medication and they may remove large masses that cause trouble.",
+  "takeaway": "The body can store chalk until it forms clouds.",
+  "igOptions": [
+    "A. Large calcium masses around the joint",
+    "B. Bone tumor",
+    "C. Normal joint"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-25T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Tumoral calcinosis",
+    "aliases": [
+      "Teutschlander disease",
+      "Lipocalcinogranulomatosis"
+    ],
+    "symptom": "firm painless lumps near a large joint and an X-ray that shows dense cloud-like masses of calcium",
+    "hook": "the film shows chalky clouds piling up beside the hip",
+    "view": "AP radiograph of the hip",
+    "keyFindings": "Large dense cloud-like masses of calcium sit in the soft tissue around the hip joint on a frontal AP radiograph with lobulated chalky deposits that have a fluffy cotton or chicken-wire look clustered outside the bone near the greater trochanter while the femur and pelvis stay intact",
+    "whatYouSee": "Big dense cloud-like deposits of calcium in the soft tissue around a large joint.",
+    "whyItMatters": "A rare disorder of mineral balance lets calcium pile up outside the bone and the lumps can grow large and limit movement.",
+    "treatment": "Doctors check calcium and phosphate levels and lower them with diet or medication and they may remove large masses that cause trouble.",
+    "takeaway": "The body can store chalk until it forms clouds.",
+    "igTitle": "THE CHALK CLOUDS",
+    "igOptions": [
+      "Large calcium masses around the joint",
+      "Bone tumor",
+      "Normal joint"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does this look natural or man-made to you?",
+  "seedHint": "Focus on the hip and ask yourself if that chalky mass is inside the bone or outside it.",
+  "generated": {
+    "threadsCaption": "A patient came in with firm painless lumps near a large joint and an X-ray that shows dense cloud-like masses of calcium.\n\nThen the X-ray loaded 😭\n\nAnd the film shows chalky clouds piling up beside the hip.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Tumoral calcinosis\n\n👀 What you see:\nBig dense cloud-like deposits of calcium in the soft tissue around a large joint.\n\n🦴 Why it matters:\nA rare disorder of mineral balance lets calcium pile up outside the bone and the lumps can grow large and limit movement.\n\n💊 Treatment:\n\nDoctors check calcium and phosphate levels and lower them with diet or medication and they may remove large masses that cause trouble.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nspot.mednoteslab.com"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "folder": "00057-erlenmeyer-flask-deformity",
+  "number": 57,
+  "diagnosis": "Erlenmeyer flask deformity",
+  "aliases": [
+    "Metaphyseal undertubulation",
+    "Gaucher bone change"
+  ],
+  "symptom": "a knee X-ray showing the lower thigh bone flaring out widely at the end and shaped like a laboratory flask",
+  "hook": "the thigh bone forgot to slim down and grew a flask shape instead",
+  "whatYouSee": "The ends of the long bones look widened and under-shaped like the base of a flask.",
+  "whyItMatters": "A rare bone modeling disorder stops the metaphysis from narrowing as the child grows. Failed remodeling can point to storage diseases like Gaucher or to bone dysplasias.",
+  "treatment": "There is no fix for the shape itself and care targets the underlying cause. Gaucher disease is treated with enzyme replacement and dysplasias are watched over time.",
+  "takeaway": "Bone has to be sculpted as it grows and sometimes the sculpting fails.",
+  "igOptions": [
+    "A. Flask-shaped flaring bone ends",
+    "B. Healing fracture",
+    "C. Normal bone"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-24T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Erlenmeyer flask deformity",
+    "aliases": [
+      "Metaphyseal undertubulation",
+      "Gaucher bone change"
+    ],
+    "symptom": "a knee X-ray showing the lower thigh bone flaring out widely at the end and shaped like a laboratory flask",
+    "hook": "the thigh bone forgot to slim down and grew a flask shape instead",
+    "view": "AP radiograph of both knees",
+    "keyFindings": "AP view of both knees where the lower end of each thigh bone widens and flares outward and fails to narrow into the normal shaft so the metaphysis looks like the rounded base of a laboratory flask with a thin outer cortex over the flared area and symmetric involvement of both knees",
+    "whatYouSee": "The ends of the long bones look widened and under-shaped like the base of a flask.",
+    "whyItMatters": "A rare bone modeling disorder stops the metaphysis from narrowing as the child grows. Failed remodeling can point to storage diseases like Gaucher or to bone dysplasias.",
+    "treatment": "There is no fix for the shape itself and care targets the underlying cause. Gaucher disease is treated with enzyme replacement and dysplasias are watched over time.",
+    "takeaway": "Bone has to be sculpted as it grows and sometimes the sculpting fails.",
+    "igTitle": "THE FLASK BONES",
+    "igOptions": [
+      "Flask-shaped flaring bone ends",
+      "Healing fracture",
+      "Normal bone"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does that bone end look wider than it should?",
+  "seedHint": "Look at where the thigh bone meets the knee and ask yourself if it flares or stays straight.",
+  "generated": {
+    "threadsCaption": "A patient came in with a knee X-ray showing the lower thigh bone flaring out widely at the end and shaped like a laboratory flask.\n\nThen the X-ray loaded 😭\n\nAnd the thigh bone forgot to slim down and grew a flask shape instead.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Erlenmeyer flask deformity\n\n👀 What you see:\nThe ends of the long bones look widened and under-shaped like the base of a flask.\n\n💊 Treatment:\n\nThere is no fix for the shape itself and care targets the underlying cause. Gaucher disease is treated with enzyme replacement and dysplasias are watched over time.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free.\n\nhopital.mednoteslab.com"
+  }
+}

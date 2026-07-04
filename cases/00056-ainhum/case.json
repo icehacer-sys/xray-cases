@@ -1,0 +1,57 @@
+{
+  "folder": "00056-ainhum",
+  "number": 56,
+  "diagnosis": "Ainhum",
+  "aliases": [
+    "Dactylolysis spontanea",
+    "Spontaneous toe amputation"
+  ],
+  "symptom": "a deep groove around the base of a small toe that has slowly tightened over years",
+  "hook": "a fibrous band is slowly strangling the toe like a thread pulled tighter every year",
+  "whatYouSee": "A tight groove squeezes the base of the little toe and the bone past it is thinning away.",
+  "whyItMatters": "The band chokes off blood and slowly whittles the bone until the toe falls off on its own. It almost always strikes the fifth toe.",
+  "treatment": "Caught early a surgeon can release the band with a small skin operation called a Z-plasty. Once the toe is nearly severed removal is the usual fix.",
+  "takeaway": "A toe can be lost without a single cut.",
+  "igOptions": [
+    "A. A band cutting off a toe",
+    "B. Old toe fracture",
+    "C. Normal toe"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-23T18:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Ainhum",
+    "aliases": [
+      "Dactylolysis spontanea",
+      "Spontaneous toe amputation"
+    ],
+    "symptom": "a deep groove around the base of a small toe that has slowly tightened over years",
+    "hook": "a fibrous band is slowly strangling the toe like a thread pulled tighter every year",
+    "view": "dorsoplantar foot radiograph",
+    "keyFindings": "Dorsoplantar radiograph of the foot showing a deep soft tissue groove encircling the base of the fifth toe with the bone beyond the groove narrowed and tapering and progressive resorption of the small toe phalanx while the other toes and the midfoot look normal",
+    "whatYouSee": "A tight groove squeezes the base of the little toe and the bone past it is thinning away.",
+    "whyItMatters": "The band chokes off blood and slowly whittles the bone until the toe falls off on its own. It almost always strikes the fifth toe.",
+    "treatment": "Caught early a surgeon can release the band with a small skin operation called a Z-plasty. Once the toe is nearly severed removal is the usual fix.",
+    "takeaway": "A toe can be lost without a single cut.",
+    "igTitle": "THE LOST TOE",
+    "igOptions": [
+      "A band cutting off a toe",
+      "Old toe fracture",
+      "Normal toe"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Would you notice this slowly tightening on a toe?",
+  "seedHint": "Look at the base of that small toe and ask yourself if bone or soft tissue is winning",
+  "generated": {
+    "threadsCaption": "A patient came in with a deep groove around the base of a small toe that has slowly tightened over years.\n\nThen the X-ray loaded 😭\n\nAnd a fibrous band is slowly strangling the toe like a thread pulled tighter every year.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ainhum\n\n👀 What you see:\nA tight groove squeezes the base of the little toe and the bone past it is thinning away.\n\n🦴 Why it matters:\nThe band chokes off blood and slowly whittles the bone until the toe falls off on its own. It almost always strikes the fifth toe.\n\n💊 Treatment:\n\nCaught early a surgeon can release the band with a small skin operation called a Z-plasty. Once the toe is nearly severed removal is the usual fix.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\nVolume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.\n\nOver a hundred strange real X-rays with all the answers.\n\nmednoteslab.gumroad.com/l/collection"
+  }
+}
