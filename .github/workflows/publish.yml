@@ -65,7 +65,7 @@ jobs:
       BOT_XRAY_VERIFY: "on" # Claude vision checks each generated X-ray for AI anatomy defects; failures are regenerated or held for review
       BOT_CENSOR_GENITALS: "on" # blur external genitalia on the X-ray + slides so Threads/IG don't flag the post as sensitive
       BOT_TOPIC_TAG: "Med Threads" # topic tag added to every challenge post
-      BOT_POST_HOUR_UTC: "18" # generated cases schedule at 18:00 UTC = 9 PM Cairo (summer, UTC+3). Changed from 10 PM (owner, 2026-07-03). NOTE: revisit at late-Oct DST — 18 UTC becomes 8 PM Cairo.
+      BOT_POST_HOUR_UTC: "20" # generated cases schedule at 20:00 UTC = 11 PM Cairo (summer, UTC+3). Changed from 9 PM (owner, 2026-07-04 — reach recovery, moved posting later). NOTE: revisit at late-Oct DST — 20 UTC becomes 10 PM Cairo.
       BOT_ANSWER_DELAY_MIN: "20" # answer posts 20 min after the challenge (reverted from 45 on 2026-07-04)
       BOT_CTA_DELAY_MIN: "75" # CTA 55 min after the answer (75 after the challenge)
       BOT_SEED_COMMENT: "off" # 60-sec author seed comment DISABLED (owner, 2026-07-04 — did not help; classic style only)
