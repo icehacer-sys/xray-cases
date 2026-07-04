@@ -1,0 +1,57 @@
+{
+  "folder": "00050-ameloblastoma",
+  "number": 50,
+  "diagnosis": "Ameloblastoma",
+  "aliases": [
+    "soap bubble jaw tumour",
+    "ameloblastoma of the mandible"
+  ],
+  "symptom": "a swollen gum they blamed on a bad wisdom tooth",
+  "hook": "the jawbone was blown out from inside into a cluster of soap bubbles",
+  "whatYouSee": "A jawbone ballooned from inside into soap bubbles.",
+  "whyItMatters": "It is a benign but locally aggressive tumour that keeps growing and destroying the jaw if left.",
+  "treatment": "It is removed with surgery and the jaw is often reconstructed.",
+  "takeaway": "A multilocular soap bubble lesion of the jaw is an ameloblastoma.",
+  "igOptions": [
+    "A. Abscess",
+    "B. Ameloblastoma",
+    "C. Cyst"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-23T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Ameloblastoma",
+    "aliases": [
+      "soap bubble jaw tumour",
+      "ameloblastoma of the mandible"
+    ],
+    "symptom": "a swollen gum they blamed on a bad wisdom tooth",
+    "hook": "the jawbone was blown out from inside into a cluster of soap bubbles",
+    "view": "panoramic radiograph of the mandible (one view, no pelvis or groin)",
+    "keyFindings": "a multilocular expansile lucent lesion blowing out the mandible into a soap-bubble pattern of rounded loculations",
+    "whatYouSee": "A jawbone ballooned from inside into soap bubbles.",
+    "whyItMatters": "It is a benign but locally aggressive tumour that keeps growing and destroying the jaw if left.",
+    "treatment": "It is removed with surgery and the jaw is often reconstructed.",
+    "takeaway": "A multilocular soap bubble lesion of the jaw is an ameloblastoma.",
+    "igTitle": "THE SOAP BUBBLE JAW",
+    "igOptions": [
+      "Abscess",
+      "Ameloblastoma",
+      "Cyst"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does this look like a bone or a bag of bubbles?",
+  "seedHint": "Start at the back of the jaw and count the chambers. One pocket or many?",
+  "generated": {
+    "threadsCaption": "A patient came in with a swollen gum they blamed on a bad wisdom tooth.\n\nThen the X-ray loaded 😭\n\nAnd the jawbone was blown out from inside into a cluster of soap bubbles.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ameloblastoma\n\n👀 What you see:\nA jawbone ballooned from inside into soap bubbles.\n\n🦴 Why it matters:\nIt is a benign but locally aggressive tumour that keeps growing and destroying the jaw if left.\n\n💊 Treatment:\n\nIt is removed with surgery and the jaw is often reconstructed.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\nVolume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.\n\nOver a hundred strange real X-rays with all the answers.\n\nmednoteslab.gumroad.com/l/collection"
+  }
+}
