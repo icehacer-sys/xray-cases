@@ -30,7 +30,10 @@
     "igCaption": "",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nspot.mednoteslab.com"
   },
-  "stages": {},
+  "stages": {
+    "threadsPostId": "17876156505617833",
+    "challengePostedAt": "2026-07-05T20:03:35.114Z"
+  },
   "difficulty": 4,
   "laypersonQuestion": "Does that white ring inside muscle look wrong to you?",
   "seedHint": "Look at the thigh soft tissue and ask yourself if bone belongs there"
