@@ -181,12 +181,16 @@
       "challengePostedAt": "2026-07-05T20:03:35.114Z",
       "answerCommentId": "18169004725439678",
       "answerPostedAt": "2026-07-05T20:23:51.133Z"
+    },
+    "00038-giant-cell-tumor-of-bone": {
+      "threadsPostId": "17865730374636613",
+      "challengePostedAt": "2026-07-06T20:00:58.649Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-05",
+      "date": "2026-07-06",
       "count": 0
     }
   }
