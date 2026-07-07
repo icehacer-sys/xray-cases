@@ -359,7 +359,12 @@ async function runPublish(cli: Cli): Promise<void> {
           log(`  skip CTA for ${c.folder}: no answer comment to thread under`);
           continue;
         }
-        await reply(target, ctaText);
+        // Derive the full https:// URL from the bare domain on the CTA's last line so Threads
+        // renders a link-preview card (link_attachment). The URL also stays in the text as a
+        // fallback auto-preview if link_attachment is ignored on a reply.
+        const domain = ctaText.trim().split("\n").map((l) => l.trim()).filter(Boolean).pop() ?? "";
+        const linkAttachment = /^[a-z0-9.-]+\.[a-z]{2,}(\/\S*)?$/i.test(domain) ? `https://${domain}` : undefined;
+        await reply(target, ctaText, undefined, linkAttachment);
         state.setStages(c.folder, { ctaPostedAt: new Date().toISOString() });
         c.stages = state.getStages(c.folder);
         saveCase(c);

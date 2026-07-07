@@ -264,61 +264,113 @@ async function draftIgHook(c: Case): Promise<string> {
 // CTA picker — verbatim text, rotates by case number when unset
 // ---------------------------------------------------------------------------
 
+// The LAST line of each CTA is the bare domain — the CTA stage derives the full https:// URL from
+// it for the Threads link_attachment (preview card). The arrow line + link sit on adjacent lines
+// (single \n) so the 👇🏼 points straight at the link; everything else is blank-line separated.
 const CTA_TEXT: Record<CtaKey, string> = {
   // Free lead magnet (email capture at Gumroad $0+ checkout) — the top of the funnel. Weighted
   // heavily in the rotation below: a free pack pulls far more downloads (= emails) than a paid PDF,
   // and the email list is what durably sells the paid collection.
-  hopital: [
-    `If these weird X-rays keep pulling you in.`,
-    `I put 5 of the strangest into a free pack.`,
-    `Guess hopital then flip for what each one really is.`,
-    `Grab it free.`,
-    `hopital.mednoteslab.com`,
-  ].join("\n\n"),
+  hopital: `If these weird X-rays keep pulling you in.
 
-  vol2: [
-    `If these weird X-rays made you learn something or laugh or question reality for a second.`,
-    `I put 20 brand-new cases into a PDF.`,
-    `None repeated from Volume 1.`,
-    `Support the page if you'd like and I'd appreciate it 🙏`,
-    `xray2.mednoteslab.com`,
-  ].join("\n\n"),
+I put 5 of the strangest into a free pack.
 
-  rare: [
-    `Some of these X-rays are so rare most doctors will never see them in person.`,
-    `I collected 10 of the rarest findings in radiology into one PDF.`,
-    `Look then guess then flip for a simple breakdown.`,
-    `If the weird ones hooked you then these are the next level 🙏`,
-    `rare.mednoteslab.com`,
-  ].join("\n\n"),
+Guess hopital then flip for what each one really is.
 
-  vol1: [
-    `If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭`,
-    `I put 20 of the most bizarre cases into a digital PDF.`,
-    `And if you'd like to support the page I'd genuinely appreciate it 🙏`,
-    `xray.mednoteslab.com`,
-  ].join("\n\n"),
+Grab it free 👇🏼
+free.mednoteslab.com`,
 
-  spotit: [
-    `If these weird X-rays keep pulling you in.`,
-    `I put 50 of the strangest ones ever into a book.`,
-    `Take your guess then flip for the answer and the true story behind each one.`,
-    `spot.mednoteslab.com`,
-  ].join("\n\n"),
+  collection: `If you cannot get enough of these weird X-rays.
 
-  collection: [
-    `If you cannot get enough of these weird X-rays.`,
-    `I bundled every collection into one library.`,
-    `Volume 1 and Volume 2 and the Rarest Findings and the new Could You Spot It.`,
-    `Over a hundred strange real X-rays with all the answers.`,
-    `mednoteslab.gumroad.com/l/collection`,
-  ].join("\n\n"),
+I bundled every collection into one library.
+
+✅ Volume 1
+
+✅ Volume 2
+
+✅ Volume 3
+
+✅ The Rarest Findings
+
+✅ Hopital Field Edition
+
+✅ Could You Spot It?
+
+Over 140 strange real X-rays with all the answers.
+mednoteslab.gumroad.com/l/collection`,
+
+  spotit: `If these weird X-rays keep pulling you in.
+
+I put 50 of the strangest ones ever into a book.
+
+Take your guess then flip for the answer and the true story behind each one.
+
+Grab it here 👇🏼
+spot.mednoteslab.com`,
+
+  rare: `Some of these X-rays are so rare most doctors will never see them in person.
+
+I collected 10 of the rarest findings in radiology into one PDF.
+
+Look then guess then flip for a simple breakdown.
+
+If the weird ones hooked you then these are the next level 👇🏼
+rare.mednoteslab.com`,
+
+  vol1: `If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭
+
+I put 20 of the most bizarre cases into one PDF.
+
+Look then guess then flip for a simple breakdown of each.
+
+Grab it here 👇🏼
+xray.mednoteslab.com`,
+
+  vol2: `If the weird ones keep pulling you in.
+
+I put 20 brand-new cases into a second PDF.
+
+None repeated from Volume 1.
+
+Grab it here 👇🏼
+xray2.mednoteslab.com`,
+
+  vol3: `If you have been through Volume 1 and 2 and still want more.
+
+I put 20 fresh cases into Volume 3.
+
+All new and none repeated from the first two.
+
+Grab it here 👇🏼
+xray3.mednoteslab.com`,
+
+  field: `If the hopital meme lives in your head rent free.
+
+I put the wildest cases into the Hopital Field Edition.
+
+Guess hopital then flip for the real diagnosis every time.
+
+Grab it here 👇🏼
+hopital.mednoteslab.com`,
+
+  anxiety: `If you have ever been told it is just anxiety.
+
+I turned medical gaslighting into a card game.
+
+Real conditions waved off as nothing until the card flips to the diagnosis.
+
+Grab it here 👇🏼
+anxiety.mednoteslab.com`,
 };
 
-// Free pack every other slot (top-of-funnel email capture), the rest rotate the paid products
-// (the complete collection first, then the individual sets). ctaReply is off so this only drafts
-// a SUGGESTED cta into case.json — the owner posts it manually and can still swap.
-const CTA_ROTATION: CtaKey[] = ["hopital", "collection", "hopital", "spotit", "hopital", "rare"];
+// 12-slot rotation covering EVERY product. Free pack (hopital) is still the most frequent slot
+// (top-of-funnel email capture) but never back-to-back; the collection appears twice; each paid
+// product gets one slot. Assigned by case number in pickCta below. Owner can pin a specific CTA
+// per case via c.cta, or reorder this list.
+const CTA_ROTATION: CtaKey[] = [
+  "hopital", "collection", "spotit", "rare", "hopital", "vol1",
+  "vol2", "collection", "hopital", "vol3", "field", "anxiety",
+];
 
 export function pickCta(c: Case): { key: CtaKey; text: string } {
   if (c.cta) {

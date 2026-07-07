@@ -103,9 +103,16 @@ export interface SpoilerEntity {
   length: number;
 }
 
-/** Reply (text only) to an existing post/comment. Pass spoilers to blur ranges. */
-export async function reply(replyToId: string, text: string, spoilers?: SpoilerEntity[]): Promise<string> {
+/**
+ * Reply (text only) to an existing post/comment. Pass spoilers to blur ranges.
+ * Pass linkAttachment (a full https:// URL) to render a link-preview CARD (used for the CTA so the
+ * product's Gumroad cover shows). NOTE: link_attachment is documented for top-level TEXT posts; on
+ * replies it is best-effort (the API silently ignores unsupported fields), so the CTA text ALSO
+ * carries the URL as a fallback auto-preview. Any media on a reply container suppresses the card.
+ */
+export async function reply(replyToId: string, text: string, spoilers?: SpoilerEntity[], linkAttachment?: string): Promise<string> {
   const params: Record<string, string> = { media_type: "TEXT", text, reply_to_id: replyToId };
+  if (linkAttachment) params.link_attachment = linkAttachment;
   if (spoilers && spoilers.length > 0) params.text_entities = JSON.stringify(spoilers);
   const creationId = await createContainer(params);
   return publish(creationId);
