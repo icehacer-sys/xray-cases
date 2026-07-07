@@ -29,7 +29,7 @@ on:
       mode:
         description: "Run mode: live | dry | slidesample | rebuild (regen kept slides + top up queue)"
         type: choice
-        options: [live, dry, slidesample, rebuild, ctatest]
+        options: [live, dry, slidesample, rebuild]
         default: live
 
 # Never let two runs overlap (they'd both read the same state and double-post).
@@ -70,7 +70,7 @@ jobs:
       BOT_CTA_DELAY_MIN: "75" # CTA 55 min after the answer (75 after the challenge)
       BOT_SEED_COMMENT: "off" # 60-sec author seed comment DISABLED (owner, 2026-07-04 — did not help; classic style only)
       BOT_CASE_NUMBER_OFFSET: "39" # unused now that the caption reverted to the classic format (no "Case #N"); kept for reference only
-      BOT_CTA_REPLY: "off" # owner posts the CTA manually so the Gumroad cover preview shows; bot does not auto-reply the CTA
+      BOT_CTA_REPLY: "on" # auto-post the CTA under the pinned answer WITH a working link-preview card (verified 2026-07-07: link_attachment renders on a reply). The CTA stage passes link_attachment so the Gumroad cover shows.
       BOT_MODEL: "claude-sonnet-4-6"
     steps:
       - uses: actions/checkout@v4
@@ -112,12 +112,6 @@ jobs:
           }
           if [ "$MODE" = "dry" ]; then
             npm run dry
-            exit 0
-          fi
-          if [ "$MODE" = "ctatest" ]; then
-            # One-off: post a single CTA reply WITH link_attachment, check whether Threads accepted
-            # it on a reply (link_attachment_url echoed back), then delete it. No state, no commit.
-            npx tsx src/_ctatest.ts
             exit 0
           fi
           if [ "$MODE" = "rebuild" ]; then

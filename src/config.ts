@@ -73,9 +73,10 @@ export const config = {
   // effective while BOT_FACEBOOK=on. Set BOT_FB_ANSWER=off to disable.
   fbAnswer: (process.env.BOT_FB_ANSWER ?? "on").toLowerCase() !== "off",
 
-  // Auto-post the CTA as a reply under the pinned answer. Off by default: the owner posts
-  // the CTA manually so the Gumroad link renders its cover-image preview (a bot sub-reply
-  // does not show the preview). Stage 3 is skipped entirely when this is off.
+  // Auto-post the CTA as a reply under the pinned answer. The CTA stage passes link_attachment
+  // (derived from the CTA's last-line domain) so the Gumroad cover PREVIEW CARD renders — verified
+  // 2026-07-07 that link_attachment is honored on a reply. Turned on via BOT_CTA_REPLY=on in
+  // publish.yml (was off while the owner posted manually for the preview). Stage 3 skipped when off.
   ctaReply: (process.env.BOT_CTA_REPLY ?? "off").toLowerCase() === "on",
 
   // Topic tag added to the Threads challenge post (one per post; the account always
