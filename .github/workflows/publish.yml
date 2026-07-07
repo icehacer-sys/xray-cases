@@ -29,7 +29,7 @@ on:
       mode:
         description: "Run mode: live | dry | slidesample | rebuild (regen kept slides + top up queue)"
         type: choice
-        options: [live, dry, slidesample, rebuild]
+        options: [live, dry, slidesample, rebuild, ctatest]
         default: live
 
 # Never let two runs overlap (they'd both read the same state and double-post).
@@ -112,6 +112,12 @@ jobs:
           }
           if [ "$MODE" = "dry" ]; then
             npm run dry
+            exit 0
+          fi
+          if [ "$MODE" = "ctatest" ]; then
+            # One-off: post a single CTA reply WITH link_attachment, check whether Threads accepted
+            # it on a reply (link_attachment_url echoed back), then delete it. No state, no commit.
+            npx tsx src/_ctatest.ts
             exit 0
           fi
           if [ "$MODE" = "rebuild" ]; then
