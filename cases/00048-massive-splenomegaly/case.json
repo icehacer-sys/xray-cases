@@ -50,10 +50,12 @@
   "generated": {
     "threadsCaption": "A patient came in with a belt that kept feeling tighter that got blamed on a creeping beer gut.\n\nThen the X-ray loaded 😭\n\nAnd the spleen had quietly grown into a solid organ the size of a football crushing everything around it.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Massive splenomegaly\n\n👀 What you see:\nOne smooth white blob swallows almost the whole left side of the belly and pushes every gas-filled gut loop into a thin crescent in the right corner.\n\n🦴 Why it matters:\nA normal spleen is fist-sized and tucked under the ribs where a flat film never shows it. Blood and marrow diseases can drive it to swell ten to twenty times normal and\n\n💊 Treatment:\nDoctors hunt the cause with blood counts and a marrow biopsy then treat the underlying disease.",
-    "igCaption": ""
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "needsReview": false,
   "difficulty": 3,
   "laypersonQuestion": "What organ is taking up most of this belly?",
-  "seedHint": "Look left of center and ask yourself if that shadow belongs to one organ or two."
+  "seedHint": "Look left of center and ask yourself if that shadow belongs to one organ or two.",
+  "stages": {}
 }
