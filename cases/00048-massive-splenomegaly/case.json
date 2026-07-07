@@ -57,5 +57,8 @@
   "difficulty": 3,
   "laypersonQuestion": "What organ is taking up most of this belly?",
   "seedHint": "Look left of center and ask yourself if that shadow belongs to one organ or two.",
-  "stages": {}
+  "stages": {
+    "threadsPostId": "18056599523769644",
+    "challengePostedAt": "2026-07-07T19:01:01.125Z"
+  }
 }
