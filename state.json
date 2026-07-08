@@ -215,12 +215,16 @@
       "answerCommentId": "18086668190134446",
       "answerPostedAt": "2026-07-07T19:21:58.773Z",
       "ctaPostedAt": "2026-07-07T20:18:45.373Z"
+    },
+    "00047-klippel-trenaunay-syndrome": {
+      "threadsPostId": "17911207017244561",
+      "challengePostedAt": "2026-07-08T19:03:38.780Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "count": 0
     }
   }
