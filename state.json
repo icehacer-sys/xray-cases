@@ -222,12 +222,16 @@
       "answerCommentId": "18100373117150329",
       "answerPostedAt": "2026-07-08T19:24:33.831Z",
       "ctaPostedAt": "2026-07-08T20:21:50.905Z"
+    },
+    "00039-aneurysmal-bone-cyst": {
+      "threadsPostId": "17899245027332175",
+      "challengePostedAt": "2026-07-09T19:02:59.230Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "count": 0
     }
   }
