@@ -361,15 +361,26 @@ Real conditions waved off as nothing until the card flips to the diagnosis.
 
 Grab it here 👇🏼
 anxiety.mednoteslab.com`,
+
+  viral10: `These are the 10 cases that broke the internet.
+
+Combined they crossed 20 million views right here on Threads.
+
+I bundled the 10 highest viewed guesses into one pack.
+
+Look then guess then flip for the answer and the story behind it.
+
+Grab it here 👇🏼
+viral.mednoteslab.com`,
 };
 
-// 12-slot rotation covering EVERY product. Free pack (hopital) is still the most frequent slot
+// 13-slot rotation covering EVERY product. Free pack (hopital) is still the most frequent slot
 // (top-of-funnel email capture) but never back-to-back; the collection appears twice; each paid
 // product gets one slot. Assigned by case number in pickCta below. Owner can pin a specific CTA
 // per case via c.cta, or reorder this list.
 const CTA_ROTATION: CtaKey[] = [
   "hopital", "collection", "spotit", "rare", "hopital", "vol1",
-  "vol2", "collection", "hopital", "vol3", "field", "anxiety",
+  "vol2", "collection", "hopital", "vol3", "field", "anxiety", "viral10",
 ];
 
 export function pickCta(c: Case): { key: CtaKey; text: string } {
