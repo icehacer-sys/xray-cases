@@ -31,7 +31,10 @@
     "igCaption": "",
     "ctaText": "These are the 10 cases that broke the internet.\n\nCombined they crossed 20 million views right here on Threads.\n\nI bundled the 10 highest viewed guesses into one pack.\n\nLook then guess then flip for the answer and the story behind it.\n\nGrab it here 👇🏼\nviral.mednoteslab.com"
   },
-  "stages": {},
+  "stages": {
+    "threadsPostId": "18095664407614731",
+    "challengePostedAt": "2026-07-11T19:03:28.165Z"
+  },
   "difficulty": 4,
   "laypersonQuestion": "Does this spine look striped to you?",
   "seedHint": "Focus on the top and bottom edges of each bone and ask yourself if that pattern is natural or something else entirely",
