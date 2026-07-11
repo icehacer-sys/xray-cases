@@ -28,11 +28,11 @@
   "generated": {
     "threadsCaption": "A patient came in with new back pain and stiffness after years on dialysis.\n\nThen the X-ray loaded 😭\n\nAnd every bone in the spine wore a dense white band at the top and bottom like a striped jersey.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Rugger jersey spine (renal osteodystrophy)\n\n👀 What you see:\nEach vertebra shows a dense white band at the top and bottom with a paler stripe in the middle like a striped jersey.\n\n🦴 Why it matters:\nFailing kidneys throw calcium and hormone balance off so badly that the body lays down extra bone in alternating bands along the spine.\n\n💊 Treatment:\nControl phosphate and calcium with binders and vitamin D and treat the overactive parathyroid behind it.",
-    "igCaption": "",
-    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+    "igCaption": ""
   },
   "stages": {},
   "difficulty": 4,
   "laypersonQuestion": "Does this spine look striped to you?",
-  "seedHint": "Focus on the top and bottom edges of each bone and ask yourself if that pattern is natural or something else entirely"
+  "seedHint": "Focus on the top and bottom edges of each bone and ask yourself if that pattern is natural or something else entirely",
+  "cta": "viral10"
 }
