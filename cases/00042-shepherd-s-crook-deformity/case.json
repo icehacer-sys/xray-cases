@@ -31,7 +31,10 @@
     "igCaption": "",
     "ctaText": "These are the 10 cases that broke the internet.\n\nCombined they crossed 20 million views right here on Threads.\n\nI bundled the 10 highest viewed guesses into one pack.\n\nLook then guess then flip for the answer and the story behind it.\n\nGrab it here 👇🏼\nviral.mednoteslab.com"
   },
-  "stages": {},
+  "stages": {
+    "threadsPostId": "18410022745157620",
+    "challengePostedAt": "2026-07-13T19:02:49.961Z"
+  },
   "difficulty": 4,
   "laypersonQuestion": "Does this bone look bent the wrong way?",
   "seedHint": "Look at the very top of the thighbone and ask yourself if it curves left or right.",
