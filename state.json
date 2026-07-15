@@ -264,12 +264,16 @@
       "answerCommentId": "18113328223937418",
       "answerPostedAt": "2026-07-14T19:22:53.038Z",
       "ctaPostedAt": "2026-07-14T20:19:41.948Z"
+    },
+    "00059-mediastinal-teratoma": {
+      "threadsPostId": "17904483174461993",
+      "challengePostedAt": "2026-07-15T10:08:26.830Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-14",
+      "date": "2026-07-15",
       "count": 0
     }
   }
