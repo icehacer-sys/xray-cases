@@ -49,6 +49,10 @@ export interface Case {
    *  you swap in your own X-ray (the manual workflow). */
   condition?: Condition;
 
+  /** Owner override to post a diagnosis already in used-diagnoses.json — a deliberate one-off
+   *  (e.g. cross-promoting a new product with a case covered once before). Never set by the
+   *  auto-generator; skips the no-repeat gate for THIS case only. */
+  forceRepeat?: boolean;
   /** Set by the generator's X-ray anatomy-QA gate when the image fails verification after
    *  all retries. The publisher HARD-BLOCKS these (no auto-post, even with BOT_AUTO_APPROVE)
    *  until a human regenerates the X-ray and clears the flag. */
@@ -79,7 +83,7 @@ export interface Case {
   };
 }
 
-export type CtaKey = "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vol1" | "vol3" | "field" | "anxiety" | "viral10";
+export type CtaKey = "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vol1" | "vol3" | "field" | "anxiety" | "viral10" | "ctvol1";
 
 /** A resolved public image URL for a case file (built from config.githubRawBase). */
 export type ImageUrl = string;

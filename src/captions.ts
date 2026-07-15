@@ -372,6 +372,15 @@ Look then guess then flip for the answer and the story behind it.
 
 Grab it here 👇🏼
 viral.mednoteslab.com`,
+
+  ctvol1: `If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.
+
+I put 10 real CT cases into Weird CT Case Files: Volume 1.
+
+Look then guess then flip for the breakdown.
+
+Grab it here 👇🏼
+ctvol1.mednoteslab.com`,
 };
 
 // 13-slot rotation covering EVERY product. Free pack (hopital) is still the most frequent slot
@@ -380,7 +389,7 @@ viral.mednoteslab.com`,
 // per case via c.cta, or reorder this list.
 const CTA_ROTATION: CtaKey[] = [
   "hopital", "collection", "spotit", "rare", "hopital", "vol1",
-  "vol2", "collection", "hopital", "vol3", "field", "anxiety", "viral10",
+  "vol2", "collection", "hopital", "vol3", "field", "anxiety", "viral10", "ctvol1",
 ];
 
 export function pickCta(c: Case): { key: CtaKey; text: string } {

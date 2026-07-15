@@ -413,7 +413,9 @@ function challengeBlockReason(c: Case): string | null {
   if (c.source === "generated" && !(c.approved === true || config.autoApprove)) {
     return `awaiting approval: ${c.folder}`;
   }
-  if (isUsedDiagnosis(loadUsedDiagnoses(), c.diagnosis, c.aliases ?? [])) {
+  // forceRepeat: an explicit owner override for a deliberate one-off (e.g. a diagnosis already
+  // covered once, now paired with a brand-new product promo) — never set by the auto-generator.
+  if (!c.forceRepeat && isUsedDiagnosis(loadUsedDiagnoses(), c.diagnosis, c.aliases ?? [])) {
     return `duplicate diagnosis, skipping ${c.folder} ("${c.diagnosis}" already used)`;
   }
   return null;
