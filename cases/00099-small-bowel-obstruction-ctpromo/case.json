@@ -2,14 +2,22 @@
   "folder": "00099-small-bowel-obstruction-ctpromo",
   "number": 99,
   "diagnosis": "Small bowel obstruction",
-  "aliases": ["SBO", "bowel obstruction", "intestinal obstruction"],
+  "aliases": [
+    "SBO",
+    "bowel obstruction",
+    "intestinal obstruction"
+  ],
   "symptom": "cramping belly pain and vomiting that would not stop for days",
   "hook": "the bowel was stretched into huge loops that just stopped cold at one exact point",
   "whatYouSee": "Loops of small bowel stretch far wider than normal with visible fluid levels then the bowel suddenly returns to normal size at one point.",
   "whyItMatters": "Something is physically blocking the intestine often scar tissue from an old surgery and everything upstream of that point is backing up.",
   "treatment": "Many cases settle with a tube to decompress the bowel and fluids while a persistent block needs surgery to clear it.",
   "takeaway": "Dilated loops that suddenly narrow at one spot mark exactly where the blockage sits.",
-  "igOptions": ["A. Small bowel obstruction", "B. Normal bowel gas", "C. Food poisoning"],
+  "igOptions": [
+    "A. Small bowel obstruction",
+    "B. Normal bowel gas",
+    "C. Food poisoning"
+  ],
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-07-15T19:00:00.000Z",
@@ -26,5 +34,8 @@
     "igCaption": "",
     "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
   },
-  "stages": {}
+  "stages": {
+    "threadsPostId": "18125487097670394",
+    "challengePostedAt": "2026-07-15T19:01:09.062Z"
+  }
 }
