@@ -139,7 +139,21 @@ async function runPublish(cli: Cli): Promise<void> {
     const draftAhead =
       !dueNow &&
       (cli.mode === "dry-run" || postAt.getTime() - now.getTime() <= DRAFT_AHEAD_MS);
-    const stages = state.getStages(c.folder);
+    let stages = state.getStages(c.folder);
+
+    // Reconcile ORPHANED state: if the case's own case.json records a posted challenge but central
+    // state.json has no entry for this folder, trust the case file and backfill central state
+    // instead of treating the case as brand-new. This happens when a case FOLDER IS RENAMED (its
+    // state key is keyed by folder name, so the rename orphans the old entry) — which caused the
+    // 00013->00059 mediastinal-teratoma REPOST on 2026-07-15 after a numbering-fix rename. Guard:
+    // never in dry-run (keep it a pure preview), and only backfill, never re-post.
+    if (cli.mode !== "dry-run" && c.stages?.challengePostedAt && !stages.challengePostedAt) {
+      log(
+        `  reconciled orphaned state for ${c.folder}: case.json shows it already posted ` +
+          `(${c.stages.challengePostedAt}) but central state was empty — backfilling, NOT reposting`,
+      );
+      stages = state.setStages(c.folder, c.stages);
+    }
 
     // --- Draft-ahead: case is upcoming (within the draft window) but not yet due --------
     if (draftAhead && !stages.challengePostedAt) {
