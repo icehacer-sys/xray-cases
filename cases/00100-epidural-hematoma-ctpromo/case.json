@@ -1,0 +1,38 @@
+{
+  "folder": "00100-epidural-hematoma-ctpromo",
+  "number": 100,
+  "diagnosis": "Epidural hematoma",
+  "aliases": [
+    "extradural hematoma",
+    "epidural haematoma",
+    "extradural haemorrhage"
+  ],
+  "symptom": "a knock to the head in a match then an hour of seeming totally fine before going downhill fast",
+  "hook": "there was a lens shaped pocket of blood pressing the brain away from the skull",
+  "whatYouSee": "A lens shaped collection of blood bulges inward with a sharply defined convex edge that does not cross the seams of the skull.",
+  "whyItMatters": "A skull fracture has torn an artery running just under the bone and the bleeding is fast because it comes from an artery not a vein.",
+  "treatment": "This needs emergency surgical drainage before the rapidly expanding blood crushes the brain.",
+  "takeaway": "A lens shaped bleed after a clear headed interval is the classic epidural pattern and it can turn fatal within hours.",
+  "igOptions": [
+    "A. Epidural hematoma",
+    "B. Subdural hematoma",
+    "C. Concussion with no bleeding"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-16T19:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "forceRepeat": true,
+  "difficulty": 3,
+  "laypersonQuestion": "Does that shape look like a lens to you?",
+  "seedHint": "Look at the shape of the pocket and whether it bulges in or hugs the curve.",
+  "cta": "ctvol1",
+  "generated": {
+    "threadsCaption": "A patient came in after a knock to the head in a match then an hour of seeming totally fine before going downhill fast.\n\nThen the CT scan loaded 😭\n\nAnd there was a lens shaped pocket of blood pressing the brain away from the skull.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Epidural hematoma\n\n👀 What you see:\nA lens shaped collection of blood bulges inward with a sharply defined convex edge that does not cross the seams of the skull.\n\n🦴 Why it matters:\nA skull fracture has torn an artery running just under the bone and the bleeding is fast because it comes from an artery not a vein.\n\n💊 Treatment:\nThis needs emergency surgical drainage before the rapidly expanding blood crushes the brain.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "stages": {}
+}
