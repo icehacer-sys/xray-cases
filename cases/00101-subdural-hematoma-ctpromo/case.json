@@ -1,0 +1,38 @@
+{
+  "folder": "00101-subdural-hematoma-ctpromo",
+  "number": 101,
+  "diagnosis": "Acute subdural hematoma",
+  "aliases": [
+    "subdural haematoma",
+    "subdural bleed",
+    "SDH"
+  ],
+  "symptom": "a fall that looked like nothing then hours of getting slowly more confused",
+  "hook": "there was a crescent of blood hugging the curve of the skull and shoving the brain sideways",
+  "whatYouSee": "A crescent shaped collection of blood hugs the curve of the skull and pushes the brain away from it.",
+  "whyItMatters": "A bridging vein between the brain and the skull has torn and the growing blood collection is now squeezing the brain sideways.",
+  "treatment": "Small ones are watched closely with repeat scans while larger ones need urgent surgical drainage to relieve the pressure.",
+  "takeaway": "A crescent moon shape hugging the skull is a subdural bleed and the story often starts with an unremarkable looking fall.",
+  "igOptions": [
+    "A. Epidural hematoma",
+    "B. Subdural hematoma",
+    "C. Normal aging brain"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-17T19:00:00.000Z",
+  "approved": true,
+  "source": "manual",
+  "forceRepeat": true,
+  "difficulty": 3,
+  "laypersonQuestion": "Does one side look more squashed than the other?",
+  "seedHint": "Compare the two sides and look at the shape hugging the bone.",
+  "cta": "ctvol1",
+  "generated": {
+    "threadsCaption": "A patient came in after a fall that looked like nothing then hours of getting slowly more confused.\n\nThen the CT scan loaded 😭\n\nAnd there was a crescent of blood hugging the curve of the skull and shoving the brain sideways.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Acute subdural hematoma\n\n👀 What you see:\nA crescent shaped collection of blood hugs the curve of the skull and pushes the brain away from it.\n\n🦴 Why it matters:\nA bridging vein between the brain and the skull has torn and the growing blood collection is now squeezing the brain sideways.\n\n💊 Treatment:\nSmall ones are watched closely with repeat scans while larger ones need urgent surgical drainage to relieve the pressure.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "stages": {}
+}
