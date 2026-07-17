@@ -366,13 +366,20 @@ async function runPublish(cli: Cli): Promise<void> {
       } else {
         // Thread the CTA under the LIVE "Answer:" comment. The owner may have deleted the
         // bot's answer and posted/pinned their own, so prefer the answer comment currently
-        // on the post; fall back to the stored id.
+        // on the post; then the stored answer id; and if neither can be found (owner rewrote
+        // the answer without the "Answer:" prefix, or it was deleted) fall back to the
+        // challenge post itself so a CTA STILL lands every night rather than silently skipping.
         const liveAnswerId = stages.threadsPostId ? await findOwnerAnswerComment(stages.threadsPostId) : null;
-        const target = liveAnswerId ?? stages.answerCommentId;
+        const target = liveAnswerId ?? stages.answerCommentId ?? stages.threadsPostId;
         if (!target) {
-          log(`  skip CTA for ${c.folder}: no answer comment to thread under`);
+          log(`  skip CTA for ${c.folder}: no challenge post to thread under`);
           continue;
         }
+        const targetKind = liveAnswerId
+          ? "live answer"
+          : target === stages.answerCommentId
+            ? "stored answer"
+            : "challenge post (no answer comment found)";
         // Derive the full https:// URL from the bare domain on the CTA's last line so Threads
         // renders a link-preview card (link_attachment). The URL also stays in the text as a
         // fallback auto-preview if link_attachment is ignored on a reply.
@@ -382,7 +389,7 @@ async function runPublish(cli: Cli): Promise<void> {
         state.setStages(c.folder, { ctaPostedAt: new Date().toISOString() });
         c.stages = state.getStages(c.folder);
         saveCase(c);
-        log(`posted CTA for ${c.folder} under ${target}${liveAnswerId ? " (live answer)" : ""}`);
+        log(`posted CTA for ${c.folder} under ${target} (${targetKind})`);
       }
     }
     } catch (err) {
