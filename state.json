@@ -299,12 +299,16 @@
       "answerCommentId": "18111300085979287",
       "answerPostedAt": "2026-07-18T19:26:04.672Z",
       "ctaPostedAt": "2026-07-18T20:23:57.096Z"
+    },
+    "00031-hurler-syndrome": {
+      "threadsPostId": "18055010411527058",
+      "challengePostedAt": "2026-07-19T19:04:13.839Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-18",
+      "date": "2026-07-19",
       "count": 0
     }
   }
