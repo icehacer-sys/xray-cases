@@ -306,12 +306,16 @@
       "answerCommentId": "18434545960124938",
       "answerPostedAt": "2026-07-19T19:25:00.772Z",
       "ctaPostedAt": "2026-07-19T20:21:33.713Z"
+    },
+    "00049-sacrococcygeal-teratoma": {
+      "threadsPostId": "18089389517114000",
+      "challengePostedAt": "2026-07-20T19:03:07.541Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-19",
+      "date": "2026-07-20",
       "count": 0
     }
   }
