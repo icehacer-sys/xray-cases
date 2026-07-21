@@ -312,12 +312,16 @@
       "challengePostedAt": "2026-07-20T19:03:07.541Z",
       "answerCommentId": "18142203679559478",
       "answerPostedAt": "2026-07-20T19:24:02.341Z"
+    },
+    "00054-neurofibromatosis-type-1": {
+      "threadsPostId": "18063905786724275",
+      "challengePostedAt": "2026-07-21T19:03:14.098Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-20",
+      "date": "2026-07-21",
       "count": 0
     }
   }
