@@ -6,6 +6,7 @@
 // plus an extra elevated one) and it auto-posted publicly.
 import Anthropic from "@anthropic-ai/sdk";
 import { config, requireEnv } from "./config.js";
+import { regionVerifyLines } from "./anatomy.js";
 import type { Condition } from "./types.js";
 
 export interface XrayVerdict {
@@ -39,26 +40,10 @@ const SYSTEM =
   "Respond with ONLY a JSON object and no other text.";
 
 function userPrompt(cond: Condition): string {
-  const view = cond.view.toLowerCase();
-  const extra: string[] = [];
-  if (/panoram|jaw|mandible|dental|teeth|tooth|odont/.test(view)) {
-    extra.push(
-      `TEETH CHECK (this view shows teeth): count the teeth in the upper arch and the lower arch. Confirm a`,
-      `SINGLE continuous arch per jaw with every tooth seated in alveolar bone — no floating, duplicated,`,
-      `fused, or supernumerary teeth beyond the stated pathology — and ONE age-appropriate dentition (not a`,
-      `chaotic adult/baby mix), left-right mirror-consistent in count and spacing. Chaotic, floating, or`,
-      `duplicated dentition is a CRITICAL AI artifact even when the primary lesion is rendered correctly.`,
-    );
-  }
-  if (/forearm|radius|ulna|\bleg\b|tibia|fibula/.test(view)) {
-    extra.push(`PAIRED-BONE CHECK: confirm TWO parallel long bones (radius+ulna or tibia+fibula), never one fused bone.`);
-  }
-  if (/hand|foot|digit|toe|finger/.test(view)) {
-    extra.push(`DIGIT CHECK: confirm the correct digit count (thumb/big toe two phalanges, the others three); none added, dropped, merged, or detached.`);
-  }
-  if (/shoulder|chest|thorax|clavicle|scapula/.test(view)) {
-    extra.push(`PAIRED-STRUCTURE CHECK: exactly one scapula and one clavicle per side, a symmetric rib count, one heart shadow.`);
-  }
+  // Region-specific QA checks come from the shared anatomy table (src/anatomy.ts) — the same
+  // rules that steered the generation prompt, so the verifier inspects for exactly the
+  // impossibilities the generator was told to avoid.
+  const extra = regionVerifyLines(cond.view);
   return [
     `Expected diagnosis: ${cond.diagnosis}`,
     `Expected view: ${cond.view}`,

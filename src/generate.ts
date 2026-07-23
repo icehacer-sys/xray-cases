@@ -13,7 +13,7 @@
 //   --topup     generate until pending+approved UNPOSTED cases reach config.queueTarget
 //               (no-ops when the queue is already full); overrides --count
 
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { Resvg } from "@resvg/resvg-js";
@@ -28,6 +28,7 @@ import {
   pickCta,
 } from "./captions.js";
 import { generateXray } from "./openai.js";
+import { regionPromptLines } from "./anatomy.js";
 import { generateSlides } from "./slidegen.js";
 import { verifyXray, type XrayVerdict } from "./verify.js";
 import { censorUntilClean } from "./censor.js";
@@ -181,6 +182,25 @@ function pad5(n: number): string {
 }
 
 /**
+ * Guard against two case folders silently sharing a leading number (e.g. a stale local
+ * checkout re-deriving `maxNumber` before pulling a just-pushed automated top-up) — since
+ * folders are named `<number>-<slug>`, a picked-`number` collision produces two DIFFERENT
+ * directory names, so mkdirSync's own "already exists" check never catches it.
+ */
+function assertNumberAvailable(casesDir: string, number: number): void {
+  const prefix = `${pad5(number)}-`;
+  const clash = existsSync(casesDir)
+    ? readdirSync(casesDir).find((name) => name.startsWith(prefix))
+    : undefined;
+  if (clash) {
+    throw new Error(
+      `Case number ${number} already used by cases/${clash} — refusing to create a colliding folder. ` +
+        `Pull the latest queue state and re-run.`,
+    );
+  }
+}
+
+/**
  * Schedule the next case: the day AFTER `latestPostAt` at config.postHourUtc.
  * With no existing queue, schedule tomorrow at that hour. Mutates a Date copy only.
  */
@@ -216,28 +236,11 @@ function placeholderXray(): Buffer {
 // ---------------------------------------------------------------------------
 
 function xrayPrompt(cond: Condition, avoid: string[] = []): string {
-  const view = cond.view.toLowerCase();
-  // Region-specific realism blocks: gpt-image-2's two failure modes are dental arches and
-  // overlapping paired bones, so give the view-appropriate anatomy constraint explicitly.
-  const region: string[] = [];
-  if (/panoram|jaw|mandible|dental|teeth|tooth|odont/.test(view)) {
-    region.push(
-      `TEETH: render a SINGLE continuous dental arch per jaw — every tooth seated in the alveolar bone along`,
-      `one smooth curve, with NO floating, tilted-into-space, duplicated, fused, or extra teeth beyond the`,
-      `stated pathology. Use ONE age-appropriate dentition (a normal adult set OR a normal child set, never a`,
-      `chaotic mix). Upper and lower arches mirror-consistent in tooth count and spacing. Every tooth except`,
-      `the described lesion is normal and correctly positioned.`,
-    );
-  }
-  if (/forearm|radius|ulna|\bleg\b|tibia|fibula/.test(view)) {
-    region.push(`Two parallel long bones (radius and ulna, or tibia and fibula) separated by an interosseous space — never a single fused bone.`);
-  }
-  if (/hand|foot|digit|toe|finger/.test(view)) {
-    region.push(`Five digits with the correct phalanx count (thumb/big toe two, the others three); do not add, drop, merge, or detach a digit.`);
-  }
-  if (/chest|thorax|lung/.test(view)) {
-    region.push(`Lung markings are fine BRANCHING vessels tapering to the periphery, not uniform speckled static; symmetric ribcage, one heart shadow, one hemidiaphragm per side.`);
-  }
+  // Region-specific realism blocks come from the shared anatomy table (src/anatomy.ts) so the
+  // generation constraint and the QA verifier check for the SAME impossibilities per region and
+  // can never drift. gpt-image-2's recurring failure modes are dental arches, overlapping paired
+  // bones, and duplicated girdle/pelvis structures — each covered there view-by-view.
+  const region = regionPromptLines(cond.view);
   const lines = [
     `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
     ``,
@@ -248,10 +251,10 @@ function xrayPrompt(cond: Condition, avoid: string[] = []): string {
     ``,
     `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs.`,
     `Do NOT duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired`,
-    `structure (one scapula and one clavicle per side, the normal count of ribs, fingers, and vertebrae)`,
-    `unless the pathology itself only changes a structure's position, shape, or density. Represent the`,
-    `pathology as a change to a SINGLE structure, never as an added duplicate. No melted, smeared, doubled,`,
-    `or garbled bone.`,
+    `structure (one scapula and one clavicle per side, one femoral head per hip, 12 rib pairs, five`,
+    `digits per hand/foot, one continuous spine, two orbits) unless the pathology itself only changes a`,
+    `structure's position, shape, or density. Represent the pathology as a change to a SINGLE structure,`,
+    `never as an added duplicate. No melted, smeared, doubled, or garbled bone.`,
     ``,
     `The PATHOLOGY may be irregular or asymmetric — that is expected. But every NON-pathological paired`,
     `structure (both forearm bones, both sides of the jaw and dental arch, the ribs, the orbits) must stay`,
@@ -346,7 +349,9 @@ async function generateOne(
   threadsOnly: boolean,
 ): Promise<GenResult> {
   const folder = `${pad5(number)}-${slug(cond.diagnosis)}`;
-  const dir = join(projectRoot, config.casesDir, folder);
+  const casesDir = join(projectRoot, config.casesDir);
+  assertNumberAvailable(casesDir, number);
+  const dir = join(casesDir, folder);
   mkdirSync(dir, { recursive: true });
 
   // 1. X-ray (gpt-image-2) behind the anatomy-QA gate. Regenerate on a critical AI artifact
