@@ -333,12 +333,16 @@
       "answerCommentId": "18140577760539013",
       "answerPostedAt": "2026-07-23T19:25:10.836Z",
       "ctaPostedAt": "2026-07-23T20:21:57.107Z"
+    },
+    "00058-tumoral-calcinosis": {
+      "threadsPostId": "17898533646516433",
+      "challengePostedAt": "2026-07-24T19:04:18.143Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-07-23",
+      "date": "2026-07-24",
       "count": 0
     }
   }
