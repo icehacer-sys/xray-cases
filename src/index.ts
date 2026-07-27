@@ -84,7 +84,9 @@ async function ensureGenerated(c: Case, state: State): Promise<NonNullable<Case[
   const threadsCaption = existing.threadsCaption ?? generateThreadsCaption(c);
   const threadsAnswer = existing.threadsAnswer ?? (await generateThreadsAnswer(c));
   const igCaption = existing.igCaption ?? (await generateIgCaption(c));
-  const ctaText = existing.ctaText ?? pickCta(c).text;
+  // Rotate the CTA by posting order (not case number) so consecutive nights never
+  // repeat the same product. Baked into case.json at draft time, so it stays stable.
+  const ctaText = existing.ctaText ?? pickCta(c, state.publishedCount()).text;
 
   c.generated = { threadsCaption, threadsAnswer, igCaption, ctaText };
   // keep stages in case.json in sync with central state for at-a-glance review
