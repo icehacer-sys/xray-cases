@@ -72,6 +72,16 @@ export class State {
     return this.total;
   }
 
+  /**
+   * How many challenges have actually been published, derived from the recorded
+   * stages rather than the `posted.total` counter (countPosted() is never called,
+   * so that counter reads 0). Used as the CTA rotation index so the rotation
+   * advances once per published case, in posting order.
+   */
+  publishedCount(): number {
+    return Object.values(this.stages).filter((s) => s.challengePostedAt).length;
+  }
+
   private save(): void {
     const out: StateShape = {
       stages: this.stages,

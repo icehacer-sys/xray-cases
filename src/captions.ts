@@ -392,12 +392,19 @@ const CTA_ROTATION: CtaKey[] = [
   "vol2", "collection", "hopital", "vol3", "field", "anxiety", "viral10", "ctvol1",
 ];
 
-export function pickCta(c: Case): { key: CtaKey; text: string } {
+export function pickCta(c: Case, seq?: number): { key: CtaKey; text: string } {
   if (c.cta) {
     return { key: c.cta, text: CTA_TEXT[c.cta] };
   }
-  const n = c.number ?? 1;
-  const key = CTA_ROTATION[(n - 1 + CTA_ROTATION.length * 1000) % CTA_ROTATION.length];
+  // Rotate by POSTING ORDER when the caller can supply it (`seq` = how many cases have
+  // already published). Keying the rotation off c.number instead makes it effectively
+  // arbitrary, because cases publish far out of numeric order: any two case numbers that
+  // differ by the rotation length land the SAME CTA, which is how n=35 and n=49 both drew
+  // vol2 two days apart (2026-07-18 and 07-20). Falls back to the case number when no
+  // sequence is available (one-off scripts, backfills).
+  const idx = seq ?? (c.number ?? 1) - 1;
+  const len = CTA_ROTATION.length;
+  const key = CTA_ROTATION[((idx % len) + len) % len];
   return { key, text: CTA_TEXT[key] };
 }
 
