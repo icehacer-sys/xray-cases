@@ -100,8 +100,8 @@
     ],
     "symptom": "an irritable infant with hard tender swelling along the jaw and limbs",
     "hook": "the baby's jaw and long bones were wrapped in thick new layers of bone like tree bark",
-    "view": "mandible and long bones",
-    "keyFindings": "florid cortical thickening and periosteal new bone classically of the mandible and clavicle and long bones in an infant under six months",
+    "view": "AP forearm and lower leg of a young child",
+    "keyFindings": "thick smooth layers of periosteal new bone cuffing the shafts of the ulna and tibia so the cortex looks heavily padded with the underlying bone intact",
     "whatYouSee": "Thick layers of new bone coating the jaw and long bones in a young infant.",
     "whyItMatters": "It is a self limiting infantile disorder of exuberant new bone that can mimic infection or injury so recognising it avoids alarm and needless treatment.",
     "treatment": "It usually settles on its own and anti inflammatories help symptoms in severe cases.",
@@ -113,7 +113,7 @@
       "Scurvy"
     ],
     "igCorrect": "A",
-    "used": false,
+    "used": true,
     "skipPublic": true
   },
   {
@@ -137,7 +137,7 @@
       "Osteopetrosis"
     ],
     "igCorrect": "A",
-    "used": false,
+    "used": true,
     "skipPublic": true
   },
   {
@@ -161,7 +161,7 @@
       "Bone metastases"
     ],
     "igCorrect": "B",
-    "used": false,
+    "used": true,
     "skipPublic": true
   },
   {
@@ -185,7 +185,7 @@
       "Paget's disease"
     ],
     "igCorrect": "A",
-    "used": false,
+    "used": true,
     "skipPublic": true
   },
   {
@@ -209,7 +209,7 @@
       "Gout"
     ],
     "igCorrect": "B",
-    "used": false,
+    "used": true,
     "skipPublic": true
   },
   {
@@ -780,8 +780,8 @@
     ],
     "symptom": "repeated fractures from minor knocks since early childhood, with bowed limbs",
     "hook": "the bones were paper-thin and bowed, marked with healed fractures at every turn",
-    "view": "AP lower limb",
-    "keyFindings": "diffusely thin, osteopenic, gracile bones with multiple fractures at different healing stages, bowing deformities and thin cortices",
+    "view": "AP both lower legs of an adult cropped below the knee with no pelvis or groin in frame",
+    "keyFindings": "markedly bowed slender lower leg bones with thin cortices and multiple healed fracture deformities at different levels giving the shafts an irregular knobbly outline",
     "whatYouSee": "Thin, under-mineralised, bowed bones with multiple fractures in different stages of healing.",
     "whyItMatters": "It is an inherited collagen disorder causing fragile bones, blue sclerae and hearing loss, with fractures from minimal trauma.",
     "treatment": "Management includes bisphosphonates to strengthen bone, fracture care, surgical rodding of long bones, and physiotherapy.",
@@ -1099,7 +1099,8 @@
       "Neuroblastoma"
     ],
     "igCorrect": "B",
-    "skipPublic": true
+    "skipPublic": true,
+    "used": true
   },
   {
     "diagnosis": "Mediastinal teratoma",
@@ -1784,6 +1785,204 @@
       "Normal joint"
     ],
     "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Tracheo-oesophageal fistula",
+    "aliases": [
+      "tracheoesophageal fistula",
+      "oesophageal atresia",
+      "esophageal atresia",
+      "TOF",
+      "TEF"
+    ],
+    "symptom": "a newborn who choked and turned blue with the very first feed",
+    "hook": "the feeding tube curled back on itself instead of reaching the stomach",
+    "view": "AP chest and upper abdomen of a newborn cropped above the pelvis",
+    "keyFindings": "a nasogastric tube coiled back on itself within a blind upper oesophageal pouch at the level of the upper chest with gas still present in the stomach below the diaphragm",
+    "whatYouSee": "A feeding tube loops back on itself in a blind pouch high in the chest yet there is still gas in the stomach below.",
+    "whyItMatters": "The gullet ends in a dead end while a second channel joins the windpipe to the stomach so milk can pour into the lungs.",
+    "treatment": "Surgery closes the abnormal connection and joins the two ends of the gullet.",
+    "takeaway": "A feeding tube that coils in the chest while the belly still has gas is a tracheo-oesophageal fistula.",
+    "igTitle": "THE TUBE THAT TURNED BACK",
+    "igOptions": [
+      "Tube simply misplaced",
+      "Tracheo-oesophageal fistula",
+      "Hiatus hernia"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Ectrodactyly",
+    "aliases": [
+      "split hand malformation",
+      "split hand foot malformation",
+      "lobster claw hand",
+      "central ray deficiency"
+    ],
+    "symptom": "hands that had been shaped like claws since the day of birth",
+    "hook": "the middle of the hand was split into a deep V",
+    "view": "PA both hands",
+    "keyFindings": "a deep central V shaped cleft running into the palm with the central rays of the hand absent so the remaining digits are splayed apart to either side of the cleft",
+    "whatYouSee": "A deep V shaped cleft splits the hand where the middle fingers should be and the outer digits face each other across the gap.",
+    "whyItMatters": "The central rays of the hand never form in the womb so the hand divides into two halves and it often runs in families.",
+    "treatment": "Surgery can narrow the cleft and improve grip while hand therapy builds function.",
+    "takeaway": "A hand split down the middle with the central fingers missing is ectrodactyly.",
+    "igTitle": "THE SPLIT HAND",
+    "igOptions": [
+      "Ectrodactyly",
+      "Amputation injury",
+      "Severe burn contracture"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Elephantiasis",
+    "aliases": [
+      "lymphatic filariasis",
+      "filarial elephantiasis",
+      "chronic lymphoedema"
+    ],
+    "symptom": "a leg that had swollen year after year until the skin turned thick and hard",
+    "hook": "the soft tissue around the bone had swollen into something that no longer looked like a leg",
+    "view": "AP both lower legs cropped below the knee with no pelvis or groin in frame",
+    "keyFindings": "a grossly thickened coarse soft tissue envelope ballooning around the lower leg with preserved normal underlying bone and no bone destruction",
+    "whatYouSee": "A huge cuff of thickened soft tissue swallows the lower leg while the bone running through the middle of it stays completely normal.",
+    "whyItMatters": "Tiny worms spread by mosquitoes block the lymph channels so fluid and scar tissue pile up in the limb for years.",
+    "treatment": "Medication kills the worms while compression and careful skin hygiene control the swelling.",
+    "takeaway": "Massive soft tissue swelling wrapped around a perfectly normal bone is elephantiasis.",
+    "igTitle": "THE LEG THAT KEPT GROWING",
+    "igOptions": [
+      "Bone tumour",
+      "Chronic infection of the bone",
+      "Elephantiasis"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  {
+    "diagnosis": "Hypertrophic osteoarthropathy",
+    "aliases": [
+      "HPOA",
+      "hypertrophic pulmonary osteoarthropathy",
+      "periosteal reaction of malignancy"
+    ],
+    "symptom": "deep aching in both shins with fingertips that had slowly widened over months",
+    "hook": "a second layer of bone had been laid down along both shins",
+    "view": "AP both lower legs",
+    "keyFindings": "smooth continuous periosteal new bone laid down along the shafts of both tibia and fibula so the cortex appears doubled with a thin lucent line between the layers",
+    "whatYouSee": "A smooth new layer of bone runs along the shafts of both shin bones so the outer cortex looks doubled.",
+    "whyItMatters": "This bone reaction is usually driven by a hidden tumour in the lung so an X-ray of the legs sends you straight to the chest.",
+    "treatment": "Treating the underlying lung tumour settles the bone pain and the periosteal reaction.",
+    "takeaway": "A doubled cortex along both shins with widened fingertips means go and hunt the lungs.",
+    "igTitle": "THE SECOND LAYER OF BONE",
+    "igOptions": [
+      "Healing stress fractures",
+      "Hypertrophic osteoarthropathy",
+      "Chronic bone infection"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Haemophilic arthropathy",
+    "aliases": [
+      "hemophilic arthropathy",
+      "haemophilia joint disease",
+      "hemophilia arthropathy",
+      "bleeding disorder arthropathy"
+    ],
+    "symptom": "a young man whose knee had swollen with bleeds since he was a small child",
+    "hook": "the knee looked like it had been slowly eaten from the inside",
+    "view": "AP knee",
+    "keyFindings": "a widened and deepened intercondylar notch with squaring of the lower patella dense enlarged epiphyses and marked narrowing of the joint space",
+    "whatYouSee": "The notch between the knee condyles is widened and scooped out with a squared off kneecap and a badly worn joint space.",
+    "whyItMatters": "Blood leaks into the joint again and again and the iron in it eats the cartilage and reshapes the growing bone.",
+    "treatment": "Clotting factor replacement prevents further bleeds while a ruined joint may need replacing.",
+    "takeaway": "A widened scooped intercondylar notch with a squared patella is haemophilic arthropathy.",
+    "igTitle": "THE JOINT THAT KEPT BLEEDING",
+    "igOptions": [
+      "Haemophilic arthropathy",
+      "Septic arthritis",
+      "Ordinary osteoarthritis"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  {
+    "diagnosis": "Haemochromatosis arthropathy",
+    "aliases": [
+      "hemochromatosis",
+      "haemochromatosis",
+      "iron overload arthropathy",
+      "hook osteophytes"
+    ],
+    "symptom": "stiff aching knuckles in a man whose skin had turned a bronze colour",
+    "hook": "little hooks had grown off the sides of the knuckles",
+    "view": "PA hand",
+    "keyFindings": "hook shaped osteophytes projecting from the radial side of the second and third metacarpal heads with joint space narrowing and fine chondrocalcinosis in the wrist",
+    "whatYouSee": "Small hook shaped spurs curl off the knuckle heads of the index and middle fingers and those joints are narrowed.",
+    "whyItMatters": "The body absorbs and stores far too much iron which settles in the joints and quietly scars the liver and heart.",
+    "treatment": "Removing blood on a regular schedule drains the excess iron and protects the liver and heart.",
+    "takeaway": "Hooked spurs on the index and middle knuckles point straight at iron overload.",
+    "igTitle": "THE BRONZE HANDS",
+    "igOptions": [
+      "Rheumatoid arthritis",
+      "Psoriatic arthritis",
+      "Haemochromatosis arthropathy"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  {
+    "diagnosis": "Edwards syndrome",
+    "aliases": [
+      "trisomy 18",
+      "Edward syndrome",
+      "trisomy eighteen"
+    ],
+    "symptom": "a newborn with fists that would not open and soles that curved outward",
+    "hook": "the fingers were locked in an overlapping grip that could not be straightened",
+    "view": "PA both hands of a young infant",
+    "keyFindings": "small hands held in a fixed clenched posture with the index finger overlapping the middle finger and the little finger overlapping the ring finger",
+    "whatYouSee": "Both newborn fists stay clenched with the index finger crossing over the middle one and the little finger crossing over the ring.",
+    "whyItMatters": "An extra copy of chromosome 18 affects the whole body and the heart and breathing problems are usually very severe.",
+    "treatment": "Care centres on comfort and feeding support along with treating the heart problems that can be helped.",
+    "takeaway": "Newborn fists locked in a crossed overlapping grip point to trisomy 18.",
+    "igTitle": "THE FISTS THAT WOULD NOT OPEN",
+    "igOptions": [
+      "Arthrogryposis",
+      "Edwards syndrome",
+      "Birth injury to the nerves"
+    ],
+    "igCorrect": "B",
+    "used": false
+  },
+  {
+    "diagnosis": "Epidermodysplasia verruciformis",
+    "aliases": [
+      "tree man syndrome",
+      "treeman syndrome",
+      "Lewandowsky-Lutz dysplasia",
+      "HPV tree man"
+    ],
+    "symptom": "hands where hard bark like growths had slowly taken over the fingers",
+    "hook": "the fingers had disappeared under growths that looked like bark",
+    "view": "PA both hands",
+    "keyFindings": "bulky irregular soft tissue masses heaped over the fingers and back of the hand casting dense shadows while the bones underneath remain intact and normal",
+    "whatYouSee": "Thick knobbly soft tissue growths pile over the fingers and cast heavy shadows yet the bones underneath are untouched.",
+    "whyItMatters": "An inherited gap in immunity lets a common wart virus grow unchecked so the skin builds horn like towers for years.",
+    "treatment": "Surgery removes the bulk and it often regrows so the aim is control rather than cure.",
+    "takeaway": "Huge bark like growths sitting on completely normal finger bones is epidermodysplasia verruciformis.",
+    "igTitle": "THE HANDS THAT TURNED TO BARK",
+    "igOptions": [
+      "Bone tumours pushing through the skin",
+      "Severe frostbite damage",
+      "Epidermodysplasia verruciformis"
+    ],
+    "igCorrect": "C",
     "used": true
   }
 ]

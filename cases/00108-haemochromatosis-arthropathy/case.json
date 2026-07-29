@@ -1,0 +1,61 @@
+{
+  "folder": "00108-haemochromatosis-arthropathy",
+  "number": 108,
+  "diagnosis": "Haemochromatosis arthropathy",
+  "aliases": [
+    "hemochromatosis",
+    "haemochromatosis",
+    "iron overload arthropathy",
+    "hook osteophytes"
+  ],
+  "symptom": "stiff aching knuckles in a man whose skin had turned a bronze colour",
+  "hook": "little hooks had grown off the sides of the knuckles",
+  "whatYouSee": "Small hook shaped spurs curl off the knuckle heads of the index and middle fingers and those joints are narrowed.",
+  "whyItMatters": "The body absorbs and stores far too much iron which settles in the joints and quietly scars the liver and heart.",
+  "treatment": "Removing blood on a regular schedule drains the excess iron and protects the liver and heart.",
+  "takeaway": "Hooked spurs on the index and middle knuckles point straight at iron overload.",
+  "igOptions": [
+    "A. Rheumatoid arthritis",
+    "B. Psoriatic arthritis",
+    "C. Haemochromatosis arthropathy"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-03T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Haemochromatosis arthropathy",
+    "aliases": [
+      "hemochromatosis",
+      "haemochromatosis",
+      "iron overload arthropathy",
+      "hook osteophytes"
+    ],
+    "symptom": "stiff aching knuckles in a man whose skin had turned a bronze colour",
+    "hook": "little hooks had grown off the sides of the knuckles",
+    "view": "PA hand",
+    "keyFindings": "hook shaped osteophytes projecting from the radial side of the second and third metacarpal heads with joint space narrowing and fine chondrocalcinosis in the wrist",
+    "whatYouSee": "Small hook shaped spurs curl off the knuckle heads of the index and middle fingers and those joints are narrowed.",
+    "whyItMatters": "The body absorbs and stores far too much iron which settles in the joints and quietly scars the liver and heart.",
+    "treatment": "Removing blood on a regular schedule drains the excess iron and protects the liver and heart.",
+    "takeaway": "Hooked spurs on the index and middle knuckles point straight at iron overload.",
+    "igTitle": "THE BRONZE HANDS",
+    "igOptions": [
+      "Rheumatoid arthritis",
+      "Psoriatic arthritis",
+      "Haemochromatosis arthropathy"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Why would knuckles grow tiny hooks?",
+  "seedHint": "Look at the edges of the knuckles and ask yourself if bone is supposed to jut out sideways like that.",
+  "generated": {
+    "threadsCaption": "A patient came in with stiff aching knuckles in a man whose skin had turned a bronze colour.\n\nThen the X-ray loaded 😭\n\nAnd little hooks had grown off the sides of the knuckles.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Haemochromatosis arthropathy\n\n👀 What you see:\nSmall hook shaped spurs curl off the knuckle heads of the index and middle fingers and those joints are narrowed.\n\n🦴 Why it matters:\nThe body absorbs and stores far too much iron which settles in the joints and quietly scars the liver and heart.\n\n💊 Treatment:\nRemoving blood on a regular schedule drains the excess iron and protects the liver and heart.",
+    "igCaption": "",
+    "ctaText": "If you have been through Volume 1 and 2 and still want more.\n\nI put 20 fresh cases into Volume 3.\n\nAll new and none repeated from the first two.\n\nGrab it here 👇🏼\nxray3.mednoteslab.com"
+  }
+}

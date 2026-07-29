@@ -1,0 +1,58 @@
+{
+  "folder": "00114-hand-schuller-christian-disease",
+  "number": 114,
+  "diagnosis": "Hand-Schuller-Christian disease",
+  "aliases": [
+    "Langerhans cell histiocytosis",
+    "chronic disseminated histiocytosis"
+  ],
+  "symptom": "a child with skull lumps excessive thirst and bulging eyes",
+  "hook": "the skull had several map like holes punched clean through it with sharp edges",
+  "whatYouSee": "Several sharply outlined map like holes in the skull bones.",
+  "whyItMatters": "It is a form of Langerhans cell histiocytosis and the classic triad adds diabetes insipidus and bulging eyes so the skull holes flag a systemic disease.",
+  "treatment": "Treatment ranges from observation to chemotherapy depending on how many systems are involved.",
+  "takeaway": "Map like punched out skull holes in a thirsty child suggest Hand-Schuller-Christian disease.",
+  "igOptions": [
+    "A. Multiple myeloma",
+    "B. Hand-Schuller-Christian disease",
+    "C. Bone metastases"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-09T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Hand-Schuller-Christian disease",
+    "aliases": [
+      "Langerhans cell histiocytosis",
+      "chronic disseminated histiocytosis"
+    ],
+    "symptom": "a child with skull lumps excessive thirst and bulging eyes",
+    "hook": "the skull had several map like holes punched clean through it with sharp edges",
+    "view": "lateral skull",
+    "keyFindings": "multiple well defined lytic skull lesions with a geographic map like outline and beveled edges from uneven inner and outer table loss",
+    "whatYouSee": "Several sharply outlined map like holes in the skull bones.",
+    "whyItMatters": "It is a form of Langerhans cell histiocytosis and the classic triad adds diabetes insipidus and bulging eyes so the skull holes flag a systemic disease.",
+    "treatment": "Treatment ranges from observation to chemotherapy depending on how many systems are involved.",
+    "takeaway": "Map like punched out skull holes in a thirsty child suggest Hand-Schuller-Christian disease.",
+    "igTitle": "THE MAP ON THE SKULL",
+    "igOptions": [
+      "Multiple myeloma",
+      "Hand-Schuller-Christian disease",
+      "Bone metastases"
+    ],
+    "igCorrect": "B",
+    "used": true,
+    "skipPublic": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What would eat holes straight through bone?",
+  "seedHint": "Count the holes then ask yourself: disease or damage?",
+  "generated": {
+    "threadsCaption": "A patient came in with a child with skull lumps excessive thirst and bulging eyes.\n\nThen the X-ray loaded 😭\n\nAnd the skull had several map like holes punched clean through it with sharp edges.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Hand-Schuller-Christian disease\n\n👀 What you see:\nSeveral sharply outlined map like holes in the skull bones.\n\n🦴 Why it matters:\nIt is a form of Langerhans cell histiocytosis and the classic triad adds diabetes insipidus and bulging eyes so the skull holes flag a systemic disease.\n\n💊 Treatment:\nTreatment ranges from observation to chemotherapy depending on how many systems are involved.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 strange real X-rays with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  }
+}

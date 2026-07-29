@@ -1,0 +1,61 @@
+{
+  "folder": "00104-ectrodactyly",
+  "number": 104,
+  "diagnosis": "Ectrodactyly",
+  "aliases": [
+    "split hand malformation",
+    "split hand foot malformation",
+    "lobster claw hand",
+    "central ray deficiency"
+  ],
+  "symptom": "hands that had been shaped like claws since the day of birth",
+  "hook": "the middle of the hand was split into a deep V",
+  "whatYouSee": "A deep V shaped cleft splits the hand where the middle fingers should be and the outer digits face each other across the gap.",
+  "whyItMatters": "The central rays of the hand never form in the womb so the hand divides into two halves and it often runs in families.",
+  "treatment": "Surgery can narrow the cleft and improve grip while hand therapy builds function.",
+  "takeaway": "A hand split down the middle with the central fingers missing is ectrodactyly.",
+  "igOptions": [
+    "A. Ectrodactyly",
+    "B. Amputation injury",
+    "C. Severe burn contracture"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-30T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Ectrodactyly",
+    "aliases": [
+      "split hand malformation",
+      "split hand foot malformation",
+      "lobster claw hand",
+      "central ray deficiency"
+    ],
+    "symptom": "hands that had been shaped like claws since the day of birth",
+    "hook": "the middle of the hand was split into a deep V",
+    "view": "PA both hands",
+    "keyFindings": "a deep central V shaped cleft running into the palm with the central rays of the hand absent so the remaining digits are splayed apart to either side of the cleft",
+    "whatYouSee": "A deep V shaped cleft splits the hand where the middle fingers should be and the outer digits face each other across the gap.",
+    "whyItMatters": "The central rays of the hand never form in the womb so the hand divides into two halves and it often runs in families.",
+    "treatment": "Surgery can narrow the cleft and improve grip while hand therapy builds function.",
+    "takeaway": "A hand split down the middle with the central fingers missing is ectrodactyly.",
+    "igTitle": "THE SPLIT HAND",
+    "igOptions": [
+      "Ectrodactyly",
+      "Amputation injury",
+      "Severe burn contracture"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What does this hand shape remind you of?",
+  "seedHint": "Count the fingers then trace where the center of the hand should be",
+  "generated": {
+    "threadsCaption": "A patient came in with hands that had been shaped like claws since the day of birth.\n\nThen the X-ray loaded 😭\n\nAnd the middle of the hand was split into a deep V.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ectrodactyly\n\n👀 What you see:\nA deep V shaped cleft splits the hand where the middle fingers should be and the outer digits face each other across the gap.\n\n🦴 Why it matters:\nThe central rays of the hand never form in the womb so the hand divides into two halves and it often runs in families.\n\n💊 Treatment:\nSurgery can narrow the cleft and improve grip while hand therapy builds function.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "folder": "00113-sclerosteosis",
+  "number": 113,
+  "diagnosis": "Sclerosteosis",
+  "aliases": [
+    "Van Buchem disease",
+    "cranial hyperostosis"
+  ],
+  "symptom": "a tall heavy boned person with facial swelling and progressive facial weakness and hearing loss",
+  "hook": "every bone looked massively overgrown and dense especially the skull which had thickened enormously",
+  "whatYouSee": "Greatly thickened dense skull and jaw bones with overgrown dense long bones.",
+  "whyItMatters": "It is a rare sclerosing dysplasia from too much bone formation and the thickened skull traps the cranial nerves causing facial weakness and deafness and raised pressure.",
+  "treatment": "Care is supportive with surgery to decompress trapped nerves or the brainstem when needed.",
+  "takeaway": "A massively dense overgrown skull with trapped facial nerves points to sclerosteosis.",
+  "igOptions": [
+    "A. Sclerosteosis",
+    "B. Acromegaly",
+    "C. Paget's disease"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-08T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Sclerosteosis",
+    "aliases": [
+      "Van Buchem disease",
+      "cranial hyperostosis"
+    ],
+    "symptom": "a tall heavy boned person with facial swelling and progressive facial weakness and hearing loss",
+    "hook": "every bone looked massively overgrown and dense especially the skull which had thickened enormously",
+    "view": "skull and tubular bones",
+    "keyFindings": "marked symmetric bony overgrowth and sclerosis of the skull and mandible and tubular bones with narrowing of the skull foramina",
+    "whatYouSee": "Greatly thickened dense skull and jaw bones with overgrown dense long bones.",
+    "whyItMatters": "It is a rare sclerosing dysplasia from too much bone formation and the thickened skull traps the cranial nerves causing facial weakness and deafness and raised pressure.",
+    "treatment": "Care is supportive with surgery to decompress trapped nerves or the brainstem when needed.",
+    "takeaway": "A massively dense overgrown skull with trapped facial nerves points to sclerosteosis.",
+    "igTitle": "TOO MUCH BONE",
+    "igOptions": [
+      "Sclerosteosis",
+      "Acromegaly",
+      "Paget's disease"
+    ],
+    "igCorrect": "A",
+    "used": true,
+    "skipPublic": true
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "genitalia still visible after auto-censor — blur manually (regencase grid + blurbox) then clear needsReview"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does this skeleton look too big for one person?",
+  "seedHint": "Start at the skull and ask whether you have ever seen bone walls that thick",
+  "generated": {
+    "threadsCaption": "A patient came in with a tall heavy boned person with facial swelling and progressive facial weakness and hearing loss.\n\nThen the X-ray loaded 😭\n\nAnd every bone looked massively overgrown and dense especially the skull which had thickened enormously.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Sclerosteosis\n\n👀 What you see:\nGreatly thickened dense skull and jaw bones with overgrown dense long bones.\n\n🦴 Why it matters:\nIt is a rare sclerosing dysplasia from too much bone formation and the thickened skull traps the cranial nerves causing facial weakness and deafness and raised pressure.\n\n💊 Treatment:\nCare is supportive with surgery to decompress trapped nerves or the brainstem when needed.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}

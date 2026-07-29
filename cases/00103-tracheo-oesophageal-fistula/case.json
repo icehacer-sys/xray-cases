@@ -1,0 +1,63 @@
+{
+  "folder": "00103-tracheo-oesophageal-fistula",
+  "number": 103,
+  "diagnosis": "Tracheo-oesophageal fistula",
+  "aliases": [
+    "tracheoesophageal fistula",
+    "oesophageal atresia",
+    "esophageal atresia",
+    "TOF",
+    "TEF"
+  ],
+  "symptom": "a newborn who choked and turned blue with the very first feed",
+  "hook": "the feeding tube curled back on itself instead of reaching the stomach",
+  "whatYouSee": "A feeding tube loops back on itself in a blind pouch high in the chest yet there is still gas in the stomach below.",
+  "whyItMatters": "The gullet ends in a dead end while a second channel joins the windpipe to the stomach so milk can pour into the lungs.",
+  "treatment": "Surgery closes the abnormal connection and joins the two ends of the gullet.",
+  "takeaway": "A feeding tube that coils in the chest while the belly still has gas is a tracheo-oesophageal fistula.",
+  "igOptions": [
+    "A. Tube simply misplaced",
+    "B. Tracheo-oesophageal fistula",
+    "C. Hiatus hernia"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-29T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Tracheo-oesophageal fistula",
+    "aliases": [
+      "tracheoesophageal fistula",
+      "oesophageal atresia",
+      "esophageal atresia",
+      "TOF",
+      "TEF"
+    ],
+    "symptom": "a newborn who choked and turned blue with the very first feed",
+    "hook": "the feeding tube curled back on itself instead of reaching the stomach",
+    "view": "AP chest and upper abdomen of a newborn cropped above the pelvis",
+    "keyFindings": "a nasogastric tube coiled back on itself within a blind upper oesophageal pouch at the level of the upper chest with gas still present in the stomach below the diaphragm",
+    "whatYouSee": "A feeding tube loops back on itself in a blind pouch high in the chest yet there is still gas in the stomach below.",
+    "whyItMatters": "The gullet ends in a dead end while a second channel joins the windpipe to the stomach so milk can pour into the lungs.",
+    "treatment": "Surgery closes the abnormal connection and joins the two ends of the gullet.",
+    "takeaway": "A feeding tube that coils in the chest while the belly still has gas is a tracheo-oesophageal fistula.",
+    "igTitle": "THE TUBE THAT TURNED BACK",
+    "igOptions": [
+      "Tube simply misplaced",
+      "Tracheo-oesophageal fistula",
+      "Hiatus hernia"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Why would a tube refuse to go down?",
+  "seedHint": "Look at where the tube stopped and ask yourself: blocked or bypassed?",
+  "generated": {
+    "threadsCaption": "A patient came in with a newborn who choked and turned blue with the very first feed.\n\nThen the X-ray loaded 😭\n\nAnd the feeding tube curled back on itself instead of reaching the stomach.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Tracheo-oesophageal fistula\n\n👀 What you see:\nA feeding tube loops back on itself in a blind pouch high in the chest yet there is still gas in the stomach below.\n\n🦴 Why it matters:\nThe gullet ends in a dead end while a second channel joins the windpipe to the stomach so milk can pour into the lungs.\n\n💊 Treatment:\nSurgery closes the abnormal connection and joins the two ends of the gullet.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}

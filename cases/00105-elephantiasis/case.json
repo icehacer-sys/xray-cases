@@ -1,0 +1,59 @@
+{
+  "folder": "00105-elephantiasis",
+  "number": 105,
+  "diagnosis": "Elephantiasis",
+  "aliases": [
+    "lymphatic filariasis",
+    "filarial elephantiasis",
+    "chronic lymphoedema"
+  ],
+  "symptom": "a leg that had swollen year after year until the skin turned thick and hard",
+  "hook": "the soft tissue around the bone had swollen into something that no longer looked like a leg",
+  "whatYouSee": "A huge cuff of thickened soft tissue swallows the lower leg while the bone running through the middle of it stays completely normal.",
+  "whyItMatters": "Tiny worms spread by mosquitoes block the lymph channels so fluid and scar tissue pile up in the limb for years.",
+  "treatment": "Medication kills the worms while compression and careful skin hygiene control the swelling.",
+  "takeaway": "Massive soft tissue swelling wrapped around a perfectly normal bone is elephantiasis.",
+  "igOptions": [
+    "A. Bone tumour",
+    "B. Chronic infection of the bone",
+    "C. Elephantiasis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-07-31T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Elephantiasis",
+    "aliases": [
+      "lymphatic filariasis",
+      "filarial elephantiasis",
+      "chronic lymphoedema"
+    ],
+    "symptom": "a leg that had swollen year after year until the skin turned thick and hard",
+    "hook": "the soft tissue around the bone had swollen into something that no longer looked like a leg",
+    "view": "AP both lower legs cropped below the knee with no pelvis or groin in frame",
+    "keyFindings": "a grossly thickened coarse soft tissue envelope ballooning around the lower leg with preserved normal underlying bone and no bone destruction",
+    "whatYouSee": "A huge cuff of thickened soft tissue swallows the lower leg while the bone running through the middle of it stays completely normal.",
+    "whyItMatters": "Tiny worms spread by mosquitoes block the lymph channels so fluid and scar tissue pile up in the limb for years.",
+    "treatment": "Medication kills the worms while compression and careful skin hygiene control the swelling.",
+    "takeaway": "Massive soft tissue swelling wrapped around a perfectly normal bone is elephantiasis.",
+    "igTitle": "THE LEG THAT KEPT GROWING",
+    "igOptions": [
+      "Bone tumour",
+      "Chronic infection of the bone",
+      "Elephantiasis"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Does this leg still look like a leg to you?",
+  "seedHint": "Look at where the soft tissue ends and ask yourself if bone or flesh grew more.",
+  "generated": {
+    "threadsCaption": "A patient came in with a leg that had swollen year after year until the skin turned thick and hard.\n\nThen the X-ray loaded 😭\n\nAnd the soft tissue around the bone had swollen into something that no longer looked like a leg.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Elephantiasis\n\n👀 What you see:\nA huge cuff of thickened soft tissue swallows the lower leg while the bone running through the middle of it stays completely normal.\n\n🦴 Why it matters:\nTiny worms spread by mosquitoes block the lymph channels so fluid and scar tissue pile up in the limb for years.\n\n💊 Treatment:\nMedication kills the worms while compression and careful skin hygiene control the swelling.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  }
+}
