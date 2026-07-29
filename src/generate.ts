@@ -13,7 +13,7 @@
 //   --topup     generate until pending+approved UNPOSTED cases reach config.queueTarget
 //               (no-ops when the queue is already full); overrides --count
 
-import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { Resvg } from "@resvg/resvg-js";
@@ -512,7 +512,25 @@ async function main(): Promise<void> {
     cond.used = true;
     saveConditions(conditions);
 
-    const result = await generateOne(cond, number, postAt, cli.mock, cli.threadsOnly);
+    let result: GenResult;
+    try {
+      result = await generateOne(cond, number, postAt, cli.mock, cli.threadsOnly);
+    } catch (err) {
+      // The burn above guards against DUPLICATES, but it also means a purely transient
+      // failure (an OpenAI safety refusal, a network blip) permanently destroys a vetted
+      // condition. Nothing was written for this case, so give the condition back and move
+      // on. Also remove the empty case dir generateOne may have created: a folder with no
+      // case.json breaks loadCases() for every later run (this is what silently killed a
+      // whole batch on 2026-07-29).
+      cond.used = false;
+      saveConditions(conditions);
+      const dir = join(projectRoot, config.casesDir, `${pad5(number)}-${slug(cond.diagnosis)}`);
+      if (existsSync(dir) && !existsSync(join(dir, "case.json"))) {
+        try { rmSync(dir, { recursive: true, force: true }); } catch { /* best effort */ }
+      }
+      log(`  ✗ ${cond.diagnosis} failed (condition released, will retry next run): ${err instanceof Error ? err.message : String(err)}`);
+      continue;
+    }
     results.push(result);
 
     log(`generated #${number} ${result.diagnosis} -> cases/${result.folder} (postAt ${result.postAt})`);

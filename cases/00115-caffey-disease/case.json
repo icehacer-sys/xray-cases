@@ -1,0 +1,56 @@
+{
+  "folder": "00115-caffey-disease",
+  "number": 115,
+  "diagnosis": "Caffey disease",
+  "aliases": [
+    "infantile cortical hyperostosis"
+  ],
+  "symptom": "an irritable infant with hard tender swelling along the jaw and limbs",
+  "hook": "the baby's jaw and long bones were wrapped in thick new layers of bone like tree bark",
+  "whatYouSee": "Thick layers of new bone coating the jaw and long bones in a young infant.",
+  "whyItMatters": "It is a self limiting infantile disorder of exuberant new bone that can mimic infection or injury so recognising it avoids alarm and needless treatment.",
+  "treatment": "It usually settles on its own and anti inflammatories help symptoms in severe cases.",
+  "takeaway": "Thick new bone on the jaw and limbs of a young baby is Caffey disease.",
+  "igOptions": [
+    "A. Caffey disease",
+    "B. Osteomyelitis",
+    "C. Scurvy"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-09T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Caffey disease",
+    "aliases": [
+      "infantile cortical hyperostosis"
+    ],
+    "symptom": "an irritable infant with hard tender swelling along the jaw and limbs",
+    "hook": "the baby's jaw and long bones were wrapped in thick new layers of bone like tree bark",
+    "view": "AP forearm and lower leg of a young child",
+    "keyFindings": "thick smooth layers of periosteal new bone cuffing the shafts of the ulna and tibia so the cortex looks heavily padded with the underlying bone intact",
+    "whatYouSee": "Thick layers of new bone coating the jaw and long bones in a young infant.",
+    "whyItMatters": "It is a self limiting infantile disorder of exuberant new bone that can mimic infection or injury so recognising it avoids alarm and needless treatment.",
+    "treatment": "It usually settles on its own and anti inflammatories help symptoms in severe cases.",
+    "takeaway": "Thick new bone on the jaw and limbs of a young baby is Caffey disease.",
+    "igTitle": "THE BABY IN BARK",
+    "igOptions": [
+      "Caffey disease",
+      "Osteomyelitis",
+      "Scurvy"
+    ],
+    "igCorrect": "A",
+    "used": true,
+    "skipPublic": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Why does this baby's jaw look like solid rock?",
+  "seedHint": "Look at that jawbone and ask yourself: is this growth or armor?",
+  "generated": {
+    "threadsCaption": "A patient came in with an irritable infant with hard tender swelling along the jaw and limbs.\n\nThen the X-ray loaded 😭\n\nAnd the baby's jaw and long bones were wrapped in thick new layers of bone like tree bark.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Caffey disease\n\n👀 What you see:\nThick layers of new bone coating the jaw and long bones in a young infant.\n\n🦴 Why it matters:\nIt is a self limiting infantile disorder of exuberant new bone that can mimic infection or injury so recognising it avoids alarm and needless treatment.\n\n💊 Treatment:\nIt usually settles on its own and anti inflammatories help symptoms in severe cases.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nGrab it here 👇🏼\nspot.mednoteslab.com"
+  }
+}

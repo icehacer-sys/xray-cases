@@ -1,0 +1,61 @@
+{
+  "folder": "00110-epidermodysplasia-verruciformis",
+  "number": 110,
+  "diagnosis": "Epidermodysplasia verruciformis",
+  "aliases": [
+    "tree man syndrome",
+    "treeman syndrome",
+    "Lewandowsky-Lutz dysplasia",
+    "HPV tree man"
+  ],
+  "symptom": "hands where hard bark like growths had slowly taken over the fingers",
+  "hook": "the fingers had disappeared under growths that looked like bark",
+  "whatYouSee": "Thick knobbly soft tissue growths pile over the fingers and cast heavy shadows yet the bones underneath are untouched.",
+  "whyItMatters": "An inherited gap in immunity lets a common wart virus grow unchecked so the skin builds horn like towers for years.",
+  "treatment": "Surgery removes the bulk and it often regrows so the aim is control rather than cure.",
+  "takeaway": "Huge bark like growths sitting on completely normal finger bones is epidermodysplasia verruciformis.",
+  "igOptions": [
+    "A. Bone tumours pushing through the skin",
+    "B. Severe frostbite damage",
+    "C. Epidermodysplasia verruciformis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-04T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Epidermodysplasia verruciformis",
+    "aliases": [
+      "tree man syndrome",
+      "treeman syndrome",
+      "Lewandowsky-Lutz dysplasia",
+      "HPV tree man"
+    ],
+    "symptom": "hands where hard bark like growths had slowly taken over the fingers",
+    "hook": "the fingers had disappeared under growths that looked like bark",
+    "view": "PA both hands",
+    "keyFindings": "bulky irregular soft tissue masses heaped over the fingers and back of the hand casting dense shadows while the bones underneath remain intact and normal",
+    "whatYouSee": "Thick knobbly soft tissue growths pile over the fingers and cast heavy shadows yet the bones underneath are untouched.",
+    "whyItMatters": "An inherited gap in immunity lets a common wart virus grow unchecked so the skin builds horn like towers for years.",
+    "treatment": "Surgery removes the bulk and it often regrows so the aim is control rather than cure.",
+    "takeaway": "Huge bark like growths sitting on completely normal finger bones is epidermodysplasia verruciformis.",
+    "igTitle": "THE HANDS THAT TURNED TO BARK",
+    "igOptions": [
+      "Bone tumours pushing through the skin",
+      "Severe frostbite damage",
+      "Epidermodysplasia verruciformis"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What do these hands remind you of?",
+  "seedHint": "Look at where the fingers end and something else begins.",
+  "generated": {
+    "threadsCaption": "A patient came in with hands where hard bark like growths had slowly taken over the fingers.\n\nThen the X-ray loaded 😭\n\nAnd the fingers had disappeared under growths that looked like bark.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Epidermodysplasia verruciformis\n\n👀 What you see:\nThick knobbly soft tissue growths pile over the fingers and cast heavy shadows yet the bones underneath are untouched.\n\n🦴 Why it matters:\nAn inherited gap in immunity lets a common wart virus grow unchecked so the skin builds horn like towers for years.\n\n💊 Treatment:\nSurgery removes the bulk and it often regrows so the aim is control rather than cure.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  }
+}

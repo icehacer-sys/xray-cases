@@ -1,0 +1,61 @@
+{
+  "folder": "00107-haemophilic-arthropathy",
+  "number": 107,
+  "diagnosis": "Haemophilic arthropathy",
+  "aliases": [
+    "hemophilic arthropathy",
+    "haemophilia joint disease",
+    "hemophilia arthropathy",
+    "bleeding disorder arthropathy"
+  ],
+  "symptom": "a young man whose knee had swollen with bleeds since he was a small child",
+  "hook": "the knee looked like it had been slowly eaten from the inside",
+  "whatYouSee": "The notch between the knee condyles is widened and scooped out with a squared off kneecap and a badly worn joint space.",
+  "whyItMatters": "Blood leaks into the joint again and again and the iron in it eats the cartilage and reshapes the growing bone.",
+  "treatment": "Clotting factor replacement prevents further bleeds while a ruined joint may need replacing.",
+  "takeaway": "A widened scooped intercondylar notch with a squared patella is haemophilic arthropathy.",
+  "igOptions": [
+    "A. Haemophilic arthropathy",
+    "B. Septic arthritis",
+    "C. Ordinary osteoarthritis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-01T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Haemophilic arthropathy",
+    "aliases": [
+      "hemophilic arthropathy",
+      "haemophilia joint disease",
+      "hemophilia arthropathy",
+      "bleeding disorder arthropathy"
+    ],
+    "symptom": "a young man whose knee had swollen with bleeds since he was a small child",
+    "hook": "the knee looked like it had been slowly eaten from the inside",
+    "view": "AP knee",
+    "keyFindings": "a widened and deepened intercondylar notch with squaring of the lower patella dense enlarged epiphyses and marked narrowing of the joint space",
+    "whatYouSee": "The notch between the knee condyles is widened and scooped out with a squared off kneecap and a badly worn joint space.",
+    "whyItMatters": "Blood leaks into the joint again and again and the iron in it eats the cartilage and reshapes the growing bone.",
+    "treatment": "Clotting factor replacement prevents further bleeds while a ruined joint may need replacing.",
+    "takeaway": "A widened scooped intercondylar notch with a squared patella is haemophilic arthropathy.",
+    "igTitle": "THE JOINT THAT KEPT BLEEDING",
+    "igOptions": [
+      "Haemophilic arthropathy",
+      "Septic arthritis",
+      "Ordinary osteoarthritis"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What could slowly wreck a joint from childhood?",
+  "seedHint": "Look at the bone edges and ask yourself if something wore this down from outside or inside.",
+  "generated": {
+    "threadsCaption": "A patient came in with a young man whose knee had swollen with bleeds since he was a small child.\n\nThen the X-ray loaded 😭\n\nAnd the knee looked like it had been slowly eaten from the inside.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Haemophilic arthropathy\n\n👀 What you see:\nThe notch between the knee condyles is widened and scooped out with a squared off kneecap and a badly worn joint space.\n\n🦴 Why it matters:\nBlood leaks into the joint again and again and the iron in it eats the cartilage and reshapes the growing bone.\n\n💊 Treatment:\nClotting factor replacement prevents further bleeds while a ruined joint may need replacing.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}

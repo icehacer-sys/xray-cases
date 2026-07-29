@@ -1,0 +1,58 @@
+{
+  "folder": "00116-osteogenesis-imperfecta",
+  "number": 116,
+  "diagnosis": "Osteogenesis imperfecta",
+  "aliases": [
+    "brittle bone disease",
+    "OI"
+  ],
+  "symptom": "repeated fractures from minor knocks since early childhood, with bowed limbs",
+  "hook": "the bones were paper-thin and bowed, marked with healed fractures at every turn",
+  "whatYouSee": "Thin, under-mineralised, bowed bones with multiple fractures in different stages of healing.",
+  "whyItMatters": "It is an inherited collagen disorder causing fragile bones, blue sclerae and hearing loss, with fractures from minimal trauma.",
+  "treatment": "Management includes bisphosphonates to strengthen bone, fracture care, surgical rodding of long bones, and physiotherapy.",
+  "takeaway": "Thin, bowed bones with many old fractures point to osteogenesis imperfecta, brittle bone disease.",
+  "igOptions": [
+    "A. Child abuse",
+    "B. Osteogenesis imperfecta",
+    "C. Rickets"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-10T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Osteogenesis imperfecta",
+    "aliases": [
+      "brittle bone disease",
+      "OI"
+    ],
+    "symptom": "repeated fractures from minor knocks since early childhood, with bowed limbs",
+    "hook": "the bones were paper-thin and bowed, marked with healed fractures at every turn",
+    "view": "AP both lower legs of an adult cropped below the knee with no pelvis or groin in frame",
+    "keyFindings": "markedly bowed slender lower leg bones with thin cortices and multiple healed fracture deformities at different levels giving the shafts an irregular knobbly outline",
+    "whatYouSee": "Thin, under-mineralised, bowed bones with multiple fractures in different stages of healing.",
+    "whyItMatters": "It is an inherited collagen disorder causing fragile bones, blue sclerae and hearing loss, with fractures from minimal trauma.",
+    "treatment": "Management includes bisphosphonates to strengthen bone, fracture care, surgical rodding of long bones, and physiotherapy.",
+    "takeaway": "Thin, bowed bones with many old fractures point to osteogenesis imperfecta, brittle bone disease.",
+    "igTitle": "BONES LIKE GLASS",
+    "igOptions": [
+      "Child abuse",
+      "Osteogenesis imperfecta",
+      "Rickets"
+    ],
+    "igCorrect": "B",
+    "used": true,
+    "skipPublic": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Have you ever seen bones look this fragile?",
+  "seedHint": "Look at the thickness of those bones and then look again.",
+  "generated": {
+    "threadsCaption": "A patient came in with repeated fractures from minor knocks since early childhood, with bowed limbs.\n\nThen the X-ray loaded 😭\n\nAnd the bones were paper-thin and bowed, marked with healed fractures at every turn.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Osteogenesis imperfecta\n\n👀 What you see:\nThin, under-mineralised, bowed bones with multiple fractures in different stages of healing.\n\n🦴 Why it matters:\nIt is an inherited collagen disorder causing fragile bones, blue sclerae and hearing loss, with fractures from minimal trauma.\n\n💊 Treatment:\nManagement includes bisphosphonates to strengthen bone, fracture care, surgical rodding of long bones, and physiotherapy.",
+    "igCaption": "",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 👇🏼\nrare.mednoteslab.com"
+  }
+}
