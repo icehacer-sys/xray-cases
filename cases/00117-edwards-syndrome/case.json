@@ -1,0 +1,59 @@
+{
+  "folder": "00117-edwards-syndrome",
+  "number": 117,
+  "diagnosis": "Edwards syndrome",
+  "aliases": [
+    "trisomy 18",
+    "Edward syndrome",
+    "trisomy eighteen"
+  ],
+  "symptom": "a newborn with fists that would not open and soles that curved outward",
+  "hook": "the fingers were locked in an overlapping grip that could not be straightened",
+  "whatYouSee": "Both newborn fists stay clenched with the index finger crossing over the middle one and the little finger crossing over the ring.",
+  "whyItMatters": "An extra copy of chromosome 18 affects the whole body and the heart and breathing problems are usually very severe.",
+  "treatment": "Care centres on comfort and feeding support along with treating the heart problems that can be helped.",
+  "takeaway": "Newborn fists locked in a crossed overlapping grip point to trisomy 18.",
+  "igOptions": [
+    "A. Arthrogryposis",
+    "B. Edwards syndrome",
+    "C. Birth injury to the nerves"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-12T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Edwards syndrome",
+    "aliases": [
+      "trisomy 18",
+      "Edward syndrome",
+      "trisomy eighteen"
+    ],
+    "symptom": "a newborn with fists that would not open and soles that curved outward",
+    "hook": "the fingers were locked in an overlapping grip that could not be straightened",
+    "view": "PA both hands of a young infant",
+    "keyFindings": "small hands held in a fixed clenched posture with the index finger overlapping the middle finger and the little finger overlapping the ring finger",
+    "whatYouSee": "Both newborn fists stay clenched with the index finger crossing over the middle one and the little finger crossing over the ring.",
+    "whyItMatters": "An extra copy of chromosome 18 affects the whole body and the heart and breathing problems are usually very severe.",
+    "treatment": "Care centres on comfort and feeding support along with treating the heart problems that can be helped.",
+    "takeaway": "Newborn fists locked in a crossed overlapping grip point to trisomy 18.",
+    "igTitle": "THE FISTS THAT WOULD NOT OPEN",
+    "igOptions": [
+      "Arthrogryposis",
+      "Edwards syndrome",
+      "Birth injury to the nerves"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 5,
+  "laypersonQuestion": "Have you ever seen a fist that just will not open?",
+  "seedHint": "Look at how those fingers cross each other and ask yourself if this is a bone problem or something else entirely",
+  "generated": {
+    "threadsCaption": "A patient came in with a newborn with fists that would not open and soles that curved outward.\n\nThen the X-ray loaded 😭\n\nAnd the fingers were locked in an overlapping grip that could not be straightened.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Edwards syndrome\n\n👀 What you see:\nBoth newborn fists stay clenched with the index finger crossing over the middle one and the little finger crossing over the ring.\n\n🦴 Why it matters:\nAn extra copy of chromosome 18 affects the whole body and the heart and breathing problems are usually very severe.\n\n💊 Treatment:\nCare centres on comfort and feeding support along with treating the heart problems that can be helped.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}
