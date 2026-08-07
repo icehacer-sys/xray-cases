@@ -30,8 +30,8 @@
     ],
     "symptom": "a tall heavy boned person with facial swelling and progressive facial weakness and hearing loss",
     "hook": "every bone looked massively overgrown and dense especially the skull which had thickened enormously",
-    "view": "skull and tubular bones",
-    "keyFindings": "marked symmetric bony overgrowth and sclerosis of the skull and mandible and tubular bones with narrowing of the skull foramina",
+    "view": "lateral skull",
+    "keyFindings": "a markedly thickened dense calvarium with a heavily sclerotic skull base and an enlarged thickened mandible so the whole skull looks overgrown and chalk white",
     "whatYouSee": "Greatly thickened dense skull and jaw bones with overgrown dense long bones.",
     "whyItMatters": "It is a rare sclerosing dysplasia from too much bone formation and the thickened skull traps the cranial nerves causing facial weakness and deafness and raised pressure.",
     "treatment": "Care is supportive with surgery to decompress trapped nerves or the brainstem when needed.",
@@ -46,10 +46,6 @@
     "used": true,
     "skipPublic": true
   },
-  "needsReview": true,
-  "verifyDefects": [
-    "genitalia still visible after auto-censor — blur manually (regencase grid + blurbox) then clear needsReview"
-  ],
   "difficulty": 4,
   "laypersonQuestion": "Does this skeleton look too big for one person?",
   "seedHint": "Start at the skull and ask whether you have ever seen bone walls that thick",

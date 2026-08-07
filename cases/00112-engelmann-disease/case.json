@@ -30,8 +30,8 @@
     ],
     "symptom": "leg pain a waddling walk and weak muscles in a child or young adult",
     "hook": "the shafts of the long bones were thickened and dense while the ends stayed normal",
-    "view": "AP long bones",
-    "keyFindings": "symmetric cortical thickening and sclerosis of the diaphyses of the long bones with sparing of the epiphyses and metaphyses",
+    "view": "AP both lower legs cropped below the knee with no pelvis or groin in frame",
+    "keyFindings": "symmetric fusiform thickening and dense sclerosis of the cortex along the mid shaft of both tibiae with the bone ends spared so the middle of each shaft looks heavily padded",
     "whatYouSee": "Thickened dense midshafts of the long bones with the ends looking normal.",
     "whyItMatters": "It is an inherited bone dysplasia that thickens the shafts and causes bone pain and a waddling gait and can narrow the skull base.",
     "treatment": "Treatment is supportive and steroids are used for bone pain in some patients.",
@@ -46,10 +46,6 @@
     "used": true,
     "skipPublic": true
   },
-  "needsReview": true,
-  "verifyDefects": [
-    "genitalia still visible after auto-censor — blur manually (regencase grid + blurbox) then clear needsReview"
-  ],
   "difficulty": 4,
   "laypersonQuestion": "Why do only the middles of bones look off?",
   "seedHint": "The ends look fine but the shafts tell a very different story",
