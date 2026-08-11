@@ -1,0 +1,114 @@
+# Threads token watchdog.
+#
+# WHY THIS EXISTS: on 2026-08-09 the long-lived Threads token silently expired 60 days
+# after it was minted. Nothing was watching it, so the first symptom was two days of
+# dead automation — the publisher could not post (00117 Edwards syndrome was lost) and
+# the reply bot 401'd on every cycle until it hit its consecutive-failure abort and sent
+# "All jobs have failed".
+#
+# A Threads long-lived token lasts ~60 days and can be refreshed at any point WHILE IT IS
+# STILL VALID (and at least 24h old); each refresh buys another 60 days. Once it has
+# actually expired, refresh is rejected and the only cure is a manual re-authorization.
+# So the whole game is: never let it reach expiry unnoticed.
+#
+# This workflow runs daily and does two things:
+#   1. REFRESH  — if GH_PAT is configured, it refreshes the token and writes the new value
+#                 back to the THREADS_ACCESS_TOKEN secret of every repo in TARGET_REPOS.
+#                 That makes expiry impossible without any human action.
+#   2. ALARM    — with or without GH_PAT, it fails loudly while there is still plenty of
+#                 runway, so a broken refresh surfaces as a GitHub notification long before
+#                 anything stops posting.
+#
+# GH_PAT: a fine-grained PAT with "Secrets: read and write" on both repos. Without it this
+# workflow still runs and still alarms, it just cannot self-heal.
+name: threads-token-health
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # daily 06:00 UTC, well before the 19:00 posting window
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  # Repos whose THREADS_ACCESS_TOKEN secret should be kept in sync.
+  TARGET_REPOS: "icehacer-sys/xray-cases icehacer-sys/threads-bot"
+  # Refresh once the token is older than this. Threads requires >24h; refreshing well
+  # before expiry means a few failed days in a row still cannot run us out of runway.
+  REFRESH_AFTER_DAYS: "20"
+  # Fail the job (and notify) when fewer than this many days remain.
+  ALARM_UNDER_DAYS: "14"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate, refresh, and alarm
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          set -uo pipefail
+
+          if [ -z "${THREADS_ACCESS_TOKEN:-}" ]; then
+            echo "::error::THREADS_ACCESS_TOKEN secret is empty."
+            exit 1
+          fi
+
+          # 1) Is the token alive at all?
+          me=$(curl -s -w '\n%{http_code}' "https://graph.threads.net/v1.0/me?fields=username" \
+                 -H "Authorization: Bearer ${THREADS_ACCESS_TOKEN}")
+          code=$(printf '%s' "$me" | tail -1)
+          body=$(printf '%s' "$me" | sed '$d')
+
+          if [ "$code" != "200" ]; then
+            echo "::error::Threads token is INVALID or EXPIRED (HTTP $code). $body"
+            echo "Refresh cannot revive an expired token. Re-authorize manually:"
+            echo "  1. cd threads-bot && npm run token:url     (open the printed URL, approve)"
+            echo "  2. npm run token -- <code from the redirect>"
+            echo "  3. gh secret set THREADS_ACCESS_TOKEN --repo icehacer-sys/xray-cases   --body '<new token>'"
+            echo "  4. gh secret set THREADS_ACCESS_TOKEN --repo icehacer-sys/threads-bot  --body '<new token>'"
+            exit 1
+          fi
+          echo "token valid, account: $body"
+
+          # 2) How much runway is left? debug_token reports the real expiry.
+          dbg=$(curl -s "https://graph.threads.net/debug_token?input_token=${THREADS_ACCESS_TOKEN}&access_token=${THREADS_ACCESS_TOKEN}")
+          expires=$(printf '%s' "$dbg" | grep -o '"expires_at":[0-9]*' | head -1 | cut -d: -f2)
+          now=$(date -u +%s)
+
+          if [ -n "${expires:-}" ] && [ "$expires" -gt 0 ] 2>/dev/null; then
+            left=$(( (expires - now) / 86400 ))
+            age_note="expires in ${left}d ($(date -u -d "@${expires}" '+%Y-%m-%d'))"
+          else
+            left=""
+            age_note="expiry not reported by debug_token"
+          fi
+          echo "$age_note"
+
+          # 3) Refresh while still valid. Each refresh resets the clock to ~60 days.
+          new=$(curl -s "https://graph.threads.net/refresh_access_token?grant_type=th_refresh_token&access_token=${THREADS_ACCESS_TOKEN}")
+          token=$(printf '%s' "$new" | grep -o '"access_token":"[^"]*"' | cut -d'"' -f4)
+
+          if [ -z "${token:-}" ]; then
+            echo "::warning::refresh call returned no token: $new"
+          elif [ -z "${GH_PAT:-}" ]; then
+            echo "::warning::Token refreshed successfully but GH_PAT is not set, so the new value cannot be stored."
+            echo "Add a fine-grained PAT with Secrets: read+write as GH_PAT to make this self-healing."
+          else
+            for repo in $TARGET_REPOS; do
+              if printf '%s' "$token" | GH_TOKEN="$GH_PAT" gh secret set THREADS_ACCESS_TOKEN --repo "$repo"; then
+                echo "updated THREADS_ACCESS_TOKEN in $repo"
+              else
+                echo "::error::failed to update THREADS_ACCESS_TOKEN in $repo"
+              fi
+            done
+          fi
+
+          # 4) Alarm on low runway so a silent refresh failure still surfaces early.
+          if [ -n "${left:-}" ] && [ "$left" -lt "${ALARM_UNDER_DAYS}" ]; then
+            echo "::error::Threads token expires in ${left} days and automatic refresh is not keeping up. Act now."
+            exit 1
+          fi
+          echo "OK"

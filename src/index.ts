@@ -129,6 +129,14 @@ async function runPublish(cli: Cli): Promise<void> {
 
   log(`xray-poster ${cli.mode} @ ${now.toISOString()} — ${cases.length} case(s)`);
 
+  // Preflight the Threads token BEFORE the per-case loop. Every case body is wrapped in its
+  // own try/catch (so one poisoned case cannot stall the rest), which means a dead token
+  // degrades into "every case logs a warning and the run exits 0" — exactly what happened on
+  // 2026-08-09, when the token expired and the publisher stayed silently green for two days
+  // while 00117 was never posted. An auth failure is global, not per-case, so fail the whole
+  // run and let CI raise it.
+  await assertThreadsTokenValid(live);
+
   for (const c of cases) {
     // Per-case isolation: one poisoned case (a deleted post, a 404 image URL, an owner-edited
     // answer over 500 chars) must NEVER abort the whole run — otherwise it crash-loops every
@@ -504,6 +512,33 @@ function answerSpoiler(text: string): SpoilerEntity[] {
 
 // Find the LIVE "Answer:" comment on a post (the owner may have deleted the bot's answer
 // and posted/pinned their own). Best-effort; returns null on any failure.
+/**
+ * Throw (failing the run, so CI notifies) when the Threads token is dead. Skipped in
+ * dry-run, which must stay usable offline. A long-lived Threads token lasts ~60 days and
+ * can only be refreshed WHILE STILL VALID, so an expired one needs manual re-authorization
+ * — see .github/workflows/token-health.yml, which refreshes it daily to prevent this.
+ */
+async function assertThreadsTokenValid(live: boolean): Promise<void> {
+  if (!live) return;
+  try {
+    const username = await getMyUsername();
+    log(`  threads token OK (@${username})`);
+  } catch (err) {
+    const msg = errMsg(err);
+    if (/401|expired|OAuthException|access token/i.test(msg)) {
+      throw new Error(
+        `Threads access token is invalid or expired — nothing can post. Re-authorize:\n` +
+          `  1. cd threads-bot && npm run token:url  (open URL, approve)\n` +
+          `  2. npm run token -- <code>\n` +
+          `  3. gh secret set THREADS_ACCESS_TOKEN --repo icehacer-sys/xray-cases  --body '<token>'\n` +
+          `  4. gh secret set THREADS_ACCESS_TOKEN --repo icehacer-sys/threads-bot --body '<token>'\n` +
+          `Original error: ${msg}`,
+      );
+    }
+    throw err; // a transient network blip should still fail loudly rather than post nothing
+  }
+}
+
 async function findOwnerAnswerComment(postId: string): Promise<string | null> {
   try {
     const me = await getMyUsername();
