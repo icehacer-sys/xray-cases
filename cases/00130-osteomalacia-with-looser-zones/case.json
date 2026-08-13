@@ -1,0 +1,61 @@
+{
+  "folder": "00130-osteomalacia-with-looser-zones",
+  "number": 130,
+  "diagnosis": "Osteomalacia with Looser zones",
+  "aliases": [
+    "Looser zones",
+    "pseudofractures",
+    "adult rickets",
+    "Milkman fractures"
+  ],
+  "symptom": "aching bones and a waddling walk in an adult who never sees the sun",
+  "hook": "there were neat cracks running into the bone that were not fractures at all",
+  "whatYouSee": "Narrow clean bands cut straight into the bone edges on both sides in exactly the same places and nothing is displaced.",
+  "whyItMatters": "Severe vitamin D deficiency leaves new bone soft and unmineralised so it cracks without ever properly breaking.",
+  "treatment": "Vitamin D and calcium replacement with a hunt for why it was deficient in the first place.",
+  "takeaway": "Symmetric lucent bands cutting into bone that never displace are Looser zones of osteomalacia.",
+  "igOptions": [
+    "A. Stress fractures",
+    "B. Osteomalacia with Looser zones",
+    "C. Bone metastases"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-27T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Osteomalacia with Looser zones",
+    "aliases": [
+      "Looser zones",
+      "pseudofractures",
+      "adult rickets",
+      "Milkman fractures"
+    ],
+    "symptom": "aching bones and a waddling walk in an adult who never sees the sun",
+    "hook": "there were neat cracks running into the bone that were not fractures at all",
+    "view": "AP both forearms",
+    "keyFindings": "symmetric narrow lucent bands running perpendicular into the cortex of both forearm bones with sclerotic margins and no displacement",
+    "whatYouSee": "Narrow clean bands cut straight into the bone edges on both sides in exactly the same places and nothing is displaced.",
+    "whyItMatters": "Severe vitamin D deficiency leaves new bone soft and unmineralised so it cracks without ever properly breaking.",
+    "treatment": "Vitamin D and calcium replacement with a hunt for why it was deficient in the first place.",
+    "takeaway": "Symmetric lucent bands cutting into bone that never displace are Looser zones of osteomalacia.",
+    "igTitle": "THE CRACKS THAT NEVER BROKE",
+    "igOptions": [
+      "Stress fractures",
+      "Osteomalacia with Looser zones",
+      "Bone metastases"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What makes a crack that is not a break?",
+  "seedHint": "Look at those tidy lines cutting into the bone edges and ask yourself: healing or something else entirely",
+  "generated": {
+    "threadsCaption": "A patient came in with aching bones and a waddling walk in an adult who never sees the sun.\n\nThen the X-ray loaded 😭\n\nAnd there were neat cracks running into the bone that were not fractures at all.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Osteomalacia with Looser zones\n\n👀 What you see:\nNarrow clean bands cut straight into the bone edges on both sides in exactly the same places and nothing is displaced.\n\n🦴 Why it matters:\nSevere vitamin D deficiency leaves new bone soft and unmineralised so it cracks without ever properly breaking.\n\n💊 Treatment:\nVitamin D and calcium replacement with a hunt for why it was deficient in the first place.",
+    "igCaption": "",
+    "ctaText": "Some of these X-rays are so rare most doctors will never see them in person.\n\nI collected 10 of the rarest findings in radiology into one PDF.\n\nLook then guess then flip for a simple breakdown.\n\nIf the weird ones hooked you then these are the next level 👇🏼\nrare.mednoteslab.com"
+  }
+}

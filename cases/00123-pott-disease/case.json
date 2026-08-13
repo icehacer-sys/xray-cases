@@ -1,0 +1,59 @@
+{
+  "folder": "00123-pott-disease",
+  "number": 123,
+  "diagnosis": "Pott disease",
+  "aliases": [
+    "tuberculous spondylitis",
+    "spinal tuberculosis",
+    "gibbus deformity"
+  ],
+  "symptom": "months of back pain with a sharp angle that had appeared in the spine",
+  "hook": "two vertebrae had crumbled together and folded the spine into a sharp angle",
+  "whatYouSee": "Two neighbouring vertebrae have collapsed into each other and the spine folds forward into a sharp angle at that point.",
+  "whyItMatters": "Tuberculosis has eaten through the vertebral bodies and the collapsing bone can press on the spinal cord.",
+  "treatment": "Long antituberculous drug treatment with surgery to decompress and stabilise a threatened cord.",
+  "takeaway": "Collapsed neighbouring vertebrae with a lost disc space and a sharp angle is spinal tuberculosis.",
+  "igOptions": [
+    "A. Osteoporotic collapse",
+    "B. Pott disease",
+    "C. Spinal metastases"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-20T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Pott disease",
+    "aliases": [
+      "tuberculous spondylitis",
+      "spinal tuberculosis",
+      "gibbus deformity"
+    ],
+    "symptom": "months of back pain with a sharp angle that had appeared in the spine",
+    "hook": "two vertebrae had crumbled together and folded the spine into a sharp angle",
+    "view": "lateral thoracic spine cropped above the pelvis",
+    "keyFindings": "collapse of adjacent vertebral bodies with loss of the disc space between them and sharp angular forward kyphosis at that level",
+    "whatYouSee": "Two neighbouring vertebrae have collapsed into each other and the spine folds forward into a sharp angle at that point.",
+    "whyItMatters": "Tuberculosis has eaten through the vertebral bodies and the collapsing bone can press on the spinal cord.",
+    "treatment": "Long antituberculous drug treatment with surgery to decompress and stabilise a threatened cord.",
+    "takeaway": "Collapsed neighbouring vertebrae with a lost disc space and a sharp angle is spinal tuberculosis.",
+    "igTitle": "THE SPINE THAT FOLDED",
+    "igOptions": [
+      "Osteoporotic collapse",
+      "Pott disease",
+      "Spinal metastases"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does that spine look like it took a hard corner?",
+  "seedHint": "Focus on where the two bones meet and ask yourself if bone can just collapse like that.",
+  "generated": {
+    "threadsCaption": "A patient came in with months of back pain with a sharp angle that had appeared in the spine.\n\nThen the X-ray loaded 😭\n\nAnd two vertebrae had crumbled together and folded the spine into a sharp angle.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Pott disease\n\n👀 What you see:\nTwo neighbouring vertebrae have collapsed into each other and the spine folds forward into a sharp angle at that point.\n\n🦴 Why it matters:\nTuberculosis has eaten through the vertebral bodies and the collapsing bone can press on the spinal cord.\n\n💊 Treatment:\nLong antituberculous drug treatment with surgery to decompress and stabilise a threatened cord.",
+    "igCaption": "",
+    "ctaText": "If the hopital meme lives in your head rent free.\n\nI put the wildest cases into the Hopital Field Edition.\n\nGuess hopital then flip for the real diagnosis every time.\n\nGrab it here 👇🏼\nhopital.mednoteslab.com"
+  }
+}

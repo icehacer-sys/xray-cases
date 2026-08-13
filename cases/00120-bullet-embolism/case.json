@@ -1,0 +1,57 @@
+{
+  "folder": "00120-bullet-embolism",
+  "number": 120,
+  "diagnosis": "Bullet embolism",
+  "aliases": [
+    "missile embolism",
+    "migrating bullet"
+  ],
+  "symptom": "a gunshot wound to the thigh yet the bullet was nowhere near the entry point",
+  "hook": "the bullet had travelled through the bloodstream and parked in the chest",
+  "whatYouSee": "A solid metal bullet sits deep in the chest vessels with no injury track anywhere around it to explain how it arrived.",
+  "whyItMatters": "The bullet entered a vein and was carried by the blood until the vessel became too narrow to pass.",
+  "treatment": "Removal by catheter or surgery depending on where it lodges and how unstable it is.",
+  "takeaway": "A bullet far from its entry wound with no track has embolised through the bloodstream.",
+  "igOptions": [
+    "A. A second gunshot wound",
+    "B. An old surgical clip",
+    "C. Bullet embolism"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-17T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Bullet embolism",
+    "aliases": [
+      "missile embolism",
+      "migrating bullet"
+    ],
+    "symptom": "a gunshot wound to the thigh yet the bullet was nowhere near the entry point",
+    "hook": "the bullet had travelled through the bloodstream and parked in the chest",
+    "view": "PA chest",
+    "keyFindings": "a dense metallic bullet fragment lying within the pulmonary vascular shadow of the chest with no fracture or wound track anywhere near it",
+    "whatYouSee": "A solid metal bullet sits deep in the chest vessels with no injury track anywhere around it to explain how it arrived.",
+    "whyItMatters": "The bullet entered a vein and was carried by the blood until the vessel became too narrow to pass.",
+    "treatment": "Removal by catheter or surgery depending on where it lodges and how unstable it is.",
+    "takeaway": "A bullet far from its entry wound with no track has embolised through the bloodstream.",
+    "igTitle": "THE BULLET THAT SWAM",
+    "igOptions": [
+      "A second gunshot wound",
+      "An old surgical clip",
+      "Bullet embolism"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Why is the bullet nowhere near the wound?",
+  "seedHint": "The entry point and the metal are far apart. Did it walk there or did something carry it?",
+  "generated": {
+    "threadsCaption": "A patient came in with a gunshot wound to the thigh yet the bullet was nowhere near the entry point.\n\nThen the X-ray loaded 😭\n\nAnd the bullet had travelled through the bloodstream and parked in the chest.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Bullet embolism\n\n👀 What you see:\nA solid metal bullet sits deep in the chest vessels with no injury track anywhere around it to explain how it arrived.\n\n🦴 Why it matters:\nThe bullet entered a vein and was carried by the blood until the vessel became too narrow to pass.\n\n💊 Treatment:\nRemoval by catheter or surgery depending on where it lodges and how unstable it is.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 strange real X-rays with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  }
+}

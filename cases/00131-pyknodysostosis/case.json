@@ -1,0 +1,57 @@
+{
+  "folder": "00131-pyknodysostosis",
+  "number": 131,
+  "diagnosis": "Pyknodysostosis",
+  "aliases": [
+    "pycnodysostosis",
+    "Toulouse-Lautrec syndrome"
+  ],
+  "symptom": "short stature with fingers that had shortened and bones that broke too easily",
+  "hook": "the bones were chalk dense yet the fingertips were dissolving away",
+  "whatYouSee": "Every bone in the hand is chalk white and dense yet the very fingertips look whittled down to points.",
+  "whyItMatters": "A missing enzyme stops old bone being cleared so the skeleton grows dense brittle and oddly fragile.",
+  "treatment": "No cure so care focuses on preventing and fixing the fractures these dense brittle bones keep sustaining.",
+  "takeaway": "Chalk dense bones with dissolving fingertips is pyknodysostosis.",
+  "igOptions": [
+    "A. Scleroderma",
+    "B. Pyknodysostosis",
+    "C. Osteopetrosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-28T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Pyknodysostosis",
+    "aliases": [
+      "pycnodysostosis",
+      "Toulouse-Lautrec syndrome"
+    ],
+    "symptom": "short stature with fingers that had shortened and bones that broke too easily",
+    "hook": "the bones were chalk dense yet the fingertips were dissolving away",
+    "view": "PA hand",
+    "keyFindings": "uniformly dense sclerotic hand bones with tapering destruction of the terminal phalangeal tufts so the fingertips appear whittled to points",
+    "whatYouSee": "Every bone in the hand is chalk white and dense yet the very fingertips look whittled down to points.",
+    "whyItMatters": "A missing enzyme stops old bone being cleared so the skeleton grows dense brittle and oddly fragile.",
+    "treatment": "No cure so care focuses on preventing and fixing the fractures these dense brittle bones keep sustaining.",
+    "takeaway": "Chalk dense bones with dissolving fingertips is pyknodysostosis.",
+    "igTitle": "THE CHALK HANDS",
+    "igOptions": [
+      "Scleroderma",
+      "Pyknodysostosis",
+      "Osteopetrosis"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 5,
+  "laypersonQuestion": "Why would bones be both rock hard and melting away?",
+  "seedHint": "Look at the fingertips then look at the shafts. Dense or dissolving?",
+  "generated": {
+    "threadsCaption": "A patient came in with short stature with fingers that had shortened and bones that broke too easily.\n\nThen the X-ray loaded 😭\n\nAnd the bones were chalk dense yet the fingertips were dissolving away.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Pyknodysostosis\n\n👀 What you see:\nEvery bone in the hand is chalk white and dense yet the very fingertips look whittled down to points.\n\n🦴 Why it matters:\nA missing enzyme stops old bone being cleared so the skeleton grows dense brittle and oddly fragile.\n\n💊 Treatment:\nNo cure so care focuses on preventing and fixing the fractures these dense brittle bones keep sustaining.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}

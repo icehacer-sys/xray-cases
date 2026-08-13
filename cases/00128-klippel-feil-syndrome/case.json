@@ -1,0 +1,57 @@
+{
+  "folder": "00128-klippel-feil-syndrome",
+  "number": 128,
+  "diagnosis": "Klippel-Feil syndrome",
+  "aliases": [
+    "congenital cervical fusion",
+    "Klippel Feil"
+  ],
+  "symptom": "a very short neck with a low hairline and a head that barely turned",
+  "hook": "several neck vertebrae had been fused into one solid block since birth",
+  "whatYouSee": "Several neck vertebrae have merged into one solid block of bone with no disc spaces left between them.",
+  "whyItMatters": "The fused segment throws all the movement onto the joints above and below which wear out early and can be unstable.",
+  "treatment": "Activity advice with surgery reserved for instability or nerve compression.",
+  "takeaway": "Neck vertebrae fused into a single block with a short neck is Klippel-Feil syndrome.",
+  "igOptions": [
+    "A. Old fracture healing",
+    "B. Klippel-Feil syndrome",
+    "C. Ankylosing spondylitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-25T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Klippel-Feil syndrome",
+    "aliases": [
+      "congenital cervical fusion",
+      "Klippel Feil"
+    ],
+    "symptom": "a very short neck with a low hairline and a head that barely turned",
+    "hook": "several neck vertebrae had been fused into one solid block since birth",
+    "view": "AP cervical spine",
+    "keyFindings": "two or more cervical vertebrae fused into a single block of bone with absent disc spaces between them and a shortened narrowed neck",
+    "whatYouSee": "Several neck vertebrae have merged into one solid block of bone with no disc spaces left between them.",
+    "whyItMatters": "The fused segment throws all the movement onto the joints above and below which wear out early and can be unstable.",
+    "treatment": "Activity advice with surgery reserved for instability or nerve compression.",
+    "takeaway": "Neck vertebrae fused into a single block with a short neck is Klippel-Feil syndrome.",
+    "igTitle": "THE NECK CARVED FROM ONE BONE",
+    "igOptions": [
+      "Old fracture healing",
+      "Klippel-Feil syndrome",
+      "Ankylosing spondylitis"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does this spine look normal to you?",
+  "seedHint": "Count the neck bones - then ask yourself if something got left out.",
+  "generated": {
+    "threadsCaption": "A patient came in with a very short neck with a low hairline and a head that barely turned.\n\nThen the X-ray loaded 😭\n\nAnd several neck vertebrae had been fused into one solid block since birth.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Klippel-Feil syndrome\n\n👀 What you see:\nSeveral neck vertebrae have merged into one solid block of bone with no disc spaces left between them.\n\n🦴 Why it matters:\nThe fused segment throws all the movement onto the joints above and below which wear out early and can be unstable.\n\n💊 Treatment:\nActivity advice with surgery reserved for instability or nerve compression.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 strange real X-rays with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  }
+}

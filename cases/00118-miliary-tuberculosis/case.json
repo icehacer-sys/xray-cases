@@ -1,0 +1,59 @@
+{
+  "folder": "00118-miliary-tuberculosis",
+  "number": 118,
+  "diagnosis": "Miliary tuberculosis",
+  "aliases": [
+    "miliary TB",
+    "disseminated tuberculosis",
+    "millet seed lung"
+  ],
+  "symptom": "weeks of fever night sweats and a cough that would not settle",
+  "hook": "both lungs were dusted with thousands of tiny identical specks",
+  "whatYouSee": "Both lungs are peppered evenly with thousands of tiny nodules all the same size like a snowstorm frozen in place.",
+  "whyItMatters": "The infection has escaped the lung and seeded through the bloodstream so it is now everywhere including the brain.",
+  "treatment": "Months of combined antituberculous drugs started urgently and continued well past the point of feeling better.",
+  "takeaway": "Thousands of identical tiny nodules evenly spread through both lungs is miliary tuberculosis.",
+  "igOptions": [
+    "A. Miliary tuberculosis",
+    "B. Pulmonary oedema",
+    "C. Sarcoidosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-15T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Miliary tuberculosis",
+    "aliases": [
+      "miliary TB",
+      "disseminated tuberculosis",
+      "millet seed lung"
+    ],
+    "symptom": "weeks of fever night sweats and a cough that would not settle",
+    "hook": "both lungs were dusted with thousands of tiny identical specks",
+    "view": "PA chest",
+    "keyFindings": "countless uniform tiny nodules of roughly two millimetres scattered evenly through both lungs from apex to base giving a fine snowstorm appearance",
+    "whatYouSee": "Both lungs are peppered evenly with thousands of tiny nodules all the same size like a snowstorm frozen in place.",
+    "whyItMatters": "The infection has escaped the lung and seeded through the bloodstream so it is now everywhere including the brain.",
+    "treatment": "Months of combined antituberculous drugs started urgently and continued well past the point of feeling better.",
+    "takeaway": "Thousands of identical tiny nodules evenly spread through both lungs is miliary tuberculosis.",
+    "igTitle": "THE SNOWSTORM LUNG",
+    "igOptions": [
+      "Miliary tuberculosis",
+      "Pulmonary oedema",
+      "Sarcoidosis"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does this lung look dusted or dotted to you?",
+  "seedHint": "Count the dots. Are they random and messy or eerily uniform across both lungs?",
+  "generated": {
+    "threadsCaption": "A patient came in with weeks of fever night sweats and a cough that would not settle.\n\nThen the X-ray loaded 😭\n\nAnd both lungs were dusted with thousands of tiny identical specks.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Miliary tuberculosis\n\n👀 What you see:\nBoth lungs are peppered evenly with thousands of tiny nodules all the same size like a snowstorm frozen in place.\n\n🦴 Why it matters:\nThe infection has escaped the lung and seeded through the bloodstream so it is now everywhere including the brain.\n\n💊 Treatment:\nMonths of combined antituberculous drugs started urgently and continued well past the point of feeling better.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  }
+}

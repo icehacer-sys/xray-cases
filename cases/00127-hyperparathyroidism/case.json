@@ -1,0 +1,59 @@
+{
+  "folder": "00127-hyperparathyroidism",
+  "number": 127,
+  "diagnosis": "Hyperparathyroidism",
+  "aliases": [
+    "primary hyperparathyroidism",
+    "subperiosteal resorption",
+    "brown tumour"
+  ],
+  "symptom": "kidney stones aching bones and a mood that had gone flat",
+  "hook": "the finger bones had round holes punched clean through them",
+  "whatYouSee": "Smooth round holes sit punched through several finger and hand bones while the bone around them looks thinned and washed out.",
+  "whyItMatters": "An overactive parathyroid gland is pulling calcium out of the skeleton and dumping it into the kidneys.",
+  "treatment": "Removing the overactive gland stops the bone loss and the skeleton slowly rebuilds.",
+  "takeaway": "Round punched out holes through the hand bones is hyperparathyroidism eating the skeleton.",
+  "igOptions": [
+    "A. Hyperparathyroidism",
+    "B. Rheumatoid arthritis",
+    "C. Scleroderma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-24T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Hyperparathyroidism",
+    "aliases": [
+      "primary hyperparathyroidism",
+      "subperiosteal resorption",
+      "brown tumour"
+    ],
+    "symptom": "kidney stones aching bones and a mood that had gone flat",
+    "hook": "the finger bones had round holes punched clean through them",
+    "view": "PA hand",
+    "keyFindings": "multiple well defined round lucent brown tumours punched through the phalanges and metacarpals on a background of generally thinned washed out bone",
+    "whatYouSee": "Smooth round holes sit punched through several finger and hand bones while the bone around them looks thinned and washed out.",
+    "whyItMatters": "An overactive parathyroid gland is pulling calcium out of the skeleton and dumping it into the kidneys.",
+    "treatment": "Removing the overactive gland stops the bone loss and the skeleton slowly rebuilds.",
+    "takeaway": "Round punched out holes through the hand bones is hyperparathyroidism eating the skeleton.",
+    "igTitle": "THE HOLES IN THE HAND",
+    "igOptions": [
+      "Hyperparathyroidism",
+      "Rheumatoid arthritis",
+      "Scleroderma"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What could eat away the edge of a bone?",
+  "seedHint": "Look at the outer rims of the finger bones and ask yourself what belongs there and what does not.",
+  "generated": {
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com",
+    "threadsCaption": "A patient came in with kidney stones aching bones and a mood that had gone flat.\n\nThen the X-ray loaded 😭\n\nAnd the finger bones had round holes punched clean through them.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Hyperparathyroidism\n\n👀 What you see:\nSmooth round holes sit punched through several finger and hand bones while the bone around them looks thinned and washed out.\n\n🦴 Why it matters:\nAn overactive parathyroid gland is pulling calcium out of the skeleton and dumping it into the kidneys.\n\n💊 Treatment:\nRemoving the overactive gland stops the bone loss and the skeleton slowly rebuilds."
+  }
+}

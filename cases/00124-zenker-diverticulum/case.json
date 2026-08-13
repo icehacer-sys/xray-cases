@@ -1,0 +1,57 @@
+{
+  "folder": "00124-zenker-diverticulum",
+  "number": 124,
+  "diagnosis": "Zenker diverticulum",
+  "aliases": [
+    "pharyngeal pouch",
+    "hypopharyngeal diverticulum"
+  ],
+  "symptom": "food coming back up hours later and a gurgling sound in the neck",
+  "hook": "a pouch had ballooned out of the back of the throat and was holding onto meals",
+  "whatYouSee": "A rounded pouch filled with bright contrast bulges backwards out of the lower throat and holds a puddle of it.",
+  "whyItMatters": "Food collects in the pouch and can spill into the airway at night which is how these patients get pneumonia.",
+  "treatment": "Endoscopic or open division of the muscle bar with removal or suspension of the pouch.",
+  "takeaway": "A contrast filled pouch bulging backwards from the lower throat is a Zenker diverticulum.",
+  "igOptions": [
+    "A. Zenker diverticulum",
+    "B. Oesophageal cancer",
+    "C. A swallowed foreign body"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-21T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Zenker diverticulum",
+    "aliases": [
+      "pharyngeal pouch",
+      "hypopharyngeal diverticulum"
+    ],
+    "symptom": "food coming back up hours later and a gurgling sound in the neck",
+    "hook": "a pouch had ballooned out of the back of the throat and was holding onto meals",
+    "view": "lateral neck during a barium swallow",
+    "keyFindings": "a rounded contrast filled pouch projecting backwards from the lower pharynx just above the upper oesophageal sphincter with contrast pooling in it",
+    "whatYouSee": "A rounded pouch filled with bright contrast bulges backwards out of the lower throat and holds a puddle of it.",
+    "whyItMatters": "Food collects in the pouch and can spill into the airway at night which is how these patients get pneumonia.",
+    "treatment": "Endoscopic or open division of the muscle bar with removal or suspension of the pouch.",
+    "takeaway": "A contrast filled pouch bulging backwards from the lower throat is a Zenker diverticulum.",
+    "igTitle": "THE POUCH THAT KEPT DINNER",
+    "igOptions": [
+      "Zenker diverticulum",
+      "Oesophageal cancer",
+      "A swallowed foreign body"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Where did all that food actually go?",
+  "seedHint": "Look just above the shoulders and ask yourself if that bulge belongs there.",
+  "generated": {
+    "threadsCaption": "A patient came in with food coming back up hours later and a gurgling sound in the neck.\n\nThen the X-ray loaded 😭\n\nAnd a pouch had ballooned out of the back of the throat and was holding onto meals.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Zenker diverticulum\n\n👀 What you see:\nA rounded pouch filled with bright contrast bulges backwards out of the lower throat and holds a puddle of it.\n\n🦴 Why it matters:\nFood collects in the pouch and can spill into the airway at night which is how these patients get pneumonia.\n\n💊 Treatment:\nEndoscopic or open division of the muscle bar with removal or suspension of the pouch.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "folder": "00125-ewing-sarcoma",
+  "number": 125,
+  "diagnosis": "Ewing sarcoma",
+  "aliases": [
+    "Ewing tumour",
+    "onion skin periosteal reaction"
+  ],
+  "symptom": "a young adult with deep arm pain and fevers mistaken for infection",
+  "hook": "the bone had grown layer upon layer of new shell like an onion",
+  "whatYouSee": "The shaft of the bone looks moth eaten and is wrapped in stacked layers of new bone like the rings of an onion.",
+  "whyItMatters": "This is an aggressive bone cancer of young people and the fever it causes gets it mistaken for infection.",
+  "treatment": "Chemotherapy followed by surgical removal or radiotherapy of the affected segment.",
+  "takeaway": "Stacked onion skin layers on a moth eaten shaft in a young adult is Ewing sarcoma.",
+  "igOptions": [
+    "A. Chronic osteomyelitis",
+    "B. Ewing sarcoma",
+    "C. Bone cyst"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-22T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Ewing sarcoma",
+    "aliases": [
+      "Ewing tumour",
+      "onion skin periosteal reaction"
+    ],
+    "symptom": "a young adult with deep arm pain and fevers mistaken for infection",
+    "hook": "the bone had grown layer upon layer of new shell like an onion",
+    "view": "AP humerus",
+    "keyFindings": "a moth eaten permeative lesion in the shaft of the humerus with multiple stacked layers of lamellated periosteal new bone and an adjacent soft tissue mass",
+    "whatYouSee": "The shaft of the bone looks moth eaten and is wrapped in stacked layers of new bone like the rings of an onion.",
+    "whyItMatters": "This is an aggressive bone cancer of young people and the fever it causes gets it mistaken for infection.",
+    "treatment": "Chemotherapy followed by surgical removal or radiotherapy of the affected segment.",
+    "takeaway": "Stacked onion skin layers on a moth eaten shaft in a young adult is Ewing sarcoma.",
+    "igTitle": "THE ONION BONE",
+    "igOptions": [
+      "Chronic osteomyelitis",
+      "Ewing sarcoma",
+      "Bone cyst"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does this bone look like it grew rings like a tree?",
+  "seedHint": "Focus on those thin layers wrapped around the bone and ask yourself if that looks like healing or something else entirely",
+  "generated": {
+    "threadsCaption": "A patient came in with a young adult with deep arm pain and fevers mistaken for infection.\n\nThen the X-ray loaded 😭\n\nAnd the bone had grown layer upon layer of new shell like an onion.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ewing sarcoma\n\n👀 What you see:\nThe shaft of the bone looks moth eaten and is wrapped in stacked layers of new bone like the rings of an onion.\n\n🦴 Why it matters:\nThis is an aggressive bone cancer of young people and the fever it causes gets it mistaken for infection.\n\n💊 Treatment:\nChemotherapy followed by surgical removal or radiotherapy of the affected segment.",
+    "igCaption": "",
+    "ctaText": "These are the 10 cases that broke the internet.\n\nCombined they crossed 20 million views right here on Threads.\n\nI bundled the 10 highest viewed guesses into one pack.\n\nLook then guess then flip for the answer and the story behind it.\n\nGrab it here 👇🏼\nviral.mednoteslab.com"
+  }
+}

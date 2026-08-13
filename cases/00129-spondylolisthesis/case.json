@@ -1,0 +1,59 @@
+{
+  "folder": "00129-spondylolisthesis",
+  "number": 129,
+  "diagnosis": "Spondylolisthesis",
+  "aliases": [
+    "vertebral slip",
+    "pars defect",
+    "spondylolysis with slip"
+  ],
+  "symptom": "back pain that eased leaning forward and a step you could feel through the skin",
+  "hook": "one vertebra had slid forward off the one beneath it",
+  "whatYouSee": "One vertebra has slipped forward off the one below so the neat back line of the spine steps out of place.",
+  "whyItMatters": "The slip narrows the canal where the nerves run which is why walking hurts and leaning forward brings relief.",
+  "treatment": "Core strengthening and activity change first with fusion surgery for a slip that keeps progressing.",
+  "takeaway": "A vertebra stepped forward off the one below it is spondylolisthesis.",
+  "igOptions": [
+    "A. Spondylolisthesis",
+    "B. Compression fracture",
+    "C. Disc herniation"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-26T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Spondylolisthesis",
+    "aliases": [
+      "vertebral slip",
+      "pars defect",
+      "spondylolysis with slip"
+    ],
+    "symptom": "back pain that eased leaning forward and a step you could feel through the skin",
+    "hook": "one vertebra had slid forward off the one beneath it",
+    "view": "lateral lumbar spine with no pelvis or groin in frame",
+    "keyFindings": "forward displacement of one lumbar vertebral body over the one below producing a visible step in the posterior vertebral line with a defect in the pars",
+    "whatYouSee": "One vertebra has slipped forward off the one below so the neat back line of the spine steps out of place.",
+    "whyItMatters": "The slip narrows the canal where the nerves run which is why walking hurts and leaning forward brings relief.",
+    "treatment": "Core strengthening and activity change first with fusion surgery for a slip that keeps progressing.",
+    "takeaway": "A vertebra stepped forward off the one below it is spondylolisthesis.",
+    "igTitle": "THE SPINE THAT SLIPPED",
+    "igOptions": [
+      "Spondylolisthesis",
+      "Compression fracture",
+      "Disc herniation"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Does that spine look perfectly stacked to you?",
+  "seedHint": "Focus on where two bones meet and ask if they line up or if one has shifted forward.",
+  "generated": {
+    "threadsCaption": "A patient came in with back pain that eased leaning forward and a step you could feel through the skin.\n\nThen the X-ray loaded 😭\n\nAnd one vertebra had slid forward off the one beneath it.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Spondylolisthesis\n\n👀 What you see:\nOne vertebra has slipped forward off the one below so the neat back line of the spine steps out of place.\n\n🦴 Why it matters:\nThe slip narrows the canal where the nerves run which is why walking hurts and leaning forward brings relief.\n\n💊 Treatment:\nCore strengthening and activity change first with fusion surgery for a slip that keeps progressing.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 50 of the strangest ones ever into a book.\n\nTake your guess then flip for the answer and the true story behind each one.\n\nGrab it here 👇🏼\nspot.mednoteslab.com"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "folder": "00119-emphysematous-cholecystitis",
+  "number": 119,
+  "diagnosis": "Emphysematous cholecystitis",
+  "aliases": [
+    "gas forming cholecystitis",
+    "gas in the gallbladder wall"
+  ],
+  "symptom": "severe right upper belly pain and fever in a poorly controlled diabetic",
+  "hook": "there was gas outlining an organ that should never contain any",
+  "whatYouSee": "A thin curve of gas traces the whole outline of the gallbladder and more gas sits trapped inside it.",
+  "whyItMatters": "Gas forming bacteria are eating the gallbladder wall from within and it can perforate within hours.",
+  "treatment": "Emergency antibiotics with urgent removal of the gallbladder or a drain if the patient is too unwell.",
+  "takeaway": "Gas drawing the outline of the gallbladder is emphysematous cholecystitis until proven otherwise.",
+  "igOptions": [
+    "A. Bowel gas overlying the liver",
+    "B. Emphysematous cholecystitis",
+    "C. A large gallstone"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-16T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Emphysematous cholecystitis",
+    "aliases": [
+      "gas forming cholecystitis",
+      "gas in the gallbladder wall"
+    ],
+    "symptom": "severe right upper belly pain and fever in a poorly controlled diabetic",
+    "hook": "there was gas outlining an organ that should never contain any",
+    "view": "coned AP radiograph centred on the right upper quadrant showing the lower ribs and upper abdomen only with the pelvis and lower abdomen completely out of frame",
+    "keyFindings": "a curved rim of gas outlining the gallbladder wall with more gas collected inside the lumen in the right upper abdomen",
+    "whatYouSee": "A thin curve of gas traces the whole outline of the gallbladder and more gas sits trapped inside it.",
+    "whyItMatters": "Gas forming bacteria are eating the gallbladder wall from within and it can perforate within hours.",
+    "treatment": "Emergency antibiotics with urgent removal of the gallbladder or a drain if the patient is too unwell.",
+    "takeaway": "Gas drawing the outline of the gallbladder is emphysematous cholecystitis until proven otherwise.",
+    "igTitle": "THE ORGAN FULL OF AIR",
+    "igOptions": [
+      "Bowel gas overlying the liver",
+      "Emphysematous cholecystitis",
+      "A large gallstone"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Why would gas show up where it has no business being?",
+  "seedHint": "Focus on that hollow shape in the upper right and ask yourself if air belongs there.",
+  "generated": {
+    "threadsCaption": "A patient came in with severe right upper belly pain and fever in a poorly controlled diabetic.\n\nThen the X-ray loaded 😭\n\nAnd there was gas outlining an organ that should never contain any.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Emphysematous cholecystitis\n\n👀 What you see:\nA thin curve of gas traces the whole outline of the gallbladder and more gas sits trapped inside it.\n\n🦴 Why it matters:\nGas forming bacteria are eating the gallbladder wall from within and it can perforate within hours.\n\n💊 Treatment:\nEmergency antibiotics with urgent removal of the gallbladder or a drain if the patient is too unwell.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  }
+}

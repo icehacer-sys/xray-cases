@@ -1,0 +1,59 @@
+{
+  "folder": "00121-rib-notching-in-aortic-coarctation",
+  "number": 121,
+  "diagnosis": "Rib notching in aortic coarctation",
+  "aliases": [
+    "rib notching",
+    "coarctation of the aorta",
+    "inferior rib notching"
+  ],
+  "symptom": "high blood pressure in the arms with weak pulses in both legs",
+  "hook": "the undersides of the ribs had been quietly scalloped away",
+  "whatYouSee": "The lower edges of several ribs on both sides carry smooth scooped notches and the aortic outline is indented.",
+  "whyItMatters": "A narrowed aorta forces blood through the rib arteries instead and those swollen vessels carve into the bone.",
+  "treatment": "Repair of the narrowed segment by balloon stent or surgery followed by lifelong blood pressure review.",
+  "takeaway": "Notched under surfaces of the ribs with high arm pressures points to coarctation of the aorta.",
+  "igOptions": [
+    "A. Rib notching from aortic coarctation",
+    "B. Healing rib fractures",
+    "C. Bone metastases"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-18T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Rib notching in aortic coarctation",
+    "aliases": [
+      "rib notching",
+      "coarctation of the aorta",
+      "inferior rib notching"
+    ],
+    "symptom": "high blood pressure in the arms with weak pulses in both legs",
+    "hook": "the undersides of the ribs had been quietly scalloped away",
+    "view": "PA chest",
+    "keyFindings": "smooth scalloped notches along the inferior margins of the posterior third to eighth ribs on both sides with an indented aortic contour",
+    "whatYouSee": "The lower edges of several ribs on both sides carry smooth scooped notches and the aortic outline is indented.",
+    "whyItMatters": "A narrowed aorta forces blood through the rib arteries instead and those swollen vessels carve into the bone.",
+    "treatment": "Repair of the narrowed segment by balloon stent or surgery followed by lifelong blood pressure review.",
+    "takeaway": "Notched under surfaces of the ribs with high arm pressures points to coarctation of the aorta.",
+    "igTitle": "THE RIBS THAT WERE EATEN",
+    "igOptions": [
+      "Rib notching from aortic coarctation",
+      "Healing rib fractures",
+      "Bone metastases"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What could slowly carve grooves into bone?",
+  "seedHint": "Look at the undersides of the ribs and ask yourself if bone should ever look this worn down.",
+  "generated": {
+    "threadsCaption": "A patient came in with high blood pressure in the arms with weak pulses in both legs.\n\nThen the X-ray loaded 😭\n\nAnd the undersides of the ribs had been quietly scalloped away.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Rib notching in aortic coarctation\n\n👀 What you see:\nThe lower edges of several ribs on both sides carry smooth scooped notches and the aortic outline is indented.\n\n🦴 Why it matters:\nA narrowed aorta forces blood through the rib arteries instead and those swollen vessels carve into the bone.\n\n💊 Treatment:\nRepair of the narrowed segment by balloon stent or surgery followed by lifelong blood pressure review.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}

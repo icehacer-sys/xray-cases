@@ -1,0 +1,57 @@
+{
+  "folder": "00126-osteoid-osteoma",
+  "number": 126,
+  "diagnosis": "Osteoid osteoma",
+  "aliases": [
+    "osteoid osteoma nidus",
+    "night pain tumour"
+  ],
+  "symptom": "night pain in the shin for a year that vanished with a plain aspirin",
+  "hook": "a tiny dot of tumour had built a fortress of dense bone around itself",
+  "whatYouSee": "A tiny round dark spot sits in the cortex ringed by a thick collar of dense white bone it built around itself.",
+  "whyItMatters": "The nidus pumps out prostaglandin which is why the pain comes at night and melts away with aspirin.",
+  "treatment": "Burning the nidus with a needle guided by imaging cures it and the pain stops almost at once.",
+  "takeaway": "Night pain relieved by aspirin with a tiny nidus in dense bone is an osteoid osteoma.",
+  "igOptions": [
+    "A. Stress fracture",
+    "B. Bone abscess",
+    "C. Osteoid osteoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-23T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Osteoid osteoma",
+    "aliases": [
+      "osteoid osteoma nidus",
+      "night pain tumour"
+    ],
+    "symptom": "night pain in the shin for a year that vanished with a plain aspirin",
+    "hook": "a tiny dot of tumour had built a fortress of dense bone around itself",
+    "view": "AP tibia",
+    "keyFindings": "a small round lucent nidus under one centimetre in the cortex of the tibia surrounded by a thick dense collar of reactive sclerotic bone",
+    "whatYouSee": "A tiny round dark spot sits in the cortex ringed by a thick collar of dense white bone it built around itself.",
+    "whyItMatters": "The nidus pumps out prostaglandin which is why the pain comes at night and melts away with aspirin.",
+    "treatment": "Burning the nidus with a needle guided by imaging cures it and the pain stops almost at once.",
+    "takeaway": "Night pain relieved by aspirin with a tiny nidus in dense bone is an osteoid osteoma.",
+    "igTitle": "THE DOT THAT KEPT HIM AWAKE",
+    "igOptions": [
+      "Stress fracture",
+      "Bone abscess",
+      "Osteoid osteoma"
+    ],
+    "igCorrect": "C",
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Why would a bone grow a wall around something?",
+  "seedHint": "Look at the dense ring - is it protecting something or trapping it?",
+  "generated": {
+    "threadsCaption": "A patient came in with night pain in the shin for a year that vanished with a plain aspirin.\n\nThen the X-ray loaded 😭\n\nAnd a tiny dot of tumour had built a fortress of dense bone around itself.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Osteoid osteoma\n\n👀 What you see:\nA tiny round dark spot sits in the cortex ringed by a thick collar of dense white bone it built around itself.\n\n🦴 Why it matters:\nThe nidus pumps out prostaglandin which is why the pain comes at night and melts away with aspirin.\n\n💊 Treatment:\nBurning the nidus with a needle guided by imaging cures it and the pain stops almost at once.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  }
+}
