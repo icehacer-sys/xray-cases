@@ -480,12 +480,16 @@
       "answerCommentId": "18114010582750842",
       "answerPostedAt": "2026-08-16T19:23:31.040Z",
       "ctaPostedAt": "2026-08-16T20:21:13.470Z"
+    },
+    "00120-bullet-embolism": {
+      "threadsPostId": "18086133032218095",
+      "challengePostedAt": "2026-08-17T19:01:26.476Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-08-16",
+      "date": "2026-08-17",
       "count": 0
     }
   }
