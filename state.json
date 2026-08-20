@@ -501,12 +501,16 @@
       "answerCommentId": "17922747117444747",
       "answerPostedAt": "2026-08-19T19:21:56.042Z",
       "ctaPostedAt": "2026-08-19T20:18:29.718Z"
+    },
+    "00123-pott-disease": {
+      "threadsPostId": "18108495598849092",
+      "challengePostedAt": "2026-08-20T19:04:17.261Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "count": 0
     }
   }
