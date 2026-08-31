@@ -11,6 +11,7 @@ import { config } from "./config.js";
 import { generateXray } from "./openai.js";
 import { generateSlides } from "./slidegen.js";
 import { censorXray, blurBox } from "./censor.js";
+import { buildXrayPrompt } from "./anatomy.js";
 import sharp from "sharp";
 import type { Case, Condition } from "./types.js";
 
@@ -23,17 +24,21 @@ if (!folder) {
 }
 
 // Per-case prompt emphasis to strengthen the weak diagnostic feature the QA flagged.
+// Keyed by folder SLUG (the number prefix is stripped before lookup) so an emphasis written
+// for a case keeps working when the same diagnosis is regenerated under a new case number.
 const EMPHASIS: Record<string, string> = {
-  "00005-achondroplasia":
+  "achondroplasia":
     "Make the diagnosis unmistakable: show the classic achondroplasia pelvis with squared short iliac wings, " +
     "a champagne-glass pelvic inlet, narrow sacrosciatic notches, and horizontal flat acetabular roofs. Keep " +
     "any overlying bowel gas minimal and clean with no smudged or blotchy texture.",
-  "00006-cochlear-implant":
+  "cochlear-implant":
     "Make the cochlear implant unmistakable: a small round receiver-stimulator package fixed to the skull just " +
     "behind the ear, connected by a thin lead to a fine, tightly COILED electrode array spiralling into the " +
     "cochlea (the classic 'watch-spring' coil in the petrous temporal bone). Render that coil crisply and " +
-    "clearly. Exactly ONE implant.",
-  "00007-gallstone-ileus":
+    "clearly. Exactly ONE implant, entirely on ONE side of the head: the package, its lead, and the cochlear " +
+    "coil form a single unbroken connected chain on that same side. The lead must visibly JOIN the package to " +
+    "the coil and must not end in mid-air, and there must be no second package, lead, or coil anywhere.",
+  "gallstone-ileus":
     "Make the diagnosis unmistakable via the Rigler triad: multiple dilated gas-filled small-bowel loops " +
     "(obstruction), branching lucent gas in the biliary tree (pneumobilia) in the right upper quadrant, and a " +
     "single well-defined laminated ectopic gallstone in the right lower quadrant. The gallstone must be clearly visible.",
@@ -52,25 +57,17 @@ if (!cond) {
   process.exit(1);
 }
 
+/**
+ * Uses THE canonical prompt from anatomy.ts. This file used to carry its own weaker copy with
+ * no region rules and no device-coherence rule, so repairing a defective case could quietly
+ * reintroduce the very artifact the QA gate had just caught. `avoid` feeds the recorded
+ * verifyDefects back in so a regeneration is actively steered away from the known failure.
+ */
 function xrayPrompt(): string {
-  const lines = [
-    `Create a realistic, de-identified ${cond!.view} X-ray for a medical diagnosis challenge.`,
-    ``,
-    `Show classic ${cond!.diagnosis}: ${cond!.keyFindings}.`,
-    ``,
-    `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs. Do NOT`,
-    `duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired structure`,
-    `unless the pathology only changes a structure's position, shape, or density. Represent the pathology as a`,
-    `change to a SINGLE structure, never an added duplicate. No melted, smeared, doubled, or garbled bone.`,
-    ``,
-    `Prioritize clinical realism over symmetry. A genuine abnormal finding, not a perfect textbook diagram.`,
-    `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain. Diagnostic-quality`,
-    `radiograph, authentic grayscale contrast, natural X-ray grain, no cinematic glow, no artificial`,
-    `sharpening, no labels, arrows, or annotations. De-identified. No identifiers, branding, or watermark.`,
-  ];
-  const emph = EMPHASIS[folder];
-  if (emph) lines.push(``, emph);
-  return lines.join("\n");
+  return buildXrayPrompt(cond!, {
+    emphasis: EMPHASIS[folder] ?? EMPHASIS[folder.replace(/^\d+-/, "")],
+    avoid: c.verifyDefects ?? [],
+  });
 }
 
 if (mode === "xray") {
@@ -143,7 +140,25 @@ if (mode === "xray") {
   const outPath = join(dir, `_grid_${file}.png`);
   writeFileSync(outPath, out);
   console.log(outPath);
+} else if (mode === "zoom") {
+  // Extract + enlarge a normalized box for close inspection. Writes _zoom_<file>.png (not committed).
+  //   npx tsx src/regencase.ts <folder> zoom <file> <x> <y> <w> <h>
+  const file = process.argv[4] ?? "xray";
+  const [x, y, w, h] = process.argv.slice(5).map(Number);
+  const fp = join(dir, file.endsWith(".png") ? file : `${file}.png`);
+  const png = readFileSync(fp);
+  const meta = await sharp(png).metadata();
+  const W = meta.width ?? 1024;
+  const H = meta.height ?? 1024;
+  const left = Math.max(0, Math.round(x * W));
+  const top = Math.max(0, Math.round(y * H));
+  const width = Math.min(W - left, Math.round(w * W));
+  const height = Math.min(H - top, Math.round(h * H));
+  const region = await sharp(png).extract({ left, top, width, height }).resize(680).png().toBuffer();
+  const outPath = join(dir, `_zoom_${file}.png`);
+  writeFileSync(outPath, region);
+  console.log(outPath);
 } else {
-  console.error(`unknown mode "${mode}" (use xray|slides|censor|blurbox)`);
+  console.error(`unknown mode "${mode}" (use xray|slides|censor|blurbox|grid|zoom)`);
   process.exit(1);
 }

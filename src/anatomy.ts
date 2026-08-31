@@ -10,6 +10,8 @@
 // chest" view picks up both the chest and the shoulder-girdle rule), so keep rules
 // orthogonal and non-contradictory. Ordered head-to-toe for readable prompts.
 
+import type { Condition } from "./types.js";
+
 export interface RegionRule {
   id: string;
   /** Matches against the lowercased Condition.view. */
@@ -200,6 +202,13 @@ const NEGATED_CLAUSE = /\b(?:no|without|excluding|not\s+including|avoid(?:ing)?|
 const CROP_BOUNDARY = /\bcropped\s+(?:above|below|at|to|just\s+\w+)\b[^.;]*/g;
 
 /**
+ * The third way a vetted view excludes a region: "...upper abdomen only WITH THE PELVIS and
+ * lower abdomen completely OUT OF FRAME". Neither a "no X" negation nor a "cropped at X"
+ * boundary, so it needs its own pattern.
+ */
+const OUT_OF_FRAME = /with[^.;]*?out of (?:the )?frame/g;
+
+/**
  * Implanted hardware and swallowed objects get their own coherence rule, keyed off the
  * DIAGNOSIS/keyFindings rather than the view because a device can appear on any film. Added
  * after a cochlear-implant X-ray passed QA with the receiver package on one side of the
@@ -232,7 +241,11 @@ export function deviceLines(conditionText: string, kind: "prompt" | "verify"): s
 
 /** All region rules whose matcher fires for this view (head-to-toe order preserved). */
 export function matchedRegions(view: string): RegionRule[] {
-  const v = view.toLowerCase().replace(CROP_BOUNDARY, " ").replace(NEGATED_CLAUSE, " ");
+  const v = view
+    .toLowerCase()
+    .replace(CROP_BOUNDARY, " ")
+    .replace(OUT_OF_FRAME, " ")
+    .replace(NEGATED_CLAUSE, " ");
   return REGION_RULES.filter((r) => r.test.test(v));
 }
 
@@ -244,4 +257,62 @@ export function regionPromptLines(view: string): string[] {
 /** Region-specific QA checks for a view, flattened for the verifier prompt. */
 export function regionVerifyLines(view: string): string[] {
   return matchedRegions(view).flatMap((r) => r.verify);
+}
+
+/**
+ * THE canonical X-ray image prompt. Lives here (not in generate.ts) because regencase.ts
+ * regenerates images for existing cases too, and it used to carry its OWN weaker copy with no
+ * region rules and no device-coherence rule — so repairing a defective case could quietly
+ * reintroduce the very defect the gate had caught. One builder, one set of rules, both callers.
+ *
+ * `avoid` feeds a previous attempt's detected defects back in; `emphasis` lets a caller
+ * strengthen a weak diagnostic feature without forking the prompt.
+ */
+export function buildXrayPrompt(
+  cond: Pick<Condition, "view" | "diagnosis" | "keyFindings">,
+  opts: { avoid?: string[]; emphasis?: string } = {},
+): string {
+  const region = [
+    ...regionPromptLines(cond.view),
+    ...deviceLines(`${cond.diagnosis} ${cond.keyFindings}`, "prompt"),
+  ];
+  const lines = [
+    `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
+    ``,
+    `Show classic ${cond.diagnosis}: ${cond.keyFindings}.`,
+    ``,
+    `Render exactly ONE primary abnormality — the finding above. Everything else on the film is`,
+    `unremarkable, normal anatomy. Do not scatter extra lesions, densities, or incidental abnormalities.`,
+    ``,
+    `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs.`,
+    `Do NOT duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired`,
+    `structure (one scapula and one clavicle per side, one femoral head per hip, 12 rib pairs, five`,
+    `digits per hand/foot, one continuous spine, two orbits) unless the pathology itself only changes a`,
+    `structure's position, shape, or density. Represent the pathology as a change to a SINGLE structure,`,
+    `never as an added duplicate. No melted, smeared, doubled, or garbled bone.`,
+    ``,
+    `The PATHOLOGY may be irregular or asymmetric — that is expected. But every NON-pathological paired`,
+    `structure (both forearm bones, both sides of the jaw and dental arch, the ribs, the orbits) must stay`,
+    `bilaterally consistent, correctly counted, and cleanly superimposed where structures overlap. Make it`,
+    `look like a genuine abnormal finding, not a perfect textbook diagram.`,
+    ...(region.length ? ["", ...region] : []),
+    ``,
+    `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain.`,
+    ``,
+    `Radiology style: diagnostic-quality radiograph, authentic grayscale contrast, natural X-ray`,
+    `grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.`,
+    ``,
+    `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
+    `No watermark.`,
+    ``,
+    `Avoid these AI artifacts: duplicated or mirrored bones, a floating bone or tooth detached from the`,
+    `skeleton, merged or melted cortical bone, teeth outside the arch, an extra scapula/clavicle/rib, the`,
+    `wrong number of fingers or toes, a single fused forearm bone, and uniform stippled noise standing in for`,
+    `real tissue texture.`,
+  ];
+  if (opts.emphasis) lines.push(``, opts.emphasis);
+  if (opts.avoid?.length) {
+    lines.push(``, `Avoid these specific errors from a previous attempt: ${opts.avoid.slice(0, 4).join("; ")}.`);
+  }
+  return lines.join("\n");
 }

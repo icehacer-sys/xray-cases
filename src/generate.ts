@@ -28,7 +28,7 @@ import {
   pickCta,
 } from "./captions.js";
 import { generateXray } from "./openai.js";
-import { regionPromptLines, deviceLines } from "./anatomy.js";
+import { buildXrayPrompt } from "./anatomy.js";
 import { generateSlides } from "./slidegen.js";
 import { verifyXray, type XrayVerdict } from "./verify.js";
 import { censorUntilClean } from "./censor.js";
@@ -231,60 +231,6 @@ function placeholderXray(): Buffer {
 }
 
 // ---------------------------------------------------------------------------
-// X-ray image prompt — assembled from the Condition's view + keyFindings
-// (captions.imagePrompt-style).
-// ---------------------------------------------------------------------------
-
-function xrayPrompt(cond: Condition, avoid: string[] = []): string {
-  // Region-specific realism blocks come from the shared anatomy table (src/anatomy.ts) so the
-  // generation constraint and the QA verifier check for the SAME impossibilities per region and
-  // can never drift. gpt-image-2's recurring failure modes are dental arches, overlapping paired
-  // bones, and duplicated girdle/pelvis structures — each covered there view-by-view.
-  const region = [
-    ...regionPromptLines(cond.view),
-    ...deviceLines(`${cond.diagnosis} ${cond.keyFindings}`, "prompt"),
-  ];
-  const lines = [
-    `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
-    ``,
-    `Show classic ${cond.diagnosis}: ${cond.keyFindings}.`,
-    ``,
-    `Render exactly ONE primary abnormality — the finding above. Everything else on the film is`,
-    `unremarkable, normal anatomy. Do not scatter extra lesions, densities, or incidental abnormalities.`,
-    ``,
-    `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs.`,
-    `Do NOT duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired`,
-    `structure (one scapula and one clavicle per side, one femoral head per hip, 12 rib pairs, five`,
-    `digits per hand/foot, one continuous spine, two orbits) unless the pathology itself only changes a`,
-    `structure's position, shape, or density. Represent the pathology as a change to a SINGLE structure,`,
-    `never as an added duplicate. No melted, smeared, doubled, or garbled bone.`,
-    ``,
-    `The PATHOLOGY may be irregular or asymmetric — that is expected. But every NON-pathological paired`,
-    `structure (both forearm bones, both sides of the jaw and dental arch, the ribs, the orbits) must stay`,
-    `bilaterally consistent, correctly counted, and cleanly superimposed where structures overlap. Make it`,
-    `look like a genuine abnormal finding, not a perfect textbook diagram.`,
-    ...(region.length ? ["", ...region] : []),
-    ``,
-    `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain.`,
-    ``,
-    `Radiology style: diagnostic-quality radiograph, authentic grayscale contrast, natural X-ray`,
-    `grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.`,
-    ``,
-    `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
-    `No watermark.`,
-    ``,
-    `Avoid these AI artifacts: duplicated or mirrored bones, a floating bone or tooth detached from the`,
-    `skeleton, merged or melted cortical bone, teeth outside the arch, an extra scapula/clavicle/rib, the`,
-    `wrong number of fingers or toes, a single fused forearm bone, and uniform stippled noise standing in for`,
-    `real tissue texture.`,
-  ];
-  if (avoid.length) {
-    lines.push(``, `Avoid these specific errors from a previous attempt: ${avoid.slice(0, 4).join("; ")}.`);
-  }
-  return lines.join("\n");
-}
-
-// ---------------------------------------------------------------------------
 // Pre-draft captions (mirror index.ts ensureGenerated): caption/answer/ig/cta.
 // ---------------------------------------------------------------------------
 
@@ -361,7 +307,7 @@ async function generateOne(
   //    (duplicated/extra bones, wrong body part, melted bone) up to xrayMaxAttempts, feeding
   //    the detected defects back into the prompt to steer away from them. A persistent failure
   //    is queued with needsReview so the publisher never auto-posts a defective image.
-  let xrayPng = mock ? placeholderXray() : await generateXray(xrayPrompt(cond));
+  let xrayPng = mock ? placeholderXray() : await generateXray(buildXrayPrompt(cond));
   let verdict: XrayVerdict | undefined;
   if (!mock && config.xrayVerify) {
     const avoid: string[] = [];
@@ -373,7 +319,7 @@ async function generateOne(
       }
       log(`    ⚠ X-ray QA rejected (attempt ${attempt}/${config.xrayMaxAttempts}, ${verdict.severity}): ${verdict.defects.join(" | ")}`);
       avoid.push(...verdict.defects);
-      if (attempt < config.xrayMaxAttempts) xrayPng = await generateXray(xrayPrompt(cond, avoid));
+      if (attempt < config.xrayMaxAttempts) xrayPng = await generateXray(buildXrayPrompt(cond, { avoid }));
     }
   }
   // Blur external genitalia (if any) so Threads/IG do not flag the post as sensitive/adult.
@@ -448,9 +394,16 @@ async function generateOne(
 // Orchestrator
 // ---------------------------------------------------------------------------
 
-/** Cases that are queued and not yet posted (no challenge stage recorded). */
+/**
+ * Cases that are queued, not yet posted, and actually POSTABLE. A needsReview case is held by
+ * the publisher until a human fixes it, so counting it as queue depth makes --topup generate
+ * fewer than the target and silently shrinks the real runway — every held case would
+ * permanently cost a slot until someone cleared it.
+ */
 function unpostedCount(state: State): number {
-  return loadCases().filter((c) => !state.getStages(c.folder).challengePostedAt).length;
+  return loadCases().filter(
+    (c) => !state.getStages(c.folder).challengePostedAt && c.needsReview !== true,
+  ).length;
 }
 
 async function main(): Promise<void> {

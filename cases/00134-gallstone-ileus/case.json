@@ -28,7 +28,7 @@
     ],
     "symptom": "crampy abdominal pain and vomiting in an older patient with known gallstones",
     "hook": "the bowel had ballooned with gas and a stray stone had wandered far from the gallbladder",
-    "view": "supine abdomen",
+    "view": "supine abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
     "keyFindings": "the Rigler triad of dilated gas-filled small bowel loops plus gas in the biliary tree and an ectopic gallstone lodged in the bowel",
     "whatYouSee": "Dilated small bowel loops with air outlining the bile ducts and a single stray gallstone sitting low in the abdomen.",
     "whyItMatters": "A large gallstone has eroded through into the gut and lodged in the small bowel causing mechanical obstruction and it mostly strikes older patients and is easy to miss.",
@@ -43,10 +43,6 @@
     "igCorrect": "A",
     "used": true
   },
-  "needsReview": true,
-  "verifyDefects": [
-    "genitalia still visible after auto-censor — blur manually (regencase grid + blurbox) then clear needsReview"
-  ],
   "difficulty": 4,
   "laypersonQuestion": "Why is that stone so far from where it started?",
   "seedHint": "Look at where the gas stops and ask what does not belong there",

@@ -53,14 +53,14 @@ export async function generateXray(prompt: string): Promise<Buffer> {
  * case X-ray), uses the image-EDIT endpoint so the SAME X-ray is composited into the
  * slide (keeps it consistent across slides + the Threads post); otherwise text->image.
  */
-export async function generateSlideImage(prompt: string, baseImage?: Buffer): Promise<Buffer> {
+export async function generateSlideImage(prompt: string, baseImage?: Buffer, size = "1024x1024"): Promise<Buffer> {
   const key = requireEnv("OPENAI_API_KEY");
   let res: Response;
   if (baseImage) {
     const form = new FormData();
     form.append("model", config.imageModel);
     form.append("prompt", prompt);
-    form.append("size", "1024x1024");
+    form.append("size", size);
     form.append("n", "1");
     form.append("image", new Blob([new Uint8Array(baseImage)], { type: "image/png" }), "xray.png");
     res = await fetch("https://api.openai.com/v1/images/edits", {
@@ -72,7 +72,7 @@ export async function generateSlideImage(prompt: string, baseImage?: Buffer): Pr
     res = await fetch("https://api.openai.com/v1/images/generations", {
       method: "POST",
       headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ model: config.imageModel, prompt, size: "1024x1024", quality: config.imageQuality, n: 1 }),
+      body: JSON.stringify({ model: config.imageModel, prompt, size, quality: config.imageQuality, n: 1 }),
     });
   }
 
