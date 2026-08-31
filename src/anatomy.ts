@@ -101,6 +101,21 @@ export const REGION_RULES: RegionRule[] = [
     ],
   },
   {
+    id: "abdomen",
+    test: /abdom|\bkub\b|bowel|intestin|colon|gastric|stomach|liver|hepat|splee|splen|kidney|renal|ureter|bladder|gallbladder|biliar/,
+    prompt: [
+      `ABDOMEN: one gas-filled stomach bubble under the left hemidiaphragm, a bowel gas pattern that stays`,
+      `CONTINUOUS and connected as real loops (never disconnected floating gas blobs), one liver shadow on the`,
+      `right and one spleen on the left, two kidney outlines, one bladder, and a single midline lumbar spine`,
+      `flanked by two psoas margins. Do not duplicate an organ or add a second stomach bubble.`,
+    ],
+    verify: [
+      `ABDOMEN CHECK: one stomach bubble, a continuous connected bowel gas pattern (not disconnected floating`,
+      `gas blobs), one liver and one spleen, two kidney outlines, one midline lumbar spine with two psoas`,
+      `margins. A duplicated organ or gas that follows no anatomical lumen is a CRITICAL artifact.`,
+    ],
+  },
+  {
     id: "humerus-femur",
     test: /humerus|upper arm|femur|femoral shaft|thigh/,
     prompt: [
@@ -167,9 +182,26 @@ export const REGION_RULES: RegionRule[] = [
   },
 ];
 
+/**
+ * Region names mentioned only to EXCLUDE them from frame. Many vetted views end with a
+ * Meta-safety crop instruction like "AP chest and upper abdomen cropped at the navel with
+ * no pelvis or groin in frame" — a naive substring match sees "pelvis" there and injects the
+ * pelvis/hip rule into a CHEST prompt, ordering gpt-image-2 to draw a pelvic ring that has no
+ * business on the film. Strip negated clauses before matching so an excluded region never
+ * pulls in its own anatomy rule.
+ */
+const NEGATED_CLAUSE = /\b(?:no|without|excluding|not\s+including|avoid(?:ing)?|omit(?:ting)?|free\s+of)\b[^.;]*/g;
+
+/**
+ * A crop boundary names the region where the film STOPS, so that region is out of frame too
+ * ("...upper abdomen cropped above the pelvis", "...enlarged foot cropped at the ankle").
+ * Dropping everything from the crop phrase onward leaves only the anatomy actually pictured.
+ */
+const CROP_BOUNDARY = /\bcropped\s+(?:above|below|at|to|just\s+\w+)\b[^.;]*/g;
+
 /** All region rules whose matcher fires for this view (head-to-toe order preserved). */
 export function matchedRegions(view: string): RegionRule[] {
-  const v = view.toLowerCase();
+  const v = view.toLowerCase().replace(CROP_BOUNDARY, " ").replace(NEGATED_CLAUSE, " ");
   return REGION_RULES.filter((r) => r.test.test(v));
 }
 

@@ -20,7 +20,7 @@
       "Aortic aneurysm"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Massive ovarian cyst",
@@ -256,7 +256,7 @@
       "Retained wire"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Gallstone ileus",
@@ -278,7 +278,7 @@
       "Appendicitis"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Pectus excavatum",
@@ -301,7 +301,7 @@
       "Right middle lobe collapse"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Charcot joint",
@@ -324,7 +324,7 @@
       "Severe osteoarthritis"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Maffucci syndrome",
@@ -347,7 +347,7 @@
       "Gout"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Ollier disease",
@@ -629,7 +629,7 @@
       "Right lung collapse"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Cannonball metastases",
@@ -864,7 +864,7 @@
       "Rheumatoid arthritis"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Coin in the oesophagus",
@@ -887,7 +887,7 @@
       "Calcified node"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Swallowed sword",
@@ -1006,7 +1006,7 @@
       "Large gallstone"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Swallowed safety pin",
@@ -1029,7 +1029,7 @@
       "Coin"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Impalement by a metal rod",
@@ -1053,7 +1053,7 @@
       "Spinal rod"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Gas gangrene",
@@ -1076,7 +1076,7 @@
       "Old haematoma"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Fetus in fetu",
@@ -1285,7 +1285,7 @@
       "Gallstones"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Chronic pancreatitis with calcification",
@@ -1332,7 +1332,7 @@
       "Tumour"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Craniofacial fibrous dysplasia",
@@ -1550,7 +1550,7 @@
       "A surgical clip"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Swallowed keys",
@@ -1574,7 +1574,7 @@
       "A stack of coins"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": false
   },
   {
     "diagnosis": "Chilaiditi syndrome",
@@ -2314,5 +2314,98 @@
     ],
     "igCorrect": "B",
     "used": true
+  },
+  {
+    "diagnosis": "Sliding hiatus hernia",
+    "aliases": [
+      "hiatal hernia",
+      "sliding hiatal hernia"
+    ],
+    "symptom": "burning behind the breastbone after every meal and food that felt stuck",
+    "hook": "part of the stomach had crept up out of the abdomen and was sitting behind the heart",
+    "view": "PA chest",
+    "keyFindings": "a rounded retrocardiac gas collection with a clear air-fluid level sitting behind the heart above the diaphragm where lung should be with the rest of the chest normal",
+    "whatYouSee": "A bubble with a fluid level sits behind the heart where lung should be. That bubble is stomach that has slid up into the chest.",
+    "whyItMatters": "The stomach slides up through the gap the food pipe passes through so acid refluxes freely and a very large hernia can twist and strangle.",
+    "treatment": "Most are controlled with acid suppression and lifestyle change while large or twisting ones are pulled back down and the gap is tightened surgically.",
+    "takeaway": "An air-fluid level behind the heart means stomach in the chest so think hiatus hernia.",
+    "igTitle": "THE STOMACH IN THE CHEST",
+    "igOptions": [
+      "Lung abscess",
+      "Hiatus hernia",
+      "Pericardial cyst"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Retained Pantopaque contrast",
+    "aliases": [
+      "retained myelographic contrast",
+      "iophendylate droplets",
+      "pantopaque droplets",
+      "retained oil contrast"
+    ],
+    "symptom": "years of back pain in a patient whose spine was studied back in the nineteen seventies",
+    "hook": "tiny beads of oil were left inside the spine and they were still sitting there fifty years later",
+    "view": "lateral lumbar spine",
+    "keyFindings": "several rounded intensely dense droplets of oily contrast pooled inside the thecal sac of the lower spine appearing far brighter than the surrounding bone",
+    "whatYouSee": "Small blazing white beads sit inside the spinal canal. They are droplets of oil based dye that never left the body.",
+    "whyItMatters": "Old oil based myelogram dye was never absorbed so it stayed for life and it can inflame the lining of the cord and scar it into arachnoiditis.",
+    "treatment": "The droplets are left where they are because chasing them out is riskier than leaving them so care targets the pain and any arachnoiditis.",
+    "takeaway": "Bright oil beads floating in the spinal canal are leftover Pantopaque from an old myelogram.",
+    "igTitle": "THE BEADS THAT NEVER LEFT",
+    "igOptions": [
+      "Retained Pantopaque contrast",
+      "Calcified disc fragments",
+      "Shrapnel"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Ascariasis bowel infestation",
+    "aliases": [
+      "Ascaris lumbricoides",
+      "roundworm bolus",
+      "intestinal ascariasis",
+      "worm bolus"
+    ],
+    "symptom": "crampy belly pain and vomiting in a child from a rural area",
+    "hook": "the bowel gas outlined dozens of long curled shapes that were all moving on their own",
+    "view": "supine abdomen",
+    "keyFindings": "a mass of long smooth curvilinear filling defects coiled together within gas filled small bowel loops with each worm outlined by surrounding gas and some showing a thin dense line of swallowed gas within its own gut",
+    "whatYouSee": "Long smooth curled shapes are packed inside the bowel and outlined by gas. Each one of them is a worm.",
+    "whyItMatters": "A heavy roundworm burden can knot into a bolus and block the bowel or crawl into the bile duct and obstruct it.",
+    "treatment": "Deworming drugs clear the infestation while a true obstruction or a worm in the bile duct may need endoscopic or surgical removal.",
+    "takeaway": "Curled tubes outlined by bowel gas in a child means Ascaris.",
+    "igTitle": "THE WRIGGLING SHADOWS",
+    "igOptions": [
+      "Intussusception",
+      "Ascariasis",
+      "Meckel diverticulum"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Diffuse idiopathic skeletal hyperostosis",
+    "aliases": [
+      "DISH",
+      "Forestier disease",
+      "flowing candle wax spine"
+    ],
+    "symptom": "a stiff upper back in an older man who still had a good range of movement in his neck",
+    "hook": "the spine looked like candle wax had been poured down the front of it and left to set",
+    "view": "lateral thoracic spine",
+    "keyFindings": "thick flowing ossification draping down the front of at least four contiguous vertebral bodies like dripping candle wax with the disc spaces preserved and the facet joints left normal",
+    "whatYouSee": "A thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.",
+    "whyItMatters": "The ligament along the front of the spine turns to bone and stiffens it and a spine this brittle can fracture across all its layers after a minor fall.",
+    "treatment": "Care is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
+    "takeaway": "Flowing candle wax bone down four vertebrae with normal discs is DISH.",
+    "igTitle": "THE CANDLE WAX SPINE",
+    "igOptions": [
+      "Ankylosing spondylitis",
+      "Psoriatic arthritis",
+      "DISH"
+    ],
+    "igCorrect": "C"
   }
 ]
