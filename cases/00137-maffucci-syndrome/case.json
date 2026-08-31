@@ -1,0 +1,57 @@
+{
+  "folder": "00137-maffucci-syndrome",
+  "number": 137,
+  "diagnosis": "Maffucci syndrome",
+  "aliases": [
+    "Maffucci's syndrome",
+    "enchondromatosis with hemangiomas"
+  ],
+  "symptom": "lumpy, deformed fingers that had grown over years",
+  "hook": "the hand was studded with bubbly bone lumps and little round stones in the soft tissue",
+  "whatYouSee": "Multiple lytic, expansile enchondromas in the small bones of the hand alongside round, calcified phleboliths sitting in the soft tissues.",
+  "whyItMatters": "It is a non-hereditary combination of multiple enchondromas and soft-tissue hemangiomas that carries a markedly raised lifetime risk of malignant transformation, especially chondrosarcoma.",
+  "treatment": "There is no cure; management is surveillance for malignant change, correction of deformity or fractures, and excision of any lesion that grows or becomes painful.",
+  "takeaway": "Bone lumps plus little round stones in the soft tissue of the hand point to Maffucci syndrome, which needs lifelong cancer watch.",
+  "igOptions": [
+    "A. Maffucci syndrome",
+    "B. Rheumatoid arthritis",
+    "C. Gout"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-03T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Maffucci syndrome",
+    "aliases": [
+      "Maffucci's syndrome",
+      "enchondromatosis with hemangiomas"
+    ],
+    "symptom": "lumpy, deformed fingers that had grown over years",
+    "hook": "the hand was studded with bubbly bone lumps and little round stones in the soft tissue",
+    "view": "PA hand",
+    "keyFindings": "multiple expansile lucent enchondromas in the phalanges and metacarpals with endosteal scalloping, plus rounded soft-tissue phleboliths from the hemangiomas",
+    "whatYouSee": "Multiple lytic, expansile enchondromas in the small bones of the hand alongside round, calcified phleboliths sitting in the soft tissues.",
+    "whyItMatters": "It is a non-hereditary combination of multiple enchondromas and soft-tissue hemangiomas that carries a markedly raised lifetime risk of malignant transformation, especially chondrosarcoma.",
+    "treatment": "There is no cure; management is surveillance for malignant change, correction of deformity or fractures, and excision of any lesion that grows or becomes painful.",
+    "takeaway": "Bone lumps plus little round stones in the soft tissue of the hand point to Maffucci syndrome, which needs lifelong cancer watch.",
+    "igTitle": "THE HAND OF STONES",
+    "igOptions": [
+      "Maffucci syndrome",
+      "Rheumatoid arthritis",
+      "Gout"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 5,
+  "laypersonQuestion": "Would you notice those tiny stones on an X-ray?",
+  "seedHint": "Look at the soft tissue between the bones and ask yourself: bone or not bone?",
+  "generated": {
+    "threadsCaption": "A patient came in with lumpy, deformed fingers that had grown over years.\n\nThen the X-ray loaded 😭\n\nAnd the hand was studded with bubbly bone lumps and little round stones in the soft tissue.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Maffucci syndrome\n\n👀 What you see:\nMultiple lytic, expansile enchondromas in the small bones of the hand alongside round, calcified phleboliths sitting in the soft tissues.\n\n💊 Treatment:\nThere is no cure; management is surveillance for malignant change, correction of deformity or fractures, and excision of any lesion that grows or becomes painful.",
+    "igCaption": "",
+    "ctaText": "If the hopital meme lives in your head rent free.\n\nI put the wildest cases into the Hopital Field Edition.\n\nGuess hopital then flip for the real diagnosis every time.\n\nGrab it here 👇🏼\nhopital.mednoteslab.com"
+  }
+}

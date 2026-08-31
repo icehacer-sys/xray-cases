@@ -20,7 +20,7 @@
       "Aortic aneurysm"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Massive ovarian cyst",
@@ -256,7 +256,7 @@
       "Retained wire"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Gallstone ileus",
@@ -278,7 +278,7 @@
       "Appendicitis"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Pectus excavatum",
@@ -301,7 +301,7 @@
       "Right middle lobe collapse"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Charcot joint",
@@ -324,7 +324,7 @@
       "Severe osteoarthritis"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Maffucci syndrome",
@@ -347,7 +347,7 @@
       "Gout"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Ollier disease",

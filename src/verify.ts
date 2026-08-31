@@ -6,7 +6,7 @@
 // plus an extra elevated one) and it auto-posted publicly.
 import Anthropic from "@anthropic-ai/sdk";
 import { config, requireEnv } from "./config.js";
-import { regionVerifyLines } from "./anatomy.js";
+import { regionVerifyLines, deviceLines } from "./anatomy.js";
 import type { Condition } from "./types.js";
 
 export interface XrayVerdict {
@@ -43,7 +43,10 @@ function userPrompt(cond: Condition): string {
   // Region-specific QA checks come from the shared anatomy table (src/anatomy.ts) — the same
   // rules that steered the generation prompt, so the verifier inspects for exactly the
   // impossibilities the generator was told to avoid.
-  const extra = regionVerifyLines(cond.view);
+  const extra = [
+    ...regionVerifyLines(cond.view),
+    ...deviceLines(`${cond.diagnosis} ${cond.keyFindings}`, "verify"),
+  ];
   return [
     `Expected diagnosis: ${cond.diagnosis}`,
     `Expected view: ${cond.view}`,

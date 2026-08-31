@@ -199,6 +199,37 @@ const NEGATED_CLAUSE = /\b(?:no|without|excluding|not\s+including|avoid(?:ing)?|
  */
 const CROP_BOUNDARY = /\bcropped\s+(?:above|below|at|to|just\s+\w+)\b[^.;]*/g;
 
+/**
+ * Implanted hardware and swallowed objects get their own coherence rule, keyed off the
+ * DIAGNOSIS/keyFindings rather than the view because a device can appear on any film. Added
+ * after a cochlear-implant X-ray passed QA with the receiver package on one side of the
+ * skull, its lead dead-ending in mid-air, and the electrode coil on the OPPOSITE side
+ * connected to nothing — every individual part looked right so the anatomy checks cleared it.
+ */
+const DEVICE_TEST =
+  /implant|device|electrode|\blead\b|pacemaker|stent|catheter|shunt|prosthe|replacement|plate|screw|\bnail\b|\bpin\b|\bcoil\b|valve|\bport\b|cannula|swallow|ingest|foreign body|retained/;
+
+const DEVICE_RULE = {
+  prompt: [
+    `DEVICE INTEGRITY: render the hardware as ONE continuous connected object. Every part sits on the`,
+    `SAME side of the body and in its correct anatomical relationship — a receiver or generator, its lead,`,
+    `and the electrode or tip it feeds are physically joined along one unbroken path. No lead that ends in`,
+    `mid-air, no component floating free of the rest, no second copy of any part, and never the same device`,
+    `split across both sides of the body.`,
+  ],
+  verify: [
+    `DEVICE CHECK: trace the hardware end to end. Every component (generator/receiver, lead, electrode or`,
+    `tip) must form ONE connected object on ONE side of the body with correct anatomical placement. A lead`,
+    `that dead-ends in mid-air, a component floating unconnected, a duplicated part, or a device split`,
+    `across both sides is a CRITICAL AI artifact even when each piece looks realistic on its own.`,
+  ],
+};
+
+/** Device-coherence lines when the condition involves hardware or a swallowed object. */
+export function deviceLines(conditionText: string, kind: "prompt" | "verify"): string[] {
+  return DEVICE_TEST.test(conditionText.toLowerCase()) ? DEVICE_RULE[kind] : [];
+}
+
 /** All region rules whose matcher fires for this view (head-to-toe order preserved). */
 export function matchedRegions(view: string): RegionRule[] {
   const v = view.toLowerCase().replace(CROP_BOUNDARY, " ").replace(NEGATED_CLAUSE, " ");

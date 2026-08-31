@@ -28,7 +28,7 @@ import {
   pickCta,
 } from "./captions.js";
 import { generateXray } from "./openai.js";
-import { regionPromptLines } from "./anatomy.js";
+import { regionPromptLines, deviceLines } from "./anatomy.js";
 import { generateSlides } from "./slidegen.js";
 import { verifyXray, type XrayVerdict } from "./verify.js";
 import { censorUntilClean } from "./censor.js";
@@ -240,7 +240,10 @@ function xrayPrompt(cond: Condition, avoid: string[] = []): string {
   // generation constraint and the QA verifier check for the SAME impossibilities per region and
   // can never drift. gpt-image-2's recurring failure modes are dental arches, overlapping paired
   // bones, and duplicated girdle/pelvis structures — each covered there view-by-view.
-  const region = regionPromptLines(cond.view);
+  const region = [
+    ...regionPromptLines(cond.view),
+    ...deviceLines(`${cond.diagnosis} ${cond.keyFindings}`, "prompt"),
+  ];
   const lines = [
     `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
     ``,

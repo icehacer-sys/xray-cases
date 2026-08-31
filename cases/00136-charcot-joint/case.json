@@ -1,0 +1,57 @@
+{
+  "folder": "00136-charcot-joint",
+  "number": 136,
+  "diagnosis": "Charcot joint",
+  "aliases": [
+    "neuropathic arthropathy",
+    "Charcot arthropathy"
+  ],
+  "symptom": "a swollen deformed foot that strangely did not hurt in a patient with long-standing diabetes",
+  "hook": "the joint looked like a bag of crushed bone fragments yet the patient felt almost nothing",
+  "whatYouSee": "A destroyed disorganised joint full of bone fragments with collapse and dislocation of the midfoot.",
+  "whyItMatters": "Loss of protective sensation lets repeated trauma destroy the joint painlessly which is classic in diabetes and risks ulceration and amputation if missed.",
+  "treatment": "Treatment is offloading and immobilisation with protected footwear and surgery is reserved for severe instability or deformity.",
+  "takeaway": "A painlessly destroyed disorganised joint in a patient with neuropathy is a Charcot joint.",
+  "igOptions": [
+    "A. Charcot joint",
+    "B. Septic arthritis",
+    "C. Severe osteoarthritis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-02T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Charcot joint",
+    "aliases": [
+      "neuropathic arthropathy",
+      "Charcot arthropathy"
+    ],
+    "symptom": "a swollen deformed foot that strangely did not hurt in a patient with long-standing diabetes",
+    "hook": "the joint looked like a bag of crushed bone fragments yet the patient felt almost nothing",
+    "view": "AP and lateral foot",
+    "keyFindings": "gross joint destruction with fragmentation and bony debris and dense sclerosis and dislocation and disorganisation of the midfoot in a neuropathic patient",
+    "whatYouSee": "A destroyed disorganised joint full of bone fragments with collapse and dislocation of the midfoot.",
+    "whyItMatters": "Loss of protective sensation lets repeated trauma destroy the joint painlessly which is classic in diabetes and risks ulceration and amputation if missed.",
+    "treatment": "Treatment is offloading and immobilisation with protected footwear and surgery is reserved for severe instability or deformity.",
+    "takeaway": "A painlessly destroyed disorganised joint in a patient with neuropathy is a Charcot joint.",
+    "igTitle": "THE PAINLESS RUIN",
+    "igOptions": [
+      "Charcot joint",
+      "Septic arthritis",
+      "Severe osteoarthritis"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "How is a foot this wrecked completely painless?",
+  "seedHint": "Look at all that bone rubble and then ask why this person walked in calmly.",
+  "generated": {
+    "threadsCaption": "A patient came in with a swollen deformed foot that strangely did not hurt in a patient with long-standing diabetes.\n\nThen the X-ray loaded 😭\n\nAnd the joint looked like a bag of crushed bone fragments yet the patient felt almost nothing.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Charcot joint\n\n👀 What you see:\nA destroyed disorganised joint full of bone fragments with collapse and dislocation of the midfoot.\n\n🦴 Why it matters:\nLoss of protective sensation lets repeated trauma destroy the joint painlessly which is classic in diabetes and risks ulceration and amputation if missed.\n\n💊 Treatment:\nTreatment is offloading and immobilisation with protected footwear and surgery is reserved for severe instability or deformity.",
+    "igCaption": "",
+    "ctaText": "If you have been through Volume 1 and 2 and still want more.\n\nI put 20 fresh cases into Volume 3.\n\nAll new and none repeated from the first two.\n\nGrab it here 👇🏼\nxray3.mednoteslab.com"
+  }
+}

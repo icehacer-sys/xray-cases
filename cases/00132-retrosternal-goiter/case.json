@@ -1,0 +1,57 @@
+{
+  "folder": "00132-retrosternal-goiter",
+  "number": 132,
+  "diagnosis": "Retrosternal goiter",
+  "aliases": [
+    "substernal goitre",
+    "retrosternal thyroid"
+  ],
+  "symptom": "a slowly enlarging neck with breathlessness and trouble swallowing when lying flat",
+  "hook": "a big soft tissue mass was pushing down from the neck into the top of the chest and shoving the windpipe sideways",
+  "whatYouSee": "A superior mediastinal mass extending up into the neck that pushes the trachea to one side and narrows it.",
+  "whyItMatters": "An enlarged thyroid has grown down behind the breastbone where it can compress the trachea and the oesophagus and the great vessels.",
+  "treatment": "Treatment is surgical removal when it compresses nearby structures or keeps growing.",
+  "takeaway": "A neck mass diving behind the breastbone and shoving the trachea is a retrosternal goiter.",
+  "igOptions": [
+    "A. Lymphoma",
+    "B. Retrosternal goiter",
+    "C. Aortic aneurysm"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-08-31T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Retrosternal goiter",
+    "aliases": [
+      "substernal goitre",
+      "retrosternal thyroid"
+    ],
+    "symptom": "a slowly enlarging neck with breathlessness and trouble swallowing when lying flat",
+    "hook": "a big soft tissue mass was pushing down from the neck into the top of the chest and shoving the windpipe sideways",
+    "view": "PA chest",
+    "keyFindings": "a superior mediastinal mass continuous with the neck that deviates and narrows the trachea and may extend below the clavicles",
+    "whatYouSee": "A superior mediastinal mass extending up into the neck that pushes the trachea to one side and narrows it.",
+    "whyItMatters": "An enlarged thyroid has grown down behind the breastbone where it can compress the trachea and the oesophagus and the great vessels.",
+    "treatment": "Treatment is surgical removal when it compresses nearby structures or keeps growing.",
+    "takeaway": "A neck mass diving behind the breastbone and shoving the trachea is a retrosternal goiter.",
+    "igTitle": "THE MASS THAT DIVES",
+    "igOptions": [
+      "Lymphoma",
+      "Retrosternal goiter",
+      "Aortic aneurysm"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "What is shoving that airway so far to one side?",
+  "seedHint": "Look at the top of the chest and ask yourself: is that mass coming down from above?",
+  "generated": {
+    "threadsCaption": "A patient came in with a slowly enlarging neck with breathlessness and trouble swallowing when lying flat.\n\nThen the X-ray loaded 😭\n\nAnd a big soft tissue mass was pushing down from the neck into the top of the chest and shoving the windpipe sideways.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Retrosternal goiter\n\n👀 What you see:\nA superior mediastinal mass extending up into the neck that pushes the trachea to one side and narrows it.\n\n🦴 Why it matters:\nAn enlarged thyroid has grown down behind the breastbone where it can compress the trachea and the oesophagus and the great vessels.\n\n💊 Treatment:\nTreatment is surgical removal when it compresses nearby structures or keeps growing.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  }
+}

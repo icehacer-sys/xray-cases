@@ -1,0 +1,57 @@
+{
+  "folder": "00135-pectus-excavatum",
+  "number": 135,
+  "diagnosis": "Pectus excavatum",
+  "aliases": [
+    "funnel chest",
+    "sunken chest"
+  ],
+  "symptom": "a chest that visibly caved inward at the breastbone since the teenage years",
+  "hook": "the heart looked shoved to the left and the front of the chest seemed to vanish into a hollow",
+  "whatYouSee": "The breastbone is sunken inward which shifts the heart to the left and blurs the right heart border.",
+  "whyItMatters": "It is the most common chest wall deformity and is usually cosmetic but a severe funnel can compress the heart and lungs and reduce exercise tolerance.",
+  "treatment": "Mild cases are observed; significant deformity is corrected surgically with a bar that lifts the sternum.",
+  "takeaway": "A sunken breastbone shifting the heart left with a blurred right heart border is pectus excavatum.",
+  "igOptions": [
+    "A. Cardiomegaly",
+    "B. Pectus excavatum",
+    "C. Right middle lobe collapse"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-01T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Pectus excavatum",
+    "aliases": [
+      "funnel chest",
+      "sunken chest"
+    ],
+    "symptom": "a chest that visibly caved inward at the breastbone since the teenage years",
+    "hook": "the heart looked shoved to the left and the front of the chest seemed to vanish into a hollow",
+    "view": "PA and lateral chest",
+    "keyFindings": "a depressed sternum pushing the heart to the left with a blurred right heart border on the frontal film and an obvious posterior sternal depression on the lateral",
+    "whatYouSee": "The breastbone is sunken inward which shifts the heart to the left and blurs the right heart border.",
+    "whyItMatters": "It is the most common chest wall deformity and is usually cosmetic but a severe funnel can compress the heart and lungs and reduce exercise tolerance.",
+    "treatment": "Mild cases are observed; significant deformity is corrected surgically with a bar that lifts the sternum.",
+    "takeaway": "A sunken breastbone shifting the heart left with a blurred right heart border is pectus excavatum.",
+    "igTitle": "THE VANISHING CHEST",
+    "igOptions": [
+      "Cardiomegaly",
+      "Pectus excavatum",
+      "Right middle lobe collapse"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 2,
+  "laypersonQuestion": "Does this chest look sunken to you?",
+  "seedHint": "Look at the heart - does it seem crowded or pushed aside?",
+  "generated": {
+    "threadsCaption": "A patient came in with a chest that visibly caved inward at the breastbone since the teenage years.\n\nThen the X-ray loaded 😭\n\nAnd the heart looked shoved to the left and the front of the chest seemed to vanish into a hollow.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Pectus excavatum\n\n👀 What you see:\nThe breastbone is sunken inward which shifts the heart to the left and blurs the right heart border.\n\n🦴 Why it matters:\nIt is the most common chest wall deformity and is usually cosmetic but a severe funnel can compress the heart and lungs and reduce exercise tolerance.\n\n💊 Treatment:\nMild cases are observed; significant deformity is corrected surgically with a bar that lifts the sternum.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nGuess hopital then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}
