@@ -1,0 +1,61 @@
+{
+  "folder": "00139-retained-pantopaque-contrast",
+  "number": 139,
+  "diagnosis": "Retained Pantopaque contrast",
+  "aliases": [
+    "retained myelographic contrast",
+    "iophendylate droplets",
+    "pantopaque droplets",
+    "retained oil contrast"
+  ],
+  "symptom": "years of back pain in a patient whose spine was studied back in the nineteen seventies",
+  "hook": "tiny beads of oil were left inside the spine and they were still sitting there fifty years later",
+  "whatYouSee": "Small blazing white beads sit inside the spinal canal. They are droplets of oil based dye that never left the body.",
+  "whyItMatters": "Old oil based myelogram dye was never absorbed so it stayed for life and it can inflame the lining of the cord and scar it into arachnoiditis.",
+  "treatment": "The droplets are left where they are because chasing them out is riskier than leaving them so care targets the pain and any arachnoiditis.",
+  "takeaway": "Bright oil beads floating in the spinal canal are leftover Pantopaque from an old myelogram.",
+  "igOptions": [
+    "A. Retained Pantopaque contrast",
+    "B. Calcified disc fragments",
+    "C. Shrapnel"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-01T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Retained Pantopaque contrast",
+    "aliases": [
+      "retained myelographic contrast",
+      "iophendylate droplets",
+      "pantopaque droplets",
+      "retained oil contrast"
+    ],
+    "symptom": "years of back pain in a patient whose spine was studied back in the nineteen seventies",
+    "hook": "tiny beads of oil were left inside the spine and they were still sitting there fifty years later",
+    "view": "lateral lumbar spine",
+    "keyFindings": "several rounded intensely dense droplets of oily contrast pooled inside the thecal sac of the lower spine appearing far brighter than the surrounding bone",
+    "whatYouSee": "Small blazing white beads sit inside the spinal canal. They are droplets of oil based dye that never left the body.",
+    "whyItMatters": "Old oil based myelogram dye was never absorbed so it stayed for life and it can inflame the lining of the cord and scar it into arachnoiditis.",
+    "treatment": "The droplets are left where they are because chasing them out is riskier than leaving them so care targets the pain and any arachnoiditis.",
+    "takeaway": "Bright oil beads floating in the spinal canal are leftover Pantopaque from an old myelogram.",
+    "igTitle": "THE BEADS THAT NEVER LEFT",
+    "igOptions": [
+      "Retained Pantopaque contrast",
+      "Calcified disc fragments",
+      "Shrapnel"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Would you notice something left inside for 50 years?",
+  "seedHint": "Look at those bright little dots and ask yourself if they belong there or got left behind.",
+  "generated": {
+    "threadsCaption": "A patient came in with years of back pain in a patient whose spine was studied back in the nineteen seventies.\n\nThen the X-ray loaded 😭\n\nAnd tiny beads of oil were left inside the spine and they were still sitting there fifty years later.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Retained Pantopaque contrast\n\n👀 What you see:\nSmall blazing white beads sit inside the spinal canal. They are droplets of oil based dye that never left the body.\n\n🦴 Why it matters:\nOld oil based myelogram dye was never absorbed so it stayed for life and it can inflame the lining of the cord and scar it into arachnoiditis.\n\n💊 Treatment:\nThe droplets are left where they are because chasing them out is riskier than leaving them so care targets the pain and any arachnoiditis.",
+    "igCaption": "",
+    "ctaText": "These are the 10 cases that broke the internet.\n\nCombined they crossed 20 million views right here on Threads.\n\nI bundled the 10 highest viewed guesses into one pack.\n\nLook then guess then flip for the answer and the story behind it.\n\nGrab it here 👇🏼\nviral.mednoteslab.com"
+  }
+}

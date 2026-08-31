@@ -2335,7 +2335,8 @@
       "Hiatus hernia",
       "Pericardial cyst"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Retained Pantopaque contrast",
@@ -2359,7 +2360,8 @@
       "Calcified disc fragments",
       "Shrapnel"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "used": true
   },
   {
     "diagnosis": "Ascariasis bowel infestation",

@@ -1,0 +1,57 @@
+{
+  "folder": "00138-sliding-hiatus-hernia",
+  "number": 138,
+  "diagnosis": "Sliding hiatus hernia",
+  "aliases": [
+    "hiatal hernia",
+    "sliding hiatal hernia"
+  ],
+  "symptom": "burning behind the breastbone after every meal and food that felt stuck",
+  "hook": "part of the stomach had crept up out of the abdomen and was sitting behind the heart",
+  "whatYouSee": "A bubble with a fluid level sits behind the heart where lung should be. That bubble is stomach that has slid up into the chest.",
+  "whyItMatters": "The stomach slides up through the gap the food pipe passes through so acid refluxes freely and a very large hernia can twist and strangle.",
+  "treatment": "Most are controlled with acid suppression and lifestyle change while large or twisting ones are pulled back down and the gap is tightened surgically.",
+  "takeaway": "An air-fluid level behind the heart means stomach in the chest so think hiatus hernia.",
+  "igOptions": [
+    "A. Lung abscess",
+    "B. Hiatus hernia",
+    "C. Pericardial cyst"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-02T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Sliding hiatus hernia",
+    "aliases": [
+      "hiatal hernia",
+      "sliding hiatal hernia"
+    ],
+    "symptom": "burning behind the breastbone after every meal and food that felt stuck",
+    "hook": "part of the stomach had crept up out of the abdomen and was sitting behind the heart",
+    "view": "PA chest",
+    "keyFindings": "a rounded retrocardiac gas collection with a clear air-fluid level sitting behind the heart above the diaphragm where lung should be with the rest of the chest normal",
+    "whatYouSee": "A bubble with a fluid level sits behind the heart where lung should be. That bubble is stomach that has slid up into the chest.",
+    "whyItMatters": "The stomach slides up through the gap the food pipe passes through so acid refluxes freely and a very large hernia can twist and strangle.",
+    "treatment": "Most are controlled with acid suppression and lifestyle change while large or twisting ones are pulled back down and the gap is tightened surgically.",
+    "takeaway": "An air-fluid level behind the heart means stomach in the chest so think hiatus hernia.",
+    "igTitle": "THE STOMACH IN THE CHEST",
+    "igOptions": [
+      "Lung abscess",
+      "Hiatus hernia",
+      "Pericardial cyst"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 2,
+  "laypersonQuestion": "Why is part of the belly sitting behind the heart?",
+  "seedHint": "Something that belongs below the diaphragm is now above it. Look just behind the heart.",
+  "generated": {
+    "threadsCaption": "A patient came in with burning behind the breastbone after every meal and food that felt stuck.\n\nThen the X-ray loaded 😭\n\nAnd part of the stomach had crept up out of the abdomen and was sitting behind the heart.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Sliding hiatus hernia\n\n👀 What you see:\nA bubble with a fluid level sits behind the heart where lung should be. That bubble is stomach that has slid up into the chest.\n\n🦴 Why it matters:\nThe stomach slides up through the gap the food pipe passes through so acid refluxes freely and a very large hernia can twist and strangle.\n\n💊 Treatment:\nMost are controlled with acid suppression and lifestyle change while large or twisting ones are pulled back down and the gap is tightened surgically.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  }
+}
