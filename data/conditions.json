@@ -629,7 +629,7 @@
       "Right lung collapse"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": true
   },
   {
     "diagnosis": "Cannonball metastases",
