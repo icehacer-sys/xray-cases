@@ -578,12 +578,16 @@
       "answerCommentId": "18106696889031087",
       "answerPostedAt": "2026-09-01T19:24:20.734Z",
       "ctaPostedAt": "2026-09-01T20:20:55.802Z"
+    },
+    "00138-sliding-hiatus-hernia": {
+      "threadsPostId": "18109224593591334",
+      "challengePostedAt": "2026-09-02T19:01:15.050Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "count": 0
     }
   }
