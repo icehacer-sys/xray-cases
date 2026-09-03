@@ -629,7 +629,8 @@
       "Right lung collapse"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "ageBand": "young-adult"
   },
   {
     "diagnosis": "Cannonball metastases",
@@ -864,7 +865,8 @@
       "Rheumatoid arthritis"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "ageBand": "adolescent"
   },
   {
     "diagnosis": "Coin in the oesophagus",
@@ -887,7 +889,8 @@
       "Calcified node"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "ageBand": "child"
   },
   {
     "diagnosis": "Swallowed sword",
@@ -1006,7 +1009,8 @@
       "Large gallstone"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "ageBand": "young-adult"
   },
   {
     "diagnosis": "Swallowed safety pin",
@@ -1029,7 +1033,8 @@
       "Coin"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "ageBand": "infant"
   },
   {
     "diagnosis": "Impalement by a metal rod",
@@ -1053,7 +1058,8 @@
       "Spinal rod"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "ageBand": "young-adult"
   },
   {
     "diagnosis": "Gas gangrene",
@@ -1076,7 +1082,8 @@
       "Old haematoma"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "ageBand": "older"
   },
   {
     "diagnosis": "Fetus in fetu",
@@ -1285,7 +1292,8 @@
       "Gallstones"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "ageBand": "older"
   },
   {
     "diagnosis": "Chronic pancreatitis with calcification",
@@ -1332,7 +1340,8 @@
       "Tumour"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "ageBand": "young-adult"
   },
   {
     "diagnosis": "Craniofacial fibrous dysplasia",
@@ -1550,7 +1559,8 @@
       "A surgical clip"
     ],
     "igCorrect": "B",
-    "used": false
+    "used": false,
+    "ageBand": "young-adult"
   },
   {
     "diagnosis": "Swallowed keys",
@@ -1574,7 +1584,8 @@
       "A stack of coins"
     ],
     "igCorrect": "A",
-    "used": false
+    "used": false,
+    "ageBand": "child"
   },
   {
     "diagnosis": "Chilaiditi syndrome",
@@ -2336,7 +2347,8 @@
       "Pericardial cyst"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "ageBand": "older"
   },
   {
     "diagnosis": "Retained Pantopaque contrast",
@@ -2361,7 +2373,8 @@
       "Shrapnel"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "ageBand": "older"
   },
   {
     "diagnosis": "Ascariasis bowel infestation",
@@ -2385,7 +2398,8 @@
       "Ascariasis",
       "Meckel diverticulum"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "ageBand": "child"
   },
   {
     "diagnosis": "Diffuse idiopathic skeletal hyperostosis",
@@ -2408,6 +2422,7 @@
       "Psoriatic arthritis",
       "DISH"
     ],
-    "igCorrect": "C"
+    "igCorrect": "C",
+    "ageBand": "older"
   }
 ]

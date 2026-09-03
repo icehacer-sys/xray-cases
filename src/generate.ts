@@ -28,11 +28,11 @@ import {
   pickCta,
 } from "./captions.js";
 import { generateXray } from "./openai.js";
-import { buildXrayPrompt } from "./anatomy.js";
+import { buildXrayPrompt, AGE_BANDS } from "./anatomy.js";
 import { generateSlides } from "./slidegen.js";
 import { verifyXray, type XrayVerdict } from "./verify.js";
 import { censorUntilClean } from "./censor.js";
-import type { Case, Condition } from "./types.js";
+import type { AgeBand, Case, Condition } from "./types.js";
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -152,6 +152,13 @@ function validateCondition(c: unknown, index: number): void {
   }
   if (cond.igCorrect !== "A" && cond.igCorrect !== "B" && cond.igCorrect !== "C") {
     throw new Error(`Condition "${label}" (${where}): "igCorrect" must be one of "A", "B", "C".`);
+  }
+  // Optional, but a TYPO must not silently fall back to the young-adult default and hand an
+  // elderly patient a pristine skeleton — that is the whole failure this field exists to stop.
+  if (cond.ageBand !== undefined && !AGE_BANDS.includes(cond.ageBand as AgeBand)) {
+    throw new Error(
+      `Condition "${label}" (${where}): "ageBand" must be one of ${AGE_BANDS.join(", ")} (got "${String(cond.ageBand)}").`,
+    );
   }
 }
 

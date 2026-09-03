@@ -6,7 +6,7 @@
 // plus an extra elevated one) and it auto-posted publicly.
 import Anthropic from "@anthropic-ai/sdk";
 import { config, requireEnv } from "./config.js";
-import { regionVerifyLines, deviceLines } from "./anatomy.js";
+import { verifyExtraLines } from "./anatomy.js";
 import type { Condition } from "./types.js";
 
 export interface XrayVerdict {
@@ -37,16 +37,20 @@ const SYSTEM =
   "— judge the WHOLE film. Flag critical if EITHER the primary finding is wrong or absent, OR any " +
   "non-pathological structure has an AI impossibility (a floating or duplicated bone or tooth, a garbled or " +
   "incoherent dental arch, a fused paired bone, the wrong digit count). " +
+  "These images are deliberately generated to look like REAL SCANNED RADIOGRAPHS, so normal acquisition " +
+  "characteristics are intended and must NEVER be reported as defects: collimation borders, uneven exposure " +
+  "or a density gradient, scatter haze, film grain, slightly rotated or off-centre positioning, overlying " +
+  "skin folds or bowel gas or clothing, and a lead side marker. Judge the ANATOMY, not the film quality. " +
+  "Age-appropriate change is likewise expected: a patient stated to be older SHOULD show osteopenia and " +
+  "degenerative change, and a film that contradicts the stated age is a defect in the other direction. " +
   "Respond with ONLY a JSON object and no other text.";
 
 function userPrompt(cond: Condition): string {
-  // Region-specific QA checks come from the shared anatomy table (src/anatomy.ts) — the same
-  // rules that steered the generation prompt, so the verifier inspects for exactly the
-  // impossibilities the generator was told to avoid.
-  const extra = [
-    ...regionVerifyLines(cond.view),
-    ...deviceLines(`${cond.diagnosis} ${cond.keyFindings}`, "verify"),
-  ];
+  // Region, device, AGE and realism-tolerance checks all come from the shared anatomy table
+  // (src/anatomy.ts) — the same rules that steered the generation prompt, so the verifier
+  // inspects for exactly the impossibilities the generator was told to avoid, and does not
+  // reject the acquisition realism the generator was told to produce.
+  const extra = verifyExtraLines(cond);
   return [
     `Expected diagnosis: ${cond.diagnosis}`,
     `Expected view: ${cond.view}`,

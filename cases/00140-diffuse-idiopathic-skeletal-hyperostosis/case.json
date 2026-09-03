@@ -1,0 +1,60 @@
+{
+  "folder": "00140-diffuse-idiopathic-skeletal-hyperostosis",
+  "number": 140,
+  "diagnosis": "Diffuse idiopathic skeletal hyperostosis",
+  "aliases": [
+    "DISH",
+    "Forestier disease",
+    "flowing candle wax spine"
+  ],
+  "symptom": "a stiff upper back in an older man who still had a good range of movement in his neck",
+  "hook": "the spine looked like candle wax had been poured down the front of it and left to set",
+  "whatYouSee": "A thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.",
+  "whyItMatters": "The ligament along the front of the spine turns to bone and stiffens it and a spine this brittle can fracture across all its layers after a minor fall.",
+  "treatment": "Care is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
+  "takeaway": "Flowing candle wax bone down four vertebrae with normal discs is DISH.",
+  "igOptions": [
+    "A. Ankylosing spondylitis",
+    "B. Psoriatic arthritis",
+    "C. DISH"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-08T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Diffuse idiopathic skeletal hyperostosis",
+    "aliases": [
+      "DISH",
+      "Forestier disease",
+      "flowing candle wax spine"
+    ],
+    "symptom": "a stiff upper back in an older man who still had a good range of movement in his neck",
+    "hook": "the spine looked like candle wax had been poured down the front of it and left to set",
+    "view": "lateral thoracic spine",
+    "keyFindings": "thick flowing ossification draping down the front of at least four contiguous vertebral bodies like dripping candle wax with the disc spaces preserved and the facet joints left normal",
+    "whatYouSee": "A thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.",
+    "whyItMatters": "The ligament along the front of the spine turns to bone and stiffens it and a spine this brittle can fracture across all its layers after a minor fall.",
+    "treatment": "Care is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
+    "takeaway": "Flowing candle wax bone down four vertebrae with normal discs is DISH.",
+    "igTitle": "THE CANDLE WAX SPINE",
+    "igOptions": [
+      "Ankylosing spondylitis",
+      "Psoriatic arthritis",
+      "DISH"
+    ],
+    "igCorrect": "C",
+    "ageBand": "older",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does this spine look more like rock or wax to you?",
+  "seedHint": "Look at the front of the spine and ask yourself if bone is supposed to flow like that.",
+  "generated": {
+    "threadsCaption": "A patient came in with a stiff upper back in an older man who still had a good range of movement in his neck.\n\nThen the X-ray loaded 😭\n\nAnd the spine looked like candle wax had been poured down the front of it and left to set.\n\nQuick diagnosis challenge 🩻\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Diffuse idiopathic skeletal hyperostosis\n\n👀 What you see:\nA thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.\n\n💊 Treatment:\nCare is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  }
+}

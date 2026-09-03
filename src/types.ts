@@ -89,6 +89,13 @@ export type CtaKey = "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vo
 export type ImageUrl = string;
 
 /**
+ * Patient age band for a generated X-ray. A band rather than a number because each one maps to
+ * concrete radiographic features the image model can actually draw (open physes, endplate
+ * sclerosis, calcified costal cartilage). The per-band wording lives in anatomy.ts.
+ */
+export type AgeBand = "infant" | "child" | "adolescent" | "young-adult" | "middle-aged" | "older";
+
+/**
  * One entry in the vetted condition pool (data/conditions.json). The auto-generator
  * draws the next `used: false` condition, generates its X-ray + slides, and turns it
  * into a Case. The medical facts here are owner-vetted — the source of truth.
@@ -109,6 +116,11 @@ export interface Condition {
   igTitle: string; // "THE HAND OF STONES"
   igOptions: [string, string, string]; // the A/B/C choices shown on the question slide
   igCorrect: "A" | "B" | "C"; // which option is right
+  /** Patient age band for the image. Drives skeletal maturity and age-appropriate degeneration
+   *  in the X-ray prompt AND the QA gate, so a 70-year-old does not get a pristine young spine.
+   *  Optional: when absent the band is inferred from symptom/view/hook, else defaults to
+   *  young-adult. Required on all NEW conditions. See AgeBand in anatomy.ts. */
+  ageBand?: AgeBand;
   /** Set true once the generator has produced a case from it (so it is never reused). */
   used?: boolean;
   /** Set true to permanently exclude from auto-generation (e.g. pelvic/groin/full-lower-body
