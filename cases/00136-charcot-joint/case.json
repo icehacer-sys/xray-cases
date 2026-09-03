@@ -43,7 +43,8 @@
       "Severe osteoarthritis"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "ageBand": "older"
   },
   "difficulty": 4,
   "laypersonQuestion": "How is a foot this wrecked completely painless?",

@@ -43,7 +43,8 @@
       "Retained wire"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "ageBand": "young-adult"
   },
   "difficulty": 1,
   "laypersonQuestion": "What does that tiny coil remind you of?",

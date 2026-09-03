@@ -41,7 +41,8 @@
       "Appendicitis"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "ageBand": "older"
   },
   "difficulty": 4,
   "laypersonQuestion": "Why is that stone so far from where it started?",
