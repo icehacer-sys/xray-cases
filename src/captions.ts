@@ -55,27 +55,40 @@ export function generateThreadsCaption(c: Case): string {
   ].join("\n\n");
 }
 
-/** The one follow line the FOLLOW-CTA experiment tests. House style: no commas. */
-export const FOLLOW_CTA_LINE =
-  "A new case goes up every night. Follow so you catch tomorrow's before the answer drops.";
+/**
+ * The line the follow ask REPLACES. It is the one line that can go without losing meaning --
+ * "What's the most likely diagnosis?" sits directly under it and already says the same thing.
+ * "Wild guesses are welcome 👀" is deliberately NOT the one dropped: the audit found the
+ * non-medical audience needs the low-cost entry point that line provides.
+ */
+export const CHALLENGE_LABEL_LINE = "Quick diagnosis challenge 🩻";
+
+/** The follow ask. One short line, house style (no commas), emoji-terminated like its neighbours. */
+export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
 
 /**
- * Append the follow ask when the FOLLOW-CTA experiment's B arm is active.
+ * SWAP the redundant challenge label for the follow ask when the B arm is active.
+ *
+ * This originally APPENDED a seventh line. Owner rejected that: the caption is a tight six-line
+ * shape the audience knows, and bolting an extra line on the end read long and salesy. Swapping
+ * holds the shape and the length (+8 chars net) and puts the ask last, where a CTA belongs.
  *
  * Applied at POST time, never at generation time. `generated.threadsCaption` is drafted days
  * ahead and cached in case.json, so gating it inside generateThreadsCaption() would label the
  * night a case was DRAFTED rather than the night it publishes, and the arms would be noise.
  *
- * The 5.3M non-follower viewers only ever see the caption -- most never open the thread -- so
+ * The ~5.3M non-follower viewers only ever see the caption -- most never open the thread -- so
  * this is the only surface where a follow ask reaches the people the experiment is about.
  *
- * Skips silently rather than truncating: losing the hook to fit a CTA would cost far more than
- * one night of the experiment, and a skipped night is visible in the posted text either way.
+ * Falls back to the untouched caption if the swap would overflow: losing the hook to fit a CTA
+ * costs far more than one night of the experiment.
  */
 export function withFollowCta(caption: string): string {
   if (!config.followCta) return caption;
-  if (caption.length + 2 + FOLLOW_CTA_LINE.length > config.captionMaxChars) return caption;
-  return `${caption}\n\n${FOLLOW_CTA_LINE}`;
+  const lines = caption.split("\n\n").filter((l) => l.trim() !== CHALLENGE_LABEL_LINE);
+  lines.push(FOLLOW_CTA_LINE);
+  const out = lines.join("\n\n");
+  return out.length > config.captionMaxChars ? caption : out;
 }
 
 // ---------------------------------------------------------------------------
@@ -410,9 +423,26 @@ ctvol1.mednoteslab.com`,
 // (top-of-funnel email capture) but never back-to-back; the collection appears twice; each paid
 // product gets one slot. Assigned by case number in pickCta below. Owner can pin a specific CTA
 // per case via c.cta, or reorder this list.
+// Pruned to PRODUCTS THAT HAVE ACTUALLY SOLD (all-time Gumroad, owner, 2026-09-05). Five keys
+// were dropped for zero lifetime sales despite carrying slots for months: spotit, rare, vol3,
+// field, viral10. They were consuming 5 of 14 nights -- over a third of the rotation -- pitching
+// products with no demonstrated demand to the account's highest-traffic surface.
+//
+// Slots are now weighted by sales, hopital still most frequent (free lead magnet, 29 downloads,
+// top-of-funnel email capture) and never back-to-back including across the wrap:
+//   hopital 29 sales -> 3 | anxiety 7 -> 2 | vol1 7 -> 2 | collection 5 -> 2 | ctvol1 1 -> 1 | vol2 1 -> 1
+//
+// The dropped keys are intentionally KEPT in CtaKey and CTA_TEXT: several already-posted cases
+// pin them via c.cta, and removing them would break those. They simply no longer rotate. Restore
+// one by adding its key back here.
+//
+// NOT in the rotation and worth a look: "Support the Lab" has 3 sales / $128.26 -- the second
+// highest revenue of anything on the store -- but no CtaKey or CTA_TEXT entry exists for it.
 const CTA_ROTATION: CtaKey[] = [
-  "hopital", "collection", "spotit", "rare", "hopital", "vol1",
-  "vol2", "collection", "hopital", "vol3", "field", "anxiety", "viral10", "ctvol1",
+  "hopital", "collection", "anxiety",
+  "hopital", "vol1", "ctvol1",
+  "hopital", "anxiety", "collection",
+  "vol1", "vol2",
 ];
 
 export function pickCta(c: Case, seq?: number): { key: CtaKey; text: string } {
