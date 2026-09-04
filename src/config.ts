@@ -83,6 +83,14 @@ export const config = {
   // tags posts with this). Empty = no tag. Periods and ampersands are not allowed.
   topicTag: (process.env.BOT_TOPIC_TAG ?? "Med Threads").trim(),
 
+  // How long (minutes past postAt) to keep RETRYING for the topic tag rather than publish
+  // without it. The tag is what files the post under the community, and Meta throws opaque
+  // transient 400s on it (00135-pectus-excavatum lost its community that way on 2026-09-03).
+  // The publisher polls every ~15 min, so inside this window a failed tag just defers the post
+  // to the next cycle instead of permanently losing the placement. Past the window the post
+  // goes out untagged, because missing the daily slot entirely is worse. 0 = never wait.
+  topicTagGraceMin: num("BOT_TOPIC_TAG_GRACE_MIN", 60),
+
   // --- auto-generator ---
   // OpenAI image model for the X-ray (the only AI-generated image; slides are rendered).
   imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-2",

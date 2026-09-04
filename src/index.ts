@@ -23,7 +23,7 @@ import {
   pickCta,
   imagePrompt,
 } from "./captions.js";
-import { postImage, reply, getReplies, getMyUsername, type SpoilerEntity } from "./threads.js";
+import { postImage, reply, getReplies, getMyUsername, TopicTagError, type SpoilerEntity } from "./threads.js";
 import { publishCarousel } from "./instagram.js";
 import { postPhoto, postComment } from "./facebook.js";
 import type { Case } from "./types.js";
@@ -218,10 +218,31 @@ async function runPublish(cli: Cli): Promise<void> {
         log(`  image: ${imageUrl(c.folder, c.threadsImage)}`);
         log(generated.threadsCaption);
       } else {
-        const threadsPostId = await postImage(
-          imageUrl(c.folder, c.threadsImage),
-          generated.threadsCaption!,
-        );
+        // The topic tag files the post under the community. Meta throws opaque transient 400s
+        // on it, and abandoning it silently cost 00135-pectus-excavatum its community on
+        // 2026-09-03. While the post is still fresh, REQUIRE the tag: nothing is published, so
+        // leaving the stage unposted just makes the next poll (~15 min) try the whole thing
+        // again. Only once it is more than topicTagGraceMin late do we accept an untagged post,
+        // because by then missing the slot is the bigger loss.
+        const minutesLate = (now.getTime() - postAt.getTime()) / MINUTE_MS;
+        const requireTag = minutesLate <= config.topicTagGraceMin;
+        let threadsPostId: string;
+        try {
+          threadsPostId = await postImage(
+            imageUrl(c.folder, c.threadsImage),
+            generated.threadsCaption!,
+            { requireTag },
+          );
+        } catch (err) {
+          if (err instanceof TopicTagError) {
+            log(
+              `  ⏳ ${c.folder}: ${err.message} — NOT posting yet so the community tag is not lost. ` +
+                `Retrying next cycle (untagged fallback in ${Math.max(0, Math.round(config.topicTagGraceMin - minutesLate))} min).`,
+            );
+            continue;
+          }
+          throw err;
+        }
         state.setStages(c.folder, {
           threadsPostId,
           challengePostedAt: new Date().toISOString(),
