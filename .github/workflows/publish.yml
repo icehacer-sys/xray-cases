@@ -161,6 +161,39 @@ jobs:
           fails=0
           for i in $(seq 1 60); do
             echo "::group::poll $i ($(date -u +%H:%M) UTC)"
+            # --- ANSWER-DELAY A/B (started 2026-09-05) -------------------------------------
+            # A 90-day audit found the "Answer:" reply lands at +21 min on EVERY post, closing
+            # the guessing game -- the mechanic that produces the comments -- 21 minutes in.
+            # This tests whether a late reveal lengthens the thread.
+            #
+            # Nightly alternation, NOT 14-night blocks: per-post reach swings 15K-6.8M, so a
+            # block design would be swamped by week-level drift.
+            #   even day -> arm A (control): answer +20, CTA +75   (exact status quo)
+            #   odd  day -> arm B (test):    answer +90, CTA +145  (same 55-min answer->CTA gap)
+            #
+            # B is 90, not the 180 first drafted: 90 already clears the ~first-hour window that
+            # Threads uses to judge reach (the actual mechanism) while keeping the Gumroad CTA at
+            # 00:25 Cairo instead of 01:55, where it would land on a sleeping audience half the
+            # nights. Owner had already set 45 on 2026-07-03 and reverted it a day later, so this
+            # is a deliberate step up from that rather than a leap past it.
+            #
+            # Parity is anchored to (now - 12h) so one Cairo NIGHT maps to one arm: a 22:00 post
+            # and its 01:00 answer land on the same side instead of flipping over midnight.
+            #
+            # BOT_CTA_DELAY_MIN must stay GREATER than BOT_ANSWER_DELAY_MIN -- src/config.ts
+            # throws on a reversed/equal pair and NOTHING publishes that night.
+            #
+            # No arm logging is needed: the answer's own offset from the post (+21 vs +180) is
+            # directly measurable from the API, so the data self-labels.
+            # To end the experiment, delete this block; the job-level env defaults take over.
+            doy=$(TZ='Africa/Cairo' date -d '-12 hours' +%-j)
+            if [ $((doy % 2)) -eq 0 ]; then
+              export BOT_ANSWER_DELAY_MIN=20 BOT_CTA_DELAY_MIN=75; arm=A
+            else
+              export BOT_ANSWER_DELAY_MIN=90 BOT_CTA_DELAY_MIN=145; arm=B
+            fi
+            echo "answer-delay A/B: arm $arm (answer +${BOT_ANSWER_DELAY_MIN}m, CTA +${BOT_CTA_DELAY_MIN}m, Cairo night doy $doy)"
+            # -------------------------------------------------------------------------------
             if npm run live; then fails=0; else fails=$((fails+1)); echo "iteration $i errored ($fails in a row)"; fi
             if [ -n "$(git status --porcelain state.json cases data/used-diagnoses.json)" ]; then
               git add state.json cases data/used-diagnoses.json
