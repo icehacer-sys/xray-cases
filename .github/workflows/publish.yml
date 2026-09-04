@@ -213,6 +213,27 @@ jobs:
               export BOT_FOLLOW_CTA=on; fcta=B
             fi
             echo "follow-CTA A/B: arm $fcta (BOT_FOLLOW_CTA=$BOT_FOLLOW_CTA)"
+            #
+            # --- HOOK-FRAMING A/B -- BUILT BUT DORMANT ------------------------------------
+            # Tests foregrounding the ordinariness of the presentation against the plain wording.
+            # Evidence is deliberately weak: the original "specific beats vague" reading did NOT
+            # survive testing (rho -0.10 on symptom length; "hip pain" is the best over-performer).
+            # What survived is contradiction-framing at AUC 0.631, permutation p = 0.084, n=11.
+            #
+            # OFF ON PURPOSE until the answer-delay experiment finishes (~2026-10-03). Running it
+            # now would make three separate things vary in one caption and cut cells to ~3.5
+            # nights, leaving any interaction unreadable.
+            #
+            # The alternative caption is already drafted into every case.json, so there is NO lead
+            # time: uncomment the four lines below and it starts that night. The parity is a third
+            # orthogonal slot, giving a balanced 2x2x2 on an 8-night cycle.
+            #
+            # if [ $(( (doy / 4) % 2 )) -eq 0 ]; then
+            #   export BOT_HOOK_ALT=off; hk=A
+            # else
+            #   export BOT_HOOK_ALT=on;  hk=B
+            # fi
+            # echo "hook-framing A/B: arm $hk (BOT_HOOK_ALT=$BOT_HOOK_ALT)"
             # -------------------------------------------------------------------------------
             if npm run live; then fails=0; else fails=$((fails+1)); echo "iteration $i errored ($fails in a row)"; fi
             if [ -n "$(git status --porcelain state.json cases data/used-diagnoses.json)" ]; then

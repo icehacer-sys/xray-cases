@@ -62,6 +62,10 @@ export interface Case {
   // --- filled by the tool ---
   generated?: {
     threadsCaption?: string;
+    /** Hook-framing experiment B arm: the same case with its opening tension foregrounded.
+     *  "" means drafted but the case had no genuine tension to surface (a valid outcome);
+     *  undefined means never drafted. */
+    threadsCaptionAlt?: string;
     threadsAnswer?: string;
     igCaption?: string;
     ctaText?: string;

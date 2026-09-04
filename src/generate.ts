@@ -22,6 +22,7 @@ import { loadCases, saveCase, loadUsedDiagnoses, isUsedDiagnosis } from "./cases
 import { State } from "./state.js";
 import {
   generateThreadsCaption,
+  draftForegroundedCaption,
   generateThreadsAnswer,
   generateIgCaption,
   draftEngagement,
@@ -251,10 +252,13 @@ async function predraftCaptions(c: Case, threadsOnly = false): Promise<void> {
     c.seedHint ??= e.seedHint;
   }
   const threadsCaption = generateThreadsCaption(c);
+  // Drafted for every case even while the hook-framing experiment is dormant, so switching it on
+  // never has to wait for the queue to turn over. "" = no genuine tension to foreground.
+  const threadsCaptionAlt = await draftForegroundedCaption(c);
   const threadsAnswer = await generateThreadsAnswer(c);
   const igCaption = threadsOnly ? "" : await generateIgCaption(c);
   const ctaText = pickCta(c).text;
-  c.generated = { threadsCaption, threadsAnswer, igCaption, ctaText };
+  c.generated = { threadsCaption, threadsCaptionAlt, threadsAnswer, igCaption, ctaText };
 }
 
 // ---------------------------------------------------------------------------

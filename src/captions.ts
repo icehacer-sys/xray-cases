@@ -91,6 +91,75 @@ export function withFollowCta(caption: string): string {
   return out.length > config.captionMaxChars ? caption : out;
 }
 
+/**
+ * HOOK-FRAMING experiment (built 2026-09-05, dormant until the answer-delay experiment ends).
+ *
+ * Rewrites the opening symptom line to FOREGROUND the tension the case already contains, and
+ * returns the full alternative caption — or "" when the case genuinely has no tension to surface.
+ * An empty result is a legitimate outcome, not a failure: analyse intent-to-treat and record how
+ * many B nights actually got a foregrounded line.
+ *
+ * Why this shape. The audit's original "specific beats vague" reading did not survive testing
+ * (Spearman rho -0.10 on symptom length; "hip pain" is the best over-performer). What survived is
+ * narrower and weak — setups stating an explicit contradiction run median 1.23 vs 0.99, AUC 0.631,
+ * permutation p = 0.084 at n=11. And a contradiction is a PROPERTY OF THE CASE, not an assignable
+ * treatment: you cannot add "the bullet was nowhere near the entry point" to a case where that is
+ * not the finding. So the randomisable variable is foreground-vs-plain WORDING of a tension the
+ * case genuinely has — same medicine, different emphasis.
+ *
+ * Adds NO new clinical facts. This is a medical account: an invented symptom is a far worse
+ * outcome than a lost experiment night, so the prompt forbids anything not already in
+ * symptom + hook, and every failure path falls back to the plain caption.
+ */
+export async function draftForegroundedCaption(c: Case): Promise<string> {
+  const system =
+    "You rewrite ONE line of a caption for @mdnoteslab, a daily 'guess the weird X-ray diagnosis' account. " +
+    "You are given a patient's presenting symptom and a description of what the X-ray showed. Rewrite the " +
+    "SYMPTOM line so how ORDINARY the presentation was becomes explicit — routine or painless or easily " +
+    "dismissed or barely worth a visit. " +
+    "ABSOLUTE RULES: (1) Describe ONLY what the patient presented with. NEVER describe, hint at, or allude to " +
+    "anything visible on the X-ray. The X-ray description is given to you ONLY so you know what the " +
+    "presentation is quietly contrasting with — the reader sees it in the NEXT line and stating it here " +
+    "destroys the entire guess. (2) Invent NOTHING. Use only facts already in the presenting symptom. Never " +
+    "add a new sign, duration, age, or measurement. (3) NEVER name, spell, abbreviate or hint at the diagnosis " +
+    "or its category. (4) Do NOT use commas (write short clauses or join with 'and'). (5) It must read " +
+    "naturally after 'A patient came in with '. (6) Under 120 characters. (7) If the presentation is ALREADY " +
+    "obviously strange, or there is nothing ordinary about it to lean on, return null rather than forcing one. " +
+    "Respond ONLY with a JSON object: {\"foregrounded\": string or null}";
+
+  const user =
+    `Diagnosis (NEVER reveal or hint): ${c.diagnosis}\n` +
+    `Presenting symptom: ${c.symptom}\n` +
+    `What the X-ray showed: ${c.hook}`;
+
+  try {
+    const p = parseJsonObject(await ask(system, user, 250));
+    const raw = p.foregrounded;
+    if (raw == null || typeof raw !== "string" || raw.trim() === "" || raw.trim().toLowerCase() === "null") return "";
+    const alt = cleanPunct(str(raw)).replace(/^["']+|["']+$/g, "").replace(/\.\s*$/, "").trim();
+    // A model that leaked the diagnosis, or ignored the no-commas rule, is not trusted for this
+    // line at all — fall back rather than post it.
+    if (!alt || alt.length > 130 || alt.includes(",")) return "";
+    if (new RegExp(`\\b${c.diagnosis.split(/\s+/)[0].replace(/[^a-z]/gi, "")}`, "i").test(alt)) return "";
+    // REVEAL-LEAK GUARD. The first draft of this prompt produced "a surgically placed hearing
+    // device and nothing more - yet something was coiling deep inside the inner ear like a watch
+    // spring" — the X-ray finding, moved into the line that runs BEFORE "Then the X-ray loaded".
+    // That destroys the guess, so trust the prompt for phrasing but never for this: any word the
+    // HOOK uses that the original symptom does not is reveal-specific and must not appear.
+    const symWords = new Set(c.symptom.toLowerCase().match(/[a-z]{5,}/g) ?? []);
+    const lower = alt.toLowerCase();
+    const leaked = (c.hook.toLowerCase().match(/[a-z]{5,}/g) ?? []).filter((w) => !symWords.has(w) && lower.includes(w));
+    if (leaked.length > 0) return "";
+    const out = generateThreadsCaption({ ...c, symptom: alt });
+    // A model that echoed the symptom back unchanged (seen on 00142) yields a B night textually
+    // IDENTICAL to A -- silent non-compliance that would count as a treated night and dilute the
+    // estimate toward zero. Treat it as "no variant" so the analysis can see it.
+    return out === generateThreadsCaption(c) ? "" : out;
+  } catch {
+    return ""; // never let a drafting failure block a publish
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Engagement fields — one Claude draft producing the difficulty rating, the
 // layperson secondary question, and the first-comment seed hint. All NON-spoiling.

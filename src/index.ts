@@ -17,6 +17,7 @@ import { State } from "./state.js";
 import {
   generateThreadsCaption,
   withFollowCta,
+  draftForegroundedCaption,
   generateThreadsAnswer,
   generateIgCaption,
   generateSeedComment,
@@ -66,6 +67,7 @@ async function ensureGenerated(c: Case, state: State): Promise<NonNullable<Case[
   const existing = c.generated ?? {};
   const need =
     existing.threadsCaption == null ||
+    existing.threadsCaptionAlt == null ||
     existing.threadsAnswer == null ||
     existing.igCaption == null ||
     existing.ctaText == null;
@@ -88,8 +90,11 @@ async function ensureGenerated(c: Case, state: State): Promise<NonNullable<Case[
   // Rotate the CTA by posting order (not case number) so consecutive nights never
   // repeat the same product. Baked into case.json at draft time, so it stays stable.
   const ctaText = existing.ctaText ?? pickCta(c, state.publishedCount()).text;
+  // Drafted even while the hook-framing experiment is dormant, so activation needs no lead time.
+  // "" = drafted but the case had no genuine tension to foreground, which is a valid outcome.
+  const threadsCaptionAlt = existing.threadsCaptionAlt ?? (await draftForegroundedCaption(c));
 
-  c.generated = { threadsCaption, threadsAnswer, igCaption, ctaText };
+  c.generated = { threadsCaption, threadsCaptionAlt, threadsAnswer, igCaption, ctaText };
   // keep stages in case.json in sync with central state for at-a-glance review
   c.stages = state.getStages(c.folder);
   saveCase(c);
@@ -217,7 +222,12 @@ async function runPublish(cli: Cli): Promise<void> {
       // FOLLOW-CTA experiment: resolved HERE, at post time, not in ensureGenerated(). The cached
       // generated.threadsCaption was drafted days ago, so gating it at generation would label the
       // night the case was drafted rather than the night it publishes.
-      const caption = withFollowCta(generated.threadsCaption!);
+      // HOOK-FRAMING experiment: on a B night use the foregrounded caption when one exists.
+      // Falls back to plain whenever the arm is off or the case had no tension to foreground, so
+      // a B night without a variant is a recorded non-compliance to analyse intent-to-treat, not
+      // a crash. withFollowCta then applies the (independent) follow-CTA arm on top.
+      const base = config.hookAlt && generated.threadsCaptionAlt ? generated.threadsCaptionAlt : generated.threadsCaption!;
+      const caption = withFollowCta(base);
 
       if (cli.mode === "dry-run") {
         log(`\n[dry-run] would post CHALLENGE for ${c.folder}:`);

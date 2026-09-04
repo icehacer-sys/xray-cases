@@ -53,6 +53,13 @@ export const config = {
   // answer-delay experiment, so the two cross into a balanced 2x2 instead of confounding.
   // Off = the caption the audience already knows, unchanged.
   followCta: (process.env.BOT_FOLLOW_CTA ?? "off").toLowerCase() === "on",
+
+  // HOOK-FRAMING experiment, B arm: post the foregrounded caption instead of the plain one.
+  // Built 2026-09-05 but DORMANT -- publish.yml does not set this until the answer-delay
+  // experiment finishes (~2026-10-03), so the caption is not varied by three things at once.
+  // The alternative caption is drafted for EVERY case regardless, so activation needs no lead
+  // time: uncommenting the parity block in publish.yml is the whole switch-on.
+  hookAlt: (process.env.BOT_HOOK_ALT ?? "off").toLowerCase() === "on",
   // Threads caps a post at 500 chars. Longest observed caption is 353, so the follow line fits
   // with room to spare -- but the guard in withFollowCta() is what makes that safe, not this.
   captionMaxChars: num("BOT_CAPTION_MAX_CHARS", 500),
