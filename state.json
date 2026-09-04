@@ -592,12 +592,16 @@
       "answerCommentId": "18214796596344122",
       "answerPostedAt": "2026-09-03T19:25:04.327Z",
       "ctaPostedAt": "2026-09-03T20:22:20.327Z"
+    },
+    "00136-charcot-joint": {
+      "threadsPostId": "18126225727745639",
+      "challengePostedAt": "2026-09-04T19:05:50.963Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-03",
+      "date": "2026-09-04",
       "count": 0
     }
   }
