@@ -16,6 +16,7 @@ import { loadCases, imageUrl, saveCase, loadUsedDiagnoses, isUsedDiagnosis, addU
 import { State } from "./state.js";
 import {
   generateThreadsCaption,
+  withFollowCta,
   generateThreadsAnswer,
   generateIgCaption,
   generateSeedComment,
@@ -213,10 +214,15 @@ async function runPublish(cli: Cli): Promise<void> {
 
       const generated = await ensureGenerated(c, state);
 
+      // FOLLOW-CTA experiment: resolved HERE, at post time, not in ensureGenerated(). The cached
+      // generated.threadsCaption was drafted days ago, so gating it at generation would label the
+      // night the case was drafted rather than the night it publishes.
+      const caption = withFollowCta(generated.threadsCaption!);
+
       if (cli.mode === "dry-run") {
         log(`\n[dry-run] would post CHALLENGE for ${c.folder}:`);
         log(`  image: ${imageUrl(c.folder, c.threadsImage)}`);
-        log(generated.threadsCaption);
+        log(caption);
       } else {
         // The topic tag files the post under the community. Meta throws opaque transient 400s
         // on it, and abandoning it silently cost 00135-pectus-excavatum its community on
@@ -230,7 +236,7 @@ async function runPublish(cli: Cli): Promise<void> {
         try {
           threadsPostId = await postImage(
             imageUrl(c.folder, c.threadsImage),
-            generated.threadsCaption!,
+            caption,
             { requireTag },
           );
         } catch (err) {

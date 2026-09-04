@@ -193,6 +193,26 @@ jobs:
               export BOT_ANSWER_DELAY_MIN=90 BOT_CTA_DELAY_MIN=145; arm=B
             fi
             echo "answer-delay A/B: arm $arm (answer +${BOT_ANSWER_DELAY_MIN}m, CTA +${BOT_CTA_DELAY_MIN}m, Cairo night doy $doy)"
+            #
+            # --- FOLLOW-CTA A/B (started 2026-09-05) ---------------------------------------
+            # Appends one follow line to the CHALLENGE CAPTION -- the only surface the ~5.3M
+            # non-follower viewers actually see, since most never open the thread. Tests the
+            # north star directly: gross follows per 100K non-follower viewers, ~0.032% at audit.
+            #
+            # Parity is (doy / 2) % 2, deliberately ORTHOGONAL to the answer-delay's (doy % 2):
+            # the two cross into a balanced 2x2 over a 4-night cycle instead of confounding each
+            # other. Each main effect still pools all 28 nights; the four cells estimate any
+            # interaction between them.
+            #
+            # The caption is applied at POST time in src/index.ts, not at generation time -- the
+            # cached generated.threadsCaption is drafted days ahead, so gating it during
+            # generation would label the drafting night rather than the publishing night.
+            if [ $(( (doy / 2) % 2 )) -eq 0 ]; then
+              export BOT_FOLLOW_CTA=off; fcta=A
+            else
+              export BOT_FOLLOW_CTA=on; fcta=B
+            fi
+            echo "follow-CTA A/B: arm $fcta (BOT_FOLLOW_CTA=$BOT_FOLLOW_CTA)"
             # -------------------------------------------------------------------------------
             if npm run live; then fails=0; else fails=$((fails+1)); echo "iteration $i errored ($fails in a row)"; fi
             if [ -n "$(git status --porcelain state.json cases data/used-diagnoses.json)" ]; then

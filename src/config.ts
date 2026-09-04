@@ -48,6 +48,15 @@ export const config = {
   // dropping lower-priority sections in order (Tx before Why) rather than splitting into a chain.
   answerMaxChars: num("BOT_ANSWER_MAX_CHARS", 500),
 
+  // FOLLOW-CTA experiment (started 2026-09-05). When on, one follow line is appended to the
+  // challenge caption AT POST TIME. Set per-night by publish.yml on a parity orthogonal to the
+  // answer-delay experiment, so the two cross into a balanced 2x2 instead of confounding.
+  // Off = the caption the audience already knows, unchanged.
+  followCta: (process.env.BOT_FOLLOW_CTA ?? "off").toLowerCase() === "on",
+  // Threads caps a post at 500 chars. Longest observed caption is 353, so the follow line fits
+  // with room to spare -- but the guard in withFollowCta() is what makes that safe, not this.
+  captionMaxChars: num("BOT_CAPTION_MAX_CHARS", 500),
+
   activeTz: process.env.BOT_ACTIVE_TZ ?? "Africa/Cairo",
 
   // Cross-post to Instagram too (Threads always posts).

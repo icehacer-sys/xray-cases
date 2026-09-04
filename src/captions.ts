@@ -55,6 +55,29 @@ export function generateThreadsCaption(c: Case): string {
   ].join("\n\n");
 }
 
+/** The one follow line the FOLLOW-CTA experiment tests. House style: no commas. */
+export const FOLLOW_CTA_LINE =
+  "A new case goes up every night. Follow so you catch tomorrow's before the answer drops.";
+
+/**
+ * Append the follow ask when the FOLLOW-CTA experiment's B arm is active.
+ *
+ * Applied at POST time, never at generation time. `generated.threadsCaption` is drafted days
+ * ahead and cached in case.json, so gating it inside generateThreadsCaption() would label the
+ * night a case was DRAFTED rather than the night it publishes, and the arms would be noise.
+ *
+ * The 5.3M non-follower viewers only ever see the caption -- most never open the thread -- so
+ * this is the only surface where a follow ask reaches the people the experiment is about.
+ *
+ * Skips silently rather than truncating: losing the hook to fit a CTA would cost far more than
+ * one night of the experiment, and a skipped night is visible in the posted text either way.
+ */
+export function withFollowCta(caption: string): string {
+  if (!config.followCta) return caption;
+  if (caption.length + 2 + FOLLOW_CTA_LINE.length > config.captionMaxChars) return caption;
+  return `${caption}\n\n${FOLLOW_CTA_LINE}`;
+}
+
 // ---------------------------------------------------------------------------
 // Engagement fields — one Claude draft producing the difficulty rating, the
 // layperson secondary question, and the first-comment seed hint. All NON-spoiling.
