@@ -599,12 +599,16 @@
       "answerCommentId": "18113552872970224",
       "answerPostedAt": "2026-09-04T19:27:24.650Z",
       "ctaPostedAt": "2026-09-04T20:21:53.444Z"
+    },
+    "00137-maffucci-syndrome": {
+      "threadsPostId": "18092877860544864",
+      "challengePostedAt": "2026-09-05T19:00:40.399Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-04",
+      "date": "2026-09-05",
       "count": 0
     }
   }

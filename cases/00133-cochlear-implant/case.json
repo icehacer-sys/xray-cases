@@ -51,7 +51,10 @@
   "seedHint": "Look deep inside the skull and ask yourself if that curl belongs there or not.",
   "generated": {
     "threadsCaption": "A patient came in with profound hearing loss treated with a surgically placed hearing device.\n\nThen the X-ray loaded 😭\n\nAnd a tight little coil of wire was spiralling into the inner ear like a watch spring.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Cochlear implant\n\n👀 What you see:\nA fine coiled wire spiralling into the cochlea with a small electronic receiver fixed to the skull behind the ear.\n\n🦴 Why it matters:\nIt is a surgically implanted device that restores hearing by stimulating the cochlear nerve so recognising it avoids mistaking the coil for a foreign body or lesion.\n\n💊 Treatment:\nNo treatment is needed for the device itself; it is programmed by the audiology team and MRI safety must be checked first.",
-    "igCaption": ""
-  }
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "stages": {}
 }
