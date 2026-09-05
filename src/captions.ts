@@ -408,7 +408,7 @@ It is just me and a lot of late nights behind every one of these.
 
 The cases stay free either way and this is only for anyone who wants to help keep them coming.
 
-Chip in here 👇🏼
+You can do that here 👇🏼
 support.mednoteslab.com`,
 
   hopital: `If these weird X-rays keep pulling you in.
