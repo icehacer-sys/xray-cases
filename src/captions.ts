@@ -49,19 +49,22 @@ export function generateThreadsCaption(c: Case): string {
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
     `And ${hook}.`,
-    `What's the most likely diagnosis? 🩻`,
-    `Wild guesses are welcome`,
+    CHALLENGE_LABEL_LINE,
+    `What's the most likely diagnosis?`,
+    `Wild guesses are welcome 👀`,
   ].join("\n\n");
 }
 
 /**
- * RETIRED from the caption on 2026-09-05 (owner: redundant once the 🩻 moved to the question,
- * which already says the same thing). Kept ONLY as a strip-token: captions cached in case.json
- * before that date still carry the line, and without this a stale case would post seven lines.
- * "Wild guesses are welcome" stays -- the audit found the non-medical audience needs the
- * low-cost entry point it provides.
+ * Strip-token for the challenge label, deliberately WITHOUT an emoji so it matches the line in
+ * every era it has existed: "…challenge 🩻" (pre 2026-09-05), "…challenge" (briefly), and
+ * "…challenge 🔍" (current). withFollowCta() prefix-matches on this, so a caption cached in
+ * case.json under any past wording is still stripped rather than leaving a seven-line post.
  */
-export const CHALLENGE_LABEL_LINE = "Quick diagnosis challenge";
+const CHALLENGE_LABEL_PREFIX = "Quick diagnosis challenge";
+
+/** The challenge label as it renders today. Owner moved 🩻 -> 🔍 on 2026-09-05. */
+export const CHALLENGE_LABEL_LINE = `${CHALLENGE_LABEL_PREFIX} 🔍`;
 
 /** The follow ask. One short line, house style (no commas), emoji-terminated like its neighbours. */
 export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
@@ -85,11 +88,11 @@ export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
  */
 export function withFollowCta(caption: string): string {
   if (!config.followCta) return caption;
-  // Prefix match, not equality: a caption cached in case.json before the 2026-09-05 emoji move
-  // still reads "Quick diagnosis challenge 🩻". An exact match would silently fail to find it and
-  // leave a SEVEN-line caption with the follow line bolted on -- the exact shape the owner
-  // rejected. Matching the prefix means a future emoji tweak cannot resurrect that bug either.
-  const lines = caption.split("\n\n").filter((l) => !l.trim().startsWith(CHALLENGE_LABEL_LINE));
+  // Prefix match on the EMOJI-LESS token, not equality against the rendered line: captions cached
+  // in case.json carry whichever emoji era they were drafted under (🩻 then none then 🔍). An exact
+  // match would silently miss them and leave a SEVEN-line caption with the follow line bolted on
+  // -- the exact shape the owner rejected. This way no future emoji change can resurrect that bug.
+  const lines = caption.split("\n\n").filter((l) => !l.trim().startsWith(CHALLENGE_LABEL_PREFIX));
   lines.push(FOLLOW_CTA_LINE);
   const out = lines.join("\n\n");
   return out.length > config.captionMaxChars ? caption : out;
@@ -380,6 +383,13 @@ const CTA_TEXT: Record<CtaKey, string> = {
   // Free lead magnet (email capture at Gumroad $0+ checkout) — the top of the funnel. Weighted
   // heavily in the rotation below: a free pack pulls far more downloads (= emails) than a paid PDF,
   // and the email list is what durably sells the paid collection.
+  support: `If these cases have taught you something or made you laugh at 2 AM.
+
+There is no team here. Just me and a lot of late nights.
+
+If you want to keep the lab running you can chip in here 👇🏼
+support.mednoteslab.com`,
+
   hopital: `If these weird X-rays keep pulling you in.
 
 I put 5 of the strangest into a free pack.
@@ -501,21 +511,23 @@ ctvol1.mednoteslab.com`,
 // field, viral10. They were consuming 5 of 14 nights -- over a third of the rotation -- pitching
 // products with no demonstrated demand to the account's highest-traffic surface.
 //
-// Slots are now weighted by sales, hopital still most frequent (free lead magnet, 29 downloads,
+// Slots are weighted by sales, hopital still most frequent (free lead magnet, 29 downloads,
 // top-of-funnel email capture) and never back-to-back including across the wrap:
-//   hopital 29 sales -> 3 | anxiety 7 -> 2 | vol1 7 -> 2 | collection 5 -> 2 | ctvol1 1 -> 1 | vol2 1 -> 1
+//   hopital 29 sales -> 3 | anxiety 7 -> 2 | vol1 7 -> 2 | collection 5 -> 2 | support 3 -> 2 |
+//   ctvol1 1 -> 1 | vol2 1 -> 1
+//
+// "support" added 2026-09-05 (owner). It is a tip jar rather than a product, but at 3 sales /
+// $128.26 it is the SECOND highest revenue line on the whole store and had no slot at all, so it
+// earns two on revenue even though its unit count is mid-table.
 //
 // The dropped keys are intentionally KEPT in CtaKey and CTA_TEXT: several already-posted cases
 // pin them via c.cta, and removing them would break those. They simply no longer rotate. Restore
 // one by adding its key back here.
-//
-// NOT in the rotation and worth a look: "Support the Lab" has 3 sales / $128.26 -- the second
-// highest revenue of anything on the store -- but no CtaKey or CTA_TEXT entry exists for it.
 const CTA_ROTATION: CtaKey[] = [
   "hopital", "collection", "anxiety",
-  "hopital", "vol1", "ctvol1",
+  "hopital", "vol1", "support",
   "hopital", "anxiety", "collection",
-  "vol1", "vol2",
+  "vol1", "support", "ctvol1", "vol2",
 ];
 
 export function pickCta(c: Case, seq?: number): { key: CtaKey; text: string } {
