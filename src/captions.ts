@@ -49,17 +49,17 @@ export function generateThreadsCaption(c: Case): string {
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
     `And ${hook}.`,
-    CHALLENGE_LABEL_LINE,
     `What's the most likely diagnosis? 🩻`,
     `Wild guesses are welcome`,
   ].join("\n\n");
 }
 
 /**
- * The line the follow ask REPLACES. It is the one line that can go without losing meaning --
- * "What's the most likely diagnosis?" sits directly under it and already says the same thing.
- * "Wild guesses are welcome 👀" is deliberately NOT the one dropped: the audit found the
- * non-medical audience needs the low-cost entry point that line provides.
+ * RETIRED from the caption on 2026-09-05 (owner: redundant once the 🩻 moved to the question,
+ * which already says the same thing). Kept ONLY as a strip-token: captions cached in case.json
+ * before that date still carry the line, and without this a stale case would post seven lines.
+ * "Wild guesses are welcome" stays -- the audit found the non-medical audience needs the
+ * low-cost entry point it provides.
  */
 export const CHALLENGE_LABEL_LINE = "Quick diagnosis challenge";
 
