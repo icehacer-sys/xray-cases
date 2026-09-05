@@ -49,9 +49,9 @@ export function generateThreadsCaption(c: Case): string {
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
     `And ${hook}.`,
-    `Quick diagnosis challenge 🩻`,
-    `What's the most likely diagnosis?`,
-    `Wild guesses are welcome 👀`,
+    CHALLENGE_LABEL_LINE,
+    `What's the most likely diagnosis? 🩻`,
+    `Wild guesses are welcome`,
   ].join("\n\n");
 }
 
@@ -61,7 +61,7 @@ export function generateThreadsCaption(c: Case): string {
  * "Wild guesses are welcome 👀" is deliberately NOT the one dropped: the audit found the
  * non-medical audience needs the low-cost entry point that line provides.
  */
-export const CHALLENGE_LABEL_LINE = "Quick diagnosis challenge 🩻";
+export const CHALLENGE_LABEL_LINE = "Quick diagnosis challenge";
 
 /** The follow ask. One short line, house style (no commas), emoji-terminated like its neighbours. */
 export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
@@ -85,7 +85,11 @@ export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
  */
 export function withFollowCta(caption: string): string {
   if (!config.followCta) return caption;
-  const lines = caption.split("\n\n").filter((l) => l.trim() !== CHALLENGE_LABEL_LINE);
+  // Prefix match, not equality: a caption cached in case.json before the 2026-09-05 emoji move
+  // still reads "Quick diagnosis challenge 🩻". An exact match would silently fail to find it and
+  // leave a SEVEN-line caption with the follow line bolted on -- the exact shape the owner
+  // rejected. Matching the prefix means a future emoji tweak cannot resurrect that bug either.
+  const lines = caption.split("\n\n").filter((l) => !l.trim().startsWith(CHALLENGE_LABEL_LINE));
   lines.push(FOLLOW_CTA_LINE);
   const out = lines.join("\n\n");
   return out.length > config.captionMaxChars ? caption : out;
