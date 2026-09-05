@@ -39,12 +39,31 @@ async function ask(system: string, user: string, maxTokens = 600): Promise<strin
 // Threads challenge caption — DETERMINISTIC
 // ---------------------------------------------------------------------------
 
+/**
+ * Strip commas from a caption field.
+ *
+ * This is the ONLY deterministic guard on the challenge caption. symptom and hook come VERBATIM
+ * from data/conditions.json and never pass through a model, so the no-comma rule that every
+ * drafting prompt carries simply does not apply to them -- 15 fields across the 102-condition pool
+ * hold a comma today and each would post one. (Caught 2026-09-05 on the 11 Sep case: "lodged in
+ * the food pipe, facing flat to the camera".)
+ *
+ * The house rule allows a comma only inside a genuine list of three or more items, which needs at
+ * least TWO commas. So a single comma is always an appositive or participial pause and comes out;
+ * a field with 2+ is left alone. No condition in the pool currently has 2+, so this is safe today
+ * and stays safe if a real list is ever added.
+ */
+function stripComma(s: string): string {
+  if ((s.match(/,/g) ?? []).length >= 2) return s;
+  return s.replace(/\s*,\s*/g, " ").replace(/\s{2,}/g, " ").trim();
+}
+
 export function generateThreadsCaption(c: Case): string {
   // The ORIGINAL fixed format the audience knows — only the symptom + hook vary (owner reverted the
   // Case#/difficulty/layperson/reveal-line experiment on 2026-07-04 after those posts underperformed).
   // Cap symptom+hook so the caption stays well under Threads' 500-char limit.
-  const symptom = clamp(c.symptom, 130);
-  const hook = clamp(c.hook, 190);
+  const symptom = clamp(stripComma(c.symptom), 130);
+  const hook = clamp(stripComma(c.hook), 190);
   return [
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
@@ -415,7 +434,7 @@ support.mednoteslab.com`,
 
 I put 5 of the strangest into a free pack.
 
-Guess hopital then flip for what each one really is.
+Look then guess then flip for what each one really is.
 
 Grab it free 👇🏼
 free.mednoteslab.com`,
@@ -488,7 +507,7 @@ xray3.mednoteslab.com`,
 
 I put the wildest cases into the Hopital Field Edition.
 
-Guess hopital then flip for the real diagnosis every time.
+Look then guess then flip for the real diagnosis every time.
 
 Grab it here 👇🏼
 hopital.mednoteslab.com`,
