@@ -50,8 +50,8 @@ export function generateThreadsCaption(c: Case): string {
     `Then the X-ray loaded 😭`,
     `And ${hook}.`,
     CHALLENGE_LABEL_LINE,
-    `What's the most likely diagnosis?`,
-    `Wild guesses are welcome 👀`,
+    DIAGNOSIS_PREFIX,
+    `${GUESSES_PREFIX} 👀`,
   ].join("\n\n");
 }
 
@@ -65,6 +65,11 @@ const CHALLENGE_LABEL_PREFIX = "Quick diagnosis challenge";
 
 /** The challenge label as it renders today. Owner moved 🩻 -> 🔍 on 2026-09-05. */
 export const CHALLENGE_LABEL_LINE = `${CHALLENGE_LABEL_PREFIX} 🔍`;
+
+/** Emoji-less bodies for the two lines whose emoji DIFFER between arms. Kept as prefixes so
+ *  withFollowCta() can rebuild them regardless of which emoji a cached caption carries. */
+const DIAGNOSIS_PREFIX = "What's the most likely diagnosis?";
+const GUESSES_PREFIX = "Wild guesses are welcome";
 
 /** The follow ask. One short line, house style (no commas), emoji-terminated like its neighbours. */
 export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
@@ -92,7 +97,21 @@ export function withFollowCta(caption: string): string {
   // in case.json carry whichever emoji era they were drafted under (🩻 then none then 🔍). An exact
   // match would silently miss them and leave a SEVEN-line caption with the follow line bolted on
   // -- the exact shape the owner rejected. This way no future emoji change can resurrect that bug.
-  const lines = caption.split("\n\n").filter((l) => !l.trim().startsWith(CHALLENGE_LABEL_PREFIX));
+  // Dropping the challenge label takes 🔍 with it, so arm B would otherwise run 😭 / nothing / 🔔
+  // and read lopsided. Owner's fix: 🩻 moves up to the diagnosis line and 👀 comes off the guesses
+  // line, so BOTH arms carry an emoji on lines 2, 4 and 6.
+  //   A: 😭 · 🔍 · 👀      B: 😭 · 🩻 · 🔔
+  // Rebuilt from the emoji-less prefixes rather than string-replaced, so a caption cached under any
+  // past era lands on the current shape either way.
+  const lines = caption
+    .split("\n\n")
+    .filter((l) => !l.trim().startsWith(CHALLENGE_LABEL_PREFIX))
+    .map((l) => {
+      const t = l.trim();
+      if (t.startsWith(DIAGNOSIS_PREFIX)) return `${DIAGNOSIS_PREFIX} 🩻`;
+      if (t.startsWith(GUESSES_PREFIX)) return GUESSES_PREFIX;
+      return l;
+    });
   lines.push(FOLLOW_CTA_LINE);
   const out = lines.join("\n\n");
   return out.length > config.captionMaxChars ? caption : out;
@@ -383,11 +402,13 @@ const CTA_TEXT: Record<CtaKey, string> = {
   // Free lead magnet (email capture at Gumroad $0+ checkout) — the top of the funnel. Weighted
   // heavily in the rotation below: a free pack pulls far more downloads (= emails) than a paid PDF,
   // and the email list is what durably sells the paid collection.
-  support: `If these cases have taught you something or made you laugh at 2 AM.
+  support: `If a case here ever taught you something or made you laugh at 2 AM.
 
-There is no team here. Just me and a lot of late nights.
+It is just me and a lot of late nights behind every one of these.
 
-If you want to keep the lab running you can chip in here 👇🏼
+The cases stay free either way and this is only for anyone who wants to help keep them coming.
+
+Chip in here 👇🏼
 support.mednoteslab.com`,
 
   hopital: `If these weird X-rays keep pulling you in.
