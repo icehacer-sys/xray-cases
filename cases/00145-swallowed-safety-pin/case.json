@@ -1,0 +1,59 @@
+{
+  "folder": "00145-swallowed-safety-pin",
+  "number": 145,
+  "diagnosis": "Swallowed safety pin",
+  "aliases": [
+    "open safety pin",
+    "ingested safety pin"
+  ],
+  "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
+  "hook": "an open safety pin was stuck in the food pipe with its point upward",
+  "whatYouSee": "An open safety pin stuck in the food pipe.",
+  "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
+  "treatment": "It is removed urgently by endoscopy.",
+  "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
+  "igOptions": [
+    "A. Safety pin",
+    "B. Hair clip",
+    "C. Coin"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-13T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Swallowed safety pin",
+    "aliases": [
+      "open safety pin",
+      "ingested safety pin"
+    ],
+    "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
+    "hook": "an open safety pin was stuck in the food pipe with its point upward",
+    "view": "AP chest and neck of an infant one view filling the frame with no pelvis or groin",
+    "keyFindings": "an open safety pin lodged in the upper food pipe at the level of the neck or chest with its sharp point open and the spring clearly visible",
+    "whatYouSee": "An open safety pin stuck in the food pipe.",
+    "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
+    "treatment": "It is removed urgently by endoscopy.",
+    "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
+    "igTitle": "PINNED",
+    "igOptions": [
+      "Safety pin",
+      "Hair clip",
+      "Coin"
+    ],
+    "igCorrect": "A",
+    "used": true,
+    "ageBand": "infant"
+  },
+  "difficulty": 1,
+  "laypersonQuestion": "What sharp thing is hiding in this baby's throat?",
+  "seedHint": "Look at the shape lodged in the chest and notice which end is pointing up.",
+  "generated": {
+    "threadsCaption": "A patient came in with an infant drooling and refusing feeds after swallowing a safety pin.\n\nThen the X-ray loaded 😭\n\nAnd an open safety pin was stuck in the food pipe with its point upward.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with an infant drooling and refusing feeds.\n\nThen the X-ray loaded 😭\n\nAnd an open safety pin was stuck in the food pipe with its point upward.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Swallowed safety pin\n\n👀 What you see:\nAn open safety pin stuck in the food pipe.\n\n🦴 Why it matters:\nAn open sharp pin can tear the food pipe so it must come out quickly.\n\n💊 Treatment:\nIt is removed urgently by endoscopy.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 strange real X-rays with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  }
+}
