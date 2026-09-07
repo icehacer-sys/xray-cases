@@ -1,0 +1,62 @@
+{
+  "folder": "00151-ulnar-dimelia",
+  "number": 151,
+  "diagnosis": "Ulnar dimelia",
+  "aliases": [
+    "mirror hand",
+    "mirror hand syndrome",
+    "ulnar duplication"
+  ],
+  "symptom": "a broad flat hand with too many fingers and no thumb in a young child",
+  "hook": "the hand had seven fingers arranged like a mirror image of itself",
+  "whatYouSee": "The hand carries seven fingers laid out like a reflection with no thumb at all and the forearm below it holds two matching bones instead of a radius and an ulna.",
+  "whyItMatters": "The limb bud duplicated its ulnar half during development so the child has no thumb and no true grip and the elbow is stiff.",
+  "treatment": "Surgery removes the surplus rays and rebuilds one of them into a thumb so the hand can pinch and grip.",
+  "takeaway": "A mirrored hand with no thumb over two ulnae is ulnar dimelia.",
+  "igOptions": [
+    "A. Polydactyly",
+    "B. Ulnar dimelia",
+    "C. Radial club hand"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-19T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Ulnar dimelia",
+    "aliases": [
+      "mirror hand",
+      "mirror hand syndrome",
+      "ulnar duplication"
+    ],
+    "symptom": "a broad flat hand with too many fingers and no thumb in a young child",
+    "hook": "the hand had seven fingers arranged like a mirror image of itself",
+    "view": "frontal hand and wrist radiograph with the forearm to the elbow",
+    "ageBand": "child",
+    "anatomyException": "This hand legitimately has SEVEN digits arranged in mirror symmetry and NO thumb and the forearm carries TWO ulnae side by side with NO radius. The extra digits and the duplicated ulna ARE the diagnosis and must be drawn. Everything else is normal.",
+    "keyFindings": "a broad hand with seven finger rays laid out in mirror symmetry about the midline with no thumb and a forearm containing two ulnae side by side and no radius",
+    "whatYouSee": "The hand carries seven fingers laid out like a reflection with no thumb at all and the forearm below it holds two matching bones instead of a radius and an ulna.",
+    "whyItMatters": "The limb bud duplicated its ulnar half during development so the child has no thumb and no true grip and the elbow is stiff.",
+    "treatment": "Surgery removes the surplus rays and rebuilds one of them into a thumb so the hand can pinch and grip.",
+    "takeaway": "A mirrored hand with no thumb over two ulnae is ulnar dimelia.",
+    "igTitle": "THE MIRROR HAND",
+    "igOptions": [
+      "Polydactyly",
+      "Ulnar dimelia",
+      "Radial club hand"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 5,
+  "laypersonQuestion": "Can you count how many fingers this child has?",
+  "seedHint": "Look at both sides of the hand and ask yourself if they match each other.",
+  "generated": {
+    "threadsCaption": "A patient came in with a broad flat hand with too many fingers and no thumb in a young child.\n\nThen the X-ray loaded 😭\n\nAnd the hand had seven fingers arranged like a mirror image of itself.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a young child brought in simply for an unusual hand shape.\n\nThen the X-ray loaded 😭\n\nAnd the hand had seven fingers arranged like a mirror image of itself.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ulnar dimelia\n\n👀 What you see:\nThe hand carries seven fingers laid out like a reflection with no thumb at all and the forearm below it holds two matching bones instead of a radius and an ulna.\n\n🦴 Why it matters:\nThe limb bud duplicated its ulnar half during development so the child has no thumb and no true grip and the elbow is stiff.\n\n💊 Treatment:\nSurgery removes the surplus rays and rebuilds one of them into a thumb so the hand can pinch and grip.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  }
+}

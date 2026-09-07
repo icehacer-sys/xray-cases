@@ -2668,5 +2668,219 @@
       "Rickets"
     ],
     "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Ulnar dimelia",
+    "aliases": [
+      "mirror hand",
+      "mirror hand syndrome",
+      "ulnar duplication"
+    ],
+    "symptom": "a broad flat hand with too many fingers and no thumb in a young child",
+    "hook": "the hand had seven fingers arranged like a mirror image of itself",
+    "view": "frontal hand and wrist radiograph with the forearm to the elbow",
+    "ageBand": "child",
+    "anatomyException": "This hand legitimately has SEVEN digits arranged in mirror symmetry and NO thumb and the forearm carries TWO ulnae side by side with NO radius. The extra digits and the duplicated ulna ARE the diagnosis and must be drawn. Everything else is normal.",
+    "keyFindings": "a broad hand with seven finger rays laid out in mirror symmetry about the midline with no thumb and a forearm containing two ulnae side by side and no radius",
+    "whatYouSee": "The hand carries seven fingers laid out like a reflection with no thumb at all and the forearm below it holds two matching bones instead of a radius and an ulna.",
+    "whyItMatters": "The limb bud duplicated its ulnar half during development so the child has no thumb and no true grip and the elbow is stiff.",
+    "treatment": "Surgery removes the surplus rays and rebuilds one of them into a thumb so the hand can pinch and grip.",
+    "takeaway": "A mirrored hand with no thumb over two ulnae is ulnar dimelia.",
+    "igTitle": "THE MIRROR HAND",
+    "igOptions": [
+      "Polydactyly",
+      "Ulnar dimelia",
+      "Radial club hand"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  {
+    "diagnosis": "Luxatio erecta",
+    "aliases": [
+      "inferior glenohumeral dislocation",
+      "inferior shoulder dislocation"
+    ],
+    "symptom": "an arm locked straight up above the head after a fall that the patient could not bring down",
+    "hook": "the arm was stuck pointing at the ceiling and would not come down at all",
+    "view": "AP shoulder with the arm in the presenting raised position",
+    "ageBand": "young-adult",
+    "anatomyException": "The humeral head legitimately sits BELOW the glenoid rather than within it and the shaft points upward alongside the head. This dislocated position IS the diagnosis. The scapula and clavicle counts stay normal.",
+    "keyFindings": "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
+    "whatYouSee": "The ball of the shoulder sits underneath its socket instead of inside it and the arm bone points up past the head.",
+    "whyItMatters": "The arm is forced overhead and levers the head out downward and it can tear the nerves and vessels running under the shoulder.",
+    "treatment": "The shoulder is reduced promptly with traction in the raised position then brought down and the nerves and pulses are checked before and after.",
+    "takeaway": "An arm locked overhead with the humeral head under the socket is luxatio erecta.",
+    "igTitle": "THE ARM THAT WOULD NOT COME DOWN",
+    "igOptions": [
+      "Anterior dislocation",
+      "Luxatio erecta",
+      "Fractured clavicle"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Congenital humeroradial synostosis",
+    "aliases": [
+      "radiohumeral synostosis",
+      "congenital elbow fusion"
+    ],
+    "symptom": "an elbow that had never bent since birth in a small infant",
+    "hook": "the arm bones had simply grown into one another and left no joint at all",
+    "view": "AP and lateral elbow with the distal humerus and proximal forearm",
+    "ageBand": "infant",
+    "anatomyException": "The humerus and the radius are legitimately FUSED into one continuous bone with no joint space between them. That fusion IS the diagnosis. The ulna stays separate and normal and the bone count is otherwise unchanged.",
+    "keyFindings": "continuous bone running from the distal humerus into the proximal radius with the joint space between them absent while the ulna remains separate and the elbow is held in one fixed position",
+    "whatYouSee": "The arm bone and the forearm bone run into each other as one piece of bone and the gap where the elbow joint should be has gone.",
+    "whyItMatters": "The elbow never formed as a joint so it cannot bend or straighten and the hand cannot be brought to the face.",
+    "treatment": "Mild cases are managed with therapy and aids while a badly placed elbow can be cut and reset into a more useful fixed angle.",
+    "takeaway": "An elbow with no joint space because the bones run together is congenital synostosis.",
+    "igTitle": "THE ELBOW THAT NEVER FORMED",
+    "igOptions": [
+      "Congenital humeroradial synostosis",
+      "Elbow dislocation",
+      "Supracondylar fracture"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Double-layered patella",
+    "aliases": [
+      "DLP",
+      "double layered patella sign"
+    ],
+    "symptom": "an aching knee in a patient with short stature and early joint wear",
+    "hook": "the kneecap had split into two stacked plates one behind the other",
+    "view": "true lateral knee",
+    "ageBand": "adolescent",
+    "anatomyException": "The patella is legitimately split into TWO separate corticated layers stacked front to back with a clear plane between them. That doubling IS the diagnosis. Every other bone in the knee stays single and normal.",
+    "keyFindings": "the patella divided into two corticated bony layers lying front to back with a distinct cleft between them while the femur and tibia are otherwise normal",
+    "whatYouSee": "The kneecap is made of two separate bony plates stacked one behind the other with a clean line dividing them.",
+    "whyItMatters": "The kneecap ossified from two separate layers that never merged and it is a strong pointer toward an underlying epiphyseal dysplasia.",
+    "treatment": "The layers themselves are usually left alone and care targets the pain and the early arthritis that follows.",
+    "takeaway": "A kneecap in two stacked layers on the lateral view is a double-layered patella.",
+    "igTitle": "THE KNEECAP IN TWO LAYERS",
+    "igOptions": [
+      "Bipartite patella",
+      "Double-layered patella",
+      "Patellar fracture"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Congenital knee dislocation",
+    "aliases": [
+      "congenital anterior knee dislocation",
+      "genu recurvatum congenitum"
+    ],
+    "symptom": "a newborn whose knee bent the wrong way and lay flat against the front of the thigh",
+    "hook": "the baby's leg folded backward at the knee like a hinge put on upside down",
+    "view": "lateral knee of a newborn from the distal femur to the proximal calf",
+    "ageBand": "infant",
+    "anatomyException": "The tibia legitimately sits displaced ANTERIOR to the femur so the knee is hyperextended and the joint surfaces do not meet normally. That dislocation IS the diagnosis. Keep newborn immaturity: the patella is not yet ossified and the epiphyses are largely cartilage.",
+    "keyFindings": "the proximal tibia displaced forward off the femoral condyles with the knee hyperextended and the femur and tibia no longer facing one another across a joint space",
+    "whatYouSee": "The shin bone has slid forward off the end of the thigh bone and the knee is bent backward instead of forward.",
+    "whyItMatters": "The knee formed while folded the wrong way in the womb and it must be reduced early while the tissues are still soft.",
+    "treatment": "Gentle serial casting starting in the first days usually brings it back and surgery is kept for knees that will not reduce.",
+    "takeaway": "A newborn knee bending backward with the shin in front of the thigh is congenital dislocation.",
+    "igTitle": "THE KNEE THAT BENT BACKWARD",
+    "igOptions": [
+      "Congenital knee dislocation",
+      "Developmental hip dysplasia",
+      "Femoral fracture"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Calcific myonecrosis",
+    "aliases": [
+      "calcified muscle mass",
+      "post-traumatic calcific myonecrosis"
+    ],
+    "symptom": "a slowly swelling calf in a patient who had crushed that leg decades earlier",
+    "hook": "an entire muscle had died and turned to a long slab of chalk inside the leg",
+    "view": "AP and lateral lower leg including the calf soft tissues",
+    "keyFindings": "a large elongated calcified soft tissue mass filling one muscle compartment of the calf with dense sheet like calcification around its rim and a more lucent centre while the tibia and fibula stay normal",
+    "ageBand": "older",
+    "whatYouSee": "A long chalky mass fills one compartment of the calf with a bright rim and a darker middle and the bones beside it are untouched.",
+    "whyItMatters": "A muscle killed by an old crush injury slowly calcifies over decades and it can be mistaken for a sarcoma and biopsied which invites chronic infection.",
+    "treatment": "It is left alone when the diagnosis is clear and the history fits and it is excised only when it breaks down or becomes infected.",
+    "takeaway": "A long calcified slab in one calf compartment decades after a crush is calcific myonecrosis.",
+    "igTitle": "THE MUSCLE THAT TURNED TO CHALK",
+    "igOptions": [
+      "Osteosarcoma",
+      "Calcific myonecrosis",
+      "Myositis ossificans"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Chondrosarcoma of the scapula",
+    "aliases": [
+      "scapular chondrosarcoma",
+      "intramedullary chondrosarcoma"
+    ],
+    "symptom": "a deep aching shoulder and a hard lump over the shoulder blade that kept growing",
+    "hook": "the shoulder blade had swollen from inside and filled with popcorn shaped flecks",
+    "view": "AP scapula with the whole scapular body in frame",
+    "ageBand": "older",
+    "keyFindings": "an expanded scapular body containing a lobulated mass with dense rings and arcs of chondroid calcification scattered through it and the surrounding ribs unremarkable",
+    "whatYouSee": "The shoulder blade is blown outward by a lumpy mass full of little rings and arcs of calcium.",
+    "whyItMatters": "It is a cartilage forming cancer that grows slowly and its grade decides the surgery and chemotherapy does very little for it.",
+    "treatment": "It is removed with a wide margin of healthy tissue because incomplete excision lets it come back.",
+    "takeaway": "An expanded scapula full of rings and arcs of calcium is a chondrosarcoma.",
+    "igTitle": "THE POPCORN SHOULDER",
+    "igOptions": [
+      "Chondrosarcoma",
+      "Osteomyelitis",
+      "Healing fracture"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Hypertrophic nonunion",
+    "aliases": [
+      "elephant foot nonunion",
+      "fracture nonunion"
+    ],
+    "symptom": "an arm that still moved at the break a year after the fracture was supposed to heal",
+    "hook": "the bone had piled up huge lumps of callus around a break that never actually joined",
+    "view": "AP and lateral humerus",
+    "ageBand": "middle-aged",
+    "keyFindings": "bulbous flaring callus heaped around both ends of an old humeral fracture giving an elephant foot shape with the fracture line still running clean through the middle and never bridged",
+    "whatYouSee": "Huge lumps of new bone flare out on both sides of the old break but the crack itself still runs straight through and never closes.",
+    "whyItMatters": "The bone is trying hard to heal and has plenty of blood supply but the fragments keep moving so the gap never bridges.",
+    "treatment": "Rigid fixation with compression is the fix and grafting is rarely needed because the biology is already working.",
+    "takeaway": "Massive callus with the fracture line still open is a hypertrophic nonunion.",
+    "igTitle": "THE BREAK THAT NEVER HEALED",
+    "igOptions": [
+      "Hypertrophic nonunion",
+      "Osteosarcoma",
+      "Chronic osteomyelitis"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Skeletal fluorosis",
+    "aliases": [
+      "fluorosis",
+      "endemic skeletal fluorosis"
+    ],
+    "symptom": "years of stiffness and bone pain in an adult from a village with high fluoride in the well water",
+    "hook": "the membrane between the forearm bones had turned into a solid sheet of bone",
+    "view": "AP forearm with both the radius and the ulna",
+    "ageBand": "older",
+    "keyFindings": "a dense sheet of mineralisation filling the interosseous membrane between the radius and ulna with generally increased bone density and coarsened trabeculae in both bones",
+    "whatYouSee": "The gap between the two forearm bones has filled in with a solid bridge of bone and the bones themselves look chalky and dense.",
+    "whyItMatters": "Years of swallowing too much fluoride drive calcium into ligaments and bone so the skeleton stiffens and the joints seize.",
+    "treatment": "The fluoride source is removed and nutrition is corrected while established stiffness and deformity are managed as they stand.",
+    "takeaway": "A bony sheet filling the forearm membrane in a dense skeleton is skeletal fluorosis.",
+    "igTitle": "THE SKELETON THAT SET SOLID",
+    "igOptions": [
+      "Skeletal fluorosis",
+      "Renal osteodystrophy",
+      "Paget disease"
+    ],
+    "igCorrect": "A"
   }
 ]

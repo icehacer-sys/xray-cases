@@ -420,14 +420,51 @@ const ACQUISITION_REALISM = {
  */
 export function verifyExtraLines(
   cond: Pick<Condition, "view" | "diagnosis" | "keyFindings"> &
-    Partial<Pick<Condition, "symptom" | "hook">> & { ageBand?: AgeBand },
+    Partial<Pick<Condition, "symptom" | "hook">> & { ageBand?: AgeBand; anatomyException?: string },
 ): string[] {
   return [
     ...regionVerifyLines(cond.view),
     ...deviceLines(cond, "verify"),
     ...ageLines(cond, "verify"),
     ...ACQUISITION_REALISM.verify,
+    // LAST so it is read as overriding the checks above rather than being overridden by them.
+    ...exceptionLines(cond.anatomyException, "verify"),
   ];
+}
+
+/**
+ * A declared, per-case departure from normal anatomy.
+ *
+ * The region rules and the QA gate are deliberately absolute — "five digits", "never a fused
+ * bone", "one humeral head per glenoid" — because those catch the AI artifacts that motivated
+ * the gate. But a whole class of real diagnoses IS one of those violations: mirror hand has
+ * seven digits and two ulnae, a synostosis is a fused bone, a dislocation is a head out of its
+ * socket. Without a declared exception those cases burn every regeneration attempt and land in
+ * needsReview forever, because the generator is told not to draw the finding and the verifier
+ * is told to reject it.
+ *
+ * Scoped on purpose. Only the named departure is excused; everything else on the film is still
+ * judged by the normal rules, so this cannot become a blanket "anything goes".
+ */
+export function exceptionLines(exception: string | undefined, kind: "prompt" | "verify"): string[] {
+  const e = exception?.trim();
+  if (!e) return [];
+  return kind === "prompt"
+    ? [
+        `DECLARED ANATOMICAL EXCEPTION. This case OVERRIDES the general anatomy rules above:`,
+        `  ${e}`,
+        `That departure IS the diagnosis and must be rendered exactly as described. It is not an error.`,
+        `Every OTHER anatomical rule above still applies in full: outside this one declared exception the`,
+        `film must be normal, correctly counted and bilaterally consistent.`,
+      ]
+    : [
+        `DECLARED ANATOMICAL EXCEPTION for this case:`,
+        `  ${e}`,
+        `This departure is EXPECTED and is the diagnosis itself. Do NOT report it as an AI artifact and do`,
+        `NOT fail the image for it, even though it contradicts the general checks above. Judge every OTHER`,
+        `structure by the normal rules — an impossibility OUTSIDE the declared exception is still critical,`,
+        `and an image that does NOT show the declared departure has failed to depict the diagnosis.`,
+      ];
 }
 
 /** All region rules whose matcher fires for this view (head-to-toe order preserved). */
@@ -461,12 +498,16 @@ export function regionVerifyLines(view: string): string[] {
  */
 export function buildXrayPrompt(
   cond: Pick<Condition, "view" | "diagnosis" | "keyFindings"> &
-    Partial<Pick<Condition, "symptom" | "hook">> & { ageBand?: AgeBand },
+    Partial<Pick<Condition, "symptom" | "hook">> & { ageBand?: AgeBand; anatomyException?: string },
   opts: { avoid?: string[]; emphasis?: string } = {},
 ): string {
+  const hasException = !!cond.anatomyException?.trim();
   const region = [
     ...regionPromptLines(cond.view),
     ...deviceLines(cond, "prompt"),
+    // Immediately after the rules it overrides, so the model reads the exception as amending
+    // them rather than as one more competing constraint further down the prompt.
+    ...exceptionLines(cond.anatomyException, "prompt"),
   ];
   const lines = [
     `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
@@ -485,9 +526,16 @@ export function buildXrayPrompt(
     `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs.`,
     `Do NOT duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired`,
     `structure (one scapula and one clavicle per side, one femoral head per hip, 12 rib pairs, five`,
+    // Only points at the exception block when there IS one. Referencing a "declared exception
+    // below" on the ~95% of cases that have none just invites the model to invent one.
     `digits per hand/foot, one continuous spine, two orbits) unless the pathology itself only changes a`,
-    `structure's position, shape, or density. Represent the pathology as a change to a SINGLE structure,`,
-    `never as an added duplicate. No melted, smeared, doubled, or garbled bone.`,
+    hasException
+      ? `structure's position, shape, or density, OR the DECLARED ANATOMICAL EXCEPTION below says otherwise.`
+      : `structure's position, shape, or density. Represent the pathology as a change to a SINGLE structure,`,
+    hasException
+      ? `Absent that declaration, represent the pathology as a change to a SINGLE structure and never as an`
+      : `never as an added duplicate. No melted, smeared, doubled, or garbled bone.`,
+    ...(hasException ? [`added duplicate. No melted, smeared, doubled, or garbled bone.`] : []),
     ``,
     `The PATHOLOGY may be irregular or asymmetric — that is expected. But every NON-pathological paired`,
     `structure (both forearm bones, both sides of the jaw and dental arch, the ribs, the orbits) must stay`,

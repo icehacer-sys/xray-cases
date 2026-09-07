@@ -125,6 +125,14 @@ export interface Condition {
    *  Optional: when absent the band is inferred from symptom/view/hook, else defaults to
    *  young-adult. Required on all NEW conditions. See AgeBand in anatomy.ts. */
   ageBand?: AgeBand;
+  /** A normal-anatomy rule this diagnosis LEGITIMATELY breaks, written as the departure itself
+   *  ("this hand has seven digits and two ulnae and no radius"). Without it the region rules and
+   *  the QA gate treat the pathology as an AI artifact: mirror hand fails "five digits", a
+   *  synostosis fails "never a fused bone", a dislocation fails "one humeral head per glenoid".
+   *  Injected into BOTH the image prompt (as an override) and the verifier (as an expectation),
+   *  so the gate stops rejecting the diagnosis it was asked to produce. Scoped on purpose: only
+   *  the named departure is excused and every other structure is still judged normally. */
+  anatomyException?: string;
   /** Set true once the generator has produced a case from it (so it is never reused). */
   used?: boolean;
   /** Set true to permanently exclude from auto-generation (e.g. pelvic/groin/full-lower-body
