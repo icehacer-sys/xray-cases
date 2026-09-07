@@ -396,8 +396,11 @@ const ACQUISITION_REALISM = {
     `- Real overlying shadows cross the anatomy: skin folds, breast or pectoral soft tissue, bowel gas, hair or`,
     `  a clothing edge, exactly as they do on a genuine film.`,
     `- Fine even film grain over the whole image including the black background.`,
-    `- A small radiopaque lead side marker (a single letter L or R matching the side imaged) sits in one corner`,
-    `  of the collimated field over background, never over the anatomy or the finding.`,
+    // NO side marker. It was tried and dropped by the owner: any rendered letter is the single
+    // most obvious "this was generated" tell if it comes out malformed, and it adds nothing the
+    // audience reads. Keep the film free of ALL lettering.
+    `- NO lettering anywhere on the film. No lead side marker, no L or R, no letters, numbers, dates,`,
+    `  names or any other text or annotation of any kind.`,
     `All of the above is NORMAL IMAGING PHYSICS. None of it may look like digital damage: no smearing, no melted`,
     `anatomy, no repeated texture patches, no uniform stippled noise standing in for tissue, and the primary`,
     `finding stays clearly visible through all of it.`,
@@ -406,8 +409,8 @@ const ACQUISITION_REALISM = {
     `REALISM IS EXPECTED AND MUST NOT BE FLAGGED: collimation borders, uneven exposure, a density gradient,`,
     `scatter haze, film grain, slightly rotated or off-centre positioning, and overlying skin folds, bowel gas`,
     `or clothing are all normal features of a genuine radiograph. Only flag AI impossibilities in the ANATOMY.`,
-    `SIDE MARKER: if a lead L or R marker is present it should be one legible letter clear of the anatomy. An`,
-    `illegible or garbled marker is MINOR, not critical.`,
+    `NO LETTERING: the film must carry no text at all — no lead L or R side marker, no letters, numbers or`,
+    `annotation. Any lettering present is a defect and should be reported.`,
   ],
 };
 
@@ -501,9 +504,8 @@ export function buildXrayPrompt(
     ``,
     `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain.`,
     ``,
-    // "no labels" dropped: a lead side marker is now wanted (see ACQUISITION_REALISM).
     `Radiology style: diagnostic-quality radiograph, authentic grayscale contrast, natural X-ray`,
-    `grain, no cinematic glow, no artificial sharpening, no arrows or annotations.`,
+    `grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.`,
     ``,
     `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
     `No watermark.`,
