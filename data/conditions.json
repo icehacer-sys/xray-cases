@@ -90,7 +90,7 @@
       "Multiple myeloma"
     ],
     "igCorrect": "B",
-    "used": false,
+    "used": true,
     "skipPublic": true
   },
   {
@@ -2423,6 +2423,246 @@
       "DISH"
     ],
     "igCorrect": "C",
-    "ageBand": "older"
+    "ageBand": "older",
+    "used": true
+  },
+  {
+    "diagnosis": "Dracunculiasis",
+    "aliases": [
+      "Guinea worm",
+      "Guinea worm disease",
+      "calcified Dracunculus"
+    ],
+    "symptom": "a burning blister on the ankle of a traveller who had been drinking from a village pond",
+    "hook": "a long thin worm had calcified into a coil under the skin and was sitting there in plain view",
+    "view": "AP lower leg",
+    "ageBand": "young-adult",
+    "keyFindings": "a long serpentine calcified worm coiled and looped within the soft tissues of the calf standing out as a dense white thread against completely normal underlying bone",
+    "whatYouSee": "A long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.",
+    "whyItMatters": "The female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.",
+    "treatment": "The living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
+    "takeaway": "A long calcified thread coiled in the soft tissue is a dead Guinea worm.",
+    "igTitle": "THE WORM IN THE LEG",
+    "igOptions": [
+      "Calcified haematoma",
+      "Dracunculiasis",
+      "Myositis ossificans"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Duodenal atresia",
+    "aliases": [
+      "double bubble sign",
+      "congenital duodenal obstruction"
+    ],
+    "symptom": "a newborn vomiting bile within hours of the very first feed",
+    "hook": "the whole abdomen held just two bubbles of gas and nothing at all beyond them",
+    "view": "supine abdomen of a newborn cropped at the iliac crests with the pelvis and groin completely out of frame",
+    "ageBand": "infant",
+    "keyFindings": "two large gas filled bubbles in the upper abdomen with the larger stomach bubble on the left and a dilated duodenal cap on the right and completely gasless bowel below them",
+    "whatYouSee": "Two big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.",
+    "whyItMatters": "The duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.",
+    "treatment": "The blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
+    "takeaway": "Two bubbles and a gasless belly in a newborn is duodenal atresia.",
+    "igTitle": "THE DOUBLE BUBBLE",
+    "igOptions": [
+      "Duodenal atresia",
+      "Necrotising enterocolitis",
+      "Hirschsprung disease"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Progressive massive fibrosis",
+    "aliases": [
+      "silicosis",
+      "complicated pneumoconiosis",
+      "eggshell calcification"
+    ],
+    "symptom": "decades of worsening breathlessness in a retired stone quarry worker",
+    "hook": "two great masses had formed high in the lungs and were dragging everything upward toward them",
+    "view": "PA chest",
+    "ageBand": "older",
+    "keyFindings": "large conglomerate masses in both upper zones surrounded by profuse small nodules with eggshell calcification of the enlarged hilar lymph nodes and upward retraction of both hila",
+    "whatYouSee": "Two dense masses sit high in the lungs surrounded by countless small nodules and the lymph nodes at the roots have bright calcified rims.",
+    "whyItMatters": "Years of inhaled silica dust drive scarring that fuses small nodules into solid masses and it sharply raises the risk of tuberculosis and lung cancer.",
+    "treatment": "There is no cure so care is removal from exposure and supportive treatment and active screening for tuberculosis.",
+    "takeaway": "Upper zone masses with eggshell hilar nodes in a quarry worker is silicosis.",
+    "igTitle": "THE STONECUTTER'S LUNGS",
+    "igOptions": [
+      "Progressive massive fibrosis",
+      "Cannonball metastases",
+      "Sarcoidosis"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Ochronosis",
+    "aliases": [
+      "alkaptonuria",
+      "ochronotic spondylosis",
+      "black bone disease"
+    ],
+    "symptom": "a stiff painful back in a patient whose urine turned black on standing",
+    "hook": "every disc in the spine had turned into a dense white wafer",
+    "view": "lateral lumbar spine cropped above the hip joints with no pelvis or groin in frame",
+    "ageBand": "older",
+    "keyFindings": "dense calcification of multiple intervertebral discs with marked disc space narrowing and vacuum phenomena and osteoporotic vertebral bodies giving a stack of white wafers",
+    "whatYouSee": "The discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.",
+    "whyItMatters": "A missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.",
+    "treatment": "Nitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
+    "takeaway": "Calcified discs stacked like white wafers is ochronosis from alkaptonuria.",
+    "igTitle": "THE BLACK BONE DISEASE",
+    "igOptions": [
+      "Ankylosing spondylitis",
+      "Ochronosis",
+      "DISH"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Mycetoma",
+    "aliases": [
+      "Madura foot",
+      "maduromycosis",
+      "eumycetoma"
+    ],
+    "symptom": "a hugely swollen foot with discharging sinuses in a barefoot farm worker",
+    "hook": "the foot had swollen into a lumpy mass and the bones inside were quietly being eaten away",
+    "view": "AP and lateral foot",
+    "ageBand": "young-adult",
+    "keyFindings": "gross soft tissue swelling of the whole foot with multiple rounded lytic cavities in the tarsal and metatarsal bones and dense periosteal new bone while the overall shape of the foot is preserved",
+    "whatYouSee": "The foot is hugely swollen and the bones inside are riddled with rounded holes and thickened along their edges.",
+    "whyItMatters": "A fungus or bacterium enters through a thorn prick and slowly invades soft tissue and bone over years and it ends in amputation if it is left.",
+    "treatment": "Long courses of antifungal or antibacterial drugs run for months and surgery or amputation is needed in advanced disease.",
+    "takeaway": "A massively swollen foot with bones full of holes in a barefoot worker is mycetoma.",
+    "igTitle": "THE MADURA FOOT",
+    "igOptions": [
+      "Mycetoma",
+      "Charcot joint",
+      "Osteosarcoma"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Psoriatic arthritis mutilans",
+    "aliases": [
+      "arthritis mutilans",
+      "pencil in cup deformity",
+      "psoriatic arthropathy"
+    ],
+    "symptom": "shortened telescoping fingers and thick pitted nails in a patient with scaly skin plaques",
+    "hook": "the finger bones had been whittled into pencils sitting inside little cups",
+    "view": "PA both hands",
+    "ageBand": "middle-aged",
+    "keyFindings": "erosive arthritis of the small joints with sharpened pencil like ends of the phalanges sitting within cupped bases of the adjacent bones plus fluffy periosteal new bone and preserved bone density",
+    "whatYouSee": "The ends of the finger bones are whittled to points and sit inside the cupped ends of the next bone along.",
+    "whyItMatters": "Psoriatic inflammation destroys and rebuilds the small joints at the same time so bone is eaten away and laid down together and the fingers shorten and telescope.",
+    "treatment": "Disease modifying drugs and biologics halt the erosion and surgery salvages the worst joints.",
+    "takeaway": "Pencil in cup fingers with fluffy new bone is psoriatic arthritis mutilans.",
+    "igTitle": "PENCIL IN A CUP",
+    "igOptions": [
+      "Rheumatoid arthritis",
+      "Psoriatic arthritis mutilans",
+      "Gout"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Chondrocalcinosis",
+    "aliases": [
+      "CPPD",
+      "pseudogout",
+      "calcium pyrophosphate deposition disease"
+    ],
+    "symptom": "a hot swollen knee in an older patient that looked exactly like an attack of gout",
+    "hook": "the cartilage itself had turned into a bright white line inside the joint",
+    "view": "AP knee",
+    "ageBand": "older",
+    "keyFindings": "dense linear calcification of the hyaline articular cartilage and of the menisci showing as bright white lines running parallel to the bone ends within the joint space",
+    "whatYouSee": "Bright white lines of calcium sit inside the joint following the exact shape of the cartilage.",
+    "whyItMatters": "Calcium pyrophosphate crystals deposit in cartilage and shed into the joint to cause attacks that mimic gout so the treatment is different.",
+    "treatment": "Acute attacks settle with anti-inflammatories or a steroid injection and no drug removes the crystals themselves.",
+    "takeaway": "White lines inside the joint cartilage is chondrocalcinosis from CPPD.",
+    "igTitle": "THE JOINT THAT TURNED TO CHALK",
+    "igOptions": [
+      "Gout",
+      "Chondrocalcinosis",
+      "Osteoarthritis"
+    ],
+    "igCorrect": "B"
+  },
+  {
+    "diagnosis": "Odontogenic keratocyst",
+    "aliases": [
+      "keratocystic odontogenic tumour",
+      "OKC",
+      "soap bubble mandible"
+    ],
+    "symptom": "a painless swelling of the jaw picked up on a routine dental film",
+    "hook": "a huge dark cavity had hollowed out the jaw and the patient had never felt a thing",
+    "view": "panoramic dental radiograph of both jaws",
+    "ageBand": "young-adult",
+    "keyFindings": "a large well defined multilocular lucent cavity expanding the posterior body and ramus of the mandible with a scalloped sclerotic margin and one unerupted tooth displaced at its lower edge while every other tooth sits normally in a single continuous arch",
+    "whatYouSee": "A large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.",
+    "whyItMatters": "It creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.",
+    "treatment": "The lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
+    "takeaway": "A big scalloped cavity running along the jaw with a displaced tooth is an odontogenic keratocyst.",
+    "igTitle": "THE HOLLOW JAW",
+    "igOptions": [
+      "Odontogenic keratocyst",
+      "Dental abscess",
+      "Osteosarcoma of the jaw"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Calcified pleural plaques",
+    "aliases": [
+      "asbestos related pleural disease",
+      "holly leaf calcification",
+      "pleural plaques"
+    ],
+    "symptom": "a routine chest film in a retired shipyard lagger who felt completely fine",
+    "hook": "sheets of calcium had grown along the lining of both lungs like frost across a window",
+    "view": "PA chest",
+    "ageBand": "older",
+    "keyFindings": "multiple dense calcified pleural plaques lying along both hemidiaphragms and the lateral chest wall with irregular holly leaf shaped edges and clear lung fields in between them",
+    "whatYouSee": "Sheets of bright calcium sit along the lining of the lungs and the diaphragm with jagged holly leaf edges.",
+    "whyItMatters": "They are the fingerprint of old asbestos exposure and are harmless in themselves but they mark someone who now carries a raised risk of mesothelioma.",
+    "treatment": "The plaques need no treatment so care is documenting the exposure and watching for mesothelioma and lung cancer.",
+    "takeaway": "Holly leaf calcified plaques on the pleura means old asbestos exposure.",
+    "igTitle": "FROST ON THE LUNGS",
+    "igOptions": [
+      "Calcified pleural plaques",
+      "Pulmonary tuberculosis",
+      "Healed rib fractures"
+    ],
+    "igCorrect": "A"
+  },
+  {
+    "diagnosis": "Infantile scurvy",
+    "aliases": [
+      "Barlow disease",
+      "vitamin C deficiency",
+      "Wimberger sign"
+    ],
+    "symptom": "an irritable infant who screamed whenever his legs were touched and refused to move them at all",
+    "hook": "the baby lay frog legged and would not move because every bone hurt to touch",
+    "view": "AP both knees and lower legs of an infant",
+    "ageBand": "infant",
+    "keyFindings": "dense white metaphyseal lines across the knees with lucent scurvy lines just beneath them and thin pencilled cortices and dense ring like rims around the epiphyses plus subperiosteal new bone from old haemorrhage",
+    "whatYouSee": "Bright dense lines cross the ends of the long bones with dark lines just beneath them and the growth centres carry thin white rings.",
+    "whyItMatters": "Vitamin C is needed to build collagen so the bone matrix fails and vessels bleed under the periosteum which is exactly why the baby will not be touched.",
+    "treatment": "Vitamin C replacement corrects it quickly and the pain settles within days.",
+    "takeaway": "White metaphyseal lines and ringed epiphyses in a screaming infant is scurvy.",
+    "igTitle": "THE BABY WHO WOULD NOT MOVE",
+    "igOptions": [
+      "Non-accidental injury",
+      "Infantile scurvy",
+      "Rickets"
+    ],
+    "igCorrect": "B"
   }
 ]
