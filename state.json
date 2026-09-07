@@ -613,12 +613,16 @@
       "answerCommentId": "18027626225681552",
       "answerPostedAt": "2026-09-06T20:32:52.197Z",
       "ctaPostedAt": "2026-09-06T21:30:24.092Z"
+    },
+    "00134-gallstone-ileus": {
+      "threadsPostId": "18123015703890508",
+      "challengePostedAt": "2026-09-07T19:02:29.764Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-06",
+      "date": "2026-09-07",
       "count": 0
     }
   }
