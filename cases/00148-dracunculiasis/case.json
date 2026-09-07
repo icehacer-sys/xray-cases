@@ -1,0 +1,61 @@
+{
+  "folder": "00148-dracunculiasis",
+  "number": 148,
+  "diagnosis": "Dracunculiasis",
+  "aliases": [
+    "Guinea worm",
+    "Guinea worm disease",
+    "calcified Dracunculus"
+  ],
+  "symptom": "a burning blister on the ankle of a traveller who had been drinking from a village pond",
+  "hook": "a long thin worm had calcified into a coil under the skin and was sitting there in plain view",
+  "whatYouSee": "A long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.",
+  "whyItMatters": "The female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.",
+  "treatment": "The living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
+  "takeaway": "A long calcified thread coiled in the soft tissue is a dead Guinea worm.",
+  "igOptions": [
+    "A. Calcified haematoma",
+    "B. Dracunculiasis",
+    "C. Myositis ossificans"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-16T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Dracunculiasis",
+    "aliases": [
+      "Guinea worm",
+      "Guinea worm disease",
+      "calcified Dracunculus"
+    ],
+    "symptom": "a burning blister on the ankle of a traveller who had been drinking from a village pond",
+    "hook": "a long thin worm had calcified into a coil under the skin and was sitting there in plain view",
+    "view": "AP lower leg",
+    "ageBand": "young-adult",
+    "keyFindings": "a long serpentine calcified worm coiled and looped within the soft tissues of the calf standing out as a dense white thread against completely normal underlying bone",
+    "whatYouSee": "A long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.",
+    "whyItMatters": "The female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.",
+    "treatment": "The living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
+    "takeaway": "A long calcified thread coiled in the soft tissue is a dead Guinea worm.",
+    "igTitle": "THE WORM IN THE LEG",
+    "igOptions": [
+      "Calcified haematoma",
+      "Dracunculiasis",
+      "Myositis ossificans"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "What do you think left that coil under the skin?",
+  "seedHint": "Look at the ankle and ask yourself: is that a wire or something that was once alive?",
+  "generated": {
+    "threadsCaption": "A patient came in with a burning blister on the ankle of a traveller who had been drinking from a village pond.\n\nThen the X-ray loaded 😭\n\nAnd a long thin worm had calcified into a coil under the skin and was sitting there in plain view.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a minor blister on the ankle and a recent trip abroad.\n\nThen the X-ray loaded 😭\n\nAnd a long thin worm had calcified into a coil under the skin and was sitting there in plain view.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Dracunculiasis\n\n👀 What you see:\nA long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.\n\n🦴 Why it matters:\nThe female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.\n\n💊 Treatment:\nThe living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "folder": "00150-ochronosis",
+  "number": 150,
+  "diagnosis": "Ochronosis",
+  "aliases": [
+    "alkaptonuria",
+    "ochronotic spondylosis",
+    "black bone disease"
+  ],
+  "symptom": "a stiff painful back in a patient whose urine turned black on standing",
+  "hook": "every disc in the spine had turned into a dense white wafer",
+  "whatYouSee": "The discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.",
+  "whyItMatters": "A missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.",
+  "treatment": "Nitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
+  "takeaway": "Calcified discs stacked like white wafers is ochronosis from alkaptonuria.",
+  "igOptions": [
+    "A. Ankylosing spondylitis",
+    "B. Ochronosis",
+    "C. DISH"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-18T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Ochronosis",
+    "aliases": [
+      "alkaptonuria",
+      "ochronotic spondylosis",
+      "black bone disease"
+    ],
+    "symptom": "a stiff painful back in a patient whose urine turned black on standing",
+    "hook": "every disc in the spine had turned into a dense white wafer",
+    "view": "lateral lumbar spine cropped above the hip joints with no pelvis or groin in frame",
+    "ageBand": "older",
+    "keyFindings": "dense calcification of multiple intervertebral discs with marked disc space narrowing and vacuum phenomena and osteoporotic vertebral bodies giving a stack of white wafers",
+    "whatYouSee": "The discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.",
+    "whyItMatters": "A missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.",
+    "treatment": "Nitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
+    "takeaway": "Calcified discs stacked like white wafers is ochronosis from alkaptonuria.",
+    "igTitle": "THE BLACK BONE DISEASE",
+    "igOptions": [
+      "Ankylosing spondylitis",
+      "Ochronosis",
+      "DISH"
+    ],
+    "igCorrect": "B",
+    "used": true
+  },
+  "difficulty": 5,
+  "laypersonQuestion": "Why would someones urine turn black after sitting out?",
+  "seedHint": "Count the bright white discs then ask yourself if any single one looks normal",
+  "generated": {
+    "threadsCaption": "A patient came in with a stiff painful back in a patient whose urine turned black on standing.\n\nThen the X-ray loaded 😭\n\nAnd every disc in the spine had turned into a dense white wafer.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a stiff and painful back and urine that had simply been left to stand.\n\nThen the X-ray loaded 😭\n\nAnd every disc in the spine had turned into a dense white wafer.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ochronosis\n\n👀 What you see:\nThe discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.\n\n🦴 Why it matters:\nA missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.\n\n💊 Treatment:\nNitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}

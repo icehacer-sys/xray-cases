@@ -875,13 +875,13 @@
       "oesophageal foreign body"
     ],
     "symptom": "a child drooling and refusing food after swallowing something",
-    "hook": "a perfectly round metal disc was lodged in the food pipe, facing flat to the camera",
+    "hook": "a perfectly round metal disc was lodged in the food pipe and facing flat to the camera",
     "view": "AP chest and neck",
     "keyFindings": "a round radiopaque metallic disc lying in the coronal plane (face-on) at the level of the thoracic inlet, distinguishing oesophageal from tracheal location",
-    "whatYouSee": "A round, dense metallic disc sitting face-on in the oesophagus, typically at the thoracic inlet.",
-    "whyItMatters": "A lodged coin can cause obstruction, drooling and aspiration; a button battery looks similar but has a double-ring halo and is a corrosive emergency.",
+    "whatYouSee": "A round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.",
+    "whyItMatters": "A lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.",
     "treatment": "An impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
-    "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin, but always rule out a button battery.",
+    "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin so always rule out a button battery first.",
     "igTitle": "THE DISC IN THE PIPE",
     "igOptions": [
       "Button battery",
@@ -1058,7 +1058,7 @@
       "Spinal rod"
     ],
     "igCorrect": "B",
-    "used": false,
+    "used": true,
     "ageBand": "young-adult"
   },
   {
@@ -2448,7 +2448,8 @@
       "Dracunculiasis",
       "Myositis ossificans"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Duodenal atresia",
@@ -2458,7 +2459,7 @@
     ],
     "symptom": "a newborn vomiting bile within hours of the very first feed",
     "hook": "the whole abdomen held just two bubbles of gas and nothing at all beyond them",
-    "view": "supine abdomen of a newborn cropped at the iliac crests with the pelvis and groin completely out of frame",
+    "view": "coned AP view of the upper abdomen of a newborn showing only from the nipples down to the navel with the lower body entirely out of frame",
     "ageBand": "infant",
     "keyFindings": "two large gas filled bubbles in the upper abdomen with the larger stomach bubble on the left and a dilated duodenal cap on the right and completely gasless bowel below them",
     "whatYouSee": "Two big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.",
@@ -2471,7 +2472,8 @@
       "Necrotising enterocolitis",
       "Hirschsprung disease"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "used": true
   },
   {
     "diagnosis": "Progressive massive fibrosis",
@@ -2519,7 +2521,8 @@
       "Ochronosis",
       "DISH"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "used": true
   },
   {
     "diagnosis": "Mycetoma",
@@ -2615,7 +2618,8 @@
       "Dental abscess",
       "Osteosarcoma of the jaw"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "used": true
   },
   {
     "diagnosis": "Calcified pleural plaques",

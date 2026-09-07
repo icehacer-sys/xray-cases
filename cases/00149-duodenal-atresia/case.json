@@ -1,0 +1,59 @@
+{
+  "folder": "00149-duodenal-atresia",
+  "number": 149,
+  "diagnosis": "Duodenal atresia",
+  "aliases": [
+    "double bubble sign",
+    "congenital duodenal obstruction"
+  ],
+  "symptom": "a newborn vomiting bile within hours of the very first feed",
+  "hook": "the whole abdomen held just two bubbles of gas and nothing at all beyond them",
+  "whatYouSee": "Two big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.",
+  "whyItMatters": "The duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.",
+  "treatment": "The blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
+  "takeaway": "Two bubbles and a gasless belly in a newborn is duodenal atresia.",
+  "igOptions": [
+    "A. Duodenal atresia",
+    "B. Necrotising enterocolitis",
+    "C. Hirschsprung disease"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-17T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Duodenal atresia",
+    "aliases": [
+      "double bubble sign",
+      "congenital duodenal obstruction"
+    ],
+    "symptom": "a newborn vomiting bile within hours of the very first feed",
+    "hook": "the whole abdomen held just two bubbles of gas and nothing at all beyond them",
+    "view": "coned AP view of the upper abdomen of a newborn showing only from the nipples down to the navel with the lower body entirely out of frame",
+    "ageBand": "infant",
+    "keyFindings": "two large gas filled bubbles in the upper abdomen with the larger stomach bubble on the left and a dilated duodenal cap on the right and completely gasless bowel below them",
+    "whatYouSee": "Two big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.",
+    "whyItMatters": "The duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.",
+    "treatment": "The blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
+    "takeaway": "Two bubbles and a gasless belly in a newborn is duodenal atresia.",
+    "igTitle": "THE DOUBLE BUBBLE",
+    "igOptions": [
+      "Duodenal atresia",
+      "Necrotising enterocolitis",
+      "Hirschsprung disease"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Why does this baby's belly look so empty?",
+  "seedHint": "Count the gas bubbles and then ask why the rest is totally silent.",
+  "generated": {
+    "threadsCaption": "A patient came in with a newborn vomiting bile within hours of the very first feed.\n\nThen the X-ray loaded 😭\n\nAnd the whole abdomen held just two bubbles of gas and nothing at all beyond them.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a newborn who vomited shortly after their very first feed.\n\nThen the X-ray loaded 😭\n\nAnd the whole abdomen held just two bubbles of gas and nothing at all beyond them.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Duodenal atresia\n\n👀 What you see:\nTwo big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.\n\n🦴 Why it matters:\nThe duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.\n\n💊 Treatment:\nThe blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  }
+}

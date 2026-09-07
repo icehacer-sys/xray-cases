@@ -1,0 +1,61 @@
+{
+  "folder": "00146-impalement-by-a-metal-rod",
+  "number": 146,
+  "diagnosis": "Impalement by a metal rod",
+  "aliases": [
+    "rebar impalement",
+    "impaled chest",
+    "penetrating rod"
+  ],
+  "symptom": "a fall onto a steel rod at a construction site",
+  "hook": "a long steel rod had passed straight through the chest",
+  "whatYouSee": "A long steel rod passing straight through the chest.",
+  "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
+  "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
+  "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+  "igOptions": [
+    "A. Chest drain",
+    "B. Impaled rod",
+    "C. Spinal rod"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-14T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Impalement by a metal rod",
+    "aliases": [
+      "rebar impalement",
+      "impaled chest",
+      "penetrating rod"
+    ],
+    "symptom": "a fall onto a steel rod at a construction site",
+    "hook": "a long steel rod had passed straight through the chest",
+    "view": "AP chest one view filling the frame with no pelvis or groin",
+    "keyFindings": "a long straight thick radiopaque metal rod passing through the chest cavity crossing the lung fields with the surrounding ribs and chest anatomy otherwise intact",
+    "whatYouSee": "A long steel rod passing straight through the chest.",
+    "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
+    "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
+    "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+    "igTitle": "THE CONSTRUCTION SITE",
+    "igOptions": [
+      "Chest drain",
+      "Impaled rod",
+      "Spinal rod"
+    ],
+    "igCorrect": "B",
+    "used": true,
+    "ageBand": "young-adult"
+  },
+  "difficulty": 1,
+  "laypersonQuestion": "Would you even believe this person survived?",
+  "seedHint": "Look at where it enters and where it exits. Does anything look out of place around the lungs?",
+  "generated": {
+    "threadsCaption": "A patient came in with a fall onto a steel rod at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a long steel rod had passed straight through the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a fall at a construction site and some discomfort afterward.\n\nThen the X-ray loaded 😭\n\nAnd a long steel rod had passed straight through the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA long steel rod passing straight through the chest.\n\n🦴 Why it matters:\nAn impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.\n\n💊 Treatment:\nIt is removed in the operating room with the chest opened to control bleeding.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  }
+}

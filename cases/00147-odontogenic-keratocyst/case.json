@@ -1,0 +1,61 @@
+{
+  "folder": "00147-odontogenic-keratocyst",
+  "number": 147,
+  "diagnosis": "Odontogenic keratocyst",
+  "aliases": [
+    "keratocystic odontogenic tumour",
+    "OKC",
+    "soap bubble mandible"
+  ],
+  "symptom": "a painless swelling of the jaw picked up on a routine dental film",
+  "hook": "a huge dark cavity had hollowed out the jaw and the patient had never felt a thing",
+  "whatYouSee": "A large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.",
+  "whyItMatters": "It creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.",
+  "treatment": "The lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
+  "takeaway": "A big scalloped cavity running along the jaw with a displaced tooth is an odontogenic keratocyst.",
+  "igOptions": [
+    "A. Odontogenic keratocyst",
+    "B. Dental abscess",
+    "C. Osteosarcoma of the jaw"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-15T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "condition": {
+    "diagnosis": "Odontogenic keratocyst",
+    "aliases": [
+      "keratocystic odontogenic tumour",
+      "OKC",
+      "soap bubble mandible"
+    ],
+    "symptom": "a painless swelling of the jaw picked up on a routine dental film",
+    "hook": "a huge dark cavity had hollowed out the jaw and the patient had never felt a thing",
+    "view": "panoramic dental radiograph of both jaws",
+    "ageBand": "young-adult",
+    "keyFindings": "a large well defined multilocular lucent cavity expanding the posterior body and ramus of the mandible with a scalloped sclerotic margin and one unerupted tooth displaced at its lower edge while every other tooth sits normally in a single continuous arch",
+    "whatYouSee": "A large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.",
+    "whyItMatters": "It creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.",
+    "treatment": "The lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
+    "takeaway": "A big scalloped cavity running along the jaw with a displaced tooth is an odontogenic keratocyst.",
+    "igTitle": "THE HOLLOW JAW",
+    "igOptions": [
+      "Odontogenic keratocyst",
+      "Dental abscess",
+      "Osteosarcoma of the jaw"
+    ],
+    "igCorrect": "A",
+    "used": true
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "How did something this big go unnoticed?",
+  "seedHint": "Look at how much bone is gone and ask yourself: silent or screaming?",
+  "generated": {
+    "threadsCaption": "A patient came in with a painless swelling of the jaw picked up on a routine dental film.\n\nThen the X-ray loaded 😭\n\nAnd a huge dark cavity had hollowed out the jaw and the patient had never felt a thing.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a swelling so minor it was only spotted because a dentist happened to take a routine film.\n\nThen the X-ray loaded 😭\n\nAnd a huge dark cavity had hollowed out the jaw and the patient had never felt a thing.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Odontogenic keratocyst\n\n👀 What you see:\nA large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.\n\n🦴 Why it matters:\nIt creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.\n\n💊 Treatment:\nThe lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  }
+}

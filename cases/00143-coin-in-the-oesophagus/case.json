@@ -7,11 +7,11 @@
     "oesophageal foreign body"
   ],
   "symptom": "a child drooling and refusing food after swallowing something",
-  "hook": "a perfectly round metal disc was lodged in the food pipe, facing flat to the camera",
-  "whatYouSee": "A round, dense metallic disc sitting face-on in the oesophagus, typically at the thoracic inlet.",
-  "whyItMatters": "A lodged coin can cause obstruction, drooling and aspiration; a button battery looks similar but has a double-ring halo and is a corrosive emergency.",
+  "hook": "a perfectly round metal disc was lodged in the food pipe and facing flat to the camera",
+  "whatYouSee": "A round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.",
+  "whyItMatters": "A lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.",
   "treatment": "An impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
-  "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin, but always rule out a button battery.",
+  "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin so always rule out a button battery first.",
   "igOptions": [
     "A. Button battery",
     "B. Coin in the oesophagus",
@@ -29,13 +29,13 @@
       "oesophageal foreign body"
     ],
     "symptom": "a child drooling and refusing food after swallowing something",
-    "hook": "a perfectly round metal disc was lodged in the food pipe, facing flat to the camera",
+    "hook": "a perfectly round metal disc was lodged in the food pipe and facing flat to the camera",
     "view": "AP chest and neck",
     "keyFindings": "a round radiopaque metallic disc lying in the coronal plane (face-on) at the level of the thoracic inlet, distinguishing oesophageal from tracheal location",
-    "whatYouSee": "A round, dense metallic disc sitting face-on in the oesophagus, typically at the thoracic inlet.",
-    "whyItMatters": "A lodged coin can cause obstruction, drooling and aspiration; a button battery looks similar but has a double-ring halo and is a corrosive emergency.",
+    "whatYouSee": "A round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.",
+    "whyItMatters": "A lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.",
     "treatment": "An impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
-    "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin, but always rule out a button battery.",
+    "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin so always rule out a button battery first.",
     "igTitle": "THE DISC IN THE PIPE",
     "igOptions": [
       "Button battery",
@@ -51,7 +51,7 @@
   "seedHint": "Look at where it sits and how perfectly round it appears. Food pipe or airway?",
   "generated": {
     "threadsCaption": "A patient came in with a child drooling and refusing food after swallowing something.\n\nThen the X-ray loaded 😭\n\nAnd a perfectly round metal disc was lodged in the food pipe facing flat to the camera.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Coin in the oesophagus\n\n👀 What you see:\nA round, dense metallic disc sitting face-on in the oesophagus, typically at the thoracic inlet.\n\n🦴 Why it matters:\nA lodged coin can cause obstruction, drooling and aspiration; a button battery looks similar but has a double-ring halo and is a corrosive emergency.\n\n💊 Treatment:\nAn impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
+    "threadsAnswer": "Answer: Coin in the oesophagus\n\n👀 What you see:\nA round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.\n\n🦴 Why it matters:\nA lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.\n\n💊 Treatment:\nAn impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
     "igCaption": ""
   }
 }
