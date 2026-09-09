@@ -627,12 +627,16 @@
       "answerCommentId": "18124954789827650",
       "answerPostedAt": "2026-09-08T20:38:06.312Z",
       "ctaPostedAt": "2026-09-08T21:34:48.785Z"
+    },
+    "00140-situs-inversus-totalis": {
+      "threadsPostId": "17900166078657433",
+      "challengePostedAt": "2026-09-09T19:04:33.672Z"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "count": 0
     }
   }

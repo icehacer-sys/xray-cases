@@ -51,7 +51,10 @@
   "seedHint": "Look at where it sits and how perfectly round it appears. Food pipe or airway?",
   "generated": {
     "threadsCaption": "A patient came in with a child drooling and refusing food after swallowing something.\n\nThen the X-ray loaded 😭\n\nAnd a perfectly round metal disc was lodged in the food pipe facing flat to the camera.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a child who was just drooling a little and being fussy about eating.\n\nThen the X-ray loaded 😭\n\nAnd a perfectly round metal disc was lodged in the food pipe and facing flat to the camera.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Coin in the oesophagus\n\n👀 What you see:\nA round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.\n\n🦴 Why it matters:\nA lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.\n\n💊 Treatment:\nAn impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
-    "igCaption": ""
-  }
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "stages": {}
 }
