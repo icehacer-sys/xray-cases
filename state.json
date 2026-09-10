@@ -13,6 +13,16 @@
       "publishedId": "18103023326210157",
       "publishedAt": "2026-09-10T19:31:36.434Z",
       "confirmedPublished": true
+    },
+    "case:00143-coin-in-the-oesophagus:answer": {
+      "creationId": "17888756736614054",
+      "createdAt": "2026-09-10T21:02:09.887Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Coin in the oesophagus\n\n👀 What you see:\nA face-on metal disc projects at the thoracic inlet. A lateral view helps confirm its location.\n\n🦴 Why it matters:\nA coin is likely but a button battery must be excluded.\n\n💊 Treatment:\nDrooling with an oesophageal object needs urgent endoscopic assessment. A suspected button battery is an emergency.",
+        "reply_to_id": "18103023326210157",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":343}]"
+      }
     }
   },
   "stages": {
