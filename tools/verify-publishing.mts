@@ -47,11 +47,14 @@ function fixture(value: any) {
 if (process.argv.includes("--failure-cli")) {
   fixture(c);
   new State().setStages(c.folder, { publishedCaption: "stale unreviewed caption", experiment: JSON.stringify({ hookAlt: false, followCta: false }) });
-  fixture({ ...c, folder: "later", diagnosis: "Another offline fixture", stages: { threadsPostId: "existing-post", challengePostedAt: "2020-01-01T00:00:00Z" } });
+  fixture({ ...c, folder: "later", diagnosis: "Another offline fixture", stages: { threadsPostId: "existing-post", challengePostedAt: new Date(Date.now() - 2 * 24 * 60 * 60_000).toISOString() } });
+  fixture({ ...c, folder: "archived", diagnosis: "Historical fixture", stages: { threadsPostId: "archived-post", challengePostedAt: "2020-01-01T00:00:00Z" } });
+  let archivedAttempts = 0;
   globalThis.fetch = async (url, init) => {
     const path = String(url);
     if (path.includes("/me?")) return response({ username: "fixture-owner" });
     const params = new URLSearchParams(String(init?.body ?? ""));
+    if (params.get("reply_to_id") === "archived-post") archivedAttempts++;
     if (path.endsWith("/threads")) { if (!params.has("reply_to_id")) assert.equal(params.get("text"), "Fixture", "refresh old snapshot before a container exists"); return response({ id: params.has("reply_to_id") ? "answer-container" : "bad-container" }); }
     if (path.endsWith("/threads_publish")) return params.get("creation_id") === "bad-container"
       ? response({ error: { message: "Permanent image failure" } }, 400) : response({ id: "answer-id" });
@@ -60,8 +63,10 @@ if (process.argv.includes("--failure-cli")) {
   process.argv = [process.execPath, join(root, "src/index.ts"), "--live"];
   process.once("beforeExit", () => {
     const saved = new State();
+    assert.equal(archivedAttempts, 0, "historical unfinished replies must not reach the API");
     assert.equal(saved.getStages("later").answerCommentId, "answer-id", "independent answer must succeed after a failed case");
     assert.equal(saved.getStages("fixture").threadsPostId, undefined);
+    assert.equal(saved.getStages("archived").answerCommentId, undefined, "skipping an old reply must not mark it published");
     assert.equal(saved.publication("case:fixture:challenge").get()?.creationId, "bad-container");
   });
   await import("../src/index.js");

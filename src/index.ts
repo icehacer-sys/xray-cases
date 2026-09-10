@@ -348,6 +348,11 @@ async function runPublish(cli: Cli): Promise<void> {
 
     // From here on the case has a challenge posted; refresh the local view.
     const challengePostedAt = new Date(stages.challengePostedAt);
+    // Historical unfinished replies must not repeatedly fail the live worker and
+    // stop today's schedule. Preserve their state for explicit archive recovery.
+    if (now.getTime() - challengePostedAt.getTime() >= 7 * 24 * 60 * MINUTE_MS) {
+      continue;
+    }
     const generated = c.generated ?? {};
 
     // --- Stage 1b: retry the Instagram carousel ----------------------------------------
