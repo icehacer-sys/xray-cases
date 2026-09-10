@@ -59,7 +59,7 @@
   "laypersonQuestion": "Why does this baby's belly look so empty?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd two large gas bubbles filled the upper abdomen with little gas visible below.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd two large gas bubbles filled the upper abdomen with little gas visible below.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Duodenal atresia\n\n👀 What you see:\nTwo upper abdominal gas bubbles suggest a dilated stomach and proximal duodenum.\n\n🦴 Why it matters:\nThis suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.\n\n💊 Treatment:\nThe newborn needs urgent assessment and stabilisation. Confirmed atresia is repaired surgically.",
     "igCaption": "",
@@ -97,8 +97,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "a2287a4b6a8ced19b43d269e391169eb3ff0572da53e9a21db95f0b5866e70c0",
-    "reviewedAt": "2026-09-10T17:28:52.056Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "a819dbceda47833fb6bdcb7f73e7b1e064cfd07d6e9ffaa391d465aa3bbe3ce1",
+    "reviewedAt": "2026-09-10T19:42:42.178Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

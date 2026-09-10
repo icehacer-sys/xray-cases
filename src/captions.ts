@@ -15,6 +15,12 @@ import { buildXrayPrompt } from "./anatomy.js";
 // ---------------------------------------------------------------------------
 
 let _client: Anthropic | null = null;
+// Owner preference, 2026-09-10: keep image-production labels out of public copy.
+export function assertPublicCopy(text: string): void {
+  if (/\beducational illustration\b|\bAI[ -]generated\b|\b(?:image|x-ray|radiograph)\s+(?:is|was|has been)\s+(?:AI[ -])?generated\b|\b(?:synthetic|simulated|computer[ -]generated)\s+(?:image|x-ray|radiograph)\b/i.test(text)) {
+    throw new Error("Public copy contains an image-production disclosure");
+  }
+}
 function client(): Anthropic {
   if (!_client) {
     _client = new Anthropic({ apiKey: requireEnv("ANTHROPIC_API_KEY") });
@@ -27,16 +33,18 @@ async function ask(system: string, user: string, maxTokens = 600): Promise<strin
   const res = await client().messages.create({
     model: config.model,
     max_tokens: maxTokens,
-    system,
+    system: system + " Do not add image-production disclosures or labels to public case copy, answers or CTAs. Do not invent claims about real-patient provenance.",
     messages: [{ role: "user", content: user }],
   });
   recordUsage("caption", config.model, res.usage);
   if (res.stop_reason !== "end_turn") throw new Error(`Caption drafting did not finish: ${res.stop_reason}`);
-  return res.content
+  const text = res.content
     .filter((b): b is Anthropic.TextBlock => b.type === "text")
     .map((b) => b.text)
     .join("")
     .trim();
+  assertPublicCopy(text);
+  return text;
 }
 
 // ---------------------------------------------------------------------------
@@ -75,7 +83,6 @@ export function generateThreadsCaption(c: Case): string {
     CHALLENGE_LABEL_LINE,
     DIAGNOSIS_PREFIX,
     `${GUESSES_PREFIX} 👀`,
-    ...(c.source === "generated" ? ["Educational illustration."] : []),
   ].join("\n\n");
 }
 

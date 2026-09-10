@@ -60,7 +60,7 @@
   "laypersonQuestion": "Why would someones urine turn black after sitting out?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with longstanding back pain and stiffness.\n\nThen the X-ray loaded 😭\n\nAnd several discs had become dense white bands between the vertebrae.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with longstanding back pain and stiffness.\n\nThen the X-ray loaded 😭\n\nAnd several discs had become dense white bands between the vertebrae.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Ochronosis\n\n👀 What you see:\nSeveral narrowed intervertebral discs show dense calcification.\n\n🦴 Why it matters:\nThis pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.\n\n💊 Treatment:\nSpecialist care may include nitisinone and treatment of joint symptoms.",
     "igCaption": "",
@@ -92,8 +92,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "63ff98382609f9e985f8b29c94fe93b241e25cba7d9800bc9b21d5c12d54f685",
-    "reviewedAt": "2026-09-10T17:28:42.380Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "2d8d8ac4f6b832cc1ff2bfd8de6cea924c3efb9995239b6e56fbcd5cb7cde947",
+    "reviewedAt": "2026-09-10T19:42:42.169Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

@@ -58,7 +58,7 @@
   "laypersonQuestion": "Would you believe this person is totally alive?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with upper abdominal pain after swallowing an object on a dare.\n\nThen the X-ray loaded 😭\n\nAnd a rounded glass outline with a threaded metal base appeared in the upper abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with upper abdominal pain after swallowing an object on a dare.\n\nThen the X-ray loaded 😭\n\nAnd a rounded glass outline with a threaded metal base appeared in the upper abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Swallowed light bulb\n\n👀 What you see:\nA bulb-shaped object with a threaded base projects over the stomach region.\n\n🦴 Why it matters:\nGlass may break during passage or removal.\n\n💊 Treatment:\nSpecialists plan careful retrieval according to the object and its location. Endoscopy or surgery may be needed.",
     "igCaption": "",
@@ -90,8 +90,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "6f97a327e78a2959c0e4b9b4ce615c2f23feb82d5f6aa0599a2a92e8b5d64cec",
-    "reviewedAt": "2026-09-10T17:27:07.230Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "fcba224552149e0e82c579a37c7f663627faed61ab7ebd804fabe84cfdd74204",
+    "reviewedAt": "2026-09-10T19:42:42.136Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

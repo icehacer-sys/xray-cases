@@ -59,7 +59,7 @@
   "laypersonQuestion": "Does this wrist look natural to you?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with gradually worsening wrist deformity and limited forearm rotation.\n\nThen the X-ray loaded 😭\n\nAnd the end of the radius tilted sharply and the wrist bones formed a wedge.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with gradually worsening wrist deformity and limited forearm rotation.\n\nThen the X-ray loaded 😭\n\nAnd the end of the radius tilted sharply and the wrist bones formed a wedge.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Madelung deformity\n\n👀 What you see:\nThe distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.\n\n🦴 Why it matters:\nAbnormal growth at the distal radius can cause pain and restricted movement.\n\n💊 Treatment:\nTreatment depends on age and symptoms. Options include observation and selected corrective surgery.",
     "igCaption": "",
     "threadsCaptionAlt": "",
@@ -97,8 +97,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "c983261f0664e5a616d9f57a21d43f899104d17dbc3a5e0ded946009d429ae4e",
-    "reviewedAt": "2026-09-10T17:37:16.569Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "81093c5b7ebbe662015f1d7c9b5a1998cb48b3ed1fabdc5db665999f5d0c1282",
+    "reviewedAt": "2026-09-10T19:42:42.144Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

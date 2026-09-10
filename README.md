@@ -1,5 +1,19 @@
 # xray-case-poster
 
+## Public copy preference
+
+Owner instruction, 2026-09-10: do not add image-generation disclosures or labels,
+including "Educational illustration", to challenges, answers, CTAs or other public
+case copy. Internal image-generation and QA metadata remain available for checks.
+
+## Recorded preference for the next case batch
+
+Confirmed by the owner on 2026-09-10: when the owner requests the next case batch,
+use **GPT Image 2.5 Flare** (`gpt-image-2.5-flare`) for image generation, keeping
+the existing **image QA gate and visual review checks**. Use the updated canonical
+image prompt. This records a future batch preference; it does not change the current
+production model or replace already approved scheduled images.
+
 Daily X-ray **case publisher** for @mdnoteslab, with a fully automatic case generator. It draws
 the next condition from a vetted pool, AI-generates **only the X-ray**, **renders** the three
 Instagram slides from a template, drafts the captions in the account's exact voice, then (after a

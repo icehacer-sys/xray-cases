@@ -58,7 +58,7 @@
   "laypersonQuestion": "What sharp thing is hiding in this baby's throat?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with drooling and refusal to feed after a suspected ingestion.\n\nThen the X-ray loaded 😭\n\nAnd an open V-shaped metal object with a small coil appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with drooling and refusal to feed after a suspected ingestion.\n\nThen the X-ray loaded 😭\n\nAnd an open V-shaped metal object with a small coil appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Swallowed safety pin\n\n👀 What you see:\nAn open pin with a spring coil projects over the upper oesophageal region.\n\n🦴 Why it matters:\nA sharp oesophageal object can perforate the wall.\n\n💊 Treatment:\nUrgent specialist removal is required. Further imaging may help establish its position.",
     "igCaption": "",
@@ -90,8 +90,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "460cbfade0c5aa1e2d99ce682b8eaed2207ef9e82b2f3c79aaed5e1b7ffb83fa",
-    "reviewedAt": "2026-09-10T17:37:31.261Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "4fc48082f6a15acc5be42b90047f10220f14060474cf75e5eef1650a6317b58c",
+    "reviewedAt": "2026-09-10T19:42:42.150Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

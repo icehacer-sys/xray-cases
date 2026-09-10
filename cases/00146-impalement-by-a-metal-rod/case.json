@@ -60,7 +60,7 @@
   "laypersonQuestion": "Would you even believe this person survived?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a penetrating chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a thick straight metal object projected across the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with a penetrating chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a thick straight metal object projected across the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.\n\n🦴 Why it matters:\nIn a true impalement, uncontrolled removal can trigger major bleeding.\n\n💊 Treatment:\nTrauma specialists plan removal under controlled surgical conditions with bleeding control available.",
     "igCaption": "",
@@ -92,8 +92,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "7ed7304bc6249e3f67027a7a6cdf87d8ad1940a67a520d9e5c08f65b68675bcd",
-    "reviewedAt": "2026-09-10T17:28:24.634Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "da4497569930774de48cef12fca73c46b74b54b7a736f57b4bb97496433075c9",
+    "reviewedAt": "2026-09-10T19:42:42.162Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

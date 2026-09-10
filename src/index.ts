@@ -27,6 +27,7 @@ import {
   draftEngagement,
   pickCta,
   imagePrompt,
+  assertPublicCopy,
 } from "./captions.js";
 import { postImage, reply, getReplies, getMyUsername, TopicTagError, type SpoilerEntity } from "./threads.js";
 import { publishCarousel } from "./instagram.js";
@@ -256,6 +257,7 @@ async function runPublish(cli: Cli): Promise<void> {
       const arm = stages.experiment ? JSON.parse(stages.experiment) : { hookAlt: config.hookAlt, followCta: config.followCta };
       const base = arm.hookAlt && generated.threadsCaptionAlt ? generated.threadsCaptionAlt : generated.threadsCaption!;
       const caption = withFollowCta(base, arm.followCta);
+      assertPublicCopy(caption);
       const copyIssue = contentProblem(c);
       if (copyIssue) throw new Error(`${c.folder}: ${copyIssue}`);
 
@@ -421,6 +423,7 @@ async function runPublish(cli: Cli): Promise<void> {
       const copyIssue = contentProblem(c);
       if (copyIssue) throw new Error(`${c.folder}: ${copyIssue}`);
       const answerText = generated.threadsAnswer ?? (await generateThreadsAnswer(c));
+      assertPublicCopy(answerText);
 
       if (cli.mode === "dry-run") {
         log(`\n[dry-run] would post ANSWER reply (${answerText.length} chars) for ${c.folder}:`);
@@ -452,6 +455,7 @@ async function runPublish(cli: Cli): Promise<void> {
 
     if (config.ctaReply && ctaDue && stages.answerPostedAt && !stages.ctaPostedAt) {
       const ctaText = generated.ctaText ?? pickCta(c).text;
+      assertPublicCopy(ctaText);
 
       if (cli.mode === "dry-run") {
         log(`\n[dry-run] would post CTA reply for ${c.folder}:`);

@@ -58,7 +58,7 @@
   "laypersonQuestion": "How did something this big go unnoticed?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with painless jaw swelling.\n\nThen the X-ray loaded 😭\n\nAnd a large dark cavity occupied the back of the lower jaw.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with painless jaw swelling.\n\nThen the X-ray loaded 😭\n\nAnd a large dark cavity occupied the back of the lower jaw.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Odontogenic keratocyst\n\n👀 What you see:\nA multilocular lucent lesion occupies the posterior mandible with an associated impacted tooth.\n\n🦴 Why it matters:\nThis can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.\n\n💊 Treatment:\nSpecialist assessment and histology guide treatment. Long-term follow-up checks for recurrence.",
     "igCaption": "",
@@ -90,8 +90,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "648a129a6b0527ec778730e3aaff5f2f4e65c4ca8b88ba6cd24c2df154f3ef64",
-    "reviewedAt": "2026-09-10T17:37:08.770Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "272c5b4fd5ab024f960990937be8e4e0a4b5bc28a10daf9a549a9d2edeb341f4",
+    "reviewedAt": "2026-09-10T19:42:42.128Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

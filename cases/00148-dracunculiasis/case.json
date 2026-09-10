@@ -61,7 +61,7 @@
   "laypersonQuestion": "What do you think left that coil under the skin?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nAnd a long curling calcification ran through the soft tissues beside the bones.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nAnd a long curling calcification ran through the soft tissues beside the bones.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Dracunculiasis\n\n👀 What you see:\nA long serpentine soft-tissue calcification suggests a calcified worm remnant.\n\n🦴 Why it matters:\nThis can reflect old infection; it does not prove a living worm is present.\n\n💊 Treatment:\nAn incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
     "igCaption": "",
@@ -99,8 +99,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "9006d5b47e0fc0679702e8a19301e131884dc53d4774c7352df67928705db525",
-    "reviewedAt": "2026-09-10T17:28:09.139Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "bc58b08d209831cd047f2050dfb25694773ae891874394adfa013c590323465a",
+    "reviewedAt": "2026-09-10T19:42:42.156Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

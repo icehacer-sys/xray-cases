@@ -16,7 +16,7 @@ const { State } = await import("../src/state.js");
 const { parseXrayVerdict } = await import("../src/verify.js");
 const { imageApproval, imageApprovalProblem, assertPublicImage, invalidateImage } = await import("../src/image-approval.js");
 const { buildXrayPrompt } = await import("../src/anatomy.js");
-const { imagePrompt } = await import("../src/captions.js");
+const { imagePrompt, generateThreadsCaption, assertPublicCopy } = await import("../src/captions.js");
 const { postImage, reply } = await import("../src/threads.js");
 const { atomicJson, checkpointState, PersistenceError } = await import("../src/persistence.js");
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -71,6 +71,12 @@ if (process.argv.includes("--failure-cli")) {
   });
   await import("../src/index.js");
 } else {
+  assert.doesNotMatch(generateThreadsCaption({ ...c, source: "generated" }), /Educational illustration/i);
+  for (const text of ["Educational illustration.", "This is an AI-generated X-ray.", "A simulated radiograph."]) {
+    assert.throws(() => assertPublicCopy(text), /image-production disclosure/);
+  }
+  for (const text of ["A patient came in with pain.", "Answer: Coin in the oesophagus", "Follow for a new case every night"]) assert.doesNotThrow(() => assertPublicCopy(text));
+  console.log("PASS public copy omits disclosure and rejects it before publishing");
   for (const bad of [null, [], {}, { ...valid, plausible: "false" }, { ...valid, plausible: false },
     { ...valid, depictsDiagnosis: false }, { ...valid, correctBodyPart: false }, { ...valid, severity: "unknown" },
     { ...valid, severity: ["pass"] }, { ...valid, defects: "none" }, { ...valid, defects: [3] },

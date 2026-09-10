@@ -58,14 +58,14 @@
   "laypersonQuestion": "What do you think that perfect circle could be?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Coin in the oesophagus\n\n👀 What you see:\nA face-on metal disc projects at the thoracic inlet. A lateral view helps confirm its location.\n\n🦴 Why it matters:\nA coin is likely but a button battery must be excluded.\n\n💊 Treatment:\nDrooling with an oesophageal object needs urgent endoscopic assessment. A suspected button battery is an emergency.",
     "igCaption": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
   },
   "stages": {
-    "publishedCaption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "publishedCaption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "experiment": "{\"id\":\"case-00143-coin-in-the-oesophagus\",\"assignedAt\":\"2026-09-10T19:31:22.790Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
     "answerDelayMin": "90",
     "ctaDelayMin": "145",
@@ -98,8 +98,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "9bb0892731da23fdc0c85acf1127185008233c0772205195768c1e729dccfe2a",
-    "reviewedAt": "2026-09-10T17:26:36.491Z",
-    "reviewer": "claude-sonnet-4-6"
+    "sha256": "7b01df5a1a653ccc0f4bd0aa39b3a72bcaf9fa2760fdd479a83d246a86282cdc",
+    "reviewedAt": "2026-09-10T19:42:42.114Z",
+    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

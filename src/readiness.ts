@@ -5,6 +5,7 @@ import { config, requireEnv } from "./config.js";
 import { finalImage, imageApprovalProblem } from "./image-approval.js";
 import { isUsedDiagnosis, loadUsedDiagnoses } from "./cases.js";
 import type { Case } from "./types.js";
+import { assertPublicCopy } from "./captions.js";
 
 export function contentHash(c: Case): string {
   return createHash("sha256").update(JSON.stringify([c.diagnosis, c.aliases, c.symptom, c.hook, c.whatYouSee, c.whyItMatters, c.treatment, c.takeaway, c.seedHint, c.generated, c.condition])).digest("hex");
@@ -12,6 +13,10 @@ export function contentHash(c: Case): string {
 export function copyProblems(c: Case): string[] {
   const problems: string[] = [];
   const g = c.generated;
+  for (const text of Object.values(g ?? {})) {
+    try { assertPublicCopy(text ?? ""); }
+    catch { problems.push("public copy contains an image-production disclosure"); }
+  }
   for (const field of ["threadsCaption", "threadsAnswer"] as const) {
     if (!g?.[field]?.trim() || g[field]!.length > 500) problems.push(`${field} is missing or exceeds 500 characters`);
   }
