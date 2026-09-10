@@ -70,7 +70,9 @@
     "answerDelayMin": "90",
     "ctaDelayMin": "145",
     "threadsPostId": "18103023326210157",
-    "challengePostedAt": "2026-09-10T19:31:36.434Z"
+    "challengePostedAt": "2026-09-10T19:31:36.434Z",
+    "answerCommentId": "17976679251133918",
+    "answerPostedAt": "2026-09-10T21:02:18.552Z"
   },
   "needsReview": false,
   "verifyDefects": [],
