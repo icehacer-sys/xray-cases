@@ -1,4 +1,17 @@
 {
+  "publications": {
+    "case:00143-coin-in-the-oesophagus:challenge": {
+      "creationId": "17888750418614054",
+      "createdAt": "2026-09-10T19:31:30.044Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00143-coin-in-the-oesophagus/xray.png",
+        "text": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "a132255eb30346e746e42d2c333764fc28ea0086cf86c00a34b3654b7a7b80fe:c6cad3fffd7970c21d0b92c9ce140783b458493f2fefd780462d02070e40edfc:9bb0892731da23fdc0c85acf1127185008233c0772205195768c1e729dccfe2a"
+    }
+  },
   "stages": {
     "00002-ollier-disease": {
       "threadsPostId": "17942265339236040",
@@ -634,12 +647,18 @@
       "answerCommentId": "18073806131709733",
       "answerPostedAt": "2026-09-09T19:25:42.196Z",
       "ctaPostedAt": "2026-09-09T20:24:33.435Z"
+    },
+    "00143-coin-in-the-oesophagus": {
+      "publishedCaption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+      "experiment": "{\"id\":\"case-00143-coin-in-the-oesophagus\",\"assignedAt\":\"2026-09-10T19:31:22.790Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-09",
+      "date": "2026-09-10",
       "count": 0
     }
   }
