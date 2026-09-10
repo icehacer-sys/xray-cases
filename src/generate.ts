@@ -1,3 +1,5 @@
+import { readinessProblem, reviewContent } from "./readiness.js";
+import { nextSlot } from "./schedule.js";
 // Auto-generator orchestrator + CLI for xray-case-poster (phase 2; see SPEC-GEN.md).
 //
 // Picks the next vetted condition from config.conditionsFile, AI-generates ONLY the
@@ -19,6 +21,7 @@ import { dirname, join } from "node:path";
 import { Resvg } from "@resvg/resvg-js";
 import { config } from "./config.js";
 import { loadCases, saveCase, loadUsedDiagnoses, isUsedDiagnosis } from "./cases.js";
+import { atomicJson, PersistenceError } from "./persistence.js";
 import { State } from "./state.js";
 import {
   generateThreadsCaption,
@@ -32,6 +35,7 @@ import { generateXray } from "./openai.js";
 import { buildXrayPrompt, AGE_BANDS } from "./anatomy.js";
 import { generateSlides } from "./slidegen.js";
 import { verifyXray, type XrayVerdict } from "./verify.js";
+import { imageApproval } from "./image-approval.js";
 import { censorUntilClean } from "./censor.js";
 import type { AgeBand, Case, Condition } from "./types.js";
 
@@ -164,7 +168,7 @@ function validateCondition(c: unknown, index: number): void {
 }
 
 function saveConditions(conds: Condition[]): void {
-  writeFileSync(conditionsPath(), JSON.stringify(conds, null, 2) + "\n", "utf8");
+  atomicJson(conditionsPath(), conds);
 }
 
 // ---------------------------------------------------------------------------
@@ -213,12 +217,8 @@ function assertNumberAvailable(casesDir: string, number: number): void {
  * With no existing queue, schedule tomorrow at that hour. Mutates a Date copy only.
  */
 function nextPostAt(latestPostAt: Date | undefined): Date {
-  const base =
-    latestPostAt && !Number.isNaN(latestPostAt.getTime()) ? latestPostAt : new Date();
-  const d = new Date(
-    Date.UTC(base.getUTCFullYear(), base.getUTCMonth(), base.getUTCDate() + 1, config.postHourUtc, 0, 0, 0),
-  );
-  return d;
+  const base = new Date(Math.max(Date.now(), latestPostAt?.getTime() ?? 0));
+  return nextSlot(base, config.postHourLocal, config.activeTz);
 }
 
 // ---------------------------------------------------------------------------
@@ -319,11 +319,13 @@ async function generateOne(
   //    the detected defects back into the prompt to steer away from them. A persistent failure
   //    is queued with needsReview so the publisher never auto-posts a defective image.
   let xrayPng = mock ? placeholderXray() : await generateXray(buildXrayPrompt(cond));
+  let verifiedPng: Buffer | undefined;
   let verdict: XrayVerdict | undefined;
   if (!mock && config.xrayVerify) {
     const avoid: string[] = [];
     for (let attempt = 1; attempt <= config.xrayMaxAttempts; attempt++) {
       verdict = await verifyXray(xrayPng, cond);
+      verifiedPng = xrayPng;
       if (verdict.ok) {
         if (attempt > 1) log(`    X-ray QA passed on attempt ${attempt}.`);
         break;
@@ -347,10 +349,19 @@ async function generateOne(
     censorFailed = r.detectionFailed;
     if (r.blurred) log(`    🔒 blurred genital region on the X-ray`);
   }
+  // QA must describe the final bytes, including any blur applied after the first pass.
+  if (!mock && (!verdict || !verifiedPng?.equals(xrayPng))) {
+    verdict = await verifyXray(xrayPng, cond);
+  }
   writeFileSync(join(dir, "xray.png"), xrayPng);
 
   // 2. Assemble the Case. If the X-ray failed anatomy QA, flag needsReview and SKIP slides.
   const c = buildCase(cond, folder, number, postAt, threadsOnly);
+  if (verdict) c.imageApproval = imageApproval(xrayPng, cond, verdict);
+  if (mock) {
+    c.needsReview = true;
+    c.verifyDefects = ["Mock image is not publishable"];
+  }
   const failed = !!(verdict && !verdict.ok);
   if (failed) {
     c.needsReview = true;
@@ -396,6 +407,9 @@ async function generateOne(
 
   // 3. Pre-draft captions, then persist the case (approved:false, source:"generated").
   await predraftCaptions(c, threadsOnly);
+  if (!mock) {
+    try { await reviewContent(c); } catch (err) { c.needsReview = true; c.verifyDefects = [...(c.verifyDefects ?? []), String(err)]; }
+  }
   saveCase(c);
 
   return { diagnosis: cond.diagnosis, folder, postAt: c.postAt };
@@ -413,7 +427,7 @@ async function generateOne(
  */
 function unpostedCount(state: State): number {
   return loadCases().filter(
-    (c) => !state.getStages(c.folder).challengePostedAt && c.needsReview !== true,
+    (c) => !state.getStages(c.folder).challengePostedAt && !c.stages?.challengePostedAt && !readinessProblem(c) && Date.parse(c.postAt) > Date.now(),
   ).length;
 }
 
@@ -437,6 +451,8 @@ async function main(): Promise<void> {
   }
 
   const results: GenResult[] = [];
+  let failures = 0;
+  const attempted = new Set<string>();
 
   for (let i = 0; i < target; i++) {
     // Pick the condition to generate. With --diagnosis, target that exact one (deliberate
@@ -447,18 +463,19 @@ async function main(): Promise<void> {
       ? conditions.find(
           (c) =>
             c.diagnosis.toLowerCase() === cli.diagnosis!.toLowerCase() &&
-            c.used !== true &&
+            !attempted.has(c.diagnosis) && c.used !== true &&
             !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
         )
       : conditions.find(
-          (c) => c.used !== true && c.skipPublic !== true && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
+          (c) => !attempted.has(c.diagnosis) && c.used !== true && c.skipPublic !== true && Boolean(c.sources?.length && c.reviewedAt) && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
         );
     if (!cond) {
       log(
         cli.diagnosis
           ? `--diagnosis "${cli.diagnosis}" not found in ${config.conditionsFile} (or already used).`
-          : `no fresh conditions left after ${results.length} case(s); add new ones to ${config.conditionsFile}.`,
+          : `no source-reviewed fresh conditions left after ${results.length} case(s); review unused entries in ${config.conditionsFile}.`,
       );
+      failures++;
       break;
     }
 
@@ -476,6 +493,8 @@ async function main(): Promise<void> {
     // Burn the condition BEFORE the expensive image+slide work and persist it, so a
     // crash never reuses it. This fails safe: if generateOne throws mid-way, the
     // condition stays used (we skip it) rather than producing a duplicate case later.
+    attempted.add(cond.diagnosis);
+    if (!cond.sources?.length || !cond.reviewedAt) { log(`Held unsourced condition: ${cond.diagnosis}`); failures++; continue; }
     cond.used = true;
     saveConditions(conditions);
 
@@ -483,6 +502,8 @@ async function main(): Promise<void> {
     try {
       result = await generateOne(cond, number, postAt, cli.mock, cli.threadsOnly);
     } catch (err) {
+      if (err instanceof PersistenceError) throw err;
+      failures++;
       // The burn above guards against DUPLICATES, but it also means a purely transient
       // failure (an OpenAI safety refusal, a network blip) permanently destroys a vetted
       // condition. Nothing was written for this case, so give the condition back and move
@@ -511,9 +532,10 @@ async function main(): Promise<void> {
   if (results.length > 0) {
     log(`\nReview each case.json, then set approved:true (or run the publisher with BOT_AUTO_APPROVE=on).`);
   }
+  if (failures) throw new Error(`${failures} case generation(s) failed; completed cases were saved`);
 }
 
 main().catch((err) => {
   console.error(err instanceof Error ? err.message : String(err));
-  process.exit(1);
+  process.exitCode = err instanceof PersistenceError ? 4 : 1;
 });

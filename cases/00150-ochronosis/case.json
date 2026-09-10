@@ -7,12 +7,12 @@
     "ochronotic spondylosis",
     "black bone disease"
   ],
-  "symptom": "a stiff painful back in a patient whose urine turned black on standing",
-  "hook": "every disc in the spine had turned into a dense white wafer",
-  "whatYouSee": "The discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.",
-  "whyItMatters": "A missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.",
-  "treatment": "Nitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
-  "takeaway": "Calcified discs stacked like white wafers is ochronosis from alkaptonuria.",
+  "symptom": "longstanding back pain and stiffness",
+  "hook": "several discs had become dense white bands between the vertebrae",
+  "whatYouSee": "Several narrowed intervertebral discs show dense calcification.",
+  "whyItMatters": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
+  "treatment": "Specialist care may include nitisinone and treatment of joint symptoms.",
+  "takeaway": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
   "igOptions": [
     "A. Ankylosing spondylitis",
     "B. Ochronosis",
@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-17T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Ochronosis",
@@ -30,15 +30,15 @@
       "ochronotic spondylosis",
       "black bone disease"
     ],
-    "symptom": "a stiff painful back in a patient whose urine turned black on standing",
-    "hook": "every disc in the spine had turned into a dense white wafer",
+    "symptom": "longstanding back pain and stiffness",
+    "hook": "several discs had become dense white bands between the vertebrae",
     "view": "lateral lumbar spine cropped above the hip joints with no pelvis or groin in frame",
     "ageBand": "older",
-    "keyFindings": "dense calcification of multiple intervertebral discs with marked disc space narrowing and vacuum phenomena and osteoporotic vertebral bodies giving a stack of white wafers",
-    "whatYouSee": "The discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.",
-    "whyItMatters": "A missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.",
-    "treatment": "Nitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
-    "takeaway": "Calcified discs stacked like white wafers is ochronosis from alkaptonuria.",
+    "keyFindings": "Several intervertebral discs show dense calcification and reduced height. Visible vertebral bodies have coherent cortical margins and alignment.",
+    "whatYouSee": "Several narrowed intervertebral discs show dense calcification.",
+    "whyItMatters": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
+    "treatment": "Specialist care may include nitisinone and treatment of joint symptoms.",
+    "takeaway": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
     "igTitle": "THE BLACK BONE DISEASE",
     "igOptions": [
       "Ankylosing spondylitis",
@@ -46,16 +46,54 @@
       "DISH"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK1454/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "Several intervertebral discs show dense calcification and reduced height.",
+      "Visible vertebral bodies have coherent cortical margins and alignment."
+    ]
   },
   "difficulty": 5,
   "laypersonQuestion": "Why would someones urine turn black after sitting out?",
-  "seedHint": "Count the bright white discs then ask yourself if any single one looks normal",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a stiff painful back in a patient whose urine turned black on standing.\n\nThen the X-ray loaded 😭\n\nAnd every disc in the spine had turned into a dense white wafer.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a stiff and painful back and urine that had simply been left to stand.\n\nThen the X-ray loaded 😭\n\nAnd every disc in the spine had turned into a dense white wafer.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Ochronosis\n\n👀 What you see:\nThe discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.\n\n🦴 Why it matters:\nA missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.\n\n💊 Treatment:\nNitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
+    "threadsCaption": "A patient came in with longstanding back pain and stiffness.\n\nThen the X-ray loaded 😭\n\nAnd several discs had become dense white bands between the vertebrae.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Ochronosis\n\n👀 What you see:\nSeveral narrowed intervertebral discs show dense calcification.\n\n🦴 Why it matters:\nThis pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.\n\n💊 Treatment:\nSpecialist care may include nitisinone and treatment of joint symptoms.",
     "igCaption": "",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "d59b532e29df3b439a4deea539c6c75b3be250b8a457d157cd3c3ca050d94974",
+    "conditionSha256": "65fc77fda002844ee9b4cc0cf15f762ce2883fcc9a3a9a2e14174bda6e0a0730",
+    "verifiedAt": "2026-09-10T17:28:33.907Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Several intervertebral discs show dense calcification and reduced height.",
+        "observed": "Multiple intervertebral disc spaces throughout the visible lumbar and lower thoracic spine demonstrate dense, bright calcification with markedly reduced disc height, consistent with ochronotic disc disease.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Visible vertebral bodies have coherent cortical margins and alignment.",
+        "observed": "The vertebral bodies form a single continuous column with sequential sizing, intact cortical margins, and maintained overall alignment. No duplication, floating vertebra, or garbling is identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "63ff98382609f9e985f8b29c94fe93b241e25cba7d9800bc9b21d5c12d54f685",
+    "reviewedAt": "2026-09-10T17:28:42.380Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

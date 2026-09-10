@@ -2,13 +2,15 @@
 // double-posts, plus a daily/total challenge counter. Good enough for a
 // cron-on-a-box; for serverless swap this for a real store (same interface).
 
-import { existsSync, readFileSync, writeFileSync, renameSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { config } from "./config";
 import type { Case } from "./types";
+import { atomicJson, checkpointState, PersistenceError, validPublications, type Publication, type PublicationStore } from "./persistence.js";
 
 type Stages = NonNullable<Case["stages"]>;
 
 interface StateShape {
+  publications?: Record<string, Publication>;
   // folder -> the stages we've recorded for that case.
   stages: Record<string, Stages>;
   // challenges posted: a running total + today's count.
@@ -20,20 +22,29 @@ function today(): string {
 }
 
 export class State {
+  private publications: Record<string, Publication>;
   private stages: Record<string, Stages>;
   private total: number;
   private daily: { date: string; count: number };
 
   constructor() {
+    if (config.confirmLive && !existsSync(config.stateFile)) {
+      throw new PersistenceError(`Missing ${config.stateFile}; restore publication history before running live`);
+    }
     let loaded: StateShape | null = null;
     if (existsSync(config.stateFile)) {
       try {
         loaded = JSON.parse(readFileSync(config.stateFile, "utf8")) as StateShape;
+        if (loaded?.posted !== undefined && (!loaded.posted || !Number.isInteger(loaded.posted.total) || loaded.posted.total < 0 || !loaded.posted.daily || typeof loaded.posted.daily.date !== "string" || !Number.isFinite(Date.parse(loaded.posted.daily.date)) || !Number.isInteger(loaded.posted.daily.count) || loaded.posted.daily.count < 0)) throw new Error("invalid posting counters");
+        if (!loaded || !loaded.stages || typeof loaded.stages !== "object" || Array.isArray(loaded.stages) ||
+            !Object.values(loaded.stages).every((s) => s && typeof s === "object" && !Array.isArray(s) && Object.values(s).every((v) => typeof v === "string")) ||
+            (loaded.publications !== undefined && !validPublications(loaded.publications))) throw new Error("invalid state fields");
       } catch {
-        loaded = null;
+        throw new PersistenceError(`Cannot read ${config.stateFile}; refusing to reset publication history`);
       }
     }
     this.stages = loaded?.stages ?? {};
+    this.publications = loaded?.publications ?? {};
     this.total = loaded?.posted?.total ?? 0;
     this.daily =
       loaded?.posted?.daily && loaded.posted.daily.date === today()
@@ -44,6 +55,17 @@ export class State {
   /** The recorded stages for a case, or an empty object if none yet. */
   getStages(folder: string): Stages {
     return this.stages[folder] ?? {};
+  }
+
+  publication(key: string): PublicationStore {
+    return {
+      get: () => this.publications[key],
+      set: (value) => {
+        this.publications[key] = value;
+        this.save();
+        checkpointState(config.stateFile);
+      },
+    };
   }
 
   /** Merge `partial` into a case's stages and persist. Returns the merged stages. */
@@ -84,6 +106,7 @@ export class State {
 
   private save(): void {
     const out: StateShape = {
+      publications: this.publications,
       stages: this.stages,
       posted: { total: this.total, daily: this.daily },
     };
@@ -92,8 +115,6 @@ export class State {
     // challenge-posted case would re-enter Stage 1 and double-post. Writing to a temp
     // file then renaming guarantees the live file is always a complete old-or-new copy
     // (rename is atomic on the same filesystem).
-    const tmp = `${config.stateFile}.tmp`;
-    writeFileSync(tmp, JSON.stringify(out, null, 2));
-    renameSync(tmp, config.stateFile);
+    atomicJson(config.stateFile, out);
   }
 }

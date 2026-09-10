@@ -6,12 +6,12 @@
     "open safety pin",
     "ingested safety pin"
   ],
-  "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
-  "hook": "an open safety pin was stuck in the food pipe with its point upward",
-  "whatYouSee": "An open safety pin stuck in the food pipe.",
-  "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
-  "treatment": "It is removed urgently by endoscopy.",
-  "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
+  "symptom": "drooling and refusal to feed after a suspected ingestion",
+  "hook": "an open V-shaped metal object with a small coil appeared at the base of the neck",
+  "whatYouSee": "An open pin with a spring coil projects over the upper oesophageal region.",
+  "whyItMatters": "A sharp oesophageal object can perforate the wall.",
+  "treatment": "Urgent specialist removal is required. Further imaging may help establish its position.",
+  "takeaway": "A sharp oesophageal object can perforate the wall.",
   "igOptions": [
     "A. Safety pin",
     "B. Hair clip",
@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-14T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Swallowed safety pin",
@@ -28,14 +28,14 @@
       "open safety pin",
       "ingested safety pin"
     ],
-    "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
-    "hook": "an open safety pin was stuck in the food pipe with its point upward",
+    "symptom": "drooling and refusal to feed after a suspected ingestion",
+    "hook": "an open V-shaped metal object with a small coil appeared at the base of the neck",
     "view": "AP chest and neck of an infant one view filling the frame with no pelvis or groin",
-    "keyFindings": "an open safety pin lodged in the upper food pipe at the level of the neck or chest with its sharp point open and the spring clearly visible",
-    "whatYouSee": "An open safety pin stuck in the food pipe.",
-    "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
-    "treatment": "It is removed urgently by endoscopy.",
-    "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
+    "keyFindings": "One open safety pin with a spring coil, connected frame and free sharp point projects at the thoracic inlet. The visible chest and neck anatomy is coherent for an infant.",
+    "whatYouSee": "An open pin with a spring coil projects over the upper oesophageal region.",
+    "whyItMatters": "A sharp oesophageal object can perforate the wall.",
+    "treatment": "Urgent specialist removal is required. Further imaging may help establish its position.",
+    "takeaway": "A sharp oesophageal object can perforate the wall.",
     "igTitle": "PINNED",
     "igOptions": [
       "Safety pin",
@@ -44,16 +44,54 @@
     ],
     "igCorrect": "A",
     "used": true,
-    "ageBand": "infant"
+    "ageBand": "infant",
+    "sources": [
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One open safety pin with a spring coil, connected frame and free sharp point projects at the thoracic inlet.",
+      "The visible chest and neck anatomy is coherent for an infant."
+    ]
   },
   "difficulty": 1,
   "laypersonQuestion": "What sharp thing is hiding in this baby's throat?",
-  "seedHint": "Look at the shape lodged in the chest and notice which end is pointing up.",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with an infant drooling and refusing feeds after swallowing a safety pin.\n\nThen the X-ray loaded 😭\n\nAnd an open safety pin was stuck in the food pipe with its point upward.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with an infant drooling and refusing feeds.\n\nThen the X-ray loaded 😭\n\nAnd an open safety pin was stuck in the food pipe with its point upward.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Swallowed safety pin\n\n👀 What you see:\nAn open safety pin stuck in the food pipe.\n\n🦴 Why it matters:\nAn open sharp pin can tear the food pipe so it must come out quickly.\n\n💊 Treatment:\nIt is removed urgently by endoscopy.",
+    "threadsCaption": "A patient came in with drooling and refusal to feed after a suspected ingestion.\n\nThen the X-ray loaded 😭\n\nAnd an open V-shaped metal object with a small coil appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Swallowed safety pin\n\n👀 What you see:\nAn open pin with a spring coil projects over the upper oesophageal region.\n\n🦴 Why it matters:\nA sharp oesophageal object can perforate the wall.\n\n💊 Treatment:\nUrgent specialist removal is required. Further imaging may help establish its position.",
     "igCaption": "",
-    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 strange real X-rays with all the answers.\nmednoteslab.gumroad.com/l/collection"
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "55a3892f2ee49a7dd81515829c8876c8fd26d6a25e138b5d510f28d464962605",
+    "conditionSha256": "aba4aa41f9fd5212f6f78ac0448fcc071cd4a06e7ea00ebffb632635e791a1a8",
+    "verifiedAt": "2026-09-10T17:37:29.823Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "One open safety pin with a spring coil, connected frame and free sharp point projects at the thoracic inlet.",
+        "observed": "A single open safety pin is visible at the thoracic inlet/lower neck region. The spring coil head, connected frame/bow, and free sharp point are all identifiable as a coherent open safety pin configuration.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible chest and neck anatomy is coherent for an infant.",
+        "observed": "Infant skeletal maturity is confirmed with immature ossification, unossified epiphyses, and appropriate bone proportions. The ribcage appears symmetric with matched rib pairs bilaterally, one cardiac shadow centrally, bilateral clavicles and scapulae each present once, and lung markings that branch and taper appropriately. The cervical and mandibular anatomy appears coherent for an infant. No duplicated, floating, or garbled structures are identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "460cbfade0c5aa1e2d99ce682b8eaed2207ef9e82b2f3c79aaed5e1b7ffb83fa",
+    "reviewedAt": "2026-09-10T17:37:31.261Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

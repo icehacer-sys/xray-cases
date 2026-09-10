@@ -5,6 +5,7 @@
 // Buffer the rest of the pipeline can write to disk and embed in slides.
 
 import { config, requireEnv } from "./config.js";
+import { recordUsage } from "./usage.js";
 
 /**
  * Generate an X-ray image for the given prompt and return it as a PNG Buffer.
@@ -41,6 +42,7 @@ export async function generateXray(prompt: string): Promise<Buffer> {
     throw new Error(`OpenAI images API failed (${res.status}): ${msg}`);
   }
 
+  recordUsage("image", config.imageModel, json?.usage);
   const b64 = json?.data?.[0]?.b64_json;
   if (!b64) {
     throw new Error(`OpenAI images API returned no b64_json image data: ${text}`);
@@ -86,6 +88,7 @@ export async function generateSlideImage(prompt: string, baseImage?: Buffer, siz
   if (!res.ok || json?.error) {
     throw new Error(`OpenAI images API failed (${res.status}): ${json?.error?.message ?? text.slice(0, 200)}`);
   }
+  recordUsage("slide", config.imageModel, json?.usage);
   const b64 = json?.data?.[0]?.b64_json;
   if (!b64) {
     throw new Error(`OpenAI images API returned no image: ${text.slice(0, 200)}`);

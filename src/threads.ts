@@ -3,6 +3,7 @@
 // so --prompt mode (which never posts) works without THREADS_ACCESS_TOKEN.
 
 import { config, requireEnv } from "./config.js";
+import { PersistenceError, type Publication, type PublicationStore } from "./persistence.js";
 
 const PUBLISH_RETRIES = 4;
 const PUBLISH_RETRY_MS = 2000;
@@ -54,7 +55,10 @@ async function createContainer(params: Record<string, string>): Promise<string> 
  * Publish a previously created container. The publish step can briefly 400 with
  * "media not found" while the container is still processing — sleep ~2s and retry.
  */
-async function publish(creationId: string): Promise<string> {
+async function publish(creationId: string, store?: PublicationStore): Promise<string> {
+  const receipt = store?.get();
+  if (receipt?.publishedId) return receipt.publishedId;
+  if (receipt?.confirmedPublished) return recoverPublished(receipt, store!);
   let lastErr: unknown;
   for (let attempt = 1; attempt <= PUBLISH_RETRIES; attempt++) {
     try {
@@ -64,8 +68,15 @@ async function publish(creationId: string): Promise<string> {
       if (!body?.id) {
         throw new Error(`Threads publish returned no id: ${JSON.stringify(body)}`);
       }
-      return String(body.id);
+      const id = String(body.id);
+      if (receipt) store!.set({ ...receipt, publishedId: id, publishedAt: new Date().toISOString(), confirmedPublished: true });
+      return id;
     } catch (err) {
+      if (err instanceof PersistenceError) throw err;
+      if (/already (?:been )?published/i.test(String(err)) && receipt) {
+        store!.set({ ...receipt, confirmedPublished: true });
+        return recoverPublished(receipt, store!);
+      }
       lastErr = err;
       if (attempt < PUBLISH_RETRIES) {
         await sleep(PUBLISH_RETRY_MS);
@@ -75,6 +86,34 @@ async function publish(creationId: string): Promise<string> {
   throw lastErr instanceof Error
     ? lastErr
     : new Error(`Threads publish failed after ${PUBLISH_RETRIES} attempts`);
+}
+
+// A lost response must never turn a container ID into the parent of the answer/CTA.
+// Only recover an unambiguous real media ID; otherwise retain the receipt and stop.
+async function recoverPublished(receipt: Publication, store: PublicationStore): Promise<string> {
+  const username = await getMyUsername();
+  if (!username) throw new Error("Cannot recover publication without the account username");
+  const path = receipt.params.reply_to_id ? `${receipt.params.reply_to_id}/replies` : `${config.threadsUserId}/threads`;
+  const matches = new Map<string, string>();
+  let after: string | undefined;
+  for (let page = 0; page < 25; page++) {
+    const body = await get(path, { fields: "id,text,username,timestamp", limit: "100", ...(after ? { after } : {}) });
+    for (const item of body.data ?? []) {
+      const timestamp = Date.parse(item.timestamp);
+      if (item.id && item.username === username && item.text === receipt.params.text &&
+          timestamp >= Date.parse(receipt.createdAt) - 5000) matches.set(String(item.id), item.timestamp);
+    }
+    if (!body.paging?.next) {
+      if (matches.size !== 1) break;
+      const [id, publishedAt] = [...matches][0]!;
+      store.set({ ...receipt, publishedId: id, publishedAt, confirmedPublished: true });
+      return id;
+    }
+    const cursor = body.paging?.cursors?.after;
+    if (typeof cursor !== "string" || cursor === after) break;
+    after = cursor;
+  }
+  throw new Error(`Container ${receipt.creationId} is already published but its media ID is unresolved. Retaining it for recovery; no replacement will be created.`);
 }
 
 /** How many times to retry the TAGGED container before giving up on the topic tag. */
@@ -106,9 +145,19 @@ export class TopicTagError extends Error {
 export async function postImage(
   imageUrl: string,
   text: string,
-  opts: { requireTag?: boolean } = {},
+  opts: { requireTag?: boolean; publication?: PublicationStore; assetIdentity?: string } = {},
 ): Promise<string> {
+  const pending = opts.publication?.get();
+  if (pending) {
+    if (!pending.publishedId && !pending.confirmedPublished && pending.params.text !== text) throw new PersistenceError("Pending image container contains different copy; reconcile it before changing the publication");
+    if (!pending.publishedId && !pending.confirmedPublished && opts.assetIdentity && pending.assetIdentity !== opts.assetIdentity) {
+      throw new PersistenceError("Pending container belongs to a different or unverified image. Reconcile its publication before replacing it.");
+    }
+    opts.publication!.set(pending);
+    return publish(pending.creationId, opts.publication);
+  }
   const base: Record<string, string> = { media_type: "IMAGE", image_url: imageUrl, text };
+  let params = base;
   const tag = config.topicTag;
   let creationId: string | undefined;
 
@@ -116,6 +165,7 @@ export async function postImage(
     for (let attempt = 1; attempt <= TOPIC_TAG_RETRIES; attempt++) {
       try {
         creationId = await createContainer({ ...base, topic_tag: tag });
+        params = { ...base, topic_tag: tag };
         if (attempt > 1) console.log(`  Threads topic_tag "${tag}" succeeded on attempt ${attempt}.`);
         break;
       } catch (err) {
@@ -139,7 +189,8 @@ export async function postImage(
   }
 
   if (!creationId) creationId = await createContainer(base);
-  return publish(creationId);
+  opts.publication?.set({ creationId, createdAt: new Date().toISOString(), params, assetIdentity: opts.assetIdentity });
+  return publish(creationId, opts.publication);
 }
 
 /** A character range to blur as a spoiler (Threads text_entities). */
@@ -156,12 +207,19 @@ export interface SpoilerEntity {
  * replies it is best-effort (the API silently ignores unsupported fields), so the CTA text ALSO
  * carries the URL as a fallback auto-preview. Any media on a reply container suppresses the card.
  */
-export async function reply(replyToId: string, text: string, spoilers?: SpoilerEntity[], linkAttachment?: string): Promise<string> {
+export async function reply(replyToId: string, text: string, spoilers?: SpoilerEntity[], linkAttachment?: string, store?: PublicationStore): Promise<string> {
+  const pending = store?.get();
+  if (pending) {
+    if (!pending.publishedId && !pending.confirmedPublished && (pending.params.text !== text || pending.params.reply_to_id !== replyToId)) throw new PersistenceError("Pending reply contains different copy or parent; reconcile it before changing the publication");
+    store!.set(pending);
+    return publish(pending.creationId, store);
+  }
   const params: Record<string, string> = { media_type: "TEXT", text, reply_to_id: replyToId };
   if (linkAttachment) params.link_attachment = linkAttachment;
   if (spoilers && spoilers.length > 0) params.text_entities = JSON.stringify(spoilers);
   const creationId = await createContainer(params);
-  return publish(creationId);
+  store?.set({ creationId, createdAt: new Date().toISOString(), params });
+  return publish(creationId, store);
 }
 
 /** GET a Threads endpoint and return parsed JSON. */

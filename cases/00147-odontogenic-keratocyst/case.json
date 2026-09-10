@@ -4,58 +4,94 @@
   "diagnosis": "Odontogenic keratocyst",
   "aliases": [
     "keratocystic odontogenic tumour",
-    "OKC",
-    "soap bubble mandible"
+    "OKC"
   ],
-  "symptom": "a painless swelling of the jaw picked up on a routine dental film",
-  "hook": "a huge dark cavity had hollowed out the jaw and the patient had never felt a thing",
-  "whatYouSee": "A large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.",
-  "whyItMatters": "It creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.",
-  "treatment": "The lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
-  "takeaway": "A big scalloped cavity running along the jaw with a displaced tooth is an odontogenic keratocyst.",
+  "symptom": "painless jaw swelling",
+  "hook": "a large dark cavity occupied the back of the lower jaw",
+  "whatYouSee": "A multilocular lucent lesion occupies the posterior mandible with an associated impacted tooth.",
+  "whyItMatters": "This can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.",
+  "treatment": "Specialist assessment and histology guide treatment. Long-term follow-up checks for recurrence.",
+  "takeaway": "This can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.",
   "igOptions": [
     "A. Odontogenic keratocyst",
-    "B. Dental abscess",
-    "C. Osteosarcoma of the jaw"
+    "B. Ameloblastoma",
+    "C. Dentigerous cyst"
   ],
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-11T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Odontogenic keratocyst",
     "aliases": [
       "keratocystic odontogenic tumour",
-      "OKC",
-      "soap bubble mandible"
+      "OKC"
     ],
-    "symptom": "a painless swelling of the jaw picked up on a routine dental film",
-    "hook": "a huge dark cavity had hollowed out the jaw and the patient had never felt a thing",
+    "symptom": "painless jaw swelling",
+    "hook": "a large dark cavity occupied the back of the lower jaw",
     "view": "panoramic dental radiograph of both jaws",
     "ageBand": "young-adult",
-    "keyFindings": "a large well defined multilocular lucent cavity expanding the posterior body and ramus of the mandible with a scalloped sclerotic margin and one unerupted tooth displaced at its lower edge while every other tooth sits normally in a single continuous arch",
-    "whatYouSee": "A large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.",
-    "whyItMatters": "It creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.",
-    "treatment": "The lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
-    "takeaway": "A big scalloped cavity running along the jaw with a displaced tooth is an odontogenic keratocyst.",
+    "keyFindings": "A well-defined multilocular lucent lesion occupies the posterior mandible and ramus. An impacted tooth is associated with the lesion; the remaining visible teeth and jaw are anatomically coherent.",
+    "whatYouSee": "A multilocular lucent lesion occupies the posterior mandible with an associated impacted tooth.",
+    "whyItMatters": "This can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.",
+    "treatment": "Specialist assessment and histology guide treatment. Long-term follow-up checks for recurrence.",
+    "takeaway": "This can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.",
     "igTitle": "THE HOLLOW JAW",
     "igOptions": [
       "Odontogenic keratocyst",
-      "Dental abscess",
-      "Osteosarcoma of the jaw"
+      "Ameloblastoma",
+      "Dentigerous cyst"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6206371/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "A well-defined multilocular lucent lesion occupies the posterior mandible and ramus.",
+      "An impacted tooth is associated with the lesion; the remaining visible teeth and jaw are anatomically coherent."
+    ]
   },
   "difficulty": 4,
   "laypersonQuestion": "How did something this big go unnoticed?",
-  "seedHint": "Look at how much bone is gone and ask yourself: silent or screaming?",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a painless swelling of the jaw picked up on a routine dental film.\n\nThen the X-ray loaded 😭\n\nAnd a huge dark cavity had hollowed out the jaw and the patient had never felt a thing.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a swelling so minor it was only spotted because a dentist happened to take a routine film.\n\nThen the X-ray loaded 😭\n\nAnd a huge dark cavity had hollowed out the jaw and the patient had never felt a thing.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Odontogenic keratocyst\n\n👀 What you see:\nA large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.\n\n🦴 Why it matters:\nIt creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.\n\n💊 Treatment:\nThe lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
+    "threadsCaption": "A patient came in with painless jaw swelling.\n\nThen the X-ray loaded 😭\n\nAnd a large dark cavity occupied the back of the lower jaw.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Odontogenic keratocyst\n\n👀 What you see:\nA multilocular lucent lesion occupies the posterior mandible with an associated impacted tooth.\n\n🦴 Why it matters:\nThis can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.\n\n💊 Treatment:\nSpecialist assessment and histology guide treatment. Long-term follow-up checks for recurrence.",
     "igCaption": "",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "5fb924737a8d2c9c6ad2520a1d1c13c9afd70411f63239148a2f6b7b6629a7a3",
+    "conditionSha256": "f7708a80fa8ebb467b473f4166ba1f54c8c965f2968f99646b9699df316c0263",
+    "verifiedAt": "2026-09-10T17:37:03.068Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "A well-defined multilocular lucent lesion occupies the posterior mandible and ramus.",
+        "observed": "A large, well-defined multilocular radiolucent lesion is visible in the left posterior mandible and ascending ramus, with scalloped internal septations dividing it into multiple compartments, consistent with a multilocular cystic lesion.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "An impacted tooth is associated with the lesion; the remaining visible teeth and jaw are anatomically coherent.",
+        "observed": "An impacted tooth is visible at the inferior margin of the multilocular lesion in the left posterior mandible. The remaining dentition in both arches appears continuous and seated in alveolar bone with no floating, duplicated, or supernumerary teeth beyond the lesion region. The mandible has two symmetric rami and condyles. The overall dental arch is coherent and age-appropriate for a skeletally mature adult.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "648a129a6b0527ec778730e3aaff5f2f4e65c4ca8b88ba6cd24c2df154f3ef64",
+    "reviewedAt": "2026-09-10T17:37:08.770Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

@@ -5,8 +5,10 @@
 // here verbatim; only the {fields} vary.
 
 import Anthropic from "@anthropic-ai/sdk";
+import { recordUsage } from "./usage.js";
 import { config, requireEnv } from "./config.js";
 import type { Case, CtaKey } from "./types.js";
+import { buildXrayPrompt } from "./anatomy.js";
 
 // ---------------------------------------------------------------------------
 // Anthropic client (lazy: --prompt mode never needs it)
@@ -28,6 +30,8 @@ async function ask(system: string, user: string, maxTokens = 600): Promise<strin
     system,
     messages: [{ role: "user", content: user }],
   });
+  recordUsage("caption", config.model, res.usage);
+  if (res.stop_reason !== "end_turn") throw new Error(`Caption drafting did not finish: ${res.stop_reason}`);
   return res.content
     .filter((b): b is Anthropic.TextBlock => b.type === "text")
     .map((b) => b.text)
@@ -62,8 +66,8 @@ export function generateThreadsCaption(c: Case): string {
   // The ORIGINAL fixed format the audience knows — only the symptom + hook vary (owner reverted the
   // Case#/difficulty/layperson/reveal-line experiment on 2026-07-04 after those posts underperformed).
   // Cap symptom+hook so the caption stays well under Threads' 500-char limit.
-  const symptom = clamp(stripComma(c.symptom), 130);
-  const hook = clamp(stripComma(c.hook), 190);
+  const symptom = stripComma(c.symptom);
+  const hook = stripComma(c.hook);
   return [
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
@@ -71,6 +75,7 @@ export function generateThreadsCaption(c: Case): string {
     CHALLENGE_LABEL_LINE,
     DIAGNOSIS_PREFIX,
     `${GUESSES_PREFIX} 👀`,
+    ...(c.source === "generated" ? ["Educational illustration."] : []),
   ].join("\n\n");
 }
 
@@ -110,8 +115,8 @@ export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
  * Falls back to the untouched caption if the swap would overflow: losing the hook to fit a CTA
  * costs far more than one night of the experiment.
  */
-export function withFollowCta(caption: string): string {
-  if (!config.followCta) return caption;
+export function withFollowCta(caption: string, enabled = config.followCta): string {
+  if (!enabled) return caption;
   // Prefix match on the EMOJI-LESS token, not equality against the rendered line: captions cached
   // in case.json carry whichever emoji era they were drafted under (🩻 then none then 🔍). An exact
   // match would silently miss them and leave a SEVEN-line caption with the follow line bolted on
@@ -283,10 +288,10 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
   // normal variant) have no treatment: the Tx section is omitted entirely (owner, 2026-06-28).
   const head = `Answer: ${c.diagnosis}`;
   const secs = [
-    { display: 0, keep: 3, text: `👀 What you see:\n${clamp(whatYouSee, 200)}` },
-    { display: 1, keep: 1, text: `🦴 Why it matters:\n${clamp(whyItMatters, 170)}` },
+    { display: 0, keep: 3, text: `👀 What you see:\n${completeSentence(whatYouSee, 200)}` },
+    { display: 1, keep: 1, text: `🦴 Why it matters:\n${completeSentence(whyItMatters, 170)}` },
     ...(treatment && treatment.trim()
-      ? [{ display: 2, keep: 2, text: `💊 Treatment:\n${clamp(treatment, 170)}` }]
+      ? [{ display: 2, keep: 2, text: `💊 Treatment:\n${completeSentence(treatment, 170)}` }]
       : []),
   ];
   void takeaway; // still drafted (kept for the breakdown) but no longer shown in the reply
@@ -455,7 +460,7 @@ I bundled every collection into one library.
 
 ✅ Could You Spot It?
 
-Over 140 strange real X-rays with all the answers.
+Over 140 unusual X-ray cases with all the answers.
 mednoteslab.gumroad.com/l/collection`,
 
   spotit: `If these weird X-rays keep pulling you in.
@@ -591,27 +596,10 @@ export function pickCta(c: Case, seq?: number): { key: CtaKey; text: string } {
 // ---------------------------------------------------------------------------
 
 export function imagePrompt(c: Case): string {
-  const view = "AP chest";
-  const keyFindings = c.whatYouSee?.trim()
-    ? c.whatYouSee.trim()
-    : "the classic radiographic signs of the condition";
-
-  return [
-    `Create a realistic, de-identified ${view} X-ray for a medical diagnosis challenge.`,
-    ``,
-    `Show classic ${c.diagnosis}: ${keyFindings}.`,
-    ``,
-    `Prioritize clinical realism over symmetry. Make it look like a genuine accessory/abnormal`,
-    `finding, not a perfect textbook diagram.`,
-    ``,
-    `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain.`,
-    ``,
-    `Radiology style: diagnostic-quality radiograph, authentic grayscale contrast, natural X-ray`,
-    `grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.`,
-    ``,
-    `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
-    `No watermark.`,
-  ].join("\n");
+  if (!c.condition?.view?.trim() || !c.condition.keyFindings?.trim()) {
+    throw new Error(`Cannot build image prompt for ${c.folder}: condition.view and condition.keyFindings are required`);
+  }
+  return buildXrayPrompt(c.condition);
 }
 
 // ---------------------------------------------------------------------------
@@ -639,4 +627,14 @@ function parseJsonObject(raw: string): Record<string, unknown> {
   } catch {
     throw new Error(`Claude breakdown was not valid JSON:\n${raw}`);
   }
+}
+
+/** Never cut a clinical clause in half to fit a platform limit. */
+export function completeSentence(text: string, max: number): string {
+  if (text.length <= max) return text.trim();
+  const sentences = text.match(/[^.!?]+[.!?](?:\s|$)/g) ?? [];
+  let out = "";
+  for (const sentence of sentences) { if ((out + sentence).trim().length > max) break; out += sentence; }
+  if (!out.trim()) throw new Error("Clinical sentence exceeds the limit; rewrite it before publication");
+  return out.trim();
 }

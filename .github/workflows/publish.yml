@@ -34,9 +34,8 @@ on:
 
 # Never let two runs overlap (they'd both read the same state and double-post).
 concurrency:
-  # Separate group per mode so a one-off slidesample/dry run doesn't queue behind the
-  # long-lived live chain (schedule + live both resolve to the same 'live' group).
-  group: xray-poster-${{ github.event.inputs.mode || 'live' }}
+  # Rebuilds and live publishing both mutate case files and must use the same queue.
+  group: xray-poster-live
   cancel-in-progress: false
 
 # contents: commit state.json + updated case.json back. actions: hand off to a fresh
@@ -67,7 +66,7 @@ jobs:
       BOT_CENSOR_GENITALS: "on" # blur external genitalia on the X-ray + slides so Threads/IG don't flag the post as sensitive
       BOT_TOPIC_TAG: "Med Threads" # topic tag added to every challenge post (files it under the community)
       BOT_TOPIC_TAG_GRACE_MIN: "60" # keep retrying for the tag this long past postAt before accepting an untagged post
-      BOT_POST_HOUR_UTC: "19" # generated cases schedule at 19:00 UTC = 10 PM Cairo (summer, UTC+3). Changed from 20 (11 PM) to 19 (10 PM) by owner 2026-07-07. Existing queued cases were also shifted -1h. NOTE: revisit at late-Oct DST — 19 UTC becomes 9 PM Cairo.
+      BOT_POST_HOUR_LOCAL: "22" # local Cairo time; each date is converted with IANA DST rules
       BOT_ANSWER_DELAY_MIN: "20" # answer posts 20 min after the challenge (reverted from 45 on 2026-07-04)
       BOT_CTA_DELAY_MIN: "75" # CTA 55 min after the answer (75 after the challenge)
       BOT_SEED_COMMENT: "off" # 60-sec author seed comment DISABLED (owner, 2026-07-04 — did not help; classic style only)
@@ -110,7 +109,7 @@ jobs:
               if git push; then return 0; fi
               echo "push failed (attempt $attempt/3), retrying in 3s"; sleep 3
             done
-            echo "WARNING: git sync failed after 3 attempts; will retry next loop"; return 0
+            echo "::error::Git sync failed after 3 attempts; stopping before further public writes or handoff"; return 1
           }
           if [ "$MODE" = "dry" ]; then
             npm run dry
@@ -120,8 +119,8 @@ jobs:
             git config user.name "xray-poster"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             echo "rebuild: regenerate kept cases' gpt-image-2 slides, then top up the queue"
-            npx tsx src/render.ts || echo "render errored, continuing"
-            npm run generate -- --topup --threads-only || echo "topup errored, continuing"
+            npx tsx src/render.ts
+            npm run generate -- --topup --threads-only
             if [ -n "$(git status --porcelain cases data/conditions.json data/used-diagnoses.json)" ]; then
               git add cases data/conditions.json data/used-diagnoses.json
               git commit -m "chore: rebuild gpt-image-2 slides + top up queue [skip ci]"
@@ -132,7 +131,7 @@ jobs:
           if [ "$MODE" = "slidesample" ]; then
             git config user.name "xray-poster"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            npx tsx src/slidesample.ts 00001-ollier-disease || echo "slide sample errored"
+            npx tsx src/slidesample.ts 00001-ollier-disease
             if [ -n "$(git status --porcelain cases)" ]; then
               git add cases/00001-ollier-disease/*-ai.png
               git commit -m "chore: gpt-image-2 slide sample [skip ci]"
@@ -150,7 +149,15 @@ jobs:
           # NEVER auto-posts it (auto-approve does not bypass needsReview). Commit new cases/**
           # + conditions.json + the used-diagnoses lock so the no-repeat history survives restarts.
           echo "::group::queue top-up ($(date -u +%H:%M) UTC)"
-          npm run generate -- --topup --threads-only || echo "top-up errored, continuing"
+          had_errors=0
+          if npm run generate -- --topup --threads-only; then
+            :
+          else
+            rc=$?
+            echo "::error::Queue top-up failed"
+            if [ "$rc" -eq 4 ]; then exit 4; fi
+            had_errors=1
+          fi
           if [ -n "$(git status --porcelain cases data/conditions.json data/used-diagnoses.json)" ]; then
             git add cases data/conditions.json data/used-diagnoses.json
             git commit -m "chore: top up case queue [skip ci]"
@@ -183,8 +190,7 @@ jobs:
             # BOT_CTA_DELAY_MIN must stay GREATER than BOT_ANSWER_DELAY_MIN -- src/config.ts
             # throws on a reversed/equal pair and NOTHING publishes that night.
             #
-            # No arm logging is needed: the answer's own offset from the post (+21 vs +180) is
-            # directly measurable from the API, so the data self-labels.
+            # The publisher freezes the selected assignment and delays in case state.
             # To end the experiment, delete this block; the job-level env defaults take over.
             doy=$(TZ='Africa/Cairo' date -d '-12 hours' +%-j)
             if [ $((doy % 2)) -eq 0 ]; then
@@ -235,7 +241,15 @@ jobs:
             # fi
             # echo "hook-framing A/B: arm $hk (BOT_HOOK_ALT=$BOT_HOOK_ALT)"
             # -------------------------------------------------------------------------------
-            if npm run live; then fails=0; else fails=$((fails+1)); echo "iteration $i errored ($fails in a row)"; fi
+            if npm run live; then
+              fails=0
+            else
+              rc=$?
+              had_errors=1
+              if [ "$rc" -eq 4 ]; then echo "::error::Publication state could not be secured; stopping"; exit 4; fi
+              fails=$((fails+1))
+              echo "::error::Iteration $i failed ($fails in a row)"
+            fi
             if [ -n "$(git status --porcelain state.json cases data/used-diagnoses.json)" ]; then
               git add state.json cases data/used-diagnoses.json
               git commit -m "chore: update poster state [skip ci]"
@@ -249,9 +263,28 @@ jobs:
             if [ $(( $(date +%s) - start )) -ge "$MAXSECS" ]; then break; fi
             sleep 300
           done
+          if npm run metrics; then :; else had_errors=1; echo "::error::Case metrics collection failed"; fi
+          for meter in data/usage.jsonl data/case-metrics.json; do
+            if [ -f "$meter" ]; then git add "$meter"; fi
+          done
+          if ! git diff --cached --quiet; then git commit -m "chore(metrics): save usage and case exposure [skip ci]"; fi
           # Perpetual chain: always launch the next run so a loop is ALWAYS alive.
           # Each cycle only acts on due cases, so off-schedule runs just no-op.
           # Concurrency keeps it a single chain; the */30 cron restarts it only if a
           # hand-off ever fails.
           echo "Launching the next run (keeps the poster live 24/7)."
-          gh workflow run publish.yml -f mode=live || echo "hand-off dispatch failed"
+          sync_repo
+          gh workflow run publish.yml -f mode=live
+          exit "$had_errors"
+
+      - name: Preserve state after failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: poster-recovery-${{ github.run_id }}
+          path: |
+            state.json
+            cases/**/case.json
+            data/usage.jsonl
+            data/case-metrics.json
+          retention-days: 7

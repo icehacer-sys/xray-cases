@@ -12,6 +12,9 @@ import { generateXray } from "./openai.js";
 import { generateSlides } from "./slidegen.js";
 import { censorXray, blurBox } from "./censor.js";
 import { buildXrayPrompt } from "./anatomy.js";
+import { invalidateImage, imageApproval } from "./image-approval.js";
+import { verifyXray } from "./verify.js";
+import { saveCase } from "./cases.js";
 import sharp from "sharp";
 import type { Case, Condition } from "./types.js";
 
@@ -19,7 +22,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const folder = process.argv[2];
 const mode = (process.argv[3] ?? "xray").toLowerCase(); // "xray" | "slides"
 if (!folder) {
-  console.error("usage: regencase <folder> <xray|slides>");
+  console.error("usage: regencase <folder> <xray|slides|censor|blurbox|verify|grid|zoom>");
   process.exit(1);
 }
 
@@ -51,6 +54,7 @@ if (!existsSync(casePath)) {
   process.exit(1);
 }
 const c = JSON.parse(readFileSync(casePath, "utf8")) as Case;
+c.folder = folder;
 const cond = c.condition as Condition | undefined;
 if (!cond) {
   console.error(`case ${folder} has no .condition to rebuild from`);
@@ -71,23 +75,27 @@ function xrayPrompt(): string {
 }
 
 if (mode === "xray") {
+  const prompt = xrayPrompt();
+  invalidateImage(c);
   // Generate a CLEAN X-ray (no auto-censor — auto-placement is unreliable; blur manually
   // afterward with `grid` + `blurbox`).
-  const png = await generateXray(xrayPrompt());
-  writeFileSync(join(dir, "xray.png"), png);
+  const png = await generateXray(prompt);
+  writeFileSync(join(dir, c.threadsImage), png);
   console.log(`regenerated CLEAN xray.png for ${folder} (${cond.diagnosis}) — grid + blurbox the genitals before posting`);
 } else if (mode === "slides") {
+  invalidateImage(c);
   // Render CLEAN slides from the current xray.png (blur genitals afterward with grid + blurbox).
-  const xrayPng = readFileSync(join(dir, "xray.png"));
+  const xrayPng = readFileSync(join(dir, c.threadsImage));
   const slides = await generateSlides(c, cond, xrayPng);
   writeFileSync(join(dir, "question.png"), slides.question);
   writeFileSync(join(dir, "answer.png"), slides.answer);
   writeFileSync(join(dir, "cta.png"), slides.cta);
   console.log(`re-rendered 3 CLEAN slides for ${folder} (${cond.diagnosis}) — grid + blurbox the genitals before posting`);
 } else if (mode === "censor") {
+  invalidateImage(c);
   // Blur genitalia on the existing images in place (no regeneration).
-  const x = await censorXray(readFileSync(join(dir, "xray.png")));
-  writeFileSync(join(dir, "xray.png"), x.png);
+  const x = await censorXray(readFileSync(join(dir, c.threadsImage)));
+  writeFileSync(join(dir, c.threadsImage), x.png);
   let slidesBlurred = false;
   for (const f of ["question.png", "answer.png"]) {
     const p = join(dir, f);
@@ -108,9 +116,22 @@ if (mode === "xray") {
     process.exit(1);
   }
   const fp = join(dir, file.endsWith(".png") ? file : `${file}.png`);
+  invalidateImage(c);
   const out = await blurBox(readFileSync(fp), { x, y, w, h });
   writeFileSync(fp, out);
   console.log(`blurred box [x=${x} y=${y} w=${w} h=${h}] on ${folder}/${file}`);
+} else if (mode === "verify") {
+  // Run only after inspecting any manual blur. Failure leaves the existing review hold intact.
+  invalidateImage(c);
+  const png = readFileSync(join(dir, c.threadsImage));
+  const verdict = await verifyXray(png, cond);
+  c.imageApproval = imageApproval(png, cond, verdict);
+  c.needsReview = !verdict.ok;
+  c.approved = verdict.ok;
+  c.verifyDefects = verdict.defects;
+  saveCase(c);
+  if (!verdict.ok) throw new Error(`Final image failed QA: ${verdict.defects.join("; ")}`);
+  console.log(`verified final image for ${folder}`);
 } else if (mode === "grid") {
   // Overlay a 0-1 coordinate grid (lines every 0.05, labels every 0.1) so an exact blur box
   // can be read off the image. Writes _grid_<file>.png next to it (not committed).
@@ -159,6 +180,6 @@ if (mode === "xray") {
   writeFileSync(outPath, region);
   console.log(outPath);
 } else {
-  console.error(`unknown mode "${mode}" (use xray|slides|censor|blurbox|grid|zoom)`);
+  console.error(`unknown mode "${mode}" (use xray|slides|censor|blurbox|verify|grid|zoom)`);
   process.exit(1);
 }

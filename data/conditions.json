@@ -850,15 +850,15 @@
       "Madelung's deformity",
       "dyschondrosteosis wrist deformity"
     ],
-    "symptom": "a crooked dinner-fork wrist and limited rotation in a young person",
-    "hook": "the forearm bones had grown unevenly and bowed the wrist into a fork shape",
+    "symptom": "gradually worsening wrist deformity and limited forearm rotation",
+    "hook": "the end of the radius tilted sharply and the wrist bones formed a wedge",
     "view": "PA and lateral wrist",
-    "keyFindings": "premature fusion of the volar-ulnar distal radial physis causing a bowed, shortened radius, dorsal ulnar prominence and triangular carpus wedged between the radius and ulna",
-    "whatYouSee": "A short bowed radius with the ulna sticking out dorsally and the wrist bones wedged into a triangle that gives the dinner-fork shape.",
-    "whyItMatters": "This growth plate disorder is often linked to Leri-Weill dyschondrosteosis and it causes wrist deformity and pain and reduced forearm rotation.",
-    "treatment": "Management ranges from observation and physiotherapy to surgical correction with osteotomy or release of the abnormal tethering ligament.",
-    "takeaway": "A dinner-fork wrist from an uneven bowed forearm in a young person is Madelung deformity.",
-    "igTitle": "THE DINNER-FORK WRIST",
+    "keyFindings": "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence. Lateral view shows increased volar tilt with dorsal prominence of the distal ulna. Radius and ulna are separate coherent bones, with no duplicated carpal bones.",
+    "whatYouSee": "The distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.",
+    "whyItMatters": "Abnormal growth at the distal radius can cause pain and restricted movement.",
+    "treatment": "Treatment depends on age and symptoms. Options include observation and selected corrective surgery.",
+    "takeaway": "Abnormal growth at the distal radius can cause pain and restricted movement.",
+    "igTitle": "THE TILTED WRIST",
     "igOptions": [
       "Colles fracture",
       "Madelung deformity",
@@ -866,7 +866,16 @@
     ],
     "igCorrect": "B",
     "used": true,
-    "ageBand": "adolescent"
+    "ageBand": "adolescent",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4993032/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence.",
+      "Lateral view shows increased volar tilt with dorsal prominence of the distal ulna.",
+      "Radius and ulna are separate coherent bones, with no duplicated carpal bones."
+    ]
   },
   {
     "diagnosis": "Coin in the oesophagus",
@@ -874,14 +883,14 @@
       "swallowed coin",
       "oesophageal foreign body"
     ],
-    "symptom": "a child drooling and refusing food after swallowing something",
-    "hook": "a perfectly round metal disc was lodged in the food pipe and facing flat to the camera",
+    "symptom": "drooling and refusal to eat after swallowing an object",
+    "hook": "a round metal disc appeared at the base of the neck",
     "view": "AP chest and neck",
-    "keyFindings": "a round radiopaque metallic disc lying in the coronal plane (face-on) at the level of the thoracic inlet, distinguishing oesophageal from tracheal location",
-    "whatYouSee": "A round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.",
-    "whyItMatters": "A lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.",
-    "treatment": "An impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
-    "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin so always rule out a button battery first.",
+    "keyFindings": "One round face-on radiopaque disc projects at the thoracic inlet. Visible neck and chest anatomy is coherent for a child.",
+    "whatYouSee": "A face-on metal disc projects at the thoracic inlet. A lateral view helps confirm its location.",
+    "whyItMatters": "A coin is likely but a button battery must be excluded.",
+    "treatment": "Drooling with an oesophageal object needs urgent endoscopic assessment. A suspected button battery is an emergency.",
+    "takeaway": "A coin is likely but a button battery must be excluded.",
     "igTitle": "THE DISC IN THE PIPE",
     "igOptions": [
       "Button battery",
@@ -890,7 +899,15 @@
     ],
     "igCorrect": "B",
     "used": true,
-    "ageBand": "child"
+    "ageBand": "child",
+    "sources": [
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One round face-on radiopaque disc projects at the thoracic inlet.",
+      "Visible neck and chest anatomy is coherent for a child."
+    ]
   },
   {
     "diagnosis": "Swallowed sword",
@@ -994,14 +1011,14 @@
       "ingested light bulb",
       "light bulb in stomach"
     ],
-    "symptom": "stomach pain after swallowing a light bulb on a dare",
-    "hook": "a whole intact light bulb was sitting inside the stomach",
+    "symptom": "upper abdominal pain after swallowing an object on a dare",
+    "hook": "a rounded glass outline with a threaded metal base appeared in the upper abdomen",
     "view": "AP chest and upper abdomen cropped at the navel with no pelvis or groin in frame",
-    "keyFindings": "the outline of a whole intact light bulb with its rounded glass top and threaded metal base lying within the stomach in the upper abdomen with no pelvis or groin in the frame",
-    "whatYouSee": "A whole light bulb sitting inside the stomach.",
-    "whyItMatters": "A swallowed glass bulb can break and cut the gut so it often needs careful removal.",
-    "treatment": "It is usually removed by endoscopy or surgery before it can shatter.",
-    "takeaway": "The outline of a bulb in the stomach is a swallowed light bulb.",
+    "keyFindings": "One intact bulb-shaped object with a rounded glass envelope and attached threaded metal base projects in the left upper abdomen. The visible ribs and upper abdominal anatomy are coherent.",
+    "whatYouSee": "A bulb-shaped object with a threaded base projects over the stomach region.",
+    "whyItMatters": "Glass may break during passage or removal.",
+    "treatment": "Specialists plan careful retrieval according to the object and its location. Endoscopy or surgery may be needed.",
+    "takeaway": "Glass may break during passage or removal.",
     "igTitle": "A BRIGHT IDEA",
     "igOptions": [
       "Swallowed light bulb",
@@ -1010,7 +1027,15 @@
     ],
     "igCorrect": "A",
     "used": true,
-    "ageBand": "young-adult"
+    "ageBand": "young-adult",
+    "sources": [
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One intact bulb-shaped object with a rounded glass envelope and attached threaded metal base projects in the left upper abdomen.",
+      "The visible ribs and upper abdominal anatomy are coherent."
+    ]
   },
   {
     "diagnosis": "Swallowed safety pin",
@@ -1018,14 +1043,14 @@
       "open safety pin",
       "ingested safety pin"
     ],
-    "symptom": "an infant drooling and refusing feeds after swallowing a safety pin",
-    "hook": "an open safety pin was stuck in the food pipe with its point upward",
+    "symptom": "drooling and refusal to feed after a suspected ingestion",
+    "hook": "an open V-shaped metal object with a small coil appeared at the base of the neck",
     "view": "AP chest and neck of an infant one view filling the frame with no pelvis or groin",
-    "keyFindings": "an open safety pin lodged in the upper food pipe at the level of the neck or chest with its sharp point open and the spring clearly visible",
-    "whatYouSee": "An open safety pin stuck in the food pipe.",
-    "whyItMatters": "An open sharp pin can tear the food pipe so it must come out quickly.",
-    "treatment": "It is removed urgently by endoscopy.",
-    "takeaway": "An open safety pin in the food pipe is a swallowed pin needing urgent removal.",
+    "keyFindings": "One open safety pin with a spring coil, connected frame and free sharp point projects at the thoracic inlet. The visible chest and neck anatomy is coherent for an infant.",
+    "whatYouSee": "An open pin with a spring coil projects over the upper oesophageal region.",
+    "whyItMatters": "A sharp oesophageal object can perforate the wall.",
+    "treatment": "Urgent specialist removal is required. Further imaging may help establish its position.",
+    "takeaway": "A sharp oesophageal object can perforate the wall.",
     "igTitle": "PINNED",
     "igOptions": [
       "Safety pin",
@@ -1034,7 +1059,15 @@
     ],
     "igCorrect": "A",
     "used": true,
-    "ageBand": "infant"
+    "ageBand": "infant",
+    "sources": [
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One open safety pin with a spring coil, connected frame and free sharp point projects at the thoracic inlet.",
+      "The visible chest and neck anatomy is coherent for an infant."
+    ]
   },
   {
     "diagnosis": "Impalement by a metal rod",
@@ -1043,14 +1076,14 @@
       "impaled chest",
       "penetrating rod"
     ],
-    "symptom": "a fall onto a steel rod at a construction site",
-    "hook": "a long steel rod had passed straight through the chest",
+    "symptom": "a penetrating chest injury after a fall at a construction site",
+    "hook": "a thick straight metal object projected across the chest",
     "view": "AP chest one view filling the frame with no pelvis or groin",
-    "keyFindings": "a long straight thick radiopaque metal rod passing through the chest cavity crossing the lung fields with the surrounding ribs and chest anatomy otherwise intact",
-    "whatYouSee": "A long steel rod passing straight through the chest.",
-    "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
-    "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
-    "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+    "keyFindings": "One continuous straight radiopaque rod projects across the thorax. The visible ribs, clavicles and spine are coherent without duplicated bones.",
+    "whatYouSee": "A metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.",
+    "whyItMatters": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+    "treatment": "Trauma specialists plan removal under controlled surgical conditions with bleeding control available.",
+    "takeaway": "In a true impalement, uncontrolled removal can trigger major bleeding.",
     "igTitle": "THE CONSTRUCTION SITE",
     "igOptions": [
       "Chest drain",
@@ -1059,22 +1092,29 @@
     ],
     "igCorrect": "B",
     "used": true,
-    "ageBand": "young-adult"
+    "ageBand": "young-adult",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3039238/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One continuous straight radiopaque rod projects across the thorax.",
+      "The visible ribs, clavicles and spine are coherent without duplicated bones."
+    ]
   },
   {
     "diagnosis": "Gas gangrene",
     "aliases": [
-      "clostridial myonecrosis",
-      "gas in the tissues"
+      "clostridial myonecrosis"
     ],
     "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
     "hook": "the muscles of the limb were full of spreading gas bubbles",
     "view": "AP radiograph of a lower leg one view filling the frame with no pelvis or groin",
     "keyFindings": "multiple dark gas bubbles and streaks of gas tracking through the soft tissues and muscle planes of the limb giving a feathery bubbly pattern with the bone intact",
-    "whatYouSee": "Bubbles of gas spreading through the muscles of the limb.",
-    "whyItMatters": "Gas in the muscle means a fast spreading flesh eating infection that can kill within hours.",
-    "treatment": "It needs emergency surgery to cut away dead tissue plus strong antibiotics.",
-    "takeaway": "Gas bubbles tracking through the muscles is gas gangrene a surgical emergency.",
+    "whatYouSee": "Dark gas pockets track through swollen soft tissues of the lower leg.",
+    "whyItMatters": "With rapidly worsening pain and swelling, this raises concern for a life-threatening necrotizing infection. Gas alone is not diagnostic.",
+    "treatment": "Suspected necrotizing infection needs emergency surgical assessment, debridement and intravenous antibiotics.",
+    "takeaway": "Soft-tissue gas with rapidly progressive illness demands urgent assessment.",
     "igTitle": "THE SPREADING WOUND",
     "igOptions": [
       "Gas gangrene",
@@ -1083,7 +1123,15 @@
     ],
     "igCorrect": "A",
     "used": false,
-    "ageBand": "older"
+    "ageBand": "older",
+    "sources": [
+      "https://www.merckmanuals.com/professional/infectious-diseases/anaerobic-bacteria/clostridial-soft-tissue-infections"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "multiple dark gas bubbles and streaks of gas tracking through the soft tissues and muscle planes of the limb giving a feathery bubbly pattern with the bone intact",
+      "The visible anatomy matches the requested AP radiograph of a lower leg one view filling the frame with no pelvis or groin and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Fetus in fetu",
@@ -1281,10 +1329,10 @@
     "hook": "the liver was veined through with branching dark channels of air like a bolt of lightning frozen inside it",
     "view": "AP abdomen radiograph of the upper abdomen and liver cropped at the navel with no pelvis or groin",
     "keyFindings": "branching tubular lucent gas reaching out to the edge of the liver like a tree or lightning pattern",
-    "whatYouSee": "Branching air spreading through the liver like lightning.",
-    "whyItMatters": "Air in the liver veins often means the bowel is dying and is a medical emergency.",
-    "treatment": "It usually needs urgent surgery to treat the dying bowel behind it.",
-    "takeaway": "Branching gas reaching the edge of the liver is portal venous gas.",
+    "whatYouSee": "Branching dark gas extends toward the liver edge.",
+    "whyItMatters": "Portal venous gas can accompany bowel ischaemia, inflammation or recent procedures. The clinical cause determines urgency.",
+    "treatment": "Urgent assessment excludes bowel ischaemia or perforation. Surgery depends on the cause and clinical findings.",
+    "takeaway": "Peripheral branching hepatic gas suggests portal venous gas, not automatic proof of dead bowel.",
     "igTitle": "THE LIGHTNING LIVER",
     "igOptions": [
       "Fatty liver",
@@ -1293,7 +1341,15 @@
     ],
     "igCorrect": "B",
     "used": false,
-    "ageBand": "older"
+    "ageBand": "older",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2657713/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "branching tubular lucent gas reaching out to the edge of the liver like a tree or lightning pattern",
+      "The visible anatomy matches the requested AP abdomen radiograph of the upper abdomen and liver cropped at the navel with no pelvis or groin and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Chronic pancreatitis with calcification",
@@ -1326,13 +1382,13 @@
       "water lily sign"
     ],
     "symptom": "a dry nagging cough and a bit of breathlessness they blamed on being unfit",
-    "hook": "a huge round water balloon was sitting in the lung and the burst skin floated on the fluid like a water lily",
+    "hook": "a large lung cavity held fluid with a folded membrane floating at its surface",
     "view": "PA chest radiograph showing the lung (one view, no pelvis or groin)",
     "keyFindings": "a large round cyst in the lung with an air-fluid level and a crumpled floating membrane giving the water-lily sign",
-    "whatYouSee": "A water balloon in the lung with a lily floating on top.",
-    "whyItMatters": "It is a tapeworm cyst grown in the lung and bursting it can cause a severe allergic reaction.",
-    "treatment": "It is removed with surgery along with antiparasitic medicine.",
-    "takeaway": "A lung cyst with a floating membrane is a hydatid cyst.",
+    "whatYouSee": "A rounded lung cavity contains an air-fluid level and a floating folded membrane.",
+    "whyItMatters": "This pattern suggests a ruptured hydatid cyst. Rupture can cause allergic reactions and other serious complications.",
+    "treatment": "Specialist care often involves surgery. Antiparasitic treatment is tailored to the cyst and treatment plan.",
+    "takeaway": "A floating membrane within a lung cyst is a clue to hydatid disease.",
     "igTitle": "THE WATER LILY LUNG",
     "igOptions": [
       "Abscess",
@@ -1341,7 +1397,16 @@
     ],
     "igCorrect": "B",
     "used": false,
-    "ageBand": "young-adult"
+    "ageBand": "young-adult",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4919757/",
+      "https://www.who.int/publications/i/item/9789240110472"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a large round cyst in the lung with an air-fluid level and a crumpled floating membrane giving the water-lily sign",
+      "The visible anatomy matches the requested PA chest radiograph showing the lung (one view, no pelvis or groin) and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Craniofacial fibrous dysplasia",
@@ -1545,13 +1610,13 @@
       "swallowed a spoon"
     ],
     "symptom": "a swallowed object after a dare and a heavy dragging feeling in the gut but no real pain",
-    "hook": "a whole metal spoon was lying inside the stomach handle down",
+    "hook": "a long metallic object with a rounded bowl and straight handle projected over the upper abdomen",
     "view": "AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
     "keyFindings": "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
-    "whatYouSee": "A full metal spoon is sitting inside the stomach with the bowl and handle clearly outlined.",
-    "whyItMatters": "A long rigid object like this will not pass through the twists of the gut on its own and can press on or tear the wall if it is left.",
-    "treatment": "It is lifted out with an endoscope passed down into the stomach so nothing has to be cut open.",
-    "takeaway": "The stomach will hold far more than anyone expects.",
+    "whatYouSee": "A complete spoon-shaped metal object projects over the expected stomach region.",
+    "whyItMatters": "Long rigid objects can fail to pass the duodenum and can injure the gut wall.",
+    "treatment": "Endoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+    "takeaway": "Object size, shape and location guide foreign-body management.",
     "igTitle": "THE SPOON",
     "igOptions": [
       "A calcified mass",
@@ -1560,7 +1625,15 @@
     ],
     "igCorrect": "B",
     "used": false,
-    "ageBand": "young-adult"
+    "ageBand": "young-adult",
+    "sources": [
+      "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
+      "The visible anatomy matches the requested AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Swallowed keys",
@@ -1570,13 +1643,13 @@
       "swallowed a set of keys"
     ],
     "symptom": "a swallowed handful of metal after a bet and now a strange dragging weight low in the chest",
-    "hook": "a full set of keys on a ring was sitting inside the stomach",
+    "hook": "several toothed metal objects shared one ring high in the abdomen",
     "view": "AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
     "keyFindings": "a clustered set of metal keys joined on a ring outlined inside the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the individual key teeth visible",
-    "whatYouSee": "A set of keys on a ring is sitting inside the stomach with the separate keys clearly outlined.",
-    "whyItMatters": "The jagged edges can catch on the gut wall and the ring can snag which stops the whole cluster from passing on its own.",
-    "treatment": "The whole bunch is removed with an endoscope guided down into the stomach.",
-    "takeaway": "Not everything that goes down is meant to come back the same way.",
+    "whatYouSee": "Several metal keys on a ring project over the expected stomach region.",
+    "whyItMatters": "An irregular cluster can lodge or injure the gut. A frontal image alone cannot establish its exact depth.",
+    "treatment": "Urgent specialist assessment determines retrieval. Endoscopy may be possible; complications can require surgery.",
+    "takeaway": "Irregular swallowed objects need assessment based on shape, symptoms and location.",
     "igTitle": "THE KEYS",
     "igOptions": [
       "A swallowed set of keys",
@@ -1585,7 +1658,16 @@
     ],
     "igCorrect": "A",
     "used": false,
-    "ageBand": "child"
+    "ageBand": "child",
+    "sources": [
+      "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions",
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a clustered set of metal keys joined on a ring outlined inside the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the individual key teeth visible",
+      "The visible anatomy matches the requested AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Chilaiditi syndrome",
@@ -2384,14 +2466,14 @@
       "intestinal ascariasis",
       "worm bolus"
     ],
-    "symptom": "crampy belly pain and vomiting in a child from a rural area",
-    "hook": "the bowel gas outlined dozens of long curled shapes that were all moving on their own",
+    "symptom": "crampy abdominal pain and vomiting",
+    "hook": "bowel gas outlined a tangle of long smooth curved shadows",
     "view": "supine abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
-    "keyFindings": "a mass of long smooth curvilinear filling defects coiled together within gas filled small bowel loops with each worm outlined by surrounding gas and some showing a thin dense line of swallowed gas within its own gut",
-    "whatYouSee": "Long smooth curled shapes are packed inside the bowel and outlined by gas. Each one of them is a worm.",
-    "whyItMatters": "A heavy roundworm burden can knot into a bolus and block the bowel or crawl into the bile duct and obstruct it.",
-    "treatment": "Deworming drugs clear the infestation while a true obstruction or a worm in the bile duct may need endoscopic or surgical removal.",
-    "takeaway": "Curled tubes outlined by bowel gas in a child means Ascaris.",
+    "keyFindings": "multiple long smooth curvilinear soft-tissue densities clustered within gas-filled small-bowel loops and outlined by surrounding dark gas; no claim of motion from a still image",
+    "whatYouSee": "Gas outlines long curved tubular densities within bowel loops.",
+    "whyItMatters": "Heavy Ascaris infection can obstruct the bowel. The radiographic pattern needs clinical and parasitological correlation.",
+    "treatment": "Deworming treats infection. Suspected obstruction needs specialist assessment and may require procedural treatment.",
+    "takeaway": "A worm-like bowel pattern is a diagnostic clue, not proof from a single image.",
     "igTitle": "THE WRIGGLING SHADOWS",
     "igOptions": [
       "Intussusception",
@@ -2399,7 +2481,16 @@
       "Meckel diverticulum"
     ],
     "igCorrect": "B",
-    "ageBand": "child"
+    "ageBand": "child",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/6771997/",
+      "https://www.cdc.gov/dpdx/ascariasis/index.html"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "multiple long smooth curvilinear soft-tissue densities clustered within gas-filled small-bowel loops and outlined by surrounding dark gas; no claim of motion from a still image",
+      "The visible anatomy matches the requested supine abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Diffuse idiopathic skeletal hyperostosis",
@@ -2408,14 +2499,14 @@
       "Forestier disease",
       "flowing candle wax spine"
     ],
-    "symptom": "a stiff upper back in an older man who still had a good range of movement in his neck",
-    "hook": "the spine looked like candle wax had been poured down the front of it and left to set",
+    "symptom": "persistent upper back stiffness",
+    "hook": "a thick ribbon of bone bridged several vertebrae along the front of the spine",
     "view": "lateral thoracic spine",
-    "keyFindings": "thick flowing ossification draping down the front of at least four contiguous vertebral bodies like dripping candle wax with the disc spaces preserved and the facet joints left normal",
-    "whatYouSee": "A thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.",
-    "whyItMatters": "The ligament along the front of the spine turns to bone and stiffens it and a spine this brittle can fracture across all its layers after a minor fall.",
-    "treatment": "Care is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
-    "takeaway": "Flowing candle wax bone down four vertebrae with normal discs is DISH.",
+    "keyFindings": "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies. Disc heights are relatively preserved; severe disc collapse does not dominate the pattern. The visible vertebral bodies and posterior elements are anatomically coherent.",
+    "whatYouSee": "Flowing anterior ossification bridges at least four vertebral bodies with relatively preserved disc heights.",
+    "whyItMatters": "This pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.",
+    "treatment": "Care addresses pain and mobility. New pain after trauma requires assessment for fracture.",
+    "takeaway": "This pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.",
     "igTitle": "THE CANDLE WAX SPINE",
     "igOptions": [
       "Ankylosing spondylitis",
@@ -2424,7 +2515,16 @@
     ],
     "igCorrect": "C",
     "ageBand": "older",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5604607/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies.",
+      "Disc heights are relatively preserved; severe disc collapse does not dominate the pattern.",
+      "The visible vertebral bodies and posterior elements are anatomically coherent."
+    ]
   },
   {
     "diagnosis": "Dracunculiasis",
@@ -2433,15 +2533,15 @@
       "Guinea worm disease",
       "calcified Dracunculus"
     ],
-    "symptom": "a burning blister on the ankle of a traveller who had been drinking from a village pond",
-    "hook": "a long thin worm had calcified into a coil under the skin and was sitting there in plain view",
+    "symptom": "a firm lump in the calf after a remote stay in an endemic area",
+    "hook": "a long curling calcification ran through the soft tissues beside the bones",
     "view": "AP lower leg",
     "ageBand": "young-adult",
-    "keyFindings": "a long serpentine calcified worm coiled and looped within the soft tissues of the calf standing out as a dense white thread against completely normal underlying bone",
-    "whatYouSee": "A long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.",
-    "whyItMatters": "The female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.",
-    "treatment": "The living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
-    "takeaway": "A long calcified thread coiled in the soft tissue is a dead Guinea worm.",
+    "keyFindings": "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones. Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire. The visible tibia and fibula are separate and anatomically coherent.",
+    "whatYouSee": "A long serpentine soft-tissue calcification suggests a calcified worm remnant.",
+    "whyItMatters": "This can reflect old infection; it does not prove a living worm is present.",
+    "treatment": "An incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
+    "takeaway": "This can reflect old infection; it does not prove a living worm is present.",
     "igTitle": "THE WORM IN THE LEG",
     "igOptions": [
       "Calcified haematoma",
@@ -2449,7 +2549,16 @@
       "Myositis ossificans"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3159369/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones.",
+      "Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire.",
+      "The visible tibia and fibula are separate and anatomically coherent."
+    ]
   },
   {
     "diagnosis": "Duodenal atresia",
@@ -2457,15 +2566,15 @@
       "double bubble sign",
       "congenital duodenal obstruction"
     ],
-    "symptom": "a newborn vomiting bile within hours of the very first feed",
-    "hook": "the whole abdomen held just two bubbles of gas and nothing at all beyond them",
+    "symptom": "bilious vomiting soon after the first feed",
+    "hook": "two large gas bubbles filled the upper abdomen with little gas visible below",
     "view": "coned AP view of the upper abdomen of a newborn showing only from the nipples down to the navel with the lower body entirely out of frame",
     "ageBand": "infant",
-    "keyFindings": "two large gas filled bubbles in the upper abdomen with the larger stomach bubble on the left and a dilated duodenal cap on the right and completely gasless bowel below them",
-    "whatYouSee": "Two big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.",
-    "whyItMatters": "The duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.",
-    "treatment": "The blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
-    "takeaway": "Two bubbles and a gasless belly in a newborn is duodenal atresia.",
+    "keyFindings": "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right. Little or no gas is visible distal to the two bubbles within this cropped field. Visible skeletal proportions are compatible with a newborn.",
+    "whatYouSee": "Two upper abdominal gas bubbles suggest a dilated stomach and proximal duodenum.",
+    "whyItMatters": "This suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.",
+    "treatment": "The newborn needs urgent assessment and stabilisation. Confirmed atresia is repaired surgically.",
+    "takeaway": "This suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.",
     "igTitle": "THE DOUBLE BUBBLE",
     "igOptions": [
       "Duodenal atresia",
@@ -2473,31 +2582,47 @@
       "Hirschsprung disease"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://www.merckmanuals.com/professional/pediatrics/congenital-gastrointestinal-anomalies/duodenal-obstruction"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right.",
+      "Little or no gas is visible distal to the two bubbles within this cropped field.",
+      "Visible skeletal proportions are compatible with a newborn."
+    ]
   },
   {
     "diagnosis": "Progressive massive fibrosis",
     "aliases": [
-      "silicosis",
-      "complicated pneumoconiosis",
-      "eggshell calcification"
+      "complicated pneumoconiosis"
     ],
     "symptom": "decades of worsening breathlessness in a retired stone quarry worker",
     "hook": "two great masses had formed high in the lungs and were dragging everything upward toward them",
     "view": "PA chest",
     "ageBand": "older",
     "keyFindings": "large conglomerate masses in both upper zones surrounded by profuse small nodules with eggshell calcification of the enlarged hilar lymph nodes and upward retraction of both hila",
-    "whatYouSee": "Two dense masses sit high in the lungs surrounded by countless small nodules and the lymph nodes at the roots have bright calcified rims.",
-    "whyItMatters": "Years of inhaled silica dust drive scarring that fuses small nodules into solid masses and it sharply raises the risk of tuberculosis and lung cancer.",
-    "treatment": "There is no cure so care is removal from exposure and supportive treatment and active screening for tuberculosis.",
-    "takeaway": "Upper zone masses with eggshell hilar nodes in a quarry worker is silicosis.",
+    "whatYouSee": "Large upper-lung masses sit among small nodules, with rim-calcified hilar nodes and upward hilar retraction.",
+    "whyItMatters": "Severe dust-related lung scarring can merge into large masses. Silica exposure also increases tuberculosis risk.",
+    "treatment": "Care focuses on stopping exposure, respiratory support and assessment for complications, including tuberculosis.",
+    "takeaway": "Conglomerate upper-lung masses in a dust-exposed worker suggest progressive massive fibrosis.",
     "igTitle": "THE STONECUTTER'S LUNGS",
     "igOptions": [
       "Progressive massive fibrosis",
       "Cannonball metastases",
       "Sarcoidosis"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://stacks.cdc.gov/view/cdc/126384",
+      "https://www.cdc.gov/niosh/silica/symptoms/index.html"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "large conglomerate masses in both upper zones surrounded by profuse small nodules with eggshell calcification of the enlarged hilar lymph nodes and upward retraction of both hila",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Ochronosis",
@@ -2506,15 +2631,15 @@
       "ochronotic spondylosis",
       "black bone disease"
     ],
-    "symptom": "a stiff painful back in a patient whose urine turned black on standing",
-    "hook": "every disc in the spine had turned into a dense white wafer",
+    "symptom": "longstanding back pain and stiffness",
+    "hook": "several discs had become dense white bands between the vertebrae",
     "view": "lateral lumbar spine cropped above the hip joints with no pelvis or groin in frame",
     "ageBand": "older",
-    "keyFindings": "dense calcification of multiple intervertebral discs with marked disc space narrowing and vacuum phenomena and osteoporotic vertebral bodies giving a stack of white wafers",
-    "whatYouSee": "The discs between the vertebrae have calcified into dense white wafers and the spaces between the bones have collapsed.",
-    "whyItMatters": "A missing enzyme lets homogentisic acid build up and stain cartilage black and that pigment destroys discs and joints over decades.",
-    "treatment": "Nitisinone can lower the acid and the rest is pain control and joint replacement for the badly damaged large joints.",
-    "takeaway": "Calcified discs stacked like white wafers is ochronosis from alkaptonuria.",
+    "keyFindings": "Several intervertebral discs show dense calcification and reduced height. Visible vertebral bodies have coherent cortical margins and alignment.",
+    "whatYouSee": "Several narrowed intervertebral discs show dense calcification.",
+    "whyItMatters": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
+    "treatment": "Specialist care may include nitisinone and treatment of joint symptoms.",
+    "takeaway": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
     "igTitle": "THE BLACK BONE DISEASE",
     "igOptions": [
       "Ankylosing spondylitis",
@@ -2522,7 +2647,15 @@
       "DISH"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK1454/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "Several intervertebral discs show dense calcification and reduced height.",
+      "Visible vertebral bodies have coherent cortical margins and alignment."
+    ]
   },
   {
     "diagnosis": "Mycetoma",
@@ -2536,17 +2669,25 @@
     "view": "AP and lateral foot",
     "ageBand": "young-adult",
     "keyFindings": "gross soft tissue swelling of the whole foot with multiple rounded lytic cavities in the tarsal and metatarsal bones and dense periosteal new bone while the overall shape of the foot is preserved",
-    "whatYouSee": "The foot is hugely swollen and the bones inside are riddled with rounded holes and thickened along their edges.",
-    "whyItMatters": "A fungus or bacterium enters through a thorn prick and slowly invades soft tissue and bone over years and it ends in amputation if it is left.",
-    "treatment": "Long courses of antifungal or antibacterial drugs run for months and surgery or amputation is needed in advanced disease.",
-    "takeaway": "A massively swollen foot with bones full of holes in a barefoot worker is mycetoma.",
+    "whatYouSee": "Marked foot swelling accompanies rounded bone cavities and periosteal new bone.",
+    "whyItMatters": "Chronic fungal or bacterial infection can invade bone and cause major disability. Tissue studies identify the organism.",
+    "treatment": "Therapy depends on the organism. Prolonged medication and selected surgery may be needed; advanced disease can require amputation.",
+    "takeaway": "A swollen foot with draining sinuses and bone destruction raises concern for mycetoma.",
     "igTitle": "THE MADURA FOOT",
     "igOptions": [
       "Mycetoma",
       "Charcot joint",
       "Osteosarcoma"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/mycetoma"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "gross soft tissue swelling of the whole foot with multiple rounded lytic cavities in the tarsal and metatarsal bones and dense periosteal new bone while the overall shape of the foot is preserved",
+      "The visible anatomy matches the requested AP and lateral foot and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Psoriatic arthritis mutilans",
@@ -2562,15 +2703,24 @@
     "keyFindings": "erosive arthritis of the small joints with sharpened pencil like ends of the phalanges sitting within cupped bases of the adjacent bones plus fluffy periosteal new bone and preserved bone density",
     "whatYouSee": "The ends of the finger bones are whittled to points and sit inside the cupped ends of the next bone along.",
     "whyItMatters": "Psoriatic inflammation destroys and rebuilds the small joints at the same time so bone is eaten away and laid down together and the fingers shorten and telescope.",
-    "treatment": "Disease modifying drugs and biologics halt the erosion and surgery salvages the worst joints.",
-    "takeaway": "Pencil in cup fingers with fluffy new bone is psoriatic arthritis mutilans.",
+    "treatment": "Disease-modifying treatment aims to control inflammation and limit further damage. Severe deformity may need surgery.",
+    "takeaway": "Pencil-in-cup erosions with shortening suggest severe psoriatic arthropathy in the right clinical setting.",
     "igTitle": "PENCIL IN A CUP",
     "igOptions": [
       "Rheumatoid arthritis",
       "Psoriatic arthritis mutilans",
       "Gout"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "sources": [
+      "https://www.nhs.uk/conditions/psoriatic-arthritis/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4834372/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "erosive arthritis of the small joints with sharpened pencil like ends of the phalanges sitting within cupped bases of the adjacent bones plus fluffy periosteal new bone and preserved bone density",
+      "The visible anatomy matches the requested PA both hands and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Chondrocalcinosis",
@@ -2584,42 +2734,57 @@
     "view": "AP knee",
     "ageBand": "older",
     "keyFindings": "dense linear calcification of the hyaline articular cartilage and of the menisci showing as bright white lines running parallel to the bone ends within the joint space",
-    "whatYouSee": "Bright white lines of calcium sit inside the joint following the exact shape of the cartilage.",
-    "whyItMatters": "Calcium pyrophosphate crystals deposit in cartilage and shed into the joint to cause attacks that mimic gout so the treatment is different.",
-    "treatment": "Acute attacks settle with anti-inflammatories or a steroid injection and no drug removes the crystals themselves.",
-    "takeaway": "White lines inside the joint cartilage is chondrocalcinosis from CPPD.",
+    "whatYouSee": "Thin bright calcified lines lie in the knee cartilage and menisci.",
+    "whyItMatters": "Cartilage calcification can accompany CPPD. It may be asymptomatic or occur with acute inflammatory arthritis.",
+    "treatment": "Acute attacks may need anti-inflammatory treatment. A hot swollen joint also needs assessment to exclude infection.",
+    "takeaway": "Chondrocalcinosis is an imaging finding; it does not prove an active CPPD attack.",
     "igTitle": "THE JOINT THAT TURNED TO CHALK",
     "igOptions": [
       "Gout",
       "Chondrocalcinosis",
       "Osteoarthritis"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "sources": [
+      "https://rheumatology.org/patients/calcium-pyrophosphate-deposition-cppd"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "dense linear calcification of the hyaline articular cartilage and of the menisci showing as bright white lines running parallel to the bone ends within the joint space",
+      "The visible anatomy matches the requested AP knee and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Odontogenic keratocyst",
     "aliases": [
       "keratocystic odontogenic tumour",
-      "OKC",
-      "soap bubble mandible"
+      "OKC"
     ],
-    "symptom": "a painless swelling of the jaw picked up on a routine dental film",
-    "hook": "a huge dark cavity had hollowed out the jaw and the patient had never felt a thing",
+    "symptom": "painless jaw swelling",
+    "hook": "a large dark cavity occupied the back of the lower jaw",
     "view": "panoramic dental radiograph of both jaws",
     "ageBand": "young-adult",
-    "keyFindings": "a large well defined multilocular lucent cavity expanding the posterior body and ramus of the mandible with a scalloped sclerotic margin and one unerupted tooth displaced at its lower edge while every other tooth sits normally in a single continuous arch",
-    "whatYouSee": "A large dark scalloped cavity has hollowed out one side of the lower jaw and shoved a tooth out of place.",
-    "whyItMatters": "It creeps along the length of the jaw rather than ballooning outward so it grows very large before anyone notices and it comes back after simple removal.",
-    "treatment": "The lining is removed completely and the surrounding bone is treated and long term follow up is needed because it recurs.",
-    "takeaway": "A big scalloped cavity running along the jaw with a displaced tooth is an odontogenic keratocyst.",
+    "keyFindings": "A well-defined multilocular lucent lesion occupies the posterior mandible and ramus. An impacted tooth is associated with the lesion; the remaining visible teeth and jaw are anatomically coherent.",
+    "whatYouSee": "A multilocular lucent lesion occupies the posterior mandible with an associated impacted tooth.",
+    "whyItMatters": "This can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.",
+    "treatment": "Specialist assessment and histology guide treatment. Long-term follow-up checks for recurrence.",
+    "takeaway": "This can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.",
     "igTitle": "THE HOLLOW JAW",
     "igOptions": [
       "Odontogenic keratocyst",
-      "Dental abscess",
-      "Osteosarcoma of the jaw"
+      "Ameloblastoma",
+      "Dentigerous cyst"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6206371/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "A well-defined multilocular lucent lesion occupies the posterior mandible and ramus.",
+      "An impacted tooth is associated with the lesion; the remaining visible teeth and jaw are anatomically coherent."
+    ]
   },
   {
     "diagnosis": "Calcified pleural plaques",
@@ -2628,46 +2793,61 @@
       "holly leaf calcification",
       "pleural plaques"
     ],
-    "symptom": "a routine chest film in a retired shipyard lagger who felt completely fine",
+    "symptom": "no chest symptoms during a routine health assessment after past shipyard work",
     "hook": "sheets of calcium had grown along the lining of both lungs like frost across a window",
     "view": "PA chest",
     "ageBand": "older",
     "keyFindings": "multiple dense calcified pleural plaques lying along both hemidiaphragms and the lateral chest wall with irregular holly leaf shaped edges and clear lung fields in between them",
     "whatYouSee": "Sheets of bright calcium sit along the lining of the lungs and the diaphragm with jagged holly leaf edges.",
-    "whyItMatters": "They are the fingerprint of old asbestos exposure and are harmless in themselves but they mark someone who now carries a raised risk of mesothelioma.",
-    "treatment": "The plaques need no treatment so care is documenting the exposure and watching for mesothelioma and lung cancer.",
-    "takeaway": "Holly leaf calcified plaques on the pleura means old asbestos exposure.",
+    "whyItMatters": "Pleural plaques are benign markers of past asbestos exposure. The exposure, rather than the plaques themselves, carries cancer risk.",
+    "treatment": "Isolated plaques usually need no treatment or routine imaging follow-up. Document exposure and address individual risk factors.",
+    "takeaway": "Calcified pleural plaques suggest past exposure; they are not cancer or a precancerous lesion.",
     "igTitle": "FROST ON THE LUNGS",
     "igOptions": [
       "Calcified pleural plaques",
       "Pulmonary tuberculosis",
       "Healed rib fractures"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/therapeutic-guidelines/respiratory/pleural-plaques-guidelines/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "multiple dense calcified pleural plaques lying along both hemidiaphragms and the lateral chest wall with irregular holly leaf shaped edges and clear lung fields in between them",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Infantile scurvy",
     "aliases": [
       "Barlow disease",
-      "vitamin C deficiency",
-      "Wimberger sign"
+      "vitamin C deficiency"
     ],
-    "symptom": "an irritable infant who screamed whenever his legs were touched and refused to move them at all",
+    "symptom": "painful legs and reluctance to move them",
     "hook": "the baby lay frog legged and would not move because every bone hurt to touch",
     "view": "AP both knees and lower legs of an infant",
     "ageBand": "infant",
     "keyFindings": "dense white metaphyseal lines across the knees with lucent scurvy lines just beneath them and thin pencilled cortices and dense ring like rims around the epiphyses plus subperiosteal new bone from old haemorrhage",
     "whatYouSee": "Bright dense lines cross the ends of the long bones with dark lines just beneath them and the growth centres carry thin white rings.",
-    "whyItMatters": "Vitamin C is needed to build collagen so the bone matrix fails and vessels bleed under the periosteum which is exactly why the baby will not be touched.",
-    "treatment": "Vitamin C replacement corrects it quickly and the pain settles within days.",
-    "takeaway": "White metaphyseal lines and ringed epiphyses in a screaming infant is scurvy.",
+    "whyItMatters": "Vitamin C deficiency impairs collagen formation and can cause bone pain and bleeding. Diet and clinical testing support the diagnosis.",
+    "treatment": "Vitamin C replacement and nutritional support treat the deficiency. Recovery is monitored clinically.",
+    "takeaway": "Dense metaphyseal lines and ringed epiphyses can suggest scurvy in the appropriate setting.",
     "igTitle": "THE BABY WHO WOULD NOT MOVE",
     "igOptions": [
       "Non-accidental injury",
       "Infantile scurvy",
       "Rickets"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2952912/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "dense white metaphyseal lines across the knees with lucent scurvy lines just beneath them and thin pencilled cortices and dense ring like rims around the epiphyses plus subperiosteal new bone from old haemorrhage",
+      "The visible anatomy matches the requested AP both knees and lower legs of an infant and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Ulnar dimelia",
@@ -2709,7 +2889,7 @@
     "keyFindings": "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
     "whatYouSee": "The ball of the shoulder sits underneath its socket instead of inside it and the arm bone points up past the head.",
     "whyItMatters": "The arm is forced overhead and levers the head out downward and it can tear the nerves and vessels running under the shoulder.",
-    "treatment": "The shoulder is reduced promptly with traction in the raised position then brought down and the nerves and pulses are checked before and after.",
+    "treatment": "Prompt reduction by a trained clinician follows neurovascular assessment. Pulses and nerve function are checked again afterwards.",
     "takeaway": "An arm locked overhead with the humeral head under the socket is luxatio erecta.",
     "igTitle": "THE ARM THAT WOULD NOT COME DOWN",
     "igOptions": [
@@ -2717,7 +2897,15 @@
       "Luxatio erecta",
       "Fractured clavicle"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8779502/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
+      "The visible anatomy matches the requested AP shoulder with the arm in the presenting raised position and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Congenital humeroradial synostosis",
@@ -2725,15 +2913,15 @@
       "radiohumeral synostosis",
       "congenital elbow fusion"
     ],
-    "symptom": "an elbow that had never bent since birth in a small infant",
+    "symptom": "an elbow that had remained fixed since birth",
     "hook": "the arm bones had simply grown into one another and left no joint at all",
     "view": "AP and lateral elbow with the distal humerus and proximal forearm",
     "ageBand": "infant",
     "anatomyException": "The humerus and the radius are legitimately FUSED into one continuous bone with no joint space between them. That fusion IS the diagnosis. The ulna stays separate and normal and the bone count is otherwise unchanged.",
     "keyFindings": "continuous bone running from the distal humerus into the proximal radius with the joint space between them absent while the ulna remains separate and the elbow is held in one fixed position",
     "whatYouSee": "The arm bone and the forearm bone run into each other as one piece of bone and the gap where the elbow joint should be has gone.",
-    "whyItMatters": "The elbow never formed as a joint so it cannot bend or straighten and the hand cannot be brought to the face.",
-    "treatment": "Mild cases are managed with therapy and aids while a badly placed elbow can be cut and reset into a more useful fixed angle.",
+    "whyItMatters": "Congenital fusion restricts elbow movement. Function depends on the fixed angle and associated limb differences.",
+    "treatment": "Specialist care may use therapy and adaptations. Selected severe positions may benefit from corrective surgery.",
     "takeaway": "An elbow with no joint space because the bones run together is congenital synostosis.",
     "igTitle": "THE ELBOW THAT NEVER FORMED",
     "igOptions": [
@@ -2741,7 +2929,16 @@
       "Elbow dislocation",
       "Supracondylar fracture"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405067/",
+      "https://morthoj.org/2012/v6n3/congenital-humeroradial-synostosis.pdf"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "continuous bone running from the distal humerus into the proximal radius with the joint space between them absent while the ulna remains separate and the elbow is held in one fixed position",
+      "The visible anatomy matches the requested AP and lateral elbow with the distal humerus and proximal forearm and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Double-layered patella",
@@ -2756,8 +2953,8 @@
     "anatomyException": "The patella is legitimately split into TWO separate corticated layers stacked front to back with a clear plane between them. That doubling IS the diagnosis. Every other bone in the knee stays single and normal.",
     "keyFindings": "the patella divided into two corticated bony layers lying front to back with a distinct cleft between them while the femur and tibia are otherwise normal",
     "whatYouSee": "The kneecap is made of two separate bony plates stacked one behind the other with a clean line dividing them.",
-    "whyItMatters": "The kneecap ossified from two separate layers that never merged and it is a strong pointer toward an underlying epiphyseal dysplasia.",
-    "treatment": "The layers themselves are usually left alone and care targets the pain and the early arthritis that follows.",
+    "whyItMatters": "This developmental patellar variant is associated with multiple epiphyseal dysplasia and can cause pain or instability.",
+    "treatment": "Management depends on symptoms and stability. Persistent mechanical problems may warrant specialist surgical assessment.",
     "takeaway": "A kneecap in two stacked layers on the lateral view is a double-layered patella.",
     "igTitle": "THE KNEECAP IN TWO LAYERS",
     "igOptions": [
@@ -2765,7 +2962,15 @@
       "Double-layered patella",
       "Patellar fracture"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5854308/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "the patella divided into two corticated bony layers lying front to back with a distinct cleft between them while the femur and tibia are otherwise normal",
+      "The visible anatomy matches the requested true lateral knee and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Congenital knee dislocation",
@@ -2773,15 +2978,15 @@
       "congenital anterior knee dislocation",
       "genu recurvatum congenitum"
     ],
-    "symptom": "a newborn whose knee bent the wrong way and lay flat against the front of the thigh",
+    "symptom": "a knee held in marked hyperextension from birth",
     "hook": "the baby's leg folded backward at the knee like a hinge put on upside down",
     "view": "lateral knee of a newborn from the distal femur to the proximal calf",
     "ageBand": "infant",
     "anatomyException": "The tibia legitimately sits displaced ANTERIOR to the femur so the knee is hyperextended and the joint surfaces do not meet normally. That dislocation IS the diagnosis. Keep newborn immaturity: the patella is not yet ossified and the epiphyses are largely cartilage.",
     "keyFindings": "the proximal tibia displaced forward off the femoral condyles with the knee hyperextended and the femur and tibia no longer facing one another across a joint space",
     "whatYouSee": "The shin bone has slid forward off the end of the thigh bone and the knee is bent backward instead of forward.",
-    "whyItMatters": "The knee formed while folded the wrong way in the womb and it must be reduced early while the tissues are still soft.",
-    "treatment": "Gentle serial casting starting in the first days usually brings it back and surgery is kept for knees that will not reduce.",
+    "whyItMatters": "This congenital alignment problem may occur alone or with other abnormalities. Early orthopaedic assessment guides correction.",
+    "treatment": "Care often starts with gentle specialist manipulation and serial casting. Resistant or severe cases may need surgery.",
     "takeaway": "A newborn knee bending backward with the shin in front of the thigh is congenital dislocation.",
     "igTitle": "THE KNEE THAT BENT BACKWARD",
     "igOptions": [
@@ -2789,7 +2994,15 @@
       "Developmental hip dysplasia",
       "Femoral fracture"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7839889/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "the proximal tibia displaced forward off the femoral condyles with the knee hyperextended and the femur and tibia no longer facing one another across a joint space",
+      "The visible anatomy matches the requested lateral knee of a newborn from the distal femur to the proximal calf and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Calcific myonecrosis",
@@ -2803,16 +3016,24 @@
     "keyFindings": "a large elongated calcified soft tissue mass filling one muscle compartment of the calf with dense sheet like calcification around its rim and a more lucent centre while the tibia and fibula stay normal",
     "ageBand": "older",
     "whatYouSee": "A long chalky mass fills one compartment of the calf with a bright rim and a darker middle and the bones beside it are untouched.",
-    "whyItMatters": "A muscle killed by an old crush injury slowly calcifies over decades and it can be mistaken for a sarcoma and biopsied which invites chronic infection.",
-    "treatment": "It is left alone when the diagnosis is clear and the history fits and it is excised only when it breaks down or becomes infected.",
-    "takeaway": "A long calcified slab in one calf compartment decades after a crush is calcific myonecrosis.",
+    "whyItMatters": "Remote muscle injury can leave a calcified mass that mimics a tumour. Biopsy or surgery can cause infection and wound problems.",
+    "treatment": "A typical stable lesion may be observed after specialist diagnosis. Uncertain or symptomatic masses need an individual treatment plan.",
+    "takeaway": "Peripheral calcification in an old injured muscle compartment suggests calcific myonecrosis.",
     "igTitle": "THE MUSCLE THAT TURNED TO CHALK",
     "igOptions": [
       "Osteosarcoma",
       "Calcific myonecrosis",
       "Myositis ossificans"
     ],
-    "igCorrect": "B"
+    "igCorrect": "B",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6780786/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a large elongated calcified soft tissue mass filling one muscle compartment of the calf with dense sheet like calcification around its rim and a more lucent centre while the tibia and fibula stay normal",
+      "The visible anatomy matches the requested AP and lateral lower leg including the calf soft tissues and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Chondrosarcoma of the scapula",
@@ -2826,16 +3047,25 @@
     "ageBand": "older",
     "keyFindings": "an expanded scapular body containing a lobulated mass with dense rings and arcs of chondroid calcification scattered through it and the surrounding ribs unremarkable",
     "whatYouSee": "The shoulder blade is blown outward by a lumpy mass full of little rings and arcs of calcium.",
-    "whyItMatters": "It is a cartilage forming cancer that grows slowly and its grade decides the surgery and chemotherapy does very little for it.",
-    "treatment": "It is removed with a wide margin of healthy tissue because incomplete excision lets it come back.",
-    "takeaway": "An expanded scapula full of rings and arcs of calcium is a chondrosarcoma.",
+    "whyItMatters": "A growing cartilage-forming bone tumour needs specialist imaging and biopsy. Rings and arcs alone do not establish malignancy.",
+    "treatment": "Treatment is usually surgical excision with adequate margins. Further treatment depends on tumour subtype and grade.",
+    "takeaway": "An expanding scapular lesion with chondroid calcification needs specialist tumour assessment.",
     "igTitle": "THE POPCORN SHOULDER",
     "igOptions": [
       "Chondrosarcoma",
       "Osteomyelitis",
       "Healing fracture"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/10095313/",
+      "https://pubmed.ncbi.nlm.nih.gov/15895373/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "an expanded scapular body containing a lobulated mass with dense rings and arcs of chondroid calcification scattered through it and the surrounding ribs unremarkable",
+      "The visible anatomy matches the requested AP scapula with the whole scapular body in frame and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Hypertrophic nonunion",
@@ -2849,16 +3079,24 @@
     "ageBand": "middle-aged",
     "keyFindings": "bulbous flaring callus heaped around both ends of an old humeral fracture giving an elephant foot shape with the fracture line still running clean through the middle and never bridged",
     "whatYouSee": "Huge lumps of new bone flare out on both sides of the old break but the crack itself still runs straight through and never closes.",
-    "whyItMatters": "The bone is trying hard to heal and has plenty of blood supply but the fragments keep moving so the gap never bridges.",
-    "treatment": "Rigid fixation with compression is the fix and grafting is rarely needed because the biology is already working.",
-    "takeaway": "Massive callus with the fracture line still open is a hypertrophic nonunion.",
+    "whyItMatters": "Persistent fracture movement can prevent union despite abundant callus. Mechanical and biological factors both need assessment.",
+    "treatment": "Improved stability and compression are often central. Grafting and other treatment depend on the individual fracture.",
+    "takeaway": "Abundant callus with a persistent fracture gap suggests hypertrophic nonunion.",
     "igTitle": "THE BREAK THAT NEVER HEALED",
     "igOptions": [
       "Hypertrophic nonunion",
       "Osteosarcoma",
       "Chronic osteomyelitis"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11201148/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "bulbous flaring callus heaped around both ends of an old humeral fracture giving an elephant foot shape with the fracture line still running clean through the middle and never bridged",
+      "The visible anatomy matches the requested AP and lateral humerus and the declared age and anatomical exceptions."
+    ]
   },
   {
     "diagnosis": "Skeletal fluorosis",
@@ -2867,20 +3105,29 @@
       "endemic skeletal fluorosis"
     ],
     "symptom": "years of stiffness and bone pain in an adult from a village with high fluoride in the well water",
-    "hook": "the membrane between the forearm bones had turned into a solid sheet of bone",
+    "hook": "a bright mineralized sheet ran between the two forearm bones",
     "view": "AP forearm with both the radius and the ulna",
     "ageBand": "older",
-    "keyFindings": "a dense sheet of mineralisation filling the interosseous membrane between the radius and ulna with generally increased bone density and coarsened trabeculae in both bones",
-    "whatYouSee": "The gap between the two forearm bones has filled in with a solid bridge of bone and the bones themselves look chalky and dense.",
-    "whyItMatters": "Years of swallowing too much fluoride drive calcium into ligaments and bone so the skeleton stiffens and the joints seize.",
-    "treatment": "The fluoride source is removed and nutrition is corrected while established stiffness and deformity are managed as they stand.",
-    "takeaway": "A bony sheet filling the forearm membrane in a dense skeleton is skeletal fluorosis.",
+    "keyFindings": "sheet-like mineralisation along the forearm interosseous membrane between separate radius and ulna, with increased bone density and coarse trabeculae; do not merge the entire shafts into one bone",
+    "whatYouSee": "Mineralisation follows the membrane between the forearm bones, which also appear unusually dense.",
+    "whyItMatters": "Chronic excess fluoride can alter bone and mineralise ligaments. Exposure history and testing distinguish other causes.",
+    "treatment": "Identify and reduce excess fluoride exposure, correct nutritional problems and manage symptoms and complications.",
+    "takeaway": "Interosseous membrane mineralisation is a clue to fluorosis, but it is not specific by itself.",
     "igTitle": "THE SKELETON THAT SET SOLID",
     "igOptions": [
       "Skeletal fluorosis",
       "Renal osteodystrophy",
       "Paget disease"
     ],
-    "igCorrect": "A"
+    "igCorrect": "A",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/8273699/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8142331/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "sheet-like mineralisation along the forearm interosseous membrane between separate radius and ulna, with increased bone density and coarse trabeculae; do not merge the entire shafts into one bone",
+      "The visible anatomy matches the requested AP forearm with both the radius and the ulna and the declared age and anatomical exceptions."
+    ]
   }
 ]

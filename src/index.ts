@@ -1,9 +1,12 @@
+import { readinessProblem, contentProblem, contentHash } from "./readiness.js";
+import { nightKey } from "./schedule.js";
+import { repairQueueSlots } from "./queue.js";
 // Orchestrator + CLI for xray-case-poster.
 //
 // Modes:
 //   --dry-run   generate captions + write `generated` drafts to case.json, print, post NOTHING
 //   --live      actually post to Threads (+ Instagram if enabled); requires config.confirmLive
-//   --prompt    print the ChatGPT image prompt for a given folder (or the next undrafted case)
+//   --prompt    print the canonical image prompt for a given folder (or the next unposted case)
 //
 // Per-run staging (now = new Date()):
 //   1. challenge -> postImage, record threadsPostId + challengePostedAt; best-effort IG carousel
@@ -29,9 +32,17 @@ import { postImage, reply, getReplies, getMyUsername, TopicTagError, type Spoile
 import { publishCarousel } from "./instagram.js";
 import { postPhoto, postComment } from "./facebook.js";
 import type { Case } from "./types.js";
+import { finalImage, imageApprovalProblem, verifyLegacyImage, assertPublicImage } from "./image-approval.js";
+import { PersistenceError } from "./persistence.js";
 
 const MINUTE_MS = 60_000;
 const DRAFT_AHEAD_MS = 24 * 60 * MINUTE_MS; // draft cases due within ~24h
+let operationalFailures = 0;
+
+function recordFailure(err: unknown): void {
+  if (err instanceof PersistenceError) throw err;
+  operationalFailures++;
+}
 
 type Mode = "dry-run" | "live" | "prompt";
 
@@ -114,8 +125,9 @@ async function runPrompt(cli: Cli): Promise<void> {
     target = cases.find((c) => c.folder === cli.folder);
     if (!target) throw new Error(`No case with folder "${cli.folder}".`);
   } else {
-    // next case without a drafted caption, else the earliest case
-    target = cases.find((c) => !c.generated?.threadsCaption) ?? cases[0];
+    const state = new State();
+    target = cases.find((c) => !state.getStages(c.folder).challengePostedAt && !c.stages?.challengePostedAt);
+    if (!target) throw new Error("No unposted case found; specify a folder to preview a published case.");
   }
 
   log(imagePrompt(target));
@@ -134,6 +146,14 @@ async function runPublish(cli: Cli): Promise<void> {
   const cases = loadCases();
 
   log(`xray-poster ${cli.mode} @ ${now.toISOString()} — ${cases.length} case(s)`);
+  let dueStages = 0;
+  let successfulStages = 0;
+  let heldCases = 0;
+  let oldestDue: number | undefined;
+  const dueStage = (when: number) => {
+    dueStages++;
+    oldestDue = Math.min(oldestDue ?? when, when);
+  };
 
   // Preflight the Threads token BEFORE the per-case loop. Every case body is wrapped in its
   // own try/catch (so one poisoned case cannot stall the rest), which means a dead token
@@ -142,6 +162,7 @@ async function runPublish(cli: Cli): Promise<void> {
   // while 00117 was never posted. An auth failure is global, not per-case, so fail the whole
   // run and let CI raise it.
   await assertThreadsTokenValid(live);
+  if (live) repairQueueSlots(cases, state, now);
 
   for (const c of cases) {
     // Per-case isolation: one poisoned case (a deleted post, a 404 image URL, an owner-edited
@@ -173,6 +194,7 @@ async function runPublish(cli: Cli): Promise<void> {
 
     // --- Draft-ahead: case is upcoming (within the draft window) but not yet due --------
     if (draftAhead && !stages.challengePostedAt) {
+      if (live) await verifyLegacyImage(c);
       const generated = await ensureGenerated(c, state);
       if (cli.mode === "dry-run") {
         log(`\n[dry-run] upcoming CHALLENGE for ${c.folder} (postAt ${c.postAt}):`);
@@ -203,6 +225,10 @@ async function runPublish(cli: Cli): Promise<void> {
 
     // --- Stage 1: challenge -------------------------------------------------------------
     if (!stages.challengePostedAt) {
+      if (cases.some(other => { if (other.folder === c.folder) return false; const posted = state.getStages(other.folder).challengePostedAt ?? other.stages?.challengePostedAt; return posted && nightKey(new Date(posted), config.activeTz) === nightKey(now, config.activeTz); })) {
+        heldCases++; log(`Holding ${c.folder}: this local night already has a challenge.`); continue;
+      }
+      if (live) await verifyLegacyImage(c);
       // Review gate: a GENERATED case must be approved before the publisher posts it
       // (unless BOT_AUTO_APPROVE is on). Hand-made cases (source !== "generated") are
       // exempt, matching the documented manual workflow. Skip without advancing any
@@ -213,6 +239,7 @@ async function runPublish(cli: Cli): Promise<void> {
       // challengeBlockReason) so FB never publishes something Threads wouldn't.
       const block = challengeBlockReason(c);
       if (block) {
+        heldCases++;
         log(block);
         continue;
       }
@@ -226,14 +253,22 @@ async function runPublish(cli: Cli): Promise<void> {
       // Falls back to plain whenever the arm is off or the case had no tension to foreground, so
       // a B night without a variant is a recorded non-compliance to analyse intent-to-treat, not
       // a crash. withFollowCta then applies the (independent) follow-CTA arm on top.
-      const base = config.hookAlt && generated.threadsCaptionAlt ? generated.threadsCaptionAlt : generated.threadsCaption!;
-      const caption = withFollowCta(base);
+      const arm = stages.experiment ? JSON.parse(stages.experiment) : { hookAlt: config.hookAlt, followCta: config.followCta };
+      const base = arm.hookAlt && generated.threadsCaptionAlt ? generated.threadsCaptionAlt : generated.threadsCaption!;
+      const caption = withFollowCta(base, arm.followCta);
+      const copyIssue = contentProblem(c);
+      if (copyIssue) throw new Error(`${c.folder}: ${copyIssue}`);
 
       if (cli.mode === "dry-run") {
         log(`\n[dry-run] would post CHALLENGE for ${c.folder}:`);
         log(`  image: ${imageUrl(c.folder, c.threadsImage)}`);
         log(caption);
       } else {
+        if (!state.publication(`case:${c.folder}:challenge`).get()) {
+          stages = state.setStages(c.folder, { publishedCaption: caption, experiment: stages.experiment ?? JSON.stringify({ id: `case-${c.folder}`, assignedAt: now.toISOString(), hookAlt: config.hookAlt, hookAltAvailable: !!generated.threadsCaptionAlt, followCta: config.followCta, promptVersion: "2026-09-10", model: config.model }), answerDelayMin: stages.answerDelayMin ?? String(config.answerDelayMin), ctaDelayMin: stages.ctaDelayMin ?? String(config.ctaDelayMin) });
+        }
+        dueStage(postAt.getTime());
+        await assertPublicImage(c, imageUrl(c.folder, c.threadsImage));
         // The topic tag files the post under the community. Meta throws opaque transient 400s
         // on it, and abandoning it silently cost 00135-pectus-excavatum its community on
         // 2026-09-03. While the post is still fresh, REQUIRE the tag: nothing is published, so
@@ -247,10 +282,11 @@ async function runPublish(cli: Cli): Promise<void> {
           threadsPostId = await postImage(
             imageUrl(c.folder, c.threadsImage),
             caption,
-            { requireTag },
+            { requireTag, publication: state.publication(`case:${c.folder}:challenge`), assetIdentity: c.imageApproval ? `${c.imageApproval.sha256}:${c.imageApproval.conditionSha256}:${contentHash(c)}` : undefined },
           );
         } catch (err) {
           if (err instanceof TopicTagError) {
+            recordFailure(err);
             log(
               `  ⏳ ${c.folder}: ${err.message} — NOT posting yet so the community tag is not lost. ` +
                 `Retrying next cycle (untagged fallback in ${Math.max(0, Math.round(config.topicTagGraceMin - minutesLate))} min).`,
@@ -261,9 +297,10 @@ async function runPublish(cli: Cli): Promise<void> {
         }
         state.setStages(c.folder, {
           threadsPostId,
-          challengePostedAt: new Date().toISOString(),
+          challengePostedAt: state.publication(`case:${c.folder}:challenge`).get()?.publishedAt ?? new Date().toISOString(),
         });
         log(`posted CHALLENGE for ${c.folder} -> ${threadsPostId}`);
+        successfulStages++;
         addUsedDiagnosis(c.diagnosis, c.aliases ?? []); // lock this diagnosis so it never repeats
 
         // Best-effort Instagram carousel. Never aborts the Threads flow. A failure
@@ -294,12 +331,13 @@ async function runPublish(cli: Cli): Promise<void> {
           const seedText = generateSeedComment(c);
           if (seedText) {
             try {
-              const seedCommentId = await reply(threadsPostId, seedText);
+              const seedCommentId = await reply(threadsPostId, seedText, undefined, undefined, state.publication(`case:${c.folder}:seed`));
               state.setStages(c.folder, { seedCommentId, seedPostedAt: new Date().toISOString() });
               c.stages = state.getStages(c.folder);
               saveCase(c);
               log(`  seeded first comment for ${c.folder} -> ${seedCommentId}`);
             } catch (err) {
+              recordFailure(err);
               log(`  seed comment failed for ${c.folder} (skipped — seeding is early-window only): ${errMsg(err)}`);
             }
           }
@@ -372,9 +410,11 @@ async function runPublish(cli: Cli): Promise<void> {
 
     // --- Stage 2: pinned answer ---------------------------------------------------------
     const answerDue =
-      now.getTime() >= challengePostedAt.getTime() + config.answerDelayMin * MINUTE_MS;
+      now.getTime() >= challengePostedAt.getTime() + Number(stages.answerDelayMin ?? config.answerDelayMin) * MINUTE_MS;
 
     if (answerDue && !stages.answerPostedAt) {
+      const copyIssue = contentProblem(c);
+      if (copyIssue) throw new Error(`${c.folder}: ${copyIssue}`);
       const answerText = generated.threadsAnswer ?? (await generateThreadsAnswer(c));
 
       if (cli.mode === "dry-run") {
@@ -383,18 +423,19 @@ async function runPublish(cli: Cli): Promise<void> {
         log("  Now pin the answer in the app.");
       } else {
         if (!stages.threadsPostId) {
-          log(`  skip ANSWER for ${c.folder}: missing threadsPostId in state`);
-          continue;
+          throw new Error(`Cannot post ANSWER for ${c.folder}: missing threadsPostId in state`);
         }
+        dueStage(challengePostedAt.getTime() + Number(stages.answerDelayMin ?? config.answerDelayMin) * MINUTE_MS);
         // ONE reply (<=500 chars), with the diagnosis + breakdown blurred as a spoiler.
-        const answerCommentId = await reply(stages.threadsPostId, answerText, answerSpoiler(answerText));
+        const answerCommentId = await reply(stages.threadsPostId, answerText, answerSpoiler(answerText), undefined, state.publication(`case:${c.folder}:answer`));
         state.setStages(c.folder, {
           answerCommentId,
-          answerPostedAt: new Date().toISOString(),
+          answerPostedAt: state.publication(`case:${c.folder}:answer`).get()?.publishedAt ?? new Date().toISOString(),
         });
         c.stages = state.getStages(c.folder);
         saveCase(c);
         log(`posted ANSWER for ${c.folder} -> ${answerCommentId}`);
+        successfulStages++;
         log("  Now pin the answer in the app.");
       }
       continue;
@@ -402,7 +443,7 @@ async function runPublish(cli: Cli): Promise<void> {
 
     // --- Stage 3: CTA sub-reply ---------------------------------------------------------
     const ctaDue =
-      now.getTime() >= challengePostedAt.getTime() + config.ctaDelayMin * MINUTE_MS;
+      now.getTime() >= challengePostedAt.getTime() + Number(stages.ctaDelayMin ?? config.ctaDelayMin) * MINUTE_MS;
 
     if (config.ctaReply && ctaDue && stages.answerPostedAt && !stages.ctaPostedAt) {
       const ctaText = generated.ctaText ?? pickCta(c).text;
@@ -419,9 +460,9 @@ async function runPublish(cli: Cli): Promise<void> {
         const liveAnswerId = stages.threadsPostId ? await findOwnerAnswerComment(stages.threadsPostId) : null;
         const target = liveAnswerId ?? stages.answerCommentId ?? stages.threadsPostId;
         if (!target) {
-          log(`  skip CTA for ${c.folder}: no challenge post to thread under`);
-          continue;
+          throw new Error(`Cannot post CTA for ${c.folder}: no challenge post to thread under`);
         }
+        dueStage(challengePostedAt.getTime() + Number(stages.ctaDelayMin ?? config.ctaDelayMin) * MINUTE_MS);
         const targetKind = liveAnswerId
           ? "live answer"
           : target === stages.answerCommentId
@@ -432,18 +473,23 @@ async function runPublish(cli: Cli): Promise<void> {
         // fallback auto-preview if link_attachment is ignored on a reply.
         const domain = ctaText.trim().split("\n").map((l) => l.trim()).filter(Boolean).pop() ?? "";
         const linkAttachment = /^[a-z0-9.-]+\.[a-z]{2,}(\/\S*)?$/i.test(domain) ? `https://${domain}` : undefined;
-        await reply(target, ctaText, undefined, linkAttachment);
+        await reply(target, ctaText, undefined, linkAttachment, state.publication(`case:${c.folder}:cta`));
         state.setStages(c.folder, { ctaPostedAt: new Date().toISOString() });
         c.stages = state.getStages(c.folder);
         saveCase(c);
         log(`posted CTA for ${c.folder} under ${target} (${targetKind})`);
+        successfulStages++;
       }
     }
     } catch (err) {
+      recordFailure(err);
       log(`  ⚠ case ${c.folder} failed this run (isolated — will retry next run): ${errMsg(err)}`);
     }
   }
 
+  log(`Summary: ${dueStages} due Threads stage(s), ${successfulStages} completed, ${heldCases} case(s) held, ${operationalFailures} operational failure(s).`);
+  if (oldestDue !== undefined) log(`Oldest attempted deadline: ${new Date(oldestDue).toISOString()} (${Math.max(0, Math.round((now.getTime() - oldestDue) / MINUTE_MS))} minutes past due at poll start).`);
+  if (operationalFailures) throw new Error(`${operationalFailures} operation(s) failed this run; successful stages were saved.`);
   log("done.");
 }
 
@@ -464,6 +510,7 @@ async function tryPublishCarousel(c: Case, igCaption: string, state: State): Pro
     });
     log(`  cross-posted IG carousel for ${c.folder} -> ${igMediaId}`);
   } catch (err) {
+    recordFailure(err);
     log(`  IG carousel failed for ${c.folder} (will retry next run): ${errMsg(err)}`);
   }
 }
@@ -475,18 +522,8 @@ async function tryPublishCarousel(c: Case, igCaption: string, state: State): Pro
  * Facebook cross-post so Facebook never bypasses these gates.
  */
 function challengeBlockReason(c: Case): string | null {
-  if (c.needsReview === true) {
-    return `needs manual review (failed X-ray QA): ${c.folder} — ${(c.verifyDefects ?? []).join("; ")}`;
-  }
-  if (c.source === "generated" && !(c.approved === true || config.autoApprove)) {
-    return `awaiting approval: ${c.folder}`;
-  }
-  // forceRepeat: an explicit owner override for a deliberate one-off (e.g. a diagnosis already
-  // covered once, now paired with a brand-new product promo) — never set by the auto-generator.
-  if (!c.forceRepeat && isUsedDiagnosis(loadUsedDiagnoses(), c.diagnosis, c.aliases ?? [])) {
-    return `duplicate diagnosis, skipping ${c.folder} ("${c.diagnosis}" already used)`;
-  }
-  return null;
+  const reason = readinessProblem(c);
+  return reason ? `${c.folder}: ${reason}` : null;
 }
 
 /**
@@ -496,6 +533,7 @@ function challengeBlockReason(c: Case): string | null {
  */
 async function tryPostFacebook(c: Case, caption: string, state: State): Promise<void> {
   try {
+    await assertPublicImage(c, imageUrl(c.folder, c.threadsImage));
     const fbPostId = await postPhoto(imageUrl(c.folder, c.threadsImage), caption);
     state.setStages(c.folder, {
       fbPostId,
@@ -503,6 +541,7 @@ async function tryPostFacebook(c: Case, caption: string, state: State): Promise<
     });
     log(`  cross-posted Facebook photo for ${c.folder} -> ${fbPostId}`);
   } catch (err) {
+    recordFailure(err);
     log(`  Facebook post failed for ${c.folder} (will retry next run): ${errMsg(err)}`);
   }
 }
@@ -531,6 +570,7 @@ async function tryPostFacebookAnswer(c: Case, state: State): Promise<void> {
     saveCase(c);
     log(`  commented Facebook ANSWER for ${c.folder} -> ${fbAnswerCommentId}`);
   } catch (err) {
+    recordFailure(err);
     log(`  Facebook answer comment failed for ${c.folder} (will retry next run): ${errMsg(err)}`);
   }
 }
@@ -582,7 +622,8 @@ async function findOwnerAnswerComment(postId: string): Promise<string | null> {
     const replies = await getReplies(postId);
     const ans = replies.find((r) => (!me || r.username === me) && /^\s*answer\s*:/i.test(r.text ?? ""));
     return ans?.id ?? null;
-  } catch {
+  } catch (err) {
+    recordFailure(err);
     return null;
   }
 }
@@ -598,5 +639,5 @@ async function main(): Promise<void> {
 
 main().catch((err) => {
   console.error(errMsg(err));
-  process.exit(1);
+  process.exitCode = err instanceof PersistenceError ? 4 : 1;
 });

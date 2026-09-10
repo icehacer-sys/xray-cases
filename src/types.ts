@@ -58,8 +58,20 @@ export interface Case {
    *  until a human regenerates the X-ray and clears the flag. */
   needsReview?: boolean;
   verifyDefects?: string[];
+  /** QA belongs to these exact final image bytes and these diagnostic inputs. */
+  imageApproval?: {
+    sha256: string;
+    conditionSha256: string;
+    verifiedAt: string;
+    model: string;
+    verifierVersion: string;
+    ok: boolean;
+    defects: string[];
+    observations?: { expected: string; observed: string; assessable: boolean; matches: boolean }[];
+  };
 
   // --- filled by the tool ---
+  contentReview?: { sha256: string; reviewedAt: string; reviewer: string };
   generated?: {
     threadsCaption?: string;
     /** Hook-framing experiment B arm: the same case with its opening tension foregrounded.
@@ -71,6 +83,10 @@ export interface Case {
     ctaText?: string;
   };
   stages?: {
+    experiment?: string;
+    publishedCaption?: string;
+    answerDelayMin?: string;
+    ctaDelayMin?: string;
     challengePostedAt?: string;
     threadsPostId?: string;
     seedPostedAt?: string;
@@ -105,6 +121,9 @@ export type AgeBand = "infant" | "child" | "adolescent" | "young-adult" | "middl
  * into a Case. The medical facts here are owner-vetted — the source of truth.
  */
 export interface Condition {
+  sources?: string[];
+  reviewedAt?: string;
+  requiredObservations?: string[];
   diagnosis: string; // "Maffucci syndrome"
   aliases?: string[];
   symptom: string; // "abdominal discomfort"

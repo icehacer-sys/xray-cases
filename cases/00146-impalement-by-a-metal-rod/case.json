@@ -7,12 +7,12 @@
     "impaled chest",
     "penetrating rod"
   ],
-  "symptom": "a fall onto a steel rod at a construction site",
-  "hook": "a long steel rod had passed straight through the chest",
-  "whatYouSee": "A long steel rod passing straight through the chest.",
-  "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
-  "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
-  "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+  "symptom": "a penetrating chest injury after a fall at a construction site",
+  "hook": "a thick straight metal object projected across the chest",
+  "whatYouSee": "A metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.",
+  "whyItMatters": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+  "treatment": "Trauma specialists plan removal under controlled surgical conditions with bleeding control available.",
+  "takeaway": "In a true impalement, uncontrolled removal can trigger major bleeding.",
   "igOptions": [
     "A. Chest drain",
     "B. Impaled rod",
@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-16T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Impalement by a metal rod",
@@ -30,14 +30,14 @@
       "impaled chest",
       "penetrating rod"
     ],
-    "symptom": "a fall onto a steel rod at a construction site",
-    "hook": "a long steel rod had passed straight through the chest",
+    "symptom": "a penetrating chest injury after a fall at a construction site",
+    "hook": "a thick straight metal object projected across the chest",
     "view": "AP chest one view filling the frame with no pelvis or groin",
-    "keyFindings": "a long straight thick radiopaque metal rod passing through the chest cavity crossing the lung fields with the surrounding ribs and chest anatomy otherwise intact",
-    "whatYouSee": "A long steel rod passing straight through the chest.",
-    "whyItMatters": "An impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.",
-    "treatment": "It is removed in the operating room with the chest opened to control bleeding.",
-    "takeaway": "A long metal rod crossing the chest is an impalement injury.",
+    "keyFindings": "One continuous straight radiopaque rod projects across the thorax. The visible ribs, clavicles and spine are coherent without duplicated bones.",
+    "whatYouSee": "A metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.",
+    "whyItMatters": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+    "treatment": "Trauma specialists plan removal under controlled surgical conditions with bleeding control available.",
+    "takeaway": "In a true impalement, uncontrolled removal can trigger major bleeding.",
     "igTitle": "THE CONSTRUCTION SITE",
     "igOptions": [
       "Chest drain",
@@ -46,16 +46,54 @@
     ],
     "igCorrect": "B",
     "used": true,
-    "ageBand": "young-adult"
+    "ageBand": "young-adult",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3039238/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One continuous straight radiopaque rod projects across the thorax.",
+      "The visible ribs, clavicles and spine are coherent without duplicated bones."
+    ]
   },
   "difficulty": 1,
   "laypersonQuestion": "Would you even believe this person survived?",
-  "seedHint": "Look at where it enters and where it exits. Does anything look out of place around the lungs?",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a fall onto a steel rod at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a long steel rod had passed straight through the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a fall at a construction site and some discomfort afterward.\n\nThen the X-ray loaded 😭\n\nAnd a long steel rod had passed straight through the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA long steel rod passing straight through the chest.\n\n🦴 Why it matters:\nAn impaling rod is left in place until surgery because pulling it out can cause fatal bleeding.\n\n💊 Treatment:\nIt is removed in the operating room with the chest opened to control bleeding.",
+    "threadsCaption": "A patient came in with a penetrating chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a thick straight metal object projected across the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.\n\n🦴 Why it matters:\nIn a true impalement, uncontrolled removal can trigger major bleeding.\n\n💊 Treatment:\nTrauma specialists plan removal under controlled surgical conditions with bleeding control available.",
     "igCaption": "",
     "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "2a80336b4b7c59dd7795c85f984a5f46d24fb8d25f6d6f115599fd1179c8cc57",
+    "conditionSha256": "f1a4bd12d5bfcb3de2e43eb6579af25c9831a3f18edfba0ca298ef8fd1e6060c",
+    "verifiedAt": "2026-09-10T17:28:20.015Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "One continuous straight radiopaque rod projects across the thorax.",
+        "observed": "A single, continuous, straight, highly radiopaque rod is visible traversing the lower thorax from the right lateral chest wall through to the left side, with a pointed tip visible on the left. The rod is uniform in density and uninterrupted across its entire visible length.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible ribs, clavicles and spine are coherent without duplicated bones.",
+        "observed": "Both clavicles are individually identifiable and appear symmetric without duplication. The spine is midline and coherent from the cervical-thoracic junction through the visible thoracic levels. Rib pairs are symmetric and trace normal arcs bilaterally without forking, floating, or extra ribs. No duplicated bony structures are identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "7ed7304bc6249e3f67027a7a6cdf87d8ad1940a67a520d9e5c08f65b68675bcd",
+    "reviewedAt": "2026-09-10T17:28:24.634Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

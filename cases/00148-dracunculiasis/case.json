@@ -7,12 +7,12 @@
     "Guinea worm disease",
     "calcified Dracunculus"
   ],
-  "symptom": "a burning blister on the ankle of a traveller who had been drinking from a village pond",
-  "hook": "a long thin worm had calcified into a coil under the skin and was sitting there in plain view",
-  "whatYouSee": "A long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.",
-  "whyItMatters": "The female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.",
-  "treatment": "The living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
-  "takeaway": "A long calcified thread coiled in the soft tissue is a dead Guinea worm.",
+  "symptom": "a firm lump in the calf after a remote stay in an endemic area",
+  "hook": "a long curling calcification ran through the soft tissues beside the bones",
+  "whatYouSee": "A long serpentine soft-tissue calcification suggests a calcified worm remnant.",
+  "whyItMatters": "This can reflect old infection; it does not prove a living worm is present.",
+  "treatment": "An incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
+  "takeaway": "This can reflect old infection; it does not prove a living worm is present.",
   "igOptions": [
     "A. Calcified haematoma",
     "B. Dracunculiasis",
@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-15T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Dracunculiasis",
@@ -30,15 +30,15 @@
       "Guinea worm disease",
       "calcified Dracunculus"
     ],
-    "symptom": "a burning blister on the ankle of a traveller who had been drinking from a village pond",
-    "hook": "a long thin worm had calcified into a coil under the skin and was sitting there in plain view",
+    "symptom": "a firm lump in the calf after a remote stay in an endemic area",
+    "hook": "a long curling calcification ran through the soft tissues beside the bones",
     "view": "AP lower leg",
     "ageBand": "young-adult",
-    "keyFindings": "a long serpentine calcified worm coiled and looped within the soft tissues of the calf standing out as a dense white thread against completely normal underlying bone",
-    "whatYouSee": "A long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.",
-    "whyItMatters": "The female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.",
-    "treatment": "The living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
-    "takeaway": "A long calcified thread coiled in the soft tissue is a dead Guinea worm.",
+    "keyFindings": "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones. Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire. The visible tibia and fibula are separate and anatomically coherent.",
+    "whatYouSee": "A long serpentine soft-tissue calcification suggests a calcified worm remnant.",
+    "whyItMatters": "This can reflect old infection; it does not prove a living worm is present.",
+    "treatment": "An incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
+    "takeaway": "This can reflect old infection; it does not prove a living worm is present.",
     "igTitle": "THE WORM IN THE LEG",
     "igOptions": [
       "Calcified haematoma",
@@ -46,16 +46,61 @@
       "Myositis ossificans"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3159369/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones.",
+      "Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire.",
+      "The visible tibia and fibula are separate and anatomically coherent."
+    ]
   },
   "difficulty": 3,
   "laypersonQuestion": "What do you think left that coil under the skin?",
-  "seedHint": "Look at the ankle and ask yourself: is that a wire or something that was once alive?",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a burning blister on the ankle of a traveller who had been drinking from a village pond.\n\nThen the X-ray loaded 😭\n\nAnd a long thin worm had calcified into a coil under the skin and was sitting there in plain view.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a minor blister on the ankle and a recent trip abroad.\n\nThen the X-ray loaded 😭\n\nAnd a long thin worm had calcified into a coil under the skin and was sitting there in plain view.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Dracunculiasis\n\n👀 What you see:\nA long white thread coils through the soft tissue of the leg. That thread is a dead worm turned to calcium.\n\n🦴 Why it matters:\nThe female worm burrows through the tissues for a year before erupting through the skin and once it dies it calcifies and stays visible for life.\n\n💊 Treatment:\nThe living worm is wound out slowly over days on a stick and the calcified remnant is simply left alone.",
+    "threadsCaption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nAnd a long curling calcification ran through the soft tissues beside the bones.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Dracunculiasis\n\n👀 What you see:\nA long serpentine soft-tissue calcification suggests a calcified worm remnant.\n\n🦴 Why it matters:\nThis can reflect old infection; it does not prove a living worm is present.\n\n💊 Treatment:\nAn incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
     "igCaption": "",
     "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "b36250cb9f6a54d2481226e3c64f2d5f6d1e2bcf63b3b0fa249e5c896de01f74",
+    "conditionSha256": "5e678d023785ad741c271e67ed445d48195a41743690efd7e574a5ef91bacd18",
+    "verifiedAt": "2026-09-10T17:28:04.609Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones.",
+        "observed": "A long, sinuous/serpentine curvilinear calcification is visible in the lateral soft tissues of the calf, clearly separate from and lateral to the fibula, lying within the soft tissue envelope rather than in bone.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire.",
+        "observed": "The calcification has a beaded, discontinuous, irregular serpentine quality consistent with a calcified biological structure (e.g., a parasitic worm). It does not have the uniform density, smooth contour, or manufactured appearance of a metal wire or surgical implant.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible tibia and fibula are separate and anatomically coherent.",
+        "observed": "Two distinct parallel long bones are visible with a clear interosseous space: the broader tibia medially and the slender fibula laterally. Both bones are anatomically coherent with no fusion, duplication, or garbling. The knee joint proximally and the ankle mortise distally are appropriately formed. Skeletal maturity is consistent with the stated adult age range (closed physes).",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "9006d5b47e0fc0679702e8a19301e131884dc53d4774c7352df67928705db525",
+    "reviewedAt": "2026-09-10T17:28:09.139Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

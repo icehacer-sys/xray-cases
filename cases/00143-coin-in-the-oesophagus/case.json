@@ -6,12 +6,12 @@
     "swallowed coin",
     "oesophageal foreign body"
   ],
-  "symptom": "a child drooling and refusing food after swallowing something",
-  "hook": "a perfectly round metal disc was lodged in the food pipe and facing flat to the camera",
-  "whatYouSee": "A round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.",
-  "whyItMatters": "A lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.",
-  "treatment": "An impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
-  "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin so always rule out a button battery first.",
+  "symptom": "drooling and refusal to eat after swallowing an object",
+  "hook": "a round metal disc appeared at the base of the neck",
+  "whatYouSee": "A face-on metal disc projects at the thoracic inlet. A lateral view helps confirm its location.",
+  "whyItMatters": "A coin is likely but a button battery must be excluded.",
+  "treatment": "Drooling with an oesophageal object needs urgent endoscopic assessment. A suspected button battery is an emergency.",
+  "takeaway": "A coin is likely but a button battery must be excluded.",
   "igOptions": [
     "A. Button battery",
     "B. Coin in the oesophagus",
@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-10T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Coin in the oesophagus",
@@ -28,14 +28,14 @@
       "swallowed coin",
       "oesophageal foreign body"
     ],
-    "symptom": "a child drooling and refusing food after swallowing something",
-    "hook": "a perfectly round metal disc was lodged in the food pipe and facing flat to the camera",
+    "symptom": "drooling and refusal to eat after swallowing an object",
+    "hook": "a round metal disc appeared at the base of the neck",
     "view": "AP chest and neck",
-    "keyFindings": "a round radiopaque metallic disc lying in the coronal plane (face-on) at the level of the thoracic inlet, distinguishing oesophageal from tracheal location",
-    "whatYouSee": "A round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.",
-    "whyItMatters": "A lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.",
-    "treatment": "An impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
-    "takeaway": "A round metal disc face-on in the food pipe is a swallowed coin so always rule out a button battery first.",
+    "keyFindings": "One round face-on radiopaque disc projects at the thoracic inlet. Visible neck and chest anatomy is coherent for a child.",
+    "whatYouSee": "A face-on metal disc projects at the thoracic inlet. A lateral view helps confirm its location.",
+    "whyItMatters": "A coin is likely but a button battery must be excluded.",
+    "treatment": "Drooling with an oesophageal object needs urgent endoscopic assessment. A suspected button battery is an emergency.",
+    "takeaway": "A coin is likely but a button battery must be excluded.",
     "igTitle": "THE DISC IN THE PIPE",
     "igOptions": [
       "Button battery",
@@ -44,17 +44,55 @@
     ],
     "igCorrect": "B",
     "used": true,
-    "ageBand": "child"
+    "ageBand": "child",
+    "sources": [
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One round face-on radiopaque disc projects at the thoracic inlet.",
+      "Visible neck and chest anatomy is coherent for a child."
+    ]
   },
   "difficulty": 1,
   "laypersonQuestion": "What do you think that perfect circle could be?",
-  "seedHint": "Look at where it sits and how perfectly round it appears. Food pipe or airway?",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a child drooling and refusing food after swallowing something.\n\nThen the X-ray loaded 😭\n\nAnd a perfectly round metal disc was lodged in the food pipe facing flat to the camera.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a child who was just drooling a little and being fussy about eating.\n\nThen the X-ray loaded 😭\n\nAnd a perfectly round metal disc was lodged in the food pipe and facing flat to the camera.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Coin in the oesophagus\n\n👀 What you see:\nA round dense metallic disc sits face-on in the oesophagus and it usually lodges at the thoracic inlet.\n\n🦴 Why it matters:\nA lodged coin can cause obstruction and drooling and aspiration. A button battery looks similar but carries a double-ring halo and is a corrosive emergency.\n\n💊 Treatment:\nAn impacted oesophageal coin is removed endoscopically; a suspected button battery requires emergency removal because it burns tissue within hours.",
+    "threadsCaption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Coin in the oesophagus\n\n👀 What you see:\nA face-on metal disc projects at the thoracic inlet. A lateral view helps confirm its location.\n\n🦴 Why it matters:\nA coin is likely but a button battery must be excluded.\n\n💊 Treatment:\nDrooling with an oesophageal object needs urgent endoscopic assessment. A suspected button battery is an emergency.",
     "igCaption": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
   },
-  "stages": {}
+  "stages": {},
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "a132255eb30346e746e42d2c333764fc28ea0086cf86c00a34b3654b7a7b80fe",
+    "conditionSha256": "c6cad3fffd7970c21d0b92c9ce140783b458493f2fefd780462d02070e40edfc",
+    "verifiedAt": "2026-09-10T17:26:31.451Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "One round face-on radiopaque disc projects at the thoracic inlet.",
+        "observed": "A single circular, uniformly opaque disc (coin orientation en face) is visible in the midline at the level of the thoracic inlet/upper mediastinum, consistent with an oesophageal coin.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Visible neck and chest anatomy is coherent for a child.",
+        "observed": "The cervical and thoracic spine are continuous and coherent. Bilateral clavicles and scapulae are present, one per side. Rib pairs are symmetric and appropriately counted bilaterally. The heart shadow is single and midline-left. Hemidiaphragms are visible bilaterally. Lung markings branch and taper normally. Open physes are visible at the humeral heads and clavicles. Mixed dentition is visible in the partially included mandible, appropriate for a child aged 3–11. No duplicated, floating, or garbled structures are identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "9bb0892731da23fdc0c85acf1127185008233c0772205195768c1e729dccfe2a",
+    "reviewedAt": "2026-09-10T17:26:36.491Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
 }

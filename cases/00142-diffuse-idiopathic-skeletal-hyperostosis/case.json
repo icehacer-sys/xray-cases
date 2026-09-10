@@ -7,12 +7,12 @@
     "Forestier disease",
     "flowing candle wax spine"
   ],
-  "symptom": "a stiff upper back in an older man who still had a good range of movement in his neck",
-  "hook": "the spine looked like candle wax had been poured down the front of it and left to set",
-  "whatYouSee": "A thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.",
-  "whyItMatters": "The ligament along the front of the spine turns to bone and stiffens it and a spine this brittle can fracture across all its layers after a minor fall.",
-  "treatment": "Care is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
-  "takeaway": "Flowing candle wax bone down four vertebrae with normal discs is DISH.",
+  "symptom": "persistent upper back stiffness",
+  "hook": "a thick ribbon of bone bridged several vertebrae along the front of the spine",
+  "whatYouSee": "Flowing anterior ossification bridges at least four vertebral bodies with relatively preserved disc heights.",
+  "whyItMatters": "This pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.",
+  "treatment": "Care addresses pain and mobility. New pain after trauma requires assessment for fracture.",
+  "takeaway": "This pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.",
   "igOptions": [
     "A. Ankylosing spondylitis",
     "B. Psoriatic arthritis",
@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-19T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Diffuse idiopathic skeletal hyperostosis",
@@ -30,14 +30,14 @@
       "Forestier disease",
       "flowing candle wax spine"
     ],
-    "symptom": "a stiff upper back in an older man who still had a good range of movement in his neck",
-    "hook": "the spine looked like candle wax had been poured down the front of it and left to set",
+    "symptom": "persistent upper back stiffness",
+    "hook": "a thick ribbon of bone bridged several vertebrae along the front of the spine",
     "view": "lateral thoracic spine",
-    "keyFindings": "thick flowing ossification draping down the front of at least four contiguous vertebral bodies like dripping candle wax with the disc spaces preserved and the facet joints left normal",
-    "whatYouSee": "A thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.",
-    "whyItMatters": "The ligament along the front of the spine turns to bone and stiffens it and a spine this brittle can fracture across all its layers after a minor fall.",
-    "treatment": "Care is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
-    "takeaway": "Flowing candle wax bone down four vertebrae with normal discs is DISH.",
+    "keyFindings": "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies. Disc heights are relatively preserved; severe disc collapse does not dominate the pattern. The visible vertebral bodies and posterior elements are anatomically coherent.",
+    "whatYouSee": "Flowing anterior ossification bridges at least four vertebral bodies with relatively preserved disc heights.",
+    "whyItMatters": "This pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.",
+    "treatment": "Care addresses pain and mobility. New pain after trauma requires assessment for fracture.",
+    "takeaway": "This pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.",
     "igTitle": "THE CANDLE WAX SPINE",
     "igOptions": [
       "Ankylosing spondylitis",
@@ -46,14 +46,61 @@
     ],
     "igCorrect": "C",
     "ageBand": "older",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5604607/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies.",
+      "Disc heights are relatively preserved; severe disc collapse does not dominate the pattern.",
+      "The visible vertebral bodies and posterior elements are anatomically coherent."
+    ]
   },
   "difficulty": 4,
   "laypersonQuestion": "Does this spine look more like rock or wax to you?",
-  "seedHint": "Look at the front of the spine and ask yourself if bone is supposed to flow like that.",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a stiff upper back in an older man who still had a good range of movement in his neck.\n\nThen the X-ray loaded 😭\n\nAnd the spine looked like candle wax had been poured down the front of it and left to set.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Diffuse idiopathic skeletal hyperostosis\n\n👀 What you see:\nA thick ribbon of new bone flows down the front of the spine across several vertebrae. The discs underneath are still normal height.\n\n💊 Treatment:\nCare is aimed at stiffness and pain with physiotherapy and analgesia while any fracture in this rigid spine is treated as unstable.",
-    "igCaption": ""
+    "threadsCaption": "A patient came in with persistent upper back stiffness.\n\nThen the X-ray loaded 😭\n\nAnd a thick ribbon of bone bridged several vertebrae along the front of the spine.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsAnswer": "Answer: Diffuse idiopathic skeletal hyperostosis\n\n👀 What you see:\nFlowing anterior ossification bridges at least four vertebral bodies with relatively preserved disc heights.\n\n🦴 Why it matters:\nThis pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.\n\n💊 Treatment:\nCare addresses pain and mobility. New pain after trauma requires assessment for fracture.",
+    "igCaption": "",
+    "threadsCaptionAlt": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "e892d904d2fa3ea31e9a97dd3594e9771a55f9ffc4cb043f0921fa6a87c1201e",
+    "conditionSha256": "36c50188e188d1a64a78553e539f268480582a4da9a655bf0da05be01b294ce9",
+    "verifiedAt": "2026-09-10T17:29:07.740Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies.",
+        "observed": "There is clearly visible flowing, undulating anterior ossification along the thoracic and upper lumbar spine, bridging multiple contiguous vertebral bodies (well more than four), with the characteristic 'melted candle wax' appearance of DISH along the anterior and right lateral vertebral margins.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Disc heights are relatively preserved; severe disc collapse does not dominate the pattern.",
+        "observed": "Intervertebral disc spaces are visible and reasonably maintained throughout the thoracic spine. There is no severe disc collapse or dominant disc space narrowing; the disc heights appear relatively preserved consistent with DISH rather than degenerative disc disease.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible vertebral bodies and posterior elements are anatomically coherent.",
+        "observed": "The vertebral column forms a single continuous chain with no duplication, floating vertebrae, or garbled segments. Vertebral bodies are sequentially sized and stacked. Posterior elements including spinous processes are visible and coherent. No AI artifact duplication or impossible anatomy is identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "cca885d4f6fc3615a2435accac2faa6ab53c2219d736b3a78ce98bd712646974",
+    "reviewedAt": "2026-09-10T17:29:11.610Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

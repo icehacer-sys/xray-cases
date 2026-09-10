@@ -6,12 +6,12 @@
     "Madelung's deformity",
     "dyschondrosteosis wrist deformity"
   ],
-  "symptom": "a crooked dinner-fork wrist and limited rotation in a young person",
-  "hook": "the forearm bones had grown unevenly and bowed the wrist into a fork shape",
-  "whatYouSee": "A short bowed radius with the ulna sticking out dorsally and the wrist bones wedged into a triangle that gives the dinner-fork shape.",
-  "whyItMatters": "This growth plate disorder is often linked to Leri-Weill dyschondrosteosis and it causes wrist deformity and pain and reduced forearm rotation.",
-  "treatment": "Management ranges from observation and physiotherapy to surgical correction with osteotomy or release of the abnormal tethering ligament.",
-  "takeaway": "A dinner-fork wrist from an uneven bowed forearm in a young person is Madelung deformity.",
+  "symptom": "gradually worsening wrist deformity and limited forearm rotation",
+  "hook": "the end of the radius tilted sharply and the wrist bones formed a wedge",
+  "whatYouSee": "The distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.",
+  "whyItMatters": "Abnormal growth at the distal radius can cause pain and restricted movement.",
+  "treatment": "Treatment depends on age and symptoms. Options include observation and selected corrective surgery.",
+  "takeaway": "Abnormal growth at the distal radius can cause pain and restricted movement.",
   "igOptions": [
     "A. Colles fracture",
     "B. Madelung deformity",
@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-13T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Madelung deformity",
@@ -28,15 +28,15 @@
       "Madelung's deformity",
       "dyschondrosteosis wrist deformity"
     ],
-    "symptom": "a crooked dinner-fork wrist and limited rotation in a young person",
-    "hook": "the forearm bones had grown unevenly and bowed the wrist into a fork shape",
+    "symptom": "gradually worsening wrist deformity and limited forearm rotation",
+    "hook": "the end of the radius tilted sharply and the wrist bones formed a wedge",
     "view": "PA and lateral wrist",
-    "keyFindings": "premature fusion of the volar-ulnar distal radial physis causing a bowed, shortened radius, dorsal ulnar prominence and triangular carpus wedged between the radius and ulna",
-    "whatYouSee": "A short bowed radius with the ulna sticking out dorsally and the wrist bones wedged into a triangle that gives the dinner-fork shape.",
-    "whyItMatters": "This growth plate disorder is often linked to Leri-Weill dyschondrosteosis and it causes wrist deformity and pain and reduced forearm rotation.",
-    "treatment": "Management ranges from observation and physiotherapy to surgical correction with osteotomy or release of the abnormal tethering ligament.",
-    "takeaway": "A dinner-fork wrist from an uneven bowed forearm in a young person is Madelung deformity.",
-    "igTitle": "THE DINNER-FORK WRIST",
+    "keyFindings": "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence. Lateral view shows increased volar tilt with dorsal prominence of the distal ulna. Radius and ulna are separate coherent bones, with no duplicated carpal bones.",
+    "whatYouSee": "The distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.",
+    "whyItMatters": "Abnormal growth at the distal radius can cause pain and restricted movement.",
+    "treatment": "Treatment depends on age and symptoms. Options include observation and selected corrective surgery.",
+    "takeaway": "Abnormal growth at the distal radius can cause pain and restricted movement.",
+    "igTitle": "THE TILTED WRIST",
     "igOptions": [
       "Colles fracture",
       "Madelung deformity",
@@ -44,14 +44,61 @@
     ],
     "igCorrect": "B",
     "used": true,
-    "ageBand": "adolescent"
+    "ageBand": "adolescent",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4993032/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence.",
+      "Lateral view shows increased volar tilt with dorsal prominence of the distal ulna.",
+      "Radius and ulna are separate coherent bones, with no duplicated carpal bones."
+    ]
   },
   "difficulty": 4,
   "laypersonQuestion": "Does this wrist look natural to you?",
-  "seedHint": "Look at the two forearm bones. Do they end at the same height or not?",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a crooked dinner-fork wrist and limited rotation in a young person.\n\nThen the X-ray loaded 😭\n\nAnd the forearm bones had grown unevenly and bowed the wrist into a fork shape.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Madelung deformity\n\n👀 What you see:\nA short bowed radius with the ulna sticking out dorsally and the wrist bones wedged into a triangle that gives the dinner-fork shape.\n\n🦴 Why it matters:\nThis growth plate disorder is often linked to Leri-Weill dyschondrosteosis and it causes wrist deformity and pain and reduced forearm rotation.\n\n💊 Treatment:\nManagement ranges from observation and physiotherapy to surgical correction with osteotomy or release of the abnormal tethering ligament.",
-    "igCaption": ""
+    "threadsCaption": "A patient came in with gradually worsening wrist deformity and limited forearm rotation.\n\nThen the X-ray loaded 😭\n\nAnd the end of the radius tilted sharply and the wrist bones formed a wedge.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsAnswer": "Answer: Madelung deformity\n\n👀 What you see:\nThe distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.\n\n🦴 Why it matters:\nAbnormal growth at the distal radius can cause pain and restricted movement.\n\n💊 Treatment:\nTreatment depends on age and symptoms. Options include observation and selected corrective surgery.",
+    "igCaption": "",
+    "threadsCaptionAlt": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "5bc08e3597f10ea74bd66c65d1ddecc5c3b4c7f6bba5b07418e9d466870c0776",
+    "conditionSha256": "165de4bd8a7b990c8730cf5443255fee7cce8090ac7a0fe39c93114c0a9a92ee",
+    "verifiedAt": "2026-09-10T17:37:13.441Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence.",
+        "observed": "On the PA view, the distal radius shows increased radial inclination with a shortened ulnar-side radius. The carpal row appears triangular in configuration with the lunate subsiding proximally between radius and ulna, consistent with Madelung deformity.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Lateral view shows increased volar tilt with dorsal prominence of the distal ulna.",
+        "observed": "On the lateral view, the distal radius demonstrates increased volar tilt and the distal ulna is dorsally prominent relative to the radius, consistent with the expected lateral findings of Madelung deformity.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Radius and ulna are separate coherent bones, with no duplicated carpal bones.",
+        "observed": "Both the radius and ulna are individually traceable as separate, coherent bones on both views. The carpal bones appear as distinct, individual ossicles without duplication. No floating or extra bones are identified. Five metacarpals and appropriate digit count are visible.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "c983261f0664e5a616d9f57a21d43f899104d17dbc3a5e0ded946009d429ae4e",
+    "reviewedAt": "2026-09-10T17:37:16.569Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

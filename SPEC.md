@@ -1,4 +1,6 @@
-# xray-case-poster — build spec
+# xray-case-poster build spec
+
+For current operation, use [OPERATOR.md](OPERATOR.md) and the [generated runtime configuration](docs/runtime-config.md). This specification includes historical design details. The active workflow is Threads only and requires current image and copy review; optional Instagram and Facebook paths remain disabled.
 
 Daily X-ray **case publisher** for @mdnoteslab. Separate from the reply bots. It takes a
 queued case (a real diagnosis + the user's AI-generated images, hosted as GitHub raw URLs),
@@ -126,25 +128,38 @@ And if you'd like to support the page, I'd genuinely appreciate it 🙏
 xray.mednoteslab.com
 ```
 
-### ChatGPT X-ray image-prompt template (for --prompt; user pastes into ChatGPT)
-Generalize the user's proven structure. Fill {diagnosis}, {view} (e.g. "AP chest"), and
-{keyFindings} (the classic radiographic signs of the condition):
-```
-Create a realistic, de-identified {view} X-ray for a medical diagnosis challenge.
+### Image prompt and approval
 
-Show classic {diagnosis}: {keyFindings}.
+`npm run prompt -- <folder>` uses `buildXrayPrompt(c.condition)` in `src/anatomy.ts`,
+the same builder as generation. A view and key findings are required. Without a folder,
+the preview selects the earliest unposted case, considering both central and case state.
 
-Prioritize clinical realism over symmetry. Make it look like a genuine accessory/abnormal
-finding, not a perfect textbook diagram.
+Generated cases carry `imageApproval`: SHA-256 of the final image and canonical prompt,
+verifier version, model, timestamp, acceptance, and defects. The publisher requires the
+current local image and public URL to match this approval. Auto-approval cannot bypass it.
+Final image QA is mandatory; `BOT_XRAY_VERIFY=off` disables the regeneration loop only.
+Legacy queued cases without a receipt receive one vision check during live draft-ahead or
+before publication. Failed or changed approvals stay held. Dry runs do not buy QA checks.
 
-Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain.
+Repairs invalidate approval before changing files. Inspect the repaired image and any blur,
+then run `npx tsx src/regencase.ts <folder> verify`. This reruns QA on the final image and
+releases the review hold only on success. Commit and push the image and case JSON together.
+The hash gate covers the Threads image; optional Instagram slides still need visual review.
 
-Radiology style: diagnostic-quality radiograph, authentic grayscale contrast, natural X-ray
-grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.
+### Durable Threads publication
 
-High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.
-No watermark. Add a small "AI-generated illustration" tag in a corner.
-```
+`State.publication(key)` supplies a persistent container receipt to `postImage` or `reply`.
+Receipts retain the original parameters and creation ID, then record a successful media ID.
+Before a public write in GitHub Actions, the state receipt must be committed and pushed.
+Restarted attempts reuse the same container. An already-published container is reconciled
+to an unambiguous real media ID before answers or CTAs use it as a parent. If recovery is
+ambiguous or a container expires, it remains pending for inspection; no replacement is made.
+
+State and case JSON use atomic replacement. Invalid existing state stops execution. Exit
+code 4 means persistence failed and the workflow must stop public writes immediately.
+Other operational failures preserve successful work but make the run fail. Review holds
+are logged separately. Failed workflow runs retain state artifacts for seven days.
+Do not delete a pending receipt to retry until its public outcome has been checked.
 
 ---
 

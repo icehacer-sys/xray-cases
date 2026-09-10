@@ -13,7 +13,13 @@
     "prompt": "tsx src/index.ts --prompt",
     "generate": "tsx src/generate.ts",
     "render": "tsx src/render.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "publishing:verify": "tsx tools/verify-publishing.mts",
+    "audit:verify": "tsx tools/verify-audit.mts",
+    "runtime:summary": "tsx tools/runtime-summary.mts",
+    "queue:check": "tsx tools/review-queue.mts",
+    "queue:review": "tsx tools/review-queue.mts --review",
+    "metrics": "tsx tools/collect-metrics.mts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.104.1",

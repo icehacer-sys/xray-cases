@@ -1,17 +1,18 @@
 // Queue loader: reads cases/<folder>/case.json files, resolves public image URLs,
 // and writes cases back (so generated drafts + stages persist for the user to review).
 
-import { readFileSync, writeFileSync, renameSync, readdirSync, existsSync } from "node:fs";
+import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { config } from "./config.js";
+import { atomicJson } from "./persistence.js";
 import type { Case, ImageUrl } from "./types.js";
 
 const projectRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 /** Resolve config.casesDir (may be relative) against the project root. */
 function casesRoot(): string {
-  return join(projectRoot, config.casesDir);
+  return resolve(projectRoot, config.casesDir);
 }
 
 /** Parse the leading digits of a folder name, e.g. "00007-foo" -> 7. */
@@ -36,7 +37,19 @@ export function loadCases(): Case[] {
     if (!entry.isDirectory()) continue;
     const file = join(root, entry.name, "case.json");
     if (!existsSync(file)) continue;
-    const c = JSON.parse(readFileSync(file, "utf8")) as Case;
+    let c: Case;
+    try {
+      c = JSON.parse(readFileSync(file, "utf8")) as Case;
+      if (!c || typeof c !== "object" || typeof c.diagnosis !== "string" ||
+          typeof c.postAt !== "string" || !Number.isFinite(Date.parse(c.postAt)) ||
+          typeof c.threadsImage !== "string" || !c.threadsImage.trim() ||
+          (c.source !== undefined && c.source !== "manual" && c.source !== "generated") ||
+          [c.approved, c.needsReview, c.forceRepeat].some((v) => v !== undefined && typeof v !== "boolean") ||
+          (c.stages !== undefined && (!c.stages || typeof c.stages !== "object" || Array.isArray(c.stages) ||
+            !Object.values(c.stages).every((v) => typeof v === "string")))) throw new Error("invalid case fields");
+    } catch (err) {
+      throw new Error(`Cannot load ${file}; refusing to run with corrupt case data: ${String(err)}`);
+    }
     c.folder = entry.name;
     cases.push(c);
   }
@@ -58,7 +71,7 @@ export function imageUrl(folder: string, filename: string): ImageUrl {
 /** Write a case back to cases/<folder>/case.json as pretty JSON. */
 export function saveCase(c: Case): void {
   const file = join(casesRoot(), c.folder, "case.json");
-  writeFileSync(file, JSON.stringify(c, null, 2) + "\n", "utf8");
+  atomicJson(file, c);
 }
 
 // --- no-repeat tracking -----------------------------------------------------
@@ -83,7 +96,10 @@ function readUsedRaw(): string[] {
     // would make every diagnosis look fresh and let a posted case repeat. Refuse loudly instead.
     throw new Error(`used-diagnoses.json is not valid JSON — refusing to run the no-repeat gate blind. Fix ${usedFile}.`);
   }
-  return Array.isArray(arr) ? (arr as string[]) : [];
+  if (!Array.isArray(arr) || !arr.every((s) => typeof s === "string")) {
+    throw new Error(`Invalid diagnosis history in ${usedFile}; expected an array of strings`);
+  }
+  return arr;
 }
 
 /** The set of normalized diagnosis names (incl. aliases) that have already been used. */
@@ -112,8 +128,6 @@ export function addUsedDiagnosis(name: string, aliases: string[] = []): void {
   if (changed) {
     // Atomic write (tmp + rename) so a crash mid-write can't truncate the dedup file and wipe
     // the posted-diagnosis history — the same guarantee state.json already uses.
-    const tmp = `${usedFile}.tmp`;
-    writeFileSync(tmp, JSON.stringify(arr, null, 2) + "\n", "utf8");
-    renameSync(tmp, usedFile);
+    atomicJson(usedFile, arr);
   }
 }

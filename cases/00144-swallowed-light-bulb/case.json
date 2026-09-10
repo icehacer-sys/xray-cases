@@ -6,12 +6,12 @@
     "ingested light bulb",
     "light bulb in stomach"
   ],
-  "symptom": "stomach pain after swallowing a light bulb on a dare",
-  "hook": "a whole intact light bulb was sitting inside the stomach",
-  "whatYouSee": "A whole light bulb sitting inside the stomach.",
-  "whyItMatters": "A swallowed glass bulb can break and cut the gut so it often needs careful removal.",
-  "treatment": "It is usually removed by endoscopy or surgery before it can shatter.",
-  "takeaway": "The outline of a bulb in the stomach is a swallowed light bulb.",
+  "symptom": "upper abdominal pain after swallowing an object on a dare",
+  "hook": "a rounded glass outline with a threaded metal base appeared in the upper abdomen",
+  "whatYouSee": "A bulb-shaped object with a threaded base projects over the stomach region.",
+  "whyItMatters": "Glass may break during passage or removal.",
+  "treatment": "Specialists plan careful retrieval according to the object and its location. Endoscopy or surgery may be needed.",
+  "takeaway": "Glass may break during passage or removal.",
   "igOptions": [
     "A. Swallowed light bulb",
     "B. Stomach tumour",
@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-12T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Swallowed light bulb",
@@ -28,14 +28,14 @@
       "ingested light bulb",
       "light bulb in stomach"
     ],
-    "symptom": "stomach pain after swallowing a light bulb on a dare",
-    "hook": "a whole intact light bulb was sitting inside the stomach",
+    "symptom": "upper abdominal pain after swallowing an object on a dare",
+    "hook": "a rounded glass outline with a threaded metal base appeared in the upper abdomen",
     "view": "AP chest and upper abdomen cropped at the navel with no pelvis or groin in frame",
-    "keyFindings": "the outline of a whole intact light bulb with its rounded glass top and threaded metal base lying within the stomach in the upper abdomen with no pelvis or groin in the frame",
-    "whatYouSee": "A whole light bulb sitting inside the stomach.",
-    "whyItMatters": "A swallowed glass bulb can break and cut the gut so it often needs careful removal.",
-    "treatment": "It is usually removed by endoscopy or surgery before it can shatter.",
-    "takeaway": "The outline of a bulb in the stomach is a swallowed light bulb.",
+    "keyFindings": "One intact bulb-shaped object with a rounded glass envelope and attached threaded metal base projects in the left upper abdomen. The visible ribs and upper abdominal anatomy are coherent.",
+    "whatYouSee": "A bulb-shaped object with a threaded base projects over the stomach region.",
+    "whyItMatters": "Glass may break during passage or removal.",
+    "treatment": "Specialists plan careful retrieval according to the object and its location. Endoscopy or surgery may be needed.",
+    "takeaway": "Glass may break during passage or removal.",
     "igTitle": "A BRIGHT IDEA",
     "igOptions": [
       "Swallowed light bulb",
@@ -44,16 +44,54 @@
     ],
     "igCorrect": "A",
     "used": true,
-    "ageBand": "young-adult"
+    "ageBand": "young-adult",
+    "sources": [
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "One intact bulb-shaped object with a rounded glass envelope and attached threaded metal base projects in the left upper abdomen.",
+      "The visible ribs and upper abdominal anatomy are coherent."
+    ]
   },
   "difficulty": 1,
   "laypersonQuestion": "Would you believe this person is totally alive?",
-  "seedHint": "Look at the shape inside the stomach and ask yourself if that outline seems familiar.",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with stomach pain after swallowing a light bulb on a dare.\n\nThen the X-ray loaded 😭\n\nAnd a whole intact light bulb was sitting inside the stomach.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with some stomach pain after a dare that probably seemed pretty minor at the time.\n\nThen the X-ray loaded 😭\n\nAnd a whole intact light bulb was sitting inside the stomach.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Swallowed light bulb\n\n👀 What you see:\nA whole light bulb sitting inside the stomach.\n\n🦴 Why it matters:\nA swallowed glass bulb can break and cut the gut so it often needs careful removal.\n\n💊 Treatment:\nIt is usually removed by endoscopy or surgery before it can shatter.",
+    "threadsCaption": "A patient came in with upper abdominal pain after swallowing an object on a dare.\n\nThen the X-ray loaded 😭\n\nAnd a rounded glass outline with a threaded metal base appeared in the upper abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Swallowed light bulb\n\n👀 What you see:\nA bulb-shaped object with a threaded base projects over the stomach region.\n\n🦴 Why it matters:\nGlass may break during passage or removal.\n\n💊 Treatment:\nSpecialists plan careful retrieval according to the object and its location. Endoscopy or surgery may be needed.",
     "igCaption": "",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "82d6eb69987f7c659c2e8aa91c0e36e4a682534cf6fb87288e9c8ebbd95bdb12",
+    "conditionSha256": "44b64141fe2912daf105caa4c31cc48351ac8e810c9a25d4b0b24f1c052bfad8",
+    "verifiedAt": "2026-09-10T17:27:05.814Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "One intact bulb-shaped object with a rounded glass envelope and attached threaded metal base projects in the left upper abdomen.",
+        "observed": "A single light bulb foreign body is visible in the left upper abdomen, showing a rounded glass envelope superiorly and a threaded metal base inferiorly, consistent with an intact incandescent bulb. Only one such object is present.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible ribs and upper abdominal anatomy are coherent.",
+        "observed": "The ribcage appears symmetric with matched bilateral rib pairs and no forked, floating, or duplicated ribs. Clavicles and scapulae are one per side. Heart shadow is midline with normal contour. Hemidiaphragms are visible bilaterally. Lung markings branch and taper normally. Lumbar spine is midline and continuous. Bowel gas pattern in the lower abdomen appears connected and anatomically distributed. No duplicated organs or floating gas blobs are identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "6f97a327e78a2959c0e4b9b4ce615c2f23feb82d5f6aa0599a2a92e8b5d64cec",
+    "reviewedAt": "2026-09-10T17:27:07.230Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

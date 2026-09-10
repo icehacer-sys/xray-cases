@@ -30,7 +30,7 @@ export const REGION_RULES: RegionRule[] = [
     prompt: [
       `TEETH: render a SINGLE continuous dental arch per jaw — every tooth seated in the alveolar bone along`,
       `one smooth curve, with NO floating, tilted-into-space, duplicated, fused, or extra teeth beyond the`,
-      `stated pathology. Use ONE age-appropriate dentition (a normal adult set OR a normal child set, never a`,
+      `stated pathology. Use age-appropriate dentition, including normal mixed dentition in children, never a`,
       `chaotic mix). Upper and lower arches mirror-consistent in tooth count and spacing. Every tooth except`,
       `the described lesion is normal and correctly positioned. One mandible with two symmetric rami and`,
       `condyles; the two temporomandibular joints match.`,
@@ -39,7 +39,7 @@ export const REGION_RULES: RegionRule[] = [
       `TEETH CHECK (this view shows teeth): count the teeth in the upper arch and the lower arch. Confirm a`,
       `SINGLE continuous arch per jaw with every tooth seated in alveolar bone — no floating, duplicated,`,
       `fused, or supernumerary teeth beyond the stated pathology — and ONE age-appropriate dentition (not a`,
-      `chaotic adult/baby mix), left-right mirror-consistent in count and spacing. Confirm ONE mandible with`,
+      `chaotic distribution; normal mixed dentition in children is allowed). Confirm ONE mandible with`,
       `two symmetric rami/condyles. Chaotic, floating, or duplicated dentition is a CRITICAL AI artifact even`,
       `when the primary lesion is rendered correctly.`,
     ],
@@ -235,19 +235,8 @@ const DEVICE_OBJECT =
 const NOT_DEVICE = /contrast|barium|gastrografin|\bdye\b|pantopaque|iophendylate/;
 
 const DEVICE_RULE = {
-  prompt: [
-    `DEVICE INTEGRITY: render the hardware as ONE continuous connected object. Every part sits on the`,
-    `SAME side of the body and in its correct anatomical relationship — a receiver or generator, its lead,`,
-    `and the electrode or tip it feeds are physically joined along one unbroken path. No lead that ends in`,
-    `mid-air, no component floating free of the rest, no second copy of any part, and never the same device`,
-    `split across both sides of the body.`,
-  ],
-  verify: [
-    `DEVICE CHECK: trace the hardware end to end. Every component (generator/receiver, lead, electrode or`,
-    `tip) must form ONE connected object on ONE side of the body with correct anatomical placement. A lead`,
-    `that dead-ends in mid-air, a component floating unconnected, a duplicated part, or a device split`,
-    `across both sides is a CRITICAL AI artifact even when each piece looks realistic on its own.`,
-  ],
+  prompt: ['DEVICE: follow the case-specific number, course, connections and endpoints. Connected components must have a continuous plausible path. Multiple components, bilateral systems and disconnected objects are allowed only when specified by the case. Do not invent duplicate hardware.'],
+  verify: ['DEVICE CHECK: report the visible number, course, connections and endpoints. Judge these against this case, not a universal one-device or one-side rule. Do not assume an occluded segment is absent; mark uncertainty if an essential connection cannot be assessed.'],
 };
 
 /** Device-coherence lines when the condition genuinely involves hardware or a swallowed object. */
@@ -278,63 +267,14 @@ interface AgeRule {
 }
 
 // prettier-ignore
-const AGE_RULES: Record<AgeBand, AgeRule> = {
-  "infant": {
-    who: "an infant under 2 years old",
-    prompt: [
-      `The epiphyses are still largely cartilaginous and not yet ossified so the joint spaces look very wide.`,
-      `Fontanelles are open and the cranial sutures are wide. Cortices are thin. Only deciduous tooth buds sit`,
-      `in the jaws. Soft tissues are rounded and chubby.`,
-    ],
-    verify: [`wide unossified joint spaces, open fontanelles and wide sutures, thin cortices, deciduous tooth buds only`],
-  },
-  "child": {
-    who: "a child between about 3 and 11 years old",
-    prompt: [
-      `Growth plates are OPEN and show as clean lucent lines across every metaphysis, with the ossification`,
-      `centres sitting separate from the shafts. Dentition is mixed deciduous and permanent. Bones are slender`,
-      `with a wide medullary canal. There is NO degenerative change anywhere.`,
-    ],
-    verify: [`OPEN growth plates as lucent metaphyseal lines, separate ossification centres, mixed dentition, zero degeneration`],
-  },
-  "adolescent": {
-    who: "an adolescent between about 12 and 18 years old",
-    prompt: [
-      `The physes are closing, with dense fusing metaphyseal lines and a residual physeal scar. Proportions are`,
-      `near adult. Permanent dentition is present without third molars. There is still no degenerative change.`,
-    ],
-    verify: [`physes closing or recently fused with a physeal scar, near-adult proportions, no degeneration`],
-  },
-  "young-adult": {
-    who: "a young adult between about 19 and 39 years old",
-    prompt: [
-      `The physes are fully closed leaving only faint physeal scars. Cortices are dense and sharp and the joint`,
-      `spaces are crisp. There are no osteophytes and no vascular calcification.`,
-    ],
-    verify: [`fully closed physes, dense sharp cortices, crisp joint spaces, no osteophytes or vascular calcification`],
-  },
-  "middle-aged": {
-    who: "a middle-aged adult between about 40 and 59 years old",
-    prompt: [
-      `Early wear is visible: mild disc space narrowing with small endplate osteophytes and slight facet`,
-      `sclerosis, and early calcification of the costal cartilage. The cortices are still good.`,
-    ],
-    verify: [`mild early degeneration (small osteophytes, slight disc narrowing) with still-good cortices`],
-  },
-  "older": {
-    who: "an older adult over 60 years old",
-    prompt: [
-      `This skeleton is OLD and must look it. Generalised osteopenia with thinned cortices and coarse prominent`,
-      `trabeculae. The spine is degenerate with narrowed discs, sclerotic endplates and bridging osteophytes.`,
-      `Facet arthrosis. The costal cartilage and the aorta are calcified. There may be mild vertebral height`,
-      `loss. Joint spaces are narrowed. NOTHING about this skeleton looks young or pristine.`,
-    ],
-    verify: [
-      `osteopenia with thinned cortices, a degenerate spine (narrowed discs, endplate sclerosis, osteophytes),`,
-      `calcified costal cartilage and aorta. A pristine young-looking skeleton in a patient over 60 is WRONG`,
-    ],
-  },
-};
+const AGE_RULES: Record<AgeBand, AgeRule> = Object.fromEntries([
+  ['infant', 'an infant under 2 years old', 'immature ossification appropriate to the visible anatomy'],
+  ['child', 'a child aged 3 to 11', 'open physes where visible; normal mixed dentition is allowed'],
+  ['adolescent', 'an adolescent aged 12 to 18', 'maturing skeleton; physeal closure varies by site and age'],
+  ['young-adult', 'an adult aged 19 to 39', 'skeletally mature visible anatomy'],
+  ['middle-aged', 'an adult aged 40 to 59', 'skeletally mature visible anatomy'],
+  ['older', 'an adult over 60', 'skeletally mature visible anatomy; degeneration is variable, not mandatory'],
+].map(([band, who, maturity]) => [band, { who, prompt: [maturity + '. Do not invent degeneration, osteopenia or vascular calcification unless specified. Apply maturity only inside the field of view.'], verify: [maturity] }])) as Record<AgeBand, AgeRule>;
 
 /** Age cues already written into a condition's symptom/view/hook, for the ~20 that have one. */
 const AGE_CUES: [RegExp, AgeBand][] = [
@@ -363,16 +303,14 @@ export function ageLines(
 ): string[] {
   const band =
     cond.ageBand ??
-    inferAgeBand([cond.symptom, cond.view, cond.hook].filter(Boolean).join(" ")) ??
-    "young-adult";
+    inferAgeBand([cond.symptom, cond.view, cond.hook].filter(Boolean).join(" "));
+  if (!band) return ["Age unspecified: use consistent skeletal maturity; do not invent an age or mandatory degenerative findings."];
   const rule = AGE_RULES[band];
   return kind === "prompt"
     ? [`PATIENT: ${rule.who}. Render the skeleton and soft tissues of a patient of this age.`, ...rule.prompt]
     : [
         `AGE CHECK: the patient is ${rule.who}. Confirm skeletal maturity matches — ${rule.verify.join(" ")}.`,
-        `Maturity that CONTRADICTS the age is CRITICAL: open growth plates in an adult, fused plates in a young`,
-        `child, or a pristine young-looking spine in a patient over 60. Age-appropriate degeneration is EXPECTED`,
-        `and is never a defect.`,
+        'Assess maturity only where visible. Absence of degeneration in an older adult is not a defect.',
       ];
 }
 
@@ -389,7 +327,7 @@ const ACQUISITION_REALISM = {
     `- Collimation: the exposed field is a rectangle with straight unexposed borders along at least two edges`,
     `  where the beam was coned down.`,
     `- Exposure is not perfectly even. A gentle density gradient crosses the film and thicker body parts read`,
-    `  darker and less penetrated than thin ones.`,
+    `  lighter from greater attenuation. Air is dark; bone and metal are light.`,
     `- Scatter softens the soft tissues into a smooth grey haze rather than a clean cutout.`,
     `- Positioning is very slightly imperfect. The patient sits a degree or two rotated or off centre the way a`,
     `  real person does. Do not centre it perfectly.`,
@@ -423,6 +361,7 @@ export function verifyExtraLines(
     Partial<Pick<Condition, "symptom" | "hook">> & { ageBand?: AgeBand; anatomyException?: string },
 ): string[] {
   return [
+    "Assess only anatomy visible in this field and projection. Do not count off-frame or superimposed structures as absent. If a required finding is not assessable, do not pass it.",
     ...regionVerifyLines(cond.view),
     ...deviceLines(cond, "verify"),
     ...ageLines(cond, "verify"),
@@ -501,67 +440,16 @@ export function buildXrayPrompt(
     Partial<Pick<Condition, "symptom" | "hook">> & { ageBand?: AgeBand; anatomyException?: string },
   opts: { avoid?: string[]; emphasis?: string } = {},
 ): string {
-  const hasException = !!cond.anatomyException?.trim();
-  const region = [
-    ...regionPromptLines(cond.view),
-    ...deviceLines(cond, "prompt"),
-    // Immediately after the rules it overrides, so the model reads the exception as amending
-    // them rather than as one more competing constraint further down the prompt.
-    ...exceptionLines(cond.anatomyException, "prompt"),
-  ];
   const lines = [
-    `Create a realistic, de-identified ${cond.view} X-ray for a medical diagnosis challenge.`,
-    ``,
-    `Show classic ${cond.diagnosis}: ${cond.keyFindings}.`,
-    ``,
-    ...ageLines(cond, "prompt"),
-    ``,
-    // "unremarkable FOR A PATIENT OF THIS AGE" — without that qualifier this rule and the age
-    // block contradict each other for any older patient, whose normal film is full of
-    // degenerative change that would otherwise read as forbidden "extra lesions".
-    `Render exactly ONE primary abnormality — the finding above. Everything else on the film is`,
-    `unremarkable for a patient of this age, normal anatomy. Do not scatter extra lesions, densities, or`,
-    `incidental abnormalities. Age-appropriate degeneration is NOT an extra lesion and is expected.`,
-    ``,
-    `ANATOMY MUST BE CORRECT. Render a real human body with the NORMAL number of bones and organs.`,
-    `Do NOT duplicate, mirror, or add any extra bone, organ, or structure. Exactly one of each paired`,
-    `structure (one scapula and one clavicle per side, one femoral head per hip, 12 rib pairs, five`,
-    // Only points at the exception block when there IS one. Referencing a "declared exception
-    // below" on the ~95% of cases that have none just invites the model to invent one.
-    `digits per hand/foot, one continuous spine, two orbits) unless the pathology itself only changes a`,
-    hasException
-      ? `structure's position, shape, or density, OR the DECLARED ANATOMICAL EXCEPTION below says otherwise.`
-      : `structure's position, shape, or density. Represent the pathology as a change to a SINGLE structure,`,
-    hasException
-      ? `Absent that declaration, represent the pathology as a change to a SINGLE structure and never as an`
-      : `never as an added duplicate. No melted, smeared, doubled, or garbled bone.`,
-    ...(hasException ? [`added duplicate. No melted, smeared, doubled, or garbled bone.`] : []),
-    ``,
-    `The PATHOLOGY may be irregular or asymmetric — that is expected. But every NON-pathological paired`,
-    `structure (both forearm bones, both sides of the jaw and dental arch, the ribs, the orbits) must stay`,
-    `bilaterally consistent, correctly counted, and cleanly superimposed where structures overlap. Make it`,
-    `look like a genuine abnormal finding, not a perfect textbook diagram.`,
-    ...(region.length ? ["", ...region] : []),
-    ``,
+    'Create a de-identified educational radiograph simulation: ' + cond.view + '.',
+    'Required diagnostic pattern: ' + cond.diagnosis + ': ' + cond.keyFindings,
+    'Show ONE coherent diagnostic pattern, including all affected structures and multiplicity specified by this case. Do not add unrelated lesions.',
+    'Anatomy constraints apply ONLY to structures visible in this field and projection. Do not add off-frame anatomy to satisfy a count. Normal superimposition is allowed; duplicated or melted anatomy is not.',
+    ...ageLines(cond, 'prompt'), ...regionPromptLines(cond.view), ...deviceLines(cond, 'prompt'),
     ...ACQUISITION_REALISM.prompt,
-    ``,
-    // Precedence: osteopetrosis in a child must not be forced into the child band's "slender
-    // bones with a wide medullary canal", and a pathology that reshapes the film wins over any
-    // realism instruction above.
-    `Where the stated pathology changes any of the above, the PATHOLOGY WINS.`,
-    ``,
-    `Include realistic surrounding anatomy, soft tissues, and authentic radiographic grain.`,
-    ``,
-    `Radiology style: diagnostic-quality radiograph, authentic grayscale contrast, natural X-ray`,
-    `grain, no cinematic glow, no artificial sharpening, no labels, arrows, or annotations.`,
-    ``,
-    `High-resolution medical imaging. De-identified. No patient identifiers. No hospital branding.`,
-    `No watermark.`,
-    ``,
-    `Avoid these AI artifacts: duplicated or mirrored bones, a floating bone or tooth detached from the`,
-    `skeleton, merged or melted cortical bone, teeth outside the arch, an extra scapula/clavicle/rib, the`,
-    `wrong number of fingers or toes, a single fused forearm bone, and uniform stippled noise standing in for`,
-    `real tissue texture.`,
+    'Keep the diagnostic finding assessable. No labels, lettering, lead markers, arrows, hospital branding or watermarks.',
+    'The stated pathology takes precedence over generic normal-anatomy constraints.',
+    ...exceptionLines(cond.anatomyException, 'prompt'),
   ];
   if (opts.emphasis) lines.push(``, opts.emphasis);
   if (opts.avoid?.length) {

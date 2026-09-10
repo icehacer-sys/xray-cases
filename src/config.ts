@@ -118,10 +118,9 @@ export const config = {
   conditionsFile: process.env.BOT_CONDITIONS_FILE ?? "./data/conditions.json",
   // Keep this many approved-or-pending cases queued ahead.
   queueTarget: num("BOT_QUEUE_TARGET", 7),
-  // Daily slot (UTC hour) the generator schedules new cases at.
-  // 19:00 UTC = 10 PM Cairo (UTC+3), matching the reply bot's 22-10 active window. (Changed from
-  // 9 PM to 10 PM on 2026-07-01 by owner request.)
+  // Legacy UTC setting retained for compatibility. Scheduling uses postHourLocal in activeTz.
   postHourUtc: num("BOT_POST_HOUR_UTC", 19),
+  postHourLocal: num("BOT_POST_HOUR_LOCAL", 22), // converts each date using Cairo DST
   // Skip the human review gate and post generated cases automatically. Off by default
   // (generated medical images should be eyeballed before they publish).
   autoApprove: (process.env.BOT_AUTO_APPROVE ?? "off").toLowerCase() === "on",

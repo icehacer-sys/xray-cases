@@ -6,12 +6,12 @@
     "double bubble sign",
     "congenital duodenal obstruction"
   ],
-  "symptom": "a newborn vomiting bile within hours of the very first feed",
-  "hook": "the whole abdomen held just two bubbles of gas and nothing at all beyond them",
-  "whatYouSee": "Two big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.",
-  "whyItMatters": "The duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.",
-  "treatment": "The blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
-  "takeaway": "Two bubbles and a gasless belly in a newborn is duodenal atresia.",
+  "symptom": "bilious vomiting soon after the first feed",
+  "hook": "two large gas bubbles filled the upper abdomen with little gas visible below",
+  "whatYouSee": "Two upper abdominal gas bubbles suggest a dilated stomach and proximal duodenum.",
+  "whyItMatters": "This suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.",
+  "treatment": "The newborn needs urgent assessment and stabilisation. Confirmed atresia is repaired surgically.",
+  "takeaway": "This suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.",
   "igOptions": [
     "A. Duodenal atresia",
     "B. Necrotising enterocolitis",
@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-18T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Duodenal atresia",
@@ -28,15 +28,15 @@
       "double bubble sign",
       "congenital duodenal obstruction"
     ],
-    "symptom": "a newborn vomiting bile within hours of the very first feed",
-    "hook": "the whole abdomen held just two bubbles of gas and nothing at all beyond them",
+    "symptom": "bilious vomiting soon after the first feed",
+    "hook": "two large gas bubbles filled the upper abdomen with little gas visible below",
     "view": "coned AP view of the upper abdomen of a newborn showing only from the nipples down to the navel with the lower body entirely out of frame",
     "ageBand": "infant",
-    "keyFindings": "two large gas filled bubbles in the upper abdomen with the larger stomach bubble on the left and a dilated duodenal cap on the right and completely gasless bowel below them",
-    "whatYouSee": "Two big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.",
-    "whyItMatters": "The duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.",
-    "treatment": "The blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
-    "takeaway": "Two bubbles and a gasless belly in a newborn is duodenal atresia.",
+    "keyFindings": "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right. Little or no gas is visible distal to the two bubbles within this cropped field. Visible skeletal proportions are compatible with a newborn.",
+    "whatYouSee": "Two upper abdominal gas bubbles suggest a dilated stomach and proximal duodenum.",
+    "whyItMatters": "This suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.",
+    "treatment": "The newborn needs urgent assessment and stabilisation. Confirmed atresia is repaired surgically.",
+    "takeaway": "This suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.",
     "igTitle": "THE DOUBLE BUBBLE",
     "igOptions": [
       "Duodenal atresia",
@@ -44,16 +44,61 @@
       "Hirschsprung disease"
     ],
     "igCorrect": "A",
-    "used": true
+    "used": true,
+    "sources": [
+      "https://www.merckmanuals.com/professional/pediatrics/congenital-gastrointestinal-anomalies/duodenal-obstruction"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right.",
+      "Little or no gas is visible distal to the two bubbles within this cropped field.",
+      "Visible skeletal proportions are compatible with a newborn."
+    ]
   },
   "difficulty": 3,
   "laypersonQuestion": "Why does this baby's belly look so empty?",
-  "seedHint": "Count the gas bubbles and then ask why the rest is totally silent.",
+  "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a newborn vomiting bile within hours of the very first feed.\n\nThen the X-ray loaded 😭\n\nAnd the whole abdomen held just two bubbles of gas and nothing at all beyond them.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a newborn who vomited shortly after their very first feed.\n\nThen the X-ray loaded 😭\n\nAnd the whole abdomen held just two bubbles of gas and nothing at all beyond them.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Duodenal atresia\n\n👀 What you see:\nTwo big gas bubbles sit side by side in the upper belly. Below them the bowel is completely empty of gas.\n\n🦴 Why it matters:\nThe duodenum never opened up during development so nothing passes beyond it and about a third of these babies also have Down syndrome.\n\n💊 Treatment:\nThe blocked segment is bypassed surgically with a duodenoduodenostomy once the baby is resuscitated.",
+    "threadsCaption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd two large gas bubbles filled the upper abdomen with little gas visible below.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀\n\nEducational illustration.",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Duodenal atresia\n\n👀 What you see:\nTwo upper abdominal gas bubbles suggest a dilated stomach and proximal duodenum.\n\n🦴 Why it matters:\nThis suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.\n\n💊 Treatment:\nThe newborn needs urgent assessment and stabilisation. Confirmed atresia is repaired surgically.",
     "igCaption": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "70f59f1635a02b7a33442a03cdfd83d4dc4a478d1777cf7f13e2954f454850f3",
+    "conditionSha256": "2e2a9bd45921b353b592cf6d25434d764cc36f11dd0779fd6ca4e9899d9a7b22",
+    "verifiedAt": "2026-09-10T17:28:50.211Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "3",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right.",
+        "observed": "Two large gas lucencies are visible in the upper abdomen. The larger one is on the patient's left (stomach) and a second, somewhat smaller lucency is on the patient's right (proximal duodenum), consistent with the classic 'double bubble' sign of duodenal atresia.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Little or no gas is visible distal to the two bubbles within this cropped field.",
+        "observed": "No bowel gas is visible distal to the two gas collections in the remainder of the abdomen. The lower abdomen appears gasless, consistent with complete obstruction at the duodenum.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Visible skeletal proportions are compatible with a newborn.",
+        "observed": "The ribs are thin and horizontally oriented, the vertebral bodies show immature ossification with rounded margins, and the overall skeletal proportions are consistent with a newborn or young infant. No mature ossification centers or degenerative changes are present.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "a2287a4b6a8ced19b43d269e391169eb3ff0572da53e9a21db95f0b5866e70c0",
+    "reviewedAt": "2026-09-10T17:28:52.056Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }
