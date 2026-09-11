@@ -53,6 +53,16 @@
       "publishedId": "18114371644992668",
       "publishedAt": "2026-09-11T19:02:34.963Z",
       "confirmedPublished": true
+    },
+    "case:00147-odontogenic-keratocyst:answer": {
+      "creationId": "17888894808614054",
+      "createdAt": "2026-09-11T19:22:47.894Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Odontogenic keratocyst\n\n👀 What you see:\nA multilocular lucent lesion occupies the posterior mandible with an associated impacted tooth.\n\n🦴 Why it matters:\nThis can resemble ameloblastoma. Imaging alone cannot establish the tissue diagnosis.\n\n💊 Treatment:\nSpecialist assessment and histology guide treatment. Long-term follow-up checks for recurrence.",
+        "reply_to_id": "18114371644992668",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":353}]"
+      }
     }
   },
   "stages": {
