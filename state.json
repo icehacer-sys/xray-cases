@@ -66,6 +66,16 @@
       "publishedId": "18123020227894693",
       "publishedAt": "2026-09-11T19:22:55.416Z",
       "confirmedPublished": true
+    },
+    "case:00147-odontogenic-keratocyst:cta": {
+      "creationId": "17888900574614054",
+      "createdAt": "2026-09-11T20:18:26.551Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com",
+        "reply_to_id": "18123020227894693",
+        "link_attachment": "https://free.mednoteslab.com"
+      }
     }
   },
   "stages": {
