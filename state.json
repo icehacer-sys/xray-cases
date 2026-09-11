@@ -706,7 +706,9 @@
       "publishedCaption": "A patient came in with painless jaw swelling.\n\nThen the X-ray loaded 😭\n\nAnd a large dark cavity occupied the back of the lower jaw.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
       "experiment": "{\"id\":\"case-00147-odontogenic-keratocyst\",\"assignedAt\":\"2026-09-11T19:02:22.742Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18114371644992668",
+      "challengePostedAt": "2026-09-11T19:02:34.963Z"
     }
   },
   "posted": {
