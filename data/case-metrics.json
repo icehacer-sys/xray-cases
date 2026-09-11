@@ -24,5 +24,31 @@
       "reposts": 0,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00143-coin-in-the-oesophagus",
+    "postId": "18103023326210157",
+    "measuredAt": "2026-09-11T10:53:14.662Z",
+    "publishedAt": "2026-09-10T19:31:36.434Z",
+    "ageHours": 15.360618888888888,
+    "experiment": {
+      "id": "case-00143-coin-in-the-oesophagus",
+      "assignedAt": "2026-09-10T19:31:22.790Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-10T21:01:36.434Z",
+    "ctaDueAt": "2026-09-10T21:56:36.434Z",
+    "metrics": {
+      "views": 14579,
+      "likes": 142,
+      "replies": 233,
+      "reposts": 0,
+      "quotes": 0
+    }
   }
 ]
