@@ -79,6 +79,17 @@
       "publishedId": "17863454940675113",
       "publishedAt": "2026-09-11T20:18:35.783Z",
       "confirmedPublished": true
+    },
+    "case:00152-luxatio-erecta:challenge": {
+      "creationId": "17889034170614054",
+      "createdAt": "2026-09-12T19:02:58.084Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00152-luxatio-erecta/xray.png",
+        "text": "A patient came in with severe shoulder pain and an arm stuck overhead after a fall.\n\nThen the X-ray loaded 😭\n\nThe ball of the shoulder was sitting below its socket.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "24fadce759e6ba0886ad30e3bc5428ed01b0a684ccf92c172b53fbfffb03a27f:8926f60cf891fff38af3d756d4ba455eaff918380be2d94e8de79b5ba3ab56a5:fcd79bae157b59e9c11638a1c043638390a6c045596ef993724377f98596a8dd"
     }
   },
   "stages": {
@@ -738,12 +749,18 @@
       "answerCommentId": "18123020227894693",
       "answerPostedAt": "2026-09-11T19:22:55.416Z",
       "ctaPostedAt": "2026-09-11T20:18:37.565Z"
+    },
+    "00152-luxatio-erecta": {
+      "publishedCaption": "A patient came in with severe shoulder pain and an arm stuck overhead after a fall.\n\nThen the X-ray loaded 😭\n\nThe ball of the shoulder was sitting below its socket.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00152-luxatio-erecta\",\"assignedAt\":\"2026-09-12T19:02:51.524Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-11",
+      "date": "2026-09-12",
       "count": 0
     }
   }
