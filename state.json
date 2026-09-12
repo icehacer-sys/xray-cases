@@ -757,7 +757,9 @@
       "publishedCaption": "A patient came in with severe shoulder pain and an arm stuck overhead after a fall.\n\nThen the X-ray loaded 😭\n\nThe ball of the shoulder was sitting below its socket.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
       "experiment": "{\"id\":\"case-00152-luxatio-erecta\",\"assignedAt\":\"2026-09-12T19:02:51.524Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "90",
-      "ctaDelayMin": "145"
+      "ctaDelayMin": "145",
+      "threadsPostId": "18151028044531026",
+      "challengePostedAt": "2026-09-12T19:03:03.090Z"
     }
   },
   "posted": {
