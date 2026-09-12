@@ -111,5 +111,7 @@
     "sha256": "730e18c792940c0b0976e93486099daac93fd23ddb49fbe4ffb35a38c3cf55ef",
     "reviewedAt": "2026-09-12T15:44:31.228Z",
     "reviewer": "claude-sonnet-4-6"
-  }
+  },
+  "retired": true,
+  "retirementReason": "Concurrent automatic top-up superseded by the manually reviewed eight-night queue. Retained for traceability. Do not requeue without a fresh operator review and duplicate check."
 }

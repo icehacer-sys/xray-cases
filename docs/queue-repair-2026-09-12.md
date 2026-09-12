@@ -83,3 +83,11 @@ These are provider request records from this task, including failed candidates a
 - [ASGE foreign-body guidance](https://www.asge.org/docs/default-source/education/practice_guidelines/doc-management-of-ingested-foreign-bodies-and-food-impactions.pdf)
 
 The pleural guideline page returned HTTP 403 and the ASGE landing page returned HTTP 502 during direct opening. Relevant indexed guideline content and the ASGE guideline PDF supplied the facts used. Early maintenance file reads also encountered missing paths; the actual modules were identified from package scripts and imports before further work.
+
+## Concurrent publisher batch reconciled before release
+
+The scheduled heartbeat restarted the previously canceled publisher and generated five additional cases while local repairs were in progress: gas gangrene, portal venous gas, pulmonary hydatid cyst, swallowed spoon and swallowed keys. Three failed its image gate. The hydatid and spoon candidates had automated approvals but had not received the visual review used for this release. All five are preserved as retired candidates superseded by the reviewed eight-night queue. Their condition usage history is retained. The local replacement folders were renumbered to 00158, 00159 and 00161 to avoid collisions, and the duplicate spoon cannot publish twice.
+
+These five automatically generated images are additional to the ten local image requests listed above. The remote workflow did not commit their usage rows, so the local table is not a complete account of concurrent publisher spend.
+
+A request to temporarily disable the whole publisher workflow was rejected by automatic approval review because it could persistently stop scheduled publishing. No workflow-disable action was performed. The reconciliation used the canceled individual run, preserved remote commits through rebase and retained all candidate files.
