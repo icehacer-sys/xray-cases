@@ -102,5 +102,57 @@
       "reposts": 1,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00143-coin-in-the-oesophagus",
+    "postId": "18103023326210157",
+    "measuredAt": "2026-09-12T07:03:01.885Z",
+    "publishedAt": "2026-09-10T19:31:36.434Z",
+    "ageHours": 35.52373638888889,
+    "experiment": {
+      "id": "case-00143-coin-in-the-oesophagus",
+      "assignedAt": "2026-09-10T19:31:22.790Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-10T21:01:36.434Z",
+    "ctaDueAt": "2026-09-10T21:56:36.434Z",
+    "metrics": {
+      "views": 25284,
+      "likes": 172,
+      "replies": 343,
+      "reposts": 0,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00147-odontogenic-keratocyst",
+    "postId": "18114371644992668",
+    "measuredAt": "2026-09-12T07:03:02.069Z",
+    "publishedAt": "2026-09-11T19:02:34.963Z",
+    "ageHours": 12.007529444444444,
+    "experiment": {
+      "id": "case-00147-odontogenic-keratocyst",
+      "assignedAt": "2026-09-11T19:02:22.742Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with painless jaw swelling.\n\nThen the X-ray loaded 😭\n\nAnd a large dark cavity occupied the back of the lower jaw.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-11T19:22:34.963Z",
+    "ctaDueAt": "2026-09-11T20:17:34.963Z",
+    "metrics": {
+      "views": 95204,
+      "likes": 308,
+      "replies": 189,
+      "reposts": 14,
+      "quotes": 2
+    }
   }
 ]
