@@ -32,7 +32,7 @@ config.seedComment = false;
 config.ctaReply = false;
 atomicJson(config.stateFile, { stages: {}, posted: { total: 0, daily: { date: "2020-01-01", count: 0 } } });
 const condition: any = { diagnosis: "Fixture", view: "PA hand", keyFindings: "Seven finger rays", ageBand: "child", anatomyException: "Seven digits are required", symptom: "hand pain", hook: "fixture" };
-const valid = { plausible: true, depictsDiagnosis: true, correctBodyPart: true, severity: "pass", defects: [], observations: [{ expected: "Seven finger rays", observed: "Seven coherent finger rays", assessable: true, matches: true }] };
+const valid = { unexplainedFindings: [], singleAnswerSupported: true, diagnosticReason: 'Distinct fixture finding', plausible: true, depictsDiagnosis: true, correctBodyPart: true, severity: "pass", defects: [], observations: [{ expected: "Seven finger rays", observed: "Seven coherent finger rays", assessable: true, matches: true }] };
 const response = (value: unknown, status = 200) => new Response(JSON.stringify(value), { status });
 const c: any = {
   folder: "fixture", diagnosis: "Offline fixture diagnosis", symptom: "pain", hook: "fixture",

@@ -1,5 +1,7 @@
 # xray-case-poster build spec
 
+The Case contract now includes diagnosticContext (certainty, recorded confirmationEvidence and acceptedDifferentials), generation metadata and an explicit retired flag. Image approvals retain the independent image-only reading and diagnostic discrimination rationale. Generated cases have no patient confirmation evidence.
+
 For current operation, use [OPERATOR.md](OPERATOR.md) and the [generated runtime configuration](docs/runtime-config.md). This specification includes historical design details. The active workflow is Threads only and requires current image and copy review; optional Instagram and Facebook paths remain disabled.
 
 Daily X-ray **case publisher** for @mdnoteslab. Separate from the reply bots. It takes a

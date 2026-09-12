@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-13T19:00:00.000Z",
-  "approved": true,
+  "approved": false,
   "source": "generated",
   "condition": {
     "diagnosis": "Madelung deformity",
@@ -65,40 +65,47 @@
     "threadsCaptionAlt": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
   },
-  "needsReview": false,
-  "verifyDefects": [],
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The independent reading describes a distal radius fracture with dorsal angulation and impaction — these findings (acute fracture pattern, radial shortening from trauma) are not features of Madelung deformity and represent a conflicting interpretation of the same image\",\"On the PA view the distal radius articular surface shows dorsal tilt/angulation more consistent with acute fracture than the gradual volar tilt and ulnar-sided physeal arrest of Madelung deformity\",\"No clear triangular carpus with proximal lunate subsidence is convincingly demonstrated on the PA view; the carpus appears relatively normally aligned without the characteristic wedging\"]",
+    "Error: Unexplained additional image findings: [\"The independent reading describes a distal radius fracture with dorsal angulation and impaction — these findings (acute fracture pattern, radial shortening from trauma) are not features of Madelung deformity and represent a conflicting interpretation of the same image\",\"On the PA view the distal radius articular surface shows dorsal tilt/angulation more consistent with acute fracture than the gradual volar tilt and ulnar-sided physeal arrest of Madelung deformity\",\"No clear triangular carpus with proximal lunate subsidence is convincingly demonstrated on the PA view; the carpus appears relatively normally aligned without the characteristic wedging\"]"
+  ],
   "imageApproval": {
     "sha256": "5bc08e3597f10ea74bd66c65d1ddecc5c3b4c7f6bba5b07418e9d466870c0776",
-    "conditionSha256": "165de4bd8a7b990c8730cf5443255fee7cce8090ac7a0fe39c93114c0a9a92ee",
-    "verifiedAt": "2026-09-10T17:37:13.441Z",
+    "conditionSha256": "45c044008b68729da66b05be30cc182d6659c5cc79b71aa638b20d3f1dea7e3c",
+    "verifiedAt": "2026-09-12T15:11:03.434Z",
     "model": "claude-sonnet-4-6",
-    "verifierVersion": "3",
-    "ok": true,
-    "defects": [],
-    "observations": [
-      {
-        "expected": "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence.",
-        "observed": "On the PA view, the distal radius shows increased radial inclination with a shortened ulnar-side radius. The carpal row appears triangular in configuration with the lunate subsiding proximally between radius and ulna, consistent with Madelung deformity.",
-        "assessable": true,
-        "matches": true
-      },
-      {
-        "expected": "Lateral view shows increased volar tilt with dorsal prominence of the distal ulna.",
-        "observed": "On the lateral view, the distal radius demonstrates increased volar tilt and the distal ulna is dorsally prominent relative to the radius, consistent with the expected lateral findings of Madelung deformity.",
-        "assessable": true,
-        "matches": true
-      },
-      {
-        "expected": "Radius and ulna are separate coherent bones, with no duplicated carpal bones.",
-        "observed": "Both the radius and ulna are individually traceable as separate, coherent bones on both views. The carpal bones appear as distinct, individual ossicles without duplication. No floating or extra bones are identified. Five metacarpals and appropriate digit count are visible.",
-        "assessable": true,
-        "matches": true
-      }
-    ]
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The independent reading describes a distal radius fracture with dorsal angulation and impaction — these findings (acute fracture pattern, radial shortening from trauma) are not features of Madelung deformity and represent a conflicting interpretation of the same image\",\"On the PA view the distal radius articular surface shows dorsal tilt/angulation more consistent with acute fracture than the gradual volar tilt and ulnar-sided physeal arrest of Madelung deformity\",\"No clear triangular carpus with proximal lunate subsidence is convincingly demonstrated on the PA view; the carpus appears relatively normally aligned without the characteristic wedging\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Two-view radiograph of the wrist and distal forearm: posteroanterior (PA) projection on the left and lateral projection on the right",
+        "Distal radius demonstrates a transverse fracture with dorsal angulation (apex volar) of the distal fragment visible on the lateral view",
+        "On the PA view there is mild radial shortening and loss of normal radial inclination with impaction at the fracture site",
+        "The distal ulna styloid process appears intact on the PA view; the distal radioulnar joint relationship appears maintained",
+        "Carpal bones appear normally aligned on the PA view; no definite intercalated segment instability pattern identified",
+        "No additional metacarpal or phalangeal fractures are identified",
+        "Open physes visible at the distal radius and ulna, indicating a skeletally immature individual",
+        "No significant soft tissue calcification or foreign body visible"
+      ],
+      "differential": [
+        "Distal radius fracture with dorsal angulation and impaction (consistent with a Colles-type fracture pattern; given open physes, a Salter-Harris type II physeal fracture cannot be excluded)",
+        "Salter-Harris type II fracture of the distal radius physis with dorsal metaphyseal fragment",
+        "Torus (buckle) fracture of the distal radius with dorsal cortical buckling (less likely given degree of angulation seen on lateral)"
+      ],
+      "anatomyConcerns": [
+        "Open physes at both the distal radius and ulna are normal developmental anatomy for a skeletally immature individual and should not be mistaken for fracture lines",
+        "The two projections appear to be of the same wrist but are displayed as a composite image; standard orthogonal projections are confirmed (PA and lateral)",
+        "Superimposition of carpal bones on the lateral view limits detailed assessment of individual carpal bone alignment"
+      ]
+    }
   },
   "contentReview": {
-    "sha256": "81093c5b7ebbe662015f1d7c9b5a1998cb48b3ed1fabdc5db665999f5d0c1282",
-    "reviewedAt": "2026-09-10T19:42:42.144Z",
-    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
+    "sha256": "2cc8533fe66bfb1259144bbe22ded6ab22d8f02090b289cdb7049ab6004f19d0",
+    "reviewedAt": "2026-09-12T15:11:05.094Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

@@ -23,7 +23,7 @@ fbAnswer: (process.env.BOT_FB_ANSWER ?? "on").toLowerCase() !== "off",
 ctaReply: (process.env.BOT_CTA_REPLY ?? "off").toLowerCase() === "on",
 topicTag: (process.env.BOT_TOPIC_TAG ?? "Med Threads").trim(),
 topicTagGraceMin: num("BOT_TOPIC_TAG_GRACE_MIN", 60),
-imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-2",
+imageModel: process.env.BOT_IMAGE_MODEL ?? "gpt-image-2.5-flare",
 imageSize: process.env.BOT_IMAGE_SIZE ?? "1024x1024",
 imageQuality: process.env.BOT_IMAGE_QUALITY ?? "medium",
 conditionsFile: process.env.BOT_CONDITIONS_FILE ?? "./data/conditions.json",
@@ -52,6 +52,7 @@ BOT_INSTAGRAM: "off" # IG discontinued -- Threads only (owner, 2026-06-29)
 BOT_FACEBOOK: "off" # FB dropped — Threads only (owner deleted the Page over the "AI info" label, 2026-07-03). Off also disables the FB answer-comment (that stage requires BOT_FACEBOOK). Flip to "on" to restore.
 BOT_FB_LEAD_MIN: "10" # Facebook gets the challenge ~10 min before Threads (early access for FB followers)
 BOT_AUTO_APPROVE: "on" # owner trusts gpt-image-2: generated cases post without manual review
+BOT_IMAGE_MODEL: "gpt-image-2.5-flare" # owner-selected model; final image and copy QA remain mandatory
 BOT_IMAGE_QUALITY: "high" # realism: high renders far more convincing film texture and age-appropriate bone detail than medium (~4x cost per image, still cents)
 BOT_XRAY_VERIFY: "on" # Claude vision checks each generated X-ray for AI anatomy defects; failures are regenerated or held for review
 BOT_CENSOR_GENITALS: "on" # blur external genitalia on the X-ray + slides so Threads/IG don't flag the post as sensitive

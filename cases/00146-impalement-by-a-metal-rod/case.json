@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-16T19:00:00.000Z",
-  "approved": true,
+  "approved": false,
   "source": "generated",
   "condition": {
     "diagnosis": "Impalement by a metal rod",
@@ -66,8 +66,11 @@
     "igCaption": "",
     "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
-  "needsReview": false,
-  "verifyDefects": [],
+  "needsReview": true,
+  "verifyDefects": [
+    "Final review in progress",
+    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym52HVKxs3YgchznaLB\"}"
+  ],
   "imageApproval": {
     "sha256": "2a80336b4b7c59dd7795c85f984a5f46d24fb8d25f6d6f115599fd1179c8cc57",
     "conditionSha256": "f1a4bd12d5bfcb3de2e43eb6579af25c9831a3f18edfba0ca298ef8fd1e6060c",
@@ -90,10 +93,5 @@
         "matches": true
       }
     ]
-  },
-  "contentReview": {
-    "sha256": "da4497569930774de48cef12fca73c46b74b54b7a736f57b4bb97496433075c9",
-    "reviewedAt": "2026-09-10T19:42:42.162Z",
-    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

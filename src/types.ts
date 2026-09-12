@@ -36,6 +36,13 @@ export interface Case {
   threadsImage: string; // the X-ray for the Threads challenge
   igSlides: string[]; // ordered carousel images, e.g. ["question.png","answer.png","cta.png"]
 
+  diagnosticContext?: {
+    certainty: 'illustrative' | 'imaging-supported' | 'confirmed';
+    confirmationEvidence: string[];
+    acceptedDifferentials: string[];
+  };
+  generation?: { model: string; generatedAt: string };
+
   // --- scheduling ---
   postAt: string; // ISO datetime to publish the challenge
   cta?: CtaKey; // which CTA to use under the pinned answer (rotates if absent)
@@ -43,6 +50,8 @@ export interface Case {
   // --- review gate ---
   /** A generated case must be approved before the publisher will post it (unless config.autoApprove). */
   approved?: boolean;
+  /** Owner retired: cannot be queued or cleared by automatic QA. */
+  retired?: boolean;
   /** "manual" = user-made images; "generated" = produced by the auto-generator. */
   source?: "manual" | "generated";
   /** The source Condition, kept on the case so the slides can be re-rendered after
@@ -65,6 +74,9 @@ export interface Case {
     verifiedAt: string;
     model: string;
     verifierVersion: string;
+    blindRead?: { findings: string[]; differential: string[]; anatomyConcerns: string[] };
+    singleAnswerSupported?: boolean;
+    diagnosticReason?: string;
     ok: boolean;
     defects: string[];
     observations?: { expected: string; observed: string; assessable: boolean; matches: boolean }[];

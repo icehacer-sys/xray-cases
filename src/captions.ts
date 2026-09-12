@@ -79,7 +79,7 @@ export function generateThreadsCaption(c: Case): string {
   return [
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
-    `And ${hook}.`,
+    `${hook.charAt(0).toUpperCase() + hook.slice(1)}.`,
     CHALLENGE_LABEL_LINE,
     DIAGNOSIS_PREFIX,
     `${GUESSES_PREFIX} 👀`,

@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-18T19:00:00.000Z",
-  "approved": true,
+  "approved": false,
   "source": "generated",
   "condition": {
     "diagnosis": "Duodenal atresia",
@@ -65,8 +65,11 @@
     "igCaption": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
   },
-  "needsReview": false,
-  "verifyDefects": [],
+  "needsReview": true,
+  "verifyDefects": [
+    "Final review in progress",
+    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym5Grb2jffTaX7ChdU3\"}"
+  ],
   "imageApproval": {
     "sha256": "70f59f1635a02b7a33442a03cdfd83d4dc4a478d1777cf7f13e2954f454850f3",
     "conditionSha256": "2e2a9bd45921b353b592cf6d25434d764cc36f11dd0779fd6ca4e9899d9a7b22",
@@ -95,10 +98,5 @@
         "matches": true
       }
     ]
-  },
-  "contentReview": {
-    "sha256": "a819dbceda47833fb6bdcb7f73e7b1e064cfd07d6e9ffaa391d465aa3bbe3ce1",
-    "reviewedAt": "2026-09-10T19:42:42.178Z",
-    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-15T19:00:00.000Z",
-  "approved": true,
+  "approved": false,
   "source": "generated",
   "condition": {
     "diagnosis": "Dracunculiasis",
@@ -67,8 +67,11 @@
     "igCaption": "",
     "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
   },
-  "needsReview": false,
-  "verifyDefects": [],
+  "needsReview": true,
+  "verifyDefects": [
+    "Final review in progress",
+    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym464RgccpHLhzKf9zq\"}"
+  ],
   "imageApproval": {
     "sha256": "b36250cb9f6a54d2481226e3c64f2d5f6d1e2bcf63b3b0fa249e5c896de01f74",
     "conditionSha256": "5e678d023785ad741c271e67ed445d48195a41743690efd7e574a5ef91bacd18",
@@ -97,10 +100,5 @@
         "matches": true
       }
     ]
-  },
-  "contentReview": {
-    "sha256": "bc58b08d209831cd047f2050dfb25694773ae891874394adfa013c590323465a",
-    "reviewedAt": "2026-09-10T19:42:42.156Z",
-    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

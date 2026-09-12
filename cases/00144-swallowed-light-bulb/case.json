@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-12T19:00:00.000Z",
-  "approved": true,
+  "approved": false,
   "source": "generated",
   "condition": {
     "diagnosis": "Swallowed light bulb",
@@ -64,8 +64,10 @@
     "igCaption": "",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
   },
-  "needsReview": false,
-  "verifyDefects": [],
+  "needsReview": true,
+  "verifyDefects": [
+    "Owner retired this case on 2026-09-12. Do not reschedule or regenerate."
+  ],
   "imageApproval": {
     "sha256": "82d6eb69987f7c659c2e8aa91c0e36e4a682534cf6fb87288e9c8ebbd95bdb12",
     "conditionSha256": "44b64141fe2912daf105caa4c31cc48351ac8e810c9a25d4b0b24f1c052bfad8",
@@ -93,5 +95,6 @@
     "sha256": "fcba224552149e0e82c579a37c7f663627faed61ab7ebd804fabe84cfdd74204",
     "reviewedAt": "2026-09-10T19:42:42.136Z",
     "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
-  }
+  },
+  "retired": true
 }

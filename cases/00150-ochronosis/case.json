@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-17T19:00:00.000Z",
-  "approved": true,
+  "approved": false,
   "source": "generated",
   "condition": {
     "diagnosis": "Ochronosis",
@@ -66,8 +66,11 @@
     "igCaption": "",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
   },
-  "needsReview": false,
-  "verifyDefects": [],
+  "needsReview": true,
+  "verifyDefects": [
+    "Final review in progress",
+    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym5A6Y8EUDed3WEXQc3\"}"
+  ],
   "imageApproval": {
     "sha256": "d59b532e29df3b439a4deea539c6c75b3be250b8a457d157cd3c3ca050d94974",
     "conditionSha256": "65fc77fda002844ee9b4cc0cf15f762ce2883fcc9a3a9a2e14174bda6e0a0730",
@@ -90,10 +93,5 @@
         "matches": true
       }
     ]
-  },
-  "contentReview": {
-    "sha256": "2d8d8ac4f6b832cc1ff2bfd8de6cea924c3efb9995239b6e56fbcd5cb7cde947",
-    "reviewedAt": "2026-09-10T19:42:42.169Z",
-    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

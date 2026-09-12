@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-19T19:00:00.000Z",
-  "approved": true,
+  "approved": false,
   "source": "generated",
   "condition": {
     "diagnosis": "Diffuse idiopathic skeletal hyperostosis",
@@ -67,8 +67,11 @@
     "threadsCaptionAlt": "",
     "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
   },
-  "needsReview": false,
-  "verifyDefects": [],
+  "needsReview": true,
+  "verifyDefects": [
+    "Final review in progress",
+    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym5QS12GZGcYLwZ7iXX\"}"
+  ],
   "imageApproval": {
     "sha256": "e892d904d2fa3ea31e9a97dd3594e9771a55f9ffc4cb043f0921fa6a87c1201e",
     "conditionSha256": "36c50188e188d1a64a78553e539f268480582a4da9a655bf0da05be01b294ce9",
@@ -97,10 +100,5 @@
         "matches": true
       }
     ]
-  },
-  "contentReview": {
-    "sha256": "d6bd8f7170080a6ca91addd46da60fdb089902e6f42c7157ade1fbdb0684803d",
-    "reviewedAt": "2026-09-10T19:42:42.188Z",
-    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
   }
 }

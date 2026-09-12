@@ -18,7 +18,7 @@ assert.equal(localSlot("2026-12-10").toISOString(), "2026-12-10T20:00:00.000Z");
 assert.equal(nightKey(new Date("2026-09-10T23:30:00Z")), "2026-09-10");
 assert.equal(nextSlot(localSlot("2026-12-10")).toISOString(), "2026-12-11T20:00:00.000Z");
 const cond: any = { diagnosis: "Fixture condition", keyFindings: "two coherent structures", view: "PA wrist", requiredObservations: ["two structures"] };
-const verdict = parseXrayVerdict(JSON.stringify({ plausible: true, correctBodyPart: true, depictsDiagnosis: true, severity: "pass", defects: [], observations: [{ expected: "two structures", observed: "two structures", assessable: true, matches: true }] }), cond);
+const verdict = parseXrayVerdict(JSON.stringify({ unexplainedFindings: [], singleAnswerSupported: true, diagnosticReason: 'Distinct fixture finding', plausible: true, correctBodyPart: true, depictsDiagnosis: true, severity: "pass", defects: [], observations: [{ expected: "two structures", observed: "two structures", assessable: true, matches: true }] }), cond);
 assert.equal(verdict.ok, true);
 assert.equal(parseXrayVerdict(JSON.stringify({ ...JSON.parse(verdict.raw), observations: [] }), cond).ok, false);
 const png = Buffer.from("test");

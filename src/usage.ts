@@ -1,7 +1,7 @@
 import { appendFileSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 /** Separate operating meter. Never records prompts, images, credentials or response text. */
-export function recordUsage(stage: "image" | "slide" | "image-qa" | "copy-qa" | "caption", model: string, usage: unknown): void {
+export function recordUsage(stage: "image" | "slide" | "image-qa" | "copy-qa" | "caption" | "qa-preflight", model: string, usage: unknown): void {
   if (process.env.BOT_USAGE_LOG === "off") return;
   const file = resolve(process.env.BOT_USAGE_LOG ?? "data/usage.jsonl");
   const input = usage && typeof usage === "object" ? usage as Record<string, unknown> : {};

@@ -34,7 +34,7 @@ import {
 import { generateXray } from "./openai.js";
 import { buildXrayPrompt, AGE_BANDS } from "./anatomy.js";
 import { generateSlides } from "./slidegen.js";
-import { verifyXray, type XrayVerdict } from "./verify.js";
+import { verifyXray, assertQaAvailable, fatalQaError, type XrayVerdict } from "./verify.js";
 import { imageApproval } from "./image-approval.js";
 import { censorUntilClean } from "./censor.js";
 import type { AgeBand, Case, Condition } from "./types.js";
@@ -287,6 +287,8 @@ function buildCase(cond: Condition, folder: string, number: number, postAt: Date
     postAt: postAt.toISOString(),
     approved: false,
     source: "generated",
+    diagnosticContext: { certainty: 'illustrative', confirmationEvidence: [], acceptedDifferentials: [] },
+    generation: { model: config.imageModel, generatedAt: new Date().toISOString() },
     condition: cond, // kept so `npm run render` can rebuild slides after a manual X-ray swap
   };
 }
@@ -450,6 +452,7 @@ async function main(): Promise<void> {
     }
   }
 
+  if (!cli.mock && target > 0) await assertQaAvailable();
   const results: GenResult[] = [];
   let failures = 0;
   const attempted = new Set<string>();
@@ -463,7 +466,7 @@ async function main(): Promise<void> {
       ? conditions.find(
           (c) =>
             c.diagnosis.toLowerCase() === cli.diagnosis!.toLowerCase() &&
-            !attempted.has(c.diagnosis) && c.used !== true &&
+            !attempted.has(c.diagnosis) && c.used !== true && c.skipPublic !== true &&
             !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
         )
       : conditions.find(
@@ -517,6 +520,7 @@ async function main(): Promise<void> {
         try { rmSync(dir, { recursive: true, force: true }); } catch { /* best effort */ }
       }
       log(`  ✗ ${cond.diagnosis} failed (condition released, will retry next run): ${err instanceof Error ? err.message : String(err)}`);
+      if (fatalQaError(err)) throw err;
       continue;
     }
     results.push(result);

@@ -81,6 +81,8 @@ if (mode === "xray") {
   // afterward with `grid` + `blurbox`).
   const png = await generateXray(prompt);
   writeFileSync(join(dir, c.threadsImage), png);
+  c.generation = { model: config.imageModel, generatedAt: new Date().toISOString() };
+  saveCase(c);
   console.log(`regenerated CLEAN xray.png for ${folder} (${cond.diagnosis}) — grid + blurbox the genitals before posting`);
 } else if (mode === "slides") {
   invalidateImage(c);

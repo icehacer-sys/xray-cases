@@ -1,0 +1,132 @@
+{
+  "folder": "00152-luxatio-erecta",
+  "number": 152,
+  "diagnosis": "Luxatio erecta",
+  "aliases": [
+    "inferior glenohumeral dislocation",
+    "inferior shoulder dislocation"
+  ],
+  "symptom": "severe shoulder pain and an arm stuck overhead after a fall",
+  "hook": "the ball of the shoulder was sitting below its socket",
+  "whatYouSee": "The ball of the shoulder sits underneath its socket instead of inside it and the arm bone points up past the head.",
+  "whyItMatters": "This injury can damage nearby nerves and blood vessels.",
+  "treatment": "Prompt reduction by a trained clinician follows neurovascular assessment. Pulses and nerve function are checked again afterwards.",
+  "takeaway": "An arm locked overhead with the humeral head under the socket is luxatio erecta.",
+  "igOptions": [
+    "A. Anterior dislocation",
+    "B. Luxatio erecta",
+    "C. Fractured clavicle"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-12T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:08:30.707Z"
+  },
+  "condition": {
+    "diagnosis": "Luxatio erecta",
+    "aliases": [
+      "inferior glenohumeral dislocation",
+      "inferior shoulder dislocation"
+    ],
+    "symptom": "severe shoulder pain and an arm stuck overhead after a fall",
+    "hook": "the ball of the shoulder was sitting below its socket",
+    "view": "AP shoulder with the arm in the presenting raised position",
+    "ageBand": "young-adult",
+    "anatomyException": "The humeral head legitimately sits BELOW the glenoid rather than within it and the shaft points upward alongside the head. This dislocated position IS the diagnosis. The scapula and clavicle counts stay normal.",
+    "keyFindings": "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
+    "whatYouSee": "The ball of the shoulder sits underneath its socket instead of inside it and the arm bone points up past the head.",
+    "whyItMatters": "This injury can damage nearby nerves and blood vessels.",
+    "treatment": "Prompt reduction by a trained clinician follows neurovascular assessment. Pulses and nerve function are checked again afterwards.",
+    "takeaway": "An arm locked overhead with the humeral head under the socket is luxatio erecta.",
+    "igTitle": "THE ARM THAT WOULD NOT COME DOWN",
+    "igOptions": [
+      "Anterior dislocation",
+      "Luxatio erecta",
+      "Fractured clavicle"
+    ],
+    "igCorrect": "B",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/35054147/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10426465/"
+    ],
+    "reviewedAt": "2026-09-12",
+    "requiredObservations": [
+      "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
+      "The visible anatomy matches the requested AP shoulder with the arm in the presenting raised position and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Does this arm look stuck in a weird position?",
+  "seedHint": "Look at the relationship between the joint surfaces.",
+  "generated": {
+    "threadsCaption": "A patient came in with severe shoulder pain and an arm stuck overhead after a fall.\n\nThen the X-ray loaded 😭\n\nThe ball of the shoulder was sitting below its socket.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Luxatio erecta\n\n👀 What you see:\nThe ball of the shoulder sits underneath its socket instead of inside it and the arm bone points up past the head.\n\n🦴 Why it matters:\nThis injury can damage nearby nerves and blood vessels.\n\n💊 Treatment:\nPrompt reduction by a trained clinician follows neurovascular assessment. Pulses and nerve function are checked again afterwards.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "imageApproval": {
+    "sha256": "24fadce759e6ba0886ad30e3bc5428ed01b0a684ccf92c172b53fbfffb03a27f",
+    "conditionSha256": "8926f60cf891fff38af3d756d4ba455eaff918380be2d94e8de79b5ba3ab56a5",
+    "verifiedAt": "2026-09-12T15:08:30.707Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
+        "observed": "The humeral head is displaced inferiorly and sits below the glenoid fossa; the humeral shaft angles superiorly alongside the inferiorly displaced head, and the elbow is visible at the upper right margin of the image, positioned above the level of the shoulder joint — consistent with luxatio erecta positioning.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested AP shoulder with the arm in the presenting raised position and the declared age and anatomical exceptions.",
+        "observed": "The image is an AP projection of the left shoulder with the arm abducted and raised, capturing the clavicle, scapula, proximal humerus, portions of the ribs, and the elbow at the periphery. Skeletal maturity is consistent with an adult in the 19–39 age range. The humeral head displacement below the glenoid matches the declared exception for luxatio erecta.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) projection of the left shoulder and proximal humerus with the arm abducted and externally rotated, capturing portions of the clavicle, scapula, proximal ribs, and distal humerus/elbow region at the image periphery",
+        "The humeral head is displaced inferiorly and medially relative to the glenoid fossa; the humeral head appears to lie below and medial to the glenoid, consistent with subglenoid or subcoracoid position",
+        "The glenohumeral joint space is markedly widened and the humeral head is not seated within the glenoid",
+        "The acromion, coracoid process, and clavicle appear intact without obvious fracture",
+        "No definite Hill-Sachs deformity is clearly identified on this view, though the positioning limits full assessment",
+        "No obvious acute fracture of the proximal humerus is identified, though the greater tuberosity requires careful scrutiny",
+        "Partial visualization of the distal humerus/elbow at the image margin shows no gross abnormality",
+        "Ribs are visible on the left with no obvious fracture"
+      ],
+      "differential": [
+        "Anterior glenohumeral dislocation (subcoracoid or subglenoid type) — most likely given inferior and medial displacement of the humeral head relative to the glenoid",
+        "Inferior glenohumeral dislocation (luxatio erecta) — considered given the degree of inferior humeral head displacement, though arm positioning is not the classic overhead position",
+        "Posterior glenohumeral dislocation — less likely as the humeral head appears displaced anteriorly and inferiorly rather than posteriorly, but oblique projection could be misleading"
+      ],
+      "anatomyConcerns": [
+        "The arm is significantly abducted during image acquisition, which may distort the apparent relationship of the humeral head to the glenoid and should be correlated with additional views (e.g., axillary or scapular Y view) for definitive characterization",
+        "Partial field of view excludes the full clavicle laterally and limits assessment of acromioclavicular joint",
+        "Rotation of the patient may introduce obliquity that partially obscures true glenohumeral alignment"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The arm is held in marked abduction with the elbow elevated above the level of the shoulder, and the humeral head is displaced inferiorly, sitting below the glenoid fossa rather than within it — the shaft angles upward alongside the inferiorly displaced head. This configuration is the hallmark of luxatio erecta (inferior glenohumeral dislocation). The independent differential listed anterior dislocation as most likely but also identified inferior dislocation as a consideration; the classic arm-raised posture with subglenoid head position distinguishes luxatio erecta. One clavicle and one scapula are visible on the left side. No Hill-Sachs deformity or tuberosity fracture is definitively seen. Ribs are present and plausible in number for the field of view. Skeletal maturity is appropriate for an adult aged 19–39. No lettering or markers present."
+  },
+  "contentReview": {
+    "sha256": "fcd79bae157b59e9c11638a1c043638390a6c045596ef993724377f98596a8dd",
+    "reviewedAt": "2026-09-12T15:10:28.796Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

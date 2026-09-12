@@ -1,7 +1,7 @@
 // No publishing endpoints. --review bills image/copy QA and saves approvals or explicit holds.
 import { loadCases, saveCase } from "../src/cases.js";
 import { State } from "../src/state.js";
-import { verifyXray } from "../src/verify.js";
+import { verifyXray, fatalQaError } from "../src/verify.js";
 import { imageApproval, finalImage } from "../src/image-approval.js";
 import { readinessProblem, reviewContent } from "../src/readiness.js";
 const state = new State();
@@ -10,6 +10,10 @@ const only = process.argv.find(a => a.startsWith("--case="))?.slice(7);
 let held = 0;
 for (const c of loadCases()) {
   if (state.getStages(c.folder).challengePostedAt || c.stages?.challengePostedAt || (only && c.folder !== only)) continue;
+  if (c.retired) { console.log(JSON.stringify({ case: c.folder, retired: true })); continue; }
+  if (review && process.argv.includes('--stale-only') && !readinessProblem(c)) {
+    console.log(JSON.stringify({ case: c.folder, ready: true, alreadyCurrent: true })); continue;
+  }
   if (review) {
     c.approved = false; c.needsReview = true; delete c.contentReview;
     c.verifyDefects = ["Final review in progress"]; saveCase(c);
@@ -22,7 +26,14 @@ for (const c of loadCases()) {
       await reviewContent(c);
       if (!verdict.ok) throw new Error(verdict.defects.join("; "));
       c.needsReview = false; c.approved = true; c.verifyDefects = [];
-    } catch (err) { c.verifyDefects = [...new Set([...(c.verifyDefects ?? []), String(err)])]; }
+    } catch (err) {
+      c.verifyDefects = [...new Set([...(c.verifyDefects ?? []), String(err)])];
+      if (fatalQaError(err)) {
+        saveCase(c); held++;
+        console.error('QA account unavailable; stopping the batch before more API calls. ' + String(err));
+        break;
+      }
+    }
     saveCase(c);
   }
   const problem = readinessProblem(c);

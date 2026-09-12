@@ -979,7 +979,8 @@
       "Foreign bead"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Swallowed coins",
@@ -1035,7 +1036,8 @@
     "requiredObservations": [
       "One intact bulb-shaped object with a rounded glass envelope and attached threaded metal base projects in the left upper abdomen.",
       "The visible ribs and upper abdominal anatomy are coherent."
-    ]
+    ],
+    "skipPublic": true
   },
   {
     "diagnosis": "Swallowed safety pin",
@@ -1452,7 +1454,8 @@
       "Abscess"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Calcified meningioma",
@@ -1600,7 +1603,8 @@
       "A piece of broken tooth that migrated"
     ],
     "igCorrect": "B",
-    "used": true
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Swallowed spoon",
@@ -2881,14 +2885,14 @@
       "inferior glenohumeral dislocation",
       "inferior shoulder dislocation"
     ],
-    "symptom": "an arm locked straight up above the head after a fall that the patient could not bring down",
-    "hook": "the arm was stuck pointing at the ceiling and would not come down at all",
+    "symptom": "severe shoulder pain and an arm stuck overhead after a fall",
+    "hook": "the ball of the shoulder was sitting below its socket",
     "view": "AP shoulder with the arm in the presenting raised position",
     "ageBand": "young-adult",
     "anatomyException": "The humeral head legitimately sits BELOW the glenoid rather than within it and the shaft points upward alongside the head. This dislocated position IS the diagnosis. The scapula and clavicle counts stay normal.",
     "keyFindings": "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
     "whatYouSee": "The ball of the shoulder sits underneath its socket instead of inside it and the arm bone points up past the head.",
-    "whyItMatters": "The arm is forced overhead and levers the head out downward and it can tear the nerves and vessels running under the shoulder.",
+    "whyItMatters": "This injury can damage nearby nerves and blood vessels.",
     "treatment": "Prompt reduction by a trained clinician follows neurovascular assessment. Pulses and nerve function are checked again afterwards.",
     "takeaway": "An arm locked overhead with the humeral head under the socket is luxatio erecta.",
     "igTitle": "THE ARM THAT WOULD NOT COME DOWN",
@@ -2899,13 +2903,15 @@
     ],
     "igCorrect": "B",
     "sources": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8779502/"
+      "https://pubmed.ncbi.nlm.nih.gov/35054147/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10426465/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "the humeral head displaced directly below the glenoid with the humeral shaft angled upward beside the head and the elbow above the shoulder",
       "The visible anatomy matches the requested AP shoulder with the arm in the presenting raised position and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Congenital humeroradial synostosis",

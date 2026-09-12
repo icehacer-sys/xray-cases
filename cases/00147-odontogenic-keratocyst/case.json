@@ -104,5 +104,14 @@
     "answerCommentId": "18123020227894693",
     "answerPostedAt": "2026-09-11T19:22:55.416Z",
     "ctaPostedAt": "2026-09-11T20:18:37.565Z"
+  },
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "ameloblastoma",
+      "multicystic ameloblastoma",
+      "dentigerous cyst"
+    ]
   }
 }

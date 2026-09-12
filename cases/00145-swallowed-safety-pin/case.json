@@ -19,7 +19,7 @@
   ],
   "threadsImage": "xray.png",
   "igSlides": [],
-  "postAt": "2026-09-14T19:00:00.000Z",
+  "postAt": "2026-09-13T19:00:00.000Z",
   "approved": true,
   "source": "generated",
   "condition": {
@@ -68,30 +68,54 @@
   "verifyDefects": [],
   "imageApproval": {
     "sha256": "55a3892f2ee49a7dd81515829c8876c8fd26d6a25e138b5d510f28d464962605",
-    "conditionSha256": "aba4aa41f9fd5212f6f78ac0448fcc071cd4a06e7ea00ebffb632635e791a1a8",
-    "verifiedAt": "2026-09-10T17:37:29.823Z",
+    "conditionSha256": "05b2a2464ecb175c2f3591593c1e40b3b727dab6b01b0948ac4134f069e08804",
+    "verifiedAt": "2026-09-12T15:11:30.072Z",
     "model": "claude-sonnet-4-6",
-    "verifierVersion": "3",
+    "verifierVersion": "4",
     "ok": true,
     "defects": [],
     "observations": [
       {
         "expected": "One open safety pin with a spring coil, connected frame and free sharp point projects at the thoracic inlet.",
-        "observed": "A single open safety pin is visible at the thoracic inlet/lower neck region. The spring coil head, connected frame/bow, and free sharp point are all identifiable as a coherent open safety pin configuration.",
+        "observed": "A single metallic foreign body with the characteristic morphology of an open safety pin is visible in the midline cervical/thoracic inlet region. The spring coil is visible superiorly, the connected frame extends inferiorly, and the free sharp point is directed inferiorly. The pin is open. All components are present and coherent.",
         "assessable": true,
         "matches": true
       },
       {
         "expected": "The visible chest and neck anatomy is coherent for an infant.",
-        "observed": "Infant skeletal maturity is confirmed with immature ossification, unossified epiphyses, and appropriate bone proportions. The ribcage appears symmetric with matched rib pairs bilaterally, one cardiac shadow centrally, bilateral clavicles and scapulae each present once, and lung markings that branch and taper appropriately. The cervical and mandibular anatomy appears coherent for an infant. No duplicated, floating, or garbled structures are identified.",
+        "observed": "The chest and neck anatomy is consistent with an infant: multiple unfused epiphyses, immature ossification centres, symmetrical rib pairs bilaterally without forking or duplication, one clavicle and one scapula per side, symmetrically aerated lung fields with branching vascular markings, a single cardiac shadow, and soft tissue proportions appropriate for early pediatric age. No duplicated, extra, or garbled bony structures are identified.",
         "assessable": true,
         "matches": true
       }
-    ]
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) projection radiograph encompassing the skull, face, neck, chest, and upper abdomen of a small child with immature skeletal development and multiple unfused epiphyses consistent with early pediatric age",
+        "A metallic radiopaque foreign body with the characteristic morphology of an open safety pin is identified in the midline cervical region at approximately the level of C4-C6, projecting over the upper tracheal/esophageal region; the pin clasp is open and the point is directed inferiorly",
+        "The safety pin appears to lie in the soft tissues of the neck or upper esophagus/trachea; no obvious pneumomediastinum or pneumothorax is identified on this projection",
+        "Lung fields appear symmetrically aerated bilaterally without lobar collapse, consolidation, or pleural effusion",
+        "Cardiac silhouette is within normal size for age",
+        "Ribs, clavicles, and visible long bones show no obvious fracture or destructive lesion",
+        "Thymus is not clearly delineated but the superior mediastinum does not appear widened",
+        "Soft tissue swelling of the neck is not clearly assessable on this projection"
+      ],
+      "differential": [
+        "Ingested open safety pin lodged in the cervical esophagus (most common site of esophageal foreign body impaction in children)",
+        "Aspirated open safety pin within the larynx or upper trachea",
+        "Safety pin retained in the soft tissues of the neck (external or subcutaneous location)"
+      ],
+      "anatomyConcerns": [
+        "The field of view is very wide, including both skull and upper abdomen in a single AP projection, which may result in suboptimal exposure and geometric distortion at the extremes of the image",
+        "Rotation appears minimal; clavicular heads are approximately symmetric relative to the midline spinous processes",
+        "No lateral projection is provided, limiting precise depth localisation of the foreign body (esophageal vs tracheal vs soft tissue) to a single plane"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A single open safety pin with visible spring coil, connected frame, and free sharp point is identified projecting over the cervical midline at the thoracic inlet level. The morphology is unambiguous and distinguishes an ingested/inhaled metallic safety pin from other foreign bodies. No lateral view is available to confirm depth (esophageal vs tracheal vs soft tissue), but the most common clinical scenario for a swallowed safety pin in an infant is esophageal impaction at the thoracic inlet, which this image is consistent with. The independent differential appropriately lists this as the leading diagnosis."
   },
   "contentReview": {
-    "sha256": "4fc48082f6a15acc5be42b90047f10220f14060474cf75e5eef1650a6317b58c",
-    "reviewedAt": "2026-09-10T19:42:42.150Z",
-    "reviewer": "Owner-approved editorial disclosure removal; prior review: claude-sonnet-4-6"
+    "sha256": "374afbf070fe3019c37a39a23ae7c7de5c16ed21fef9ad6ab51a65a970c338cd",
+    "reviewedAt": "2026-09-12T15:11:32.969Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

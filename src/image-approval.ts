@@ -8,7 +8,7 @@ import { saveCase } from "./cases.js";
 import { verifyXray, type XrayVerdict } from "./verify.js";
 import type { Case, Condition } from "./types.js";
 
-const VERSION = "3";
+const VERSION = "4";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const hash = (input: Buffer | string) => createHash("sha256").update(input).digest("hex");
 export const diagnosticHash = (condition: Condition) => hash(JSON.stringify([buildXrayPrompt(condition), condition.requiredObservations ?? [condition.keyFindings]]));
@@ -23,6 +23,7 @@ export function imageApproval(png: Buffer, condition: Condition, verdict: XrayVe
     verifiedAt: new Date().toISOString(), model: config.xrayVerifyModel,
     verifierVersion: VERSION, ok: verdict.ok, defects: verdict.defects,
     observations: verdict.observations,
+    blindRead: verdict.blindRead, singleAnswerSupported: verdict.singleAnswerSupported, diagnosticReason: verdict.diagnosticReason,
   };
 }
 
@@ -34,6 +35,7 @@ export function imageApprovalProblem(c: Case, png: Buffer): string | null {
   if (a.sha256 !== hash(png)) return "image changed after verification";
   if (a.conditionSha256 !== diagnosticHash(c.condition)) return "diagnostic image inputs changed after verification";
   if (a.verifierVersion !== VERSION) return "image verifier version is stale";
+  if (a.singleAnswerSupported !== true || !a.diagnosticReason?.trim()) return "missing independent diagnostic assessment";
   if (a.ok !== true) return "final image failed verification";
   return null;
 }

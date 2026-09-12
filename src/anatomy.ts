@@ -447,6 +447,7 @@ export function buildXrayPrompt(
     'Anatomy constraints apply ONLY to structures visible in this field and projection. Do not add off-frame anatomy to satisfy a count. Normal superimposition is allowed; duplicated or melted anatomy is not.',
     ...ageLines(cond, 'prompt'), ...regionPromptLines(cond.view), ...deviceLines(cond, 'prompt'),
     ...ACQUISITION_REALISM.prompt,
+    'Use coherent radiographic attenuation and projection geometry throughout. Avoid diagram-like contours, uniformly etched trabeculae, polished teeth or bones, artificial sharpening and decorative noise. Preserve clinical acquisition fidelity rather than cosmetic perfection.',
     'Keep the diagnostic finding assessable. No labels, lettering, lead markers, arrows, hospital branding or watermarks.',
     'The stated pathology takes precedence over generic normal-anatomy constraints.',
     ...exceptionLines(cond.anatomyException, 'prompt'),
