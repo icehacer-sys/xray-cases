@@ -154,5 +154,83 @@
       "reposts": 14,
       "quotes": 2
     }
+  },
+  {
+    "folder": "00143-coin-in-the-oesophagus",
+    "postId": "18103023326210157",
+    "measuredAt": "2026-09-12T21:04:00.130Z",
+    "publishedAt": "2026-09-10T19:31:36.434Z",
+    "ageHours": 49.53991555555555,
+    "experiment": {
+      "id": "case-00143-coin-in-the-oesophagus",
+      "assignedAt": "2026-09-10T19:31:22.790Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-10T21:01:36.434Z",
+    "ctaDueAt": "2026-09-10T21:56:36.434Z",
+    "metrics": {
+      "views": 25725,
+      "likes": 174,
+      "replies": 343,
+      "reposts": 0,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00147-odontogenic-keratocyst",
+    "postId": "18114371644992668",
+    "measuredAt": "2026-09-12T21:04:00.418Z",
+    "publishedAt": "2026-09-11T19:02:34.963Z",
+    "ageHours": 26.0237375,
+    "experiment": {
+      "id": "case-00147-odontogenic-keratocyst",
+      "assignedAt": "2026-09-11T19:02:22.742Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with painless jaw swelling.\n\nThen the X-ray loaded 😭\n\nAnd a large dark cavity occupied the back of the lower jaw.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-11T19:22:34.963Z",
+    "ctaDueAt": "2026-09-11T20:17:34.963Z",
+    "metrics": {
+      "views": 150955,
+      "likes": 455,
+      "replies": 213,
+      "reposts": 19,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00152-luxatio-erecta",
+    "postId": "18151028044531026",
+    "measuredAt": "2026-09-12T21:04:00.681Z",
+    "publishedAt": "2026-09-12T19:03:03.090Z",
+    "ageHours": 2.0159975,
+    "experiment": {
+      "id": "case-00152-luxatio-erecta",
+      "assignedAt": "2026-09-12T19:02:51.524Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with severe shoulder pain and an arm stuck overhead after a fall.\n\nThen the X-ray loaded 😭\n\nThe ball of the shoulder was sitting below its socket.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-12T20:33:03.090Z",
+    "ctaDueAt": "2026-09-12T21:28:03.090Z",
+    "metrics": {
+      "views": 2564,
+      "likes": 44,
+      "replies": 62,
+      "reposts": 0,
+      "quotes": 0
+    }
   }
 ]
