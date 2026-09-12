@@ -1124,7 +1124,7 @@
       "Old haematoma"
     ],
     "igCorrect": "A",
-    "used": false,
+    "used": true,
     "ageBand": "older",
     "sources": [
       "https://www.merckmanuals.com/professional/infectious-diseases/anaerobic-bacteria/clostridial-soft-tissue-infections"
@@ -1342,7 +1342,7 @@
       "Gallstones"
     ],
     "igCorrect": "B",
-    "used": false,
+    "used": true,
     "ageBand": "older",
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC2657713/"
@@ -1398,7 +1398,7 @@
       "Tumour"
     ],
     "igCorrect": "B",
-    "used": false,
+    "used": true,
     "ageBand": "young-adult",
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC4919757/",
@@ -1628,7 +1628,7 @@
       "A surgical clip"
     ],
     "igCorrect": "B",
-    "used": false,
+    "used": true,
     "ageBand": "young-adult",
     "sources": [
       "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions"
@@ -1661,7 +1661,7 @@
       "A stack of coins"
     ],
     "igCorrect": "A",
-    "used": false,
+    "used": true,
     "ageBand": "child",
     "sources": [
       "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions",

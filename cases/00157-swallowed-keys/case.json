@@ -1,0 +1,123 @@
+{
+  "folder": "00157-swallowed-keys",
+  "number": 157,
+  "diagnosis": "Swallowed keys",
+  "aliases": [
+    "ingested keys",
+    "key foreign body",
+    "swallowed a set of keys"
+  ],
+  "symptom": "a swallowed handful of metal after a bet and now a strange dragging weight low in the chest",
+  "hook": "several toothed metal objects shared one ring high in the abdomen",
+  "whatYouSee": "Several metal keys on a ring project over the expected stomach region.",
+  "whyItMatters": "An irregular cluster can lodge or injure the gut. A frontal image alone cannot establish its exact depth.",
+  "treatment": "Urgent specialist assessment determines retrieval. Endoscopy may be possible; complications can require surgery.",
+  "takeaway": "Irregular swallowed objects need assessment based on shape, symptoms and location.",
+  "igOptions": [
+    "A. A swallowed set of keys",
+    "B. Gallstones",
+    "C. A stack of coins"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-24T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:51:40.744Z"
+  },
+  "condition": {
+    "diagnosis": "Swallowed keys",
+    "aliases": [
+      "ingested keys",
+      "key foreign body",
+      "swallowed a set of keys"
+    ],
+    "symptom": "a swallowed handful of metal after a bet and now a strange dragging weight low in the chest",
+    "hook": "several toothed metal objects shared one ring high in the abdomen",
+    "view": "AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
+    "keyFindings": "a clustered set of metal keys joined on a ring outlined inside the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the individual key teeth visible",
+    "whatYouSee": "Several metal keys on a ring project over the expected stomach region.",
+    "whyItMatters": "An irregular cluster can lodge or injure the gut. A frontal image alone cannot establish its exact depth.",
+    "treatment": "Urgent specialist assessment determines retrieval. Endoscopy may be possible; complications can require surgery.",
+    "takeaway": "Irregular swallowed objects need assessment based on shape, symptoms and location.",
+    "igTitle": "THE KEYS",
+    "igOptions": [
+      "A swallowed set of keys",
+      "Gallstones",
+      "A stack of coins"
+    ],
+    "igCorrect": "A",
+    "used": true,
+    "ageBand": "child",
+    "sources": [
+      "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions",
+      "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a clustered set of metal keys joined on a ring outlined inside the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the individual key teeth visible",
+      "The visible anatomy matches the requested AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
+    ]
+  },
+  "imageApproval": {
+    "sha256": "da901b50eaeeb9626b6e5cc26c3a31087569f0e185247bfe5d8e77f2ef791031",
+    "conditionSha256": "cfb76645bc3362aa14fece33cd3b038d1cf9810672b4e13adadc3881dbf28e90",
+    "verifiedAt": "2026-09-12T15:51:40.746Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Pelvis and lower abdomen are visible in the image (iliac crests, pelvic brim, and femoral heads are included in the frame), whereas the expected view is cropped at the iliac crests with the pelvis and groin completely out of frame\",\"The bowel gas pattern shows numerous rounded disconnected gas collections rather than a continuous connected haustrated large bowel lumen — these floating gas blobs do not follow a coherent anatomical luminal course and are suspicious for AI artifact\",\"Skeletal maturity appears adult rather than child aged 3–11: vertebral body proportions, rib cage dimensions, and overall skeletal size are inconsistent with a young child; no open physes are discernible\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "AP projection plain radiograph of the abdomen and lower chest",
+        "Superimposed metallic foreign body in the left upper quadrant overlying the gastric shadow: a bunch of keys on a ring, appearing external to the patient or within the stomach lumen",
+        "Bilateral renal outlines visible and appear within normal size range",
+        "Lumbar vertebrae and lower thoracic vertebrae visible with maintained vertebral body heights and disc spaces",
+        "Large bowel gas pattern visible throughout the abdomen with haustra identified",
+        "No obvious pneumoperitoneum visible under the diaphragm",
+        "Liver and spleen silhouettes appear within normal limits",
+        "No obvious calcification in the renal tracts, aortic region, or gallbladder on this projection",
+        "Lower ribs intact bilaterally",
+        "Psoas shadow appears present bilaterally"
+      ],
+      "differential": [
+        "Ingested foreign body (bunch of keys within the gastric lumen) — most likely diagnosis given the intraluminal position projected over the gastric air bubble",
+        "External artifact — keys resting on the patient or table surface superimposed over the abdomen, not ingested",
+        "Incidental external contamination of the imaging field (keys placed on or near the patient during acquisition)"
+      ],
+      "anatomyConcerns": [
+        "The bunch of keys appears superimposed precisely over the gastric air bubble in the left upper quadrant; it is not possible from this single projection alone to determine with certainty whether the object is intraluminal or external without a lateral view or further imaging",
+        "No lateral projection provided to assess depth of the foreign body",
+        "Image appears otherwise technically adequate for an AP supine or erect abdomen radiograph"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Pelvis and lower abdomen are visible in the image (iliac crests, pelvic brim, and femoral heads are included in the frame), whereas the expected view is cropped at the iliac crests with the pelvis and groin completely out of frame\",\"The bowel gas pattern shows numerous rounded disconnected gas collections rather than a continuous connected haustrated large bowel lumen — these floating gas blobs do not follow a coherent anatomical luminal course and are suspicious for AI artifact\",\"Skeletal maturity appears adult rather than child aged 3–11: vertebral body proportions, rib cage dimensions, and overall skeletal size are inconsistent with a young child; no open physes are discernible\"]"
+  ],
+  "difficulty": 1,
+  "laypersonQuestion": "Would you ever take that bet?",
+  "seedHint": "Count the teeth on that cluster and ask yourself what holds them all together.",
+  "generated": {
+    "threadsCaption": "A patient came in with a swallowed handful of metal after a bet and now a strange dragging weight low in the chest.\n\nThen the X-ray loaded 😭\n\nSeveral toothed metal objects shared one ring high in the abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a strange dragging weight low in the chest after swallowing a handful of metal on a bet.\n\nThen the X-ray loaded 😭\n\nSeveral toothed metal objects shared one ring high in the abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Swallowed keys\n\n👀 What you see:\nSeveral metal keys on a ring project over the expected stomach region.\n\n🦴 Why it matters:\nAn irregular cluster can lodge or injure the gut. A frontal image alone cannot establish its exact depth.\n\n💊 Treatment:\nUrgent specialist assessment determines retrieval. Endoscopy may be possible; complications can require surgery.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "d98e843ce4af06030f84ca8a527e7efe9356e29520460e4817a08ebdb3275777",
+    "reviewedAt": "2026-09-12T15:51:47.157Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

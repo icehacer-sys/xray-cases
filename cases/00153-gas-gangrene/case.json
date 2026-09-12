@@ -1,0 +1,115 @@
+{
+  "folder": "00153-gas-gangrene",
+  "number": 153,
+  "diagnosis": "Gas gangrene",
+  "aliases": [
+    "clostridial myonecrosis"
+  ],
+  "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
+  "hook": "the muscles of the limb were full of spreading gas bubbles",
+  "whatYouSee": "Dark gas pockets track through swollen soft tissues of the lower leg.",
+  "whyItMatters": "With rapidly worsening pain and swelling, this raises concern for a life-threatening necrotizing infection. Gas alone is not diagnostic.",
+  "treatment": "Suspected necrotizing infection needs emergency surgical assessment, debridement and intravenous antibiotics.",
+  "takeaway": "Soft-tissue gas with rapidly progressive illness demands urgent assessment.",
+  "igOptions": [
+    "A. Gas gangrene",
+    "B. Fat necrosis",
+    "C. Old haematoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-20T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:44:26.110Z"
+  },
+  "condition": {
+    "diagnosis": "Gas gangrene",
+    "aliases": [
+      "clostridial myonecrosis"
+    ],
+    "symptom": "a rapidly swelling painful leg with a foul wound after an injury",
+    "hook": "the muscles of the limb were full of spreading gas bubbles",
+    "view": "AP radiograph of a lower leg one view filling the frame with no pelvis or groin",
+    "keyFindings": "multiple dark gas bubbles and streaks of gas tracking through the soft tissues and muscle planes of the limb giving a feathery bubbly pattern with the bone intact",
+    "whatYouSee": "Dark gas pockets track through swollen soft tissues of the lower leg.",
+    "whyItMatters": "With rapidly worsening pain and swelling, this raises concern for a life-threatening necrotizing infection. Gas alone is not diagnostic.",
+    "treatment": "Suspected necrotizing infection needs emergency surgical assessment, debridement and intravenous antibiotics.",
+    "takeaway": "Soft-tissue gas with rapidly progressive illness demands urgent assessment.",
+    "igTitle": "THE SPREADING WOUND",
+    "igOptions": [
+      "Gas gangrene",
+      "Fat necrosis",
+      "Old haematoma"
+    ],
+    "igCorrect": "A",
+    "used": true,
+    "ageBand": "older",
+    "sources": [
+      "https://www.merckmanuals.com/professional/infectious-diseases/anaerobic-bacteria/clostridial-soft-tissue-infections"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "multiple dark gas bubbles and streaks of gas tracking through the soft tissues and muscle planes of the limb giving a feathery bubbly pattern with the bone intact",
+      "The visible anatomy matches the requested AP radiograph of a lower leg one view filling the frame with no pelvis or groin and the declared age and anatomical exceptions."
+    ]
+  },
+  "imageApproval": {
+    "sha256": "296865cb8fb128a568b3dea1597b171c779c09c4a098170ed9491f1e7a2bc44b",
+    "conditionSha256": "c03031cd2392a5f74ea761bafb7776de4142b8eace31ac98a1137591a5d91cde",
+    "verifiedAt": "2026-09-12T15:44:26.111Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Extensive diffuse soft tissue calcifications in a stippled/popcorn pattern throughout the lower leg — not consistent with gas gangrene, which requires dark gas lucencies, not calcific densities\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) projection of the lower leg (tibia and fibula) with partial visualization of the knee joint superiorly and ankle mortise inferiorly",
+        "Extensive, diffuse, coarse heterotopic calcifications distributed throughout the soft tissues of the lower leg, appearing as multiple rounded and lobular radiodense foci in a stippled/popcorn-like pattern involving the muscle compartments",
+        "The soft tissue calcifications are bilateral in distribution within the leg and are extensive, spanning from the proximal to distal lower leg",
+        "Tibial and fibular cortices appear intact without discrete fracture line identified on this view",
+        "Bone density appears relatively preserved; no obvious aggressive periosteal reaction or cortical destruction identified",
+        "The calcifications are predominantly in the soft tissues rather than within the bone cortex or medullary canal",
+        "Knee joint space appears partially visualized at the superior margin; no obvious large joint effusion identified on this view"
+      ],
+      "differential": [
+        "Tumoral calcinosis (idiopathic or secondary, e.g., renal osteodystrophy/hyperphosphatemia) – extensive periarticular and soft tissue calcium deposits in a lobular/nodular pattern",
+        "Myositis ossificans progressiva (Fibrodysplasia ossificans progressiva) – progressive heterotopic ossification in soft tissues; however, classic FOP tends to show more sheet-like ossification rather than purely nodular calcification",
+        "Soft tissue chondromatosis or synovial chondromatosis with extraarticular extension / calcified soft tissue neoplasm (e.g., chondrosarcoma of soft tissue) – multiple calcified masses; less likely given diffuse bilateral distribution but included given extent of calcification"
+      ],
+      "anatomyConcerns": [
+        "Only a single projection (AP) is visible; a lateral view would be essential for complete characterization of the soft tissue calcifications and to assess for cortical abnormality",
+        "The proximal tibia and fibular head are partially cut off superiorly, limiting full assessment of the knee joint and proximal bone",
+        "The ankle and distal bones are partially included but incompletely imaged, limiting distal assessment"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Extensive diffuse soft tissue calcifications in a stippled/popcorn pattern throughout the lower leg — not consistent with gas gangrene, which requires dark gas lucencies, not calcific densities\"]"
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "What should not be inside a living muscle?",
+  "seedHint": "Look between the muscle layers and ask yourself if that belongs there or not.",
+  "generated": {
+    "threadsCaption": "A patient came in with a rapidly swelling painful leg with a foul wound after an injury.\n\nThen the X-ray loaded 😭\n\nThe muscles of the limb were full of spreading gas bubbles.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a sore swollen leg and a wound that had gotten a bit smelly after an injury.\n\nThen the X-ray loaded 😭\n\nThe muscles of the limb were full of spreading gas bubbles.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Gas gangrene\n\n👀 What you see:\nDark gas pockets track through swollen soft tissues of the lower leg.\n\n🦴 Why it matters:\nWith rapidly worsening pain and swelling, this raises concern for a life-threatening necrotizing infection. Gas alone is not diagnostic.\n\n💊 Treatment:\nSuspected necrotizing infection needs emergency surgical assessment, debridement and intravenous antibiotics.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "730e18c792940c0b0976e93486099daac93fd23ddb49fbe4ffb35a38c3cf55ef",
+    "reviewedAt": "2026-09-12T15:44:31.228Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

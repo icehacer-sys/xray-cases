@@ -1,0 +1,132 @@
+{
+  "folder": "00155-pulmonary-hydatid-cyst",
+  "number": 155,
+  "diagnosis": "Pulmonary hydatid cyst",
+  "aliases": [
+    "lung hydatid",
+    "echinococcus lung cyst",
+    "water lily sign"
+  ],
+  "symptom": "a dry nagging cough and a bit of breathlessness they blamed on being unfit",
+  "hook": "a large lung cavity held fluid with a folded membrane floating at its surface",
+  "whatYouSee": "A rounded lung cavity contains an air-fluid level and a floating folded membrane.",
+  "whyItMatters": "This pattern suggests a ruptured hydatid cyst. Rupture can cause allergic reactions and other serious complications.",
+  "treatment": "Specialist care often involves surgery. Antiparasitic treatment is tailored to the cyst and treatment plan.",
+  "takeaway": "A floating membrane within a lung cyst is a clue to hydatid disease.",
+  "igOptions": [
+    "A. Abscess",
+    "B. Pulmonary hydatid cyst",
+    "C. Tumour"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-22T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:47:59.859Z"
+  },
+  "condition": {
+    "diagnosis": "Pulmonary hydatid cyst",
+    "aliases": [
+      "lung hydatid",
+      "echinococcus lung cyst",
+      "water lily sign"
+    ],
+    "symptom": "a dry nagging cough and a bit of breathlessness they blamed on being unfit",
+    "hook": "a large lung cavity held fluid with a folded membrane floating at its surface",
+    "view": "PA chest radiograph showing the lung (one view, no pelvis or groin)",
+    "keyFindings": "a large round cyst in the lung with an air-fluid level and a crumpled floating membrane giving the water-lily sign",
+    "whatYouSee": "A rounded lung cavity contains an air-fluid level and a floating folded membrane.",
+    "whyItMatters": "This pattern suggests a ruptured hydatid cyst. Rupture can cause allergic reactions and other serious complications.",
+    "treatment": "Specialist care often involves surgery. Antiparasitic treatment is tailored to the cyst and treatment plan.",
+    "takeaway": "A floating membrane within a lung cyst is a clue to hydatid disease.",
+    "igTitle": "THE WATER LILY LUNG",
+    "igOptions": [
+      "Abscess",
+      "Pulmonary hydatid cyst",
+      "Tumour"
+    ],
+    "igCorrect": "B",
+    "used": true,
+    "ageBand": "young-adult",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4919757/",
+      "https://www.who.int/publications/i/item/9789240110472"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a large round cyst in the lung with an air-fluid level and a crumpled floating membrane giving the water-lily sign",
+      "The visible anatomy matches the requested PA chest radiograph showing the lung (one view, no pelvis or groin) and the declared age and anatomical exceptions."
+    ]
+  },
+  "imageApproval": {
+    "sha256": "77ceef92d207d24f7efe0a9969896d1c017845d931b2294b6c78af211f2019bc",
+    "conditionSha256": "b6d6ce2cb7c07e8152d5362381f036e7eb49e430fddfc75803b30677663ddbb0",
+    "verifiedAt": "2026-09-12T15:47:59.860Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "a large round cyst in the lung with an air-fluid level and a crumpled floating membrane giving the water-lily sign",
+        "observed": "A large well-defined thin-walled cavitary lesion is present in the right mid-lung zone, approximately 8-10 cm in diameter. An air-fluid level occupies the lower third of the cavity. Irregular crumpled soft-tissue material is visible floating superiorly within the cavity, consistent with a collapsed endocyst membrane — the water-lily sign. All three components (round cyst, air-fluid level, floating membrane) are present and assessable.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested PA chest radiograph showing the lung (one view, no pelvis or groin) and the declared age and anatomical exceptions.",
+        "observed": "The image is a PA chest radiograph showing bilateral lung fields, mediastinum, shoulder girdles, and upper abdomen. No pelvis or groin structures are visible. Skeletal maturity is appropriate for an adult aged 19-39: no visible growth plates, bones appear mature. Symmetric clavicles, scapulae, and ribs are present without duplication or garbling. One cardiac shadow is present. One hemidiaphragm per side is visible. Rib pairs appear symmetric and correctly numbered without forking or floating ribs. Lung markings branch and taper appropriately. No lettering or markers are present on the film.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph",
+        "Large well-defined thin-walled cavitary lesion in the right mid-lung zone, approximately 8-10 cm in diameter, with an air-fluid level occupying roughly the lower third of the cavity and irregular soft-tissue material visible superiorly within the cavity (possible intracavitary mass or debris)",
+        "The right lung otherwise shows increased interstitial markings around the cavity",
+        "Left lung field appears clear with normal vascular markings",
+        "Mediastinum appears midline; trachea is central",
+        "Cardiac silhouette is not clearly demarcated on the left due to apparent left lower lobe opacity or elevated left hemidiaphragm; a gastric bubble is visible beneath the left hemidiaphragm",
+        "Costophrenic angles: right appears blunted, left is partially obscured",
+        "Bony thorax: ribs, clavicles, and visible shoulder girdle structures appear intact without obvious lytic or blastic lesions",
+        "No visible pleural effusion on the right above the diaphragm; right hemidiaphragm is partially obscured by the cavity"
+      ],
+      "differential": [
+        "Pulmonary hydatid cyst (Echinococcus) with water-lily sign — the irregular floating membrane within the air-fluid-containing cavity is highly characteristic",
+        "Lung abscess — thick or thin walled cavity with air-fluid level, possible in pyogenic infection",
+        "Post-primary tuberculosis with cavitation — upper/mid lobe cavitary disease with air-fluid level, though the very large size and thin wall favor hydatid"
+      ],
+      "anatomyConcerns": [
+        "The left cardiac border is poorly defined, which may represent left lower lobe collapse/consolidation or could reflect patient rotation or suboptimal inspiration, though overall projection appears reasonably standard PA",
+        "The very large size of the cavitary lesion (occupying a substantial portion of the right hemithorax) compresses surrounding lung but does not appear to shift the mediastinum, which is anatomically plausible for a slow-growing cyst",
+        "Air-fluid level within a cavity of this size raises concern for rupture of a previously intact cyst; the floating membrane-like material is a real finding, not an artifact"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The large thin-walled cavitary lesion in the right mid-lung with an air-fluid level and the characteristic crumpled floating membrane visible superiorly within the cavity (water-lily sign) is the discriminating feature that strongly favors pulmonary hydatid cyst over lung abscess or TB cavity. The floating membrane is the key distinguishing finding not typical of abscess or TB. The left lower lobe opacity/elevated left hemidiaphragm is explainable by mass effect from the large cyst displacing structures. The cardiac border silhouette loss on the left is consistent with left lower lobe atelectasis secondary to compression. No unexplained additional lesions are present."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does that floating shape look natural to you?",
+  "seedHint": "Look at what is sitting on top of the fluid and ask yourself if that belongs there.",
+  "generated": {
+    "threadsCaption": "A patient came in with a dry nagging cough and a bit of breathlessness they blamed on being unfit.\n\nThen the X-ray loaded 😭\n\nA large lung cavity held fluid with a folded membrane floating at its surface.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a dry nagging cough and some breathlessness they had written off as being out of shape.\n\nThen the X-ray loaded 😭\n\nA large lung cavity held fluid with a folded membrane floating at its surface.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Pulmonary hydatid cyst\n\n👀 What you see:\nA rounded lung cavity contains an air-fluid level and a floating folded membrane.\n\n🦴 Why it matters:\nThis pattern suggests a ruptured hydatid cyst. Rupture can cause allergic reactions and other serious complications.\n\n💊 Treatment:\nSpecialist care often involves surgery. Antiparasitic treatment is tailored to the cyst and treatment plan.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "9b13035268287eefe203ecf1f70872a4b3b55c72ecddf9751e357242a512f1e0",
+    "reviewedAt": "2026-09-12T15:48:06.202Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

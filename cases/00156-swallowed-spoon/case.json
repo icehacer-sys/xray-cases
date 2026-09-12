@@ -1,0 +1,132 @@
+{
+  "folder": "00156-swallowed-spoon",
+  "number": 156,
+  "diagnosis": "Swallowed spoon",
+  "aliases": [
+    "ingested spoon",
+    "gastric spoon foreign body",
+    "swallowed a spoon"
+  ],
+  "symptom": "a swallowed object after a dare and a heavy dragging feeling in the gut but no real pain",
+  "hook": "a long metallic object with a rounded bowl and straight handle projected over the upper abdomen",
+  "whatYouSee": "A complete spoon-shaped metal object projects over the expected stomach region.",
+  "whyItMatters": "Long rigid objects can fail to pass the duodenum and can injure the gut wall.",
+  "treatment": "Endoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+  "takeaway": "Object size, shape and location guide foreign-body management.",
+  "igOptions": [
+    "A. A calcified mass",
+    "B. A swallowed spoon",
+    "C. A surgical clip"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-23T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:48:56.663Z"
+  },
+  "condition": {
+    "diagnosis": "Swallowed spoon",
+    "aliases": [
+      "ingested spoon",
+      "gastric spoon foreign body",
+      "swallowed a spoon"
+    ],
+    "symptom": "a swallowed object after a dare and a heavy dragging feeling in the gut but no real pain",
+    "hook": "a long metallic object with a rounded bowl and straight handle projected over the upper abdomen",
+    "view": "AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
+    "keyFindings": "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
+    "whatYouSee": "A complete spoon-shaped metal object projects over the expected stomach region.",
+    "whyItMatters": "Long rigid objects can fail to pass the duodenum and can injure the gut wall.",
+    "treatment": "Endoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+    "takeaway": "Object size, shape and location guide foreign-body management.",
+    "igTitle": "THE SPOON",
+    "igOptions": [
+      "A calcified mass",
+      "A swallowed spoon",
+      "A surgical clip"
+    ],
+    "igCorrect": "B",
+    "used": true,
+    "ageBand": "young-adult",
+    "sources": [
+      "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
+      "The visible anatomy matches the requested AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
+    ]
+  },
+  "imageApproval": {
+    "sha256": "782e551fe8ca549b282811b7cef28f4d02e4c35a05f1b820d36f78a0799eb7e7",
+    "conditionSha256": "b1b99d163391a0e71b0b6248aa128b37bfb5cadd1a7392f8dce892711937f947",
+    "verifiedAt": "2026-09-12T15:48:56.664Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
+        "observed": "A single metallic spoon-shaped foreign body is visible in the left upper quadrant overlying the gastric gas bubble; the ovoid bowl is at the superior end and the straight handle extends inferiorly and slightly medially, both clearly outlined against the stomach gas. The pelvis and groin are not included in the field of view. Only one such object is present.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions.",
+        "observed": "The image is an AP projection of the upper abdomen. The inferior margin is cropped above the level of the iliac crests, excluding the pelvis and groin entirely. Lumbar vertebrae, lower ribs, and visible bowel gas pattern are consistent with upper abdominal AP radiograph. Skeletal maturity is confirmed — no open physes visible, consistent with an adult aged 19–39. No anatomical impossibilities are identified in the surrounding non-pathological structures.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) projection radiograph encompassing the lower thorax and abdomen",
+        "Highly radiopaque metallic foreign body in the shape of a small teaspoon visible in the left upper quadrant, overlying the gastric region, oriented with the bowl superiorly and handle directed inferiorly and slightly medially",
+        "The spoon projects over the gastric fundus/body region, consistent with intragastric location",
+        "Marked gaseous distension of the stomach producing a large gas bubble in the left upper quadrant surrounding the spoon",
+        "Diffuse coarse haustral pattern visible in the large bowel bilaterally, with moderate fecal loading",
+        "Lumbar and lower thoracic spine visible with no gross vertebral body collapse or obvious destructive lesion on this projection",
+        "Lower ribs partially visualized; no obvious rib fractures identified",
+        "No pneumoperitoneum visible on this projection",
+        "No obvious pleural effusion in the imaged lung bases"
+      ],
+      "differential": [
+        "Ingested metallic foreign body (teaspoon) within the stomach — most likely diagnosis given classic spoon morphology and intragastric gas bubble",
+        "Intentional or accidental ingestion with the object lodged at the gastroesophageal junction or proximal stomach — cannot fully exclude without lateral projection",
+        "Artificially superimposed or phantom image artifact mimicking a foreign body — considered but morphology and density are consistent with a true metallic object"
+      ],
+      "anatomyConcerns": [
+        "Only a single AP projection is available; a lateral view would help confirm the depth and exact compartment of the foreign body",
+        "The field of view is limited superiorly, partially obscuring the lung bases and mediastinum, limiting assessment for aspiration or mediastinal widening",
+        "Significant gastric distension may indicate gastric outlet obstruction or aerophagia secondary to the foreign body",
+        "Image slightly rotated to the patient's right, which may alter apparent position of midline structures"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A clearly radiopaque metallic object with unambiguous teaspoon morphology — ovoid bowl superiorly and tapering handle inferiorly — is visible overlying the left upper quadrant gastric gas bubble, consistent with an intragastric foreign body. No equally supported alternative diagnosis exists; the morphology is too specific for any anatomical structure or other foreign body type. The gastric distension is explained by aerophagia around the foreign body. The slightly superior field extension showing lung bases and partial lower ribs is acceptable for an upper abdomen projection. The pelvis and groin are out of frame as required. Skeletal maturity is consistent with an adult aged 19–39: no open physes are visible, vertebral endplates appear fused. The independent differential's concern about lateral projection is valid but does not undermine the primary diagnosis on this projection. Gastric distension is an expected associated finding and not unexplained. Bowel haustral pattern and fecal loading are normal variants requiring no separate diagnosis."
+  },
+  "difficulty": 1,
+  "laypersonQuestion": "Would you dare a friend to do this?",
+  "seedHint": "Look at the shape and ask yourself: is that handle short or suspiciously long?",
+  "generated": {
+    "threadsCaption": "A patient came in with a swallowed object after a dare and a heavy dragging feeling in the gut but no real pain.\n\nThen the X-ray loaded 😭\n\nA long metallic object with a rounded bowl and straight handle projected over the upper abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a heavy dragging feeling in the gut and no real pain after swallowing something on a dare.\n\nThen the X-ray loaded 😭\n\nA long metallic object with a rounded bowl and straight handle projected over the upper abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Swallowed spoon\n\n👀 What you see:\nA complete spoon-shaped metal object projects over the expected stomach region.\n\n🦴 Why it matters:\nLong rigid objects can fail to pass the duodenum and can injure the gut wall.\n\n💊 Treatment:\nEndoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "7ef89590759582beaed12da7d01fa42513db6d054bfe72ca1a36127be0736bfb",
+    "reviewedAt": "2026-09-12T15:49:01.179Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

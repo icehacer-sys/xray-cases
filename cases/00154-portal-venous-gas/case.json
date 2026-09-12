@@ -1,0 +1,119 @@
+{
+  "folder": "00154-portal-venous-gas",
+  "number": 154,
+  "diagnosis": "Portal venous gas",
+  "aliases": [
+    "hepatic portal venous gas",
+    "gas in the liver veins"
+  ],
+  "symptom": "vague belly cramps and just feeling off like a stomach bug that would pass",
+  "hook": "the liver was veined through with branching dark channels of air like a bolt of lightning frozen inside it",
+  "whatYouSee": "Branching dark gas extends toward the liver edge.",
+  "whyItMatters": "Portal venous gas can accompany bowel ischaemia, inflammation or recent procedures. The clinical cause determines urgency.",
+  "treatment": "Urgent assessment excludes bowel ischaemia or perforation. Surgery depends on the cause and clinical findings.",
+  "takeaway": "Peripheral branching hepatic gas suggests portal venous gas, not automatic proof of dead bowel.",
+  "igOptions": [
+    "A. Fatty liver",
+    "B. Portal venous gas",
+    "C. Gallstones"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-21T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:47:06.909Z"
+  },
+  "condition": {
+    "diagnosis": "Portal venous gas",
+    "aliases": [
+      "hepatic portal venous gas",
+      "gas in the liver veins"
+    ],
+    "symptom": "vague belly cramps and just feeling off like a stomach bug that would pass",
+    "hook": "the liver was veined through with branching dark channels of air like a bolt of lightning frozen inside it",
+    "view": "AP abdomen radiograph of the upper abdomen and liver cropped at the navel with no pelvis or groin",
+    "keyFindings": "branching tubular lucent gas reaching out to the edge of the liver like a tree or lightning pattern",
+    "whatYouSee": "Branching dark gas extends toward the liver edge.",
+    "whyItMatters": "Portal venous gas can accompany bowel ischaemia, inflammation or recent procedures. The clinical cause determines urgency.",
+    "treatment": "Urgent assessment excludes bowel ischaemia or perforation. Surgery depends on the cause and clinical findings.",
+    "takeaway": "Peripheral branching hepatic gas suggests portal venous gas, not automatic proof of dead bowel.",
+    "igTitle": "THE LIGHTNING LIVER",
+    "igOptions": [
+      "Fatty liver",
+      "Portal venous gas",
+      "Gallstones"
+    ],
+    "igCorrect": "B",
+    "used": true,
+    "ageBand": "older",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2657713/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "branching tubular lucent gas reaching out to the edge of the liver like a tree or lightning pattern",
+      "The visible anatomy matches the requested AP abdomen radiograph of the upper abdomen and liver cropped at the navel with no pelvis or groin and the declared age and anatomical exceptions."
+    ]
+  },
+  "imageApproval": {
+    "sha256": "2f0e269f97be32845bbc1d87897837e0be83bf0aa9efc34a42f7a53b7652ba56",
+    "conditionSha256": "a498e8b81dc1575c80d5b88648b103a716dfa4d1ba1c5947546565aa4b2f0d78",
+    "verifiedAt": "2026-09-12T15:47:06.910Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Image does not support a sufficiently distinct teaching answer: The branching tubular lucent pattern overlying the right hepatic lobe is visible and extends peripherally toward the liver edge, which is the key imaging feature being tested. However, the independent read correctly notes that on plain film alone, peripheral biliary gas (pneumobilia) and portal venous gas cannot be reliably distinguished — both produce branching hepatic lucencies. Portal venous gas classically distributes peripherally (as seen here), while pneumobilia tends toward central ducts, but this distinction is not reliable on supine AP radiograph without CT. The stomach gas bubble is visible in the left upper quadrant. The lumbar spine is visible centrally. Colonic gas is distributed throughout. The abdomen extends well below the umbilicus into the pelvis and lower abdomen, which exceeds the expected crop at the navel. No duplication, impossible anatomy, or AI artifact is identified in the non-pathological structures."
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) supine abdominal radiograph including the lower thorax",
+        "Extensive branching, tree-like radiolucent pattern overlying the right hepatic lobe consistent with pneumobilia or intrahepatic biliary gas extending to the periphery of the liver",
+        "No discrete pneumoperitoneum identified on this supine projection",
+        "Stomach fundus visible in the left upper quadrant with a gas-filled bubble",
+        "Lumbar spine visible centrally with mild dextroscoliosis or rotational positioning artifact",
+        "Scattered colonic gas throughout the large bowel; no definitive dilated small bowel loops identified",
+        "Lower thorax partially included; no obvious pleural effusion or consolidation on this limited view",
+        "No calcified gallstones or renal calculi identified",
+        "Soft tissue density appears preserved bilaterally in the flanks"
+      ],
+      "differential": [
+        "Pneumobilia secondary to biliary-enteric anastomosis or prior sphincterotomy/ERCP (most common benign cause of peripheral intrahepatic gas)",
+        "Pneumobilia secondary to emphysematous cholecystitis or ascending cholangitis with gas-forming organisms",
+        "Hepatic portal venous gas (though distribution appears more central/biliary in branching pattern; portal venous gas typically more peripheral — cannot fully exclude on plain film alone)"
+      ],
+      "anatomyConcerns": [
+        "The branching gas pattern extends to the liver periphery, which favors biliary rather than portal venous distribution, but definitive distinction requires CT",
+        "Supine projection limits detection of free intraperitoneal air; erect or left lateral decubitus view would be recommended if pneumoperitoneum is a clinical concern",
+        "Lower chest is partially included but lung bases are not fully assessed"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Image does not support a sufficiently distinct teaching answer: The branching tubular lucent pattern overlying the right hepatic lobe is visible and extends peripherally toward the liver edge, which is the key imaging feature being tested. However, the independent read correctly notes that on plain film alone, peripheral biliary gas (pneumobilia) and portal venous gas cannot be reliably distinguished — both produce branching hepatic lucencies. Portal venous gas classically distributes peripherally (as seen here), while pneumobilia tends toward central ducts, but this distinction is not reliable on supine AP radiograph without CT. The stomach gas bubble is visible in the left upper quadrant. The lumbar spine is visible centrally. Colonic gas is distributed throughout. The abdomen extends well below the umbilicus into the pelvis and lower abdomen, which exceeds the expected crop at the navel. No duplication, impossible anatomy, or AI artifact is identified in the non-pathological structures."
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does that pattern inside the liver look natural?",
+  "seedHint": "Start at the liver and trace the dark branches - do they look like veins or something else entirely?",
+  "generated": {
+    "threadsCaption": "A patient came in with vague belly cramps and just feeling off like a stomach bug that would pass.\n\nThen the X-ray loaded 😭\n\nThe liver was veined through with branching dark channels of air like a bolt of lightning frozen inside it.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a vague belly cramps and just feeling off like a stomach bug that would pass.\n\nThen the X-ray loaded 😭\n\nThe liver was veined through with branching dark channels of air like a bolt of lightning frozen inside it.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Portal venous gas\n\n👀 What you see:\nBranching dark gas extends toward the liver edge.\n\n🦴 Why it matters:\nPortal venous gas can accompany bowel ischaemia, inflammation or recent procedures. The clinical cause determines urgency.\n\n💊 Treatment:\nUrgent assessment excludes bowel ischaemia or perforation. Surgery depends on the cause and clinical findings.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "9bc6867b9d99236ada533d5b12c2d6a1e3d2abebf241f2534ec508ec91df2a32",
+    "reviewedAt": "2026-09-12T15:47:11.230Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
