@@ -20,6 +20,7 @@ export function finalImage(c: Case): Buffer {
 export function imageApproval(png: Buffer, condition: Condition, verdict: XrayVerdict): NonNullable<Case["imageApproval"]> {
   return {
     sha256: hash(png), conditionSha256: diagnosticHash(condition),
+    clinicalContextSha256: hash(condition.symptom),
     verifiedAt: new Date().toISOString(), model: config.xrayVerifyModel,
     verifierVersion: VERSION, ok: verdict.ok, defects: verdict.defects,
     observations: verdict.observations,
@@ -34,6 +35,7 @@ export function imageApprovalProblem(c: Case, png: Buffer): string | null {
   if (!a) return "final image has not been verified";
   if (a.sha256 !== hash(png)) return "image changed after verification";
   if (a.conditionSha256 !== diagnosticHash(c.condition)) return "diagnostic image inputs changed after verification";
+  if (a.clinicalContextSha256 && a.clinicalContextSha256 !== hash(c.condition.symptom)) return "clinical vignette changed after verification";
   if (a.verifierVersion !== VERSION) return "image verifier version is stale";
   if (a.singleAnswerSupported !== true || !a.diagnosticReason?.trim()) return "missing independent diagnostic assessment";
   if (a.ok !== true) return "final image failed verification";

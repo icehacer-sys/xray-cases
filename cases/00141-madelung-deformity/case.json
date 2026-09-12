@@ -8,7 +8,7 @@
   ],
   "symptom": "gradually worsening wrist deformity and limited forearm rotation",
   "hook": "the end of the radius tilted sharply and the wrist bones formed a wedge",
-  "whatYouSee": "The distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.",
+  "whatYouSee": "The distal radius is shortened and slopes toward the ulna. The lunate sits unusually low in a triangular carpal arrangement.",
   "whyItMatters": "Abnormal growth at the distal radius can cause pain and restricted movement.",
   "treatment": "Treatment depends on age and symptoms. Options include observation and selected corrective surgery.",
   "takeaway": "Abnormal growth at the distal radius can cause pain and restricted movement.",
@@ -30,9 +30,9 @@
     ],
     "symptom": "gradually worsening wrist deformity and limited forearm rotation",
     "hook": "the end of the radius tilted sharply and the wrist bones formed a wedge",
-    "view": "PA and lateral wrist",
-    "keyFindings": "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence. Lateral view shows increased volar tilt with dorsal prominence of the distal ulna. Radius and ulna are separate coherent bones, with no duplicated carpal bones.",
-    "whatYouSee": "The distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.",
+    "view": "single PA wrist radiograph including the distal third of the forearm, entire carpus and metacarpal bases",
+    "keyFindings": "A pronounced classic Madelung wrist configuration: smooth ulnar bowing of the distal radius and shortening of its ulnar side. The intact distal radial articular surface slopes steeply toward the ulna at about 40 degrees. The lunate migrates proximally into the V-shaped interval between the shortened distal radius and prominent distal ulna. The proximal carpal row forms a coherent triangular wedge. The scaphoid and lunate remain articulate with the radial surface and the capitate stays seated in the lunate concavity. The radius and ulna have smooth continuous cortical outlines and age-appropriate trabeculation.",
+    "whatYouSee": "The distal radius is shortened and slopes toward the ulna. The lunate sits unusually low in a triangular carpal arrangement.",
     "whyItMatters": "Abnormal growth at the distal radius can cause pain and restricted movement.",
     "treatment": "Treatment depends on age and symptoms. Options include observation and selected corrective surgery.",
     "takeaway": "Abnormal growth at the distal radius can cause pain and restricted movement.",
@@ -46,66 +46,85 @@
     "used": true,
     "ageBand": "adolescent",
     "sources": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4993032/"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4993032/",
+      "https://pubmed.ncbi.nlm.nih.gov/26135644/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
-      "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence.",
-      "Lateral view shows increased volar tilt with dorsal prominence of the distal ulna.",
-      "Radius and ulna are separate coherent bones, with no duplicated carpal bones."
-    ]
+      "The distal radius has smooth ulnar bowing with a shortened ulnar side and markedly increased ulnar inclination of its intact articular surface.",
+      "Proximal lunate migration into the interval between radius and ulna forms a triangular carpal arrangement.",
+      "The carpal bones articulate coherently and the visible radius and ulna have continuous cortices without an abrupt traumatic step."
+    ],
+    "anatomyException": "Developmental shortening and smooth bowing of the distal radius with proximal lunate migration and a triangular arrangement of otherwise coherent carpal bones."
   },
   "difficulty": 4,
   "laypersonQuestion": "Does this wrist look natural to you?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with gradually worsening wrist deformity and limited forearm rotation.\n\nThen the X-ray loaded 😭\n\nAnd the end of the radius tilted sharply and the wrist bones formed a wedge.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsAnswer": "Answer: Madelung deformity\n\n👀 What you see:\nThe distal radius is short and tilted. The carpus forms a wedge with dorsal prominence of the ulna.\n\n🦴 Why it matters:\nAbnormal growth at the distal radius can cause pain and restricted movement.\n\n💊 Treatment:\nTreatment depends on age and symptoms. Options include observation and selected corrective surgery.",
+    "threadsCaption": "A patient came in with gradually worsening wrist deformity and limited forearm rotation.\n\nThen the X-ray loaded 😭\n\nThe end of the radius tilted sharply and the wrist bones formed a wedge.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Madelung deformity\n\nThe distal radius is shortened and slopes toward the ulna. The lunate sits unusually low in a triangular carpal arrangement.\n\nAbnormal growth at the distal radius can cause pain and restricted movement.\n\nTreatment depends on age and symptoms. Options include observation and selected corrective surgery.",
     "igCaption": "",
     "threadsCaptionAlt": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
   },
   "needsReview": true,
   "verifyDefects": [
-    "Unexplained additional image findings: [\"The independent reading describes a distal radius fracture with dorsal angulation and impaction — these findings (acute fracture pattern, radial shortening from trauma) are not features of Madelung deformity and represent a conflicting interpretation of the same image\",\"On the PA view the distal radius articular surface shows dorsal tilt/angulation more consistent with acute fracture than the gradual volar tilt and ulnar-sided physeal arrest of Madelung deformity\",\"No clear triangular carpus with proximal lunate subsidence is convincingly demonstrated on the PA view; the carpus appears relatively normally aligned without the characteristic wedging\"]",
-    "Error: Unexplained additional image findings: [\"The independent reading describes a distal radius fracture with dorsal angulation and impaction — these findings (acute fracture pattern, radial shortening from trauma) are not features of Madelung deformity and represent a conflicting interpretation of the same image\",\"On the PA view the distal radius articular surface shows dorsal tilt/angulation more consistent with acute fracture than the gradual volar tilt and ulnar-sided physeal arrest of Madelung deformity\",\"No clear triangular carpus with proximal lunate subsidence is convincingly demonstrated on the PA view; the carpus appears relatively normally aligned without the characteristic wedging\"]"
+    "Unexplained additional image findings: [\"Distal radius shows an acute transverse metaphyseal fracture line with cortical disruption and dorsal angulation — this is a traumatic fracture pattern inconsistent with Madelung deformity, which requires smooth developmental bowing and ulnar shortening without an acute fracture line\"]",
+    "Error: Unexplained additional image findings: [\"Distal radius shows an acute transverse metaphyseal fracture line with cortical disruption and dorsal angulation — this is a traumatic fracture pattern inconsistent with Madelung deformity, which requires smooth developmental bowing and ulnar shortening without an acute fracture line\"]"
   ],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Madelung-type deformity",
+      "acquired distal radial growth arrest"
+    ]
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:38:40.715Z"
+  },
   "imageApproval": {
-    "sha256": "5bc08e3597f10ea74bd66c65d1ddecc5c3b4c7f6bba5b07418e9d466870c0776",
-    "conditionSha256": "45c044008b68729da66b05be30cc182d6659c5cc79b71aa638b20d3f1dea7e3c",
-    "verifiedAt": "2026-09-12T15:11:03.434Z",
+    "sha256": "7b92965a6912428cb18b52439f331ba43a82f695e96700436e8625eee1648b2c",
+    "conditionSha256": "dff707de877c615252ebd38616ca0dd71c7ad22c160997c7d7e081daee52a14c",
+    "clinicalContextSha256": "a5826a4c83c76a1e6eeff33b0a7c969ee7d4b91832ae14acd874419ce2201142",
+    "verifiedAt": "2026-09-12T15:41:18.749Z",
     "model": "claude-sonnet-4-6",
     "verifierVersion": "4",
     "ok": false,
     "defects": [
-      "Unexplained additional image findings: [\"The independent reading describes a distal radius fracture with dorsal angulation and impaction — these findings (acute fracture pattern, radial shortening from trauma) are not features of Madelung deformity and represent a conflicting interpretation of the same image\",\"On the PA view the distal radius articular surface shows dorsal tilt/angulation more consistent with acute fracture than the gradual volar tilt and ulnar-sided physeal arrest of Madelung deformity\",\"No clear triangular carpus with proximal lunate subsidence is convincingly demonstrated on the PA view; the carpus appears relatively normally aligned without the characteristic wedging\"]"
+      "Unexplained additional image findings: [\"Distal radius shows an acute transverse metaphyseal fracture line with cortical disruption and dorsal angulation — this is a traumatic fracture pattern inconsistent with Madelung deformity, which requires smooth developmental bowing and ulnar shortening without an acute fracture line\"]"
     ],
     "blindRead": {
       "findings": [
-        "Two-view radiograph of the wrist and distal forearm: posteroanterior (PA) projection on the left and lateral projection on the right",
-        "Distal radius demonstrates a transverse fracture with dorsal angulation (apex volar) of the distal fragment visible on the lateral view",
-        "On the PA view there is mild radial shortening and loss of normal radial inclination with impaction at the fracture site",
-        "The distal ulna styloid process appears intact on the PA view; the distal radioulnar joint relationship appears maintained",
-        "Carpal bones appear normally aligned on the PA view; no definite intercalated segment instability pattern identified",
-        "No additional metacarpal or phalangeal fractures are identified",
-        "Open physes visible at the distal radius and ulna, indicating a skeletally immature individual",
-        "No significant soft tissue calcification or foreign body visible"
+        "Posteroanterior (PA) projection of the right wrist and distal forearm",
+        "Distal radius demonstrates a transverse lucent fracture line with mild dorsal angulation and approximately 2-3 mm of dorsal cortical disruption at the metaphysis",
+        "Mild impaction/cortical buckling visible at the dorsal aspect of the distal radial metaphysis",
+        "Ulnar styloid appears intact without definite fracture line",
+        "Radiocarpal and distal radioulnar joint spaces appear maintained",
+        "Carpal bones are normally aligned with no visible intercalated segment instability pattern; all eight carpals visible",
+        "Metacarpals and visible phalangeal bases appear intact",
+        "No obvious soft tissue calcification or foreign body identified",
+        "Thumb partially projected at the lateral margin, proximal and distal phalanges visible without obvious fracture"
       ],
       "differential": [
-        "Distal radius fracture with dorsal angulation and impaction (consistent with a Colles-type fracture pattern; given open physes, a Salter-Harris type II physeal fracture cannot be excluded)",
-        "Salter-Harris type II fracture of the distal radius physis with dorsal metaphyseal fragment",
-        "Torus (buckle) fracture of the distal radius with dorsal cortical buckling (less likely given degree of angulation seen on lateral)"
+        "Distal radius fracture (Colles-type/extra-articular distal radial metaphyseal fracture) — most likely given location, dorsal angulation, and cortical disruption",
+        "Intra-articular distal radius fracture (Barton or die-punch variant) — cannot be fully excluded without lateral and oblique views",
+        "Greenstick or torus (buckle) fracture of the distal radius — if cortical disruption is incomplete, particularly relevant in a skeletally immature individual; physeal plates not definitively visible to confirm maturity"
       ],
       "anatomyConcerns": [
-        "Open physes at both the distal radius and ulna are normal developmental anatomy for a skeletally immature individual and should not be mistaken for fracture lines",
-        "The two projections appear to be of the same wrist but are displayed as a composite image; standard orthogonal projections are confirmed (PA and lateral)",
-        "Superimposition of carpal bones on the lateral view limits detailed assessment of individual carpal bone alignment"
+        "Lateral projection is absent; dorsal versus volar angulation and full extent of fracture displacement cannot be assessed without it",
+        "Thumb is positioned outside the palm plane, partially obscuring the radial styloid region and could mask a radial styloid fracture",
+        "Image collimation cuts off the proximal forearm, limiting assessment of associated proximal injuries",
+        "No side marker (R/L) is visible on the image as presented"
       ]
     }
   },
   "contentReview": {
-    "sha256": "2cc8533fe66bfb1259144bbe22ded6ab22d8f02090b289cdb7049ab6004f19d0",
-    "reviewedAt": "2026-09-12T15:11:05.094Z",
+    "sha256": "658ffab8dd1b8db5b11378e15d4c041a672ea0e03f28ca07ee2482f941137871",
+    "reviewedAt": "2026-09-12T15:41:20.795Z",
     "reviewer": "claude-sonnet-4-6"
-  }
+  },
+  "retired": true,
+  "retirementReason": "Owner requested replacement after repeated image repairs still showed a traumatic fracture or carpal dislocation instead of Madelung deformity."
 }

@@ -1,0 +1,79 @@
+[
+  {
+    "folder": "00142-diffuse-idiopathic-skeletal-hyperostosis",
+    "priorImageApproval": {
+      "sha256": "318ad0ede342868088a4d0fe4a32c77ec905146a9130c1c6847ee92a61006b69",
+      "conditionSha256": "3007760d610039fdaafe308fce1a2a8dfa62511ed6aa1b14969a59b34a1cdbe4",
+      "clinicalContextSha256": "7d6f0486ffa1d36a8437652616c01837a9abc207b69783a9ecd8a2baa49dc85e",
+      "verifiedAt": "2026-09-12T15:40:52.052Z",
+      "model": "claude-sonnet-4-6",
+      "verifierVersion": "4",
+      "ok": false,
+      "defects": [
+        "Unexplained additional image findings: [\"No bulky flowing anterolateral ossification bridging contiguous vertebral bodies is visible; instead the image shows marked thoracic kyphosis with anterior vertebral body wedging and endplate irregularities at multiple contiguous mid-thoracic levels, a pattern inconsistent with DISH and more consistent with Scheuermann's disease or multilevel degenerative/osteoporotic change\"]"
+      ],
+      "blindRead": {
+        "findings": [
+          "Lateral projection radiograph of the thoracic and upper lumbar spine",
+          "Marked thoracic kyphosis with an accentuated, exaggerated posterior convexity of the thoracic spine",
+          "Multiple vertebral endplate irregularities visible at several mid-thoracic levels with apparent anterior vertebral body wedging at multiple contiguous levels",
+          "Intervertebral disc space narrowing at multiple thoracic levels",
+          "Posterior vertebral body osteophyte-like marginal irregularities visible at several levels",
+          "Lung fields partially visible showing no gross focal consolidation; a soft-tissue prominence is seen anteriorly consistent with normal cardiac/mediastinal structures",
+          "Lower thoracic and upper lumbar vertebral bodies appear relatively preserved in height compared to mid-thoracic region",
+          "No gross fracture displacement or gross listhesis identified on this single projection",
+          "Soft tissue silhouette of back is visible posteriorly, consistent with lateral positioning"
+        ],
+        "differential": [
+          "Scheuermann's disease (juvenile kyphosis): classic pattern of thoracic hyperkyphosis with multiple-level anterior wedging and endplate irregularities at contiguous vertebral levels",
+          "Degenerative/senile kyphosis with multilevel osteoporotic compression deformities: anterior wedging at multiple levels with endplate changes, though lack of acute fracture lines limits certainty",
+          "Inflammatory spondyloarthropathy (e.g., ankylosing spondylitis): can produce hyperkyphosis with vertebral endplate erosions and squaring, though syndesmophytes and bamboo-spine pattern not clearly identified here"
+        ],
+        "anatomyConcerns": [
+          "The upper cervical spine and skull base are not included in the field of view, limiting full spinal survey",
+          "Rotation cannot be fully assessed on a single lateral projection; minor obliquity may affect perceived disc height and endplate morphology",
+          "The lumbosacral junction is partially cut off at the inferior edge of the image, preventing full lumbar evaluation"
+        ]
+      }
+    },
+    "reasonForIndependentReview": "Operator visual inspection identified prominent findings denied by the automated image read. File hash matches. Preserve disagreement and obtain one independent model review using the same unchanged QA criteria."
+  },
+  {
+    "folder": "00150-ochronosis",
+    "priorImageApproval": {
+      "sha256": "8e784ccc8f847749efc93ddc2ea32f933f2dbd9960aac901cf252c203a32bd4e",
+      "conditionSha256": "cc2f5c4cb6a372fe83f40de540196fb447b15f32dda9567ff9f0984381bffcb8",
+      "clinicalContextSha256": "a03d75236d83794fe44d793db346cd4f6e940550f7825992dbc3e0c2b21fc8e0",
+      "verifiedAt": "2026-09-12T15:45:32.384Z",
+      "model": "claude-sonnet-4-6",
+      "verifierVersion": "4",
+      "ok": false,
+      "defects": [
+        "Unexplained additional image findings: [\"No dense intradiscal calcification is visible within the disc spaces; the disc spaces show only mild narrowing without the broad bright mineralised horizontal bands required for ochronotic spondylosis\"]"
+      ],
+      "blindRead": {
+        "findings": [
+          "Lateral projection radiograph of the thoracolumbar spine, likely centered at the thoracolumbar junction (approximately T10-L2 region visible)",
+          "Vertebral body endplate irregularity and loss of normal disc space height at one or more intervertebral levels in the mid-thoracic segment",
+          "Apparent anterior wedging of at least one vertebral body in the mid-thoracic region, suggesting height loss greater anteriorly than posteriorly",
+          "Preserved posterior vertebral body height at most levels, with overall mild kyphotic alignment",
+          "No obvious gross cortical disruption or retropulsion visible on this projection",
+          "Disc spaces appear relatively preserved at most levels but narrowed at the affected segment",
+          "Posterior elements including pedicles and facet joints are partially visible and appear intact",
+          "Soft tissue shadows on either side of the spine are unremarkable on this projection"
+        ],
+        "differential": [
+          "Osteoporotic compression fracture: anterior vertebral body wedging with endplate irregularity at one level is most consistent with insufficiency fracture in the setting of osteoporosis",
+          "Scheuermann disease (juvenile kyphosis): multiple contiguous vertebral endplate irregularities, anterior wedging, and Schmorl nodes could produce this appearance in a younger patient",
+          "Pathological fracture from metastatic disease or primary bone lesion: focal vertebral height loss with endplate disruption warrants consideration, especially if bone density appears heterogeneous"
+        ],
+        "anatomyConcerns": [
+          "The superior and inferior extents of the imaged segment are partially cut off, limiting full assessment of the number of affected levels and adjacent anatomy",
+          "Bowel gas superimposition on the right side slightly degrades visualization of the anterior vertebral bodies",
+          "Rotation is minimal but the posterior elements appear slightly asymmetric, which may mildly impair assessment of posterior cortical alignment"
+        ]
+      }
+    },
+    "reasonForIndependentReview": "Operator visual inspection identified prominent findings denied by the automated image read. File hash matches. Preserve disagreement and obtain one independent model review using the same unchanged QA criteria."
+  }
+]

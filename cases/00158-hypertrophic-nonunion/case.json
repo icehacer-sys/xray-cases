@@ -1,0 +1,137 @@
+{
+  "folder": "00158-hypertrophic-nonunion",
+  "number": 158,
+  "diagnosis": "Hypertrophic nonunion",
+  "aliases": [
+    "elephant foot nonunion",
+    "fracture nonunion"
+  ],
+  "symptom": "an arm that still moved at the break a year after the fracture was supposed to heal",
+  "hook": "the bone had piled up huge lumps of callus around a break that never actually joined",
+  "whatYouSee": "Huge lumps of new bone flare out on both sides of the old break but the crack itself still runs straight through and never closes.",
+  "whyItMatters": "Persistent fracture movement can prevent union despite abundant callus. Mechanical and biological factors both need assessment.",
+  "treatment": "Improved stability and compression are often central. Grafting and other treatment depend on the individual fracture.",
+  "takeaway": "Abundant callus with a persistent fracture gap suggests hypertrophic nonunion.",
+  "igOptions": [
+    "A. Hypertrophic nonunion",
+    "B. Osteosarcoma",
+    "C. Chronic osteomyelitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-14T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:47:25.858Z"
+  },
+  "condition": {
+    "diagnosis": "Hypertrophic nonunion",
+    "aliases": [
+      "elephant foot nonunion",
+      "fracture nonunion"
+    ],
+    "symptom": "an arm that still moved at the break a year after the fracture was supposed to heal",
+    "hook": "the bone had piled up huge lumps of callus around a break that never actually joined",
+    "view": "single AP humerus radiograph including the shoulder and elbow",
+    "ageBand": "middle-aged",
+    "keyFindings": "A chronic midshaft humeral fracture with large mature bulbous callus flaring from both fracture ends. A persistent transverse lucent fracture gap separates the two callus masses without a bridging cortex. The humeral head and elbow remain normally aligned. This is one humerus with an elephant-foot callus pattern around one old ununited fracture.",
+    "whatYouSee": "Huge lumps of new bone flare out on both sides of the old break but the crack itself still runs straight through and never closes.",
+    "whyItMatters": "Persistent fracture movement can prevent union despite abundant callus. Mechanical and biological factors both need assessment.",
+    "treatment": "Improved stability and compression are often central. Grafting and other treatment depend on the individual fracture.",
+    "takeaway": "Abundant callus with a persistent fracture gap suggests hypertrophic nonunion.",
+    "igTitle": "THE BREAK THAT NEVER HEALED",
+    "igOptions": [
+      "Hypertrophic nonunion",
+      "Osteosarcoma",
+      "Chronic osteomyelitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11201148/"
+    ],
+    "reviewedAt": "2026-09-12",
+    "requiredObservations": [
+      "Abundant mature bulbous callus surrounds both ends of a single midshaft humeral fracture.",
+      "The fracture gap persists through the callus with no complete osseous bridge.",
+      "One coherent humerus connects a normally aligned shoulder and elbow apart from the declared chronic fracture."
+    ],
+    "anatomyException": "The old humeral fracture remains ununited with a persistent gap and abundant mature callus. This localized discontinuity is the intended pathology.",
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "2520c6040356b859079a59c32427b2a6ab1295a64048a0b26e9eb4392f13bf90",
+    "conditionSha256": "6b8587aa19544e3be32e5a9d6eb0769b5cc0979c7be46d66ce0c96efade90ac2",
+    "clinicalContextSha256": "9549542986be7c0ff176d289689daf76b50f34ceab141203157bad85f62cfb78",
+    "verifiedAt": "2026-09-12T15:47:25.862Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Abundant mature bulbous callus surrounds both ends of a single midshaft humeral fracture.",
+        "observed": "Large, lobulated, exuberant ossified masses surround both the proximal and distal fragments of a midshaft humeral fracture, consistent with abundant mature hypertrophic callus.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The fracture gap persists through the callus with no complete osseous bridge.",
+        "observed": "A transverse lucent gap is visible through the centre of the callus mass, separating the two callus halves without an identifiable bridging cortex.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "One coherent humerus connects a normally aligned shoulder and elbow apart from the declared chronic fracture.",
+        "observed": "A single humeral shaft is traced from a normally positioned humeral head in the glenoid to the distal metaphysis and elbow; no duplication, forking, or phantom second bone is identified; the shoulder and elbow are in normal alignment aside from the nonunion.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the right shoulder, humerus, and elbow in a single long-bone view",
+        "Humeral diaphysis demonstrates extensive, exuberant, lobulated, cauliflower-like ossified masses arising from and encasing the mid-to-distal humeral shaft, with involvement extending to the distal metaphysis and elbow region",
+        "The ossified masses show mixed dense and heterogeneous internal architecture with areas of calcification; cortical integrity of the underlying humerus is difficult to assess due to the overlying mass",
+        "The glenohumeral joint and proximal humerus appear relatively spared with maintained joint space",
+        "The elbow joint is partially visible; distal extent of abnormal ossification involves the distal humeral metaphysis/condylar region",
+        "Partial views of ribs and scapula are included; no obvious rib lesions identified",
+        "No hardware or surgical implants visible"
+      ],
+      "differential": [
+        "Multiple hereditary exostoses (diaphyseal aclasis) — multiple osteochondromas arising from the humeral shaft coalescing into large lobulated ossified masses, classic location and morphology",
+        "Parosteal or periosteal osteosarcoma — aggressive exophytic ossified lesion of the humeral diaphysis; the extent and lobulation raise concern for malignant transformation especially if a single dominant lesion",
+        "Secondary chondrosarcoma arising in the setting of multiple osteochondromas — malignant transformation suggested by bulky, heterogeneous, lobulated calcified soft-tissue component"
+      ],
+      "anatomyConcerns": [
+        "The entire humerus from shoulder to elbow is captured in one projection, which is unusual and suggests a dedicated long-bone humerus view rather than standard shoulder or elbow series",
+        "Forearm bones (radius and ulna) are not visible, limiting assessment of elbow joint and distal extent of disease",
+        "Overlap of the massive ossified lesion with the distal humerus makes cortical and intramedullary assessment unreliable on this single projection; lateral or additional views would be required"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The mid-to-distal humeral shaft shows large, lobulated, exuberant callus masses arising from both fracture ends with a persistent transverse lucent gap separating them — the classic elephant-foot hypertrophic nonunion pattern. The clinical vignette of persistent motion at the fracture site one year post-injury is consistent. While the independent read raised osteochondromas or parosteal sarcoma, the bilateral symmetry of the callus around a discrete transverse gap, the absence of a pedunculated stalk or cap, and the clinical context of prior fracture distinguish hypertrophic nonunion. The glenohumeral joint and proximal humerus appear normally aligned. The elbow is partially visible with no additional lesions. Scapula and clavicle are singular and correctly positioned. No hardware present."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Why would a bone grow bigger but still not heal?",
+  "seedHint": "Look at that break site and ask yourself if more bone always means stronger bone.",
+  "generated": {
+    "threadsCaption": "A patient came in with an arm that still moved at the break a year after the fracture was supposed to heal.\n\nThen the X-ray loaded 😭\n\nThe bone had piled up huge lumps of callus around a break that never actually joined.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Hypertrophic nonunion\n\n👀 What you see:\nHuge lumps of new bone flare out on both sides of the old break but the crack itself still runs straight through and never closes.\n\n🦴 Why it matters:\nPersistent fracture movement can prevent union despite abundant callus. Mechanical and biological factors both need assessment.\n\n💊 Treatment:\nImproved stability and compression are often central. Grafting and other treatment depend on the individual fracture.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "04b8110932d110eb1fc041d3730a07ee7abeee14fdcc7dc787b741957e9d1dda",
+    "reviewedAt": "2026-09-12T15:47:34.341Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "needsReview": false
+}

@@ -33,7 +33,7 @@
     "symptom": "persistent upper back stiffness",
     "hook": "a thick ribbon of bone bridged several vertebrae along the front of the spine",
     "view": "lateral thoracic spine",
-    "keyFindings": "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies. Disc heights are relatively preserved; severe disc collapse does not dominate the pattern. The visible vertebral bodies and posterior elements are anatomically coherent.",
+    "keyFindings": "Bulky flowing anterolateral ossification bridges at least four contiguous thoracic vertebral bodies, with a thick undulating candle-wax contour. Intervertebral disc heights are relatively preserved. All vertebral bodies retain their height and coherent rectangular morphology. Maintain a gentle physiological thoracic curve without angular gibbus, compression fractures, destructive endplates or disc collapse.",
     "whatYouSee": "Flowing anterior ossification bridges at least four vertebral bodies with relatively preserved disc heights.",
     "whyItMatters": "This pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.",
     "treatment": "Care addresses pain and mobility. New pain after trauma requires assessment for fracture.",
@@ -50,18 +50,18 @@
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC5604607/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
-      "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies.",
-      "Disc heights are relatively preserved; severe disc collapse does not dominate the pattern.",
-      "The visible vertebral bodies and posterior elements are anatomically coherent."
+      "Bulky flowing anterior ossification visibly bridges at least four contiguous thoracic vertebral bodies.",
+      "Disc heights and vertebral body heights are relatively preserved without a dominant compression fracture or angular gibbus.",
+      "The visible vertebral bodies and posterior elements form a coherent single spinal column without destructive lesions."
     ]
   },
   "difficulty": 4,
   "laypersonQuestion": "Does this spine look more like rock or wax to you?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with persistent upper back stiffness.\n\nThen the X-ray loaded 😭\n\nAnd a thick ribbon of bone bridged several vertebrae along the front of the spine.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with persistent upper back stiffness.\n\nThen the X-ray loaded 😭\n\nA thick ribbon of bone bridged several vertebrae along the front of the spine.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Diffuse idiopathic skeletal hyperostosis\n\n👀 What you see:\nFlowing anterior ossification bridges at least four vertebral bodies with relatively preserved disc heights.\n\n🦴 Why it matters:\nThis pattern suggests DISH. A rigid spine can sustain serious fractures after minor trauma.\n\n💊 Treatment:\nCare addresses pain and mobility. New pain after trauma requires assessment for fracture.",
     "igCaption": "",
     "threadsCaptionAlt": "",
@@ -69,36 +69,59 @@
   },
   "needsReview": true,
   "verifyDefects": [
-    "Final review in progress",
-    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym5QS12GZGcYLwZ7iXX\"}"
+    "Unexplained additional image findings: [\"Multiple thoracic vertebral bodies show anterior wedging suggesting compression deformities, which is not a feature of DISH\",\"Diffuse osteopenia visible, not typically associated with DISH\",\"Disc space narrowing at multiple levels, which contradicts DISH where disc heights should be preserved\"]",
+    "Error: Unexplained additional image findings: [\"Multiple thoracic vertebral bodies show anterior wedging suggesting compression deformities, which is not a feature of DISH\",\"Diffuse osteopenia visible, not typically associated with DISH\",\"Disc space narrowing at multiple levels, which contradicts DISH where disc heights should be preserved\"]"
   ],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:34:26.315Z"
+  },
   "imageApproval": {
-    "sha256": "e892d904d2fa3ea31e9a97dd3594e9771a55f9ffc4cb043f0921fa6a87c1201e",
-    "conditionSha256": "36c50188e188d1a64a78553e539f268480582a4da9a655bf0da05be01b294ce9",
-    "verifiedAt": "2026-09-10T17:29:07.740Z",
-    "model": "claude-sonnet-4-6",
-    "verifierVersion": "3",
-    "ok": true,
-    "defects": [],
-    "observations": [
-      {
-        "expected": "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies.",
-        "observed": "There is clearly visible flowing, undulating anterior ossification along the thoracic and upper lumbar spine, bridging multiple contiguous vertebral bodies (well more than four), with the characteristic 'melted candle wax' appearance of DISH along the anterior and right lateral vertebral margins.",
-        "assessable": true,
-        "matches": true
-      },
-      {
-        "expected": "Disc heights are relatively preserved; severe disc collapse does not dominate the pattern.",
-        "observed": "Intervertebral disc spaces are visible and reasonably maintained throughout the thoracic spine. There is no severe disc collapse or dominant disc space narrowing; the disc heights appear relatively preserved consistent with DISH rather than degenerative disc disease.",
-        "assessable": true,
-        "matches": true
-      },
-      {
-        "expected": "The visible vertebral bodies and posterior elements are anatomically coherent.",
-        "observed": "The vertebral column forms a single continuous chain with no duplication, floating vertebrae, or garbled segments. Vertebral bodies are sequentially sized and stacked. Posterior elements including spinous processes are visible and coherent. No AI artifact duplication or impossible anatomy is identified.",
-        "assessable": true,
-        "matches": true
-      }
-    ]
-  }
+    "sha256": "318ad0ede342868088a4d0fe4a32c77ec905146a9130c1c6847ee92a61006b69",
+    "conditionSha256": "3007760d610039fdaafe308fce1a2a8dfa62511ed6aa1b14969a59b34a1cdbe4",
+    "clinicalContextSha256": "7d6f0486ffa1d36a8437652616c01837a9abc207b69783a9ecd8a2baa49dc85e",
+    "verifiedAt": "2026-09-12T15:47:58.895Z",
+    "model": "claude-opus-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Multiple thoracic vertebral bodies show anterior wedging suggesting compression deformities, which is not a feature of DISH\",\"Diffuse osteopenia visible, not typically associated with DISH\",\"Disc space narrowing at multiple levels, which contradicts DISH where disc heights should be preserved\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection of the thoracolumbar spine",
+        "Increased thoracic kyphosis",
+        "Multiple thoracic vertebral bodies show anterior wedging, particularly in the mid-thoracic region",
+        "Diffuse osteopenia with reduced bone density of the vertebral bodies",
+        "Disc space narrowing at multiple levels",
+        "Anterior osteophyte formation at several thoracolumbar levels suggesting degenerative spondylosis",
+        "Schmorl's nodes appear present at several endplates",
+        "The sternum and ribs are partially visualized anteriorly",
+        "No obvious vertebral body destruction or lytic lesions identified",
+        "No significant spondylolisthesis identified"
+      ],
+      "differential": [
+        "Osteoporotic compression fractures with increased thoracic kyphosis (Scheuermann-like deformity or senile kyphosis)",
+        "Scheuermann's disease with anterior wedging, Schmorl's nodes, and endplate irregularities",
+        "Degenerative spondylosis with multilevel disc disease and osteophyte formation"
+      ],
+      "anatomyConcerns": [
+        "Image is cropped at the upper thoracic spine superiorly and at the lower lumbar spine inferiorly, limiting full assessment",
+        "No patient identification markers or laterality markers visible on the image",
+        "Overlying rib and soft tissue shadows partially obscure vertebral body detail in the upper thoracic region"
+      ]
+    }
+  },
+  "contentReview": {
+    "sha256": "1ad0be44c6e2f79f2950399e88154c2729591c7cbd8431ab35f0edb6fd7f1b0f",
+    "reviewedAt": "2026-09-12T15:48:04.923Z",
+    "reviewer": "claude-opus-4-6"
+  },
+  "retired": true,
+  "retirementReason": "Owner requested replacement after regenerated image failed renewed independent QA."
 }

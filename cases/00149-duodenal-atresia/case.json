@@ -19,8 +19,8 @@
   ],
   "threadsImage": "xray.png",
   "igSlides": [],
-  "postAt": "2026-09-18T19:00:00.000Z",
-  "approved": false,
+  "postAt": "2026-09-17T19:00:00.000Z",
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Duodenal atresia",
@@ -48,7 +48,7 @@
     "sources": [
       "https://www.merckmanuals.com/professional/pediatrics/congenital-gastrointestinal-anomalies/duodenal-obstruction"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right.",
       "Little or no gas is visible distal to the two bubbles within this cropped field.",
@@ -59,44 +59,74 @@
   "laypersonQuestion": "Why does this baby's belly look so empty?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd two large gas bubbles filled the upper abdomen with little gas visible below.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nTwo large gas bubbles filled the upper abdomen with little gas visible below.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Duodenal atresia\n\n👀 What you see:\nTwo upper abdominal gas bubbles suggest a dilated stomach and proximal duodenum.\n\n🦴 Why it matters:\nThis suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.\n\n💊 Treatment:\nThe newborn needs urgent assessment and stabilisation. Confirmed atresia is repaired surgically.",
     "igCaption": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
   },
-  "needsReview": true,
-  "verifyDefects": [
-    "Final review in progress",
-    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym5Grb2jffTaX7ChdU3\"}"
-  ],
+  "needsReview": false,
+  "verifyDefects": [],
   "imageApproval": {
     "sha256": "70f59f1635a02b7a33442a03cdfd83d4dc4a478d1777cf7f13e2954f454850f3",
-    "conditionSha256": "2e2a9bd45921b353b592cf6d25434d764cc36f11dd0779fd6ca4e9899d9a7b22",
-    "verifiedAt": "2026-09-10T17:28:50.211Z",
+    "conditionSha256": "59e149ce7d33a133fed60cf6a5eba1ad4638065ea76028497e70cb0887cc2aa6",
+    "verifiedAt": "2026-09-12T15:31:01.665Z",
     "model": "claude-sonnet-4-6",
-    "verifierVersion": "3",
+    "verifierVersion": "4",
     "ok": true,
     "defects": [],
     "observations": [
       {
         "expected": "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right.",
-        "observed": "Two large gas lucencies are visible in the upper abdomen. The larger one is on the patient's left (stomach) and a second, somewhat smaller lucency is on the patient's right (proximal duodenum), consistent with the classic 'double bubble' sign of duodenal atresia.",
+        "observed": "Two large rounded gas lucencies are clearly visible in the upper abdomen. The larger oval lucency with rugal fold impressions is on the patient's left (stomach) and the smaller rounded lucency is on the patient's right (proximal duodenum). Laterality is correct.",
         "assessable": true,
         "matches": true
       },
       {
         "expected": "Little or no gas is visible distal to the two bubbles within this cropped field.",
-        "observed": "No bowel gas is visible distal to the two gas collections in the remainder of the abdomen. The lower abdomen appears gasless, consistent with complete obstruction at the duodenum.",
+        "observed": "Below the two upper abdominal gas collections, the abdomen shows uniform soft-tissue/fluid opacity with a complete paucity of bowel gas, consistent with no gas passing beyond the obstruction.",
         "assessable": true,
         "matches": true
       },
       {
         "expected": "Visible skeletal proportions are compatible with a newborn.",
-        "observed": "The ribs are thin and horizontally oriented, the vertebral bodies show immature ossification with rounded margins, and the overall skeletal proportions are consistent with a newborn or young infant. No mature ossification centers or degenerative changes are present.",
+        "observed": "The ribs are thin and gracile, vertebral bodies show immature ossification with cartilaginous end plates, and overall skeletal size and proportions are consistent with a neonate or young infant. No adult-type degenerative changes or advanced ossification centres are present.",
         "assessable": true,
         "matches": true
       }
-    ]
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior supine abdominal radiograph of a small subject consistent with a neonate or young infant based on osseous size and proportions",
+        "Two discrete, large, rounded lucent gas collections are visible in the upper abdomen: one in the right upper quadrant and one in the left upper quadrant, separated by a soft-tissue density midline structure consistent with the spine and surrounding soft tissue",
+        "The right-sided gas collection is round and appears to represent a distended gastric antrum or pyloric region; the left-sided gas collection is larger and oval with internal rugal fold impressions, consistent with a distended stomach body/fundus",
+        "Together these two gas collections form a 'double bubble' or markedly dilated two-chamber gas pattern in the upper abdomen",
+        "The remainder of the abdomen below these two collections shows a uniform soft-tissue/fluid opacity with a paucity of gas, suggesting absence of gas beyond the duodenum",
+        "Lower ribs are visible superiorly; the spine demonstrates age-appropriate ossification; the pelvis is not included in the field of view",
+        "No pneumoperitoneum is identified; no calcifications are seen"
+      ],
+      "differential": [
+        "Duodenal atresia or stenosis: the classic 'double bubble' sign representing a dilated stomach and dilated proximal duodenum with no distal bowel gas strongly supports this diagnosis",
+        "Duodenal web or intrinsic duodenal obstruction: may produce an identical radiographic appearance and is indistinguishable from atresia on plain film alone",
+        "Annular pancreas: extrinsic duodenal obstruction producing a double-bubble pattern; radiographically indistinguishable from intrinsic obstruction without further imaging"
+      ],
+      "anatomyConcerns": [
+        "Paucity of gas in the lower abdomen is a pathological finding consistent with a complete or near-complete proximal intestinal obstruction rather than a normal variant",
+        "The abdomen appears distended and rounded, which is consistent with obstruction in the neonatal period",
+        "The pelvis and lower extremities are excluded from the field of view, limiting complete assessment; lateral view or upper GI contrast study would be complementary"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The classic double bubble sign — two large discrete gas-filled lucencies in the upper abdomen with no gas visible distally — is the discriminating finding. The left-sided bubble is larger (stomach) and the right-sided bubble smaller (proximal duodenum), matching the expected laterality for duodenal atresia. While duodenal stenosis, web, and annular pancreas produce an identical plain film appearance, duodenal atresia is the most common and most likely diagnosis in a neonate with a complete double bubble and no distal gas. The independent read's anatomy concerns (distended abdomen, paucity of distal gas) are all explained by the proximal obstruction itself. No unexplained anatomical lesions are identified."
+  },
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "contentReview": {
+    "sha256": "d274ad43c6352e042616c997607bea22d128c9aaa64a2d27a1eef6faf8b97f4f",
+    "reviewedAt": "2026-09-12T15:38:35.000Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

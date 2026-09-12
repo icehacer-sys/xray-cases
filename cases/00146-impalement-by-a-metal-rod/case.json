@@ -10,9 +10,9 @@
   "symptom": "a penetrating chest injury after a fall at a construction site",
   "hook": "a thick straight metal object projected across the chest",
   "whatYouSee": "A metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.",
-  "whyItMatters": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+  "whyItMatters": "In a true impalement uncontrolled removal can trigger major bleeding.",
   "treatment": "Trauma specialists plan removal under controlled surgical conditions with bleeding control available.",
-  "takeaway": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+  "takeaway": "In a true impalement uncontrolled removal can trigger major bleeding.",
   "igOptions": [
     "A. Chest drain",
     "B. Impaled rod",
@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-16T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Impalement by a metal rod",
@@ -35,9 +35,9 @@
     "view": "AP chest one view filling the frame with no pelvis or groin",
     "keyFindings": "One continuous straight radiopaque rod projects across the thorax. The visible ribs, clavicles and spine are coherent without duplicated bones.",
     "whatYouSee": "A metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.",
-    "whyItMatters": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+    "whyItMatters": "In a true impalement uncontrolled removal can trigger major bleeding.",
     "treatment": "Trauma specialists plan removal under controlled surgical conditions with bleeding control available.",
-    "takeaway": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+    "takeaway": "In a true impalement uncontrolled removal can trigger major bleeding.",
     "igTitle": "THE CONSTRUCTION SITE",
     "igOptions": [
       "Chest drain",
@@ -50,7 +50,7 @@
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC3039238/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "One continuous straight radiopaque rod projects across the thorax.",
       "The visible ribs, clavicles and spine are coherent without duplicated bones."
@@ -60,38 +60,72 @@
   "laypersonQuestion": "Would you even believe this person survived?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a penetrating chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd a thick straight metal object projected across the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with a penetrating chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nA thick straight metal object projected across the chest.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
-    "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.\n\n🦴 Why it matters:\nIn a true impalement, uncontrolled removal can trigger major bleeding.\n\n💊 Treatment:\nTrauma specialists plan removal under controlled surgical conditions with bleeding control available.",
+    "threadsAnswer": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.\n\n🦴 Why it matters:\nIn a true impalement uncontrolled removal can trigger major bleeding.\n\n💊 Treatment:\nTrauma specialists plan removal under controlled surgical conditions with bleeding control available.",
     "igCaption": "",
     "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
-  "needsReview": true,
-  "verifyDefects": [
-    "Final review in progress",
-    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym52HVKxs3YgchznaLB\"}"
-  ],
+  "needsReview": false,
+  "verifyDefects": [],
   "imageApproval": {
     "sha256": "2a80336b4b7c59dd7795c85f984a5f46d24fb8d25f6d6f115599fd1179c8cc57",
-    "conditionSha256": "f1a4bd12d5bfcb3de2e43eb6579af25c9831a3f18edfba0ca298ef8fd1e6060c",
-    "verifiedAt": "2026-09-10T17:28:20.015Z",
+    "conditionSha256": "eae3b32f036a096b3387b802d3aa0176a3f56f1f782114e7ef980375c6fb26c2",
+    "verifiedAt": "2026-09-12T15:29:58.035Z",
     "model": "claude-sonnet-4-6",
-    "verifierVersion": "3",
+    "verifierVersion": "4",
     "ok": true,
     "defects": [],
     "observations": [
       {
         "expected": "One continuous straight radiopaque rod projects across the thorax.",
-        "observed": "A single, continuous, straight, highly radiopaque rod is visible traversing the lower thorax from the right lateral chest wall through to the left side, with a pointed tip visible on the left. The rod is uniform in density and uninterrupted across its entire visible length.",
+        "observed": "A single continuous straight radiopaque foreign body with a tapered pointed tip projects across the thorax from right lateral to left lateral chest wall at approximately the 7th-8th rib level, with uniform attenuation and coherent geometry throughout its course.",
         "assessable": true,
         "matches": true
       },
       {
         "expected": "The visible ribs, clavicles and spine are coherent without duplicated bones.",
-        "observed": "Both clavicles are individually identifiable and appear symmetric without duplication. The spine is midline and coherent from the cervical-thoracic junction through the visible thoracic levels. Rib pairs are symmetric and trace normal arcs bilaterally without forking, floating, or extra ribs. No duplicated bony structures are identified.",
+        "observed": "Bilateral ribs are visible and appear as matched pairs without forking or duplication; both clavicles are present and distinct; the spine is midline and continuous; scapulae are visible bilaterally without duplication. No floating or extra bony structures are identified.",
         "assessable": true,
         "matches": true
       }
-    ]
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph",
+        "A long, slender, sharply-pointed radiopaque foreign body (rod or spike-like object) traverses the thorax horizontally at approximately the level of the 7th-8th ribs, entering from the right lateral chest wall and exiting (or terminating) at the left lateral chest wall; the object has a tapered pointed distal tip visible on the left side",
+        "The object courses anterior to the vertebral column and appears to pass through or immediately behind the cardiac silhouette and lower thoracic structures",
+        "Mild rightward tracheal deviation is suggested at the carina level",
+        "The lung fields bilaterally show no gross consolidation or obvious large pneumothorax on this single view, though subtle pneumothorax could be obscured",
+        "The cardiac silhouette is not clearly enlarged",
+        "The diaphragms appear relatively symmetric; the right hemidiaphragm is at the level of the anterior 6th rib",
+        "The bony thorax shows no obvious displaced rib fractures on this view, though the foreign body trajectory makes occult fractures possible",
+        "Mild prominence of lower lobe vascular markings bilaterally, possibly representing early pulmonary contusion",
+        "No visible hemothorax opacity, though early or small collections could be radiographically subtle"
+      ],
+      "differential": [
+        "Penetrating thoracic injury by an impaled foreign body (rod, spike, or arrow-like object) with potential injury to mediastinal structures, great vessels, heart, or lung parenchyma along its trajectory",
+        "Traumatic pneumothorax or hemothorax not yet fully developed or not visible on this projection secondary to the penetrating injury",
+        "Pulmonary contusion along the trajectory of the foreign body"
+      ],
+      "anatomyConcerns": [
+        "The foreign body traverses the thorax at a slight oblique angle from right to left and appears to cross the midline posterior to the heart; the exact depth relative to the cardiac chambers and great vessels cannot be determined on a single PA projection — CT would be required",
+        "No lateral projection is available to define the anterior-posterior position of the foreign body",
+        "The pointed tip on the left side suggests the object has partially exited or remains impaled; the right-sided entry point is not clearly defined on this view",
+        "Acquisition appears technically adequate for an AP/PA chest but is a single projection, limiting 3-dimensional localization of the foreign body"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A single long straight radiopaque rod-like foreign body traverses the thorax horizontally from the right lateral chest wall to the left lateral chest wall with a pointed distal tip visible on the left side, consistent with metallic rod impalement. No other diagnosis equally accounts for this specific object morphology and trajectory. Anatomy concerns regarding 3D localization are inherent to a single-projection radiograph and are not generation defects."
+  },
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "contentReview": {
+    "sha256": "8e3828a0eae9fb7e34a5973e4c1b19e4a7551126b0d8785cc1ca9e1f102d4fd5",
+    "reviewedAt": "2026-09-12T15:38:32.256Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

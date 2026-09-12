@@ -10,9 +10,9 @@
   "symptom": "a firm lump in the calf after a remote stay in an endemic area",
   "hook": "a long curling calcification ran through the soft tissues beside the bones",
   "whatYouSee": "A long serpentine soft-tissue calcification suggests a calcified worm remnant.",
-  "whyItMatters": "This can reflect old infection; it does not prove a living worm is present.",
+  "whyItMatters": "This suggests an old infection rather than a living worm. Exposure history and the pattern help distinguish other soft-tissue calcifications.",
   "treatment": "An incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
-  "takeaway": "This can reflect old infection; it does not prove a living worm is present.",
+  "takeaway": "This can reflect old infection. It does not prove a living worm is present.",
   "igOptions": [
     "A. Calcified haematoma",
     "B. Dracunculiasis",
@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-15T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "condition": {
     "diagnosis": "Dracunculiasis",
@@ -36,9 +36,9 @@
     "ageBand": "young-adult",
     "keyFindings": "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones. Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire. The visible tibia and fibula are separate and anatomically coherent.",
     "whatYouSee": "A long serpentine soft-tissue calcification suggests a calcified worm remnant.",
-    "whyItMatters": "This can reflect old infection; it does not prove a living worm is present.",
+    "whyItMatters": "This suggests an old infection rather than a living worm. Exposure history and the pattern help distinguish other soft-tissue calcifications.",
     "treatment": "An incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
-    "takeaway": "This can reflect old infection; it does not prove a living worm is present.",
+    "takeaway": "This can reflect old infection. It does not prove a living worm is present.",
     "igTitle": "THE WORM IN THE LEG",
     "igOptions": [
       "Calcified haematoma",
@@ -50,7 +50,7 @@
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC3159369/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones.",
       "Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire.",
@@ -61,44 +61,82 @@
   "laypersonQuestion": "What do you think left that coil under the skin?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nAnd a long curling calcification ran through the soft tissues beside the bones.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nA long curling calcification ran through the soft tissues beside the bones.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
-    "threadsAnswer": "Answer: Dracunculiasis\n\n👀 What you see:\nA long serpentine soft-tissue calcification suggests a calcified worm remnant.\n\n🦴 Why it matters:\nThis can reflect old infection; it does not prove a living worm is present.\n\n💊 Treatment:\nAn incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
+    "threadsAnswer": "Answer: Dracunculiasis\n\nA long serpentine soft-tissue calcification suggests a calcified Guinea worm remnant.\n\nThis is a likely explanation in the exposure context rather than proof of active infection.\n\nAn incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
     "igCaption": "",
     "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
   },
-  "needsReview": true,
-  "verifyDefects": [
-    "Final review in progress",
-    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym464RgccpHLhzKf9zq\"}"
-  ],
+  "needsReview": false,
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "vascular calcification",
+      "phleboliths",
+      "cysticercosis"
+    ]
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-10T18:39:08.402Z"
+  },
   "imageApproval": {
-    "sha256": "b36250cb9f6a54d2481226e3c64f2d5f6d1e2bcf63b3b0fa249e5c896de01f74",
-    "conditionSha256": "5e678d023785ad741c271e67ed445d48195a41743690efd7e574a5ef91bacd18",
-    "verifiedAt": "2026-09-10T17:28:04.609Z",
+    "sha256": "2e6765f7fd2521f1cbe1a8290e5771b780068b0e84fdc9959a722d857b664c5b",
+    "conditionSha256": "8aaa9efbaa234c2d66826fa1247341c982c85af8b348d3e7539100c38ca0eb98",
+    "clinicalContextSha256": "f28adb89360c8b0e60234fecd1efd3d4bc7d23ed31bd81ab54ecda9f164e7400",
+    "verifiedAt": "2026-09-12T15:37:53.813Z",
     "model": "claude-sonnet-4-6",
-    "verifierVersion": "3",
+    "verifierVersion": "4",
     "ok": true,
     "defects": [],
     "observations": [
       {
         "expected": "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones.",
-        "observed": "A long, sinuous/serpentine curvilinear calcification is visible in the lateral soft tissues of the calf, clearly separate from and lateral to the fibula, lying within the soft tissue envelope rather than in bone.",
+        "observed": "A long, undulating, serpentine, densely radiopaque structure is visible in the soft tissues lateral to the fibula, extending from the proximal to mid-lower leg. It is entirely separate from both the tibia and fibula.",
         "assessable": true,
         "matches": true
       },
       {
         "expected": "Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire.",
-        "observed": "The calcification has a beaded, discontinuous, irregular serpentine quality consistent with a calcified biological structure (e.g., a parasitic worm). It does not have the uniform density, smooth contour, or manufactured appearance of a metal wire or surgical implant.",
+        "observed": "The opacity has an irregular, biologically textured, filiform and coiled morphology with slight variation in density along its course, more consistent with a calcified biological structure than a uniform metallic wire or suture material.",
         "assessable": true,
         "matches": true
       },
       {
         "expected": "The visible tibia and fibula are separate and anatomically coherent.",
-        "observed": "Two distinct parallel long bones are visible with a clear interosseous space: the broader tibia medially and the slender fibula laterally. Both bones are anatomically coherent with no fusion, duplication, or garbling. The knee joint proximally and the ankle mortise distally are appropriately formed. Skeletal maturity is consistent with the stated adult age range (closed physes).",
+        "observed": "Two distinct parallel long bones with a clear interosseous space are visible: a medial tibia (broader, with well-defined cortices) and a lateral fibula (slender). They are anatomically coherent, separate, and without fusion, duplication, or garbling.",
         "assessable": true,
         "matches": true
       }
-    ]
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the lower leg (tibia and fibula) from knee to ankle",
+        "Tibia and fibula appear intact with no visible cortical disruption or fracture lines identified on this view",
+        "A curvilinear, serpentine, densely radiopaque structure is present in the soft tissues lateral to the fibula, extending from the proximal to mid-lower leg; it has an irregular, coiled or undulating morphology and does not follow any known vascular or neural anatomical course",
+        "The structure is entirely within the soft tissues and is not in contact with or traversing bone",
+        "No periosteal reaction, cortical erosion, or osseous lesion is identified",
+        "Soft tissue contour appears symmetric and unremarkable aside from the described opacity",
+        "No joint effusion or gross soft tissue swelling is evident on this projection"
+      ],
+      "differential": [
+        "Parasitic calcification (e.g., Dracunculus medinensis / guinea worm or other tissue-dwelling nematode): the elongated, serpiginous, coiled soft-tissue calcification is the classic appearance of a calcified subcutaneous parasite",
+        "Calcified varix or venous malformation: tortuous vascular calcification can appear serpentine in soft tissues, though the morphology here is more filiform than typical phlebolith clusters",
+        "Foreign body (ingested or embedded wire/suture material): an artificial filamentous metallic foreign body could produce this appearance, though the irregular undulating outline is more consistent with a biological structure than a manufactured implant"
+      ],
+      "anatomyConcerns": [
+        "The serpentine opacity is lateral to the fibula in the subcutaneous/intermuscular soft tissues; no known normal anatomical structure (vessel, nerve, tendon) in this location would produce this appearance, consistent with a pathological or foreign entity rather than normal anatomy",
+        "No acquisition or positioning inconsistency noted; the projection is standard AP lower leg"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The long, serpentine, filiform soft-tissue calcification lying lateral to the fibula in the calf, combined with the clinical history of a firm calf lump after residence in an endemic area, is the classic radiographic appearance of Dracunculiasis (guinea worm calcification). The undulating, coiled morphology and filiform calibre are more consistent with a calcified biological nematode than a manufactured wire (which would show uniform metallic density and straight or smoothly curved geometry) or a vascular malformation (which would show phleboliths or broader tubular structures). No equally supported alternative diagnosis is present given the combination of imaging pattern and clinical context."
+  },
+  "contentReview": {
+    "sha256": "846d14b90dcc0af2e56d7138b5e670a02d3ad93b684233afb6ce2d98fc288541",
+    "reviewedAt": "2026-09-12T15:38:02.031Z",
+    "reviewer": "claude-sonnet-4-6"
   }
 }

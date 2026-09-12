@@ -1,0 +1,132 @@
+{
+  "folder": "00161-swallowed-spoon",
+  "number": 161,
+  "diagnosis": "Swallowed spoon",
+  "aliases": [
+    "ingested spoon",
+    "gastric spoon foreign body",
+    "swallowed a spoon"
+  ],
+  "symptom": "upper abdominal discomfort after swallowing an object",
+  "hook": "a long metallic object with a rounded bowl and straight handle projected over the upper abdomen",
+  "whatYouSee": "A complete spoon-shaped metal object projects over the expected stomach region.",
+  "whyItMatters": "Long rigid objects can fail to pass the duodenum and can injure the gut wall.",
+  "treatment": "Endoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+  "takeaway": "Object size and shape guide management. One AP image cannot confirm the exact depth or location.",
+  "igOptions": [
+    "A. A calcified mass",
+    "B. A swallowed spoon",
+    "C. A surgical clip"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-19T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:54:16.178Z"
+  },
+  "condition": {
+    "diagnosis": "Swallowed spoon",
+    "aliases": [
+      "ingested spoon",
+      "gastric spoon foreign body",
+      "swallowed a spoon"
+    ],
+    "symptom": "upper abdominal discomfort after swallowing an object",
+    "hook": "a long metallic object with a rounded bowl and straight handle projected over the upper abdomen",
+    "view": "AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
+    "keyFindings": "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
+    "whatYouSee": "A complete spoon-shaped metal object projects over the expected stomach region.",
+    "whyItMatters": "Long rigid objects can fail to pass the duodenum and can injure the gut wall.",
+    "treatment": "Endoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+    "takeaway": "Object size and shape guide management. One AP image cannot confirm the exact depth or location.",
+    "igTitle": "THE SPOON",
+    "igOptions": [
+      "A calcified mass",
+      "A swallowed spoon",
+      "A surgical clip"
+    ],
+    "igCorrect": "B",
+    "used": true,
+    "ageBand": "young-adult",
+    "sources": [
+      "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions"
+    ],
+    "reviewedAt": "2026-09-12",
+    "requiredObservations": [
+      "Exactly one continuous metal spoon silhouette with one rounded bowl and one connected straight handle projects over the expected stomach region.",
+      "The upper abdominal anatomy is coherent with no duplicated object or unrelated radiopaque hardware."
+    ]
+  },
+  "imageApproval": {
+    "sha256": "afcc57c6aab4e4ebd5d095367dca1102545ec273ef7643af9f3f5ae466053e2c",
+    "conditionSha256": "32a26dd40d571247b47842ac68d083f90831fe301f407054d1e986874f48f228",
+    "clinicalContextSha256": "917c291cc26ea6923e365a68445767eaa039cd9770f06fffd88a52934667983d",
+    "verifiedAt": "2026-09-12T15:54:16.182Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Exactly one continuous metal spoon silhouette with one rounded bowl and one connected straight handle projects over the expected stomach region.",
+        "observed": "A single radiopaque spoon silhouette is visible in the left upper quadrant overlying the gastric gas shadow. One rounded bowl is seen at the superior end and one straight tapering handle extends inferiorly. The bowl and handle are continuously connected with no duplication or fragmentation.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The upper abdominal anatomy is coherent with no duplicated object or unrelated radiopaque hardware.",
+        "observed": "Only one radiopaque foreign body (the spoon) is present. No additional hardware, duplicated objects, or unrelated radiopaque structures are identified. The surrounding abdominal anatomy — stomach, kidneys, spine, and bowel gas pattern — is coherent and unremarkable.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) supine abdominal radiograph including the lower thorax",
+        "Radiopaque metallic foreign body in the left upper quadrant overlying the gastric shadow, with the characteristic shape of a small spoon (bowl and handle clearly visible), oriented obliquely with the handle directed inferiorly",
+        "Large gas-filled viscus in the left upper quadrant consistent with a distended stomach containing the foreign body",
+        "Bilateral renal outlines visible in the mid-abdomen, appearing within normal size limits",
+        "Colonic haustral gas pattern visible throughout the abdomen without obvious distension",
+        "Lumbar vertebral column visible with no gross osseous destruction seen on this projection",
+        "Lower thoracic ribs partially visualised; no definite pneumoperitoneum identified on this supine view",
+        "No obvious free intraperitoneal air, though supine projection limits sensitivity for this finding"
+      ],
+      "differential": [
+        "Ingested intragastric metallic foreign body (spoon) — most likely diagnosis given the classic spoon morphology and location within the gastric gas shadow",
+        "Ingested foreign body within the distal oesophagus/gastro-oesophageal junction with gastric distension — less likely given the object appears fully within the stomach",
+        "Foreign body within a gastric diverticulum or fundal structure — considered but standard gastric location is most consistent"
+      ],
+      "anatomyConcerns": [
+        "The spoon is a real radiopaque foreign body and not an anatomical structure; its presence within the stomach carries risk of gastric mucosal injury, pyloric obstruction, or perforation",
+        "Supine projection limits detection of free intraperitoneal air; an erect or left lateral decubitus view would improve sensitivity for perforation assessment",
+        "The upper thorax and pelvis are not fully included in this field of view, limiting complete survey"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A clearly defined radiopaque object with the characteristic morphology of a small spoon — a rounded bowl at the superior end and a straight tapering handle directed inferiorly — is visible overlying the gastric gas shadow in the left upper quadrant. The clinical vignette of upper abdominal discomfort after swallowing an object is consistent. No equally supported alternative exists; the spoon shape is distinctive and unambiguous. The stomach bubble is singular and appropriately located. Bilateral renal outlines are present and symmetric. The lumbar spine is midline and continuous. Colonic gas follows a coherent haustra-lined lumen bilaterally. No duplicated organs, floating gas blobs, or impossible anatomy identified. The pelvis is partially visible at the inferior field edge but the groin is excluded. Skeletally mature bony structures consistent with a young adult are present. No lettering or side markers are present."
+  },
+  "difficulty": 1,
+  "laypersonQuestion": "Would you notice this on an X-ray yourself?",
+  "seedHint": "Look at the shape in the upper belly and ask yourself if it belongs there",
+  "generated": {
+    "threadsCaption": "A patient came in with upper abdominal discomfort after swallowing an object.\n\nThen the X-ray loaded 😭\n\nA long metallic object with a rounded bowl and straight handle projected over the upper abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a little upper abdominal discomfort after swallowing something.\n\nThen the X-ray loaded 😭\n\nA long metallic object with a rounded bowl and straight handle projected over the upper abdomen.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Swallowed spoon\n\n👀 What you see:\nA complete spoon-shaped metal object projects over the expected stomach region.\n\n🦴 Why it matters:\nLong rigid objects can fail to pass the duodenum and can injure the gut wall.\n\n💊 Treatment:\nEndoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "944bfbf6d3ac09e5938dbf4fe13fb205ba95fe220e5e2468d7b75e5539f39a22",
+    "reviewedAt": "2026-09-12T15:54:23.595Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "needsReview": false
+}

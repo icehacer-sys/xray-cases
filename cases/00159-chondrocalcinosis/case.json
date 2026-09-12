@@ -1,0 +1,141 @@
+{
+  "folder": "00159-chondrocalcinosis",
+  "number": 159,
+  "diagnosis": "Chondrocalcinosis",
+  "aliases": [
+    "CPPD",
+    "pseudogout",
+    "calcium pyrophosphate deposition disease"
+  ],
+  "symptom": "a hot swollen knee",
+  "hook": "the cartilage itself had turned into a bright white line inside the joint",
+  "whatYouSee": "Thin bright calcified lines lie in the knee cartilage and menisci.",
+  "whyItMatters": "Cartilage calcification can accompany CPPD. It may be asymptomatic or occur with acute inflammatory arthritis.",
+  "treatment": "Acute attacks may need anti-inflammatory treatment. A hot swollen joint also needs assessment to exclude infection.",
+  "takeaway": "Chondrocalcinosis is an imaging finding. It does not prove an active CPPD attack.",
+  "igOptions": [
+    "A. Gout",
+    "B. Chondrocalcinosis",
+    "C. Osteoarthritis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-18T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:52:38.614Z"
+  },
+  "condition": {
+    "diagnosis": "Chondrocalcinosis",
+    "aliases": [
+      "CPPD",
+      "pseudogout",
+      "calcium pyrophosphate deposition disease"
+    ],
+    "symptom": "a hot swollen knee",
+    "hook": "the cartilage itself had turned into a bright white line inside the joint",
+    "view": "AP knee",
+    "ageBand": "older",
+    "keyFindings": "Conspicuous granular white mineralisation occupies the wedge-shaped medial and lateral menisci inside the femorotibial joint space. The calcified meniscal wedges are physically separated from the femoral and tibial cortical endplates by dark joint-space gaps. A second thin calcified line follows the femoral articular cartilage. Femoral condyles and tibial plateaus are smooth with preserved joint width and intact cortex. One knee in a single AP view.",
+    "whatYouSee": "Thin bright calcified lines lie in the knee cartilage and menisci.",
+    "whyItMatters": "Cartilage calcification can accompany CPPD. It may be asymptomatic or occur with acute inflammatory arthritis.",
+    "treatment": "Acute attacks may need anti-inflammatory treatment. A hot swollen joint also needs assessment to exclude infection.",
+    "takeaway": "Chondrocalcinosis is an imaging finding. It does not prove an active CPPD attack.",
+    "igTitle": "THE JOINT THAT TURNED TO CHALK",
+    "igOptions": [
+      "Gout",
+      "Chondrocalcinosis",
+      "Osteoarthritis"
+    ],
+    "igCorrect": "B",
+    "sources": [
+      "https://rheumatology.org/patients/calcium-pyrophosphate-deposition-cppd"
+    ],
+    "reviewedAt": "2026-09-12",
+    "requiredObservations": [
+      "Granular calcification is visible within both wedge-shaped menisci inside the femorotibial joint space.",
+      "Calcified cartilage is separated from underlying bone cortex by a visible dark interval.",
+      "One coherent mature knee with intact femoral condyles and tibial plateaus."
+    ],
+    "used": true
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "difficulty": 3,
+  "laypersonQuestion": "What normally invisible part just showed up white?",
+  "seedHint": "Look inside the joint itself and ask: should that bright line be there at all?",
+  "generated": {
+    "threadsCaption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nThe cartilage itself had turned into a bright white line inside the joint.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Chondrocalcinosis\n\n👀 What you see:\nThin bright calcified lines lie in the knee cartilage and menisci.\n\n🦴 Why it matters:\nCartilage calcification can accompany CPPD. It may be asymptomatic or occur with acute inflammatory arthritis.\n\n💊 Treatment:\nAcute attacks may need anti-inflammatory treatment. A hot swollen joint also needs assessment to exclude infection.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "imageApproval": {
+    "sha256": "5fc903e6955d6320b74c766f34ed909080503b48e048d5805ea870984bfffa22",
+    "conditionSha256": "010ec72579d25255eb1215c58e6b279c27d47d6dc74ac6439db6b50df9480231",
+    "clinicalContextSha256": "f280ac9608ab74b90d317a488e4187a20c1e4f67282489c23111c987dfe558c3",
+    "verifiedAt": "2026-09-12T15:54:12.091Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Granular calcification is visible within both wedge-shaped menisci inside the femorotibial joint space.",
+        "observed": "Dense curvilinear/granular calcifications are clearly visible within both medial and lateral menisci bilaterally, occupying the expected wedge-shaped fibrocartilaginous zones inside the femorotibial joint space.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Calcified cartilage is separated from underlying bone cortex by a visible dark interval.",
+        "observed": "The calcified meniscal lines are separated from the tibial and femoral cortical endplates by clearly visible dark joint-space intervals, confirming intra-articular rather than subchondral location.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "One coherent mature knee with intact femoral condyles and tibial plateaus.",
+        "observed": "A single mature knee is depicted with intact, coherent femoral condyles and tibial plateaus. No duplication, garbling, or anatomical impossibility is present. Fibular head is in normal position. Patella is appropriately positioned.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) projection of the right knee",
+        "Bilateral dense curvilinear calcifications within the meniscal fibrocartilage of both medial and lateral compartments, appearing as paired radiodense lines paralleling the tibial plateau articular surfaces",
+        "Joint space width appears relatively preserved bilaterally, though mild narrowing may be present in the medial compartment",
+        "Subchondral bone density appears normal without obvious erosions or cysts",
+        "No acute fracture lines identified",
+        "Patella visible in its expected position",
+        "Tibial spine morphology appears within normal limits",
+        "No gross soft tissue calcification or periarticular ossification noted outside the menisci",
+        "Fibula head visible in expected position laterally"
+      ],
+      "differential": [
+        "Chondrocalcinosis (calcium pyrophosphate deposition disease, CPPD) — most likely given bilateral dense meniscal calcifications in characteristic distribution",
+        "Calcium hydroxyapatite deposition disease (HADD) — less typical distribution but dense calcification could rarely involve fibrocartilage",
+        "Early degenerative joint disease with secondary CPPD — medial compartment narrowing with associated meniscal calcification"
+      ],
+      "anatomyConcerns": [
+        "No significant acquisition or anatomical inconsistencies identified; the projection appears adequately centered and penetrated",
+        "Slight rotation of the tibial plateau is possible but minimal",
+        "No implanted hardware or extraneous artifacts present"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "Bilateral dense curvilinear/granular calcifications are visible within both medial and lateral meniscal fibrocartilage in a characteristic distribution for CPPD chondrocalcinosis. The calcified lines parallel the tibial plateau and are physically separated from the bony cortex by dark joint-space gaps. The clinical context of a hot swollen knee further supports acute CPPD (pseudogout). No equally or better supported alternative is resolvable from the visible pattern alone; HADD in this distribution is atypical and lower-ranked."
+  },
+  "contentReview": {
+    "sha256": "7a2d9575ccbc6b421ece44480f8cae358c9089a61460a104c0f0cdba6700908e",
+    "reviewedAt": "2026-09-12T15:54:16.889Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

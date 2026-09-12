@@ -875,7 +875,8 @@
       "PA view shows increased radial inclination and a triangular carpus with proximal lunate subsidence.",
       "Lateral view shows increased volar tilt with dorsal prominence of the distal ulna.",
       "Radius and ulna are separate coherent bones, with no duplicated carpal bones."
-    ]
+    ],
+    "skipPublic": true
   },
   {
     "diagnosis": "Coin in the oesophagus",
@@ -1083,9 +1084,9 @@
     "view": "AP chest one view filling the frame with no pelvis or groin",
     "keyFindings": "One continuous straight radiopaque rod projects across the thorax. The visible ribs, clavicles and spine are coherent without duplicated bones.",
     "whatYouSee": "A metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.",
-    "whyItMatters": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+    "whyItMatters": "In a true impalement uncontrolled removal can trigger major bleeding.",
     "treatment": "Trauma specialists plan removal under controlled surgical conditions with bleeding control available.",
-    "takeaway": "In a true impalement, uncontrolled removal can trigger major bleeding.",
+    "takeaway": "In a true impalement uncontrolled removal can trigger major bleeding.",
     "igTitle": "THE CONSTRUCTION SITE",
     "igOptions": [
       "Chest drain",
@@ -1098,7 +1099,7 @@
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC3039238/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "One continuous straight radiopaque rod projects across the thorax.",
       "The visible ribs, clavicles and spine are coherent without duplicated bones."
@@ -1613,14 +1614,14 @@
       "gastric spoon foreign body",
       "swallowed a spoon"
     ],
-    "symptom": "a swallowed object after a dare and a heavy dragging feeling in the gut but no real pain",
+    "symptom": "upper abdominal discomfort after swallowing an object",
     "hook": "a long metallic object with a rounded bowl and straight handle projected over the upper abdomen",
     "view": "AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
     "keyFindings": "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
     "whatYouSee": "A complete spoon-shaped metal object projects over the expected stomach region.",
     "whyItMatters": "Long rigid objects can fail to pass the duodenum and can injure the gut wall.",
     "treatment": "Endoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
-    "takeaway": "Object size, shape and location guide foreign-body management.",
+    "takeaway": "Object size and shape guide management. One AP image cannot confirm the exact depth or location.",
     "igTitle": "THE SPOON",
     "igOptions": [
       "A calcified mass",
@@ -1633,10 +1634,10 @@
     "sources": [
       "https://www.asge.org/home/resources/publications/guidelines/management-of-ingested-foreign-bodies-and-food-impactions"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
-      "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
-      "The visible anatomy matches the requested AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
+      "Exactly one continuous metal spoon silhouette with one rounded bowl and one connected straight handle projects over the expected stomach region.",
+      "The upper abdominal anatomy is coherent with no duplicated object or unrelated radiopaque hardware."
     ]
   },
   {
@@ -2528,7 +2529,8 @@
       "Flowing thick anterior ossification bridges at least four contiguous vertebral bodies.",
       "Disc heights are relatively preserved; severe disc collapse does not dominate the pattern.",
       "The visible vertebral bodies and posterior elements are anatomically coherent."
-    ]
+    ],
+    "skipPublic": true
   },
   {
     "diagnosis": "Dracunculiasis",
@@ -2543,9 +2545,9 @@
     "ageBand": "young-adult",
     "keyFindings": "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones. Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire. The visible tibia and fibula are separate and anatomically coherent.",
     "whatYouSee": "A long serpentine soft-tissue calcification suggests a calcified worm remnant.",
-    "whyItMatters": "This can reflect old infection; it does not prove a living worm is present.",
+    "whyItMatters": "This suggests an old infection rather than a living worm. Exposure history and the pattern help distinguish other soft-tissue calcifications.",
     "treatment": "An incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
-    "takeaway": "This can reflect old infection; it does not prove a living worm is present.",
+    "takeaway": "This can reflect old infection. It does not prove a living worm is present.",
     "igTitle": "THE WORM IN THE LEG",
     "igOptions": [
       "Calcified haematoma",
@@ -2557,7 +2559,7 @@
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC3159369/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones.",
       "Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire.",
@@ -2590,7 +2592,7 @@
     "sources": [
       "https://www.merckmanuals.com/professional/pediatrics/congenital-gastrointestinal-anomalies/duodenal-obstruction"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "Two large upper abdominal gas lucencies represent a larger stomach on the patient left and proximal duodenum on the right.",
       "Little or no gas is visible distal to the two bubbles within this cropped field.",
@@ -2659,7 +2661,8 @@
     "requiredObservations": [
       "Several intervertebral discs show dense calcification and reduced height.",
       "Visible vertebral bodies have coherent cortical margins and alignment."
-    ]
+    ],
+    "skipPublic": true
   },
   {
     "diagnosis": "Mycetoma",
@@ -2733,15 +2736,15 @@
       "pseudogout",
       "calcium pyrophosphate deposition disease"
     ],
-    "symptom": "a hot swollen knee in an older patient that looked exactly like an attack of gout",
+    "symptom": "a hot swollen knee",
     "hook": "the cartilage itself had turned into a bright white line inside the joint",
     "view": "AP knee",
     "ageBand": "older",
-    "keyFindings": "dense linear calcification of the hyaline articular cartilage and of the menisci showing as bright white lines running parallel to the bone ends within the joint space",
+    "keyFindings": "Conspicuous granular white mineralisation occupies the wedge-shaped medial and lateral menisci inside the femorotibial joint space. The calcified meniscal wedges are physically separated from the femoral and tibial cortical endplates by dark joint-space gaps. A second thin calcified line follows the femoral articular cartilage. Femoral condyles and tibial plateaus are smooth with preserved joint width and intact cortex. One knee in a single AP view.",
     "whatYouSee": "Thin bright calcified lines lie in the knee cartilage and menisci.",
     "whyItMatters": "Cartilage calcification can accompany CPPD. It may be asymptomatic or occur with acute inflammatory arthritis.",
     "treatment": "Acute attacks may need anti-inflammatory treatment. A hot swollen joint also needs assessment to exclude infection.",
-    "takeaway": "Chondrocalcinosis is an imaging finding; it does not prove an active CPPD attack.",
+    "takeaway": "Chondrocalcinosis is an imaging finding. It does not prove an active CPPD attack.",
     "igTitle": "THE JOINT THAT TURNED TO CHALK",
     "igOptions": [
       "Gout",
@@ -2752,11 +2755,13 @@
     "sources": [
       "https://rheumatology.org/patients/calcium-pyrophosphate-deposition-cppd"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
-      "dense linear calcification of the hyaline articular cartilage and of the menisci showing as bright white lines running parallel to the bone ends within the joint space",
-      "The visible anatomy matches the requested AP knee and the declared age and anatomical exceptions."
-    ]
+      "Granular calcification is visible within both wedge-shaped menisci inside the femorotibial joint space.",
+      "Calcified cartilage is separated from underlying bone cortex by a visible dark interval.",
+      "One coherent mature knee with intact femoral condyles and tibial plateaus."
+    ],
+    "used": true
   },
   {
     "diagnosis": "Odontogenic keratocyst",
@@ -2803,9 +2808,9 @@
     "ageBand": "older",
     "keyFindings": "multiple dense calcified pleural plaques lying along both hemidiaphragms and the lateral chest wall with irregular holly leaf shaped edges and clear lung fields in between them",
     "whatYouSee": "Sheets of bright calcium sit along the lining of the lungs and the diaphragm with jagged holly leaf edges.",
-    "whyItMatters": "Pleural plaques are benign markers of past asbestos exposure. The exposure, rather than the plaques themselves, carries cancer risk.",
+    "whyItMatters": "Pleural plaques are benign markers of past asbestos exposure. Asbestos exposure carries cancer risk independently of the plaques.",
     "treatment": "Isolated plaques usually need no treatment or routine imaging follow-up. Document exposure and address individual risk factors.",
-    "takeaway": "Calcified pleural plaques suggest past exposure; they are not cancer or a precancerous lesion.",
+    "takeaway": "Calcified pleural plaques suggest past exposure. They are not cancer or a precancerous lesion.",
     "igTitle": "FROST ON THE LUNGS",
     "igOptions": [
       "Calcified pleural plaques",
@@ -2816,11 +2821,13 @@
     "sources": [
       "https://www.rightdecisions.scot.nhs.uk/tam-treatments-and-medicines-nhs-highland/therapeutic-guidelines/respiratory/pleural-plaques-guidelines/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
       "multiple dense calcified pleural plaques lying along both hemidiaphragms and the lateral chest wall with irregular holly leaf shaped edges and clear lung fields in between them",
       "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true,
+    "skipPublic": true
   },
   {
     "diagnosis": "Infantile scurvy",
@@ -3081,9 +3088,9 @@
     ],
     "symptom": "an arm that still moved at the break a year after the fracture was supposed to heal",
     "hook": "the bone had piled up huge lumps of callus around a break that never actually joined",
-    "view": "AP and lateral humerus",
+    "view": "single AP humerus radiograph including the shoulder and elbow",
     "ageBand": "middle-aged",
-    "keyFindings": "bulbous flaring callus heaped around both ends of an old humeral fracture giving an elephant foot shape with the fracture line still running clean through the middle and never bridged",
+    "keyFindings": "A chronic midshaft humeral fracture with large mature bulbous callus flaring from both fracture ends. A persistent transverse lucent fracture gap separates the two callus masses without a bridging cortex. The humeral head and elbow remain normally aligned. This is one humerus with an elephant-foot callus pattern around one old ununited fracture.",
     "whatYouSee": "Huge lumps of new bone flare out on both sides of the old break but the crack itself still runs straight through and never closes.",
     "whyItMatters": "Persistent fracture movement can prevent union despite abundant callus. Mechanical and biological factors both need assessment.",
     "treatment": "Improved stability and compression are often central. Grafting and other treatment depend on the individual fracture.",
@@ -3098,11 +3105,14 @@
     "sources": [
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC11201148/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
-      "bulbous flaring callus heaped around both ends of an old humeral fracture giving an elephant foot shape with the fracture line still running clean through the middle and never bridged",
-      "The visible anatomy matches the requested AP and lateral humerus and the declared age and anatomical exceptions."
-    ]
+      "Abundant mature bulbous callus surrounds both ends of a single midshaft humeral fracture.",
+      "The fracture gap persists through the callus with no complete osseous bridge.",
+      "One coherent humerus connects a normally aligned shoulder and elbow apart from the declared chronic fracture."
+    ],
+    "anatomyException": "The old humeral fracture remains ununited with a persistent gap and abundant mature callus. This localized discontinuity is the intended pathology.",
+    "used": true
   },
   {
     "diagnosis": "Skeletal fluorosis",

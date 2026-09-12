@@ -6,7 +6,7 @@ The active pipeline publishes one educational X-ray challenge per Cairo night at
 
 Run `npm run queue:check`. This reads local case files, state and approval hashes without API calls or publication. It prints every unposted case, date and hold reason. Pull main first when comparing with production. A local report cannot prove the public GitHub asset has propagated; the publisher separately verifies the public image bytes before creating a post.
 
-Generated cases need an image verdict matching the final bytes and diagnostic inputs, a copy review matching the current content, and no `needsReview` hold. Auto-approval never bypasses these checks. Legacy manual cases retain their explicit manual workflow and are not certified by these generated-case gates.
+Generated cases need an image verdict matching the final bytes and diagnostic inputs, a copy review matching the current content, and no `needsReview` hold. The first image read receives neither the answer nor the clinical vignette. The second assessment receives the vignette so it can judge the most likely answer in context. New approvals hash that vignette too, so changing it requires renewed review. Earlier image-only approvals remain valid because their assessments did not use this added context. Auto-approval never bypasses these checks. Legacy manual cases retain their explicit manual workflow and are not certified by these generated-case gates.
 
 ## Repair a hold
 

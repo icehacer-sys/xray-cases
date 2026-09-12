@@ -71,6 +71,7 @@ export interface Case {
   imageApproval?: {
     sha256: string;
     conditionSha256: string;
+    clinicalContextSha256?: string;
     verifiedAt: string;
     model: string;
     verifierVersion: string;

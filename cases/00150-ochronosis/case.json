@@ -7,7 +7,7 @@
     "ochronotic spondylosis",
     "black bone disease"
   ],
-  "symptom": "longstanding back pain and stiffness",
+  "symptom": "longstanding back pain and urine that darkens after standing",
   "hook": "several discs had become dense white bands between the vertebrae",
   "whatYouSee": "Several narrowed intervertebral discs show dense calcification.",
   "whyItMatters": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
@@ -30,11 +30,11 @@
       "ochronotic spondylosis",
       "black bone disease"
     ],
-    "symptom": "longstanding back pain and stiffness",
+    "symptom": "longstanding back pain and urine that darkens after standing",
     "hook": "several discs had become dense white bands between the vertebrae",
     "view": "lateral lumbar spine cropped above the hip joints with no pelvis or groin in frame",
     "ageBand": "older",
-    "keyFindings": "Several intervertebral discs show dense calcification and reduced height. Visible vertebral bodies have coherent cortical margins and alignment.",
+    "keyFindings": "The dominant conspicuous finding is DENSE CHALK-WHITE CALCIFICATION INSIDE the intervertebral discs at five consecutive lumbar levels. Each narrowed disc space contains a broad bright mineralised horizontal band occupying its central substance, clearly brighter than both adjacent vertebral bodies. The calcified disc bands are separate from the thin vertebral cortical endplates. The vertebral bodies themselves retain grey trabecular interiors, normal height and smooth cortical outlines. This is the classic dense multilevel intradiscal calcification pattern of ochronotic spondylosis.",
     "whatYouSee": "Several narrowed intervertebral discs show dense calcification.",
     "whyItMatters": "This pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.",
     "treatment": "Specialist care may include nitisinone and treatment of joint symptoms.",
@@ -50,17 +50,17 @@
     "sources": [
       "https://www.ncbi.nlm.nih.gov/books/NBK1454/"
     ],
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-09-12",
     "requiredObservations": [
-      "Several intervertebral discs show dense calcification and reduced height.",
-      "Visible vertebral bodies have coherent cortical margins and alignment."
+      "Several narrowed intervertebral disc spaces contain dense intradiscal calcification.",
+      "Vertebral bodies retain coherent normal-density trabeculation and intact margins without diffuse ivory sclerosis or destructive lesions."
     ]
   },
   "difficulty": 5,
   "laypersonQuestion": "Why would someones urine turn black after sitting out?",
   "seedHint": "Start with the shape and position of the main finding.",
   "generated": {
-    "threadsCaption": "A patient came in with longstanding back pain and stiffness.\n\nThen the X-ray loaded 😭\n\nAnd several discs had become dense white bands between the vertebrae.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with longstanding back pain and urine that darkens after standing.\n\nThen the X-ray loaded 😭\n\nSeveral discs had become dense white bands between the vertebrae.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Ochronosis\n\n👀 What you see:\nSeveral narrowed intervertebral discs show dense calcification.\n\n🦴 Why it matters:\nThis pattern can suggest alkaptonuria. Urine homogentisic acid testing confirms the metabolic diagnosis.\n\n💊 Treatment:\nSpecialist care may include nitisinone and treatment of joint symptoms.",
     "igCaption": "",
@@ -68,30 +68,55 @@
   },
   "needsReview": true,
   "verifyDefects": [
-    "Final review in progress",
-    "Error: 400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011Ceym5A6Y8EUDed3WEXQc3\"}"
+    "Unexplained additional image findings: [\"Flowing anterior ossification bridging multiple contiguous vertebral levels suggestive of DISH, which is not a feature of ochronosis\"]",
+    "Error: Copy review failed: [\"The diagnosticContext lists acceptedDifferentials as CPPD and hemochromatosis but does not include ochronosis/alkaptonuria, yet the entire case presents ochronosis as the established diagnosis. The accepted differentials should include the stated diagnosis or at least not contradict it; as written, the metadata is internally inconsistent.\",\"The threadsAnswer states the diagnosis is 'Ochronosis' with certainty, but the diagnosticContext.certainty is 'illustrative' and confirmationEvidence is empty. Presenting the diagnosis as a definitive answer ('Answer: Ochronosis') overstates what can be established without confirmation evidence such as urine homogentisic acid levels or biopsy.\",\"The keyFindings claim 'five consecutive lumbar levels' of calcified discs, but the typical lumbar spine has only five vertebrae creating four intervertebral disc spaces (L1-L2 through L4-L5), or five if the lumbosacral disc (L5-S1) is included. Claiming 'five consecutive lumbar levels' of disc calcification is ambiguous and potentially overstates the count relative to the described cropped view that excludes the pelvis.\"]"
   ],
-  "imageApproval": {
-    "sha256": "d59b532e29df3b439a4deea539c6c75b3be250b8a457d157cd3c3ca050d94974",
-    "conditionSha256": "65fc77fda002844ee9b4cc0cf15f762ce2883fcc9a3a9a2e14174bda6e0a0730",
-    "verifiedAt": "2026-09-10T17:28:33.907Z",
-    "model": "claude-sonnet-4-6",
-    "verifierVersion": "3",
-    "ok": true,
-    "defects": [],
-    "observations": [
-      {
-        "expected": "Several intervertebral discs show dense calcification and reduced height.",
-        "observed": "Multiple intervertebral disc spaces throughout the visible lumbar and lower thoracic spine demonstrate dense, bright calcification with markedly reduced disc height, consistent with ochronotic disc disease.",
-        "assessable": true,
-        "matches": true
-      },
-      {
-        "expected": "Visible vertebral bodies have coherent cortical margins and alignment.",
-        "observed": "The vertebral bodies form a single continuous column with sequential sizing, intact cortical margins, and maintained overall alignment. No duplication, floating vertebra, or garbling is identified.",
-        "assessable": true,
-        "matches": true
-      }
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "CPPD",
+      "hemochromatosis"
     ]
-  }
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-12T15:40:32.013Z"
+  },
+  "imageApproval": {
+    "sha256": "8e784ccc8f847749efc93ddc2ea32f933f2dbd9960aac901cf252c203a32bd4e",
+    "conditionSha256": "cc2f5c4cb6a372fe83f40de540196fb447b15f32dda9567ff9f0984381bffcb8",
+    "clinicalContextSha256": "a03d75236d83794fe44d793db346cd4f6e940550f7825992dbc3e0c2b21fc8e0",
+    "verifiedAt": "2026-09-12T15:48:02.658Z",
+    "model": "claude-opus-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Flowing anterior ossification bridging multiple contiguous vertebral levels suggestive of DISH, which is not a feature of ochronosis\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection radiograph of the thoracolumbar spine, encompassing approximately T10 through L4",
+        "Anterior osteophyte formation at multiple vertebral body levels, most prominent along the anterior margins of the lower thoracic and upper lumbar vertebral bodies",
+        "Disc space narrowing at multiple levels, particularly in the mid-lumbar region",
+        "Endplate sclerosis visible at several levels",
+        "Mild anterior wedging of at least one mid-thoracic vertebral body suggesting possible mild compression deformity",
+        "Flowing anterior ossification along several contiguous vertebral body levels, which appears to bridge at least some disc spaces anteriorly",
+        "Preserved posterior vertebral body alignment without evidence of significant listhesis",
+        "Bowel gas pattern visible overlying the abdomen on the left side of the image"
+      ],
+      "differential": [
+        "Diffuse idiopathic skeletal hyperostosis (DISH) given the flowing anterior ossification bridging multiple contiguous vertebral levels",
+        "Degenerative spondylosis with multi-level osteophyte formation and disc space narrowing",
+        "Ankylosing spondylitis, though the pattern of anterior bridging and preserved disc spaces at some levels favors DISH over AS"
+      ],
+      "anatomyConcerns": [
+        "The image appears slightly oblique rather than a true lateral, which may limit assessment of posterior elements",
+        "Limited field of view superiorly and inferiorly makes it difficult to fully count vertebral levels and assess transitional anatomy",
+        "No lateral side marker visible to confirm orientation"
+      ]
+    }
+  },
+  "retired": true,
+  "retirementReason": "Owner requested replacement after regenerated image failed renewed independent QA."
 }
