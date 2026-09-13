@@ -2495,7 +2495,8 @@
     "requiredObservations": [
       "multiple long smooth curvilinear soft-tissue densities clustered within gas-filled small-bowel loops and outlined by surrounding dark gas; no claim of motion from a still image",
       "The visible anatomy matches the requested supine abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Diffuse idiopathic skeletal hyperostosis",

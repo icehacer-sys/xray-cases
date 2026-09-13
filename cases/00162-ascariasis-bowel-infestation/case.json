@@ -1,0 +1,140 @@
+{
+  "folder": "00162-ascariasis-bowel-infestation",
+  "number": 162,
+  "diagnosis": "Ascariasis bowel infestation",
+  "aliases": [
+    "Ascaris lumbricoides",
+    "roundworm bolus",
+    "intestinal ascariasis",
+    "worm bolus"
+  ],
+  "symptom": "crampy abdominal pain and vomiting",
+  "hook": "bowel gas outlined a tangle of long smooth curved shadows",
+  "whatYouSee": "Gas outlines long curved tubular densities within bowel loops.",
+  "whyItMatters": "Heavy Ascaris infection can obstruct the bowel. The radiographic pattern needs clinical and parasitological correlation.",
+  "treatment": "Deworming treats infection. Suspected obstruction needs specialist assessment and may require procedural treatment.",
+  "takeaway": "A worm-like bowel pattern is a diagnostic clue, not proof from a single image.",
+  "igOptions": [
+    "A. Intussusception",
+    "B. Ascariasis",
+    "C. Meckel diverticulum"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-25T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-13T22:19:19.994Z"
+  },
+  "condition": {
+    "diagnosis": "Ascariasis bowel infestation",
+    "aliases": [
+      "Ascaris lumbricoides",
+      "roundworm bolus",
+      "intestinal ascariasis",
+      "worm bolus"
+    ],
+    "symptom": "crampy abdominal pain and vomiting",
+    "hook": "bowel gas outlined a tangle of long smooth curved shadows",
+    "view": "supine abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
+    "keyFindings": "multiple long smooth curvilinear soft-tissue densities clustered within gas-filled small-bowel loops and outlined by surrounding dark gas; no claim of motion from a still image",
+    "whatYouSee": "Gas outlines long curved tubular densities within bowel loops.",
+    "whyItMatters": "Heavy Ascaris infection can obstruct the bowel. The radiographic pattern needs clinical and parasitological correlation.",
+    "treatment": "Deworming treats infection. Suspected obstruction needs specialist assessment and may require procedural treatment.",
+    "takeaway": "A worm-like bowel pattern is a diagnostic clue, not proof from a single image.",
+    "igTitle": "THE WRIGGLING SHADOWS",
+    "igOptions": [
+      "Intussusception",
+      "Ascariasis",
+      "Meckel diverticulum"
+    ],
+    "igCorrect": "B",
+    "ageBand": "child",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/6771997/",
+      "https://www.cdc.gov/dpdx/ascariasis/index.html"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "multiple long smooth curvilinear soft-tissue densities clustered within gas-filled small-bowel loops and outlined by surrounding dark gas; no claim of motion from a still image",
+      "The visible anatomy matches the requested supine abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "4ce4fa20f660729af3d854858327b5665a548f869f0eff5d5a791ee75b966ab4",
+    "conditionSha256": "7e8a2806c1bc6142b4c9270c854245d2b0f66bc9f86b25ccd78ab992d2679185",
+    "clinicalContextSha256": "b4c9921f1b723e250980cbdd8eb8fbfe65f631a9b45aa666957a8ef65eba297d",
+    "verifiedAt": "2026-09-13T22:19:19.996Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "multiple long smooth curvilinear soft-tissue densities clustered within gas-filled small-bowel loops and outlined by surrounding dark gas; no claim of motion from a still image",
+        "observed": "Multiple long curvilinear and tubular radiopaque structures are visible throughout the mid and lower abdomen within gas-filled small bowel loops, clearly outlined by surrounding dark intraluminal gas, consistent with adult Ascaris worms. This is a static image with no motion claim.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested supine abdomen cropped at the iliac crests with the pelvis and groin completely out of frame and the declared age and anatomical exceptions.",
+        "observed": "The image shows a supine abdomen with the iliac crests partially visible at the inferior margin and the upper pelvis just included; the groin is largely out of frame. Skeletal maturity appears consistent with a child aged 3-11, with visible vertebral and rib morphology appropriate for this age range. No impossible anatomy is identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the abdomen and lower chest",
+        "Multiple curvilinear and tubular radiopaque structures distributed throughout the small bowel loops in the mid and lower abdomen, consistent with calcified or radio-opaque helminth parasites",
+        "The structures display the characteristic coiled/curved morphology of roundworm (Ascaris lumbricoides) adults",
+        "Bowel gas pattern shows moderately distended small bowel loops centrally",
+        "No pneumoperitoneum identified on this projection",
+        "Lumbar spine shows mild dextroscoliosis",
+        "Lower ribs and pelvis are partially included; iliac crests visible inferiorly",
+        "No obvious calcified renal or bladder calculi seen",
+        "Liver and spleen margins are partially obscured by overlying bowel gas",
+        "No soft tissue masses clearly delineated"
+      ],
+      "differential": [
+        "Ascariasis (Ascaris lumbricoides infestation): most likely given the multiple curvilinear tubular radio-opaque structures conforming to the shape and distribution of adult roundworms within small bowel",
+        "Small bowel obstruction secondary to helminth bolus: the moderate small bowel distension in conjunction with large worm burden raises concern for partial or impending mechanical obstruction",
+        "Other helminth infestation (e.g., heavy Trichuris or mixed helminthiasis): less likely given the size and coiled morphology of the opacities, but cannot be excluded without clinical correlation"
+      ],
+      "anatomyConcerns": [
+        "The pelvis is partially cut off inferiorly, limiting assessment of the rectosigmoid region and bladder",
+        "The upper abdomen and diaphragm are partially excluded, limiting assessment for free air under the diaphragm",
+        "Mild dextroscoliosis of the lumbar spine is a true anatomical finding rather than acquisition obliquity, as the spinous processes are rotated"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "Multiple long curvilinear tubular radiopaque structures distributed throughout the small bowel loops bilaterally, displaying the characteristic coiled and curved morphology of adult Ascaris lumbricoides worms outlined by surrounding intraluminal gas. The sheer number, size, and distribution of these opacities, combined with moderately distended small bowel loops and the clinical vignette of crampy abdominal pain and vomiting in a child, strongly supports heavy Ascaris infestation as the primary diagnosis. No equally supported alternative is identified; calcified mesenteric nodes would appear as discrete rounded calcifications rather than long curvilinear tubular structures. The mild dextroscoliosis is a true anatomical finding. The pelvis is partially included inferiorly but iliac crests are visible, slightly outside the expected crop. No pneumoperitoneum, no duplicated organs, one midline lumbar spine, bowel gas follows anatomical luminal distribution."
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "genitalia still visible after auto-censor — blur manually (regencase grid + blurbox) then clear needsReview"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does the inside of that gut look alive to you?",
+  "seedHint": "Look at the loops inside the bowel and ask yourself: gas shadow or something else entirely?",
+  "generated": {
+    "threadsCaption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nBowel gas outlined a tangle of long smooth curved shadows.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a stomachache and some vomiting - the kind of Tuesday that barely feels worth the copay.\n\nThen the X-ray loaded 😭\n\nBowel gas outlined a tangle of long smooth curved shadows.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ascariasis bowel infestation\n\n👀 What you see:\nGas outlines long curved tubular densities within bowel loops.\n\n🦴 Why it matters:\nHeavy Ascaris infection can obstruct the bowel. The radiographic pattern needs clinical and parasitological correlation.\n\n💊 Treatment:\nDeworming treats infection. Suspected obstruction needs specialist assessment and may require procedural treatment.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "aa02832c136510fc6401ba7ebafabec8aa39d0abf9bf1f5686665a996e2e9359",
+    "reviewedAt": "2026-09-13T22:19:25.571Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
