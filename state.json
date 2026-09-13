@@ -119,6 +119,17 @@
       "publishedId": "17962731431980325",
       "publishedAt": "2026-09-12T21:29:56.599Z",
       "confirmedPublished": true
+    },
+    "case:00145-swallowed-safety-pin:challenge": {
+      "creationId": "17889183417614054",
+      "createdAt": "2026-09-13T19:04:13.081Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00145-swallowed-safety-pin/xray.png",
+        "text": "A patient came in with drooling and refusal to feed after a suspected ingestion.\n\nThen the X-ray loaded 😭\n\nAnd an open V-shaped metal object with a small coil appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "55a3892f2ee49a7dd81515829c8876c8fd26d6a25e138b5d510f28d464962605:05b2a2464ecb175c2f3591593c1e40b3b727dab6b01b0948ac4134f069e08804:374afbf070fe3019c37a39a23ae7c7de5c16ed21fef9ad6ab51a65a970c338cd"
     }
   },
   "stages": {
@@ -789,12 +800,18 @@
       "answerCommentId": "18115375138972260",
       "answerPostedAt": "2026-09-12T20:33:47.765Z",
       "ctaPostedAt": "2026-09-12T21:29:58.683Z"
+    },
+    "00145-swallowed-safety-pin": {
+      "publishedCaption": "A patient came in with drooling and refusal to feed after a suspected ingestion.\n\nThen the X-ray loaded 😭\n\nAnd an open V-shaped metal object with a small coil appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00145-swallowed-safety-pin\",\"assignedAt\":\"2026-09-13T19:04:06.509Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-12",
+      "date": "2026-09-13",
       "count": 0
     }
   }
