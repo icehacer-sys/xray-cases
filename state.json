@@ -133,6 +133,16 @@
       "publishedId": "17984836785119873",
       "publishedAt": "2026-09-13T19:04:17.850Z",
       "confirmedPublished": true
+    },
+    "case:00145-swallowed-safety-pin:answer": {
+      "creationId": "17889185859614054",
+      "createdAt": "2026-09-13T19:24:28.636Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Swallowed safety pin\n\n👀 What you see:\nAn open pin with a spring coil projects over the upper oesophageal region.\n\n🦴 Why it matters:\nA sharp oesophageal object can perforate the wall.\n\n💊 Treatment:\nUrgent specialist removal is required. Further imaging may help establish its position.",
+        "reply_to_id": "17984836785119873",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":287}]"
+      }
     }
   },
   "stages": {
