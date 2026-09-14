@@ -159,6 +159,17 @@
       "publishedId": "18094938158542971",
       "publishedAt": "2026-09-13T20:20:03.967Z",
       "confirmedPublished": true
+    },
+    "case:00158-hypertrophic-nonunion:challenge": {
+      "creationId": "17889341097614054",
+      "createdAt": "2026-09-14T19:00:27.103Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00158-hypertrophic-nonunion/xray.png",
+        "text": "A patient came in with an arm that still moved at the break a year after the fracture was supposed to heal.\n\nThen the X-ray loaded 😭\n\nThe bone had piled up huge lumps of callus around a break that never actually joined.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "2520c6040356b859079a59c32427b2a6ab1295a64048a0b26e9eb4392f13bf90:6b8587aa19544e3be32e5a9d6eb0769b5cc0979c7be46d66ce0c96efade90ac2:04b8110932d110eb1fc041d3730a07ee7abeee14fdcc7dc787b741957e9d1dda"
     }
   },
   "stages": {
@@ -840,12 +851,18 @@
       "answerCommentId": "18133981408652682",
       "answerPostedAt": "2026-09-13T19:24:35.711Z",
       "ctaPostedAt": "2026-09-13T20:20:05.809Z"
+    },
+    "00158-hypertrophic-nonunion": {
+      "publishedCaption": "A patient came in with an arm that still moved at the break a year after the fracture was supposed to heal.\n\nThen the X-ray loaded 😭\n\nThe bone had piled up huge lumps of callus around a break that never actually joined.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00158-hypertrophic-nonunion\",\"assignedAt\":\"2026-09-14T19:00:22.709Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-13",
+      "date": "2026-09-14",
       "count": 0
     }
   }
