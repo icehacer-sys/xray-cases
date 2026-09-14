@@ -1,0 +1,132 @@
+{
+  "folder": "00164-mycetoma",
+  "number": 164,
+  "diagnosis": "Mycetoma",
+  "aliases": [
+    "Madura foot",
+    "maduromycosis",
+    "eumycetoma"
+  ],
+  "symptom": "a hugely swollen foot with discharging sinuses in a barefoot farm worker",
+  "hook": "the foot had swollen into a lumpy mass and the bones inside were quietly being eaten away",
+  "whatYouSee": "Marked foot swelling accompanies rounded bone cavities and periosteal new bone.",
+  "whyItMatters": "Chronic fungal or bacterial infection can invade bone and cause major disability. Tissue studies identify the organism.",
+  "treatment": "Therapy depends on the organism. Prolonged medication and selected surgery may be needed; advanced disease can require amputation.",
+  "takeaway": "A swollen foot with draining sinuses and bone destruction raises concern for mycetoma.",
+  "igOptions": [
+    "A. Mycetoma",
+    "B. Charcot joint",
+    "C. Osteosarcoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-26T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-14T23:34:16.304Z"
+  },
+  "condition": {
+    "diagnosis": "Mycetoma",
+    "aliases": [
+      "Madura foot",
+      "maduromycosis",
+      "eumycetoma"
+    ],
+    "symptom": "a hugely swollen foot with discharging sinuses in a barefoot farm worker",
+    "hook": "the foot had swollen into a lumpy mass and the bones inside were quietly being eaten away",
+    "view": "AP and lateral foot",
+    "ageBand": "young-adult",
+    "keyFindings": "gross soft tissue swelling of the whole foot with multiple rounded lytic cavities in the tarsal and metatarsal bones and dense periosteal new bone while the overall shape of the foot is preserved",
+    "whatYouSee": "Marked foot swelling accompanies rounded bone cavities and periosteal new bone.",
+    "whyItMatters": "Chronic fungal or bacterial infection can invade bone and cause major disability. Tissue studies identify the organism.",
+    "treatment": "Therapy depends on the organism. Prolonged medication and selected surgery may be needed; advanced disease can require amputation.",
+    "takeaway": "A swollen foot with draining sinuses and bone destruction raises concern for mycetoma.",
+    "igTitle": "THE MADURA FOOT",
+    "igOptions": [
+      "Mycetoma",
+      "Charcot joint",
+      "Osteosarcoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/mycetoma"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "gross soft tissue swelling of the whole foot with multiple rounded lytic cavities in the tarsal and metatarsal bones and dense periosteal new bone while the overall shape of the foot is preserved",
+      "The visible anatomy matches the requested AP and lateral foot and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "aeaf0b5f7e8b026af79825a5ca6ae51417e2aad9a65547e28561be2dc7064b79",
+    "conditionSha256": "ede0ec89dc13b7debe4793b78dfa5a29562954b618c6cfcf138cb3427dfa835a",
+    "clinicalContextSha256": "098b56ac35a861abba6819089343ceb11f147cf1021824a1181981f0a47d082d",
+    "verifiedAt": "2026-09-14T23:34:16.305Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "gross soft tissue swelling of the whole foot with multiple rounded lytic cavities in the tarsal and metatarsal bones and dense periosteal new bone while the overall shape of the foot is preserved",
+        "observed": "Marked soft tissue enlargement is visible on both views. The tarsal and metatarsal bones show diffuse trabecular expansion with a honeycomb/soap-bubble pattern of rounded lucencies consistent with lytic cavities. Cortical thinning and periosteal thickening are present. The overall foot architecture is preserved.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested AP and lateral foot and the declared age and anatomical exceptions.",
+        "observed": "The left panel is a dorsoplantar (AP) foot projection and the right panel is a lateral foot projection. Five metatarsals and five digit rays with correct phalanx counts (hallux two phalanges, lateral four toes three phalanges each) are visible on the AP view. The lateral shows the medial column as expected for this projection. Physes are fused throughout confirming skeletal maturity appropriate for an adult aged 19-39. No lettering or markers are present.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Two-view radiograph of the foot: dorsoplantar (AP) projection on the left and lateral projection on the right",
+        "Diffuse, bilateral and symmetric-appearing coarsening of the trabecular pattern throughout the tarsal bones, metatarsals, and phalanges, with a prominent 'soap-bubble' or 'honeycomb' trabecular pattern",
+        "Marked cortical thinning and expansion of the medullary cavities of the metatarsals and tarsal bones",
+        "The bones appear enlarged with widened medullary spaces and thinned but intact cortices",
+        "No discrete fracture line is identified on the views provided",
+        "No significant periosteal reaction is visible",
+        "Joint spaces appear relatively preserved",
+        "Soft tissue contour appears enlarged, particularly over the heel and plantar surface on the lateral view",
+        "The overall bone density appears reduced with the coarse trabecular pattern predominating"
+      ],
+      "differential": [
+        "Paget disease of bone (osteitis deformans): the coarsened trabecular pattern, cortical thickening/expansion, and involvement of multiple bones in the foot is highly characteristic",
+        "Fibrous dysplasia (polyostotic): expansion of medullary cavity with ground-glass or 'bubbly' trabecular pattern affecting multiple bones could produce this appearance",
+        "Hemangiomatosis of bone (multiple skeletal hemangiomas): prominent coarse vertical trabecular striations and honeycomb pattern in multiple bones of the foot is consistent with this entity"
+      ],
+      "anatomyConcerns": [
+        "The lateral view appears to show only the medial column (first ray, navicular, talus, calcaneus) and may not include all five metatarsals, which is a standard lateral foot limitation",
+        "Soft tissue swelling on the lateral view may partially obscure bony detail at the plantar margin",
+        "No ankle mortise is included, limiting assessment of the distal tibia and fibula for potential extension of disease"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The clinical vignette of a barefoot farm worker with a hugely swollen foot and discharging sinuses is classic for mycetoma (Madura foot). The radiograph shows gross soft tissue swelling, diffuse coarsening and expansion of the trabecular pattern with rounded lytic cavities throughout the tarsal and metatarsal bones, and cortical changes consistent with dense periosteal new bone formation. The honeycomb/soap-bubble trabecular pattern with preserved overall foot architecture matches mycetoma's known radiographic appearance. While Paget disease can produce similar trabecular coarsening, it would be extraordinary in a 19-39-year-old barefoot farm worker with sinuses; fibrous dysplasia typically presents with ground-glass matrix rather than discrete rounded cavities; and skeletal hemangiomatosis would not produce sinuses or the characteristic clinical picture. The clinical vignette resolves the differential in favor of mycetoma. The lateral view shows only the medial column which is a standard projection limitation and not an AI defect. Soft tissue enlargement on the lateral view is consistent with gross swelling. Five metatarsals and five digit rays are visible on the AP view with appropriate phalanx counts. Skeletal maturity is confirmed with fused physes throughout. No lettering or markers are present."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What would make a foot swell this big?",
+  "seedHint": "Look at those bones. Are they crumbling from the outside in or the inside out?",
+  "generated": {
+    "threadsCaption": "A patient came in with a hugely swollen foot with discharging sinuses in a barefoot farm worker.\n\nThen the X-ray loaded 😭\n\nThe foot had swollen into a lumpy mass and the bones inside were quietly being eaten away.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a farm worker with a swollen foot and some small draining spots on the skin.\n\nThen the X-ray loaded 😭\n\nThe foot had swollen into a lumpy mass and the bones inside were quietly being eaten away.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Mycetoma\n\n👀 What you see:\nMarked foot swelling accompanies rounded bone cavities and periosteal new bone.\n\n🦴 Why it matters:\nChronic fungal or bacterial infection can invade bone and cause major disability. Tissue studies identify the organism.\n\n💊 Treatment:\nTherapy depends on the organism. Prolonged medication and selected surgery may be needed; advanced disease can require amputation.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "53f6482d1efbfb4a0f5aa0e11d594dc046f0dfd7fdb31f80b86d5bd314e14f81",
+    "reviewedAt": "2026-09-14T23:34:25.697Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

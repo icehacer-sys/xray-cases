@@ -2696,7 +2696,8 @@
     "requiredObservations": [
       "gross soft tissue swelling of the whole foot with multiple rounded lytic cavities in the tarsal and metatarsal bones and dense periosteal new bone while the overall shape of the foot is preserved",
       "The visible anatomy matches the requested AP and lateral foot and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Psoriatic arthritis mutilans",
