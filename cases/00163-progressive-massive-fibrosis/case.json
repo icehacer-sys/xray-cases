@@ -1,0 +1,128 @@
+{
+  "folder": "00163-progressive-massive-fibrosis",
+  "number": 163,
+  "diagnosis": "Progressive massive fibrosis",
+  "aliases": [
+    "complicated pneumoconiosis"
+  ],
+  "symptom": "decades of worsening breathlessness in a retired stone quarry worker",
+  "hook": "two great masses had formed high in the lungs and were dragging everything upward toward them",
+  "whatYouSee": "Large upper-lung masses sit among small nodules, with rim-calcified hilar nodes and upward hilar retraction.",
+  "whyItMatters": "Severe dust-related lung scarring can merge into large masses. Silica exposure also increases tuberculosis risk.",
+  "treatment": "Care focuses on stopping exposure, respiratory support and assessment for complications, including tuberculosis.",
+  "takeaway": "Conglomerate upper-lung masses in a dust-exposed worker suggest progressive massive fibrosis.",
+  "igOptions": [
+    "A. Progressive massive fibrosis",
+    "B. Cannonball metastases",
+    "C. Sarcoidosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-26T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-14T03:22:55.783Z"
+  },
+  "condition": {
+    "diagnosis": "Progressive massive fibrosis",
+    "aliases": [
+      "complicated pneumoconiosis"
+    ],
+    "symptom": "decades of worsening breathlessness in a retired stone quarry worker",
+    "hook": "two great masses had formed high in the lungs and were dragging everything upward toward them",
+    "view": "PA chest",
+    "ageBand": "older",
+    "keyFindings": "large conglomerate masses in both upper zones surrounded by profuse small nodules with eggshell calcification of the enlarged hilar lymph nodes and upward retraction of both hila",
+    "whatYouSee": "Large upper-lung masses sit among small nodules, with rim-calcified hilar nodes and upward hilar retraction.",
+    "whyItMatters": "Severe dust-related lung scarring can merge into large masses. Silica exposure also increases tuberculosis risk.",
+    "treatment": "Care focuses on stopping exposure, respiratory support and assessment for complications, including tuberculosis.",
+    "takeaway": "Conglomerate upper-lung masses in a dust-exposed worker suggest progressive massive fibrosis.",
+    "igTitle": "THE STONECUTTER'S LUNGS",
+    "igOptions": [
+      "Progressive massive fibrosis",
+      "Cannonball metastases",
+      "Sarcoidosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://stacks.cdc.gov/view/cdc/126384",
+      "https://www.cdc.gov/niosh/silica/symptoms/index.html"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "large conglomerate masses in both upper zones surrounded by profuse small nodules with eggshell calcification of the enlarged hilar lymph nodes and upward retraction of both hila",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "93172f610ff7a093eeb12dc9e0dc0dd2f76f69a75df567e74323588ca2a5beb5",
+    "conditionSha256": "d1c7ee1b2b03f88ceb8afb50800c99573e4edcc2ca991f7db6b37983a743b5ef",
+    "clinicalContextSha256": "b61987942119260b6cdf9ca172b5bcd86324b3dea68593be479bc16cd3bb0c87",
+    "verifiedAt": "2026-09-14T03:22:55.784Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "large conglomerate masses in both upper zones surrounded by profuse small nodules with eggshell calcification of the enlarged hilar lymph nodes and upward retraction of both hila",
+        "observed": "Bilateral large irregular conglomerate opacities are present in both upper zones with internal cavitation/lucencies and spiculated margins. Profuse small nodules (miliary pattern) are distributed throughout both lungs as background. Bilateral mid-zone lobulated calcified nodular clusters adjacent to the hila are visible, consistent with eggshell-calcified lymph nodes. The hila appear prominent and the upper lobe masses create the impression of superior hilar displacement. All key features of PMF are present and assessable.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions.",
+        "observed": "PA chest projection confirmed. One heart shadow, bilateral hemidiaphragms, symmetric ribcage with no forked or duplicated ribs, one clavicle and scapula per side, trachea midline. Lung markings branch and taper appropriately outside the pathological zones. Skeletal maturity is consistent with an adult. No anatomical impossibilities identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph with adequate inspiration and near-symmetric positioning",
+        "Bilateral diffuse miliary-pattern nodularity: innumerable small (~1-3 mm) discrete nodules distributed throughout both lung fields from apices to bases",
+        "Two large cavitating/conglomerate masses: one in the right upper lobe and one in the left upper lobe, each with irregular spiculated margins and internal lucencies consistent with cavitation",
+        "Bilateral hilar prominence suggesting lymphadenopathy or engorged hilar vessels",
+        "Bilateral mid-zone clustered calcified nodules with lobulated contours, bilaterally symmetric, suggestive of calcified lymph nodes or eggshell-pattern calcifications",
+        "Trachea midline; cardiac silhouette appears within normal limits",
+        "Costophrenic angles appear partially visualised but not obviously blunted",
+        "No pleural effusion definitively identified",
+        "Bony thorax: ribs and visible shoulder girdle structures appear intact without obvious lytic or sclerotic lesions"
+      ],
+      "differential": [
+        "Post-primary pulmonary tuberculosis with miliary dissemination: upper lobe cavitating masses with surrounding satellite nodularity plus bilateral miliary nodules and calcified hilar/mediastinal nodes are classic; eggshell-pattern calcifications bilaterally support prior granulomatous infection",
+        "Silicosis (complicated / progressive massive fibrosis): bilateral upper lobe conglomerate opacities with surrounding miliary nodularity and bilateral eggshell-calcified hilar nodes is a hallmark pattern; miliary background consistent with simple silicosis",
+        "Disseminated fungal infection (e.g. histoplasmosis or coccidioidomycosis): bilateral cavitating upper lobe lesions with miliary haematogenous dissemination and calcified mediastinal/hilar nodes are recognised presentations; cannot distinguish from TB on imaging alone"
+      ],
+      "anatomyConcerns": [
+        "The bilateral clustered calcified nodules in the mid-lung zones with lobulated margins appear symmetrically placed adjacent to the hila; their morphology is consistent with eggshell-calcified lymph nodes rather than an impossible anatomical structure",
+        "No impossible anatomical configuration identified; projection and exposure appear adequate for diagnostic interpretation"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The combination of bilateral upper zone large conglomerate masses with surrounding profuse small nodules (background simple silicosis pattern), bilateral eggshell-pattern calcified hilar/mediastinal lymph nodes, and the clinical context of decades of stone quarry work producing progressive breathlessness is the classic hallmark of progressive massive fibrosis (complicated silicosis). While post-primary TB and disseminated fungal infection share some features, the bilaterally symmetric conglomerate masses with eggshell calcifications in a quarry worker are the specific discriminating combination that places PMF above the other differentials. TB would typically show more asymmetric apical disease with volume loss and pleural thickening; fungal disease would be less expected in this occupational context with this pattern."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "What could pull lung tissue upward like that?",
+  "seedHint": "Look at the upper lung zones and ask yourself what is dragging and what is being dragged.",
+  "generated": {
+    "threadsCaption": "A patient came in with decades of worsening breathlessness in a retired stone quarry worker.\n\nThen the X-ray loaded 😭\n\nTwo great masses had formed high in the lungs and were dragging everything upward toward them.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a gradual worsening shortness of breath that had crept up so slowly over the years it barely seemed worth mentioning.\n\nThen the X-ray loaded 😭\n\nTwo great masses had formed high in the lungs and were dragging everything upward toward them.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Progressive massive fibrosis\n\n👀 What you see:\nLarge upper-lung masses sit among small nodules, with rim-calcified hilar nodes and upward hilar retraction.\n\n🦴 Why it matters:\nSevere dust-related lung scarring can merge into large masses. Silica exposure also increases tuberculosis risk.\n\n💊 Treatment:\nCare focuses on stopping exposure, respiratory support and assessment for complications, including tuberculosis.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "e10df355db2eaf3e7fdfd2356884674673e47ae3cc0b98c21ee481666a893f0c",
+    "reviewedAt": "2026-09-14T03:23:03.361Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

@@ -2629,7 +2629,8 @@
     "requiredObservations": [
       "large conglomerate masses in both upper zones surrounded by profuse small nodules with eggshell calcification of the enlarged hilar lymph nodes and upward retraction of both hila",
       "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Ochronosis",
