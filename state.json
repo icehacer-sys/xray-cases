@@ -199,6 +199,17 @@
       "publishedId": "18095696972561664",
       "publishedAt": "2026-09-14T21:26:54.253Z",
       "confirmedPublished": true
+    },
+    "case:00148-dracunculiasis:challenge": {
+      "creationId": "17889495063614054",
+      "createdAt": "2026-09-15T19:03:20.979Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00148-dracunculiasis/xray.png",
+        "text": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nA long curling calcification ran through the soft tissues beside the bones.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "2e6765f7fd2521f1cbe1a8290e5771b780068b0e84fdc9959a722d857b664c5b:8aaa9efbaa234c2d66826fa1247341c982c85af8b348d3e7539100c38ca0eb98:846d14b90dcc0af2e56d7138b5e670a02d3ad93b684233afb6ce2d98fc288541"
     }
   },
   "stages": {
@@ -891,12 +902,18 @@
       "answerCommentId": "18105776906071411",
       "answerPostedAt": "2026-09-14T20:31:22.356Z",
       "ctaPostedAt": "2026-09-14T21:26:56.080Z"
+    },
+    "00148-dracunculiasis": {
+      "publishedCaption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nA long curling calcification ran through the soft tissues beside the bones.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00148-dracunculiasis\",\"assignedAt\":\"2026-09-15T19:03:13.901Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "count": 0
     }
   }
