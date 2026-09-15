@@ -226,6 +226,16 @@
       "publishedId": "18101640437300194",
       "publishedAt": "2026-09-15T19:23:50.781Z",
       "confirmedPublished": true
+    },
+    "case:00148-dracunculiasis:cta": {
+      "creationId": "17889503175614054",
+      "createdAt": "2026-09-15T20:19:59.614Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com",
+        "reply_to_id": "18101640437300194",
+        "link_attachment": "https://xray.mednoteslab.com"
+      }
     }
   },
   "stages": {
