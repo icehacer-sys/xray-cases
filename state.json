@@ -266,6 +266,16 @@
       "publishedId": "17895978393393793",
       "publishedAt": "2026-09-16T20:32:07.099Z",
       "confirmedPublished": true
+    },
+    "case:00146-impalement-by-a-metal-rod:cta": {
+      "creationId": "17889647520614054",
+      "createdAt": "2026-09-16T21:27:29.879Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com",
+        "reply_to_id": "17895978393393793",
+        "link_attachment": "https://anxiety.mednoteslab.com"
+      }
     }
   },
   "stages": {
