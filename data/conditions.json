@@ -2872,7 +2872,8 @@
     "requiredObservations": [
       "dense white metaphyseal lines across the knees with lucent scurvy lines just beneath them and thin pencilled cortices and dense ring like rims around the epiphyses plus subperiosteal new bone from old haemorrhage",
       "The visible anatomy matches the requested AP both knees and lower legs of an infant and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Ulnar dimelia",
@@ -2965,7 +2966,8 @@
     "requiredObservations": [
       "continuous bone running from the distal humerus into the proximal radius with the joint space between them absent while the ulna remains separate and the elbow is held in one fixed position",
       "The visible anatomy matches the requested AP and lateral elbow with the distal humerus and proximal forearm and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Double-layered patella",

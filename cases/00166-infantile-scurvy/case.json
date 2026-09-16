@@ -1,0 +1,121 @@
+{
+  "folder": "00166-infantile-scurvy",
+  "number": 166,
+  "diagnosis": "Infantile scurvy",
+  "aliases": [
+    "Barlow disease",
+    "vitamin C deficiency"
+  ],
+  "symptom": "painful legs and reluctance to move them",
+  "hook": "the baby lay frog legged and would not move because every bone hurt to touch",
+  "whatYouSee": "Bright dense lines cross the ends of the long bones with dark lines just beneath them and the growth centres carry thin white rings.",
+  "whyItMatters": "Vitamin C deficiency impairs collagen formation and can cause bone pain and bleeding. Diet and clinical testing support the diagnosis.",
+  "treatment": "Vitamin C replacement and nutritional support treat the deficiency. Recovery is monitored clinically.",
+  "takeaway": "Dense metaphyseal lines and ringed epiphyses can suggest scurvy in the appropriate setting.",
+  "igOptions": [
+    "A. Non-accidental injury",
+    "B. Infantile scurvy",
+    "C. Rickets"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-27T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-16T21:40:55.558Z"
+  },
+  "condition": {
+    "diagnosis": "Infantile scurvy",
+    "aliases": [
+      "Barlow disease",
+      "vitamin C deficiency"
+    ],
+    "symptom": "painful legs and reluctance to move them",
+    "hook": "the baby lay frog legged and would not move because every bone hurt to touch",
+    "view": "AP both knees and lower legs of an infant",
+    "ageBand": "infant",
+    "keyFindings": "dense white metaphyseal lines across the knees with lucent scurvy lines just beneath them and thin pencilled cortices and dense ring like rims around the epiphyses plus subperiosteal new bone from old haemorrhage",
+    "whatYouSee": "Bright dense lines cross the ends of the long bones with dark lines just beneath them and the growth centres carry thin white rings.",
+    "whyItMatters": "Vitamin C deficiency impairs collagen formation and can cause bone pain and bleeding. Diet and clinical testing support the diagnosis.",
+    "treatment": "Vitamin C replacement and nutritional support treat the deficiency. Recovery is monitored clinically.",
+    "takeaway": "Dense metaphyseal lines and ringed epiphyses can suggest scurvy in the appropriate setting.",
+    "igTitle": "THE BABY WHO WOULD NOT MOVE",
+    "igOptions": [
+      "Non-accidental injury",
+      "Infantile scurvy",
+      "Rickets"
+    ],
+    "igCorrect": "B",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2952912/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "dense white metaphyseal lines across the knees with lucent scurvy lines just beneath them and thin pencilled cortices and dense ring like rims around the epiphyses plus subperiosteal new bone from old haemorrhage",
+      "The visible anatomy matches the requested AP both knees and lower legs of an infant and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "f9f51f9a0509c76e6d819cd843572e3ac7772f2c98068382ba067dd9a6b0bd59",
+    "conditionSha256": "dd50efa9fb6041cd3af334c0039a73ee1310b2b1ea47804a2222a91817a2ae7a",
+    "clinicalContextSha256": "ee36284a4fd578152c8f04c4a34aca6bc88f1244ca6f277ae6ab52a71ea20e0f",
+    "verifiedAt": "2026-09-16T21:40:55.559Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Pronounced medial proximal tibial metaphyseal beaking and medial physeal depression bilaterally — characteristic of Blount disease, not scurvy\",\"Irregular fragmented proximal tibial physes with focal medial angulation — inconsistent with scurvy pattern\",\"Marked genu varum with abrupt medial angulation at proximal tibiae bilaterally — Blount disease morphology, not the generalised bowing of scurvy\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of bilateral lower legs and knees, imaged together on a single exposure",
+        "Multiple open physeal growth plates visible at the distal femora, proximal tibiae, proximal fibulae, distal tibiae, and distal fibulae bilaterally, consistent with a skeletally immature subject",
+        "Bilateral proximal tibial metaphyses demonstrate pronounced medial beaking and irregular medial physeal depression with abrupt angulation at the proximal tibial metaphysis bilaterally, more pronounced on the right than the left",
+        "Marked bilateral genu varum (bow-leg deformity) with medial angulation at the knee level",
+        "Irregular, fragmented and widened proximal tibial physes bilaterally with metaphyseal irregularity and dense medial beak formation",
+        "The fibular heads appear relatively elevated bilaterally relative to the tibial plateau",
+        "Cortical margins of the tibial and fibular diaphyses are otherwise intact without obvious acute fracture lines in the diaphyses",
+        "Soft tissue appears within normal limits for the projection"
+      ],
+      "differential": [
+        "Blount disease (tibia vara) — bilateral, infantile or juvenile type: the combination of pronounced medial proximal tibial metaphyseal beaking, physeal irregularity, medial epiphyseal depression, and genu varum is the classic appearance",
+        "Rickets (nutritional or metabolic) — could account for physeal widening, metaphyseal irregularity, and bowing, though the focal medial beaking is more specific to Blount disease; rickets typically shows more diffuse and symmetric cupping/fraying throughout multiple physes",
+        "Physiologic genu varum with incidental physeal variant — less likely given the severity and asymmetric morphological changes at the proximal tibial physis"
+      ],
+      "anatomyConcerns": [
+        "Both lower extremities are included on a single exposure, which is appropriate for comparative evaluation of bilateral deformity",
+        "The distal femora are partially visible at the top of the image; full knee joint is included bilaterally allowing adequate assessment",
+        "The ankles are only partially visualized at the inferior margin, limiting evaluation of distal tibial and fibular physes",
+        "No markers or laterality labels are visible in the image, which is an acquisition inconsistency"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Pronounced medial proximal tibial metaphyseal beaking and medial physeal depression bilaterally — characteristic of Blount disease, not scurvy\",\"Irregular fragmented proximal tibial physes with focal medial angulation — inconsistent with scurvy pattern\",\"Marked genu varum with abrupt medial angulation at proximal tibiae bilaterally — Blount disease morphology, not the generalised bowing of scurvy\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Why would a baby refuse to move their legs?",
+  "seedHint": "Look at the bone edges and ask yourself if something is missing or breaking down.",
+  "teaser": "And the legs told a story the parents never expected to find",
+  "generated": {
+    "threadsCaption": "A patient came in with painful legs and reluctance to move them.\n\nThen the X-ray loaded 😭\n\nAnd the legs told a story the parents never expected to find.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Infantile scurvy\n\n👀 What you see:\nBright dense lines cross the ends of the long bones with dark lines just beneath them and the growth centres carry thin white rings.\n\n🦴 Why it matters:\nVitamin C deficiency impairs collagen formation and can cause bone pain and bleeding. Diet and clinical testing support the diagnosis.\n\n💊 Treatment:\nVitamin C replacement and nutritional support treat the deficiency. Recovery is monitored clinically.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "093cae9c6dbdab179a4a34c3af0068f67cbeb66d39b3dd4c2f8c31a9d2e28486",
+    "reviewedAt": "2026-09-16T21:41:02.383Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

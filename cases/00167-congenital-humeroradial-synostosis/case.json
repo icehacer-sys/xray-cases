@@ -1,0 +1,124 @@
+{
+  "folder": "00167-congenital-humeroradial-synostosis",
+  "number": 167,
+  "diagnosis": "Congenital humeroradial synostosis",
+  "aliases": [
+    "radiohumeral synostosis",
+    "congenital elbow fusion"
+  ],
+  "symptom": "an elbow that had remained fixed since birth",
+  "hook": "the arm bones had simply grown into one another and left no joint at all",
+  "whatYouSee": "The arm bone and the forearm bone run into each other as one piece of bone and the gap where the elbow joint should be has gone.",
+  "whyItMatters": "Congenital fusion restricts elbow movement. Function depends on the fixed angle and associated limb differences.",
+  "treatment": "Specialist care may use therapy and adaptations. Selected severe positions may benefit from corrective surgery.",
+  "takeaway": "An elbow with no joint space because the bones run together is congenital synostosis.",
+  "igOptions": [
+    "A. Congenital humeroradial synostosis",
+    "B. Elbow dislocation",
+    "C. Supracondylar fracture"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-28T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-16T21:43:29.166Z"
+  },
+  "condition": {
+    "diagnosis": "Congenital humeroradial synostosis",
+    "aliases": [
+      "radiohumeral synostosis",
+      "congenital elbow fusion"
+    ],
+    "symptom": "an elbow that had remained fixed since birth",
+    "hook": "the arm bones had simply grown into one another and left no joint at all",
+    "view": "AP and lateral elbow with the distal humerus and proximal forearm",
+    "ageBand": "infant",
+    "anatomyException": "The humerus and the radius are legitimately FUSED into one continuous bone with no joint space between them. That fusion IS the diagnosis. The ulna stays separate and normal and the bone count is otherwise unchanged.",
+    "keyFindings": "continuous bone running from the distal humerus into the proximal radius with the joint space between them absent while the ulna remains separate and the elbow is held in one fixed position",
+    "whatYouSee": "The arm bone and the forearm bone run into each other as one piece of bone and the gap where the elbow joint should be has gone.",
+    "whyItMatters": "Congenital fusion restricts elbow movement. Function depends on the fixed angle and associated limb differences.",
+    "treatment": "Specialist care may use therapy and adaptations. Selected severe positions may benefit from corrective surgery.",
+    "takeaway": "An elbow with no joint space because the bones run together is congenital synostosis.",
+    "igTitle": "THE ELBOW THAT NEVER FORMED",
+    "igOptions": [
+      "Congenital humeroradial synostosis",
+      "Elbow dislocation",
+      "Supracondylar fracture"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405067/",
+      "https://morthoj.org/2012/v6n3/congenital-humeroradial-synostosis.pdf"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "continuous bone running from the distal humerus into the proximal radius with the joint space between them absent while the ulna remains separate and the elbow is held in one fixed position",
+      "The visible anatomy matches the requested AP and lateral elbow with the distal humerus and proximal forearm and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "dd7d46235f21f563b13258f67117c443d367b6cc8de44f17e52224aec713d51e",
+    "conditionSha256": "18868ed2a7fecfcfd03babb99111cc024ff1e3e746df0cd5c433f9573a514fba",
+    "clinicalContextSha256": "d65679fca93ffcbef972c26fb136b9a504f23396fc16e6c8f297c04dddbc83f7",
+    "verifiedAt": "2026-09-16T21:43:29.168Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "A required image finding is absent or not assessable: Both views show what appears to be a separate radial head ossification center with a perceptible gap between the capitellum and radial head; bony continuity across the humeroradial joint is not demonstrated; the ulna is separate and intact; the elbow positioning is consistent with a fixed position but the fusion itself is not visible; Both panels appear to be AP projections of the elbow with distal humerus and proximal forearm visible; a true lateral view is absent; skeletal immaturity with multiple unfused ossification centers is appropriate for the declared infant age; the humeroradial fusion (declared exception) is not depicted"
+    ],
+    "blindRead": {
+      "findings": [
+        "Two anteroposterior projections of the same elbow are presented side by side, likely representing bilateral elbows or two sequential views of one elbow",
+        "Distal humerus shows broadening and irregularity of the medial and lateral condylar regions bilaterally",
+        "Multiple unfused ossification centers are visible around the elbow, including a clearly separate ossicle at the lateral aspect of the elbow corresponding to the region of the lateral epicondyle or capitellum",
+        "The radial head and proximal radius appear normally aligned with the capitellum",
+        "The proximal ulna and olecranon appear intact without obvious fracture line",
+        "The radial and ulnar shafts are visualized in the forearm and appear of normal caliber without periosteal reaction",
+        "Joint space appears preserved",
+        "No definitive acute fracture line is identified in the diaphyses",
+        "Soft tissue swelling is not clearly assessable on these projections",
+        "Multiple secondary ossification centers are present consistent with a skeletally immature individual"
+      ],
+      "differential": [
+        "Normal developmental ossification variants in a skeletally immature elbow with multiple unfused apophyses (e.g., capitellum, radial head, internal epicondyle, trochlea, olecranon, lateral epicondyle — CRITOE sequence)",
+        "Avulsion fracture of the lateral epicondyle or medial epicondyle apophysis given apparent displacement or irregularity of an ossification center",
+        "Osteochondritis dissecans of the capitellum given irregularity at the capitello-radial articulation"
+      ],
+      "anatomyConcerns": [
+        "The presence of multiple separate ossification centers must be distinguished from avulsion fractures; without comparison to the contralateral elbow or knowledge of CRITOE sequence timing, this distinction is limited",
+        "Both views appear to be AP projections; a true lateral view is absent, limiting assessment of posterior fat pad sign and anterior fat pad elevation",
+        "If these represent bilateral elbows, asymmetry in ossification center position or size would be diagnostically significant but is difficult to assess confidently at this resolution"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "A required image finding is absent or not assessable: Both views show what appears to be a separate radial head ossification center with a perceptible gap between the capitellum and radial head; bony continuity across the humeroradial joint is not demonstrated; the ulna is separate and intact; the elbow positioning is consistent with a fixed position but the fusion itself is not visible; Both panels appear to be AP projections of the elbow with distal humerus and proximal forearm visible; a true lateral view is absent; skeletal immaturity with multiple unfused ossification centers is appropriate for the declared infant age; the humeroradial fusion (declared exception) is not depicted"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Did this person ever get to bend that arm?",
+  "seedHint": "Look where two bones meet and ask yourself if they actually do.",
+  "teaser": "And then the arm explained everything",
+  "generated": {
+    "threadsCaption": "A patient came in with an elbow that had remained fixed since birth.\n\nThen the X-ray loaded 😭\n\nAnd then the arm explained everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Congenital humeroradial synostosis\n\n👀 What you see:\nThe arm bone and the forearm bone run into each other as one piece of bone and the gap where the elbow joint should be has gone.\n\n🦴 Why it matters:\nCongenital fusion restricts elbow movement. Function depends on the fixed angle and associated limb differences.\n\n💊 Treatment:\nSpecialist care may use therapy and adaptations. Selected severe positions may benefit from corrective surgery.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "c21d6dbbe79817bee75250996cd86ba9204bdb7a8c6ca0134d0c47381c914de0",
+    "reviewedAt": "2026-09-16T21:43:40.321Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
