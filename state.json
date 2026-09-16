@@ -239,6 +239,17 @@
       "publishedId": "18050172890803216",
       "publishedAt": "2026-09-15T20:20:08.467Z",
       "confirmedPublished": true
+    },
+    "case:00146-impalement-by-a-metal-rod:challenge": {
+      "creationId": "17889635550614054",
+      "createdAt": "2026-09-16T19:01:24.900Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00146-impalement-by-a-metal-rod/xray.png",
+        "text": "A patient came in with a chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film answered every question at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "2a80336b4b7c59dd7795c85f984a5f46d24fb8d25f6d6f115599fd1179c8cc57:eae3b32f036a096b3387b802d3aa0176a3f56f1f782114e7ef980375c6fb26c2:9a870ee850afbee3e94aab46815afded4180b09058edd5e5ac8866db157a05b3"
     }
   },
   "stages": {
@@ -942,12 +953,18 @@
       "answerCommentId": "18101640437300194",
       "answerPostedAt": "2026-09-15T19:23:50.781Z",
       "ctaPostedAt": "2026-09-15T20:20:10.726Z"
+    },
+    "00146-impalement-by-a-metal-rod": {
+      "publishedCaption": "A patient came in with a chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film answered every question at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00146-impalement-by-a-metal-rod\",\"assignedAt\":\"2026-09-16T19:01:17.589Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-15",
+      "date": "2026-09-16",
       "count": 0
     }
   }
