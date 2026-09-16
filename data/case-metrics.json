@@ -1324,5 +1324,57 @@
       "reposts": 3,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00145-swallowed-safety-pin",
+    "postId": "17984836785119873",
+    "measuredAt": "2026-09-16T21:37:42.934Z",
+    "publishedAt": "2026-09-13T19:04:17.850Z",
+    "ageHours": 74.55696777777777,
+    "experiment": {
+      "id": "case-00145-swallowed-safety-pin",
+      "assignedAt": "2026-09-13T19:04:06.509Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with drooling and refusal to feed after a suspected ingestion.\n\nThen the X-ray loaded 😭\n\nAnd an open V-shaped metal object with a small coil appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-13T19:24:17.850Z",
+    "ctaDueAt": "2026-09-13T20:19:17.850Z",
+    "metrics": {
+      "views": 9919,
+      "likes": 88,
+      "replies": 185,
+      "reposts": 0,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00146-impalement-by-a-metal-rod",
+    "postId": "18146529700504840",
+    "measuredAt": "2026-09-16T21:37:43.168Z",
+    "publishedAt": "2026-09-16T19:01:29.752Z",
+    "ageHours": 2.6037266666666667,
+    "experiment": {
+      "id": "case-00146-impalement-by-a-metal-rod",
+      "assignedAt": "2026-09-16T19:01:17.589Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film answered every question at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-16T20:31:29.752Z",
+    "ctaDueAt": "2026-09-16T21:26:29.752Z",
+    "metrics": {
+      "views": 6023,
+      "likes": 61,
+      "replies": 133,
+      "reposts": 0,
+      "quotes": 0
+    }
   }
 ]
