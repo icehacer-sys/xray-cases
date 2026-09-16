@@ -19,6 +19,7 @@ import { loadCases, imageUrl, saveCase, loadUsedDiagnoses, isUsedDiagnosis, addU
 import { State } from "./state.js";
 import {
   generateThreadsCaption,
+  draftTeaser,
   withFollowCta,
   draftForegroundedCaption,
   generateThreadsAnswer,
@@ -96,6 +97,7 @@ async function ensureGenerated(c: Case, state: State): Promise<NonNullable<Case[
     c.seedHint ??= e.seedHint;
   }
 
+  if (existing.threadsCaption == null) c.teaser ??= await draftTeaser(c);
   const threadsCaption = existing.threadsCaption ?? generateThreadsCaption(c);
   const threadsAnswer = existing.threadsAnswer ?? (await generateThreadsAnswer(c));
   const igCaption = existing.igCaption ?? (await generateIgCaption(c));

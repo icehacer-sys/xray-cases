@@ -2545,10 +2545,10 @@
     "view": "AP lower leg",
     "ageBand": "young-adult",
     "keyFindings": "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones. Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire. The visible tibia and fibula are separate and anatomically coherent.",
-    "whatYouSee": "A long serpentine soft-tissue calcification suggests a calcified worm remnant.",
-    "whyItMatters": "This suggests an old infection rather than a living worm. Exposure history and the pattern help distinguish other soft-tissue calcifications.",
-    "treatment": "An incidental calcified remnant often needs no removal. Symptoms or uncertainty warrant specialist assessment.",
-    "takeaway": "This can reflect old infection. It does not prove a living worm is present.",
+    "whatYouSee": "A long coiled calcified line sits in the calf soft tissue away from the bones. It is the classic X-ray look of a dead Guinea worm that calcified where it died.",
+    "whyItMatters": "People catch it by drinking water with tiny water fleas that carry the larvae. About a year later the female worm moves to the skin to come out. One that dies before it emerges never comes out. It calcifies in place and stays visible on X-ray.",
+    "treatment": "A calcified dead worm usually needs no removal. A living worm is pulled out slowly by winding it around a stick over days to weeks because no drug kills the adult worm.",
+    "takeaway": "A calcified Guinea worm died inside the body and never came out. The female can reach about 1 metre. A campaign led by The Carter Center since 1986 has cut human cases from millions a year to a handful. Cysticercosis looks different with many small rice-grain calcifications along the muscles.",
     "igTitle": "THE WORM IN THE LEG",
     "igOptions": [
       "Calcified haematoma",
@@ -2558,9 +2558,11 @@
     "igCorrect": "B",
     "used": true,
     "sources": [
-      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3159369/"
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3159369/",
+      "https://www.who.int/news-room/fact-sheets/detail/dracunculiasis-(guinea-worm-disease)",
+      "https://www.cartercenter.org/programs/guinea-worm/"
     ],
-    "reviewedAt": "2026-09-12",
+    "reviewedAt": "2026-09-16",
     "requiredObservations": [
       "A long serpentine curvilinear calcification lies in the calf soft tissues, distinct from the bones.",
       "Its appearance is compatible with soft-tissue calcification rather than a clearly manufactured metal wire.",

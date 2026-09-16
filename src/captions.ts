@@ -74,16 +74,103 @@ export function generateThreadsCaption(c: Case): string {
   // The ORIGINAL fixed format the audience knows — only the symptom + hook vary (owner reverted the
   // Case#/difficulty/layperson/reveal-line experiment on 2026-07-04 after those posts underperformed).
   // Cap symptom+hook so the caption stays well under Threads' 500-char limit.
+  // The third line used to be c.hook verbatim, which DESCRIBES the finding ("A long curling
+  // calcification ran through the soft tissues beside the bones"). On the 2026-09-15 Guinea worm
+  // post that plus the symptom gave the answer away: the first correct guess landed in 6 minutes.
+  // The image does the showing now and this line only builds suspense (owner, 2026-09-16).
   const symptom = stripComma(c.symptom);
-  const hook = stripComma(c.hook);
+  const teaser = stripComma(c.teaser?.trim() || fallbackTeaser(c)).replace(/[.!?]+$/, "");
   return [
     `A patient came in with ${symptom}.`,
     `Then the X-ray loaded 😭`,
-    `${hook.charAt(0).toUpperCase() + hook.slice(1)}.`,
+    `${teaser.charAt(0).toUpperCase() + teaser.slice(1)}.`,
     CHALLENGE_LABEL_LINE,
     DIAGNOSIS_PREFIX,
     `${GUESSES_PREFIX} 👀`,
   ].join("\n\n");
+}
+
+/** Suspense lines that describe nothing on the film. Used when a per-case teaser is unavailable. */
+export const TEASER_FALLBACKS = [
+  "And nobody in the room said a word",
+  "And that was not what anyone expected to see",
+  "And the whole room leaned in for a closer look",
+  "And suddenly the symptom made a lot more sense",
+  "And the picture told a very different story",
+];
+
+/** Rotated by posting night, so consecutive fallback nights never share a line. */
+export function fallbackTeaser(c: Pick<Case, "number" | "diagnosis" | "postAt">): string {
+  const night = Math.floor(Date.parse(c.postAt ?? "") / 86_400_000);
+  const seed = Number.isFinite(night) ? night : c.number ?? [...c.diagnosis].reduce((n, ch) => n + ch.charCodeAt(0), 0);
+  return TEASER_FALLBACKS[seed % TEASER_FALLBACKS.length];
+}
+
+// Words that say what the finding LOOKS like. Any of them in a teaser means it is describing the
+// film instead of building suspense, so the line is rejected.
+const FINDING_WORDS = /\b(?:calcif\w*|metal\w*|bright\w*|white|dark\w*|black|dense|densit\w*|opaque|opacit\w*|shadow\w*|line|lines|long|thin|thick|round\w*|curl\w*|coil\w*|serpent\w*|loop\w*|bubble\w*|gas|air|mass\w*|object\w*|shape\w*|like|disc|ring|rod|wire|stone\w*|tube\w*|spot\w*|blob\w*|cloud\w*|hole\w*|crack\w*|broken|fracture\w*|bone|bones|worm\w*|parasit\w*|swallow\w*|foreign|tooth|teeth)\b/i;
+const TEASER_GENERIC = new Set("inside there their where which with into from that this have been were what something nothing patient everyone anyone room look looked second first".split(" "));
+
+/** Rejects a teaser that describes the finding, reuses the hook's wording or names the answer. */
+export function teaserProblem(teaser: string, c: Pick<Case, "symptom" | "hook" | "diagnosis" | "aliases">): string | null {
+  const t = teaser.trim();
+  if (!t || t.length > 90) return "length";
+  if (/[,;:—–"]|\s-\s/.test(t) || /\p{Extended_Pictographic}/u.test(t)) return "punctuation or emoji";
+  if (FINDING_WORDS.test(t)) return "describes the finding";
+  // The account was not in the room, and the line may not invent a sex, an age or a number.
+  if (/\b(?:we|us|our|i|me|my)\b/i.test(t)) return "first person";
+  const symptomText = c.symptom.toLowerCase();
+  const pronoun = t.toLowerCase().match(/\b(?:he|him|his|she|her|hers)\b/g)?.find((p) => !new RegExp(`\\b${p}\\b`).test(symptomText));
+  if (pronoun) return `invents a sex: ${pronoun}`;
+  const number = t.toLowerCase().match(/\b(?:\d+|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)\b/g)?.find((n) => !new RegExp(`\\b${n}\\b`).test(symptomText));
+  if (number) return `invents a number: ${number}`;
+  const words = (s: string) => s.toLowerCase().match(/[a-z]{4,}/g) ?? [];
+  const symptom = new Set(words(c.symptom));
+  const lower = new Set(words(t));
+  const hookLeak = words(c.hook).filter((w) => !symptom.has(w) && !TEASER_GENERIC.has(w) && lower.has(w));
+  if (hookLeak.length) return `reuses the finding's wording: ${hookLeak.join(" ")}`;
+  // The line above already states the symptom. Echoing it reads as padding (content QA flagged it).
+  const echoed = [...lower].filter((w) => symptom.has(w) && !TEASER_GENERIC.has(w));
+  if (echoed.length >= 2) return `repeats the symptom line: ${echoed.join(" ")}`;
+  const answer = [c.diagnosis, ...(c.aliases ?? [])].flatMap(words).filter((w) => !TEASER_GENERIC.has(w) && !symptom.has(w)); // "Madura foot" must not ban "foot" when the patient came in with a foot
+  if (answer.some((w) => lower.has(w))) return "names the answer";
+  return null;
+}
+
+/** One suspense line per case. Falls back to a fixed line on any drafting or guard failure. */
+export async function draftTeaser(c: Case): Promise<string> {
+  const system =
+    "You write ONE short line for @mdnoteslab's daily guess-the-X-ray caption. It appears right after " +
+    "'Then the X-ray loaded 😭' and right before 'What's the most likely diagnosis?'. Its only job is suspense. " +
+    "ABSOLUTE RULES: (1) Never describe anything visible on the image: no shape, size, length, count, colour, " +
+    "brightness, density, material, texture or what it resembles. The reader must find it in the picture. " +
+    "(2) Never name or hint at the diagnosis, its category, a cause, an organism, an object or an exposure. " +
+    "(3) You may mention the body part the patient came in about. (4) No commas, semicolons, colons, dashes, " +
+    "quotation marks, emoji or hashtags. (5) Under 80 characters. (6) Plain and human. No clickbait such as " +
+    "'you won't believe' and no stock 'told a story'. Starting with 'And' is fine. (7) Invent nothing: no sex or pronoun, age, number, " +
+    "duration or detail that is not in the presenting symptom. (8) No first person: never we, us, our or I. " +
+    "(9) Do not restate the presenting symptom. The line before already says it. " +
+    'Respond ONLY with a JSON object: {"teaser": string}';
+  const base =
+    `Diagnosis (NEVER reveal or hint): ${c.diagnosis}\n` +
+    `Presenting symptom: ${c.symptom}\n` +
+    `What the X-ray shows (NEVER describe any of this): ${c.hook}`;
+  let rejected = "";
+  // One retry with the guard's reason, then a fixed line: a caption must never wait on a draft.
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const user = rejected ? `${base}\n\nYour previous line was rejected (${rejected}). Write a different line.` : base;
+      const raw = str(parseJsonObject(await ask(system, user, 150)).teaser);
+      const teaser = cleanPunct(raw).replace(/^["']+|["']+$/g, "").replace(/[.!?]+$/, "").trim();
+      const problem = teaserProblem(teaser, c);
+      if (!problem) return teaser;
+      rejected = `"${teaser}": ${problem}`;
+      console.log(`  teaser rejected for ${c.folder}: ${rejected}`);
+    } catch {
+      break;
+    }
+  }
+  return fallbackTeaser(c);
 }
 
 /**

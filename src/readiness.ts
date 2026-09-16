@@ -27,6 +27,10 @@ export function copyProblems(c: Case): string[] {
     if (/came in with (?:a |an |the )?(?:child|patient|infant|newborn)\b/i.test(caption)) problems.push("invalid symptom insertion");
   }
   if (g?.threadsAnswer && !g.threadsAnswer.startsWith(`Answer: ${c.diagnosis}`)) problems.push("answer heading disagrees with case");
+  // Every section under the heading carries its emoji title. The 2026-09-12 queue repair rewrote
+  // the Dracunculiasis answer by hand without them and it posted untitled on 2026-09-15.
+  const sections = g?.threadsAnswer?.split("\n\n").slice(1) ?? [];
+  if (sections.length && (!sections[0].startsWith("👀 What you see:\n") || sections.some((s) => !/^(?:👀 What you see|🦴 Why it matters|💊 Treatment):\n/u.test(s)))) problems.push("answer sections are missing their titles");
   return [...new Set(problems)];
 }
 export function contentProblem(c: Case): string | null {

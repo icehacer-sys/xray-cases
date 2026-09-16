@@ -126,8 +126,8 @@
   "laypersonQuestion": "Does the inside of that gut look alive to you?",
   "seedHint": "Look at the loops inside the bowel and ask yourself: gas shadow or something else entirely?",
   "generated": {
-    "threadsCaption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nBowel gas outlined a tangle of long smooth curved shadows.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a stomachache and some vomiting - the kind of Tuesday that barely feels worth the copay.\n\nThen the X-ray loaded 😭\n\nBowel gas outlined a tangle of long smooth curved shadows.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a stomachache and some vomiting - the kind of Tuesday that barely feels worth the copay.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Ascariasis bowel infestation\n\n👀 What you see:\nGas outlines long curved tubular densities within bowel loops.\n\n🦴 Why it matters:\nHeavy Ascaris infection can obstruct the bowel. The radiographic pattern needs clinical and parasitological correlation.\n\n💊 Treatment:\nDeworming treats infection. Suspected obstruction needs specialist assessment and may require procedural treatment.",
     "igCaption": "",
     "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
@@ -136,5 +136,6 @@
     "sha256": "aa02832c136510fc6401ba7ebafabec8aa39d0abf9bf1f5686665a996e2e9359",
     "reviewedAt": "2026-09-13T22:19:25.571Z",
     "reviewer": "claude-sonnet-4-6"
-  }
+  },
+  "teaser": "And the abdomen had more going on than the pain let on"
 }

@@ -25,6 +25,7 @@ import { atomicJson, PersistenceError } from "./persistence.js";
 import { State } from "./state.js";
 import {
   generateThreadsCaption,
+  draftTeaser,
   draftForegroundedCaption,
   generateThreadsAnswer,
   generateIgCaption,
@@ -251,6 +252,7 @@ async function predraftCaptions(c: Case, threadsOnly = false): Promise<void> {
     c.laypersonQuestion ??= e.laypersonQuestion;
     c.seedHint ??= e.seedHint;
   }
+  c.teaser ??= await draftTeaser(c);
   const threadsCaption = generateThreadsCaption(c);
   // Drafted for every case even while the hook-framing experiment is dormant, so switching it on
   // never has to wait for the queue to turn over. "" = no genuine tension to foreground.

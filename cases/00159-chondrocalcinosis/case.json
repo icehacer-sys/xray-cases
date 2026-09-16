@@ -72,7 +72,7 @@
   "laypersonQuestion": "What normally invisible part just showed up white?",
   "seedHint": "Look inside the joint itself and ask: should that bright line be there at all?",
   "generated": {
-    "threadsCaption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nThe cartilage itself had turned into a bright white line inside the joint.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nAnd the knee had more going on than just the swelling.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Chondrocalcinosis\n\n👀 What you see:\nThin bright calcified lines lie in the knee cartilage and menisci.\n\n🦴 Why it matters:\nCartilage calcification can accompany CPPD. It may be asymptomatic or occur with acute inflammatory arthritis.\n\n💊 Treatment:\nAcute attacks may need anti-inflammatory treatment. A hot swollen joint also needs assessment to exclude infection.",
     "igCaption": "",
@@ -134,8 +134,9 @@
     "diagnosticReason": "Bilateral dense curvilinear/granular calcifications are visible within both medial and lateral meniscal fibrocartilage in a characteristic distribution for CPPD chondrocalcinosis. The calcified lines parallel the tibial plateau and are physically separated from the bony cortex by dark joint-space gaps. The clinical context of a hot swollen knee further supports acute CPPD (pseudogout). No equally or better supported alternative is resolvable from the visible pattern alone; HADD in this distribution is atypical and lower-ranked."
   },
   "contentReview": {
-    "sha256": "7a2d9575ccbc6b421ece44480f8cae358c9089a61460a104c0f0cdba6700908e",
-    "reviewedAt": "2026-09-12T15:54:16.889Z",
+    "sha256": "e8314a4c2ce2e11f217bc1a0430bb4355aacd294d111d7c33d1c975ca5a33e8f",
+    "reviewedAt": "2026-09-16T11:09:21.276Z",
     "reviewer": "claude-sonnet-4-6"
-  }
+  },
+  "teaser": "And the knee had more going on than just the swelling"
 }

@@ -118,15 +118,16 @@
   "laypersonQuestion": "What would make a foot swell this big?",
   "seedHint": "Look at those bones. Are they crumbling from the outside in or the inside out?",
   "generated": {
-    "threadsCaption": "A patient came in with a hugely swollen foot with discharging sinuses in a barefoot farm worker.\n\nThen the X-ray loaded 😭\n\nThe foot had swollen into a lumpy mass and the bones inside were quietly being eaten away.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a farm worker with a swollen foot and some small draining spots on the skin.\n\nThen the X-ray loaded 😭\n\nThe foot had swollen into a lumpy mass and the bones inside were quietly being eaten away.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with a hugely swollen foot with discharging sinuses in a barefoot farm worker.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a farm worker with a swollen foot and some small draining spots on the skin.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Mycetoma\n\n👀 What you see:\nMarked foot swelling accompanies rounded bone cavities and periosteal new bone.\n\n🦴 Why it matters:\nChronic fungal or bacterial infection can invade bone and cause major disability. Tissue studies identify the organism.\n\n💊 Treatment:\nTherapy depends on the organism. Prolonged medication and selected surgery may be needed; advanced disease can require amputation.",
     "igCaption": "",
     "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "contentReview": {
-    "sha256": "53f6482d1efbfb4a0f5aa0e11d594dc046f0dfd7fdb31f80b86d5bd314e14f81",
-    "reviewedAt": "2026-09-14T23:34:25.697Z",
+    "sha256": "10800924d71d572d710a0aec5869b23de0f8e6dacdfc837c9aaae350ca78a584",
+    "reviewedAt": "2026-09-16T11:09:43.069Z",
     "reviewer": "claude-sonnet-4-6"
-  }
+  },
+  "teaser": "And the foot had a lot more going on than the outside suggested"
 }

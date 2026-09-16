@@ -29,6 +29,8 @@ export interface Case {
   difficulty?: number;
   laypersonQuestion?: string;
   seedHint?: string;
+  /** The suspense line after "Then the X-ray loaded". Never describes the finding (see draftTeaser). */
+  teaser?: string;
   /** IG slide A/B/C options as shown on the user's slide image (for context only). */
   igOptions?: string[];
 
