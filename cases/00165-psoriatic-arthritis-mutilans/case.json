@@ -1,0 +1,126 @@
+{
+  "folder": "00165-psoriatic-arthritis-mutilans",
+  "number": 165,
+  "diagnosis": "Psoriatic arthritis mutilans",
+  "aliases": [
+    "arthritis mutilans",
+    "pencil in cup deformity",
+    "psoriatic arthropathy"
+  ],
+  "symptom": "shortened telescoping fingers and thick pitted nails in a patient with scaly skin plaques",
+  "captionSymptom": "fingers that had become short and loose",
+  "hook": "the finger bones had been whittled into pencils sitting inside little cups",
+  "whatYouSee": "The ends of the finger bones are whittled to points and sit inside the cupped ends of the next bone along.",
+  "whyItMatters": "Psoriatic inflammation destroys and rebuilds the small joints at the same time so bone is eaten away and laid down together and the fingers shorten and telescope.",
+  "treatment": "Disease-modifying treatment aims to control inflammation and limit further damage. Severe deformity may need surgery.",
+  "takeaway": "Pencil-in-cup erosions with shortening suggest severe psoriatic arthropathy in the right clinical setting.",
+  "igOptions": [
+    "A. Rheumatoid arthritis",
+    "B. Psoriatic arthritis mutilans",
+    "C. Gout"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-26T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-16T16:35:20.650Z"
+  },
+  "condition": {
+    "diagnosis": "Psoriatic arthritis mutilans",
+    "aliases": [
+      "arthritis mutilans",
+      "pencil in cup deformity",
+      "psoriatic arthropathy"
+    ],
+    "symptom": "shortened telescoping fingers and thick pitted nails in a patient with scaly skin plaques",
+    "captionSymptom": "fingers that had become short and loose",
+    "hook": "the finger bones had been whittled into pencils sitting inside little cups",
+    "view": "PA both hands",
+    "ageBand": "middle-aged",
+    "keyFindings": "erosive arthritis of the small joints with sharpened pencil like ends of the phalanges sitting within cupped bases of the adjacent bones plus fluffy periosteal new bone and preserved bone density",
+    "whatYouSee": "The ends of the finger bones are whittled to points and sit inside the cupped ends of the next bone along.",
+    "whyItMatters": "Psoriatic inflammation destroys and rebuilds the small joints at the same time so bone is eaten away and laid down together and the fingers shorten and telescope.",
+    "treatment": "Disease-modifying treatment aims to control inflammation and limit further damage. Severe deformity may need surgery.",
+    "takeaway": "Pencil-in-cup erosions with shortening suggest severe psoriatic arthropathy in the right clinical setting.",
+    "igTitle": "PENCIL IN A CUP",
+    "igOptions": [
+      "Rheumatoid arthritis",
+      "Psoriatic arthritis mutilans",
+      "Gout"
+    ],
+    "igCorrect": "B",
+    "sources": [
+      "https://www.nhs.uk/conditions/psoriatic-arthritis/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4834372/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "erosive arthritis of the small joints with sharpened pencil like ends of the phalanges sitting within cupped bases of the adjacent bones plus fluffy periosteal new bone and preserved bone density",
+      "The visible anatomy matches the requested PA both hands and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "9fe8c4a184cf29c72e9b2210d29e262941758e062452bbdc5c63851211951623",
+    "conditionSha256": "f76fc906606bae4100b0791b6be21ad12ecec2745e6b9a43d6ef788101a268ca",
+    "clinicalContextSha256": "632fca3e60a419ce81afb799c77850174e03e2c35207227277bf42535e88ce10",
+    "verifiedAt": "2026-09-16T16:35:20.654Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Image does not support a sufficiently distinct teaching answer: The image shows bilateral symmetric MCP-predominant marginal erosions, periarticular osteopenia, soft-tissue swelling, and joint space narrowing — a pattern more consistent with rheumatoid arthritis than psoriatic arthritis mutilans. Psoriatic arthritis mutilans requires pencil-in-cup deformities with preserved or increased bone density and periosteal new bone, which are not clearly demonstrated. The clinical vignette (pitted nails, scaly plaques, telescoping fingers) adds context supporting psoriatic arthritis mutilans, but the radiographic pattern as seen does not show the pathognomonic pencil-in-cup morphology or preserved bone density that would distinguish it from RA. The independent read ranked RA as the primary differential, and no clear discriminating radiographic feature resolves this in favour of psoriatic arthritis mutilans."
+    ],
+    "blindRead": {
+      "findings": [
+        "Bilateral posteroanterior (PA) projection radiograph of both hands and wrists placed palm-down on the detector",
+        "Bilateral symmetrical periarticular soft-tissue swelling most conspicuous at the metacarpophalangeal (MCP) and proximal interphalangeal (PIP) joints",
+        "Bilateral symmetrical joint space narrowing at the MCP joints (2nd–5th), more pronounced on the left",
+        "Marginal erosions visible at multiple MCP joint heads bilaterally, with loss of normal sharp cortical margins",
+        "Periarticular osteopenia most marked around the MCP and PIP joints bilaterally",
+        "No discrete fracture lines identified",
+        "Carpal bones show mild intercarpal joint space narrowing bilaterally; radiocarpal joint spaces appear relatively preserved",
+        "No gross subluxation or dislocation visible on this projection, though early ulnar deviation of fingers cannot be excluded",
+        "Soft tissues show generalised swelling without obvious calcification or foreign body"
+      ],
+      "differential": [
+        "Rheumatoid arthritis (RA): symmetrical MCP-predominant marginal erosions, periarticular osteopenia, soft-tissue swelling, and joint space narrowing in a distribution highly characteristic of RA",
+        "Psoriatic arthritis (less likely given apparent periarticular osteopenia and MCP predominance rather than DIP involvement, but cannot be excluded without clinical correlation)",
+        "Erosive osteoarthritis (less likely given MCP rather than DIP/PIP predominance and absence of subchondral sclerosis or osteophytes)"
+      ],
+      "anatomyConcerns": [
+        "The right hand is positioned slightly obliquely compared with the left, causing mild rotation of the carpal bones on that side, which may limit assessment of carpal alignment",
+        "Distal forearm and wrist are partially cut off on both sides, limiting full radiocarpal and distal radioulnar joint evaluation",
+        "No laterality markers (R/L) or patient identifiers are visible on the image as presented"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Image does not support a sufficiently distinct teaching answer: The image shows bilateral symmetric MCP-predominant marginal erosions, periarticular osteopenia, soft-tissue swelling, and joint space narrowing — a pattern more consistent with rheumatoid arthritis than psoriatic arthritis mutilans. Psoriatic arthritis mutilans requires pencil-in-cup deformities with preserved or increased bone density and periosteal new bone, which are not clearly demonstrated. The clinical vignette (pitted nails, scaly plaques, telescoping fingers) adds context supporting psoriatic arthritis mutilans, but the radiographic pattern as seen does not show the pathognomonic pencil-in-cup morphology or preserved bone density that would distinguish it from RA. The independent read ranked RA as the primary differential, and no clear discriminating radiographic feature resolves this in favour of psoriatic arthritis mutilans."
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What made these finger bones look carved?",
+  "seedHint": "Look at where one bone ends and another begins and ask which came first: the point or the cup.",
+  "teaser": "And the hand had a secret that no one was ready for",
+  "generated": {
+    "threadsCaption": "A patient came in with fingers that had become short and loose.\n\nThen the X-ray loaded 😭\n\nAnd the hand had a secret that no one was ready for.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Psoriatic arthritis mutilans\n\n👀 What you see:\nThe ends of the finger bones are whittled to points and sit inside the cupped ends of the next bone along.\n\n🦴 Why it matters:\nPsoriatic inflammation destroys and rebuilds the small joints at the same time so bone is eaten away and laid down together and the fingers shorten and telescope.\n\n💊 Treatment:\nDisease-modifying treatment aims to control inflammation and limit further damage. Severe deformity may need surgery.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "contentReview": {
+    "sha256": "059ce0049bc4b7573a71227ad4969bc57baba34016fa88f69f4c2127c4626519",
+    "reviewedAt": "2026-09-16T16:35:32.607Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
