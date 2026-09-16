@@ -253,6 +253,16 @@
       "publishedId": "18146529700504840",
       "publishedAt": "2026-09-16T19:01:29.752Z",
       "confirmedPublished": true
+    },
+    "case:00146-impalement-by-a-metal-rod:answer": {
+      "creationId": "17889643899614054",
+      "createdAt": "2026-09-16T20:32:01.190Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Impalement by a metal rod\n\n👀 What you see:\nA metal rod projects across the chest. This AP view alone cannot establish its depth or trajectory.\n\n🦴 Why it matters:\nIn a true impalement uncontrolled removal can trigger major bleeding.\n\n💊 Treatment:\nTrauma specialists plan removal under controlled surgical conditions with bleeding control available.",
+        "reply_to_id": "18146529700504840",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":350}]"
+      }
     }
   },
   "stages": {
