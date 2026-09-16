@@ -278,6 +278,7 @@ function buildCase(cond: Condition, folder: string, number: number, postAt: Date
     diagnosis: cond.diagnosis,
     aliases: cond.aliases,
     symptom: cond.symptom,
+    captionSymptom: cond.captionSymptom,
     hook: cond.hook,
     whatYouSee: cond.whatYouSee,
     whyItMatters: cond.whyItMatters,

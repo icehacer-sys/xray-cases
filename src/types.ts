@@ -29,6 +29,9 @@ export interface Case {
   difficulty?: number;
   laypersonQuestion?: string;
   seedHint?: string;
+  /** The symptom as the public caption shows it. `symptom` stays the full clinical vignette that
+   *  image verification and the facts use; this drops the clue that names the answer. */
+  captionSymptom?: string;
   /** The suspense line after "Then the X-ray loaded". Never describes the finding (see draftTeaser). */
   teaser?: string;
   /** IG slide A/B/C options as shown on the user's slide image (for context only). */
@@ -142,6 +145,8 @@ export interface Condition {
   diagnosis: string; // "Maffucci syndrome"
   aliases?: string[];
   symptom: string; // "abdominal discomfort"
+  /** The symptom as the public caption shows it, when the clinical one names the cause or exposure. */
+  captionSymptom?: string;
   hook: string; // "it looked like someone had hidden a giant pearl inside the abdomen"
   view: string; // radiograph view for the image prompt, e.g. "PA hand" / "AP chest"
   keyFindings: string; // the classic radiographic signs, for the X-ray image prompt

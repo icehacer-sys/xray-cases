@@ -569,6 +569,7 @@
       "perforated viscus"
     ],
     "symptom": "sudden severe abdominal pain with a rigid, board-like belly",
+    "captionSymptom": "sudden severe abdominal pain",
     "hook": "a thin black crescent of free air was trapped under the dome of the diaphragm",
     "view": "erect chest and upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
     "keyFindings": "free gas under the diaphragm on an erect film, seen as a lucent crescent between the diaphragm and liver or stomach",
@@ -592,6 +593,7 @@
       "bird-beak oesophagus"
     ],
     "symptom": "years of difficulty swallowing both solids and liquids, with regurgitation",
+    "captionSymptom": "years of trouble getting food down",
     "hook": "the food pipe had ballooned wide and tapered to a thin bird's beak at the bottom",
     "view": "barium swallow (oesophagram)",
     "keyFindings": "a dilated oesophagus with smooth tapering to a narrow point at the gastro-oesophageal junction producing the classic bird-beak appearance, often with retained food and an air-fluid level",
@@ -639,6 +641,7 @@
       "pulmonary metastases"
     ],
     "symptom": "cough, breathlessness and weight loss in someone with a known cancer",
+    "captionSymptom": "a cough with breathlessness and weight loss",
     "hook": "both lungs were peppered with large round shadows like a stack of cannonballs",
     "view": "PA chest",
     "keyFindings": "multiple large, well-defined round nodules scattered through both lungs, typically from renal, choriocarcinoma, or other distant primary tumours",
@@ -1080,6 +1083,7 @@
       "penetrating rod"
     ],
     "symptom": "a penetrating chest injury after a fall at a construction site",
+    "captionSymptom": "a chest injury after a fall at a construction site",
     "hook": "a thick straight metal object projected across the chest",
     "view": "AP chest one view filling the frame with no pelvis or groin",
     "keyFindings": "One continuous straight radiopaque rod projects across the thorax. The visible ribs, clavicles and spine are coherent without duplicated bones.",
@@ -1615,6 +1619,7 @@
       "swallowed a spoon"
     ],
     "symptom": "upper abdominal discomfort after swallowing an object",
+    "captionSymptom": "upper abdominal discomfort",
     "hook": "a long metallic object with a rounded bowl and straight handle projected over the upper abdomen",
     "view": "AP upper abdomen cropped at the iliac crests with the pelvis and groin completely out of frame",
     "keyFindings": "a single complete metal spoon shaped foreign body in the stomach high in the upper abdomen with the pelvis and groin excluded from the frame with the rounded bowl and the straight handle clearly outlined against the stomach gas",
@@ -2608,6 +2613,7 @@
       "complicated pneumoconiosis"
     ],
     "symptom": "decades of worsening breathlessness in a retired stone quarry worker",
+    "captionSymptom": "decades of worsening breathlessness",
     "hook": "two great masses had formed high in the lungs and were dragging everything upward toward them",
     "view": "PA chest",
     "ageBand": "older",
@@ -2676,6 +2682,7 @@
       "eumycetoma"
     ],
     "symptom": "a hugely swollen foot with discharging sinuses in a barefoot farm worker",
+    "captionSymptom": "a hugely swollen foot",
     "hook": "the foot had swollen into a lumpy mass and the bones inside were quietly being eaten away",
     "view": "AP and lateral foot",
     "ageBand": "young-adult",
@@ -2709,6 +2716,7 @@
       "psoriatic arthropathy"
     ],
     "symptom": "shortened telescoping fingers and thick pitted nails in a patient with scaly skin plaques",
+    "captionSymptom": "fingers that had become short and loose",
     "hook": "the finger bones had been whittled into pencils sitting inside little cups",
     "view": "PA both hands",
     "ageBand": "middle-aged",
@@ -2998,6 +3006,7 @@
       "genu recurvatum congenitum"
     ],
     "symptom": "a knee held in marked hyperextension from birth",
+    "captionSymptom": "a knee that looked wrong from birth",
     "hook": "the baby's leg folded backward at the knee like a hinge put on upside down",
     "view": "lateral knee of a newborn from the distal femur to the proximal calf",
     "ageBand": "infant",
@@ -3030,6 +3039,7 @@
       "post-traumatic calcific myonecrosis"
     ],
     "symptom": "a slowly swelling calf in a patient who had crushed that leg decades earlier",
+    "captionSymptom": "a slowly swelling calf",
     "hook": "an entire muscle had died and turned to a long slab of chalk inside the leg",
     "view": "AP and lateral lower leg including the calf soft tissues",
     "keyFindings": "a large elongated calcified soft tissue mass filling one muscle compartment of the calf with dense sheet like calcification around its rim and a more lucent centre while the tibia and fibula stay normal",
@@ -3127,6 +3137,7 @@
       "endemic skeletal fluorosis"
     ],
     "symptom": "years of stiffness and bone pain in an adult from a village with high fluoride in the well water",
+    "captionSymptom": "years of stiffness and bone pain",
     "hook": "a bright mineralized sheet ran between the two forearm bones",
     "view": "AP forearm with both the radius and the ulna",
     "ageBand": "older",

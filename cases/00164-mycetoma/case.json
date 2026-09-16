@@ -118,16 +118,17 @@
   "laypersonQuestion": "What would make a foot swell this big?",
   "seedHint": "Look at those bones. Are they crumbling from the outside in or the inside out?",
   "generated": {
-    "threadsCaption": "A patient came in with a hugely swollen foot with discharging sinuses in a barefoot farm worker.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a farm worker with a swollen foot and some small draining spots on the skin.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with a hugely swollen foot.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a slightly swollen foot that had been growing slowly and never really hurt.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Mycetoma\n\n👀 What you see:\nMarked foot swelling accompanies rounded bone cavities and periosteal new bone.\n\n🦴 Why it matters:\nChronic fungal or bacterial infection can invade bone and cause major disability. Tissue studies identify the organism.\n\n💊 Treatment:\nTherapy depends on the organism. Prolonged medication and selected surgery may be needed; advanced disease can require amputation.",
     "igCaption": "",
     "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "contentReview": {
-    "sha256": "10800924d71d572d710a0aec5869b23de0f8e6dacdfc837c9aaae350ca78a584",
-    "reviewedAt": "2026-09-16T11:09:43.069Z",
+    "sha256": "dcaee2265aec77527e476bb4f0d70ff0097a33113db1714053e148af40465200",
+    "reviewedAt": "2026-09-16T11:22:35.500Z",
     "reviewer": "claude-sonnet-4-6"
   },
-  "teaser": "And the foot had a lot more going on than the outside suggested"
+  "teaser": "And the foot had a lot more going on than the outside suggested",
+  "captionSymptom": "a hugely swollen foot"
 }

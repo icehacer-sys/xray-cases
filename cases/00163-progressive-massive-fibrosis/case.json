@@ -114,16 +114,17 @@
   "laypersonQuestion": "What could pull lung tissue upward like that?",
   "seedHint": "Look at the upper lung zones and ask yourself what is dragging and what is being dragged.",
   "generated": {
-    "threadsCaption": "A patient came in with decades of worsening breathlessness in a retired stone quarry worker.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a gradual worsening shortness of breath that had crept up so slowly over the years it barely seemed worth mentioning.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with decades of worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Progressive massive fibrosis\n\n👀 What you see:\nLarge upper-lung masses sit among small nodules, with rim-calcified hilar nodes and upward hilar retraction.\n\n🦴 Why it matters:\nSevere dust-related lung scarring can merge into large masses. Silica exposure also increases tuberculosis risk.\n\n💊 Treatment:\nCare focuses on stopping exposure, respiratory support and assessment for complications, including tuberculosis.",
     "igCaption": "",
     "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
   },
   "contentReview": {
-    "sha256": "acd927fb29f2b047951211d89fb9cc43284ad949339a8c3e3318b433a1e68c77",
-    "reviewedAt": "2026-09-16T11:10:47.186Z",
+    "sha256": "2cc4e4bedbd974049a2e67fc06fabbdb61f4d13a2774c2faffe59333a6eb30c9",
+    "reviewedAt": "2026-09-16T11:23:03.452Z",
     "reviewer": "claude-sonnet-4-6"
   },
-  "teaser": "And then the chest film stopped the room"
+  "teaser": "And then the chest film stopped the room",
+  "captionSymptom": "decades of worsening breathlessness"
 }

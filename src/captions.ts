@@ -78,7 +78,7 @@ export function generateThreadsCaption(c: Case): string {
   // calcification ran through the soft tissues beside the bones"). On the 2026-09-15 Guinea worm
   // post that plus the symptom gave the answer away: the first correct guess landed in 6 minutes.
   // The image does the showing now and this line only builds suspense (owner, 2026-09-16).
-  const symptom = stripComma(c.symptom);
+  const symptom = stripComma(publicSymptom(c));
   const teaser = stripComma(c.teaser?.trim() || fallbackTeaser(c)).replace(/[.!?]+$/, "");
   return [
     `A patient came in with ${symptom}.`,
@@ -88,6 +88,21 @@ export function generateThreadsCaption(c: Case): string {
     DIAGNOSIS_PREFIX,
     `${GUESSES_PREFIX} 👀`,
   ].join("\n\n");
+}
+
+/** The symptom the caption shows. The clinical `symptom` stays intact for image verification. */
+export function publicSymptom(c: Pick<Case, "symptom" | "captionSymptom">): string {
+  return c.captionSymptom?.trim() || c.symptom;
+}
+
+// Clues that name the cause, the exposure or the object instead of what the patient felt. Owner,
+// 2026-09-16: "after swallowing an object", "a remote stay in an endemic area" and "a village with
+// high fluoride in the well water" all handed out the answer before anyone looked at the image.
+const SYMPTOM_GIVEAWAY = /\b(?:(?:after|from) swallowing|swallowed|ingest\w*|endemic|tropic\w*|abroad|travel\w*|fluorid\w*|asbestos|quarry|miners?|mining|sandblast\w*|barefoot|farm workers?|known cancer|penetrating|impal\w*|foreign body|objects?|parasit\w*|worms?|psoria\w*|scaly|board-like|hyperextension)\b/i;
+
+/** The giveaway phrase in a caption symptom, or null. */
+export function symptomGiveaway(symptom: string): string | null {
+  return symptom.match(SYMPTOM_GIVEAWAY)?.[0] ?? null;
 }
 
 /** Suspense lines that describe nothing on the film. Used when a per-case teaser is unavailable. */
@@ -112,20 +127,23 @@ const FINDING_WORDS = /\b(?:calcif\w*|metal\w*|bright\w*|white|dark\w*|black|den
 const TEASER_GENERIC = new Set("inside there their where which with into from that this have been were what something nothing patient everyone anyone room look looked second first".split(" "));
 
 /** Rejects a teaser that describes the finding, reuses the hook's wording or names the answer. */
-export function teaserProblem(teaser: string, c: Pick<Case, "symptom" | "hook" | "diagnosis" | "aliases">): string | null {
+export function teaserProblem(teaser: string, c: Pick<Case, "symptom" | "captionSymptom" | "hook" | "diagnosis" | "aliases">): string | null {
   const t = teaser.trim();
   if (!t || t.length > 90) return "length";
   if (/[,;:—–"]|\s-\s/.test(t) || /\p{Extended_Pictographic}/u.test(t)) return "punctuation or emoji";
   if (FINDING_WORDS.test(t)) return "describes the finding";
+  if (symptomGiveaway(t)) return `names the cause: ${symptomGiveaway(t)}`;
   // The account was not in the room, and the line may not invent a sex, an age or a number.
   if (/\b(?:we|us|our|i|me|my)\b/i.test(t)) return "first person";
-  const symptomText = c.symptom.toLowerCase();
+  // Judged against what the reader actually sees, so a clue dropped from the caption stays dropped.
+  const shown = publicSymptom(c);
+  const symptomText = shown.toLowerCase();
   const pronoun = t.toLowerCase().match(/\b(?:he|him|his|she|her|hers)\b/g)?.find((p) => !new RegExp(`\\b${p}\\b`).test(symptomText));
   if (pronoun) return `invents a sex: ${pronoun}`;
   const number = t.toLowerCase().match(/\b(?:\d+|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred)\b/g)?.find((n) => !new RegExp(`\\b${n}\\b`).test(symptomText));
   if (number) return `invents a number: ${number}`;
   const words = (s: string) => s.toLowerCase().match(/[a-z]{4,}/g) ?? [];
-  const symptom = new Set(words(c.symptom));
+  const symptom = new Set(words(shown));
   const lower = new Set(words(t));
   const hookLeak = words(c.hook).filter((w) => !symptom.has(w) && !TEASER_GENERIC.has(w) && lower.has(w));
   if (hookLeak.length) return `reuses the finding's wording: ${hookLeak.join(" ")}`;
@@ -153,7 +171,7 @@ export async function draftTeaser(c: Case): Promise<string> {
     'Respond ONLY with a JSON object: {"teaser": string}';
   const base =
     `Diagnosis (NEVER reveal or hint): ${c.diagnosis}\n` +
-    `Presenting symptom: ${c.symptom}\n` +
+    `Presenting symptom: ${publicSymptom(c)}\n` +
     `What the X-ray shows (NEVER describe any of this): ${c.hook}`;
   let rejected = "";
   // One retry with the guard's reason, then a fixed line: a caption must never wait on a draft.
@@ -273,7 +291,7 @@ export async function draftForegroundedCaption(c: Case): Promise<string> {
 
   const user =
     `Diagnosis (NEVER reveal or hint): ${c.diagnosis}\n` +
-    `Presenting symptom: ${c.symptom}\n` +
+    `Presenting symptom: ${publicSymptom(c)}\n` +
     `What the X-ray showed: ${c.hook}`;
 
   try {
@@ -290,11 +308,11 @@ export async function draftForegroundedCaption(c: Case): Promise<string> {
     // spring" — the X-ray finding, moved into the line that runs BEFORE "Then the X-ray loaded".
     // That destroys the guess, so trust the prompt for phrasing but never for this: any word the
     // HOOK uses that the original symptom does not is reveal-specific and must not appear.
-    const symWords = new Set(c.symptom.toLowerCase().match(/[a-z]{5,}/g) ?? []);
+    const symWords = new Set(publicSymptom(c).toLowerCase().match(/[a-z]{5,}/g) ?? []);
     const lower = alt.toLowerCase();
     const leaked = (c.hook.toLowerCase().match(/[a-z]{5,}/g) ?? []).filter((w) => !symWords.has(w) && lower.includes(w));
-    if (leaked.length > 0) return "";
-    const out = generateThreadsCaption({ ...c, symptom: alt });
+    if (leaked.length > 0 || symptomGiveaway(alt)) return "";
+    const out = generateThreadsCaption({ ...c, captionSymptom: alt });
     // A model that echoed the symptom back unchanged (seen on 00142) yields a B night textually
     // IDENTICAL to A -- silent non-compliance that would count as a treated night and dilute the
     // estimate toward zero. Treat it as "no variant" so the analysis can see it.
@@ -326,7 +344,7 @@ export async function draftEngagement(c: Case): Promise<Engagement> {
 
   const user =
     `Diagnosis (NEVER reveal or hint the name): ${c.diagnosis}\n` +
-    `Presenting symptom: ${c.symptom}\n` +
+    `Presenting symptom: ${publicSymptom(c)}\n` +
     `What the X-ray looks like: ${c.hook}\n\n` +
     `Produce:\n` +
     `- difficulty: an integer 1 to 5 for how hard this is to guess from the X-ray for a mixed medical + lay ` +

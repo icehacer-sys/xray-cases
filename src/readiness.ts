@@ -5,7 +5,7 @@ import { config, requireEnv } from "./config.js";
 import { finalImage, imageApprovalProblem } from "./image-approval.js";
 import { isUsedDiagnosis, loadUsedDiagnoses } from "./cases.js";
 import type { Case } from "./types.js";
-import { assertPublicCopy } from "./captions.js";
+import { assertPublicCopy, symptomGiveaway } from "./captions.js";
 
 export function contentHash(c: Case): string {
   return createHash("sha256").update(JSON.stringify([c.diagnosis, c.aliases, c.symptom, c.hook, c.whatYouSee, c.whyItMatters, c.treatment, c.takeaway, c.seedHint, c.generated, c.condition, c.diagnosticContext])).digest("hex");
@@ -25,6 +25,9 @@ export function copyProblems(c: Case): string[] {
   for (const caption of [g?.threadsCaption, g?.threadsCaptionAlt, c.seedHint].filter(Boolean) as string[]) {
     if ([c.diagnosis, ...(c.aliases ?? [])].some((d) => normalize(d).length > 3 && ` ${normalize(caption)} `.includes(` ${normalize(d)} `))) problems.push("challenge or hint reveals diagnosis/alias");
     if (/came in with (?:a |an |the )?(?:child|patient|infant|newborn)\b/i.test(caption)) problems.push("invalid symptom insertion");
+    // The opening line names the cause or exposure ("after swallowing an object"): the guess is over.
+    const clue = symptomGiveaway(caption.split("\n\n")[0]);
+    if (clue) problems.push(`opening line gives away the answer: ${clue}`);
   }
   if (g?.threadsAnswer && !g.threadsAnswer.startsWith(`Answer: ${c.diagnosis}`)) problems.push("answer heading disagrees with case");
   // Every section under the heading carries its emoji title. The 2026-09-12 queue repair rewrote

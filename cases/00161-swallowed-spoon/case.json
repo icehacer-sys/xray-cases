@@ -117,17 +117,18 @@
   "laypersonQuestion": "Would you notice this on an X-ray yourself?",
   "seedHint": "Look at the shape in the upper belly and ask yourself if it belongs there",
   "generated": {
-    "threadsCaption": "A patient came in with upper abdominal discomfort after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
-    "threadsCaptionAlt": "A patient came in with a little upper abdominal discomfort after swallowing something.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaption": "A patient came in with upper abdominal discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a little upper abdominal discomfort that seemed easy enough to brush off.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
     "threadsAnswer": "Answer: Swallowed spoon\n\n👀 What you see:\nA complete spoon-shaped metal object projects over the expected stomach region.\n\n🦴 Why it matters:\nLong rigid objects can fail to pass the duodenum and can injure the gut wall.\n\n💊 Treatment:\nEndoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
     "igCaption": "",
     "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
   },
   "contentReview": {
-    "sha256": "32f9133de58e55b72e383bd926f6cea0f2b8d9caf5af10885dbb855542a55ac8",
-    "reviewedAt": "2026-09-16T11:09:28.766Z",
+    "sha256": "99f19deea5ac427a6ca721873cd4a0d5831bad06e9a5691bfdd9d5777bd4e70a",
+    "reviewedAt": "2026-09-16T11:22:29.431Z",
     "reviewer": "claude-sonnet-4-6"
   },
   "needsReview": false,
-  "teaser": "And then the reason for that discomfort became very clear"
+  "teaser": "And then the reason for that discomfort became very clear",
+  "captionSymptom": "upper abdominal discomfort"
 }

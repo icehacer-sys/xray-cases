@@ -2,7 +2,7 @@
 // Run: npx tsx tools/verify-teaser.mts
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { generateThreadsCaption, generateThreadsAnswer, teaserProblem, fallbackTeaser, TEASER_FALLBACKS } from "../src/captions.js";
+import { generateThreadsCaption, generateThreadsAnswer, teaserProblem, fallbackTeaser, TEASER_FALLBACKS, symptomGiveaway, publicSymptom } from "../src/captions.js";
 import { copyProblems } from "../src/readiness.js";
 import type { Case } from "../src/types.js";
 
@@ -37,4 +37,22 @@ const rendered = { ...worm, generated: { ...worm.generated!, threadsAnswer: awai
 assert.ok(rendered.generated.threadsAnswer.includes("👀 What you see:\n"));
 assert.ok(!copyProblems(rendered).includes("answer sections are missing their titles"));
 assert.ok(copyProblems(worm).includes("answer sections are missing their titles"), "the posted untitled answer must be flagged");
-console.log("PASS suspense line never describes the finding; untitled answers are held");
+
+// Opening lines that name the cause or exposure (real queued/pool symptoms from 2026-09-16).
+for (const clue of [
+  "upper abdominal discomfort after swallowing an object",
+  "a firm lump in the calf after a remote stay in an endemic area",
+  "decades of worsening breathlessness in a retired stone quarry worker",
+  "a hugely swollen foot with discharging sinuses in a barefoot farm worker",
+  "years of stiffness and bone pain in an adult from a village with high fluoride in the well water",
+  "a penetrating chest injury after a fall at a construction site",
+]) assert.ok(symptomGiveaway(clue), clue);
+for (const fine of ["years of trouble getting food down", "a hot swollen knee", "bilious vomiting soon after the first feed", "a chest injury after a fall at a construction site"]) assert.equal(symptomGiveaway(fine), null, fine);
+// The caption uses the public symptom; the clinical one stays for image verification.
+const spoon = { ...worm, symptom: "upper abdominal discomfort after swallowing an object", captionSymptom: "upper abdominal discomfort" };
+assert.equal(publicSymptom(spoon), "upper abdominal discomfort");
+assert.match(generateThreadsCaption(spoon), /^A patient came in with upper abdominal discomfort\.\n/);
+const leaky = { ...spoon, captionSymptom: undefined };
+leaky.generated = { ...worm.generated!, threadsCaption: generateThreadsCaption(leaky) };
+assert.ok(copyProblems(leaky).some((p) => p.startsWith("opening line gives away the answer")));
+console.log("PASS suspense line never describes the finding; untitled answers and giveaway symptoms are held");
