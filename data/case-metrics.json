@@ -1194,5 +1194,135 @@
       "reposts": 0,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00143-coin-in-the-oesophagus",
+    "postId": "18103023326210157",
+    "measuredAt": "2026-09-16T16:32:06.568Z",
+    "publishedAt": "2026-09-10T19:31:36.434Z",
+    "ageHours": 141.00837055555556,
+    "experiment": {
+      "id": "case-00143-coin-in-the-oesophagus",
+      "assignedAt": "2026-09-10T19:31:22.790Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with drooling and refusal to eat after swallowing an object.\n\nThen the X-ray loaded 😭\n\nAnd a round metal disc appeared at the base of the neck.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-10T21:01:36.434Z",
+    "ctaDueAt": "2026-09-10T21:56:36.434Z",
+    "metrics": {
+      "views": 26023,
+      "likes": 173,
+      "replies": 343,
+      "reposts": 0,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00147-odontogenic-keratocyst",
+    "postId": "18114371644992668",
+    "measuredAt": "2026-09-16T16:32:06.758Z",
+    "publishedAt": "2026-09-11T19:02:34.963Z",
+    "ageHours": 117.49216527777777,
+    "experiment": {
+      "id": "case-00147-odontogenic-keratocyst",
+      "assignedAt": "2026-09-11T19:02:22.742Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with painless jaw swelling.\n\nThen the X-ray loaded 😭\n\nAnd a large dark cavity occupied the back of the lower jaw.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-11T19:22:34.963Z",
+    "ctaDueAt": "2026-09-11T20:17:34.963Z",
+    "metrics": {
+      "views": 157972,
+      "likes": 467,
+      "replies": 215,
+      "reposts": 20,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00152-luxatio-erecta",
+    "postId": "18151028044531026",
+    "measuredAt": "2026-09-16T16:32:07.071Z",
+    "publishedAt": "2026-09-12T19:03:03.090Z",
+    "ageHours": 93.48443916666666,
+    "experiment": {
+      "id": "case-00152-luxatio-erecta",
+      "assignedAt": "2026-09-12T19:02:51.524Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with severe shoulder pain and an arm stuck overhead after a fall.\n\nThen the X-ray loaded 😭\n\nThe ball of the shoulder was sitting below its socket.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-12T20:33:03.090Z",
+    "ctaDueAt": "2026-09-12T21:28:03.090Z",
+    "metrics": {
+      "views": 20700,
+      "likes": 150,
+      "replies": 209,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00158-hypertrophic-nonunion",
+    "postId": "18121475662898455",
+    "measuredAt": "2026-09-16T16:32:07.332Z",
+    "publishedAt": "2026-09-14T19:00:32.037Z",
+    "ageHours": 45.526470833333335,
+    "experiment": {
+      "id": "case-00158-hypertrophic-nonunion",
+      "assignedAt": "2026-09-14T19:00:22.709Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with an arm that still moved at the break a year after the fracture was supposed to heal.\n\nThen the X-ray loaded 😭\n\nThe bone had piled up huge lumps of callus around a break that never actually joined.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-14T20:30:32.037Z",
+    "ctaDueAt": "2026-09-14T21:25:32.037Z",
+    "metrics": {
+      "views": 123664,
+      "likes": 285,
+      "replies": 137,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00148-dracunculiasis",
+    "postId": "18115279912989977",
+    "measuredAt": "2026-09-16T16:32:07.577Z",
+    "publishedAt": "2026-09-15T19:03:26.807Z",
+    "ageHours": 21.477991666666668,
+    "experiment": {
+      "id": "case-00148-dracunculiasis",
+      "assignedAt": "2026-09-15T19:03:13.901Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nA long curling calcification ran through the soft tissues beside the bones.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-15T19:23:26.807Z",
+    "ctaDueAt": "2026-09-15T20:18:26.807Z",
+    "metrics": {
+      "views": 70690,
+      "likes": 259,
+      "replies": 144,
+      "reposts": 3,
+      "quotes": 0
+    }
   }
 ]
