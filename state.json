@@ -293,6 +293,16 @@
       "publishedId": "18110480207174403",
       "publishedAt": "2026-09-17T19:00:15.210Z",
       "confirmedPublished": true
+    },
+    "case:00149-duodenal-atresia:answer": {
+      "creationId": "17889779169614054",
+      "createdAt": "2026-09-17T19:20:26.903Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Duodenal atresia\n\n👀 What you see:\nTwo upper abdominal gas bubbles suggest a dilated stomach and proximal duodenum.\n\n🦴 Why it matters:\nThis suggests proximal obstruction. The cropped view cannot establish that the entire distal bowel is gasless.\n\n💊 Treatment:\nThe newborn needs urgent assessment and stabilisation. Confirmed atresia is repaired surgically.",
+        "reply_to_id": "18110480207174403",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":358}]"
+      }
     }
   },
   "stages": {
