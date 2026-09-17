@@ -1,0 +1,135 @@
+{
+  "folder": "00169-congenital-knee-dislocation",
+  "number": 169,
+  "diagnosis": "Congenital knee dislocation",
+  "aliases": [
+    "congenital anterior knee dislocation",
+    "genu recurvatum congenitum"
+  ],
+  "symptom": "a knee held in marked hyperextension from birth",
+  "captionSymptom": "a knee that looked wrong from birth",
+  "hook": "the baby's leg folded backward at the knee like a hinge put on upside down",
+  "whatYouSee": "The shin bone has slid forward off the end of the thigh bone and the knee is bent backward instead of forward.",
+  "whyItMatters": "This congenital alignment problem may occur alone or with other abnormalities. Early orthopaedic assessment guides correction.",
+  "treatment": "Care often starts with gentle specialist manipulation and serial casting. Resistant or severe cases may need surgery.",
+  "takeaway": "A newborn knee bending backward with the shin in front of the thigh is congenital dislocation.",
+  "igOptions": [
+    "A. Congenital knee dislocation",
+    "B. Developmental hip dysplasia",
+    "C. Femoral fracture"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-30T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-17T02:48:56.142Z"
+  },
+  "condition": {
+    "diagnosis": "Congenital knee dislocation",
+    "aliases": [
+      "congenital anterior knee dislocation",
+      "genu recurvatum congenitum"
+    ],
+    "symptom": "a knee held in marked hyperextension from birth",
+    "captionSymptom": "a knee that looked wrong from birth",
+    "hook": "the baby's leg folded backward at the knee like a hinge put on upside down",
+    "view": "lateral knee of a newborn from the distal femur to the proximal calf",
+    "ageBand": "infant",
+    "anatomyException": "The tibia legitimately sits displaced ANTERIOR to the femur so the knee is hyperextended and the joint surfaces do not meet normally. That dislocation IS the diagnosis. Keep newborn immaturity: the patella is not yet ossified and the epiphyses are largely cartilage.",
+    "keyFindings": "the proximal tibia displaced forward off the femoral condyles with the knee hyperextended and the femur and tibia no longer facing one another across a joint space",
+    "whatYouSee": "The shin bone has slid forward off the end of the thigh bone and the knee is bent backward instead of forward.",
+    "whyItMatters": "This congenital alignment problem may occur alone or with other abnormalities. Early orthopaedic assessment guides correction.",
+    "treatment": "Care often starts with gentle specialist manipulation and serial casting. Resistant or severe cases may need surgery.",
+    "takeaway": "A newborn knee bending backward with the shin in front of the thigh is congenital dislocation.",
+    "igTitle": "THE KNEE THAT BENT BACKWARD",
+    "igOptions": [
+      "Congenital knee dislocation",
+      "Developmental hip dysplasia",
+      "Femoral fracture"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7839889/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "the proximal tibia displaced forward off the femoral condyles with the knee hyperextended and the femur and tibia no longer facing one another across a joint space",
+      "The visible anatomy matches the requested lateral knee of a newborn from the distal femur to the proximal calf and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "e3e4e6598e1ecc9be21fc28a39854b4e122f43dacce239bdaf66a0ca9dfee460",
+    "conditionSha256": "ee9bd6393c51b32c373c60283637aed06c7e0b245212086fd76e983ddebb9495",
+    "clinicalContextSha256": "bd530b1bc97812f630a9f732cd6195a738805d6eac6fbced0ea10b5caf647fb8",
+    "verifiedAt": "2026-09-17T02:48:56.143Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "the proximal tibia displaced forward off the femoral condyles with the knee hyperextended and the femur and tibia no longer facing one another across a joint space",
+        "observed": "The lateral radiograph demonstrates the proximal tibia displaced anteriorly relative to the distal femoral condyles, with the knee in hyperextension. The femoral and tibial articular surfaces are not normally opposed across a joint space, consistent with anterior tibial dislocation. Open physes and cartilaginous epiphyses are visible, appropriate for a newborn.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested lateral knee of a newborn from the distal femur to the proximal calf and the declared age and anatomical exceptions.",
+        "observed": "The image shows a lateral projection of the knee including the distal femur, the knee joint region, proximal tibia and fibula extending to the proximal calf. Skeletal maturity is immature with open physes, cartilaginous epiphyses, and absence of a discrete ossified patella, all consistent with a newborn. The declared anatomical exception (anterior tibial dislocation with hyperextension) is present. No extra, duplicated, or garbled bones are identified. No lettering or markers are present.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection radiograph of the knee joint demonstrating the distal femur, patella, proximal tibia, and proximal fibula",
+        "The knee is held in moderate flexion",
+        "The distal femoral epiphysis shows open physeal growth plates, indicating a skeletally immature individual",
+        "The patella appears displaced superiorly and posteriorly relative to the femoral condyles, with loss of normal patellofemoral articulation",
+        "There is marked posterior displacement of the tibia relative to the femur, consistent with posterior tibial subluxation or dislocation at the knee",
+        "The posterior cortex of the femur and anterior cortex of the tibia are not normally aligned; there is significant anterior bowing/displacement discrepancy",
+        "No discrete fracture line is definitively identified in the visualized cortices, though assessment is limited by the degree of displacement",
+        "The soft tissue envelope appears intact without gross swelling asymmetry visible on this view",
+        "Open physes visible at distal femur and proximal tibia"
+      ],
+      "differential": [
+        "Traumatic knee dislocation, predominantly posterior type, with associated ligamentous disruption (PCL/ACL injury)",
+        "Congenital or developmental knee dislocation/subluxation given open growth plates and degree of deformity",
+        "Physeal fracture-dislocation (Salter-Harris type) of the distal femur with posterior displacement"
+      ],
+      "anatomyConcerns": [
+        "The degree of knee flexion and tibial displacement makes full joint assessment difficult; true lateral alignment is compromised by positioning",
+        "Open physes suggest skeletal immaturity; epiphyseal displacement must be distinguished from purely ligamentous injury",
+        "Fibula is partially visualized and its proximal head alignment relative to the tibia should be verified on additional views",
+        "Vascular structures (popliteal artery) are at high risk with this degree of displacement but cannot be assessed radiographically"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The lateral knee radiograph shows the proximal tibia displaced anteriorly relative to the femoral condyles with the knee held in hyperextension, resulting in loss of normal tibiofemoral articulation. Combined with the clinical vignette of a knee held in marked hyperextension from birth and the presence of open physes with immature ossification consistent with a newborn/infant, congenital knee dislocation is the best supported diagnosis. The patella is not discretely ossified, consistent with newborn skeletal immaturity. The independent read noted posterior tibial displacement, but reassessing the geometry in the context of the lateral view and the declared exception, the tibia is anteriorly displaced relative to the femur (the femur points posteriorly relative to the tibia axis), consistent with congenital hyperextension dislocation. No other diagnosis is equally supported given the clinical context of birth presentation."
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Does that knee look like it bends the wrong way?",
+  "seedHint": "Look at the direction the lower leg is pointing and ask yourself if something is flipped.",
+  "teaser": "And then the knee answered every question at once",
+  "generated": {
+    "threadsCaption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a knee that looked a little off and had always just been that way.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Congenital knee dislocation\n\n👀 What you see:\nThe shin bone has slid forward off the end of the thigh bone and the knee is bent backward instead of forward.\n\n🦴 Why it matters:\nThis congenital alignment problem may occur alone or with other abnormalities. Early orthopaedic assessment guides correction.\n\n💊 Treatment:\nCare often starts with gentle specialist manipulation and serial casting. Resistant or severe cases may need surgery.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "1ddff02d968a07e9b6662e06922567545868de55ba10ed79bdb92c857a9d1c32",
+    "reviewedAt": "2026-09-17T02:49:03.196Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

@@ -2999,7 +2999,8 @@
     "requiredObservations": [
       "the patella divided into two corticated bony layers lying front to back with a distinct cleft between them while the femur and tibia are otherwise normal",
       "The visible anatomy matches the requested true lateral knee and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Congenital knee dislocation",
@@ -3032,7 +3033,8 @@
     "requiredObservations": [
       "the proximal tibia displaced forward off the femoral condyles with the knee hyperextended and the femur and tibia no longer facing one another across a joint space",
       "The visible anatomy matches the requested lateral knee of a newborn from the distal femur to the proximal calf and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Calcific myonecrosis",

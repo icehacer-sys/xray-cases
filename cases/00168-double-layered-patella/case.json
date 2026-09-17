@@ -1,0 +1,121 @@
+{
+  "folder": "00168-double-layered-patella",
+  "number": 168,
+  "diagnosis": "Double-layered patella",
+  "aliases": [
+    "DLP",
+    "double layered patella sign"
+  ],
+  "symptom": "an aching knee in a patient with short stature and early joint wear",
+  "hook": "the kneecap had split into two stacked plates one behind the other",
+  "whatYouSee": "The kneecap is made of two separate bony plates stacked one behind the other with a clean line dividing them.",
+  "whyItMatters": "This developmental patellar variant is associated with multiple epiphyseal dysplasia and can cause pain or instability.",
+  "treatment": "Management depends on symptoms and stability. Persistent mechanical problems may warrant specialist surgical assessment.",
+  "takeaway": "A kneecap in two stacked layers on the lateral view is a double-layered patella.",
+  "igOptions": [
+    "A. Bipartite patella",
+    "B. Double-layered patella",
+    "C. Patellar fracture"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-29T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-17T02:48:03.019Z"
+  },
+  "condition": {
+    "diagnosis": "Double-layered patella",
+    "aliases": [
+      "DLP",
+      "double layered patella sign"
+    ],
+    "symptom": "an aching knee in a patient with short stature and early joint wear",
+    "hook": "the kneecap had split into two stacked plates one behind the other",
+    "view": "true lateral knee",
+    "ageBand": "adolescent",
+    "anatomyException": "The patella is legitimately split into TWO separate corticated layers stacked front to back with a clear plane between them. That doubling IS the diagnosis. Every other bone in the knee stays single and normal.",
+    "keyFindings": "the patella divided into two corticated bony layers lying front to back with a distinct cleft between them while the femur and tibia are otherwise normal",
+    "whatYouSee": "The kneecap is made of two separate bony plates stacked one behind the other with a clean line dividing them.",
+    "whyItMatters": "This developmental patellar variant is associated with multiple epiphyseal dysplasia and can cause pain or instability.",
+    "treatment": "Management depends on symptoms and stability. Persistent mechanical problems may warrant specialist surgical assessment.",
+    "takeaway": "A kneecap in two stacked layers on the lateral view is a double-layered patella.",
+    "igTitle": "THE KNEECAP IN TWO LAYERS",
+    "igOptions": [
+      "Bipartite patella",
+      "Double-layered patella",
+      "Patellar fracture"
+    ],
+    "igCorrect": "B",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5854308/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "the patella divided into two corticated bony layers lying front to back with a distinct cleft between them while the femur and tibia are otherwise normal",
+      "The visible anatomy matches the requested true lateral knee and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "7ebdb9e7400b298427498ba8e4500a728430fd9bd3470ebc488af1c275a311f0",
+    "conditionSha256": "a6134dd90cab7c5e64c71e88ea56958b5cf9c9766802bd2af31ab9bee332b8d0",
+    "clinicalContextSha256": "a11fc0c044cc2491a13db2e3dbbc7677cfab1183c85cd28f594598ed8f65373a",
+    "verifiedAt": "2026-09-17T02:48:03.020Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Two well-corticated ossific densities are visible lateral to the lateral femoral condyle in the region of the fabella/posterolateral capsule — these are not the patella and are not explained by a double-layered patella diagnosis\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection radiograph of the knee joint",
+        "Distal femur and proximal tibia and fibula are visualized",
+        "Two curvilinear ossific densities are seen anterior and lateral to the lateral femoral condyle, appearing as smooth, well-corticated bony fragments projecting lateral to the joint; they are separate from the main femoral condyle",
+        "The joint space appears relatively preserved",
+        "No gross fracture line is identified in the distal femur, proximal tibia, or fibula",
+        "Soft tissue swelling is not clearly identified on this projection",
+        "The patella is partially visible superimposed on the femoral condyles in this lateral projection",
+        "No obvious periosteal reaction or aggressive bony lesion is identified"
+      ],
+      "differential": [
+        "Osteochondral loose bodies (intra-articular or para-articular ossified fragments, most likely related to osteochondritis dissecans or prior osteochondral injury)",
+        "Pellegrini-Stieda lesion or post-traumatic periarticular ossification/avulsion fragment at the lateral collateral ligament complex",
+        "Fabella variant or bipartite fabella (normal sesamoid bone in the lateral head of gastrocnemius, though the morphology and apparent doubling suggest a variant or fracture)"
+      ],
+      "anatomyConcerns": [
+        "The two ossific densities lateral to the lateral femoral condyle could represent a fabella (normal sesamoid) that appears bipartite or fractured; a true bipartite fabella is a recognized anatomic variant but should be distinguished from fracture or loose body",
+        "Projection is lateral but with slight obliquity, which may cause the two fragments to appear separated when they could be superimposed structures",
+        "No markers or laterality indicators are visible to confirm which knee (left or right) is imaged"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Two well-corticated ossific densities are visible lateral to the lateral femoral condyle in the region of the fabella/posterolateral capsule — these are not the patella and are not explained by a double-layered patella diagnosis\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does that kneecap look like one bone or two?",
+  "seedHint": "Count the layers behind the kneecap and tell us what you see.",
+  "teaser": "And then the knee revealed something nobody had been looking for",
+  "generated": {
+    "threadsCaption": "A patient came in with an aching knee in a patient with short stature and early joint wear.\n\nThen the X-ray loaded 😭\n\nAnd then the knee revealed something nobody had been looking for.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a mildly achy knee and some early joint wear in a shorter-than-average patient.\n\nThen the X-ray loaded 😭\n\nAnd then the knee revealed something nobody had been looking for.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Double-layered patella\n\n👀 What you see:\nThe kneecap is made of two separate bony plates stacked one behind the other with a clean line dividing them.\n\n🦴 Why it matters:\nThis developmental patellar variant is associated with multiple epiphyseal dysplasia and can cause pain or instability.\n\n💊 Treatment:\nManagement depends on symptoms and stability. Persistent mechanical problems may warrant specialist surgical assessment.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "49c751df74c814b9c417ec137e7370db426f7222c331b7d5784ecc983997c43e",
+    "reviewedAt": "2026-09-17T02:48:09.405Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
