@@ -1,0 +1,121 @@
+{
+  "folder": "00170-calcific-myonecrosis",
+  "number": 170,
+  "diagnosis": "Calcific myonecrosis",
+  "aliases": [
+    "calcified muscle mass",
+    "post-traumatic calcific myonecrosis"
+  ],
+  "symptom": "a slowly swelling calf in a patient who had crushed that leg decades earlier",
+  "captionSymptom": "a slowly swelling calf",
+  "hook": "an entire muscle had died and turned to a long slab of chalk inside the leg",
+  "whatYouSee": "A long chalky mass fills one compartment of the calf with a bright rim and a darker middle and the bones beside it are untouched.",
+  "whyItMatters": "Remote muscle injury can leave a calcified mass that mimics a tumour. Biopsy or surgery can cause infection and wound problems.",
+  "treatment": "A typical stable lesion may be observed after specialist diagnosis. Uncertain or symptomatic masses need an individual treatment plan.",
+  "takeaway": "Peripheral calcification in an old injured muscle compartment suggests calcific myonecrosis.",
+  "igOptions": [
+    "A. Osteosarcoma",
+    "B. Calcific myonecrosis",
+    "C. Myositis ossificans"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-09-30T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-17T07:53:37.201Z"
+  },
+  "condition": {
+    "diagnosis": "Calcific myonecrosis",
+    "aliases": [
+      "calcified muscle mass",
+      "post-traumatic calcific myonecrosis"
+    ],
+    "symptom": "a slowly swelling calf in a patient who had crushed that leg decades earlier",
+    "captionSymptom": "a slowly swelling calf",
+    "hook": "an entire muscle had died and turned to a long slab of chalk inside the leg",
+    "view": "AP and lateral lower leg including the calf soft tissues",
+    "keyFindings": "a large elongated calcified soft tissue mass filling one muscle compartment of the calf with dense sheet like calcification around its rim and a more lucent centre while the tibia and fibula stay normal",
+    "ageBand": "older",
+    "whatYouSee": "A long chalky mass fills one compartment of the calf with a bright rim and a darker middle and the bones beside it are untouched.",
+    "whyItMatters": "Remote muscle injury can leave a calcified mass that mimics a tumour. Biopsy or surgery can cause infection and wound problems.",
+    "treatment": "A typical stable lesion may be observed after specialist diagnosis. Uncertain or symptomatic masses need an individual treatment plan.",
+    "takeaway": "Peripheral calcification in an old injured muscle compartment suggests calcific myonecrosis.",
+    "igTitle": "THE MUSCLE THAT TURNED TO CHALK",
+    "igOptions": [
+      "Osteosarcoma",
+      "Calcific myonecrosis",
+      "Myositis ossificans"
+    ],
+    "igCorrect": "B",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6780786/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "a large elongated calcified soft tissue mass filling one muscle compartment of the calf with dense sheet like calcification around its rim and a more lucent centre while the tibia and fibula stay normal",
+      "The visible anatomy matches the requested AP and lateral lower leg including the calf soft tissues and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "d2a82b38e42962594617e0f65edd2f4224f8b6a0d21b50b4a4ce8d910ace3788",
+    "conditionSha256": "b01c99ffb6dec44f2af7a336b4e45b8da094efc2a21f7c2ec89f9b8184eeca23",
+    "clinicalContextSha256": "d6e3d22da406712fa3bc28ce6dccd0b1defb200ec3a2c219807ea76f7db66f8c",
+    "verifiedAt": "2026-09-17T07:53:37.202Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Missing or invalid required observations"
+    ],
+    "blindRead": {
+      "findings": [
+        "Two views of the lower leg (tibia and fibula) are presented, consistent with anteroposterior and lateral projections",
+        "A large, well-defined, oval soft-tissue mass is present in the posterior soft tissues of the mid-calf, located between the tibia and fibula but predominantly posterior/lateral to the fibula, spanning approximately the middle third of the lower leg",
+        "The mass demonstrates a peripheral rim of dense, lobulated, popcorn-like calcification with a relatively radiolucent center containing internal calcific nodules, giving a characteristic chondroid matrix appearance",
+        "The tibia and fibula cortices appear intact without erosion, periosteal reaction, or endosteal scalloping",
+        "No fracture or bony destruction is identified",
+        "The mass appears encapsulated and does not infiltrate adjacent bone",
+        "Knee and ankle joints visible at the periphery appear unremarkable"
+      ],
+      "differential": [
+        "Soft-tissue chondroma (extraskeletal chondroma): most likely given well-circumscribed oval soft-tissue mass with lobulated peripheral and internal chondroid (popcorn) calcifications and absence of bony involvement",
+        "Synovial chondromatosis: possible if the mass relates to a nearby joint or bursa, given multiple calcified chondral bodies with similar matrix",
+        "Extraskeletal chondrosarcoma (low-grade): considered given large size of the calcified soft-tissue mass, though the well-defined margins and absence of bony destruction are less aggressive features"
+      ],
+      "anatomyConcerns": [
+        "The mass is located in the soft tissues and does not appear to arise from or invade the tibia or fibula, which would be anatomically inconsistent with a primary intraosseous lesion",
+        "No markers, side indicators, or patient labels are visible on the radiograph, limiting laterality confirmation",
+        "Ankle is only partially included on the lateral view, slightly limiting distal assessment"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Missing or invalid required observations"
+  ],
+  "difficulty": 5,
+  "laypersonQuestion": "Does that white shape look natural to you?",
+  "seedHint": "Look at the full length of that dense white mass and ask yourself: bone or something else?",
+  "teaser": "And the calf had been quietly doing something for years",
+  "generated": {
+    "threadsCaption": "A patient came in with a slowly swelling calf.\n\nThen the X-ray loaded 😭\n\nAnd the calf had been quietly doing something for years.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a calf that had just been slowly getting a little bigger over time.\n\nThen the X-ray loaded 😭\n\nAnd the calf had been quietly doing something for years.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Calcific myonecrosis\n\n👀 What you see:\nA long chalky mass fills one compartment of the calf with a bright rim and a darker middle and the bones beside it are untouched.\n\n🦴 Why it matters:\nRemote muscle injury can leave a calcified mass that mimics a tumour. Biopsy or surgery can cause infection and wound problems.\n\n💊 Treatment:\nA typical stable lesion may be observed after specialist diagnosis. Uncertain or symptomatic masses need an individual treatment plan.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "4a25993378d0fc2dab70f0856710dd05bcd7f137f1b257590f4bcb43621c59c6",
+    "reviewedAt": "2026-09-17T07:53:47.832Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
