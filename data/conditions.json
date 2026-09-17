@@ -3099,7 +3099,8 @@
     "requiredObservations": [
       "an expanded scapular body containing a lobulated mass with dense rings and arcs of chondroid calcification scattered through it and the surrounding ribs unremarkable",
       "The visible anatomy matches the requested AP scapula with the whole scapular body in frame and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Hypertrophic nonunion",

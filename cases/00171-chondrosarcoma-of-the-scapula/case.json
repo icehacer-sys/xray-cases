@@ -1,0 +1,130 @@
+{
+  "folder": "00171-chondrosarcoma-of-the-scapula",
+  "number": 171,
+  "diagnosis": "Chondrosarcoma of the scapula",
+  "aliases": [
+    "scapular chondrosarcoma",
+    "intramedullary chondrosarcoma"
+  ],
+  "symptom": "a deep aching shoulder and a hard lump over the shoulder blade that kept growing",
+  "hook": "the shoulder blade had swollen from inside and filled with popcorn shaped flecks",
+  "whatYouSee": "The shoulder blade is blown outward by a lumpy mass full of little rings and arcs of calcium.",
+  "whyItMatters": "A growing cartilage-forming bone tumour needs specialist imaging and biopsy. Rings and arcs alone do not establish malignancy.",
+  "treatment": "Treatment is usually surgical excision with adequate margins. Further treatment depends on tumour subtype and grade.",
+  "takeaway": "An expanding scapular lesion with chondroid calcification needs specialist tumour assessment.",
+  "igOptions": [
+    "A. Chondrosarcoma",
+    "B. Osteomyelitis",
+    "C. Healing fracture"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-01T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-17T12:57:18.032Z"
+  },
+  "condition": {
+    "diagnosis": "Chondrosarcoma of the scapula",
+    "aliases": [
+      "scapular chondrosarcoma",
+      "intramedullary chondrosarcoma"
+    ],
+    "symptom": "a deep aching shoulder and a hard lump over the shoulder blade that kept growing",
+    "hook": "the shoulder blade had swollen from inside and filled with popcorn shaped flecks",
+    "view": "AP scapula with the whole scapular body in frame",
+    "ageBand": "older",
+    "keyFindings": "an expanded scapular body containing a lobulated mass with dense rings and arcs of chondroid calcification scattered through it and the surrounding ribs unremarkable",
+    "whatYouSee": "The shoulder blade is blown outward by a lumpy mass full of little rings and arcs of calcium.",
+    "whyItMatters": "A growing cartilage-forming bone tumour needs specialist imaging and biopsy. Rings and arcs alone do not establish malignancy.",
+    "treatment": "Treatment is usually surgical excision with adequate margins. Further treatment depends on tumour subtype and grade.",
+    "takeaway": "An expanding scapular lesion with chondroid calcification needs specialist tumour assessment.",
+    "igTitle": "THE POPCORN SHOULDER",
+    "igOptions": [
+      "Chondrosarcoma",
+      "Osteomyelitis",
+      "Healing fracture"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/10095313/",
+      "https://pubmed.ncbi.nlm.nih.gov/15895373/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "an expanded scapular body containing a lobulated mass with dense rings and arcs of chondroid calcification scattered through it and the surrounding ribs unremarkable",
+      "The visible anatomy matches the requested AP scapula with the whole scapular body in frame and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "917310aaed52e2a6b84530f26c3e193195077a45af80b37ffcd5c5c3425bcb96",
+    "conditionSha256": "b2e61ac5b42ef2f5fa16490ccad834eb4a0cba9c095a64115791d6d94f15b602",
+    "clinicalContextSha256": "be2924a3243c7495e7552b861a593183badd9d0ea88c9098466b2c1aa3cd28c1",
+    "verifiedAt": "2026-09-17T12:57:18.033Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "an expanded scapular body containing a lobulated mass with dense rings and arcs of chondroid calcification scattered through it and the surrounding ribs unremarkable",
+        "observed": "The scapular body is markedly expanded by a large lobulated mass exhibiting coarse arc-and-ring chondroid calcifications throughout; the cortex is thinned and remodelled; the visible upper ribs show no intrinsic lesion and appear unremarkable",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested AP scapula with the whole scapular body in frame and the declared age and anatomical exceptions.",
+        "observed": "The image is an AP projection of the right shoulder girdle; the full scapular body including its inferior angle is visible; one scapula, one clavicle, and one humeral head are present on this side with no duplication; skeletal maturity is confirmed with fused physes consistent with an adult over 60; no lettering or side markers are present",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) projection of the right shoulder girdle including the proximal humerus, scapula, clavicle, and upper ribs",
+        "Large, expansile, lobulated lesion occupying the body and glenoid region of the scapula with coarse, arc-and-ring chondroid matrix calcifications throughout, producing a 'popcorn' or cartilaginous mineralization pattern",
+        "The lesion has caused significant expansion and remodeling of the scapular body; cortical margins appear thinned but partially preserved in some regions with possible focal cortical disruption",
+        "The glenohumeral joint space appears maintained; the humeral head shows no obvious intrinsic osseous lesion",
+        "The proximal humerus cortex and medullary canal appear intact",
+        "Clavicle appears intact without lytic or sclerotic lesion",
+        "Visible upper ribs show no definite intrinsic lesion",
+        "No obvious periosteal reaction or soft-tissue ossification separate from the main lesion is identified"
+      ],
+      "differential": [
+        "Chondrosarcoma of the scapula (most likely given large size, aggressive features, cortical expansion, and chondroid matrix in a flat bone)",
+        "Enchondroma or osteochondroma with malignant transformation (chondroid matrix pattern is consistent, though size and scapular location favor malignancy)",
+        "Chondroblastoma or giant cell tumor with secondary chondroid metaplasia (less likely given the extent and matrix pattern but included for completeness)"
+      ],
+      "anatomyConcerns": [
+        "The glenohumeral joint relationship appears maintained, which is anatomically plausible given the lesion is centered on the scapular body/glenoid rather than the humeral head",
+        "No acquisition or projection inconsistencies identified; standard AP shoulder projection"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The large expansile lobulated lesion centred on the scapular body with coarse arc-and-ring chondroid matrix calcifications ('rings and arcs' pattern) in a flat bone strongly favours chondrosarcoma over enchondroma (which is rare and typically small in flat bones) and over chondroblastoma (which is epiphyseal and smaller). The clinical vignette of a growing hard lump with deep aching in an adult over 60 supports malignant cartilage tumour. The humeral head is separate and uninvolved, confirming the lesion is scapular-primary. No equally supported alternative exists once size, location, and matrix pattern are combined."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Would you notice that lump or brush it off?",
+  "seedHint": "Look at the bone itself and ask if it grew from within or broke from outside.",
+  "teaser": "And the whole room leaned in for a closer look",
+  "generated": {
+    "threadsCaption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a dull aching shoulder and a hard lump over the shoulder blade that kept slowly growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Chondrosarcoma of the scapula\n\n👀 What you see:\nThe shoulder blade is blown outward by a lumpy mass full of little rings and arcs of calcium.\n\n🦴 Why it matters:\nA growing cartilage-forming bone tumour needs specialist imaging and biopsy. Rings and arcs alone do not establish malignancy.\n\n💊 Treatment:\nTreatment is usually surgical excision with adequate margins. Further treatment depends on tumour subtype and grade.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "contentReview": {
+    "sha256": "1199da98f960dd736b20f448c4fa0619978b532861c4e328e6e72865352fba3b",
+    "reviewedAt": "2026-09-17T12:57:29.845Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
