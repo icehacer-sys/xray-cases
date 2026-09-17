@@ -279,6 +279,17 @@
       "publishedId": "18456980488140961",
       "publishedAt": "2026-09-16T21:27:37.661Z",
       "confirmedPublished": true
+    },
+    "case:00149-duodenal-atresia:challenge": {
+      "creationId": "17889777273614054",
+      "createdAt": "2026-09-17T19:00:08.686Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00149-duodenal-atresia/xray.png",
+        "text": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd the very first feed set everything in motion.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "70f59f1635a02b7a33442a03cdfd83d4dc4a478d1777cf7f13e2954f454850f3:59e149ce7d33a133fed60cf6a5eba1ad4638065ea76028497e70cb0887cc2aa6:d4f29b6ae88938022b50c834d770a9713e16186f324c0c3491d564c9508f8cae"
     }
   },
   "stages": {
@@ -993,12 +1004,18 @@
       "answerCommentId": "17895978393393793",
       "answerPostedAt": "2026-09-16T20:32:07.099Z",
       "ctaPostedAt": "2026-09-16T21:27:39.260Z"
+    },
+    "00149-duodenal-atresia": {
+      "publishedCaption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd the very first feed set everything in motion.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00149-duodenal-atresia\",\"assignedAt\":\"2026-09-17T19:00:02.945Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "count": 0
     }
   }
