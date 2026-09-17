@@ -1,0 +1,119 @@
+{
+  "folder": "00172-skeletal-fluorosis",
+  "number": 172,
+  "diagnosis": "Skeletal fluorosis",
+  "aliases": [
+    "fluorosis",
+    "endemic skeletal fluorosis"
+  ],
+  "symptom": "years of stiffness and bone pain in an adult from a village with high fluoride in the well water",
+  "captionSymptom": "years of stiffness and bone pain",
+  "hook": "a bright mineralized sheet ran between the two forearm bones",
+  "whatYouSee": "Mineralisation follows the membrane between the forearm bones, which also appear unusually dense.",
+  "whyItMatters": "Chronic excess fluoride can alter bone and mineralise ligaments. Exposure history and testing distinguish other causes.",
+  "treatment": "Identify and reduce excess fluoride exposure, correct nutritional problems and manage symptoms and complications.",
+  "takeaway": "Interosseous membrane mineralisation is a clue to fluorosis, but it is not specific by itself.",
+  "igOptions": [
+    "A. Skeletal fluorosis",
+    "B. Renal osteodystrophy",
+    "C. Paget disease"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-01T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-17T23:04:59.740Z"
+  },
+  "condition": {
+    "diagnosis": "Skeletal fluorosis",
+    "aliases": [
+      "fluorosis",
+      "endemic skeletal fluorosis"
+    ],
+    "symptom": "years of stiffness and bone pain in an adult from a village with high fluoride in the well water",
+    "captionSymptom": "years of stiffness and bone pain",
+    "hook": "a bright mineralized sheet ran between the two forearm bones",
+    "view": "AP forearm with both the radius and the ulna",
+    "ageBand": "older",
+    "keyFindings": "sheet-like mineralisation along the forearm interosseous membrane between separate radius and ulna, with increased bone density and coarse trabeculae; do not merge the entire shafts into one bone",
+    "whatYouSee": "Mineralisation follows the membrane between the forearm bones, which also appear unusually dense.",
+    "whyItMatters": "Chronic excess fluoride can alter bone and mineralise ligaments. Exposure history and testing distinguish other causes.",
+    "treatment": "Identify and reduce excess fluoride exposure, correct nutritional problems and manage symptoms and complications.",
+    "takeaway": "Interosseous membrane mineralisation is a clue to fluorosis, but it is not specific by itself.",
+    "igTitle": "THE SKELETON THAT SET SOLID",
+    "igOptions": [
+      "Skeletal fluorosis",
+      "Renal osteodystrophy",
+      "Paget disease"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pubmed.ncbi.nlm.nih.gov/8273699/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8142331/"
+    ],
+    "reviewedAt": "2026-09-10",
+    "requiredObservations": [
+      "sheet-like mineralisation along the forearm interosseous membrane between separate radius and ulna, with increased bone density and coarse trabeculae; do not merge the entire shafts into one bone",
+      "The visible anatomy matches the requested AP forearm with both the radius and the ulna and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "456f965ed6f3df4a8bb7bdf931857bec99eaf454f483bb22ec6bcefae3ad7db6",
+    "conditionSha256": "88a734ead81388ee6ff6d7accc57f0ebd08bb366e602ad843265f4b9d54fbd77",
+    "clinicalContextSha256": "0499fede0d91ac55bda13442f124eb1c2ef51cadb4c746d5e7ba68ffb7c24baa",
+    "verifiedAt": "2026-09-17T23:04:59.742Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The medullary cavities show markedly increased trabecular density throughout both diaphyses in a pattern more consistent with diffuse medullary sclerosis (osteopetrosis-like) than with the interosseous membrane sheet mineralisation characteristic of fluorosis\",\"Open physes are visible at the distal and proximal ends of both bones, indicating a skeletally immature individual — inconsistent with the supplied clinical vignette of an adult over 60 with years of symptoms\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) projection of the forearm demonstrating the radius and ulna with partial visualization of the wrist (distal) and elbow (proximal) joints",
+        "The medullary cavities of both the radius and ulna show markedly increased trabecular density with a coarse, 'cottonwool' or granular pattern replacing the normal fatty marrow signal throughout the diaphyses and metaphyses",
+        "The cortices of both bones appear thickened and expanded, with loss of the normal distinct corticomedullary differentiation",
+        "No discrete fracture line is identified",
+        "No periosteal reaction or aggressive cortical destruction is seen",
+        "Soft tissues appear mildly enlarged/prominent on the medial (ulnar) aspect of the forearm",
+        "Open physes are visible at both the distal radius/ulna and proximally, consistent with a skeletally immature individual",
+        "The trabecular pattern is diffusely abnormal bilaterally, affecting the entire visible length of both bones"
+      ],
+      "differential": [
+        "Osteopetrosis (marble bone disease): diffuse symmetric medullary sclerosis obliterating marrow space, cortical thickening, and lack of normal corticomedullary differentiation are classic features",
+        "Paget disease (polyostotic, though unusual in this age group): coarsened trabecular pattern with cortical thickening; however, typical bowing and flame-shaped lytic fronts are absent",
+        "Myelofibrosis or hematologic disorder causing diffuse medullary sclerosis (e.g., sickle cell disease with infarction, mastocytosis): diffuse increased medullary density bilaterally, though usually less homogeneous"
+      ],
+      "anatomyConcerns": [
+        "Open growth plates suggest a skeletally immature subject, which is atypical for Paget disease and makes that diagnosis less likely",
+        "Only a single projection (AP) is provided; a lateral view would be required for complete assessment",
+        "Proximal extent of the image is cropped, limiting full evaluation of the elbow joint"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The medullary cavities show markedly increased trabecular density throughout both diaphyses in a pattern more consistent with diffuse medullary sclerosis (osteopetrosis-like) than with the interosseous membrane sheet mineralisation characteristic of fluorosis\",\"Open physes are visible at the distal and proximal ends of both bones, indicating a skeletally immature individual — inconsistent with the supplied clinical vignette of an adult over 60 with years of symptoms\"]",
+    "Error: invalid symptom insertion"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What do you think that bright bridge between the bones is?",
+  "seedHint": "Look at the gap between the two forearm bones and ask yourself if that space should look like that.",
+  "teaser": "And the whole room leaned in for a closer look",
+  "generated": {
+    "threadsCaption": "A patient came in with years of stiffness and bone pain.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a patient came in with years of stiffness and bone pain.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Skeletal fluorosis\n\n👀 What you see:\nMineralisation follows the membrane between the forearm bones, which also appear unusually dense.\n\n🦴 Why it matters:\nChronic excess fluoride can alter bone and mineralise ligaments. Exposure history and testing distinguish other causes.\n\n💊 Treatment:\nIdentify and reduce excess fluoride exposure, correct nutritional problems and manage symptoms and complications.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  }
+}

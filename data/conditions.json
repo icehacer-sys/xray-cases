@@ -3167,6 +3167,7 @@
     "requiredObservations": [
       "sheet-like mineralisation along the forearm interosseous membrane between separate radius and ulna, with increased bone density and coarse trabeculae; do not merge the entire shafts into one bone",
       "The visible anatomy matches the requested AP forearm with both the radius and the ulna and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   }
 ]
