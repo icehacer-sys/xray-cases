@@ -2104,5 +2104,135 @@
       "reposts": 4,
       "quotes": 1
     }
+  },
+  {
+    "folder": "00152-luxatio-erecta",
+    "postId": "18151028044531026",
+    "measuredAt": "2026-09-18T19:14:08.712Z",
+    "publishedAt": "2026-09-12T19:03:03.090Z",
+    "ageHours": 144.184895,
+    "experiment": {
+      "id": "case-00152-luxatio-erecta",
+      "assignedAt": "2026-09-12T19:02:51.524Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with severe shoulder pain and an arm stuck overhead after a fall.\n\nThen the X-ray loaded 😭\n\nThe ball of the shoulder was sitting below its socket.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-12T20:33:03.090Z",
+    "ctaDueAt": "2026-09-12T21:28:03.090Z",
+    "metrics": {
+      "views": 20760,
+      "likes": 150,
+      "replies": 209,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00158-hypertrophic-nonunion",
+    "postId": "18121475662898455",
+    "measuredAt": "2026-09-18T19:14:08.914Z",
+    "publishedAt": "2026-09-14T19:00:32.037Z",
+    "ageHours": 96.22691027777778,
+    "experiment": {
+      "id": "case-00158-hypertrophic-nonunion",
+      "assignedAt": "2026-09-14T19:00:22.709Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with an arm that still moved at the break a year after the fracture was supposed to heal.\n\nThen the X-ray loaded 😭\n\nThe bone had piled up huge lumps of callus around a break that never actually joined.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-14T20:30:32.037Z",
+    "ctaDueAt": "2026-09-14T21:25:32.037Z",
+    "metrics": {
+      "views": 128934,
+      "likes": 289,
+      "replies": 139,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00148-dracunculiasis",
+    "postId": "18115279912989977",
+    "measuredAt": "2026-09-18T19:14:09.122Z",
+    "publishedAt": "2026-09-15T19:03:26.807Z",
+    "ageHours": 72.17842083333333,
+    "experiment": {
+      "id": "case-00148-dracunculiasis",
+      "assignedAt": "2026-09-15T19:03:13.901Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nA long curling calcification ran through the soft tissues beside the bones.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-15T19:23:26.807Z",
+    "ctaDueAt": "2026-09-15T20:18:26.807Z",
+    "metrics": {
+      "views": 95068,
+      "likes": 282,
+      "replies": 156,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00149-duodenal-atresia",
+    "postId": "18110480207174403",
+    "measuredAt": "2026-09-18T19:14:09.359Z",
+    "publishedAt": "2026-09-17T19:00:15.210Z",
+    "ageHours": 24.231708055555554,
+    "experiment": {
+      "id": "case-00149-duodenal-atresia",
+      "assignedAt": "2026-09-17T19:00:02.945Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd the very first feed set everything in motion.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-17T19:20:15.210Z",
+    "ctaDueAt": "2026-09-17T20:15:15.210Z",
+    "metrics": {
+      "views": 33794,
+      "likes": 146,
+      "replies": 112,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00159-chondrocalcinosis",
+    "postId": "17958262674213428",
+    "measuredAt": "2026-09-18T19:14:09.608Z",
+    "publishedAt": "2026-09-18T19:04:02.480Z",
+    "ageHours": 0.16864666666666667,
+    "experiment": {
+      "id": "case-00159-chondrocalcinosis",
+      "assignedAt": "2026-09-18T19:03:51.765Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nAnd the knee had more going on than just the swelling.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-18T20:34:02.480Z",
+    "ctaDueAt": "2026-09-18T21:29:02.480Z",
+    "metrics": {
+      "views": 0,
+      "likes": 4,
+      "replies": 9,
+      "reposts": 0,
+      "quotes": 0
+    }
   }
 ]
