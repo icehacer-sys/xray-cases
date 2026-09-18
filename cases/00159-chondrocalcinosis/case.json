@@ -138,5 +138,13 @@
     "reviewedAt": "2026-09-16T11:09:21.276Z",
     "reviewer": "claude-sonnet-4-6"
   },
-  "teaser": "And the knee had more going on than just the swelling"
+  "teaser": "And the knee had more going on than just the swelling",
+  "stages": {
+    "publishedCaption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nAnd the knee had more going on than just the swelling.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "experiment": "{\"id\":\"case-00159-chondrocalcinosis\",\"assignedAt\":\"2026-09-18T19:03:51.765Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "90",
+    "ctaDelayMin": "145",
+    "threadsPostId": "17958262674213428",
+    "challengePostedAt": "2026-09-18T19:04:02.480Z"
+  }
 }
