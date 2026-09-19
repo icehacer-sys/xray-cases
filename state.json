@@ -359,6 +359,17 @@
       "publishedId": "18148374151570515",
       "publishedAt": "2026-09-18T21:31:12.203Z",
       "confirmedPublished": true
+    },
+    "case:00161-swallowed-spoon:challenge": {
+      "creationId": "17890071162614054",
+      "createdAt": "2026-09-19T19:01:24.759Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00161-swallowed-spoon/xray.png",
+        "text": "A patient came in with upper abdominal discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "afcc57c6aab4e4ebd5d095367dca1102545ec273ef7643af9f3f5ae466053e2c:32a26dd40d571247b47842ac68d083f90831fe301f407054d1e986874f48f228:99f19deea5ac427a6ca721873cd4a0d5831bad06e9a5691bfdd9d5777bd4e70a"
     }
   },
   "stages": {
@@ -1095,12 +1106,18 @@
       "answerCommentId": "18094131071542948",
       "answerPostedAt": "2026-09-18T20:35:29.143Z",
       "ctaPostedAt": "2026-09-18T21:31:14.622Z"
+    },
+    "00161-swallowed-spoon": {
+      "publishedCaption": "A patient came in with upper abdominal discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00161-swallowed-spoon\",\"assignedAt\":\"2026-09-19T19:01:18.745Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-18",
+      "date": "2026-09-19",
       "count": 0
     }
   }
