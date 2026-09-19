@@ -130,5 +130,13 @@
   },
   "needsReview": false,
   "teaser": "And then the reason for that discomfort became very clear",
-  "captionSymptom": "upper abdominal discomfort"
+  "captionSymptom": "upper abdominal discomfort",
+  "stages": {
+    "publishedCaption": "A patient came in with upper abdominal discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00161-swallowed-spoon\",\"assignedAt\":\"2026-09-19T19:01:18.745Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "17988527066861715",
+    "challengePostedAt": "2026-09-19T19:01:32.296Z"
+  }
 }
