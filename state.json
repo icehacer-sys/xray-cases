@@ -373,6 +373,16 @@
       "publishedId": "17988527066861715",
       "publishedAt": "2026-09-19T19:01:32.296Z",
       "confirmedPublished": true
+    },
+    "case:00161-swallowed-spoon:answer": {
+      "creationId": "17890073079614054",
+      "createdAt": "2026-09-19T19:21:44.637Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Swallowed spoon\n\n👀 What you see:\nA complete spoon-shaped metal object projects over the expected stomach region.\n\n🦴 Why it matters:\nLong rigid objects can fail to pass the duodenum and can injure the gut wall.\n\n💊 Treatment:\nEndoscopic retrieval is often needed. Failed retrieval or complications may require surgery.",
+        "reply_to_id": "17988527066861715",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":319}]"
+      }
     }
   },
   "stages": {
