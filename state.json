@@ -426,6 +426,16 @@
       "publishedId": "18105852512238701",
       "publishedAt": "2026-09-20T20:33:25.706Z",
       "confirmedPublished": true
+    },
+    "case:00163-progressive-massive-fibrosis:cta": {
+      "creationId": "17890231119614054",
+      "createdAt": "2026-09-20T21:28:48.559Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com",
+        "reply_to_id": "18105852512238701",
+        "link_attachment": "https://free.mednoteslab.com"
+      }
     }
   },
   "stages": {
