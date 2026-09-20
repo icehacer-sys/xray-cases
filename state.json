@@ -413,6 +413,16 @@
       "publishedId": "18094319267645737",
       "publishedAt": "2026-09-20T19:02:45.494Z",
       "confirmedPublished": true
+    },
+    "case:00163-progressive-massive-fibrosis:answer": {
+      "creationId": "17890227288614054",
+      "createdAt": "2026-09-20T20:33:19.144Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Progressive massive fibrosis\n\n👀 What you see:\nLarge upper-lung masses sit among small nodules, with rim-calcified hilar nodes and upward hilar retraction.\n\n🦴 Why it matters:\nSevere dust-related lung scarring can merge into large masses. Silica exposure also increases tuberculosis risk.\n\n💊 Treatment:\nCare focuses on stopping exposure, respiratory support and assessment for complications, including tuberculosis.",
+        "reply_to_id": "18094319267645737",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":416}]"
+      }
     }
   },
   "stages": {
