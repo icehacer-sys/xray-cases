@@ -399,6 +399,17 @@
       "publishedId": "18134705266634805",
       "publishedAt": "2026-09-19T20:17:25.624Z",
       "confirmedPublished": true
+    },
+    "case:00163-progressive-massive-fibrosis:challenge": {
+      "creationId": "17890220022614054",
+      "createdAt": "2026-09-20T19:02:40.730Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00163-progressive-massive-fibrosis/xray.png",
+        "text": "A patient came in with decades of worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "93172f610ff7a093eeb12dc9e0dc0dd2f76f69a75df567e74323588ca2a5beb5:d1c7ee1b2b03f88ceb8afb50800c99573e4edcc2ca991f7db6b37983a743b5ef:2cc4e4bedbd974049a2e67fc06fabbdb61f4d13a2774c2faffe59333a6eb30c9"
     }
   },
   "stages": {
@@ -1146,12 +1157,18 @@
       "answerCommentId": "18122808890491301",
       "answerPostedAt": "2026-09-19T19:21:52.044Z",
       "ctaPostedAt": "2026-09-19T20:17:27.368Z"
+    },
+    "00163-progressive-massive-fibrosis": {
+      "publishedCaption": "A patient came in with decades of worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00163-progressive-massive-fibrosis\",\"assignedAt\":\"2026-09-20T19:02:35.234Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-19",
+      "date": "2026-09-20",
       "count": 0
     }
   }
