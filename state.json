@@ -439,6 +439,17 @@
       "publishedId": "18127982698748363",
       "publishedAt": "2026-09-20T21:28:54.968Z",
       "confirmedPublished": true
+    },
+    "case:00164-mycetoma:challenge": {
+      "creationId": "17890352184614054",
+      "createdAt": "2026-09-21T19:04:43.014Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00164-mycetoma/xray.png",
+        "text": "A patient came in with a hugely swollen foot.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "aeaf0b5f7e8b026af79825a5ca6ae51417e2aad9a65547e28561be2dc7064b79:ede0ec89dc13b7debe4793b78dfa5a29562954b618c6cfcf138cb3427dfa835a:dcaee2265aec77527e476bb4f0d70ff0097a33113db1714053e148af40465200"
     }
   },
   "stages": {
@@ -1197,12 +1208,18 @@
       "answerCommentId": "18105852512238701",
       "answerPostedAt": "2026-09-20T20:33:25.706Z",
       "ctaPostedAt": "2026-09-20T21:28:56.616Z"
+    },
+    "00164-mycetoma": {
+      "publishedCaption": "A patient came in with a hugely swollen foot.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00164-mycetoma\",\"assignedAt\":\"2026-09-21T19:04:35.429Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-20",
+      "date": "2026-09-21",
       "count": 0
     }
   }
