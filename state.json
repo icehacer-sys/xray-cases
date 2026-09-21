@@ -453,6 +453,16 @@
       "publishedId": "18115960969977269",
       "publishedAt": "2026-09-21T19:04:49.969Z",
       "confirmedPublished": true
+    },
+    "case:00164-mycetoma:answer": {
+      "creationId": "17890353348614054",
+      "createdAt": "2026-09-21T19:25:04.077Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Mycetoma\n\n👀 What you see:\nMarked foot swelling accompanies rounded bone cavities and periosteal new bone.\n\n🦴 Why it matters:\nChronic fungal or bacterial infection can invade bone and cause major disability. Tissue studies identify the organism.\n\n💊 Treatment:\nTherapy depends on the organism. Prolonged medication and selected surgery may be needed; advanced disease can require amputation.",
+        "reply_to_id": "18115960969977269",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":392}]"
+      }
     }
   },
   "stages": {
