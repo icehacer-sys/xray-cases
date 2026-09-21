@@ -3352,5 +3352,57 @@
       "reposts": 4,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00146-impalement-by-a-metal-rod",
+    "postId": "18146529700504840",
+    "measuredAt": "2026-09-21T12:45:53.842Z",
+    "publishedAt": "2026-09-16T19:01:29.752Z",
+    "ageHours": 113.740025,
+    "experiment": {
+      "id": "case-00146-impalement-by-a-metal-rod",
+      "assignedAt": "2026-09-16T19:01:17.589Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film answered every question at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-16T20:31:29.752Z",
+    "ctaDueAt": "2026-09-16T21:26:29.752Z",
+    "metrics": {
+      "views": 32224,
+      "likes": 195,
+      "replies": 363,
+      "reposts": 4,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00161-swallowed-spoon",
+    "postId": "17988527066861715",
+    "measuredAt": "2026-09-21T12:45:53.999Z",
+    "publishedAt": "2026-09-19T19:01:32.296Z",
+    "ageHours": 41.73936194444445,
+    "experiment": {
+      "id": "case-00161-swallowed-spoon",
+      "assignedAt": "2026-09-19T19:01:18.745Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with upper abdominal discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-19T19:21:32.296Z",
+    "ctaDueAt": "2026-09-19T20:16:32.296Z",
+    "metrics": {
+      "views": 6794,
+      "likes": 102,
+      "replies": 177,
+      "reposts": 1,
+      "quotes": 0
+    }
   }
 ]
