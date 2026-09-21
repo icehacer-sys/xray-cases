@@ -466,6 +466,16 @@
       "publishedId": "18088829663438553",
       "publishedAt": "2026-09-21T19:25:12.308Z",
       "confirmedPublished": true
+    },
+    "case:00164-mycetoma:cta": {
+      "creationId": "17890357743614054",
+      "createdAt": "2026-09-21T20:20:42.323Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com",
+        "reply_to_id": "18088829663438553",
+        "link_attachment": "https://anxiety.mednoteslab.com"
+      }
     }
   },
   "stages": {
