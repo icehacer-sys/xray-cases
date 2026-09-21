@@ -1216,7 +1216,9 @@
       "publishedCaption": "A patient came in with a hugely swollen foot.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
       "experiment": "{\"id\":\"case-00164-mycetoma\",\"assignedAt\":\"2026-09-21T19:04:35.429Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18115960969977269",
+      "challengePostedAt": "2026-09-21T19:04:49.969Z"
     }
   },
   "posted": {
