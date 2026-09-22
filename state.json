@@ -1267,7 +1267,9 @@
       "publishedCaption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
       "experiment": "{\"id\":\"case-00169-congenital-knee-dislocation\",\"assignedAt\":\"2026-09-22T19:02:07.366Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "90",
-      "ctaDelayMin": "145"
+      "ctaDelayMin": "145",
+      "threadsPostId": "18184997560424523",
+      "challengePostedAt": "2026-09-22T19:02:23.406Z"
     }
   },
   "posted": {
