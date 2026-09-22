@@ -479,6 +479,17 @@
       "publishedId": "18124370657492399",
       "publishedAt": "2026-09-21T20:20:51.681Z",
       "confirmedPublished": true
+    },
+    "case:00169-congenital-knee-dislocation:challenge": {
+      "creationId": "17890485894614054",
+      "createdAt": "2026-09-22T19:02:17.184Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00169-congenital-knee-dislocation/xray.png",
+        "text": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "e3e4e6598e1ecc9be21fc28a39854b4e122f43dacce239bdaf66a0ca9dfee460:ee9bd6393c51b32c373c60283637aed06c7e0b245212086fd76e983ddebb9495:1ddff02d968a07e9b6662e06922567545868de55ba10ed79bdb92c857a9d1c32"
     }
   },
   "stages": {
@@ -1248,12 +1259,18 @@
       "answerCommentId": "18088829663438553",
       "answerPostedAt": "2026-09-21T19:25:12.308Z",
       "ctaPostedAt": "2026-09-21T20:20:53.833Z"
+    },
+    "00169-congenital-knee-dislocation": {
+      "publishedCaption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00169-congenital-knee-dislocation\",\"assignedAt\":\"2026-09-22T19:02:07.366Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "count": 0
     }
   }
