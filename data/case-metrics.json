@@ -3794,5 +3794,109 @@
       "reposts": 8,
       "quotes": 1
     }
+  },
+  {
+    "folder": "00148-dracunculiasis",
+    "postId": "18115279912989977",
+    "measuredAt": "2026-09-22T13:58:44.590Z",
+    "publishedAt": "2026-09-15T19:03:26.807Z",
+    "ageHours": 162.92160638888888,
+    "experiment": {
+      "id": "case-00148-dracunculiasis",
+      "assignedAt": "2026-09-15T19:03:13.901Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a firm lump in the calf after a remote stay in an endemic area.\n\nThen the X-ray loaded 😭\n\nA long curling calcification ran through the soft tissues beside the bones.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-15T19:23:26.807Z",
+    "ctaDueAt": "2026-09-15T20:18:26.807Z",
+    "metrics": {
+      "views": 97845,
+      "likes": 285,
+      "replies": 157,
+      "reposts": 4,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00149-duodenal-atresia",
+    "postId": "18110480207174403",
+    "measuredAt": "2026-09-22T13:58:44.968Z",
+    "publishedAt": "2026-09-17T19:00:15.210Z",
+    "ageHours": 114.97493277777778,
+    "experiment": {
+      "id": "case-00149-duodenal-atresia",
+      "assignedAt": "2026-09-17T19:00:02.945Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd the very first feed set everything in motion.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-17T19:20:15.210Z",
+    "ctaDueAt": "2026-09-17T20:15:15.210Z",
+    "metrics": {
+      "views": 35585,
+      "likes": 151,
+      "replies": 112,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00159-chondrocalcinosis",
+    "postId": "17958262674213428",
+    "measuredAt": "2026-09-22T13:58:45.191Z",
+    "publishedAt": "2026-09-18T19:04:02.480Z",
+    "ageHours": 90.91186416666666,
+    "experiment": {
+      "id": "case-00159-chondrocalcinosis",
+      "assignedAt": "2026-09-18T19:03:51.765Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nAnd the knee had more going on than just the swelling.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-18T20:34:02.480Z",
+    "ctaDueAt": "2026-09-18T21:29:02.480Z",
+    "metrics": {
+      "views": 59314,
+      "likes": 161,
+      "replies": 156,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00163-progressive-massive-fibrosis",
+    "postId": "18094319267645737",
+    "measuredAt": "2026-09-22T13:58:45.475Z",
+    "publishedAt": "2026-09-20T19:02:45.494Z",
+    "ageHours": 42.933328055555556,
+    "experiment": {
+      "id": "case-00163-progressive-massive-fibrosis",
+      "assignedAt": "2026-09-20T19:02:35.234Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with decades of worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-20T20:32:45.494Z",
+    "ctaDueAt": "2026-09-20T21:27:45.494Z",
+    "metrics": {
+      "views": 302139,
+      "likes": 480,
+      "replies": 347,
+      "reposts": 9,
+      "quotes": 0
+    }
   }
 ]
