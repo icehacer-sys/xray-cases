@@ -533,6 +533,16 @@
       "publishedId": "17872204473638675",
       "publishedAt": "2026-09-23T19:04:42.750Z",
       "confirmedPublished": true
+    },
+    "case:00171-chondrosarcoma-of-the-scapula:answer": {
+      "creationId": "17890620555614054",
+      "createdAt": "2026-09-23T19:24:58.138Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Chondrosarcoma of the scapula\n\n👀 What you see:\nThe shoulder blade is blown outward by a lumpy mass full of little rings and arcs of calcium.\n\n🦴 Why it matters:\nA growing cartilage-forming bone tumour needs specialist imaging and biopsy. Rings and arcs alone do not establish malignancy.\n\n💊 Treatment:\nTreatment is usually surgical excision with adequate margins. Further treatment depends on tumour subtype and grade.",
+        "reply_to_id": "17872204473638675",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":420}]"
+      }
     }
   },
   "stages": {
