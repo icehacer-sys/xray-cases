@@ -3350,7 +3350,8 @@
     "requiredObservations": [
       "a pear shaped gallbladder under the right lower ribs uniformly filled with dense white material as bright as bone with a smooth outline and otherwise normal bowel gas and bones",
       "The visible anatomy matches the requested AP upper abdomen centred on the right upper quadrant with the pelvis cropped out and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Tuberculous dactylitis",

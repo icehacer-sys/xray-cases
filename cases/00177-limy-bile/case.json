@@ -1,0 +1,125 @@
+{
+  "folder": "00177-limy-bile",
+  "number": 177,
+  "diagnosis": "Limy bile",
+  "aliases": [
+    "limey bile",
+    "milk of calcium bile",
+    "limy bile syndrome"
+  ],
+  "symptom": "months of right upper belly pain after fatty meals",
+  "hook": "the gallbladder looked as if someone had filled it with white paint",
+  "whatYouSee": "The gallbladder under the right ribs is completely filled with dense white material as bright as bone.",
+  "whyItMatters": "Thick calcium rich bile can collect when the gallbladder outlet is blocked. Gallstones are present in most patients.",
+  "treatment": "Symptomatic cases are usually treated by removing the gallbladder. This is often done laparoscopically.",
+  "takeaway": "A gallbladder that is white on a plain film without contrast suggests limy bile.",
+  "igOptions": [
+    "A. Limy bile",
+    "B. Porcelain gallbladder",
+    "C. Retained contrast"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-02T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-23T20:17:12.919Z"
+  },
+  "condition": {
+    "diagnosis": "Limy bile",
+    "aliases": [
+      "limey bile",
+      "milk of calcium bile",
+      "limy bile syndrome"
+    ],
+    "symptom": "months of right upper belly pain after fatty meals",
+    "hook": "the gallbladder looked as if someone had filled it with white paint",
+    "view": "AP upper abdomen centred on the right upper quadrant with the pelvis cropped out",
+    "ageBand": "middle-aged",
+    "keyFindings": "a pear shaped gallbladder under the right lower ribs uniformly filled with dense white material as bright as bone with a smooth outline and otherwise normal bowel gas and bones",
+    "whatYouSee": "The gallbladder under the right ribs is completely filled with dense white material as bright as bone.",
+    "whyItMatters": "Thick calcium rich bile can collect when the gallbladder outlet is blocked. Gallstones are present in most patients.",
+    "treatment": "Symptomatic cases are usually treated by removing the gallbladder. This is often done laparoscopically.",
+    "takeaway": "A gallbladder that is white on a plain film without contrast suggests limy bile.",
+    "igTitle": "THE GALLBLADDER FULL OF CHALK",
+    "igOptions": [
+      "Limy bile",
+      "Porcelain gallbladder",
+      "Retained contrast"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6664229/",
+      "https://pubmed.ncbi.nlm.nih.gov/16173993/",
+      "https://www.eurorad.org/case/10441"
+    ],
+    "reviewedAt": "2026-09-23",
+    "requiredObservations": [
+      "a pear shaped gallbladder under the right lower ribs uniformly filled with dense white material as bright as bone with a smooth outline and otherwise normal bowel gas and bones",
+      "The visible anatomy matches the requested AP upper abdomen centred on the right upper quadrant with the pelvis cropped out and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "d2951b201412a5b3e4605f94a71d59191c3f6c95f4349ca29cf6d2304a6c31d0",
+    "conditionSha256": "2df8e6c442e0afb5ca50c317fc11f954d65bdca7bcffb7b5c8cdbc5397a8d55b",
+    "clinicalContextSha256": "97ece92a16234f1a463c5cd35a8af0dbed9fdde60bde2e5528516d24789d4534",
+    "verifiedAt": "2026-09-23T20:17:12.920Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The image includes the full pelvis and bilateral femoral heads, extending well below the expected upper abdominal field of view centred on the right upper quadrant with the pelvis cropped out\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior supine abdominal radiograph including the lower chest and pelvis",
+        "Sharply marginated, dense, teardrop-shaped radiopaque calcification in the right upper quadrant, projecting over the right renal fossa at approximately the level of L1-L2, with a smooth contour and homogeneous density, measuring approximately 2-3 cm in longest dimension",
+        "No additional discrete calcifications identified along the expected course of the ureters or in the bladder region",
+        "Lumbar spine demonstrates mild intervertebral disc space narrowing with marginal osteophyte formation at multiple levels consistent with degenerative change",
+        "Bowel gas pattern shows moderate faecal loading throughout the colon bilaterally; no definitive dilated bowel loops or air-fluid levels appreciable on supine projection",
+        "Pelvis and visualised femoral heads appear intact without focal lytic or sclerotic lesion",
+        "Soft tissue outline: no gross organomegaly definitively identified; right psoas shadow appears present; left psoas shadow partially obscured by overlying bowel gas",
+        "No pneumoperitoneum visible under the diaphragm on this supine view",
+        "Bilateral lower ribs and hemidiaphragms partially included; gastric fundal gas visible in the left upper quadrant"
+      ],
+      "differential": [
+        "Renal calculus (nephrolithiasis) — large, dense, smooth calcification in the right renal collecting system; the teardrop shape could represent a calyceal stone or early staghorn configuration",
+        "Gallstone — the right upper quadrant location and smooth dense opacity could represent a calcified gallstone, though the position appears more medial/inferior than the typical gallbladder fossa",
+        "Adrenal calcification — a calcified right adrenal gland lesion (e.g., prior haemorrhage, granulomatous disease) could produce a rounded/teardrop density in this location, though typically smaller and more superior"
+      ],
+      "anatomyConcerns": [
+        "The calcification projects over the right renal region but could overlap the gallbladder fossa depending on patient habitus; lateral or oblique views and/or cross-sectional imaging would be required to localise it to kidney, gallbladder, or adrenal",
+        "Supine projection limits assessment for free intraperitoneal air and air-fluid levels; erect or decubitus views would complement evaluation",
+        "Partial field-of-view at the superior margin limits full assessment of the lower chest and diaphragmatic contours"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The image includes the full pelvis and bilateral femoral heads, extending well below the expected upper abdominal field of view centred on the right upper quadrant with the pelvis cropped out\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What could make an organ look filled with paint?",
+  "seedHint": "Look at the belly organ that looks solid white and ask yourself: liquid or something else?",
+  "teaser": "And suddenly the symptom made a lot more sense",
+  "generated": {
+    "threadsCaption": "A patient came in with months of right upper belly pain after fatty meals.\n\nThen the X-ray loaded 😭\n\nAnd suddenly the symptom made a lot more sense.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with months of right upper belly pain that only showed up after fatty meals.\n\nThen the X-ray loaded 😭\n\nAnd suddenly the symptom made a lot more sense.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Limy bile\n\n👀 What you see:\nThe gallbladder under the right ribs is completely filled with dense white material as bright as bone.\n\n🦴 Why it matters:\nThick calcium rich bile can collect when the gallbladder outlet is blocked. Gallstones are present in most patients.\n\n💊 Treatment:\nSymptomatic cases are usually treated by removing the gallbladder. This is often done laparoscopically.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "f5b78f4b6fc658729036d9deaebdb059632bcee0c2eb2118b316fcce2f85d664",
+    "reviewedAt": "2026-09-23T20:17:21.218Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
