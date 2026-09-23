@@ -4158,5 +4158,109 @@
       "reposts": 16,
       "quotes": 1
     }
+  },
+  {
+    "folder": "00149-duodenal-atresia",
+    "postId": "18110480207174403",
+    "measuredAt": "2026-09-23T10:09:24.913Z",
+    "publishedAt": "2026-09-17T19:00:15.210Z",
+    "ageHours": 135.15269527777778,
+    "experiment": {
+      "id": "case-00149-duodenal-atresia",
+      "assignedAt": "2026-09-17T19:00:02.945Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with bilious vomiting soon after the first feed.\n\nThen the X-ray loaded 😭\n\nAnd the very first feed set everything in motion.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-17T19:20:15.210Z",
+    "ctaDueAt": "2026-09-17T20:15:15.210Z",
+    "metrics": {
+      "views": 35656,
+      "likes": 151,
+      "replies": 112,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00159-chondrocalcinosis",
+    "postId": "17958262674213428",
+    "measuredAt": "2026-09-23T10:09:25.200Z",
+    "publishedAt": "2026-09-18T19:04:02.480Z",
+    "ageHours": 111.08964444444445,
+    "experiment": {
+      "id": "case-00159-chondrocalcinosis",
+      "assignedAt": "2026-09-18T19:03:51.765Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nAnd the knee had more going on than just the swelling.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-18T20:34:02.480Z",
+    "ctaDueAt": "2026-09-18T21:29:02.480Z",
+    "metrics": {
+      "views": 59394,
+      "likes": 161,
+      "replies": 156,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00163-progressive-massive-fibrosis",
+    "postId": "18094319267645737",
+    "measuredAt": "2026-09-23T10:09:25.419Z",
+    "publishedAt": "2026-09-20T19:02:45.494Z",
+    "ageHours": 63.11109027777778,
+    "experiment": {
+      "id": "case-00163-progressive-massive-fibrosis",
+      "assignedAt": "2026-09-20T19:02:35.234Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with decades of worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-20T20:32:45.494Z",
+    "ctaDueAt": "2026-09-20T21:27:45.494Z",
+    "metrics": {
+      "views": 305496,
+      "likes": 483,
+      "replies": 348,
+      "reposts": 9,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00169-congenital-knee-dislocation",
+    "postId": "18184997560424523",
+    "measuredAt": "2026-09-23T10:09:25.884Z",
+    "publishedAt": "2026-09-22T19:02:23.406Z",
+    "ageHours": 15.117355,
+    "experiment": {
+      "id": "case-00169-congenital-knee-dislocation",
+      "assignedAt": "2026-09-22T19:02:07.366Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-22T20:32:23.406Z",
+    "ctaDueAt": "2026-09-22T21:27:23.406Z",
+    "metrics": {
+      "views": 15065,
+      "likes": 114,
+      "replies": 120,
+      "reposts": 1,
+      "quotes": 0
+    }
   }
 ]
