@@ -4262,5 +4262,83 @@
       "reposts": 1,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00146-impalement-by-a-metal-rod",
+    "postId": "18146529700504840",
+    "measuredAt": "2026-09-23T15:12:01.286Z",
+    "publishedAt": "2026-09-16T19:01:29.752Z",
+    "ageHours": 164.1754261111111,
+    "experiment": {
+      "id": "case-00146-impalement-by-a-metal-rod",
+      "assignedAt": "2026-09-16T19:01:17.589Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a chest injury after a fall at a construction site.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film answered every question at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-16T20:31:29.752Z",
+    "ctaDueAt": "2026-09-16T21:26:29.752Z",
+    "metrics": {
+      "views": 32475,
+      "likes": 196,
+      "replies": 363,
+      "reposts": 4,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00161-swallowed-spoon",
+    "postId": "17988527066861715",
+    "measuredAt": "2026-09-23T15:12:01.481Z",
+    "publishedAt": "2026-09-19T19:01:32.296Z",
+    "ageHours": 92.1747736111111,
+    "experiment": {
+      "id": "case-00161-swallowed-spoon",
+      "assignedAt": "2026-09-19T19:01:18.745Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with upper abdominal discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-19T19:21:32.296Z",
+    "ctaDueAt": "2026-09-19T20:16:32.296Z",
+    "metrics": {
+      "views": 7318,
+      "likes": 102,
+      "replies": 178,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00164-mycetoma",
+    "postId": "18115960969977269",
+    "measuredAt": "2026-09-23T15:12:01.780Z",
+    "publishedAt": "2026-09-21T19:04:49.969Z",
+    "ageHours": 44.1199475,
+    "experiment": {
+      "id": "case-00164-mycetoma",
+      "assignedAt": "2026-09-21T19:04:35.429Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a hugely swollen foot.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-21T19:24:49.969Z",
+    "ctaDueAt": "2026-09-21T20:19:49.969Z",
+    "metrics": {
+      "views": 511530,
+      "likes": 783,
+      "replies": 362,
+      "reposts": 17,
+      "quotes": 1
+    }
   }
 ]
