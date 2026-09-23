@@ -13,18 +13,22 @@ function client(): Anthropic {
   return _client;
 }
 
+// Owner rule (2026-09-23): the pelvis may show, the genitals may not. The old prompt flagged any
+// film that reached the hips, so abdominal cases got a grey blob over the sacrum with no genitals
+// in frame. Genitals lie BELOW the pubic symphysis, so the film has to reach that far to show them.
 const SYSTEM =
-  "You check an image (usually a medical X-ray) for any visible EXTERNAL GENITAL or GROIN region that an " +
-  "automated nudity filter on Instagram or Threads might flag. On a FRONTAL pelvic, hip, lower-abdomen, or " +
-  "lower-body/leg X-ray the external genital area (the soft-tissue region between the upper thighs and below " +
-  "the pubic bones) is usually visible and MUST be flagged for blurring even when it is faint or only a " +
-  "soft-tissue shadow. Err STRONGLY on the side of flagging: if any groin or genital soft tissue is in frame, " +
-  "flag it. Return present=false ONLY when the image clearly has no groin in frame (for example a skull, " +
-  "chest, hand, arm, or foot X-ray). Respond with ONLY a JSON object.";
+  "You check an image (usually a medical X-ray) for visible EXTERNAL GENITALIA that an automated nudity " +
+  "filter on Instagram or Threads might flag. External genitalia lie BELOW the pubic symphysis, in the soft " +
+  "tissue between the upper thighs. Whenever the image extends below the pubic bones into that region, flag " +
+  "it for blurring even when the genitalia are faint or only a soft-tissue shadow. If the image ends at or " +
+  "above the lower edge of the pubic bones, genitalia cannot be in frame, so return present=false. Never " +
+  "flag the sacrum, the pelvic inlet, the bladder, bowel, or any structure above the pubic symphysis, and " +
+  "never flag a film just because the iliac wings or hip joints are visible. Return present=false for skull, " +
+  "chest, hand, arm, foot and upper or mid abdomen X-rays. Respond with ONLY a JSON object.";
 
 const USER = [
-  "Is any external genital or groin region visible in this image (including a faint soft-tissue shadow",
-  "between the upper thighs on a frontal pelvic or lower-body X-ray)?",
+  "Are external genitalia visible in this image (the soft tissue between the upper thighs below the pubic",
+  "symphysis, including a faint soft-tissue shadow on a frontal pelvic or lower-body X-ray)?",
   "If yes, give a TIGHT bounding box covering ONLY the external genital soft tissue (the central bulge",
   "between the upper thighs, just below the pubic bones) with a small margin. Do NOT extend the box over the",
   "femurs, hip bones, knees, or lower legs — keep it focused on the genital area so diagnostic bones stay",
