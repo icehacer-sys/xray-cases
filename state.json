@@ -519,6 +519,17 @@
       "publishedId": "18105651206244056",
       "publishedAt": "2026-09-22T21:28:54.195Z",
       "confirmedPublished": true
+    },
+    "case:00171-chondrosarcoma-of-the-scapula:challenge": {
+      "creationId": "17890618707614054",
+      "createdAt": "2026-09-23T19:04:35.163Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00171-chondrosarcoma-of-the-scapula/xray.png",
+        "text": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "917310aaed52e2a6b84530f26c3e193195077a45af80b37ffcd5c5c3425bcb96:b2e61ac5b42ef2f5fa16490ccad834eb4a0cba9c095a64115791d6d94f15b602:1199da98f960dd736b20f448c4fa0619978b532861c4e328e6e72865352fba3b"
     }
   },
   "stages": {
@@ -1299,12 +1310,18 @@
       "answerCommentId": "18137096770627679",
       "answerPostedAt": "2026-09-22T20:33:16.445Z",
       "ctaPostedAt": "2026-09-22T21:28:56.224Z"
+    },
+    "00171-chondrosarcoma-of-the-scapula": {
+      "publishedCaption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00171-chondrosarcoma-of-the-scapula\",\"assignedAt\":\"2026-09-23T19:04:28.791Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-22",
+      "date": "2026-09-23",
       "count": 0
     }
   }
