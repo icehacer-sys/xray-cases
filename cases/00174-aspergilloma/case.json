@@ -1,0 +1,139 @@
+{
+  "folder": "00174-aspergilloma",
+  "number": 174,
+  "diagnosis": "Aspergilloma",
+  "aliases": [
+    "pulmonary aspergilloma",
+    "fungus ball",
+    "fungal ball",
+    "aspergillus fungus ball"
+  ],
+  "symptom": "coughing up streaks of blood years after being treated for tuberculosis",
+  "captionSymptom": "a cough that kept bringing up streaks of blood",
+  "hook": "a round ball sat loose inside a hollow in the lung like a pearl in an open shell",
+  "whatYouSee": "A round ball sits inside a hollow in the upper lung with a thin crescent of air curving over its top.",
+  "whyItMatters": "Aspergillus fungus can grow into a ball inside an old lung cavity. It can erode nearby vessels and cause serious bleeding.",
+  "treatment": "Stable cases without symptoms may simply be watched. Significant bleeding may need embolisation or surgical removal.",
+  "takeaway": "A ball inside an old lung cavity with an air crescent over it suggests an aspergilloma.",
+  "igOptions": [
+    "A. Aspergilloma",
+    "B. Lung abscess",
+    "C. Cavitating lung cancer"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-03T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-23T13:24:27.833Z"
+  },
+  "condition": {
+    "diagnosis": "Aspergilloma",
+    "aliases": [
+      "pulmonary aspergilloma",
+      "fungus ball",
+      "fungal ball",
+      "aspergillus fungus ball"
+    ],
+    "symptom": "coughing up streaks of blood years after being treated for tuberculosis",
+    "captionSymptom": "a cough that kept bringing up streaks of blood",
+    "hook": "a round ball sat loose inside a hollow in the lung like a pearl in an open shell",
+    "view": "PA chest",
+    "ageBand": "middle-aged",
+    "keyFindings": "a thin walled cavity in the right upper lobe containing a smooth round soft tissue ball with a thin crescent of air curving over the top of the ball between it and the cavity wall and mild surrounding upper lobe scarring",
+    "whatYouSee": "A round ball sits inside a hollow in the upper lung with a thin crescent of air curving over its top.",
+    "whyItMatters": "Aspergillus fungus can grow into a ball inside an old lung cavity. It can erode nearby vessels and cause serious bleeding.",
+    "treatment": "Stable cases without symptoms may simply be watched. Significant bleeding may need embolisation or surgical removal.",
+    "takeaway": "A ball inside an old lung cavity with an air crescent over it suggests an aspergilloma.",
+    "igTitle": "THE BALL IN THE LUNG",
+    "igOptions": [
+      "Aspergilloma",
+      "Lung abscess",
+      "Cavitating lung cancer"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://radiopaedia.org/articles/aspergilloma",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3714090/"
+    ],
+    "reviewedAt": "2026-09-23",
+    "requiredObservations": [
+      "a thin walled cavity in the right upper lobe containing a smooth round soft tissue ball with a thin crescent of air curving over the top of the ball between it and the cavity wall and mild surrounding upper lobe scarring",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "0e7a6ffb28b1cb679cd0a0d7826afe97bbc6482b7328801db0098488b91b6703",
+    "conditionSha256": "dabb26aacea9059533e87534eb9285546c395615ceb731c0efea908c7879d64c",
+    "clinicalContextSha256": "dcf5ba8f4a3e5983273da1ffe776d76a916f0cab413b77fc5b51f02bbfcbd99e",
+    "verifiedAt": "2026-09-23T13:24:27.844Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "a thin walled cavity in the right upper lobe containing a smooth round soft tissue ball with a thin crescent of air curving over the top of the ball between it and the cavity wall and mild surrounding upper lobe scarring",
+        "observed": "A well-defined round opacity is visible in the right upper lobe with a central round dense opacity (fungal ball) and a peripheral lucent crescent arching over its superior margin consistent with the air crescent (Monod sign). The cavity wall appears relatively thin. Mild surrounding increased interstitial markings suggesting scarring are present in the right upper lobe. This matches the expected aspergilloma appearance.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions.",
+        "observed": "PA chest projection confirmed. Symmetric clavicles, one scapula per side, symmetric rib pairs, single cardiac silhouette, bilateral hemidiaphragms, midline trachea. No duplicated or extra bones. Lung markings branch and taper normally. Skeletal maturity consistent with an adult aged 40-59. No lettering or side markers present.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph",
+        "Well-defined round opacity in the right upper lobe, approximately 3-4 cm in diameter, with a central lucency suggesting cavitation and a surrounding soft-tissue density wall; the lesion has relatively sharp margins",
+        "No satellite nodules are identified in the visible lung fields",
+        "Left lung appears clear with no focal consolidation, mass, or pleural effusion",
+        "Cardiomediastinal silhouette appears within normal limits; trachea is midline",
+        "No visible pleural effusion bilaterally",
+        "Bony thorax appears intact; no rib destruction identified",
+        "Hemidiaphragms appear normal; costophrenic angles appear sharp bilaterally",
+        "No hilar lymphadenopathy is clearly identified on this projection"
+      ],
+      "differential": [
+        "Pulmonary abscess (cavitating infectious lesion) — most common cause of a thick-walled cavitary nodule in the lung",
+        "Cavitating primary lung carcinoma (e.g., squamous cell carcinoma) — must be excluded given the size and cavitation",
+        "Cavitating granuloma (e.g., tuberculosis reactivation or endemic fungal infection such as histoplasmoma/coccidioidomycosis) — possible given the well-defined margin and upper lobe location"
+      ],
+      "anatomyConcerns": [
+        "The right-sided cavitary lesion is clearly pathological and not a normal anatomical structure",
+        "No impossible anatomy is identified",
+        "Rotation appears minimal; clavicular heads are roughly symmetric relative to the spinous processes, so the projection is acceptable",
+        "No acquisition artifacts noted that would materially degrade diagnostic quality"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The right upper lobe lesion shows a well-defined round opacity with a central lucency and surrounding denser wall. In the clinical context of prior tuberculosis treatment and haemoptysis, the classic appearance of a fungal ball (aspergilloma) within a pre-existing cavity is the most parsimonious explanation. The key discriminating feature is the round intracavitary soft-tissue ball with a crescent of air above it (Monod sign). The independent read identified cavitation and correctly listed the differential; however, the combination of the clinical vignette (post-TB, haemoptysis) and the visible intracavitary round opacity with air crescent favours aspergilloma over abscess or cavitating carcinoma. The lesion is in the right upper lobe, consistent with a post-TB cavity site."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does that round shadow look like it could move?",
+  "seedHint": "Look at the hollow space and ask yourself what is floating inside it",
+  "teaser": "And the chest had its own answer waiting",
+  "generated": {
+    "threadsCaption": "A patient came in with a cough that kept bringing up streaks of blood.\n\nThen the X-ray loaded 😭\n\nAnd the chest had its own answer waiting.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a cough that kept bringing up the occasional streak of blood.\n\nThen the X-ray loaded 😭\n\nAnd the chest had its own answer waiting.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Aspergilloma\n\n👀 What you see:\nA round ball sits inside a hollow in the upper lung with a thin crescent of air curving over its top.\n\n🦴 Why it matters:\nAspergillus fungus can grow into a ball inside an old lung cavity. It can erode nearby vessels and cause serious bleeding.\n\n💊 Treatment:\nStable cases without symptoms may simply be watched. Significant bleeding may need embolisation or surgical removal.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "743376696ed66a755c407db55ad684a9a2514aa1591ec23377a973393fd76e26",
+    "reviewedAt": "2026-09-23T13:24:38.297Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}

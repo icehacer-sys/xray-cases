@@ -1,0 +1,143 @@
+{
+  "folder": "00175-porocephalosis",
+  "number": 175,
+  "diagnosis": "Porocephalosis",
+  "aliases": [
+    "pentastomiasis",
+    "Armillifer infection",
+    "Armillifer armillatus",
+    "armillifer armillatus infection",
+    "tongue worm infection"
+  ],
+  "symptom": "vague upper belly discomfort in an adult who grew up eating bushmeat in West Africa",
+  "captionSymptom": "vague upper belly discomfort",
+  "hook": "dozens of tiny crescent moons were scattered through the upper belly",
+  "whatYouSee": "Dozens of tiny curled calcifications shaped like commas and crescents are scattered over the liver and upper belly.",
+  "whyItMatters": "These are dead calcified larvae of a tongue worm usually caught from undercooked snake meat. Most people never have symptoms.",
+  "treatment": "Calcified larvae usually need no treatment. Rare complications may need surgery.",
+  "takeaway": "Many small C shaped calcifications in the upper abdomen suggest old Armillifer infection.",
+  "igOptions": [
+    "A. Porocephalosis",
+    "B. Cysticercosis",
+    "C. Phleboliths"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-04T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-23T13:28:46.160Z"
+  },
+  "condition": {
+    "diagnosis": "Porocephalosis",
+    "aliases": [
+      "pentastomiasis",
+      "Armillifer infection",
+      "Armillifer armillatus",
+      "armillifer armillatus infection",
+      "tongue worm infection"
+    ],
+    "symptom": "vague upper belly discomfort in an adult who grew up eating bushmeat in West Africa",
+    "captionSymptom": "vague upper belly discomfort",
+    "hook": "dozens of tiny crescent moons were scattered through the upper belly",
+    "view": "AP upper abdomen from the lower chest to the iliac crests with the pelvis cropped out",
+    "ageBand": "middle-aged",
+    "keyFindings": "dozens of small dense C shaped and comma shaped calcifications each a few millimetres long scattered over the liver and spleen and across the upper abdomen with otherwise normal bowel gas and bones",
+    "whatYouSee": "Dozens of tiny curled calcifications shaped like commas and crescents are scattered over the liver and upper belly.",
+    "whyItMatters": "These are dead calcified larvae of a tongue worm usually caught from undercooked snake meat. Most people never have symptoms.",
+    "treatment": "Calcified larvae usually need no treatment. Rare complications may need surgery.",
+    "takeaway": "Many small C shaped calcifications in the upper abdomen suggest old Armillifer infection.",
+    "igTitle": "THE CRESCENT MOONS",
+    "igOptions": [
+      "Porocephalosis",
+      "Cysticercosis",
+      "Phleboliths"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6519502/",
+      "https://pubmed.ncbi.nlm.nih.gov/8868383/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3647675/"
+    ],
+    "reviewedAt": "2026-09-23",
+    "requiredObservations": [
+      "dozens of small dense C shaped and comma shaped calcifications each a few millimetres long scattered over the liver and spleen and across the upper abdomen with otherwise normal bowel gas and bones",
+      "The visible anatomy matches the requested AP upper abdomen from the lower chest to the iliac crests with the pelvis cropped out and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "needsReview": false,
+  "verifyDefects": [],
+  "difficulty": 5,
+  "laypersonQuestion": "What does this belly X-ray remind you of?",
+  "seedHint": "Count the shapes in there. Are they random or do they follow a pattern?",
+  "teaser": "And then the radiologist went very quiet",
+  "generated": {
+    "threadsCaption": "A patient came in with vague upper belly discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with nothing more than a vague upper belly discomfort that could easily have been last night's dinner.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Porocephalosis\n\n👀 What you see:\nDozens of tiny curled calcifications shaped like commas and crescents are scattered over the liver and upper belly.\n\n🦴 Why it matters:\nThese are dead calcified larvae of a tongue worm usually caught from undercooked snake meat. Most people never have symptoms.\n\n💊 Treatment:\nCalcified larvae usually need no treatment. Rare complications may need surgery.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "54d1ba09f98340410a0b7f62fa5354a279fcb4136eeef9352a6f2ae5364b2a37",
+    "reviewedAt": "2026-09-23T13:29:14.427Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "imageApproval": {
+    "sha256": "5d51f2e4d3893d11153b2eab1dc8450f89e980d49e99a85d40083f85b22bb9da",
+    "conditionSha256": "7b86cfc10bf2a19ceced31b3fd29d9b974d7cd0db79ebb4c7ff265f44ac81271",
+    "clinicalContextSha256": "16d5dc13ab8a1575f54d385a2c61aba731fd1774972c27b532ca9c64669c08f2",
+    "verifiedAt": "2026-09-23T13:32:42.386Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "dozens of small dense C shaped and comma shaped calcifications each a few millimetres long scattered over the liver and spleen and across the upper abdomen with otherwise normal bowel gas and bones",
+        "observed": "Innumerable small curvilinear, C-shaped and comma-shaped calcific densities a few millimetres in size are distributed diffusely throughout the right and left upper abdomen overlying the liver and spleen regions and across the peritoneal cavity. Bowel gas pattern shows haustral markings and connected loops without disconnected floating gas. Spine and visible rib anatomy appear intact. Bowel gas is present and anatomically distributed.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested AP upper abdomen from the lower chest to the iliac crests with the pelvis cropped out and the declared age and anatomical exceptions.",
+        "observed": "The image shows an AP projection from the lower chest (lung bases and lower ribs visible) to approximately the iliac crest level; the pelvis and femoral heads are not included in the field. Skeletal maturity is consistent with an adult aged 40-59. The view and anatomical coverage match the requested AP upper abdomen with pelvis cropped.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "AP supine projection of the chest and abdomen",
+        "Numerous curvilinear and ring-like calcific densities distributed diffusely throughout the abdomen bilaterally, consistent with multiple calcified structures overlying the bowel and soft tissues",
+        "Markedly distended abdomen with diffuse soft-tissue haziness and loss of normal fat planes, suggesting large-volume ascites or significant intraabdominal fluid",
+        "Bowel gas pattern shows multiple loops of dilated small and large bowel with haustral markings visible peripherally",
+        "A large ovoid lucency in the left upper quadrant consistent with a gas-filled gastric fundus or splenic flexure",
+        "Bilateral lung bases show mild increased opacity, possibly representing atelectasis or pleural effusions",
+        "No pneumoperitoneum identified on this supine projection",
+        "Spine shows degenerative changes; no obvious bony destruction identified on this view",
+        "The curvilinear calcifications are numerous, small, and distributed in a pattern suggesting parasitic cysts or vascular calcifications rather than a single lesion"
+      ],
+      "differential": [
+        "Disseminated peritoneal echinococcosis (hydatid disease) with multiple calcified cysts - most consistent with the innumerable curvilinear calcifications distributed throughout the abdomen",
+        "Disseminated cysticercosis with multiple peritoneal/mesenteric calcified cysts",
+        "Peritoneal carcinomatosis with dystrophic calcifications, in association with ascites"
+      ],
+      "anatomyConcerns": [
+        "The supine projection limits detection of free intraperitoneal air; an erect or lateral decubitus view would be needed to exclude pneumoperitoneum",
+        "Loss of psoas shadow margins bilaterally raises concern for significant ascites obscuring normal retroperitoneal anatomy",
+        "The sheer number and distribution of calcifications is unusual and warrants clinical correlation to exclude artifact or superimposed foreign material, though the curvilinear morphology is consistent with biological calcification"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The clinical vignette of a West African adult with bushmeat exposure combined with innumerable small (few-mm) C-shaped and comma-shaped curvilinear calcifications scattered diffusely across the upper abdomen over the liver, spleen and peritoneum is the hallmark radiographic pattern of porocephalosis (pentastomiasis). The calcifications represent dead nymphs of Armillifer species encapsulated in host tissue. Echinococcosis typically produces fewer, larger cyst walls with daughter-cyst architecture; cysticercosis produces oval/rice-grain calcifications in soft tissues and muscle planes. The morphology, number, and distribution here best fit porocephalosis given the geographic and dietary exposure context. The independent read correctly identified the curvilinear calcifications and placed echinococcosis first on differential, but the bushmeat-exposure vignette and characteristic C/comma morphology shift the most supported diagnosis to porocephalosis."
+  }
+}

@@ -3206,7 +3206,8 @@
     "requiredObservations": [
       "a huge rounded mottled mass of impacted stool speckled with tiny bubbles of trapped gas filling most of the abdomen inside a massively dilated colon that pushes the other bowel loops aside with very little normal bowel gas elsewhere",
       "The visible anatomy matches the requested AP abdomen from the diaphragm to the iliac crests with the pelvis and groin cropped out and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Aspergilloma",
@@ -3241,7 +3242,8 @@
     "requiredObservations": [
       "a thin walled cavity in the right upper lobe containing a smooth round soft tissue ball with a thin crescent of air curving over the top of the ball between it and the cavity wall and mild surrounding upper lobe scarring",
       "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Porocephalosis",
@@ -3278,7 +3280,8 @@
     "requiredObservations": [
       "dozens of small dense C shaped and comma shaped calcifications each a few millimetres long scattered over the liver and spleen and across the upper abdomen with otherwise normal bowel gas and bones",
       "The visible anatomy matches the requested AP upper abdomen from the lower chest to the iliac crests with the pelvis cropped out and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Sturge-Weber syndrome",

@@ -55,6 +55,7 @@ BOT_AUTO_APPROVE: "on" # owner trusts gpt-image-2: generated cases post without 
 BOT_IMAGE_MODEL: "gpt-image-2.5-flare" # owner-selected model; final image and copy QA remain mandatory
 BOT_IMAGE_QUALITY: "high" # realism: high renders far more convincing film texture and age-appropriate bone detail than medium (~4x cost per image, still cents)
 BOT_XRAY_VERIFY: "on" # Claude vision checks each generated X-ray for AI anatomy defects; failures are regenerated or held for review
+BOT_XRAY_MAX_ATTEMPTS: "1" # one image per case: a failed render is held for review, never re-rolled (owner, 2026-09-23: re-rolls burn image credits)
 BOT_CENSOR_GENITALS: "on" # blur external genitalia on the X-ray + slides so Threads/IG don't flag the post as sensitive
 BOT_TOPIC_TAG: "Med Threads" # topic tag added to every challenge post (files it under the community)
 BOT_TOPIC_TAG_GRACE_MIN: "60" # keep retrying for the tag this long past postAt before accepting an untagged post

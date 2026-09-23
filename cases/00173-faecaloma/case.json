@@ -1,0 +1,135 @@
+{
+  "folder": "00173-faecaloma",
+  "number": 173,
+  "diagnosis": "Faecaloma",
+  "aliases": [
+    "fecaloma",
+    "giant faecaloma",
+    "giant fecaloma",
+    "faecal impaction",
+    "fecal impaction",
+    "impacted stool"
+  ],
+  "symptom": "a belly that had been swelling for weeks with vomiting and no bowel movement for months in a man on long term medication that slows the gut",
+  "captionSymptom": "a belly that kept getting bigger and tighter for weeks",
+  "hook": "something the size of a watermelon had packed the belly from side to side",
+  "whatYouSee": "A giant mottled mass fills most of the belly inside a hugely stretched colon and pushes everything else aside.",
+  "whyItMatters": "Severely impacted stool can block the bowel and press on the colon wall. Ulceration and perforation of the stretched colon are serious risks.",
+  "treatment": "Smaller impactions are usually treated with enemas and manual disimpaction. A giant mass that blocks the bowel may need surgery.",
+  "takeaway": "A huge mottled mass inside a stretched colon in a chronically constipated patient points to a faecaloma.",
+  "igOptions": [
+    "A. Faecaloma",
+    "B. Giant ovarian cyst",
+    "C. Sigmoid volvulus"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-02T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-23T13:22:27.257Z"
+  },
+  "condition": {
+    "diagnosis": "Faecaloma",
+    "aliases": [
+      "fecaloma",
+      "giant faecaloma",
+      "giant fecaloma",
+      "faecal impaction",
+      "fecal impaction",
+      "impacted stool"
+    ],
+    "symptom": "a belly that had been swelling for weeks with vomiting and no bowel movement for months in a man on long term medication that slows the gut",
+    "captionSymptom": "a belly that kept getting bigger and tighter for weeks",
+    "hook": "something the size of a watermelon had packed the belly from side to side",
+    "view": "AP abdomen from the diaphragm to the iliac crests with the pelvis and groin cropped out",
+    "ageBand": "middle-aged",
+    "keyFindings": "a huge rounded mottled mass of impacted stool speckled with tiny bubbles of trapped gas filling most of the abdomen inside a massively dilated colon that pushes the other bowel loops aside with very little normal bowel gas elsewhere",
+    "whatYouSee": "A giant mottled mass fills most of the belly inside a hugely stretched colon and pushes everything else aside.",
+    "whyItMatters": "Severely impacted stool can block the bowel and press on the colon wall. Ulceration and perforation of the stretched colon are serious risks.",
+    "treatment": "Smaller impactions are usually treated with enemas and manual disimpaction. A giant mass that blocks the bowel may need surgery.",
+    "takeaway": "A huge mottled mass inside a stretched colon in a chronically constipated patient points to a faecaloma.",
+    "igTitle": "THE WATERMELON IN THE BELLY",
+    "igOptions": [
+      "Faecaloma",
+      "Giant ovarian cyst",
+      "Sigmoid volvulus"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7144756/",
+      "https://radiopaedia.org/articles/faecaloma",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC13218709/"
+    ],
+    "reviewedAt": "2026-09-23",
+    "requiredObservations": [
+      "a huge rounded mottled mass of impacted stool speckled with tiny bubbles of trapped gas filling most of the abdomen inside a massively dilated colon that pushes the other bowel loops aside with very little normal bowel gas elsewhere",
+      "The visible anatomy matches the requested AP abdomen from the diaphragm to the iliac crests with the pelvis and groin cropped out and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The independent read describes a heterogeneous soap-bubble mass with coarse mixed-density internal architecture suggesting teratoma or Wilms tumor; while faecaloma can produce a mottled mass, the internal texture here appears more lobulated and mass-like than a typical faecaloma with dispersed trapped gas bubbles within a dilated colon lumen\",\"No clearly identifiable dilated colon wall is traced around the mottled density to confirm this is intraluminal stool rather than a soft-tissue mass\",\"Left lower lung field obscuration by the superior extent of the abdominal opacity is noted but may be explained by upward mass effect on the left hemidiaphragm\",\"The stomach bubble appears displaced superiorly and to the left, consistent with a large infradiaphragmatic mass effect\"]"
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "What could fill a whole belly that tight?",
+  "seedHint": "Look at the center of the image and ask yourself if that mass is solid or hollow.",
+  "teaser": "And the belly had been telling the truth the whole time",
+  "generated": {
+    "threadsCaption": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a belly that had just been slowly getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Faecaloma\n\n👀 What you see:\nA giant mottled mass fills most of the belly inside a hugely stretched colon and pushes everything else aside.\n\n🦴 Why it matters:\nSeverely impacted stool can block the bowel and press on the colon wall. Ulceration and perforation of the stretched colon are serious risks.\n\n💊 Treatment:\nSmaller impactions are usually treated with enemas and manual disimpaction. A giant mass that blocks the bowel may need surgery.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "c88b29b4472a9a1a458c8af91b8f8a0f031c88c9ea9bd65be89e0157649952aa",
+    "reviewedAt": "2026-09-23T13:22:35.692Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "imageApproval": {
+    "sha256": "6c8fd86a771fab707154cafab32a099bb430649736291b8e7123908674a52ee3",
+    "conditionSha256": "dbcc74175a7ffcc1c75816cbb87d4962c665d891aac1a6fec6410b7821accb52",
+    "clinicalContextSha256": "c9db0b71d7fc15900318b546ab45d79aa851a79e228a1e79dc6957d870b09b47",
+    "verifiedAt": "2026-09-23T13:31:56.825Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The independent read describes a heterogeneous soap-bubble mass with coarse mixed-density internal architecture suggesting teratoma or Wilms tumor; while faecaloma can produce a mottled mass, the internal texture here appears more lobulated and mass-like than a typical faecaloma with dispersed trapped gas bubbles within a dilated colon lumen\",\"No clearly identifiable dilated colon wall is traced around the mottled density to confirm this is intraluminal stool rather than a soft-tissue mass\",\"Left lower lung field obscuration by the superior extent of the abdominal opacity is noted but may be explained by upward mass effect on the left hemidiaphragm\",\"The stomach bubble appears displaced superiorly and to the left, consistent with a large infradiaphragmatic mass effect\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior (AP) or posteroanterior (PA) projection of the chest and upper abdomen",
+        "Massive heterogeneous soft-tissue mass occupying the majority of the abdomen and lower chest, demonstrating a coarse mixed-density (soap-bubble or Swiss-cheese) internal architecture with multiple rounded lucencies interspersed within dense soft-tissue stroma",
+        "The mass appears to originate from the central and left abdomen, extending superiorly to displace the left hemidiaphragm and inferiorly beyond the lower film margin",
+        "Right hemidiaphragm is relatively preserved; right lung base shows mild compression atelectasis",
+        "Left lower lung field is largely obscured by the superior extent of the mass",
+        "Bowel gas is displaced to the right lateral abdomen",
+        "Coarse lobulated external contour of the mass",
+        "Stomach bubble visible in the left upper quadrant superior to the mass, suggesting the mass is infradiaphragmatic or retroperitoneal in origin",
+        "Thoracic and lumbar spine appear midline without obvious bony destruction visible on this projection",
+        "No visible calcification of dystrophic or eggshell type within the mass on this image"
+      ],
+      "differential": [
+        "Large retroperitoneal or abdominal teratoma / germ cell tumor: the heterogeneous soap-bubble internal architecture with mixed fat, soft tissue, and cystic components is characteristic of a mature or immature teratoma",
+        "Wilms tumor (nephroblastoma): large heterogeneous renal or retroperitoneal mass in the expected renal fossa with internal necrosis/cystic change; the left kidney is not separately identified",
+        "Hepatoblastoma or hepatic mass with cystic degeneration: less likely given apparent left-sided/central location and stomach displaced superiorly rather than inferiorly, but cannot be excluded"
+      ],
+      "anatomyConcerns": [
+        "The sheer size of the mass relative to the torso raises the possibility that this is a pediatric patient, though age cannot be determined from the image alone",
+        "The left kidney is not separately identifiable, raising concern it may be the organ of origin or is displaced/engulfed",
+        "Right lung base compression and left lower lung field obscuration are likely positional/compressive rather than intrinsic pulmonary pathology",
+        "Film collimation cuts off the lower abdomen and pelvis, limiting assessment of inferior extent of the mass"
+      ]
+    }
+  }
+}
