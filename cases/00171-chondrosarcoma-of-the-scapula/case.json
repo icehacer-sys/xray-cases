@@ -126,5 +126,13 @@
     "sha256": "1199da98f960dd736b20f448c4fa0619978b532861c4e328e6e72865352fba3b",
     "reviewedAt": "2026-09-17T12:57:29.845Z",
     "reviewer": "claude-sonnet-4-6"
+  },
+  "stages": {
+    "publishedCaption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00171-chondrosarcoma-of-the-scapula\",\"assignedAt\":\"2026-09-23T19:04:28.791Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "17872204473638675",
+    "challengePostedAt": "2026-09-23T19:04:42.750Z"
   }
 }
