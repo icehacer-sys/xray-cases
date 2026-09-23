@@ -21,7 +21,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-09-30T19:00:00.000Z",
-  "approved": false,
+  "approved": true,
   "source": "generated",
   "diagnosticContext": {
     "certainty": "illustrative",
@@ -65,43 +65,8 @@
     ],
     "used": true
   },
-  "imageApproval": {
-    "sha256": "d2a82b38e42962594617e0f65edd2f4224f8b6a0d21b50b4a4ce8d910ace3788",
-    "conditionSha256": "b01c99ffb6dec44f2af7a336b4e45b8da094efc2a21f7c2ec89f9b8184eeca23",
-    "clinicalContextSha256": "d6e3d22da406712fa3bc28ce6dccd0b1defb200ec3a2c219807ea76f7db66f8c",
-    "verifiedAt": "2026-09-17T07:53:37.202Z",
-    "model": "claude-sonnet-4-6",
-    "verifierVersion": "4",
-    "ok": false,
-    "defects": [
-      "Missing or invalid required observations"
-    ],
-    "blindRead": {
-      "findings": [
-        "Two views of the lower leg (tibia and fibula) are presented, consistent with anteroposterior and lateral projections",
-        "A large, well-defined, oval soft-tissue mass is present in the posterior soft tissues of the mid-calf, located between the tibia and fibula but predominantly posterior/lateral to the fibula, spanning approximately the middle third of the lower leg",
-        "The mass demonstrates a peripheral rim of dense, lobulated, popcorn-like calcification with a relatively radiolucent center containing internal calcific nodules, giving a characteristic chondroid matrix appearance",
-        "The tibia and fibula cortices appear intact without erosion, periosteal reaction, or endosteal scalloping",
-        "No fracture or bony destruction is identified",
-        "The mass appears encapsulated and does not infiltrate adjacent bone",
-        "Knee and ankle joints visible at the periphery appear unremarkable"
-      ],
-      "differential": [
-        "Soft-tissue chondroma (extraskeletal chondroma): most likely given well-circumscribed oval soft-tissue mass with lobulated peripheral and internal chondroid (popcorn) calcifications and absence of bony involvement",
-        "Synovial chondromatosis: possible if the mass relates to a nearby joint or bursa, given multiple calcified chondral bodies with similar matrix",
-        "Extraskeletal chondrosarcoma (low-grade): considered given large size of the calcified soft-tissue mass, though the well-defined margins and absence of bony destruction are less aggressive features"
-      ],
-      "anatomyConcerns": [
-        "The mass is located in the soft tissues and does not appear to arise from or invade the tibia or fibula, which would be anatomically inconsistent with a primary intraosseous lesion",
-        "No markers, side indicators, or patient labels are visible on the radiograph, limiting laterality confirmation",
-        "Ankle is only partially included on the lateral view, slightly limiting distal assessment"
-      ]
-    }
-  },
-  "needsReview": true,
-  "verifyDefects": [
-    "Missing or invalid required observations"
-  ],
+  "needsReview": false,
+  "verifyDefects": [],
   "difficulty": 5,
   "laypersonQuestion": "Does that white shape look natural to you?",
   "seedHint": "Look at the full length of that dense white mass and ask yourself: bone or something else?",
@@ -117,5 +82,52 @@
     "sha256": "4a25993378d0fc2dab70f0856710dd05bcd7f137f1b257590f4bcb43621c59c6",
     "reviewedAt": "2026-09-17T07:53:47.832Z",
     "reviewer": "claude-sonnet-4-6"
+  },
+  "imageApproval": {
+    "sha256": "d2a82b38e42962594617e0f65edd2f4224f8b6a0d21b50b4a4ce8d910ace3788",
+    "conditionSha256": "b01c99ffb6dec44f2af7a336b4e45b8da094efc2a21f7c2ec89f9b8184eeca23",
+    "clinicalContextSha256": "d6e3d22da406712fa3bc28ce6dccd0b1defb200ec3a2c219807ea76f7db66f8c",
+    "verifiedAt": "2026-09-23T12:59:57.644Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "a large elongated calcified soft tissue mass filling one muscle compartment of the calf with dense sheet like calcification around its rim and a more lucent centre while the tibia and fibula stay normal",
+        "observed": "A large fusiform calcified soft-tissue mass is visible in the posterior compartment of the mid-lower leg on both projections, with a dense peripheral calcified rim and a heterogeneous but relatively less dense centre consistent with a more lucent core. The tibia and fibula are intact bilaterally with no cortical erosion, periosteal reaction, or endosteal involvement. The mass fills one compartment and is extraskeletal.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested AP and lateral lower leg including the calf soft tissues and the declared age and anatomical exceptions.",
+        "observed": "Two projections of the lower leg are shown: one AP and one lateral/oblique, both including the proximal tibia-fibula articulation and extending toward the ankle. Calf soft tissues are well demonstrated. The skeleton is skeletally mature with closed physes and adult cortical thickness, consistent with a patient over 60. No degenerative changes are mandatory and their absence is not flagged. Anatomy is coherent throughout.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Two radiographic projections of the lower leg (tibia and fibula) are presented side by side, consistent with anteroposterior (AP) and lateral or oblique views of the same extremity",
+        "A large, well-defined ovoid soft-tissue mass is present in the posterior compartment of the mid to lower leg, interposed between the tibia and fibula, measuring several centimeters in long axis",
+        "The mass demonstrates heterogeneous internal calcification with a peripheral denser calcified rim and a central lobulated or popcorn-like calcific pattern",
+        "The adjacent tibial and fibular cortices appear intact without frank cortical erosion, periosteal reaction, or endosteal scalloping identified",
+        "The bones otherwise show normal density, trabecular pattern, and alignment; knee and ankle joint spaces appear preserved at the margins of the images",
+        "No fracture lines are identified",
+        "The soft-tissue calcification is extraskeletal in location"
+      ],
+      "differential": [
+        "Extraskeletal (soft-tissue) chondroma or chondrosarcoma: the lobulated popcorn-type calcification pattern within a well-circumscribed soft-tissue mass in the posterior compartment is characteristic of cartilaginous matrix mineralization",
+        "Synovial chondromatosis or extra-articular synovial chondromatosis: multiple calcified chondroid bodies forming a confluent mass could produce this appearance",
+        "Calcific myonecrosis: a fusiform calcified soft-tissue mass in the lower leg compartment with peripheral and internal calcification fits this entity, particularly given the compartmental location"
+      ],
+      "anatomyConcerns": [
+        "The right panel view is slightly oblique rather than a true lateral, making precise depth localization of the mass relative to individual muscle compartments less certain",
+        "Proximal femur and distal foot are not fully included, limiting full-length assessment of the extremity",
+        "No side markers (R/L) are visible in the provided image"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The combination of a large fusiform soft-tissue mass occupying a single posterior compartment of the lower leg, with a dense peripheral calcified rim and a more heterogeneous but less dense centre, in a patient with a remote crush injury and slowly enlarging calf swelling, is the hallmark pattern of calcific myonecrosis. This distinguishes it from extraskeletal chondroma (which is typically much smaller and not compartment-filling) and synovial chondromatosis (which is typically periarticular). The elongated, compartment-filling shape with sheet-like peripheral calcification and lucent centre is the key visible discriminator. The tibia and fibula are intact with no periosteal reaction or endosteal involvement, confirming extraskeletal origin. Both views (AP and lateral/oblique) show consistent geometry and attenuation of the mass. The obliquity of the second view does not undermine assessment. No side marker or lettering is present, consistent with requirements."
   }
 }
