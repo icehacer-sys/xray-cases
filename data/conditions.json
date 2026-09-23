@@ -3315,7 +3315,8 @@
     "requiredObservations": [
       "curving parallel double lines of calcification following the folds of the brain surface in the parietal and occipital region like pairs of wavy tram tracks with a normal skull vault and face",
       "The visible anatomy matches the requested lateral skull radiograph and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Limy bile",

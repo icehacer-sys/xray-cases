@@ -1,0 +1,136 @@
+{
+  "folder": "00176-sturge-weber-syndrome",
+  "number": 176,
+  "diagnosis": "Sturge-Weber syndrome",
+  "aliases": [
+    "Sturge Weber syndrome",
+    "Sturge-Weber disease",
+    "encephalotrigeminal angiomatosis"
+  ],
+  "symptom": "seizures since early childhood in a child with a port wine birthmark over one side of the face",
+  "captionSymptom": "seizures since early childhood",
+  "hook": "wavy double lines ran across the back of the brain like tram tracks",
+  "whatYouSee": "Wavy pairs of parallel calcified lines follow the folds of the brain surface at the back of the head.",
+  "whyItMatters": "Abnormal vessels over the brain surface lead to calcification of the cortex beneath them. It often comes with seizures and a facial port wine birthmark.",
+  "treatment": "Care focuses on seizure control and eye checks for glaucoma. Laser treatment can lighten the birthmark.",
+  "takeaway": "Gyriform tram track calcification at the back of the brain is the classic skull film sign of Sturge-Weber syndrome.",
+  "igOptions": [
+    "A. Sturge-Weber syndrome",
+    "B. Tuberous sclerosis",
+    "C. Cysticercosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-02T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-23T14:26:48.206Z"
+  },
+  "condition": {
+    "diagnosis": "Sturge-Weber syndrome",
+    "aliases": [
+      "Sturge Weber syndrome",
+      "Sturge-Weber disease",
+      "encephalotrigeminal angiomatosis"
+    ],
+    "symptom": "seizures since early childhood in a child with a port wine birthmark over one side of the face",
+    "captionSymptom": "seizures since early childhood",
+    "hook": "wavy double lines ran across the back of the brain like tram tracks",
+    "view": "lateral skull radiograph",
+    "ageBand": "child",
+    "keyFindings": "curving parallel double lines of calcification following the folds of the brain surface in the parietal and occipital region like pairs of wavy tram tracks with a normal skull vault and face",
+    "whatYouSee": "Wavy pairs of parallel calcified lines follow the folds of the brain surface at the back of the head.",
+    "whyItMatters": "Abnormal vessels over the brain surface lead to calcification of the cortex beneath them. It often comes with seizures and a facial port wine birthmark.",
+    "treatment": "Care focuses on seizure control and eye checks for glaucoma. Laser treatment can lighten the birthmark.",
+    "takeaway": "Gyriform tram track calcification at the back of the brain is the classic skull film sign of Sturge-Weber syndrome.",
+    "igTitle": "THE TRAM TRACKS IN THE BRAIN",
+    "igOptions": [
+      "Sturge-Weber syndrome",
+      "Tuberous sclerosis",
+      "Cysticercosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://radiopaedia.org/articles/sturge-weber-syndrome",
+      "https://pubs.rsna.org/doi/10.1148/radiol.2312020545"
+    ],
+    "reviewedAt": "2026-09-23",
+    "requiredObservations": [
+      "curving parallel double lines of calcification following the folds of the brain surface in the parietal and occipital region like pairs of wavy tram tracks with a normal skull vault and face",
+      "The visible anatomy matches the requested lateral skull radiograph and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "84de7bb4addfd39bc5395c5d2a78e47890aa0d163e426a32b004e48bc60d663e",
+    "conditionSha256": "161363830a2953055d9b5af9c0fb47d18f84fc493d79621fbba9b75e3f61fe4e",
+    "clinicalContextSha256": "c5ee9f52499dee3eb36cf8d7540c168053710c05b8188f5f32c04d34fea17cc1",
+    "verifiedAt": "2026-09-23T14:26:48.210Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "curving parallel double lines of calcification following the folds of the brain surface in the parietal and occipital region like pairs of wavy tram tracks with a normal skull vault and face",
+        "observed": "Extensive serpentine, curvilinear gyral calcifications are visible throughout the cerebral cortex from frontal to occipital regions, following cortical convolutions and producing paired parallel wavy lines consistent with tram-track calcification. The calvarium is intact without fracture. Facial bones and dentition appear normal with mixed/permanent dentition appropriate for a child aged 3-11. The skull vault shows no duplication or doubling of outline.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested lateral skull radiograph and the declared age and anatomical exceptions.",
+        "observed": "The projection is a true lateral skull radiograph. Skeletal maturity is consistent with a child: dentition shows developing permanent teeth appropriate for age 3-11, calvarial sutures are visible, and no degenerative changes are present. Cranial vault anatomy shows exactly one vault outline, two orbits are superimposed as expected on lateral view, one mandible, and visible upper cervical vertebrae with normal alignment. No duplicated bones, extra structures, or AI anatomical artifacts are identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection plain radiograph of the skull and upper cervical spine",
+        "Markedly prominent, serpentine, curvilinear gyral calcifications distributed extensively across the cerebral cortex bilaterally, following cortical convolutions from frontal to occipital regions",
+        "Calvarium appears intact without obvious fracture lines; no midline shift appreciable on this projection",
+        "Dentition present; mixed or permanent dentition visible in the mandible and maxilla, teeth appear normally formed",
+        "Mastoid air cells visible; temporal bone structures appear grossly intact",
+        "Upper cervical vertebrae (C1-C5 partially visible) show normal alignment and ossification pattern",
+        "No obvious focal lytic or sclerotic calvarial lesion identified",
+        "No intracranial metallic foreign body or surgical hardware visible",
+        "Facial bones appear symmetrical and intact"
+      ],
+      "differential": [
+        "Sturge-Weber syndrome (encephalotrigeminal angiomatosis): extensive, bilateral serpentine cortical (tram-track) calcifications are the hallmark finding and best fit the distribution and morphology seen",
+        "Chronic cerebral toxoplasmosis or TORCH infection sequelae: can produce extensive cortical and periventricular calcifications, though typically more nodular; bilateral distribution is consistent",
+        "Tuberous sclerosis complex: can produce cortical/subependymal calcifications, though classically more nodular and periventricular rather than gyral in distribution; considered less likely given the clearly gyral, serpiginous pattern"
+      ],
+      "anatomyConcerns": [
+        "The bilateral gyral calcification pattern seen on a lateral projection raises the question of whether the contralateral hemisphere is also extensively involved, which cannot be fully resolved on this single lateral view; PA or Towne projection would be needed to assess laterality",
+        "The density and extent of calcifications are unusually pronounced, which is anatomically consistent with pathological cortical calcification rather than a normal variant or artifact",
+        "No acquisition or positioning inconsistency identified; image quality is adequate for assessment"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The lateral skull radiograph demonstrates extensive serpentine, curvilinear gyral calcifications following the cortical convolutions from frontal to occipital regions, producing the classic 'tram-track' double-line pattern characteristic of Sturge-Weber syndrome. Combined with the clinical vignette of childhood-onset seizures and a port-wine birthmark over one side of the face, the visible pattern is discriminating. The calcifications are clearly gyral in distribution rather than nodular (as in toxoplasmosis) or periventricular (as in tuberous sclerosis), supporting Sturge-Weber over the alternatives. The lateral projection limits laterality assessment but does not undermine the diagnosis given the clinical context. No unexplained lesions or anatomical impossibilities are identified."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Would those wavy lines alarm you on a brain scan?",
+  "seedHint": "Focus on the back of the brain and ask yourself if those lines belong there",
+  "teaser": "And then the skull film changed everything",
+  "generated": {
+    "threadsCaption": "A patient came in with seizures since early childhood.\n\nThen the X-ray loaded 😭\n\nAnd then the skull film changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with seizures that had simply been around since early childhood.\n\nThen the X-ray loaded 😭\n\nAnd then the skull film changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Sturge-Weber syndrome\n\n👀 What you see:\nWavy pairs of parallel calcified lines follow the folds of the brain surface at the back of the head.\n\n🦴 Why it matters:\nAbnormal vessels over the brain surface lead to calcification of the cortex beneath them. It often comes with seizures and a facial port wine birthmark.\n\n💊 Treatment:\nCare focuses on seizure control and eye checks for glaucoma. Laser treatment can lighten the birthmark.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "e7b911281a40403c0dba735c8347401ed943bff4434de9e54f812a59da056d3e",
+    "reviewedAt": "2026-09-23T14:27:08.332Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
