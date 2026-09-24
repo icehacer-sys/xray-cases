@@ -3386,7 +3386,8 @@
     "requiredObservations": [
       "the proximal phalanx of the middle finger expanded into a ballooned spindle shape with a lucent interior and a thinned bony shell surrounded by spindle shaped soft tissue swelling while the other fingers and metacarpals look normal",
       "The visible anatomy matches the requested PA hand of a child and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Calcified fibrothorax",

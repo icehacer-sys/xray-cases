@@ -1,0 +1,124 @@
+{
+  "folder": "00178-tuberculous-dactylitis",
+  "number": 178,
+  "diagnosis": "Tuberculous dactylitis",
+  "aliases": [
+    "spina ventosa",
+    "tubercular dactylitis",
+    "TB dactylitis"
+  ],
+  "symptom": "a swollen finger that had slowly been getting bigger for months in a young child",
+  "captionSymptom": "a swollen finger that kept getting bigger for months",
+  "hook": "one finger bone had puffed up from inside like a balloon",
+  "whatYouSee": "One finger bone has swollen into a balloon with a thin shell and a hollow looking centre.",
+  "whyItMatters": "Tuberculosis can spread through the blood into the short bones of the hand in children. It may be the first sign of infection elsewhere in the body.",
+  "treatment": "Treatment is a prolonged course of antituberculous medication. Surgery may be considered for selected complications.",
+  "takeaway": "A ballooned finger bone in a child should raise the possibility of spina ventosa.",
+  "igOptions": [
+    "A. Tuberculous dactylitis",
+    "B. Enchondroma",
+    "C. Sickle cell dactylitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-03T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-24T01:21:04.842Z"
+  },
+  "condition": {
+    "diagnosis": "Tuberculous dactylitis",
+    "aliases": [
+      "spina ventosa",
+      "tubercular dactylitis",
+      "TB dactylitis"
+    ],
+    "symptom": "a swollen finger that had slowly been getting bigger for months in a young child",
+    "captionSymptom": "a swollen finger that kept getting bigger for months",
+    "hook": "one finger bone had puffed up from inside like a balloon",
+    "view": "PA hand of a child",
+    "ageBand": "child",
+    "anatomyException": "One proximal phalanx is legitimately EXPANDED into a ballooned bone with a thinned cortex and a lucent interior. That expansion IS the diagnosis. Every other bone keeps its normal size and shape and the growth plates stay open.",
+    "keyFindings": "the proximal phalanx of the middle finger expanded into a ballooned spindle shape with a lucent interior and a thinned bony shell surrounded by spindle shaped soft tissue swelling while the other fingers and metacarpals look normal",
+    "whatYouSee": "One finger bone has swollen into a balloon with a thin shell and a hollow looking centre.",
+    "whyItMatters": "Tuberculosis can spread through the blood into the short bones of the hand in children. It may be the first sign of infection elsewhere in the body.",
+    "treatment": "Treatment is a prolonged course of antituberculous medication. Surgery may be considered for selected complications.",
+    "takeaway": "A ballooned finger bone in a child should raise the possibility of spina ventosa.",
+    "igTitle": "THE BALLOON FINGER",
+    "igOptions": [
+      "Tuberculous dactylitis",
+      "Enchondroma",
+      "Sickle cell dactylitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://radiopaedia.org/articles/tuberculous-dactylitis",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4913200/"
+    ],
+    "reviewedAt": "2026-09-23",
+    "requiredObservations": [
+      "the proximal phalanx of the middle finger expanded into a ballooned spindle shape with a lucent interior and a thinned bony shell surrounded by spindle shaped soft tissue swelling while the other fingers and metacarpals look normal",
+      "The visible anatomy matches the requested PA hand of a child and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "8d791ec651b696d917510ff6a02ace924197a421256a3a453419266725499121",
+    "conditionSha256": "a2485fe0a3c74663dbb04c1ab5f348aa42b737fc636089ccdb3e6181e9cea19b",
+    "clinicalContextSha256": "72299fc35581b6f570b0a0011ae38fd43ce8f8923124fb965fbc795e03f4ece6",
+    "verifiedAt": "2026-09-24T01:21:04.843Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Image does not support a sufficiently distinct teaching answer: The visible lesion is an expansile lytic lesion with lobulated contour and internal chondroid/ground-glass matrix density in the proximal phalanx of the middle finger of a skeletally immature hand. This appearance is most consistent with enchondroma radiographically. Tuberculous dactylitis (spina ventosa) classically produces a fusiform, ballooned, lucent proximal phalanx with periosteal reaction and soft tissue swelling but without internal matrix calcification or chondroid density. The internal ground-glass/chondroid matrix visible here strongly favors enchondroma over TB dactylitis. The clinical vignette (slow swelling over months in a young child) is compatible with either, but the radiographic matrix density is the discriminating visible feature and it does not favor TB dactylitis. Another diagnosis (enchondroma) is equally or better supported by the visible radiographic pattern, so singleAnswerSupported is false."
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection of a single hand, fingers extended and slightly spread",
+        "Skeletally immature hand with visible epiphyseal growth plates at the distal, middle, and proximal phalanges and metacarpal bases/heads; physes appear open throughout",
+        "Large, well-defined, expansile lytic lesion with endosteal scalloping involving the proximal phalanx of the long (middle) finger; the lesion occupies the majority of the medullary canal, has a lobulated contour, and demonstrates internal ground-glass or chondroid matrix density; cortex appears thinned but intact",
+        "No acute fracture line visible through the lesion",
+        "Remaining phalanges and metacarpals appear normal in density and contour",
+        "Carpal bones partially visible at the distal margin; no obvious carpal abnormality",
+        "Soft tissues appear unremarkable except for mild fusiform swelling overlying the affected proximal phalanx"
+      ],
+      "differential": [
+        "Enchondroma of the proximal phalanx of the middle finger (most common benign intramedullary cartilage tumor at this site in a skeletally immature patient)",
+        "Ollier disease (enchondromatosis) — solitary lesion here but multiple enchondromas cannot be excluded without full skeletal survey",
+        "Low-grade chondrosarcoma (less likely given patient skeletal immaturity and benign radiographic margins, but cannot be entirely excluded for an expansile lesion of this size)"
+      ],
+      "anatomyConcerns": [
+        "Open physes throughout indicate a skeletally immature individual; the expansile lytic lesion in the proximal phalanx is a true pathological finding, not a normal variant",
+        "No significant acquisition or positioning inconsistencies identified; the projection is standard PA hand"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Image does not support a sufficiently distinct teaching answer: The visible lesion is an expansile lytic lesion with lobulated contour and internal chondroid/ground-glass matrix density in the proximal phalanx of the middle finger of a skeletally immature hand. This appearance is most consistent with enchondroma radiographically. Tuberculous dactylitis (spina ventosa) classically produces a fusiform, ballooned, lucent proximal phalanx with periosteal reaction and soft tissue swelling but without internal matrix calcification or chondroid density. The internal ground-glass/chondroid matrix visible here strongly favors enchondroma over TB dactylitis. The clinical vignette (slow swelling over months in a young child) is compatible with either, but the radiographic matrix density is the discriminating visible feature and it does not favor TB dactylitis. Another diagnosis (enchondroma) is equally or better supported by the visible radiographic pattern, so singleAnswerSupported is false."
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What could make a finger bone puff up from inside?",
+  "seedHint": "Look at that single bone and ask yourself: is it breaking down or being built up?",
+  "teaser": "And then the finger gave up its secret",
+  "generated": {
+    "threadsCaption": "A patient came in with a swollen finger that kept getting bigger for months.\n\nThen the X-ray loaded 😭\n\nAnd then the finger gave up its secret.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with a finger that had just been slowly swelling for a few months and nothing else.\n\nThen the X-ray loaded 😭\n\nAnd then the finger gave up its secret.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Tuberculous dactylitis\n\n👀 What you see:\nOne finger bone has swollen into a balloon with a thin shell and a hollow looking centre.\n\n🦴 Why it matters:\nTuberculosis can spread through the blood into the short bones of the hand in children. It may be the first sign of infection elsewhere in the body.\n\n💊 Treatment:\nTreatment is a prolonged course of antituberculous medication. Surgery may be considered for selected complications.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "contentReview": {
+    "sha256": "57d6b43ea011ea63fb212ec85e2a2b2baf6df96398be2c0ac6a88475ae0d9f2e",
+    "reviewedAt": "2026-09-24T01:21:14.219Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
