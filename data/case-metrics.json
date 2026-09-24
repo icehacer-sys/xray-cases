@@ -4470,5 +4470,57 @@
       "reposts": 0,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00161-swallowed-spoon",
+    "postId": "17988527066861715",
+    "measuredAt": "2026-09-24T01:19:41.132Z",
+    "publishedAt": "2026-09-19T19:01:32.296Z",
+    "ageHours": 102.30245444444445,
+    "experiment": {
+      "id": "case-00161-swallowed-spoon",
+      "assignedAt": "2026-09-19T19:01:18.745Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with upper abdominal discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the reason for that discomfort became very clear.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-19T19:21:32.296Z",
+    "ctaDueAt": "2026-09-19T20:16:32.296Z",
+    "metrics": {
+      "views": 7576,
+      "likes": 103,
+      "replies": 179,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00164-mycetoma",
+    "postId": "18115960969977269",
+    "measuredAt": "2026-09-24T01:19:41.570Z",
+    "publishedAt": "2026-09-21T19:04:49.969Z",
+    "ageHours": 54.24766694444445,
+    "experiment": {
+      "id": "case-00164-mycetoma",
+      "assignedAt": "2026-09-21T19:04:35.429Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a hugely swollen foot.\n\nThen the X-ray loaded 😭\n\nAnd the foot had a lot more going on than the outside suggested.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-21T19:24:49.969Z",
+    "ctaDueAt": "2026-09-21T20:19:49.969Z",
+    "metrics": {
+      "views": 521201,
+      "likes": 797,
+      "replies": 370,
+      "reposts": 17,
+      "quotes": 1
+    }
   }
 ]
