@@ -1,0 +1,126 @@
+{
+  "folder": "00179-calcified-fibrothorax",
+  "number": 179,
+  "diagnosis": "Calcified fibrothorax",
+  "aliases": [
+    "fibrothorax",
+    "calcified empyema",
+    "chronic tuberculous empyema",
+    "tuberculous fibrothorax"
+  ],
+  "symptom": "breathlessness that had slowly worsened for years decades after a chest infection treated as tuberculosis",
+  "captionSymptom": "breathlessness that had slowly worsened for years",
+  "hook": "one lung was sealed inside a thick shell of stone",
+  "whatYouSee": "A thick shell of calcium wraps around one whole lung and that side of the chest has shrunk.",
+  "whyItMatters": "Old pleural infection such as tuberculous empyema can leave a thick calcified peel that traps the lung. This restricts breathing on that side.",
+  "treatment": "Management targets the underlying cause and any active infection. Surgical decortication is sometimes considered for selected patients.",
+  "takeaway": "A one sided calcified shell around the lung is a classic late sign of old tuberculous pleural disease.",
+  "igOptions": [
+    "A. Calcified fibrothorax",
+    "B. Asbestos pleural plaques",
+    "C. Mesothelioma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-04T19:00:00.000Z",
+  "approved": false,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-24T21:33:29.567Z"
+  },
+  "condition": {
+    "diagnosis": "Calcified fibrothorax",
+    "aliases": [
+      "fibrothorax",
+      "calcified empyema",
+      "chronic tuberculous empyema",
+      "tuberculous fibrothorax"
+    ],
+    "symptom": "breathlessness that had slowly worsened for years decades after a chest infection treated as tuberculosis",
+    "captionSymptom": "breathlessness that had slowly worsened for years",
+    "hook": "one lung was sealed inside a thick shell of stone",
+    "view": "PA chest",
+    "ageBand": "older",
+    "keyFindings": "a thick continuous rind of dense calcification wrapping around the outer surface of the left lung like a shell with a shrunken left hemithorax and crowded left ribs while the right lung is normal",
+    "whatYouSee": "A thick shell of calcium wraps around one whole lung and that side of the chest has shrunk.",
+    "whyItMatters": "Old pleural infection such as tuberculous empyema can leave a thick calcified peel that traps the lung. This restricts breathing on that side.",
+    "treatment": "Management targets the underlying cause and any active infection. Surgical decortication is sometimes considered for selected patients.",
+    "takeaway": "A one sided calcified shell around the lung is a classic late sign of old tuberculous pleural disease.",
+    "igTitle": "THE LUNG IN A STONE SHELL",
+    "igOptions": [
+      "Calcified fibrothorax",
+      "Asbestos pleural plaques",
+      "Mesothelioma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6296679/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161697/",
+      "https://radiopaedia.org/cases/tuberculous-empyema-chronic"
+    ],
+    "reviewedAt": "2026-09-23",
+    "requiredObservations": [
+      "a thick continuous rind of dense calcification wrapping around the outer surface of the left lung like a shell with a shrunken left hemithorax and crowded left ribs while the right lung is normal",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "3fedba31ccaba3a7c13893d24473436763f849258b9c967ba5ac89a45516239e",
+    "conditionSha256": "06599c8aef3dc6007d70b1f07b7b26229c6d1cd7c9fac1db7af4c50b27e20f23",
+    "clinicalContextSha256": "0a7b0369ec23ef9e010b00142916dc9548a269a3b1f1b07752d0ea25b53bf6d5",
+    "verifiedAt": "2026-09-24T21:33:29.568Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Large left-sided pneumothorax with visible visceral pleural line and absent peripheral lung markings — not consistent with calcified fibrothorax, which would show a dense calcified pleural rind encasing a shrunken lung\",\"No calcification whatsoever is visible along the left pleural surface or wrapping the left lung\",\"The left hemithorax is not shrunken and the left ribs are not crowded — findings are opposite to what fibrothorax produces\",\"The collapsed/retracted left lung opacity is consistent with compressive atelectasis from pneumothorax, not fibrothorax entrapment\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph",
+        "Right lung: normal aeration, normal bronchovascular markings, no focal consolidation, no pleural effusion, right hemidiaphragm and costophrenic angle well defined",
+        "Left lung: large left-sided pneumothorax occupying the lateral two-thirds of the left hemithorax with a visible visceral pleural line; the collapsed left lung is retracted toward the left hilum and appears opacified/atelectatic; lung markings absent peripheral to the pleural line",
+        "Mediastinum: trachea appears midline or only minimally deviated to the right; cardiac silhouette not appreciably shifted, suggesting no significant tension physiology at this moment",
+        "No obvious rib fractures identified on visible bony structures",
+        "Left shoulder region appears intact; right shoulder included at image margin"
+      ],
+      "differential": [
+        "Large spontaneous left-sided pneumothorax (primary or secondary)",
+        "Traumatic left-sided pneumothorax with associated lung collapse",
+        "Tension pneumothorax (early or partial; cannot exclude given size, though mediastinal shift is minimal)"
+      ],
+      "anatomyConcerns": [
+        "The mediastinum does not show the marked contralateral shift expected with a true tension pneumothorax, but pneumothorax size is very large — close clinical and hemodynamic correlation is essential",
+        "Left lower zone opacity likely represents compressive atelectasis of the collapsed lung rather than independent parenchymal disease; cannot fully exclude underlying consolidation",
+        "Slight rotation of the patient may be present, which could affect assessment of mediastinal position"
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Large left-sided pneumothorax with visible visceral pleural line and absent peripheral lung markings — not consistent with calcified fibrothorax, which would show a dense calcified pleural rind encasing a shrunken lung\",\"No calcification whatsoever is visible along the left pleural surface or wrapping the left lung\",\"The left hemithorax is not shrunken and the left ribs are not crowded — findings are opposite to what fibrothorax produces\",\"The collapsed/retracted left lung opacity is consistent with compressive atelectasis from pneumothorax, not fibrothorax entrapment\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What happens when a lung gets trapped in stone?",
+  "seedHint": "Look at the left side and ask yourself if that outline is bone or something else entirely.",
+  "teaser": "And the chest had been keeping a secret for years",
+  "generated": {
+    "threadsCaption": "A patient came in with breathlessness that had slowly worsened for years.\n\nThen the X-ray loaded 😭\n\nAnd the chest had been keeping a secret for years.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient came in with breathlessness that had crept up so gradually it barely felt worth mentioning.\n\nThen the X-ray loaded 😭\n\nAnd the chest had been keeping a secret for years.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Calcified fibrothorax\n\n👀 What you see:\nA thick shell of calcium wraps around one whole lung and that side of the chest has shrunk.\n\n🦴 Why it matters:\nOld pleural infection such as tuberculous empyema can leave a thick calcified peel that traps the lung. This restricts breathing on that side.\n\n💊 Treatment:\nManagement targets the underlying cause and any active infection. Surgical decortication is sometimes considered for selected patients.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "0447c11e3a370ff2e18b46d7ea779eacf549d92e7b43ac3dcab1b3b57be7bce5",
+    "reviewedAt": "2026-09-24T21:33:36.631Z",
+    "reviewer": "claude-sonnet-4-6"
+  }
+}
