@@ -129,5 +129,13 @@
     },
     "singleAnswerSupported": true,
     "diagnosticReason": "The combination of a large fusiform soft-tissue mass occupying a single posterior compartment of the lower leg, with a dense peripheral calcified rim and a more heterogeneous but less dense centre, in a patient with a remote crush injury and slowly enlarging calf swelling, is the hallmark pattern of calcific myonecrosis. This distinguishes it from extraskeletal chondroma (which is typically much smaller and not compartment-filling) and synovial chondromatosis (which is typically periarticular). The elongated, compartment-filling shape with sheet-like peripheral calcification and lucent centre is the key visible discriminator. The tibia and fibula are intact with no periosteal reaction or endosteal involvement, confirming extraskeletal origin. Both views (AP and lateral/oblique) show consistent geometry and attenuation of the mass. The obliquity of the second view does not undermine assessment. No side marker or lettering is present, consistent with requirements."
+  },
+  "stages": {
+    "publishedCaption": "A patient came in with a slowly swelling calf.\n\nThen the X-ray loaded 😭\n\nAnd the calf had been quietly doing something for years.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00170-calcific-myonecrosis\",\"assignedAt\":\"2026-09-24T19:00:04.080Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "90",
+    "ctaDelayMin": "145",
+    "threadsPostId": "18158870629500613",
+    "challengePostedAt": "2026-09-24T19:00:18.890Z"
   }
 }
