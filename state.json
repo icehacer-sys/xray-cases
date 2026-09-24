@@ -559,6 +559,17 @@
       "publishedId": "18174190009450650",
       "publishedAt": "2026-09-23T20:22:38.479Z",
       "confirmedPublished": true
+    },
+    "case:00170-calcific-myonecrosis:challenge": {
+      "creationId": "17890765323614054",
+      "createdAt": "2026-09-24T19:00:10.522Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00170-calcific-myonecrosis/xray.png",
+        "text": "A patient came in with a slowly swelling calf.\n\nThen the X-ray loaded 😭\n\nAnd the calf had been quietly doing something for years.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "d2a82b38e42962594617e0f65edd2f4224f8b6a0d21b50b4a4ce8d910ace3788:b01c99ffb6dec44f2af7a336b4e45b8da094efc2a21f7c2ec89f9b8184eeca23:4a25993378d0fc2dab70f0856710dd05bcd7f137f1b257590f4bcb43621c59c6"
     }
   },
   "stages": {
@@ -1350,12 +1361,18 @@
       "answerCommentId": "18115452790807840",
       "answerPostedAt": "2026-09-23T19:25:06.468Z",
       "ctaPostedAt": "2026-09-23T20:22:40.565Z"
+    },
+    "00170-calcific-myonecrosis": {
+      "publishedCaption": "A patient came in with a slowly swelling calf.\n\nThen the X-ray loaded 😭\n\nAnd the calf had been quietly doing something for years.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00170-calcific-myonecrosis\",\"assignedAt\":\"2026-09-24T19:00:04.080Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-23",
+      "date": "2026-09-24",
       "count": 0
     }
   }
