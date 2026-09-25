@@ -5094,5 +5094,109 @@
       "reposts": 3,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00159-chondrocalcinosis",
+    "postId": "17958262674213428",
+    "measuredAt": "2026-09-25T12:40:41.440Z",
+    "publishedAt": "2026-09-18T19:04:02.480Z",
+    "ageHours": 161.61082222222223,
+    "experiment": {
+      "id": "case-00159-chondrocalcinosis",
+      "assignedAt": "2026-09-18T19:03:51.765Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "An older patient came in with a hot swollen knee.\n\nThen the X-ray loaded 😭\n\nAnd the knee had more going on than just the swelling.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-18T20:34:02.480Z",
+    "ctaDueAt": "2026-09-18T21:29:02.480Z",
+    "metrics": {
+      "views": 59693,
+      "likes": 163,
+      "replies": 156,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00163-progressive-massive-fibrosis",
+    "postId": "18094319267645737",
+    "measuredAt": "2026-09-25T12:40:41.666Z",
+    "publishedAt": "2026-09-20T19:02:45.494Z",
+    "ageHours": 113.63227,
+    "experiment": {
+      "id": "case-00163-progressive-massive-fibrosis",
+      "assignedAt": "2026-09-20T19:02:35.234Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with decades of worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-20T20:32:45.494Z",
+    "ctaDueAt": "2026-09-20T21:27:45.494Z",
+    "metrics": {
+      "views": 307009,
+      "likes": 487,
+      "replies": 349,
+      "reposts": 9,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00169-congenital-knee-dislocation",
+    "postId": "18184997560424523",
+    "measuredAt": "2026-09-25T12:40:41.949Z",
+    "publishedAt": "2026-09-22T19:02:23.406Z",
+    "ageHours": 65.63848416666667,
+    "experiment": {
+      "id": "case-00169-congenital-knee-dislocation",
+      "assignedAt": "2026-09-22T19:02:07.366Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-22T20:32:23.406Z",
+    "ctaDueAt": "2026-09-22T21:27:23.406Z",
+    "metrics": {
+      "views": 21726,
+      "likes": 132,
+      "replies": 126,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00171-chondrosarcoma-of-the-scapula",
+    "postId": "17872204473638675",
+    "measuredAt": "2026-09-25T12:40:42.669Z",
+    "publishedAt": "2026-09-23T19:04:42.750Z",
+    "ageHours": 41.5999775,
+    "experiment": {
+      "id": "case-00171-chondrosarcoma-of-the-scapula",
+      "assignedAt": "2026-09-23T19:04:28.791Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-23T19:24:42.750Z",
+    "ctaDueAt": "2026-09-23T20:19:42.750Z",
+    "metrics": {
+      "views": 405766,
+      "likes": 490,
+      "replies": 242,
+      "reposts": 15,
+      "quotes": 0
+    }
   }
 ]
