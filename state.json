@@ -626,6 +626,16 @@
       "publishedId": "18051001322598799",
       "publishedAt": "2026-09-25T19:24:44.516Z",
       "confirmedPublished": true
+    },
+    "case:00162-ascariasis-bowel-infestation:cta": {
+      "creationId": "17890920177614054",
+      "createdAt": "2026-09-25T20:20:11.753Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com",
+        "reply_to_id": "18051001322598799",
+        "link_attachment": "https://support.mednoteslab.com"
+      }
     }
   },
   "stages": {
