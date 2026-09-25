@@ -137,5 +137,13 @@
     },
     "singleAnswerSupported": true,
     "diagnosticReason": "Numerous elongated smooth curvilinear soft-tissue densities distributed throughout the mid and lower abdomen, outlined by surrounding luminal gas, are morphologically characteristic of Ascaris lumbricoides worms in heavy intestinal infestation. The discrete worm-like structures differ from barium coating or other luminal opacification patterns. Clinical context of crampy pain and vomiting in a child further supports this. No equally or better supported alternative diagnosis is visible."
+  },
+  "stages": {
+    "publishedCaption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "experiment": "{\"id\":\"case-00162-ascariasis-bowel-infestation\",\"assignedAt\":\"2026-09-25T19:04:06.270Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18108355154189422",
+    "challengePostedAt": "2026-09-25T19:04:20.625Z"
   }
 }
