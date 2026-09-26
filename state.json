@@ -639,6 +639,17 @@
       "publishedId": "18113564705109606",
       "publishedAt": "2026-09-25T20:20:20.946Z",
       "confirmedPublished": true
+    },
+    "case:00174-aspergilloma:challenge": {
+      "creationId": "17891075349614054",
+      "createdAt": "2026-09-26T19:02:06.786Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00174-aspergilloma/xray.png",
+        "text": "A patient came in with a cough that kept bringing up streaks of blood.\n\nThen the X-ray loaded 😭\n\nAnd the chest had its own answer waiting.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "0e7a6ffb28b1cb679cd0a0d7826afe97bbc6482b7328801db0098488b91b6703:dabb26aacea9059533e87534eb9285546c395615ceb731c0efea908c7879d64c:743376696ed66a755c407db55ad684a9a2514aa1591ec23377a973393fd76e26"
     }
   },
   "stages": {
@@ -1452,12 +1463,18 @@
       "answerCommentId": "18051001322598799",
       "answerPostedAt": "2026-09-25T19:24:44.516Z",
       "ctaPostedAt": "2026-09-25T20:20:23.129Z"
+    },
+    "00174-aspergilloma": {
+      "publishedCaption": "A patient came in with a cough that kept bringing up streaks of blood.\n\nThen the X-ray loaded 😭\n\nAnd the chest had its own answer waiting.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00174-aspergilloma\",\"assignedAt\":\"2026-09-26T19:01:59.696Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-25",
+      "date": "2026-09-26",
       "count": 0
     }
   }
