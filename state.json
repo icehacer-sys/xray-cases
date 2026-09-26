@@ -662,7 +662,10 @@
         "text": "Answer: Aspergilloma\n\n👀 What you see:\nA round ball sits inside a hollow in the upper lung with a thin crescent of air curving over its top.\n\n🦴 Why it matters:\nAspergillus fungus can grow into a ball inside an old lung cavity. It can erode nearby vessels and cause serious bleeding.\n\n💊 Treatment:\nStable cases without symptoms may simply be watched. Significant bleeding may need embolisation or surgical removal.",
         "reply_to_id": "18143133703596228",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":407}]"
-      }
+      },
+      "publishedId": "17910019419552781",
+      "publishedAt": "2026-09-26T20:33:03.068Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
