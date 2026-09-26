@@ -135,5 +135,13 @@
     "sha256": "743376696ed66a755c407db55ad684a9a2514aa1591ec23377a973393fd76e26",
     "reviewedAt": "2026-09-23T13:24:38.297Z",
     "reviewer": "claude-sonnet-4-6"
+  },
+  "stages": {
+    "publishedCaption": "A patient came in with a cough that kept bringing up streaks of blood.\n\nThen the X-ray loaded 😭\n\nAnd the chest had its own answer waiting.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "experiment": "{\"id\":\"case-00174-aspergilloma\",\"assignedAt\":\"2026-09-26T19:01:59.696Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "90",
+    "ctaDelayMin": "145",
+    "threadsPostId": "18143133703596228",
+    "challengePostedAt": "2026-09-26T19:02:12.233Z"
   }
 }
