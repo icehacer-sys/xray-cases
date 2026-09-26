@@ -5458,5 +5458,109 @@
       "reposts": 4,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00163-progressive-massive-fibrosis",
+    "postId": "18094319267645737",
+    "measuredAt": "2026-09-26T08:51:32.505Z",
+    "publishedAt": "2026-09-20T19:02:45.494Z",
+    "ageHours": 133.8130586111111,
+    "experiment": {
+      "id": "case-00163-progressive-massive-fibrosis",
+      "assignedAt": "2026-09-20T19:02:35.234Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with decades of worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd then the chest film stopped the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-20T20:32:45.494Z",
+    "ctaDueAt": "2026-09-20T21:27:45.494Z",
+    "metrics": {
+      "views": 307407,
+      "likes": 488,
+      "replies": 349,
+      "reposts": 9,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00169-congenital-knee-dislocation",
+    "postId": "18184997560424523",
+    "measuredAt": "2026-09-26T08:51:32.695Z",
+    "publishedAt": "2026-09-22T19:02:23.406Z",
+    "ageHours": 85.81924694444444,
+    "experiment": {
+      "id": "case-00169-congenital-knee-dislocation",
+      "assignedAt": "2026-09-22T19:02:07.366Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-22T20:32:23.406Z",
+    "ctaDueAt": "2026-09-22T21:27:23.406Z",
+    "metrics": {
+      "views": 21916,
+      "likes": 133,
+      "replies": 126,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00171-chondrosarcoma-of-the-scapula",
+    "postId": "17872204473638675",
+    "measuredAt": "2026-09-26T08:51:32.840Z",
+    "publishedAt": "2026-09-23T19:04:42.750Z",
+    "ageHours": 61.78058055555555,
+    "experiment": {
+      "id": "case-00171-chondrosarcoma-of-the-scapula",
+      "assignedAt": "2026-09-23T19:04:28.791Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-23T19:24:42.750Z",
+    "ctaDueAt": "2026-09-23T20:19:42.750Z",
+    "metrics": {
+      "views": 429919,
+      "likes": 500,
+      "replies": 245,
+      "reposts": 15,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00162-ascariasis-bowel-infestation",
+    "postId": "18108355154189422",
+    "measuredAt": "2026-09-26T08:51:33.007Z",
+    "publishedAt": "2026-09-25T19:04:20.625Z",
+    "ageHours": 13.786772777777777,
+    "experiment": {
+      "id": "case-00162-ascariasis-bowel-infestation",
+      "assignedAt": "2026-09-25T19:04:06.270Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-25T19:24:20.625Z",
+    "ctaDueAt": "2026-09-25T20:19:20.625Z",
+    "metrics": {
+      "views": 218425,
+      "likes": 483,
+      "replies": 421,
+      "reposts": 13,
+      "quotes": 4
+    }
   }
 ]
