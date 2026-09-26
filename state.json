@@ -666,6 +666,16 @@
       "publishedId": "17910019419552781",
       "publishedAt": "2026-09-26T20:33:03.068Z",
       "confirmedPublished": true
+    },
+    "case:00174-aspergilloma:cta": {
+      "creationId": "17891094315614054",
+      "createdAt": "2026-09-26T21:28:34.735Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com",
+        "reply_to_id": "17910019419552781",
+        "link_attachment": "https://xray.mednoteslab.com"
+      }
     }
   },
   "stages": {
