@@ -679,6 +679,17 @@
       "publishedId": "17871533718639615",
       "publishedAt": "2026-09-26T21:28:48.241Z",
       "confirmedPublished": true
+    },
+    "case:00175-porocephalosis:challenge": {
+      "creationId": "17891231028614054",
+      "createdAt": "2026-09-27T19:03:47.184Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00175-porocephalosis/xray.png",
+        "text": "A patient came in with vague upper belly discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "5d51f2e4d3893d11153b2eab1dc8450f89e980d49e99a85d40083f85b22bb9da:7b86cfc10bf2a19ceced31b3fd29d9b974d7cd0db79ebb4c7ff265f44ac81271:54d1ba09f98340410a0b7f62fa5354a279fcb4136eeef9352a6f2ae5364b2a37"
     }
   },
   "stages": {
@@ -1503,12 +1514,18 @@
       "answerCommentId": "17910019419552781",
       "answerPostedAt": "2026-09-26T20:33:03.068Z",
       "ctaPostedAt": "2026-09-26T21:28:50.216Z"
+    },
+    "00175-porocephalosis": {
+      "publishedCaption": "A patient came in with vague upper belly discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00175-porocephalosis\",\"assignedAt\":\"2026-09-27T19:03:39.032Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-26",
+      "date": "2026-09-27",
       "count": 0
     }
   }
