@@ -139,5 +139,13 @@
     },
     "singleAnswerSupported": true,
     "diagnosticReason": "The clinical vignette of a West African adult with bushmeat exposure combined with innumerable small (few-mm) C-shaped and comma-shaped curvilinear calcifications scattered diffusely across the upper abdomen over the liver, spleen and peritoneum is the hallmark radiographic pattern of porocephalosis (pentastomiasis). The calcifications represent dead nymphs of Armillifer species encapsulated in host tissue. Echinococcosis typically produces fewer, larger cyst walls with daughter-cyst architecture; cysticercosis produces oval/rice-grain calcifications in soft tissues and muscle planes. The morphology, number, and distribution here best fit porocephalosis given the geographic and dietary exposure context. The independent read correctly identified the curvilinear calcifications and placed echinococcosis first on differential, but the bushmeat-exposure vignette and characteristic C/comma morphology shift the most supported diagnosis to porocephalosis."
+  },
+  "stages": {
+    "publishedCaption": "A patient came in with vague upper belly discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00175-porocephalosis\",\"assignedAt\":\"2026-09-27T19:03:39.032Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18097639436415272",
+    "challengePostedAt": "2026-09-27T19:03:52.882Z"
   }
 }

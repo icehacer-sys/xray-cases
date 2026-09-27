@@ -1522,7 +1522,9 @@
       "publishedCaption": "A patient came in with vague upper belly discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
       "experiment": "{\"id\":\"case-00175-porocephalosis\",\"assignedAt\":\"2026-09-27T19:03:39.032Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18097639436415272",
+      "challengePostedAt": "2026-09-27T19:03:52.882Z"
     }
   },
   "posted": {
