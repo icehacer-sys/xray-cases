@@ -693,6 +693,16 @@
       "publishedId": "18097639436415272",
       "publishedAt": "2026-09-27T19:03:52.882Z",
       "confirmedPublished": true
+    },
+    "case:00175-porocephalosis:answer": {
+      "creationId": "17891232666614054",
+      "createdAt": "2026-09-27T19:24:05.725Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Porocephalosis\n\n👀 What you see:\nDozens of tiny curled calcifications shaped like commas and crescents are scattered over the liver and upper belly.\n\n🦴 Why it matters:\nThese are dead calcified larvae of a tongue worm usually caught from undercooked snake meat. Most people never have symptoms.\n\n💊 Treatment:\nCalcified larvae usually need no treatment. Rare complications may need surgery.",
+        "reply_to_id": "18097639436415272",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":390}]"
+      }
     }
   },
   "stages": {
