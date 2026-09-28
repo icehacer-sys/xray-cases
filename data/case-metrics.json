@@ -6394,5 +6394,83 @@
       "reposts": 14,
       "quotes": 3
     }
+  },
+  {
+    "folder": "00169-congenital-knee-dislocation",
+    "postId": "18184997560424523",
+    "measuredAt": "2026-09-28T11:17:22.036Z",
+    "publishedAt": "2026-09-22T19:02:23.406Z",
+    "ageHours": 136.24961944444445,
+    "experiment": {
+      "id": "case-00169-congenital-knee-dislocation",
+      "assignedAt": "2026-09-22T19:02:07.366Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-22T20:32:23.406Z",
+    "ctaDueAt": "2026-09-22T21:27:23.406Z",
+    "metrics": {
+      "views": 22376,
+      "likes": 135,
+      "replies": 126,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00171-chondrosarcoma-of-the-scapula",
+    "postId": "17872204473638675",
+    "measuredAt": "2026-09-28T11:17:22.182Z",
+    "publishedAt": "2026-09-23T19:04:42.750Z",
+    "ageHours": 112.21095333333334,
+    "experiment": {
+      "id": "case-00171-chondrosarcoma-of-the-scapula",
+      "assignedAt": "2026-09-23T19:04:28.791Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-23T19:24:42.750Z",
+    "ctaDueAt": "2026-09-23T20:19:42.750Z",
+    "metrics": {
+      "views": 430785,
+      "likes": 502,
+      "replies": 245,
+      "reposts": 15,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00162-ascariasis-bowel-infestation",
+    "postId": "18108355154189422",
+    "measuredAt": "2026-09-28T11:17:22.313Z",
+    "publishedAt": "2026-09-25T19:04:20.625Z",
+    "ageHours": 64.21713555555556,
+    "experiment": {
+      "id": "case-00162-ascariasis-bowel-infestation",
+      "assignedAt": "2026-09-25T19:04:06.270Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-25T19:24:20.625Z",
+    "ctaDueAt": "2026-09-25T20:19:20.625Z",
+    "metrics": {
+      "views": 584079,
+      "likes": 860,
+      "replies": 538,
+      "reposts": 29,
+      "quotes": 6
+    }
   }
 ]
