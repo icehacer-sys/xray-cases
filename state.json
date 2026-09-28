@@ -719,6 +719,17 @@
       "publishedId": "17869619976648546",
       "publishedAt": "2026-09-27T20:20:24.593Z",
       "confirmedPublished": true
+    },
+    "case:00173-faecaloma:challenge": {
+      "creationId": "17891380149614054",
+      "createdAt": "2026-09-28T19:01:38.641Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00173-faecaloma/xray.png",
+        "text": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "6c8fd86a771fab707154cafab32a099bb430649736291b8e7123908674a52ee3:dbcc74175a7ffcc1c75816cbb87d4962c665d891aac1a6fec6410b7821accb52:c88b29b4472a9a1a458c8af91b8f8a0f031c88c9ea9bd65be89e0157649952aa"
     }
   },
   "stages": {
@@ -1554,12 +1565,18 @@
       "answerCommentId": "18123123955928261",
       "answerPostedAt": "2026-09-27T19:24:13.109Z",
       "ctaPostedAt": "2026-09-27T20:20:26.247Z"
+    },
+    "00173-faecaloma": {
+      "publishedCaption": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00173-faecaloma\",\"assignedAt\":\"2026-09-28T19:01:31.555Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-27",
+      "date": "2026-09-28",
       "count": 0
     }
   }
