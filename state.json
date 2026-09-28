@@ -733,6 +733,16 @@
       "publishedId": "18133515574657616",
       "publishedAt": "2026-09-28T19:01:44.954Z",
       "confirmedPublished": true
+    },
+    "case:00173-faecaloma:answer": {
+      "creationId": "17891387295614054",
+      "createdAt": "2026-09-28T20:32:26.468Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Faecaloma\n\n👀 What you see:\nA giant mottled mass fills most of the belly inside a hugely stretched colon and pushes everything else aside.\n\n🦴 Why it matters:\nSeverely impacted stool can block the bowel and press on the colon wall. Ulceration and perforation of the stretched colon are serious risks.\n\n💊 Treatment:\nSmaller impactions are usually treated with enemas and manual disimpaction. A giant mass that blocks the bowel may need surgery.",
+        "reply_to_id": "18133515574657616",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":444}]"
+      }
     }
   },
   "stages": {
