@@ -1573,7 +1573,9 @@
       "publishedCaption": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
       "experiment": "{\"id\":\"case-00173-faecaloma\",\"assignedAt\":\"2026-09-28T19:01:31.555Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "90",
-      "ctaDelayMin": "145"
+      "ctaDelayMin": "145",
+      "threadsPostId": "18133515574657616",
+      "challengePostedAt": "2026-09-28T19:01:44.954Z"
     }
   },
   "posted": {

@@ -143,5 +143,13 @@
     },
     "singleAnswerSupported": true,
     "diagnosticReason": "The image shows a massive heterogeneous mottled mass with innumerable small gas lucencies distributed throughout the entire abdomen, consistent with impacted stool (faecaloma) within a massively dilated colon. The speckled bubble pattern is characteristic of trapped gas within impacted faecal material, not the cystic-necrotic architecture of a solid tumour. The clinical context of chronic gut-slowing medication, weeks of abdominal swelling, vomiting, and months without bowel movement strongly supports faecaloma. The independent differential (Wilms, neuroblastoma, hepatoblastoma) applies to a paediatric population and is inconsistent with the adult clinical vignette. The mottled gas pattern throughout the mass, following a colonic distribution, distinguishes faecaloma from a solid retroperitoneal or renal mass."
+  },
+  "stages": {
+    "publishedCaption": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00173-faecaloma\",\"assignedAt\":\"2026-09-28T19:01:31.555Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "90",
+    "ctaDelayMin": "145",
+    "threadsPostId": "18133515574657616",
+    "challengePostedAt": "2026-09-28T19:01:44.954Z"
   }
 }
