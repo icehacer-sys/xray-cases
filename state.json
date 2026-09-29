@@ -786,6 +786,16 @@
       "publishedId": "18130284304690941",
       "publishedAt": "2026-09-29T19:20:55.934Z",
       "confirmedPublished": true
+    },
+    "case:00176-sturge-weber-syndrome:cta": {
+      "creationId": "17891519868614054",
+      "createdAt": "2026-09-29T20:16:25.458Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com",
+        "reply_to_id": "18130284304690941",
+        "link_attachment": "https://free.mednoteslab.com"
+      }
     }
   },
   "stages": {
