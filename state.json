@@ -773,6 +773,16 @@
       "publishedId": "18205974196371350",
       "publishedAt": "2026-09-29T19:00:30.232Z",
       "confirmedPublished": true
+    },
+    "case:00176-sturge-weber-syndrome:answer": {
+      "creationId": "17891516235614054",
+      "createdAt": "2026-09-29T19:20:45.065Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Sturge-Weber syndrome\n\n👀 What you see:\nWavy pairs of parallel calcified lines follow the folds of the brain surface at the back of the head.\n\n🦴 Why it matters:\nAbnormal vessels over the brain surface lead to calcification of the cortex beneath them. It often comes with seizures and a facial port wine birthmark.\n\n💊 Treatment:\nCare focuses on seizure control and eye checks for glaucoma. Laser treatment can lighten the birthmark.",
+        "reply_to_id": "18205974196371350",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":433}]"
+      }
     }
   },
   "stages": {
