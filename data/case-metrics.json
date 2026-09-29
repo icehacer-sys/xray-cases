@@ -6758,5 +6758,109 @@
       "reposts": 40,
       "quotes": 5
     }
+  },
+  {
+    "folder": "00169-congenital-knee-dislocation",
+    "postId": "18184997560424523",
+    "measuredAt": "2026-09-29T07:29:02.428Z",
+    "publishedAt": "2026-09-22T19:02:23.406Z",
+    "ageHours": 156.44417277777777,
+    "experiment": {
+      "id": "case-00169-congenital-knee-dislocation",
+      "assignedAt": "2026-09-22T19:02:07.366Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a knee that looked wrong from birth.\n\nThen the X-ray loaded 😭\n\nAnd then the knee answered every question at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-22T20:32:23.406Z",
+    "ctaDueAt": "2026-09-22T21:27:23.406Z",
+    "metrics": {
+      "views": 22597,
+      "likes": 135,
+      "replies": 126,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00171-chondrosarcoma-of-the-scapula",
+    "postId": "17872204473638675",
+    "measuredAt": "2026-09-29T07:29:02.656Z",
+    "publishedAt": "2026-09-23T19:04:42.750Z",
+    "ageHours": 132.40552944444445,
+    "experiment": {
+      "id": "case-00171-chondrosarcoma-of-the-scapula",
+      "assignedAt": "2026-09-23T19:04:28.791Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-23T19:24:42.750Z",
+    "ctaDueAt": "2026-09-23T20:19:42.750Z",
+    "metrics": {
+      "views": 431220,
+      "likes": 503,
+      "replies": 245,
+      "reposts": 15,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00162-ascariasis-bowel-infestation",
+    "postId": "18108355154189422",
+    "measuredAt": "2026-09-29T07:29:02.804Z",
+    "publishedAt": "2026-09-25T19:04:20.625Z",
+    "ageHours": 84.41171638888889,
+    "experiment": {
+      "id": "case-00162-ascariasis-bowel-infestation",
+      "assignedAt": "2026-09-25T19:04:06.270Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-25T19:24:20.625Z",
+    "ctaDueAt": "2026-09-25T20:19:20.625Z",
+    "metrics": {
+      "views": 584672,
+      "likes": 860,
+      "replies": 538,
+      "reposts": 29,
+      "quotes": 6
+    }
+  },
+  {
+    "folder": "00173-faecaloma",
+    "postId": "18133515574657616",
+    "measuredAt": "2026-09-29T07:29:02.978Z",
+    "publishedAt": "2026-09-28T19:01:44.954Z",
+    "ageHours": 12.455006666666666,
+    "experiment": {
+      "id": "case-00173-faecaloma",
+      "assignedAt": "2026-09-28T19:01:31.555Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-28T20:31:44.954Z",
+    "ctaDueAt": "2026-09-28T21:26:44.954Z",
+    "metrics": {
+      "views": 79190,
+      "likes": 273,
+      "replies": 207,
+      "reposts": 3,
+      "quotes": 1
+    }
   }
 ]
