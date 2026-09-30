@@ -11,7 +11,7 @@ const worm = JSON.parse(readFileSync("cases/00148-dracunculiasis/case.json", "ut
 // The caption no longer carries the hook's description of the finding.
 const caption = generateThreadsCaption({ ...worm, teaser: "And nobody expected what was hiding in that calf" });
 assert.doesNotMatch(caption, /calcification|curling|soft tissues/i);
-assert.match(caption, /^A patient came in with .+\.\n\nThen the X-ray loaded 😭\n\nAnd nobody expected what was hiding in that calf\.\n\n/);
+assert.match(caption, /^A patient with .+\.\n\nThen the X-ray loaded 😭\n\nAnd nobody expected what was hiding in that calf\.\n\n/);
 // No teaser -> a fixed line that describes nothing, never the hook.
 const plain = generateThreadsCaption({ ...worm, teaser: undefined });
 assert.ok(TEASER_FALLBACKS.some((t) => plain.includes(`${t}.`)));
@@ -51,7 +51,7 @@ for (const fine of ["years of trouble getting food down", "a hot swollen knee", 
 // The caption uses the public symptom; the clinical one stays for image verification.
 const spoon = { ...worm, symptom: "upper abdominal discomfort after swallowing an object", captionSymptom: "upper abdominal discomfort" };
 assert.equal(publicSymptom(spoon), "upper abdominal discomfort");
-assert.match(generateThreadsCaption(spoon), /^A patient came in with upper abdominal discomfort\.\n/);
+assert.match(generateThreadsCaption(spoon), /^A patient with upper abdominal discomfort\.\n/);
 const leaky = { ...spoon, captionSymptom: undefined };
 leaky.generated = { ...worm.generated!, threadsCaption: generateThreadsCaption(leaky) };
 assert.ok(copyProblems(leaky).some((p) => p.startsWith("opening line gives away the answer")));
