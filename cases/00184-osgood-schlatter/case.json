@@ -19,7 +19,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-10-05T19:00:00Z",
-  "cta": "vol1",
+  "cta": "anxiety",
   "approved": true,
   "needsReview": false,
   "source": "generated",
@@ -74,7 +74,7 @@
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Osgood-Schlatter disease\n\n👀 What you see:\nA prominent, fragmented tibial tubercle with local swelling.\n\n🦴 Why it matters:\nIn this activity-related vignette, it supports traction apophysitis. Fragmentation alone can be a normal variant.\n\n💊 Treatment:\nActivity modification, stretching, and symptom relief; most cases settle with skeletal maturity.",
     "igCaption": "",
-    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "generation": {
     "model": "gpt-image-2.5-flare",
@@ -113,8 +113,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "1f2cb7186be058cda8f8368247d93a554ef492a514f5053865bb479f3c6fe5d0",
-    "reviewedAt": "2026-09-30T22:51:01.744Z",
-    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+    "sha256": "9fe282f4f16bd3768034f2d206ee37cb9dda644c53b292bf02bc6e28984e817c",
+    "reviewedAt": "2026-09-30T23:51:30.715Z",
+    "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
   }
 }

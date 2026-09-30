@@ -19,7 +19,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-10-01T19:00:00Z",
-  "cta": "hopital",
+  "cta": "anxiety",
   "approved": true,
   "needsReview": false,
   "source": "generated",
@@ -73,7 +73,7 @@
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Kienböck disease\n\n👀 What you see:\nA dense, flattened, irregular lunate in the centre of the wrist.\n\n🦴 Why it matters:\nLoss of blood supply damages this carpal bone; collapse can disrupt wrist mechanics.\n\n💊 Treatment:\nStage-dependent hand-surgery review: protection early; reconstructive or salvage options later.",
     "igCaption": "",
-    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "generation": {
     "model": "gpt-image-2.5-flare",
@@ -112,8 +112,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "e8753696df2ec6918f24bfc9eae0b10108730d7b23923b83ac59411283d7a2f1",
-    "reviewedAt": "2026-09-30T22:51:01.744Z",
-    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+    "sha256": "4ff718944c35094da09df3df6c65b2dbf86973f534f6236b8e7c3ca566688c9c",
+    "reviewedAt": "2026-09-30T23:51:30.715Z",
+    "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
   }
 }
