@@ -7330,5 +7330,83 @@
       "reposts": 7,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00171-chondrosarcoma-of-the-scapula",
+    "postId": "17872204473638675",
+    "measuredAt": "2026-09-30T13:45:15.599Z",
+    "publishedAt": "2026-09-23T19:04:42.750Z",
+    "ageHours": 162.67579138888888,
+    "experiment": {
+      "id": "case-00171-chondrosarcoma-of-the-scapula",
+      "assignedAt": "2026-09-23T19:04:28.791Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a deep aching shoulder and a hard lump over the shoulder blade that kept growing.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-23T19:24:42.750Z",
+    "ctaDueAt": "2026-09-23T20:19:42.750Z",
+    "metrics": {
+      "views": 431457,
+      "likes": 504,
+      "replies": 245,
+      "reposts": 15,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00162-ascariasis-bowel-infestation",
+    "postId": "18108355154189422",
+    "measuredAt": "2026-09-30T13:45:16.157Z",
+    "publishedAt": "2026-09-25T19:04:20.625Z",
+    "ageHours": 114.68209222222222,
+    "experiment": {
+      "id": "case-00162-ascariasis-bowel-infestation",
+      "assignedAt": "2026-09-25T19:04:06.270Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-25T19:24:20.625Z",
+    "ctaDueAt": "2026-09-25T20:19:20.625Z",
+    "metrics": {
+      "views": 585024,
+      "likes": 861,
+      "replies": 538,
+      "reposts": 29,
+      "quotes": 6
+    }
+  },
+  {
+    "folder": "00173-faecaloma",
+    "postId": "18133515574657616",
+    "measuredAt": "2026-09-30T13:45:16.340Z",
+    "publishedAt": "2026-09-28T19:01:44.954Z",
+    "ageHours": 42.725385,
+    "experiment": {
+      "id": "case-00173-faecaloma",
+      "assignedAt": "2026-09-28T19:01:31.555Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-28T20:31:44.954Z",
+    "ctaDueAt": "2026-09-28T21:26:44.954Z",
+    "metrics": {
+      "views": 184245,
+      "likes": 393,
+      "replies": 234,
+      "reposts": 11,
+      "quotes": 1
+    }
   }
 ]
