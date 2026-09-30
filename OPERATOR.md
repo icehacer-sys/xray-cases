@@ -40,3 +40,9 @@ See [runtime-config.md](docs/runtime-config.md), generated from tracked declarat
 Offline checks: `npm run typecheck`, `npm run publishing:verify`, `npm run audit:verify`, and `node tools/verify-token-health.mjs`. Fixtures mock external calls. A passing vision model review is not a radiologist sign-off and cannot guarantee every generated detail is correct.
 
 Companion service: [threads-bot](https://github.com/icehacer-sys/threads-bot).
+
+## Public-copy punctuation (owner, 2026-09-30)
+
+Use an Oxford comma in genuine lists of three or more items: "A patient with persistent wrist pain, stiffness, and a weakening grip." Keep two-item pairs and ordinary clauses unchanged. Do not insert commas into URLs. The established challenge, titled spoiler answer, and separate verbatim CTA format remains; case openings use neutral "A patient with" vignettes rather than claiming an actual encounter.
+
+The offline serial-list check reports clear short phrase lists for a local rewrite; it never edits copy automatically. Complex or ambiguous grammar still needs local Codex/Claude review. A guard failure must not trigger a paid redraft or review without owner authorization. Run `npm run copy:verify`. Existing cached public copy also goes through the readiness check. No historical case, queue hold, receipt, image or provider is changed by this rule.

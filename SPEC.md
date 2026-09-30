@@ -59,7 +59,7 @@ Also: a case whose `postAt` is in the future but within ~24h should get its `gen
 
 ### Threads challenge caption (deterministic)
 ```
-A patient came in with {symptom}.
+A patient with {symptom}.
 Then the X-ray loaded 😭
 And {hook}.
 Quick diagnosis challenge 🩻

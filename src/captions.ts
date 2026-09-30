@@ -9,6 +9,7 @@ import { recordUsage } from "./usage.js";
 import { config, requireEnv } from "./config.js";
 import type { Case, CtaKey } from "./types.js";
 import { buildXrayPrompt } from "./anatomy.js";
+import { SERIAL_COMMA_RULE, assertSerialCommas } from "./copy-style.js";
 
 // ---------------------------------------------------------------------------
 // Anthropic client (lazy: --prompt mode never needs it)
@@ -29,11 +30,11 @@ function client(): Anthropic {
 }
 
 /** Run a single non-streaming Claude call and return the concatenated text. */
-async function ask(system: string, user: string, maxTokens = 600): Promise<string> {
+async function ask(system: string, user: string, maxTokens = 600, allowSerialLists = true): Promise<string> {
   const res = await client().messages.create({
     model: config.model,
     max_tokens: maxTokens,
-    system: system + " Do not add image-production disclosures or labels to public case copy, answers or CTAs. Do not invent claims about real-patient provenance.",
+    system: system + (allowSerialLists ? " " + SERIAL_COMMA_RULE : " Do not use lists in this suspense/alternate line.") + " Do not add image-production disclosures or labels to public case copy, answers or CTAs. Do not invent claims about real-patient provenance.",
     messages: [{ role: "user", content: user }],
   });
   recordUsage("caption", config.model, res.usage);
@@ -51,23 +52,13 @@ async function ask(system: string, user: string, maxTokens = 600): Promise<strin
 // Threads challenge caption — DETERMINISTIC
 // ---------------------------------------------------------------------------
 
-/**
- * Strip commas from a caption field.
- *
- * This is the ONLY deterministic guard on the challenge caption. symptom and hook come VERBATIM
- * from data/conditions.json and never pass through a model, so the no-comma rule that every
- * drafting prompt carries simply does not apply to them -- 15 fields across the 102-condition pool
- * hold a comma today and each would post one. (Caught 2026-09-05 on the 11 Sep case: "lodged in
- * the food pipe, facing flat to the camera".)
- *
- * The house rule allows a comma only inside a genuine list of three or more items, which needs at
- * least TWO commas. So a single comma is always an appositive or participial pause and comes out;
- * a field with 2+ is left alone. No condition in the pool currently has 2+, so this is safe today
- * and stays safe if a real list is ever added.
+/** Check source wording without guessing whether a comma separates list items or clauses.
+ * The previous single-comma deletion could merge real list items. Ambiguous grammar now
+ * stays intact for local review; clear missing serial commas fail before rendering.
  */
-function stripComma(s: string): string {
-  if ((s.match(/,/g) ?? []).length >= 2) return s;
-  return s.replace(/\s*,\s*/g, " ").replace(/\s{2,}/g, " ").trim();
+function checkedCaptionField(s: string): string {
+  assertSerialCommas(s);
+  return s.trim();
 }
 
 export function generateThreadsCaption(c: Case): string {
@@ -78,10 +69,10 @@ export function generateThreadsCaption(c: Case): string {
   // calcification ran through the soft tissues beside the bones"). On the 2026-09-15 Guinea worm
   // post that plus the symptom gave the answer away: the first correct guess landed in 6 minutes.
   // The image does the showing now and this line only builds suspense (owner, 2026-09-16).
-  const symptom = stripComma(publicSymptom(c));
-  const teaser = stripComma(c.teaser?.trim() || fallbackTeaser(c)).replace(/[.!?]+$/, "");
+  const symptom = checkedCaptionField(publicSymptom(c));
+  const teaser = checkedCaptionField(c.teaser?.trim() || fallbackTeaser(c)).replace(/[.!?]+$/, "");
   return [
-    `A patient came in with ${symptom}.`,
+    `A patient with ${symptom}.`,
     `Then the X-ray loaded 😭`,
     `${teaser.charAt(0).toUpperCase() + teaser.slice(1)}.`,
     CHALLENGE_LABEL_LINE,
@@ -178,7 +169,7 @@ export async function draftTeaser(c: Case): Promise<string> {
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
       const user = rejected ? `${base}\n\nYour previous line was rejected (${rejected}). Write a different line.` : base;
-      const raw = str(parseJsonObject(await ask(system, user, 150)).teaser);
+      const raw = str(parseJsonObject(await ask(system, user, 150, false)).teaser);
       const teaser = cleanPunct(raw).replace(/^["']+|["']+$/g, "").replace(/[.!?]+$/, "").trim();
       const problem = teaserProblem(teaser, c);
       if (!problem) return teaser;
@@ -285,7 +276,7 @@ export async function draftForegroundedCaption(c: Case): Promise<string> {
     "destroys the entire guess. (2) Invent NOTHING. Use only facts already in the presenting symptom. Never " +
     "add a new sign, duration, age, or measurement. (3) NEVER name, spell, abbreviate or hint at the diagnosis " +
     "or its category. (4) Do NOT use commas (write short clauses or join with 'and'). (5) It must read " +
-    "naturally after 'A patient came in with '. (6) Under 120 characters. (7) If the presentation is ALREADY " +
+    "naturally after 'A patient with '. (6) Under 120 characters. (7) If the presentation is ALREADY " +
     "obviously strange, or there is nothing ordinary about it to lean on, return null rather than forcing one. " +
     "Respond ONLY with a JSON object: {\"foregrounded\": string or null}";
 
@@ -295,7 +286,7 @@ export async function draftForegroundedCaption(c: Case): Promise<string> {
     `What the X-ray showed: ${c.hook}`;
 
   try {
-    const p = parseJsonObject(await ask(system, user, 250));
+    const p = parseJsonObject(await ask(system, user, 250, false));
     const raw = p.foregrounded;
     if (raw == null || typeof raw !== "string" || raw.trim() === "" || raw.trim().toLowerCase() === "null") return "";
     const alt = cleanPunct(str(raw)).replace(/^["']+|["']+$/g, "").replace(/\.\s*$/, "").trim();
@@ -336,8 +327,8 @@ export interface Engagement {
 export async function draftEngagement(c: Case): Promise<Engagement> {
   const system =
     "You write engagement copy for @mdnoteslab, a daily 'guess the weird X-ray diagnosis' account. " +
-    "Voice: punchy, curious, plain-spoken. CRITICAL RULES: do NOT use commas anywhere (write short " +
-    "sentences or join clauses with 'and'); a comma is allowed ONLY inside a list of three or more items. " +
+    "Voice: punchy, curious, plain-spoken. CRITICAL RULES: write short sentences or join clauses with 'and'. " +
+    "Use commas only inside genuine lists of three or more items and include the Oxford comma. " +
     "NEVER name, spell, abbreviate, or give away the diagnosis or its specific category — these run BEFORE " +
     "the answer is revealed. No emojis, no hashtags, no quotation marks, no labels. " +
     "Respond ONLY with a JSON object using exactly these keys: difficulty, laypersonQuestion, seedHint.";
@@ -416,7 +407,9 @@ export async function generateThreadsAnswer(c: Case): Promise<string> {
     len += 2 + s.text.length;
   }
   chosen.sort((a, b) => a.display - b.display);
-  return [head, ...chosen.map((s) => s.text)].join("\n\n");
+  const answer = [head, ...chosen.map((s) => s.text)].join("\n\n");
+  assertSerialCommas(answer);
+  return answer;
 }
 
 /** Normalize AI-drafted punctuation: em/en dashes -> hyphen; collapse runs of spaces. */
@@ -448,8 +441,8 @@ async function draftBreakdown(c: Case): Promise<Breakdown> {
     "diagnosis challenge. Be tight and factual. Use only well-known, established facts about " +
     "the named condition — never invent specific measurements, patient details, or studies. " +
     "Each field is ONE short line (a sentence or two). No emojis, no labels, no markdown. " +
-    "Do NOT use commas: write short sentences or join clauses with words like 'and' or 'with'. " +
-    "A comma is allowed ONLY when listing three or more items. " +
+    "Write short sentences or join clauses with words like 'and' or 'with'. " +
+    "Use commas only in genuine lists of three or more items and include the Oxford comma. " +
     "Respond ONLY with a JSON object using exactly these keys: " +
     "whatYouSee, whyItMatters, treatment, takeaway.";
 
