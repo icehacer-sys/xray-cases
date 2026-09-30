@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-10-06T19:00:00Z",
-  "cta": "support",
+  "cta": "anxiety",
   "approved": true,
   "needsReview": false,
   "source": "generated",
@@ -76,7 +76,7 @@
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Calcific rotator-cuff tendinopathy\n\n👀 What you see:\nAn amorphous calcium deposit near the greater tuberosity, in the rotator-cuff region.\n\n🦴 Why it matters:\nTendon deposits can cause pain, but may also be incidental. Match the film to the symptoms.\n\n💊 Treatment:\nSymptom relief and rehabilitation first. A sham-controlled trial found no benefit over sham from lavage plus steroid at four months.",
     "igCaption": "",
-    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "generation": {
     "model": "gpt-image-2.5-flare",
@@ -115,8 +115,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "dfbbd0519186deb6fa5f66ce95e407ea19c0fde695e6c0500cca308d236429ba",
-    "reviewedAt": "2026-09-30T22:51:01.744Z",
-    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+    "sha256": "40fac34d44547fd8b1689e5cce7703f43e8b12c01f72b3521945a5a445d910a8",
+    "reviewedAt": "2026-09-30T23:51:30.715Z",
+    "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
   }
 }

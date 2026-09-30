@@ -73,7 +73,7 @@
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Compound odontoma\n\n👀 What you see:\nA cluster of tiny tooth-like structures beside an unerupted incisor.\n\n🦴 Why it matters:\nThis benign dental-tissue growth can obstruct eruption. Tooth-like denticles favour the compound form.\n\n💊 Treatment:\nDental-surgical assessment, removal when indicated and planning for the impacted tooth.",
     "igCaption": "",
-    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "generation": {
     "model": "gpt-image-2.5-flare",
@@ -112,8 +112,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "9015265029ebfc9e81f29e9109b05692a2197d290f4edaded7c80aee3909e302",
-    "reviewedAt": "2026-09-30T22:51:01.744Z",
-    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+    "sha256": "c77213e5229a2c0e5f76439160cbe01d7c7050d036c19b1207d1628094c45447",
+    "reviewedAt": "2026-09-30T23:51:30.715Z",
+    "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
   }
 }

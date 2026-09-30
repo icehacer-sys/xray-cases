@@ -19,7 +19,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-10-07T19:00:00Z",
-  "cta": "hopital",
+  "cta": "anxiety",
   "approved": true,
   "needsReview": false,
   "source": "generated",
@@ -73,7 +73,7 @@
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Osteochondritis dissecans\n\n👀 What you see:\nA rimmed subchondral lesion in the medial femoral condyle.\n\n🦴 Why it matters:\nThe underlying bone and overlying cartilage are at risk. This film does not establish fragment stability.\n\n💊 Treatment:\nMRI and orthopaedic assessment guide care: activity modification for stable juvenile lesions; surgery when indicated.",
     "igCaption": "",
-    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "generation": {
     "model": "gpt-image-2.5-flare",
@@ -112,8 +112,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "77c9fd415c5b30a7ed49539a2f5d19bc685b34443c7ced8978e3b233d4e69735",
-    "reviewedAt": "2026-09-30T22:51:01.744Z",
-    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+    "sha256": "a4b8349e1f34c7a9d472a4b9a25e41f1d415c9a3f23d7780478b9dcf70dff4e7",
+    "reviewedAt": "2026-09-30T23:51:30.715Z",
+    "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
   }
 }
