@@ -7408,5 +7408,109 @@
       "reposts": 11,
       "quotes": 1
     }
+  },
+  {
+    "folder": "00170-calcific-myonecrosis",
+    "postId": "18158870629500613",
+    "measuredAt": "2026-09-30T18:47:53.994Z",
+    "publishedAt": "2026-09-24T19:00:18.890Z",
+    "ageHours": 143.79308444444445,
+    "experiment": {
+      "id": "case-00170-calcific-myonecrosis",
+      "assignedAt": "2026-09-24T19:00:04.080Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a slowly swelling calf.\n\nThen the X-ray loaded 😭\n\nAnd the calf had been quietly doing something for years.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-24T20:30:18.890Z",
+    "ctaDueAt": "2026-09-24T21:25:18.890Z",
+    "metrics": {
+      "views": 224428,
+      "likes": 345,
+      "replies": 203,
+      "reposts": 4,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00174-aspergilloma",
+    "postId": "18143133703596228",
+    "measuredAt": "2026-09-30T18:47:54.858Z",
+    "publishedAt": "2026-09-26T19:02:12.233Z",
+    "ageHours": 95.76184027777778,
+    "experiment": {
+      "id": "case-00174-aspergilloma",
+      "assignedAt": "2026-09-26T19:01:59.696Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a cough that kept bringing up streaks of blood.\n\nThen the X-ray loaded 😭\n\nAnd the chest had its own answer waiting.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-26T20:32:12.233Z",
+    "ctaDueAt": "2026-09-26T21:27:12.233Z",
+    "metrics": {
+      "views": 232871,
+      "likes": 349,
+      "replies": 306,
+      "reposts": 5,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00175-porocephalosis",
+    "postId": "18097639436415272",
+    "measuredAt": "2026-09-30T18:47:55.000Z",
+    "publishedAt": "2026-09-27T19:03:52.882Z",
+    "ageHours": 71.73392166666666,
+    "experiment": {
+      "id": "case-00175-porocephalosis",
+      "assignedAt": "2026-09-27T19:03:39.032Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with vague upper belly discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-27T19:23:52.882Z",
+    "ctaDueAt": "2026-09-27T20:18:52.882Z",
+    "metrics": {
+      "views": 1119449,
+      "likes": 1480,
+      "replies": 544,
+      "reposts": 40,
+      "quotes": 5
+    }
+  },
+  {
+    "folder": "00176-sturge-weber-syndrome",
+    "postId": "18205974196371350",
+    "measuredAt": "2026-09-30T18:47:55.412Z",
+    "publishedAt": "2026-09-29T19:00:30.232Z",
+    "ageHours": 23.79032777777778,
+    "experiment": {
+      "id": "case-00176-sturge-weber-syndrome",
+      "assignedAt": "2026-09-29T19:00:15.063Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with seizures since early childhood.\n\nThen the X-ray loaded 😭\n\nAnd then the skull film changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-29T19:20:30.232Z",
+    "ctaDueAt": "2026-09-29T20:15:30.232Z",
+    "metrics": {
+      "views": 117183,
+      "likes": 386,
+      "replies": 154,
+      "reposts": 9,
+      "quotes": 0
+    }
   }
 ]
