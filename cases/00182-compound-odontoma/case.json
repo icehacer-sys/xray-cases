@@ -1,0 +1,119 @@
+{
+  "diagnosis": "Compound odontoma",
+  "aliases": [
+    "compound odontome"
+  ],
+  "symptom": "a permanent front tooth that still had not appeared",
+  "whatYouSee": "A cluster of tiny tooth-like structures beside an unerupted incisor.",
+  "whyItMatters": "This benign dental-tissue growth can obstruct eruption. Tooth-like denticles favour the compound form.",
+  "treatment": "Dental-surgical assessment, removal when indicated and planning for the impacted tooth.",
+  "takeaway": "A missing tooth on examination can hide extra tooth-like tissue on imaging.",
+  "folder": "00182-compound-odontoma",
+  "hook": "A cluster of tiny tooth-like structures beside an unerupted incisor.",
+  "captionSymptom": "a permanent front tooth that still had not appeared",
+  "teaser": "And that was not what anyone expected to see",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-03T19:00:00Z",
+  "cta": "anxiety",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Dentigerous cyst",
+      "Complex odontoma"
+    ]
+  },
+  "stages": {},
+  "condition": {
+    "diagnosis": "Compound odontoma",
+    "aliases": [
+      "compound odontome"
+    ],
+    "symptom": "a permanent front tooth that still had not appeared",
+    "view": "Anterior maxillary periapical radiograph showing the central incisors, adjacent lateral incisors and the unerupted right permanent central incisor",
+    "keyFindings": "A compact cluster of several miniature tooth-like radiopaque denticles within a thin radiolucent rim in the anterior right maxilla, obstructing the eruption path of an unerupted permanent central incisor. The denticles are separate abnormal structures, not a duplicated normal dental arch. No aggressive bone destruction or unrelated lesion.",
+    "requiredObservations": [
+      "Several discrete miniature tooth-like denticles form a cluster surrounded by a thin radiolucent rim.",
+      "The cluster lies in the eruption path of an unerupted permanent central incisor.",
+      "Normal surrounding tooth roots and jaw anatomy are coherent."
+    ],
+    "whatYouSee": "A cluster of tiny tooth-like structures beside an unerupted incisor.",
+    "whyItMatters": "This benign dental-tissue growth can obstruct eruption. Tooth-like denticles favour the compound form.",
+    "treatment": "Dental-surgical assessment, removal when indicated and planning for the impacted tooth.",
+    "takeaway": "A missing tooth on examination can hide extra tooth-like tissue on imaging.",
+    "ageBand": "adolescent",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12532220/",
+      "https://doi.org/10.5005/jp-journals-10005-3236"
+    ],
+    "hook": "A cluster of tiny tooth-like structures beside an unerupted incisor.",
+    "captionSymptom": "a permanent front tooth that still had not appeared",
+    "igTitle": "Compound odontoma",
+    "igOptions": [
+      "Compound odontoma",
+      "Dentigerous cyst",
+      "Complex odontoma"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.581954Z",
+    "anatomyException": "Several small supernumerary tooth-like denticles form the odontoma; these do not represent duplicated normal incisors or an extra dental arch."
+  },
+  "generated": {
+    "threadsCaption": "A patient with a permanent front tooth that still had not appeared.\n\nThen the X-ray loaded 😭\n\nAnd that was not what anyone expected to see.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Compound odontoma\n\n👀 What you see:\nA cluster of tiny tooth-like structures beside an unerupted incisor.\n\n🦴 Why it matters:\nThis benign dental-tissue growth can obstruct eruption. Tooth-like denticles favour the compound form.\n\n💊 Treatment:\nDental-surgical assessment, removal when indicated and planning for the impacted tooth.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nReal conditions waved off as nothing until the card flips to the diagnosis.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-30T21:23:46.394Z"
+  },
+  "imageApproval": {
+    "sha256": "ff9172f3380b8bb1c540aec2c8bd6e908e406a195dafc0b93398490e1104a6c0",
+    "conditionSha256": "f2920c87e4c11138b24778861bd190ca5760bd1b9bebefd12087b3f747115f84",
+    "clinicalContextSha256": "bccae7c47fefd77a18ee8f8681f61f80454943d16b437b0991fe79a4c0f68207",
+    "verifiedAt": "2026-09-30T22:51:01.744Z",
+    "model": "Codex local context-aware review",
+    "verifierVersion": "4",
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A discrete cluster of separate denticle-like opacities with a lucent boundary beside an unerupted tooth supports compound odontoma as the illustrative answer. No histology, removal, denticle count, successful eruption, or clinical outcome is established.",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Several discrete miniature tooth-like denticles form a cluster surrounded by a thin radiolucent rim.",
+        "observed": "Separate small denticle-like opacities clustered within a lucent boundary.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The cluster lies in the eruption path of an unerupted permanent central incisor.",
+        "observed": "The cluster is adjacent to and below the unerupted tooth in the eruption region, compatible with obstruction in this vignette.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Normal surrounding tooth roots and jaw anatomy are coherent.",
+        "observed": "One coherent anterior dental field; small abnormal bodies are the lesion, not a duplicated normal arch.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "9015265029ebfc9e81f29e9109b05692a2197d290f4edaded7c80aee3909e302",
+    "reviewedAt": "2026-09-30T22:51:01.744Z",
+    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+  }
+}

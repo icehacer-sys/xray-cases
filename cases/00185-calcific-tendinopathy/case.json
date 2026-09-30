@@ -1,0 +1,122 @@
+{
+  "diagnosis": "Calcific rotator-cuff tendinopathy",
+  "aliases": [
+    "calcific tendinitis",
+    "calcific tendonitis",
+    "calcific shoulder tendinopathy"
+  ],
+  "symptom": "shoulder pain when reaching overhead",
+  "whatYouSee": "An amorphous calcium deposit near the greater tuberosity, in the rotator-cuff region.",
+  "whyItMatters": "Tendon deposits can cause pain, but may also be incidental. Match the film to the symptoms.",
+  "treatment": "Symptom relief and rehabilitation first. A sham-controlled trial found no benefit over sham from lavage plus steroid at four months.",
+  "takeaway": "Calcification is not the same as a fracture fragment.",
+  "folder": "00185-calcific-tendinopathy",
+  "hook": "An amorphous calcium deposit near the greater tuberosity, in the rotator-cuff region.",
+  "captionSymptom": "shoulder pain when reaching overhead",
+  "teaser": "And suddenly everything needed a second look",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-06T19:00:00Z",
+  "cta": "support",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Greater-tuberosity avulsion",
+      "Shoulder dislocation"
+    ]
+  },
+  "stages": {},
+  "condition": {
+    "diagnosis": "Calcific rotator-cuff tendinopathy",
+    "aliases": [
+      "calcific tendinitis",
+      "calcific tendonitis",
+      "calcific shoulder tendinopathy"
+    ],
+    "symptom": "shoulder pain when reaching overhead",
+    "view": "AP right shoulder radiograph showing the proximal humerus, glenoid, acromion, distal clavicle and visible scapular body; upper arm only, no torso below the chest",
+    "keyFindings": "A single homogeneous amorphous calcific deposit in the supraspinatus tendon region immediately above the humeral greater tuberosity. No cortical or trabecular architecture within the deposit, no acute fracture, no dislocation and no extra humeral head or scapula. Glenohumeral alignment is preserved.",
+    "requiredObservations": [
+      "An amorphous calcific deposit lies in the rotator-cuff tendon region above the greater tuberosity.",
+      "The deposit lacks a bone cortex or internal trabeculae.",
+      "The shoulder is aligned with one coherent humeral head and scapula."
+    ],
+    "whatYouSee": "An amorphous calcium deposit near the greater tuberosity, in the rotator-cuff region.",
+    "whyItMatters": "Tendon deposits can cause pain, but may also be incidental. Match the film to the symptoms.",
+    "treatment": "Symptom relief and rehabilitation first. A sham-controlled trial found no benefit over sham from lavage plus steroid at four months.",
+    "takeaway": "Calcification is not the same as a fracture fragment.",
+    "ageBand": "middle-aged",
+    "sources": [
+      "https://www.bmj.com/content/383/bmj-2023-076447",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10565688/"
+    ],
+    "hook": "An amorphous calcium deposit near the greater tuberosity, in the rotator-cuff region.",
+    "captionSymptom": "shoulder pain when reaching overhead",
+    "igTitle": "Calcific rotator-cuff tendinopathy",
+    "igOptions": [
+      "Calcific rotator-cuff tendinopathy",
+      "Greater-tuberosity avulsion",
+      "Shoulder dislocation"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.587956Z"
+  },
+  "generated": {
+    "threadsCaption": "A patient with shoulder pain when reaching overhead.\n\nThen the X-ray loaded 😭\n\nAnd suddenly everything needed a second look.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Calcific rotator-cuff tendinopathy\n\n👀 What you see:\nAn amorphous calcium deposit near the greater tuberosity, in the rotator-cuff region.\n\n🦴 Why it matters:\nTendon deposits can cause pain, but may also be incidental. Match the film to the symptoms.\n\n💊 Treatment:\nSymptom relief and rehabilitation first. A sham-controlled trial found no benefit over sham from lavage plus steroid at four months.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-30T21:33:31.883Z"
+  },
+  "imageApproval": {
+    "sha256": "769fc2fae379747520828d4011c004022449403ee6fad561c963607abf7fda98",
+    "conditionSha256": "eedda543e91ceae844e56c8b19259a45e12cc2910415188bc555576369700e94",
+    "clinicalContextSha256": "225637b095b4e8df749392e219181f6d1d3f35a55299e1533e9c8a50d51584f9",
+    "verifiedAt": "2026-09-30T22:51:01.744Z",
+    "model": "Codex local context-aware review",
+    "verifierVersion": "4",
+    "singleAnswerSupported": true,
+    "diagnosticReason": "An amorphous cuff-region calcific deposit above the greater tuberosity without bone-like cortex or trabeculae supports calcific rotator-cuff tendinopathy as the illustrative answer. The deposit may be incidental. The final copy correctly specifies no benefit over sham from lavage plus steroid at four months in the cited trial.",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "An amorphous calcific deposit lies in the rotator-cuff tendon region above the greater tuberosity.",
+        "observed": "Amorphous deposit above the greater tuberosity in the cuff region.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The deposit lacks a bone cortex or internal trabeculae.",
+        "observed": "Deposit lacks a visible bone cortex or internal trabeculae.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The shoulder is aligned with one coherent humeral head and scapula.",
+        "observed": "One coherent humeral head and shoulder girdle with preserved alignment.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "dfbbd0519186deb6fa5f66ce95e407ea19c0fde695e6c0500cca308d236429ba",
+    "reviewedAt": "2026-09-30T22:51:01.744Z",
+    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+  }
+}

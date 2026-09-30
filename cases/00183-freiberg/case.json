@@ -1,0 +1,120 @@
+{
+  "diagnosis": "Freiberg disease",
+  "aliases": [
+    "Freiberg infraction",
+    "Freiberg osteonecrosis"
+  ],
+  "symptom": "forefoot pain that worsened when pushing off to walk",
+  "whatYouSee": "A flattened, dense second metatarsal head with an irregular joint surface.",
+  "whyItMatters": "Osteonecrosis here can lead to collapse and arthritis at the base of the toe.",
+  "treatment": "Offloading, footwear changes, and activity modification first; persistent disease may need surgery.",
+  "takeaway": "Forefoot pain is not always a soft-tissue problem.",
+  "folder": "00183-freiberg",
+  "hook": "A flattened, dense second metatarsal head with an irregular joint surface.",
+  "captionSymptom": "forefoot pain that worsened when pushing off to walk",
+  "teaser": "And the whole room leaned in for a closer look",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-04T19:00:00Z",
+  "cta": "hopital",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "March fracture",
+      "Gout"
+    ]
+  },
+  "stages": {},
+  "condition": {
+    "diagnosis": "Freiberg disease",
+    "aliases": [
+      "Freiberg infraction",
+      "Freiberg osteonecrosis"
+    ],
+    "symptom": "forefoot pain that worsened when pushing off to walk",
+    "view": "Dorsoplantar right forefoot radiograph including all five metatarsals and toes",
+    "keyFindings": "Isolated flattening, sclerosis and irregular collapse of the second metatarsal head, with mild second metatarsophalangeal joint-space narrowing. Other metatarsal heads remain rounded. No acute shaft fracture, erosive polyarthritis or hardware. Preserve five coherent rays and anatomically correct toe phalanges.",
+    "requiredObservations": [
+      "The second metatarsal head is flattened, sclerotic and irregular.",
+      "Changes centre on the second metatarsophalangeal joint rather than the shaft.",
+      "The remaining four rays are coherent without matching destructive lesions."
+    ],
+    "whatYouSee": "A flattened, dense second metatarsal head with an irregular joint surface.",
+    "whyItMatters": "Osteonecrosis here can lead to collapse and arthritis at the base of the toe.",
+    "treatment": "Offloading, footwear changes, and activity modification first; persistent disease may need surgery.",
+    "takeaway": "Forefoot pain is not always a soft-tissue problem.",
+    "ageBand": "young-adult",
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10985393/",
+      "https://doi.org/10.1177/19476035231205676"
+    ],
+    "hook": "A flattened, dense second metatarsal head with an irregular joint surface.",
+    "captionSymptom": "forefoot pain that worsened when pushing off to walk",
+    "igTitle": "Freiberg disease",
+    "igOptions": [
+      "Freiberg disease",
+      "March fracture",
+      "Gout"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.583953Z"
+  },
+  "generated": {
+    "threadsCaption": "A patient with forefoot pain that worsened when pushing off to walk.\n\nThen the X-ray loaded 😭\n\nAnd the whole room leaned in for a closer look.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Freiberg disease\n\n👀 What you see:\nA flattened, dense second metatarsal head with an irregular joint surface.\n\n🦴 Why it matters:\nOsteonecrosis here can lead to collapse and arthritis at the base of the toe.\n\n💊 Treatment:\nOffloading, footwear changes, and activity modification first; persistent disease may need surgery.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-30T21:38:35.637Z"
+  },
+  "imageApproval": {
+    "sha256": "4aaf611261a1dd87efdf81c78b224f051db2d20b822d44ef36453fbf89d84292",
+    "conditionSha256": "8c896635d6b5054744b6debd190e9fd8153146ba70a9e8ae87478d302069acae",
+    "clinicalContextSha256": "4ebc450088d37b3f5175beb98d197d81c9d9bdb6a7f05437ec4e30f6a2c20acb",
+    "verifiedAt": "2026-09-30T22:51:01.744Z",
+    "model": "Codex local context-aware review",
+    "verifierVersion": "4",
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A flattened dense irregular second metatarsal head, with five coherent rays and the forefoot-pain vignette, supports the Freiberg teaching pattern. No exact Smillie stage, clinical laterality, or treatment response is established.",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "The second metatarsal head is flattened, sclerotic and irregular.",
+        "observed": "Second metatarsal head conspicuously flattened, dense and irregular.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Changes centre on the second metatarsophalangeal joint rather than the shaft.",
+        "observed": "Abnormality centres on the second MTP articulation.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The remaining four rays are coherent without matching destructive lesions.",
+        "observed": "Five coherent rays; other metatarsal heads lack a matching destructive abnormality.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "e41af075594bc9c48da4fbd81e21235cb975eb7a33783d4dc55db3f3f1e1fc14",
+    "reviewedAt": "2026-09-30T22:51:01.744Z",
+    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+  }
+}

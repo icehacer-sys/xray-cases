@@ -1,0 +1,121 @@
+{
+  "diagnosis": "Pancoast tumour pattern",
+  "aliases": [
+    "Pancoast tumor",
+    "superior sulcus tumour",
+    "superior sulcus tumor"
+  ],
+  "symptom": "persistent shoulder pain spreading down the arm",
+  "whatYouSee": "An irregular right apical mass abutting the chest wall.",
+  "whyItMatters": "A superior sulcus tumour can affect nearby nerves. The film raises suspicion; it cannot establish histology.",
+  "treatment": "Urgent CT, tissue diagnosis, and staging; treatment depends on resectability and tumour type.",
+  "takeaway": "Persistent shoulder symptoms may have a thoracic cause.",
+  "folder": "00181-pancoast",
+  "hook": "An irregular right apical mass abutting the chest wall.",
+  "captionSymptom": "persistent shoulder pain spreading down the arm",
+  "teaser": "And the picture told a very different story",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-02T19:00:00Z",
+  "cta": "collection",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Apical infection",
+      "Other apical lung mass"
+    ]
+  },
+  "stages": {},
+  "condition": {
+    "diagnosis": "Pancoast tumour pattern",
+    "aliases": [
+      "Pancoast tumor",
+      "superior sulcus tumour",
+      "superior sulcus tumor"
+    ],
+    "symptom": "persistent shoulder pain spreading down the arm",
+    "view": "PA chest radiograph including both lung apices, clavicles, ribs, diaphragms and costophrenic angles",
+    "keyFindings": "A unilateral irregular soft-tissue mass at the right lung apex abutting the chest wall. The left apex is clear. No unrelated dominant lesion.",
+    "requiredObservations": [
+      "There is a unilateral right apical soft-tissue mass.",
+      "The right apical mass abuts the adjacent chest wall. No claim of bone erosion, proven invasion, histology or stage.",
+      "Remaining visible thoracic anatomy is coherent without another dominant mass."
+    ],
+    "whatYouSee": "An irregular right apical mass abutting the chest wall.",
+    "whyItMatters": "A superior sulcus tumour can affect nearby nerves. The film raises suspicion; it cannot establish histology.",
+    "treatment": "Urgent CT, tissue diagnosis, and staging; treatment depends on resectability and tumour type.",
+    "takeaway": "Persistent shoulder symptoms may have a thoracic cause.",
+    "ageBand": "middle-aged",
+    "sources": [
+      "https://www.cancer.gov/types/lung/hp/non-small-cell-lung-treatment-pdq"
+    ],
+    "hook": "An irregular right apical mass abutting the chest wall.",
+    "captionSymptom": "persistent shoulder pain spreading down the arm",
+    "igTitle": "Pancoast tumour pattern",
+    "igOptions": [
+      "Pancoast tumour pattern",
+      "Lobar pneumonia",
+      "Pneumothorax"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.579954Z"
+  },
+  "generated": {
+    "threadsCaption": "A patient with persistent shoulder pain spreading down the arm.\n\nThen the X-ray loaded 😭\n\nAnd the picture told a very different story.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Pancoast tumour pattern\n\n👀 What you see:\nAn irregular right apical mass abutting the chest wall.\n\n🦴 Why it matters:\nA superior sulcus tumour can affect nearby nerves. The film raises suspicion; it cannot establish histology.\n\n💊 Treatment:\nUrgent CT, tissue diagnosis, and staging; treatment depends on resectability and tumour type.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-30T21:36:53.312Z"
+  },
+  "imageApproval": {
+    "sha256": "d088eeb38e73ebe016f737087129af499c1803c1ed376944ae95847c8fafefad",
+    "conditionSha256": "4baa73b90aedd783cd0924e7b1002e3f231b198ac04dc344517b6f65ec873330",
+    "clinicalContextSha256": "f47e7ae600cfe00a22b6193db114cc76e5625a639ce372699ec7e950b9a5520f",
+    "verifiedAt": "2026-09-30T22:51:01.744Z",
+    "model": "Codex local context-aware review",
+    "verifierVersion": "4",
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The visibly irregular apical mass contacting the chest wall with the hypothetical shoulder/arm-pain vignette supports a suspicious Pancoast/superior-sulcus tumour pattern as the intended teaching answer. This is not proof of malignancy, rib erosion, nerve or chest-wall invasion, histology, or stage. Apical infection and other masses remain alternatives.",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "There is a unilateral right apical soft-tissue mass.",
+        "observed": "Irregular mass-like opacity occupies the right apex (viewer left).",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The right apical mass abuts the adjacent chest wall. No claim of bone erosion, proven invasion, histology or stage.",
+        "observed": "Visible mass contacts the chest wall; erosion and invasion are not established.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Remaining visible thoracic anatomy is coherent without another dominant mass.",
+        "observed": "Opposite apex is clear and visible thoracic anatomy coherent; no other dominant mass is evident.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "2884681477a0bd2334904bb38aff86189d7e74eb871a8c894595076bd80ba905",
+    "reviewedAt": "2026-09-30T22:51:01.744Z",
+    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+  }
+}

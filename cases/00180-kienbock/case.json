@@ -1,0 +1,119 @@
+{
+  "diagnosis": "Kienböck disease",
+  "aliases": [
+    "Kienbock disease",
+    "lunate osteonecrosis"
+  ],
+  "symptom": "persistent wrist pain, stiffness and a weakening grip",
+  "whatYouSee": "A dense, flattened, irregular lunate in the centre of the wrist.",
+  "whyItMatters": "Loss of blood supply damages this carpal bone; collapse can disrupt wrist mechanics.",
+  "treatment": "Stage-dependent hand-surgery review: protection early; reconstructive or salvage options later.",
+  "takeaway": "A collapsed lunate deserves more than a sprain label.",
+  "folder": "00180-kienbock",
+  "hook": "A dense, flattened, irregular lunate in the centre of the wrist.",
+  "captionSymptom": "persistent wrist pain with stiffness and a weakening grip",
+  "teaser": "And suddenly the symptom made a lot more sense",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-01T19:00:00Z",
+  "cta": "hopital",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Scaphoid fracture",
+      "Septic arthritis"
+    ]
+  },
+  "stages": {},
+  "condition": {
+    "diagnosis": "Kienböck disease",
+    "aliases": [
+      "Kienbock disease",
+      "lunate osteonecrosis"
+    ],
+    "symptom": "persistent wrist pain, stiffness and a weakening grip",
+    "view": "PA right wrist, including distal radius and ulna, all eight carpal bones and proximal metacarpals",
+    "keyFindings": "Sclerosis, loss of height and irregular fragmentation confined to the lunate, with early carpal malalignment. Preserve the remaining carpal bones as individual coherent structures. No acute fracture line or surgical hardware.",
+    "requiredObservations": [
+      "The lunate is abnormally dense and collapsed.",
+      "Lunate contour is irregular with fragmentation, rather than an acute isolated fracture.",
+      "Surrounding carpal anatomy is coherent with no duplicated bones."
+    ],
+    "whatYouSee": "A dense, flattened, irregular lunate in the centre of the wrist.",
+    "whyItMatters": "Loss of blood supply damages this carpal bone; collapse can disrupt wrist mechanics.",
+    "treatment": "Stage-dependent hand-surgery review: protection early; reconstructive or salvage options later.",
+    "takeaway": "A collapsed lunate deserves more than a sprain label.",
+    "ageBand": "young-adult",
+    "sources": [
+      "https://www.orthoinfo.org/diseases--conditions/kienbocks-disease/"
+    ],
+    "hook": "A dense, flattened, irregular lunate in the centre of the wrist.",
+    "captionSymptom": "persistent wrist pain with stiffness and a weakening grip",
+    "igTitle": "Kienböck disease",
+    "igOptions": [
+      "Kienböck disease",
+      "Scaphoid fracture",
+      "Septic arthritis"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.574952Z"
+  },
+  "generated": {
+    "threadsCaption": "A patient with persistent wrist pain, stiffness, and a weakening grip.\n\nThen the X-ray loaded 😭\n\nAnd suddenly the symptom made a lot more sense.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Kienböck disease\n\n👀 What you see:\nA dense, flattened, irregular lunate in the centre of the wrist.\n\n🦴 Why it matters:\nLoss of blood supply damages this carpal bone; collapse can disrupt wrist mechanics.\n\n💊 Treatment:\nStage-dependent hand-surgery review: protection early; reconstructive or salvage options later.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-30T21:17:11.645Z"
+  },
+  "imageApproval": {
+    "sha256": "f626ebabcf27007934ddeff92ce68844e5de47ac8fa253d9cba29d4238f2d11d",
+    "conditionSha256": "0986184568c167e378e5261f32f4db12c8c7b350ed2094f9e2fb3e051cec232d",
+    "clinicalContextSha256": "5c6a2b00d76381040cf46c359f1f828b202d80da3f118042bfebe15aeb91a1eb",
+    "verifiedAt": "2026-09-30T22:51:01.744Z",
+    "model": "Codex local context-aware review",
+    "verifierVersion": "4",
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The dense collapsed irregular lunate pattern with wrist pain supports Kienbock as the intended illustrative answer. No specific stage, cause in this hypothetical individual, or outcome is established; adjacent mottling does not supply concrete evidence of impossible anatomy.",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "The lunate is abnormally dense and collapsed.",
+        "observed": "Dense collapsed central proximal carpal structure in the lunate region.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Lunate contour is irregular with fragmentation, rather than an acute isolated fracture.",
+        "observed": "Irregular fragmented contour supports the intended collapse pattern.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "Surrounding carpal anatomy is coherent with no duplicated bones.",
+        "observed": "Surrounding wrist/hand structures have no concrete duplicated-bone impossibility; adjacent mottling limits detailed boundaries.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "e8753696df2ec6918f24bfc9eae0b10108730d7b23923b83ac59411283d7a2f1",
+    "reviewedAt": "2026-09-30T22:51:01.744Z",
+    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+  }
+}

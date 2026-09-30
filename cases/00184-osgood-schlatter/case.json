@@ -1,0 +1,120 @@
+{
+  "diagnosis": "Osgood-Schlatter disease",
+  "aliases": [
+    "Osgood Schlatter disease",
+    "tibial tubercle traction apophysitis"
+  ],
+  "symptom": "pain below the kneecap during running and jumping, without a sudden injury",
+  "whatYouSee": "A prominent, fragmented tibial tubercle with local swelling.",
+  "whyItMatters": "In this activity-related vignette, it supports traction apophysitis. Fragmentation alone can be a normal variant.",
+  "treatment": "Activity modification, stretching, and symptom relief; most cases settle with skeletal maturity.",
+  "takeaway": "History matters: an irregular growth centre alone is not a diagnosis.",
+  "folder": "00184-osgood-schlatter",
+  "hook": "A prominent, fragmented tibial tubercle with local swelling.",
+  "captionSymptom": "pain below the kneecap during running and jumping, without a sudden injury",
+  "teaser": "And nobody in the room said a word",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-05T19:00:00Z",
+  "cta": "vol1",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Tibial tubercle avulsion",
+      "Patellar fracture"
+    ]
+  },
+  "stages": {},
+  "condition": {
+    "diagnosis": "Osgood-Schlatter disease",
+    "aliases": [
+      "Osgood Schlatter disease",
+      "tibial tubercle traction apophysitis"
+    ],
+    "symptom": "pain below the kneecap during running and jumping, without a sudden injury",
+    "view": "Lateral adolescent knee radiograph including distal femur, patella, proximal tibia, tibial tubercle and proximal fibula, ending well below the tubercle and far above the groin",
+    "keyFindings": "Prominent irregular fragmented tibial tubercle apophysis with localized overlying soft-tissue swelling at the patellar-tendon insertion. Adolescent open physes; intact extensor-mechanism alignment. No displaced tibial-tubercle avulsion, patellar fracture or destructive lesion. Use realistic lateral femoral-condyle superimposition.",
+    "requiredObservations": [
+      "Fragmentation and prominence are localized to the tibial tubercle apophysis.",
+      "There is overlying focal soft-tissue swelling with no displaced acute avulsion.",
+      "The skeleton is adolescent and the surrounding knee anatomy is coherent."
+    ],
+    "whatYouSee": "A prominent, fragmented tibial tubercle with local swelling.",
+    "whyItMatters": "In this activity-related vignette, it supports traction apophysitis. Fragmentation alone can be a normal variant.",
+    "treatment": "Activity modification, stretching, and symptom relief; most cases settle with skeletal maturity.",
+    "takeaway": "History matters: an irregular growth centre alone is not a diagnosis.",
+    "ageBand": "adolescent",
+    "sources": [
+      "https://www.orthoinfo.org/diseases--conditions/osgood-schlatter-disease-knee-pain/"
+    ],
+    "hook": "A prominent, fragmented tibial tubercle with local swelling.",
+    "captionSymptom": "pain below the kneecap during running and jumping, without a sudden injury",
+    "igTitle": "Osgood-Schlatter disease",
+    "igOptions": [
+      "Osgood-Schlatter disease",
+      "Tibial tubercle avulsion",
+      "Patellar fracture"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.585954Z",
+    "anatomyException": "The tibial tubercle apophysis has localized fragmentation; the rest of the age-appropriate growth plates and bones are coherent."
+  },
+  "generated": {
+    "threadsCaption": "A patient with pain below the kneecap during running and jumping, without a sudden injury.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Osgood-Schlatter disease\n\n👀 What you see:\nA prominent, fragmented tibial tubercle with local swelling.\n\n🦴 Why it matters:\nIn this activity-related vignette, it supports traction apophysitis. Fragmentation alone can be a normal variant.\n\n💊 Treatment:\nActivity modification, stretching, and symptom relief; most cases settle with skeletal maturity.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-30T21:31:13.911Z"
+  },
+  "imageApproval": {
+    "sha256": "b7e4058b19174ee501335812cd048d8fea405ed006539189d97b5322faa616cc",
+    "conditionSha256": "ecba4b6263049e824318073b8561eb0299fcfcdc6d47f83c601e51b448465983",
+    "clinicalContextSha256": "e793199601e6ac70cd7a8e5825d57da30eb367c76d8ada9b76b03b39d6fe135b",
+    "verifiedAt": "2026-09-30T22:51:01.744Z",
+    "model": "Codex local context-aware review",
+    "verifierVersion": "4",
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A prominent fragmented tibial tubercle with local swelling in an immature knee and activity-related symptoms without sudden injury supports Osgood-Schlatter as the illustrative answer. Fragmentation alone may be a normal variant and diagnosis remains clinical; the image does not exclude every injury.",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Fragmentation and prominence are localized to the tibial tubercle apophysis.",
+        "observed": "Fragmentation and prominence at the tibial tubercle.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "There is overlying focal soft-tissue swelling with no displaced acute avulsion.",
+        "observed": "Focal overlying swelling; no large displaced acute tubercle-avulsion fragment is visible.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The skeleton is adolescent and the surrounding knee anatomy is coherent.",
+        "observed": "Immature lateral knee with visible physes and coherent surrounding bones.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "1f2cb7186be058cda8f8368247d93a554ef492a514f5053865bb479f3c6fe5d0",
+    "reviewedAt": "2026-09-30T22:51:01.744Z",
+    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+  }
+}

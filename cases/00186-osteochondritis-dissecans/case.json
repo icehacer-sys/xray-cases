@@ -1,0 +1,119 @@
+{
+  "diagnosis": "Osteochondritis dissecans",
+  "aliases": [
+    "juvenile osteochondritis dissecans",
+    "OCD of the knee"
+  ],
+  "symptom": "knee pain and intermittent swelling after sport",
+  "whatYouSee": "A rimmed subchondral lesion in the medial femoral condyle.",
+  "whyItMatters": "The underlying bone and overlying cartilage are at risk. This film does not establish fragment stability.",
+  "treatment": "MRI and orthopaedic assessment guide care: activity modification for stable juvenile lesions; surgery when indicated.",
+  "takeaway": "A visible fragment is not automatically an unstable one.",
+  "folder": "00186-osteochondritis-dissecans",
+  "hook": "A rimmed subchondral lesion in the medial femoral condyle.",
+  "captionSymptom": "knee pain and intermittent swelling after sport",
+  "teaser": "And the answer was hiding in plain sight",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-07T19:00:00Z",
+  "cta": "hopital",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Acute condylar fracture",
+      "Osgood-Schlatter disease"
+    ]
+  },
+  "stages": {},
+  "condition": {
+    "diagnosis": "Osteochondritis dissecans",
+    "aliases": [
+      "juvenile osteochondritis dissecans",
+      "OCD of the knee"
+    ],
+    "symptom": "knee pain and intermittent swelling after sport",
+    "view": "Frontal bilateral knee comparison radiograph including both distal femora, both proximal tibiae and fibulae, and both intercondylar regions. No clinical laterality or fragment stability is inferred.",
+    "keyFindings": "A localized subchondral osteochondral lesion at the lateral aspect of the medial femoral condyle near the intercondylar notch, with a thin lucent margin and surrounding sclerosis. The fragment remains in its donor bed. No loose body, acute displaced fracture or additional lesion. Preserve adolescent anatomy and coherent projection.",
+    "requiredObservations": [
+      "A circumscribed subchondral lesion lies at the lateral aspect of the medial femoral condyle.",
+      "There is a lucent margin with surrounding sclerosis and the fragment remains in its bed.",
+      "No free intra-articular body or unrelated destructive lesion is visible."
+    ],
+    "whatYouSee": "A rimmed subchondral lesion in the medial femoral condyle.",
+    "whyItMatters": "The underlying bone and overlying cartilage are at risk. This film does not establish fragment stability.",
+    "treatment": "MRI and orthopaedic assessment guide care: activity modification for stable juvenile lesions; surgery when indicated.",
+    "takeaway": "A visible fragment is not automatically an unstable one.",
+    "ageBand": "adolescent",
+    "sources": [
+      "https://www.orthoinfo.org/diseases--conditions/osteochondritis-dissecans/"
+    ],
+    "hook": "A rimmed subchondral lesion in the medial femoral condyle.",
+    "captionSymptom": "knee pain and intermittent swelling after sport",
+    "igTitle": "Osteochondritis dissecans",
+    "igOptions": [
+      "Osteochondritis dissecans",
+      "Acute condylar fracture",
+      "Osgood-Schlatter disease"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.589951Z"
+  },
+  "generated": {
+    "threadsCaption": "A patient with knee pain and intermittent swelling after sport.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Osteochondritis dissecans\n\n👀 What you see:\nA rimmed subchondral lesion in the medial femoral condyle.\n\n🦴 Why it matters:\nThe underlying bone and overlying cartilage are at risk. This film does not establish fragment stability.\n\n💊 Treatment:\nMRI and orthopaedic assessment guide care: activity modification for stable juvenile lesions; surgery when indicated.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-09-30T21:35:24.503Z"
+  },
+  "imageApproval": {
+    "sha256": "aef771ec644cf4d7e19587955d53a3ea879b1764b91b8d76668c3f2f7bef4861",
+    "conditionSha256": "d9b739e7d714e566b2cdac79007f65968f5384617db1b0f85f3c223cb23e2e3e",
+    "clinicalContextSha256": "0f3598934ab59aced1c985022e0bd3a39cfe9d74dbe22140c0d5bd761e696ae0",
+    "verifiedAt": "2026-09-30T22:51:01.744Z",
+    "model": "Codex local context-aware review",
+    "verifierVersion": "4",
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The rimmed subchondral lesion at the medial femoral condyle near the notch in a frontal bilateral comparison supports osteochondritis dissecans as the illustrative answer. The lesion remains in the condylar region; this does not establish stability, cartilage integrity, clinical side, or an arthroscopy outcome.",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "A circumscribed subchondral lesion lies at the lateral aspect of the medial femoral condyle.",
+        "observed": "Rimmed subchondral lesion at the lateral portion of the medial condyle of the viewer-left knee.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "There is a lucent margin with surrounding sclerosis and the fragment remains in its bed.",
+        "observed": "Lucent margin and surrounding density; lesion remains within the condylar region, without determining stability.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "No free intra-articular body or unrelated destructive lesion is visible.",
+        "observed": "Bilateral comparison; no free intra-articular body or another dominant destructive lesion is evident.",
+        "assessable": true,
+        "matches": true
+      }
+    ]
+  },
+  "contentReview": {
+    "sha256": "77c9fd415c5b30a7ed49539a2f5d19bc685b34443c7ced8978e3b233d4e69735",
+    "reviewedAt": "2026-09-30T22:51:01.744Z",
+    "reviewer": "Codex local context-aware image and copy review; not human clinician, blind read, or clinical certification"
+  }
+}
