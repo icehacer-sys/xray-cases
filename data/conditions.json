@@ -3459,7 +3459,8 @@
     "requiredObservations": [
       "dense lumpy chalk-like calcified deposits in the soft tissues around several finger joints and fingertips with clumps clustered over the interphalangeal joints while every finger bone keeps its normal shape and count",
       "The visible anatomy matches the requested PA hand and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Acute pulmonary oedema",
@@ -3495,7 +3496,8 @@
     "requiredObservations": [
       "dense fluffy airspace shadowing fanning out from both hila across the central lungs in a symmetric bat-wing shape with relative sparing of the outer lung edges and an enlarged heart shadow",
       "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Tension pneumothorax",
@@ -3503,12 +3505,12 @@
       "tension ptx",
       "tension pneumothorax with mediastinal shift"
     ],
-    "symptom": "sudden sharp chest pain and getting more and more short of breath",
+    "symptom": "sudden sharp chest pain and worsening breathlessness",
     "hook": "one lung vanished and the heart was shoved to the other side",
     "view": "AP chest",
     "ageBand": "young-adult",
     "keyFindings": "a large right pneumothorax with a completely black right hemithorax without lung markings and a small collapsed right lung near the hilum with the trachea and mediastinum pushed to the left and a flattened depressed right hemidiaphragm",
-    "whatYouSee": "One side of the chest is black with no lung markings. The collapsed lung sits near the middle and the heart and windpipe are pushed away.",
+    "whatYouSee": "One side of the chest is black with no lung markings and the collapsed lung has shrunk toward the middle.",
     "whyItMatters": "Air keeps entering the pleural space but cannot leave. The rising pressure pushes the mediastinum across and can stop blood returning to the heart.",
     "treatment": "This is an emergency treated at once with needle decompression followed by a chest drain.",
     "takeaway": "Tension pneumothorax is a clinical diagnosis and treatment should not wait for an X-ray.",
@@ -3529,7 +3531,8 @@
     "requiredObservations": [
       "a large right pneumothorax with a completely black right hemithorax without lung markings and a small collapsed right lung near the hilum with the trachea and mediastinum pushed to the left and a flattened depressed right hemidiaphragm",
       "The visible anatomy matches the requested AP chest and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Acute epiglottitis",
@@ -3563,7 +3566,8 @@
     "requiredObservations": [
       "a swollen rounded thumb-shaped epiglottis bulging into the airway above the larynx with thickened aryepiglottic folds and a narrowed upper airway",
       "The visible anatomy matches the requested lateral soft-tissue neck and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Hydropneumothorax",
@@ -3595,7 +3599,8 @@
     "requiredObservations": [
       "a left pleural collection with a perfectly straight horizontal air-fluid level across the lower left hemithorax with dark air and no lung markings above the level and a partly collapsed left lung while the right lung is normal",
       "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Massive haemothorax",
@@ -3630,7 +3635,8 @@
     "requiredObservations": [
       "a dense white-out of the entire right hemithorax from a large haemothorax with a small bright metallic bullet projected over the right lower chest near the thoracoabdominal junction and a normally aerated left lung",
       "The visible anatomy matches the requested AP chest and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   },
   {
     "diagnosis": "Nephrocalcinosis",
@@ -3638,7 +3644,7 @@
       "medullary nephrocalcinosis",
       "renal calcinosis"
     ],
-    "symptom": "passing a lot of urine at night",
+    "symptom": "frequent trips to the bathroom at night",
     "hook": "both kidneys were full of sand",
     "view": "AP upper abdomen centred on both kidneys and cropped above the pelvis",
     "ageBand": "middle-aged",
@@ -3662,6 +3668,7 @@
     "requiredObservations": [
       "dense clusters of fine stippled calcification filling the medulla of both kidneys in a symmetric pattern so each kidney outline is studded with sand-like specks",
       "The visible anatomy matches the requested AP upper abdomen centred on both kidneys and cropped above the pelvis and the declared age and anatomical exceptions."
-    ]
+    ],
+    "used": true
   }
 ]

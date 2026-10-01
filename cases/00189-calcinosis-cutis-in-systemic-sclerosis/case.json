@@ -1,0 +1,132 @@
+{
+  "folder": "00189-calcinosis-cutis-in-systemic-sclerosis",
+  "number": 189,
+  "diagnosis": "Calcinosis cutis in systemic sclerosis",
+  "aliases": [
+    "calcinosis cutis",
+    "scleroderma calcinosis",
+    "systemic sclerosis calcinosis",
+    "CREST calcinosis",
+    "scleroderma"
+  ],
+  "symptom": "fingers that kept turning white and numb in the cold",
+  "hook": "the fingers were packed with lumps of chalk",
+  "whatYouSee": "Dense lumps of calcium sit in the soft tissue around the finger joints and fingertips.",
+  "whyItMatters": "Systemic sclerosis can deposit calcium in the skin and soft tissue of the hands. Other hand X-ray findings include acro-osteolysis, joint erosions, and periarticular osteoporosis.",
+  "treatment": "Care is led by rheumatology and targets the underlying systemic sclerosis. Painful deposits are sometimes removed surgically.",
+  "takeaway": "Chalky lumps around the fingers should prompt a look for systemic sclerosis.",
+  "igOptions": [
+    "A. Calcinosis cutis in systemic sclerosis",
+    "B. Gouty tophi",
+    "C. Enchondromas"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-03T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T22:23:57.753Z"
+  },
+  "condition": {
+    "diagnosis": "Calcinosis cutis in systemic sclerosis",
+    "aliases": [
+      "calcinosis cutis",
+      "scleroderma calcinosis",
+      "systemic sclerosis calcinosis",
+      "CREST calcinosis",
+      "scleroderma"
+    ],
+    "symptom": "fingers that kept turning white and numb in the cold",
+    "hook": "the fingers were packed with lumps of chalk",
+    "view": "PA hand",
+    "ageBand": "middle-aged",
+    "keyFindings": "dense lumpy chalk-like calcified deposits in the soft tissues around several finger joints and fingertips with clumps clustered over the interphalangeal joints while every finger bone keeps its normal shape and count",
+    "whatYouSee": "Dense lumps of calcium sit in the soft tissue around the finger joints and fingertips.",
+    "whyItMatters": "Systemic sclerosis can deposit calcium in the skin and soft tissue of the hands. Other hand X-ray findings include acro-osteolysis, joint erosions, and periarticular osteoporosis.",
+    "treatment": "Care is led by rheumatology and targets the underlying systemic sclerosis. Painful deposits are sometimes removed surgically.",
+    "takeaway": "Chalky lumps around the fingers should prompt a look for systemic sclerosis.",
+    "igTitle": "THE CHALK FINGERS",
+    "igOptions": [
+      "Calcinosis cutis in systemic sclerosis",
+      "Gouty tophi",
+      "Enchondromas"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC-2 [138] Rheumatology imaging 2025-2026, original pages 26-30 (scleroderma hand X-ray findings)"
+    ],
+    "referenceImage": "calcinosis.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "dense lumpy chalk-like calcified deposits in the soft tissues around several finger joints and fingertips with clumps clustered over the interphalangeal joints while every finger bone keeps its normal shape and count",
+      "The visible anatomy matches the requested PA hand and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "0856ae1f89be15dbe827e2686c07ae9a8f4133987cbb25031fd1608b32dcdf47",
+    "conditionSha256": "be0a49d5deaee96c88e53e388f1ee6e6eaf22a2749e870902a84758dbd82a4a8",
+    "clinicalContextSha256": "8342fa8c062bdd26fd2fc5ccf9acc7165092caa45f35ac7b0dd361fe8e2da71b",
+    "verifiedAt": "2026-10-01T22:23:57.758Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Image does not support a sufficiently distinct teaching answer: The image shows diffuse periarticular lobulated amorphous calcific deposits at virtually every IP and MCP joint of all five digits, including fingertip tufts. The morphology is fluffy and chalk-like, consistent with calcinosis cutis in systemic sclerosis given the clinical vignette of Raynaud's phenomenon (fingers turning white and numb in the cold), which is a hallmark feature of systemic sclerosis. However, tophaceous gout produces an identical radiographic appearance — multiple periarticular lobulated calcified masses at IP and MCP joints — and cannot be excluded on imaging alone without serum urate levels or synovial fluid analysis. The Raynaud's history increases the prior probability of systemic sclerosis substantially, but the radiographic pattern alone does not discriminate between these two diagnoses. The visible discriminator favouring systemic sclerosis is the clinical context of Raynaud's phenomenon rather than any purely visible radiographic feature, so singleAnswerSupported is false on imaging alone, though the vignette tips the balance toward systemic sclerosis."
+    ],
+    "blindRead": {
+      "findings": [
+        "Posteroanterior (PA) projection of the right hand, fingers extended and slightly spread",
+        "Multiple bilateral periarticular soft-tissue densities with irregular, lobulated, cloud-like calcific deposits clustered around virtually every interphalangeal joint (proximal and distal) of all five digits, as well as the metacarpophalangeal joints; the deposits are most prominent at the fingertip tufts and PIP joints",
+        "The calcific deposits have a 'fluffy' or 'chalky' amorphous morphology rather than the smooth, dense appearance of dystrophic or vascular calcification",
+        "Underlying cortical bone contours are largely preserved at this level of assessment; no obvious gross destructive lytic or sclerotic osseous lesion is identified beyond periarticular changes",
+        "Joint spaces appear relatively maintained in most locations, though several PIP joints show mild narrowing",
+        "No obvious fracture or dislocation",
+        "Thumb interphalangeal joint and MCP joint also show periarticular calcific deposits",
+        "Distal phalangeal tufts show some irregular density consistent with soft-tissue calcification at the fingertips"
+      ],
+      "differential": [
+        "Tophaceous gout: multiple periarticular amorphous/lobulated calcified tophi at virtually every IP and MCP joint is the most characteristic appearance; distribution and morphology are highly consistent",
+        "Calcium pyrophosphate dihydrate (CPPD) deposition disease: can produce periarticular calcifications, though classically chondrocalcinosis in fibrocartilage/hyaline cartilage; the lobulated soft-tissue deposits here are less typical but possible",
+        "Tumoral calcinosis or hydroxyapatite deposition disease: periarticular cloud-like calcific masses are possible, though the diffuse symmetric multi-joint involvement favors a systemic crystal arthropathy over this diagnosis"
+      ],
+      "anatomyConcerns": [
+        "A second hand is faintly visible overlapping in the background (lower-left), suggesting superimposition of a second extremity or positioning artifact, which does not affect primary diagnostic assessment",
+        "No acquisition or labeling markers visible in the image; laterality assigned based on visual anatomy only"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Image does not support a sufficiently distinct teaching answer: The image shows diffuse periarticular lobulated amorphous calcific deposits at virtually every IP and MCP joint of all five digits, including fingertip tufts. The morphology is fluffy and chalk-like, consistent with calcinosis cutis in systemic sclerosis given the clinical vignette of Raynaud's phenomenon (fingers turning white and numb in the cold), which is a hallmark feature of systemic sclerosis. However, tophaceous gout produces an identical radiographic appearance — multiple periarticular lobulated calcified masses at IP and MCP joints — and cannot be excluded on imaging alone without serum urate levels or synovial fluid analysis. The Raynaud's history increases the prior probability of systemic sclerosis substantially, but the radiographic pattern alone does not discriminate between these two diagnoses. The visible discriminator favouring systemic sclerosis is the clinical context of Raynaud's phenomenon rather than any purely visible radiographic feature, so singleAnswerSupported is false on imaging alone, though the vignette tips the balance toward systemic sclerosis."
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "Would you notice anything odd about these fingers?",
+  "seedHint": "Look at the soft tissue around each knuckle and ask yourself: bone or something else?",
+  "teaser": "And then the X-ray of those fingers changed everything",
+  "generated": {
+    "threadsCaption": "A patient with fingers that kept turning white and numb in the cold.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of those fingers changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with fingers that turned white and went numb in the cold.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of those fingers changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Calcinosis cutis in systemic sclerosis\n\n👀 What you see:\nDense lumps of calcium sit in the soft tissue around the finger joints and fingertips.\n\n🦴 Why it matters:\nSystemic sclerosis can deposit calcium in the skin and soft tissue of the hands.\n\n💊 Treatment:\nCare is led by rheumatology and targets the underlying systemic sclerosis. Painful deposits are sometimes removed surgically.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "b205d86f2bba21b6ac8f325282647fedd5e4d83809c5e588da3a82dbfddb4cc4",
+    "reviewedAt": "2026-10-01T22:33:23.451Z",
+    "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  },
+  "cta": "anxiety",
+  "ownerImageOverride": {
+    "sha256": "0856ae1f89be15dbe827e2686c07ae9a8f4133987cbb25031fd1608b32dcdf47",
+    "approvedAt": "2026-10-01T22:33:23.451Z",
+    "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  }
+}

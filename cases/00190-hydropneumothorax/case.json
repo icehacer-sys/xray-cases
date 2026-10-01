@@ -1,0 +1,128 @@
+{
+  "folder": "00190-hydropneumothorax",
+  "number": 190,
+  "diagnosis": "Hydropneumothorax",
+  "aliases": [
+    "hydro-pneumothorax",
+    "pneumohydrothorax"
+  ],
+  "symptom": "breathlessness and a dry cough that would not settle",
+  "hook": "there was a fish tank water line inside the chest",
+  "whatYouSee": "A ruler straight horizontal fluid line sits in one side of the chest with black air above it.",
+  "whyItMatters": "Air and fluid have both collected in the pleural space so the fluid surface lies perfectly flat. The cause is found with imaging and analysis of the pleural fluid.",
+  "treatment": "Treatment targets the cause and usually involves draining the pleural space with a chest tube.",
+  "takeaway": "A straight fluid level in the chest means air and fluid are both in the pleural space.",
+  "igOptions": [
+    "A. Hydropneumothorax",
+    "B. Pleural effusion",
+    "C. Lung abscess"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-04T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T22:24:38.085Z"
+  },
+  "condition": {
+    "diagnosis": "Hydropneumothorax",
+    "aliases": [
+      "hydro-pneumothorax",
+      "pneumohydrothorax"
+    ],
+    "symptom": "breathlessness and a dry cough that would not settle",
+    "hook": "there was a fish tank water line inside the chest",
+    "view": "PA chest",
+    "ageBand": "middle-aged",
+    "keyFindings": "a left pleural collection with a perfectly straight horizontal air-fluid level across the lower left hemithorax with dark air and no lung markings above the level and a partly collapsed left lung while the right lung is normal",
+    "whatYouSee": "A ruler straight horizontal fluid line sits in one side of the chest with black air above it.",
+    "whyItMatters": "Air and fluid have both collected in the pleural space so the fluid surface lies perfectly flat. The cause is found with imaging and analysis of the pleural fluid.",
+    "treatment": "Treatment targets the cause and usually involves draining the pleural space with a chest tube.",
+    "takeaway": "A straight fluid level in the chest means air and fluid are both in the pleural space.",
+    "igTitle": "THE FISH TANK CHEST",
+    "igOptions": [
+      "Hydropneumothorax",
+      "Pleural effusion",
+      "Lung abscess"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 11-Pleura (117) LGW 2025-2026, original pages 4-28 (image on page 19)"
+    ],
+    "referenceImage": "hydropneumothorax.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a left pleural collection with a perfectly straight horizontal air-fluid level across the lower left hemithorax with dark air and no lung markings above the level and a partly collapsed left lung while the right lung is normal",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "3d6e7c83e1f973d14cdd72ef3257068bc31c2ca6acb6ae90edd09d7bfcb22c4f",
+    "conditionSha256": "b186beb737f7be5e48d7c50fd2a56fd7df6069e32559b7f8714c32e6cc6350d5",
+    "clinicalContextSha256": "5990498dda894f559e25fd459653f9bde2376c0364c5f3c9daa4adfd7807a72a",
+    "verifiedAt": "2026-10-01T22:24:38.092Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"No horizontal air-fluid level is visible in the left hemithorax; the left lower zone opacity has a curved superior margin consistent with pleural effusion rather than a straight horizontal air-fluid level that would indicate hydropneumothorax\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph based on visible clavicles, scapulae, and symmetrical rib configuration",
+        "Large homogeneous opacification occupying the entire left lower zone and extending into the left mid zone, with an abrupt superior margin and complete opacification of the left costophrenic angle, consistent with a large left-sided pleural effusion",
+        "The left hemidiaphragm is not visible; the right hemidiaphragm and right costophrenic angle are sharp and clearly defined",
+        "The mediastinum appears shifted slightly to the right, suggesting mass effect from the left-sided collection",
+        "The right lung demonstrates increased bronchovascular markings, particularly in the right lower and mid zones, with no focal consolidation or pleural effusion on the right",
+        "The cardiac silhouette is partially obscured on the left; the right heart border is visible",
+        "The trachea appears midline to mildly rightward deviated",
+        "No visible rib fractures, pneumothorax, or gross bony abnormality on the right; left shoulder and humeral head are intact",
+        "The left upper lobe appears aerated and relatively clear"
+      ],
+      "differential": [
+        "Large left pleural effusion (transudative or exudative etiology, e.g., heart failure, malignancy, parapneumonic/empyema)",
+        "Left lower lobe collapse with associated pleural effusion (combined atelectasis and fluid)",
+        "Left hemithorax opacification secondary to malignant pleural disease with effusion (e.g., mesothelioma, metastatic pleural involvement)"
+      ],
+      "anatomyConcerns": [
+        "Mediastinal shift to the right is present, which is consistent with a large space-occupying left pleural effusion rather than an impossible anatomical finding",
+        "The left lung parenchyma in the lower two-thirds is not assessable due to the overlying effusion opacity",
+        "Right-sided bronchovascular markings are prominent, which could reflect compensatory over-inflation or underlying vascular congestion and should be interpreted cautiously without clinical context"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"No horizontal air-fluid level is visible in the left hemithorax; the left lower zone opacity has a curved superior margin consistent with pleural effusion rather than a straight horizontal air-fluid level that would indicate hydropneumothorax\"]"
+  ],
+  "difficulty": 2,
+  "laypersonQuestion": "What does that flat line inside the chest remind you of?",
+  "seedHint": "Look at that dead-straight horizontal line and ask yourself what makes a line that perfect inside a body.",
+  "teaser": "And then the X-ray stopped everyone mid-breath",
+  "generated": {
+    "threadsCaption": "A patient with breathlessness and a dry cough that would not settle.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray stopped everyone mid-breath.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a dry cough that would not settle and some breathlessness that seemed easy enough to explain away.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray stopped everyone mid-breath.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Hydropneumothorax\n\n👀 What you see:\nA ruler straight horizontal fluid line sits in one side of the chest with black air above it.\n\n🦴 Why it matters:\nAir and fluid have both collected in the pleural space so the fluid surface lies perfectly flat. The cause is found with imaging and analysis of the pleural fluid.\n\n💊 Treatment:\nTreatment targets the cause and usually involves draining the pleural space with a chest tube.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI turned it into The Hopital Challenge.\n\nLook at the X-ray. Make your guess. Then reveal the answer.\n\nSee how many you get right 👇🏼\nchallenge.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "69aa39f5899579294a214f93b1f53e34881e3117f917f596830c21cf36241536",
+    "reviewedAt": "2026-10-01T22:33:23.451Z",
+    "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  },
+  "cta": "challenge",
+  "ownerImageOverride": {
+    "sha256": "3d6e7c83e1f973d14cdd72ef3257068bc31c2ca6acb6ae90edd09d7bfcb22c4f",
+    "approvedAt": "2026-10-01T22:33:23.451Z",
+    "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  }
+}

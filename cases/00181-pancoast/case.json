@@ -21,10 +21,12 @@
   "igSlides": [],
   "postAt": "2026-10-02T19:00:00Z",
   "cta": "challenge",
-  "approved": true,
-  "needsReview": false,
+  "approved": false,
+  "needsReview": true,
   "source": "generated",
-  "verifyDefects": [],
+  "verifyDefects": [
+    "Owner replaced this week's queue with the atlas-reference batch (2026-10-02). Remove retired to bring it back."
+  ],
   "diagnosticContext": {
     "certainty": "illustrative",
     "confirmationEvidence": [],
@@ -117,5 +119,6 @@
     "sha256": "160f083244b6dcb351558011e3d3167b572e9077b5225d9b19cddbf19e33e6ac",
     "reviewedAt": "2026-10-01T11:26:43Z",
     "reviewer": "Codex cloud CTA-only factual/copy review against confirmed live Challenge mechanics; underlying clinical/image review retained unchanged; not clinical certification"
-  }
+  },
+  "retired": true
 }

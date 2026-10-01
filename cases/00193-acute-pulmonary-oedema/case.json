@@ -1,0 +1,145 @@
+{
+  "folder": "00193-acute-pulmonary-oedema",
+  "number": 193,
+  "diagnosis": "Acute pulmonary oedema",
+  "aliases": [
+    "pulmonary oedema",
+    "pulmonary edema",
+    "acute pulmonary edema",
+    "bat wing pulmonary oedema",
+    "cardiogenic pulmonary oedema"
+  ],
+  "symptom": "breathlessness and swollen ankles that got worse over three months",
+  "hook": "a giant bat spread its wings across both lungs",
+  "whatYouSee": "Fluffy white shadowing spreads out from the centre of both lungs in the shape of bat wings.",
+  "whyItMatters": "When a failing heart backs pressure up into the lungs fluid floods the air spaces around both hila. The outer edges are often spared which creates the bat wing shape.",
+  "treatment": "Emergency treatment includes sitting the patient up, oxygen, and IV furosemide. Nitrates and long term heart failure therapy follow depending on the cause.",
+  "takeaway": "Bat wing shadowing around both hila is a classic picture of pulmonary oedema.",
+  "igOptions": [
+    "A. Acute pulmonary oedema",
+    "B. Pneumonia",
+    "C. Sarcoidosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-07T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T22:27:06.796Z"
+  },
+  "condition": {
+    "diagnosis": "Acute pulmonary oedema",
+    "aliases": [
+      "pulmonary oedema",
+      "pulmonary edema",
+      "acute pulmonary edema",
+      "bat wing pulmonary oedema",
+      "cardiogenic pulmonary oedema"
+    ],
+    "symptom": "breathlessness and swollen ankles that got worse over three months",
+    "hook": "a giant bat spread its wings across both lungs",
+    "view": "PA chest",
+    "ageBand": "middle-aged",
+    "keyFindings": "dense fluffy airspace shadowing fanning out from both hila across the central lungs in a symmetric bat-wing shape with relative sparing of the outer lung edges and an enlarged heart shadow",
+    "whatYouSee": "Fluffy white shadowing spreads out from the centre of both lungs in the shape of bat wings.",
+    "whyItMatters": "When a failing heart backs pressure up into the lungs fluid floods the air spaces around both hila. The outer edges are often spared which creates the bat wing shape.",
+    "treatment": "Emergency treatment includes sitting the patient up, oxygen, and IV furosemide. Nitrates and long term heart failure therapy follow depending on the cause.",
+    "takeaway": "Bat wing shadowing around both hila is a classic picture of pulmonary oedema.",
+    "igTitle": "BAT WINGS IN THE LUNGS",
+    "igOptions": [
+      "Acute pulmonary oedema",
+      "Pneumonia",
+      "Sarcoidosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC-1 [039] clinical cardiac cases S T 2 2025-2026, original pages 4-17",
+      "Year 5 lecture ICC1 [080] Basic chest X-ray interpretation 2025-2026, original page 72"
+    ],
+    "referenceImage": "batwing.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "dense fluffy airspace shadowing fanning out from both hila across the central lungs in a symmetric bat-wing shape with relative sparing of the outer lung edges and an enlarged heart shadow",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "d17a5cce8c0cb51bbe5722f8053ef3562587dfbb748673c98a9aea82de53b997",
+    "conditionSha256": "d4c30ca650821c9ffb7d17059ac6e9bdcae5786540905e5a53f20d59ef20d009",
+    "clinicalContextSha256": "e6ca7acee464b2de8d2b0c3b94184804b2306f05a9f51e0824dd4b880d1f38a2",
+    "verifiedAt": "2026-10-01T22:27:06.802Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "dense fluffy airspace shadowing fanning out from both hila across the central lungs in a symmetric bat-wing shape with relative sparing of the outer lung edges and an enlarged heart shadow",
+        "observed": "Bilateral confluent fluffy airspace opacification is present with a clear perihilar and mid-to-lower zone predominance producing a bat-wing or butterfly pattern; the outer lung edges and apices are relatively spared; the cardiac silhouette is enlarged with an increased cardiothoracic ratio; hilar regions are indistinct and prominent consistent with vascular engorgement — all matching the expected finding",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions.",
+        "observed": "PA chest projection confirmed with symmetric ribcage, bilateral clavicles, bilateral scapulae, one heart shadow, two hemidiaphragms, and gastric bubble beneath the left hemidiaphragm; rib pairs appear symmetrical without forking or floating ribs; lung markings branch and taper appropriately; skeletal maturity is consistent with an adult aged 40-59; no lettering, markers or annotations visible",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph",
+        "Bilateral diffuse airspace opacification with a perihilar and mid-to-lower zone predominance, producing a bat-wing or butterfly distribution",
+        "Upper lung zones relatively spared with preserved lung lucency apically",
+        "Cardiac silhouette appears enlarged, cardiothoracic ratio appears increased",
+        "Bilateral hilar regions appear prominent and indistinct, consistent with vascular engorgement",
+        "Pulmonary vascular markings are increased and indistinct bilaterally",
+        "No obvious discrete pleural effusion visible, though costophrenic angles are partially obscured",
+        "No pneumothorax identified",
+        "Bony thorax appears intact without obvious lytic or destructive lesion",
+        "Gastric bubble visible beneath left hemidiaphragm"
+      ],
+      "differential": [
+        "Acute pulmonary edema (cardiogenic), given cardiomegaly and perihilar bat-wing airspace opacification",
+        "Non-cardiogenic pulmonary edema / Acute Respiratory Distress Syndrome (ARDS), given diffuse bilateral airspace disease",
+        "Bilateral pneumonia (multifocal or atypical/viral), given bilateral patchy opacification"
+      ],
+      "anatomyConcerns": [
+        "Patient rotation appears minimal; projection is adequate for assessment",
+        "The perihilar sparing of upper zones with lower and mid-zone predominance is consistent with gravitational redistribution but could also reflect positional or exposure artifact",
+        "Cardiac enlargement should be interpreted with caution if image were AP rather than PA, however image appears consistent with PA technique"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The visible bat-wing perihilar airspace opacification with bilateral mid-to-lower zone predominance, relative upper zone sparing, and an enlarged cardiac silhouette strongly favour cardiogenic pulmonary oedema over ARDS or bilateral pneumonia. The clinical context of progressive breathlessness and ankle swelling over three months supports cardiac failure. ARDS typically lacks cardiomegaly and tends to be more diffuse without hilar predominance. Bilateral pneumonia is possible but the smooth perihilar butterfly distribution and cardiomegaly make oedema the best supported single answer. The independent read raised ARDS and pneumonia as alternatives but ranked cardiogenic oedema first; the clinical vignette resolves the tie in favour of oedema. Anatomy concerns noted by the independent read (minimal rotation, PA technique) are consistent with a genuine PA film and do not undermine the diagnosis."
+  },
+  "difficulty": 2,
+  "laypersonQuestion": "Does this chest look like it belongs to a healthy person?",
+  "seedHint": "Start at the middle and work outward and ask yourself what is spreading.",
+  "teaser": "And the chest told a very different story than the ankles did",
+  "generated": {
+    "threadsCaption": "A patient with breathlessness and swollen ankles that got worse over three months.\n\nThen the X-ray loaded 😭\n\nAnd the chest told a very different story than the ankles did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with ankle swelling and breathlessness that had simply been building for three months.\n\nThen the X-ray loaded 😭\n\nAnd the chest told a very different story than the ankles did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Acute pulmonary oedema\n\n👀 What you see:\nFluffy white shadowing spreads out from the centre of both lungs in the shape of bat wings.\n\n🦴 Why it matters:\nWhen a failing heart backs pressure up into the lungs fluid floods the air spaces around both hila. The outer edges are often spared which creates the bat wing shape.\n\n💊 Treatment:\nEmergency treatment includes sitting the patient up, oxygen, and IV furosemide. Nitrates and long term heart failure therapy follow depending on the cause.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Error: Copy review failed: [\"threadsCaptionAlt contains a dittography error: 'A patient with a patient with ankle swelling...' — the phrase 'a patient with' is duplicated, constituting broken grammar.\"]"
+  ],
+  "cta": "anxiety",
+  "contentReview": {
+    "sha256": "e93b68831cb6ce38982f490a9833344f47478499711cf37269482136f7eb0c71",
+    "reviewedAt": "2026-10-01T22:33:23.451Z",
+    "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  }
+}
