@@ -66,15 +66,16 @@ assert.equal(cardCta.key, "anxiety");
 assert.ok(cardCta.text.includes("Match the patient’s prompt with the most absurd reply."));
 assert.ok(!cardCta.text.includes("flip"));
 assert.deepEqual(copyProblems({ ...good, generated: { ...good.generated, ctaText: challengeCta.text } }), []);
-// Challenge stays on the nights of October 2, 4 and 6. Retiring 00182 (dental, owner rule) moved
-// the later cases up one night, so their CTA keys were swapped to keep those nights.
+// Challenge stays on the nights of October 2, 4 and 6. On 2026-10-02 the owner replaced the week's queue
+// with the atlas-reference batch; the card game keeps October 3, 5 and 7.
 const pinnedWeek = [
   ["00180-kienbock", "2026-10-01", "anxiety"],
-  ["00181-pancoast", "2026-10-02", "challenge"],
-  ["00183-freiberg", "2026-10-03", "anxiety"],
-  ["00184-osgood-schlatter", "2026-10-04", "challenge"],
-  ["00185-calcific-tendinopathy", "2026-10-05", "anxiety"],
-  ["00186-osteochondritis-dissecans", "2026-10-06", "challenge"],
+  ["00188-nephrocalcinosis", "2026-10-02", "challenge"],
+  ["00189-calcinosis-cutis-in-systemic-sclerosis", "2026-10-03", "anxiety"],
+  ["00190-hydropneumothorax", "2026-10-04", "challenge"],
+  ["00191-acute-epiglottitis", "2026-10-05", "anxiety"],
+  ["00192-tension-pneumothorax", "2026-10-06", "challenge"],
+  ["00193-acute-pulmonary-oedema", "2026-10-07", "anxiety"],
 ];
 for (const [folder, date, key] of pinnedWeek) {
   const c = JSON.parse(readFileSync(new URL(`../cases/${folder}/case.json`, import.meta.url), "utf8"));

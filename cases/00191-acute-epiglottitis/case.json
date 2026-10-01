@@ -1,0 +1,135 @@
+{
+  "folder": "00191-acute-epiglottitis",
+  "number": 191,
+  "diagnosis": "Acute epiglottitis",
+  "aliases": [
+    "epiglottitis",
+    "supraglottitis",
+    "acute supraglottitis",
+    "thumb sign"
+  ],
+  "symptom": "a sore throat that suddenly made it hard to swallow",
+  "hook": "a thumb was stuck inside the throat",
+  "whatYouSee": "The epiglottis is swollen into a rounded thumb shape that narrows the airway.",
+  "whyItMatters": "Supraglottitis can progress fast and block the airway completely.",
+  "treatment": "Securing the airway comes first. Treatment includes intravenous antibiotics, steroids, and nebulised adrenaline.",
+  "takeaway": "A thumb shaped epiglottis on a neck X-ray is an airway emergency.",
+  "igOptions": [
+    "A. Acute epiglottitis",
+    "B. Retropharyngeal abscess",
+    "C. Croup"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-05T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T22:25:21.373Z"
+  },
+  "condition": {
+    "diagnosis": "Acute epiglottitis",
+    "aliases": [
+      "epiglottitis",
+      "supraglottitis",
+      "acute supraglottitis",
+      "thumb sign"
+    ],
+    "symptom": "a sore throat that suddenly made it hard to swallow",
+    "hook": "a thumb was stuck inside the throat",
+    "view": "lateral soft-tissue neck",
+    "ageBand": "young-adult",
+    "keyFindings": "a swollen rounded thumb-shaped epiglottis bulging into the airway above the larynx with thickened aryepiglottic folds and a narrowed upper airway",
+    "whatYouSee": "The epiglottis is swollen into a rounded thumb shape that narrows the airway.",
+    "whyItMatters": "Supraglottitis can progress fast and block the airway completely.",
+    "treatment": "Securing the airway comes first. Treatment includes intravenous antibiotics, steroids, and nebulised adrenaline.",
+    "takeaway": "A thumb shaped epiglottis on a neck X-ray is an airway emergency.",
+    "igTitle": "THE THUMB IN THE THROAT",
+    "igOptions": [
+      "Acute epiglottitis",
+      "Retropharyngeal abscess",
+      "Croup"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture SSE [033] Emergencies in ENT, original pages 15-19"
+    ],
+    "referenceImage": "epiglottitis.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a swollen rounded thumb-shaped epiglottis bulging into the airway above the larynx with thickened aryepiglottic folds and a narrowed upper airway",
+      "The visible anatomy matches the requested lateral soft-tissue neck and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "5e15b776e3fa8eed17f5527ec47de4080699030695a0fd38fe408a179adea3da",
+    "conditionSha256": "0f97938fa20474611466e245759f85e0a748f4f27603c4a7f048c2160c54beb3",
+    "clinicalContextSha256": "0b4b9c8c9d6c640a808df91388b040f03b8e26b1756babde6c7c66a92edb2e6f",
+    "verifiedAt": "2026-10-01T22:25:21.377Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The epiglottis and supraglottic airway region are not clearly demonstrating the expected thumb-shaped swelling; the prevertebral soft tissues and airway structures at the level of the epiglottis are not distinctly abnormal in appearance on this image\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection radiograph of the cervical spine including the lower skull base, mandible, and upper thoracic inlet",
+        "Seven cervical vertebrae are visible; overall cervical lordosis appears reduced or straightened",
+        "Vertebral body heights appear maintained without obvious anterior wedging or compression fracture",
+        "Disc spaces appear relatively preserved at all levels with no gross disc space narrowing",
+        "Facet joints and posterior elements appear intact without obvious subluxation or perching",
+        "No prevertebral soft tissue swelling is identified; the prevertebral soft tissue contour appears within normal limits",
+        "The atlanto-dental interval appears within normal limits",
+        "Occiput-C1 and C1-C2 relationships appear grossly preserved",
+        "Hyoid bone is visible and appears intact",
+        "Calcification or ossification is noted in the region of the posterior oropharyngeal soft tissues superiorly, possibly representing calcified lymph nodes or stylohyoid ligament calcification",
+        "No obvious cortical disruption, lytic lesion, or sclerotic lesion is identified in the visualized vertebral bodies",
+        "Lower cervical and upper thoracic region is partially obscured by shoulder superimposition"
+      ],
+      "differential": [
+        "Cervical muscle spasm or positional straightening of normal lordosis (most common cause of lordosis loss on lateral cervical radiograph)",
+        "Early degenerative cervical spondylosis (reduced lordosis with incipient disc space changes)",
+        "Stylohyoid ligament calcification / Eagle syndrome variant (accounting for the soft tissue calcification seen superiorly)"
+      ],
+      "anatomyConcerns": [
+        "Shoulder superimposition limits evaluation of C6-C7 and C7-T1 junction; lower cervical levels are not fully visualized",
+        "Slight rotation of the cervical spine is suggested by incomplete superimposition of the facet joints bilaterally, which could artifactually affect assessment of alignment",
+        "The mouth is open, which is appropriate for a lateral projection but may indicate this was obtained as part of an odontoid or trauma series rather than a standard lateral alone"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The epiglottis and supraglottic airway region are not clearly demonstrating the expected thumb-shaped swelling; the prevertebral soft tissues and airway structures at the level of the epiglottis are not distinctly abnormal in appearance on this image\"]"
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "Does that shape inside the throat look off to you?",
+  "seedHint": "Look at the airway just above the chest and notice what is pushing in.",
+  "teaser": "And the neck lateral said everything the patient could not",
+  "generated": {
+    "threadsCaption": "A patient with a sore throat that suddenly made it hard to swallow.\n\nThen the X-ray loaded 😭\n\nAnd the neck lateral said everything the patient could not.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a sore throat that had only just started making it hard to swallow.\n\nThen the X-ray loaded 😭\n\nAnd the neck lateral said everything the patient could not.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Acute epiglottitis\n\n👀 What you see:\nThe epiglottis is swollen into a rounded thumb shape that narrows the airway.\n\n🦴 Why it matters:\nSupraglottitis can progress fast and block the airway completely.\n\n💊 Treatment:\nSecuring the airway comes first. Treatment includes intravenous antibiotics, steroids, and nebulised adrenaline.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "7442de27bede9464a088f2519de26ab06bc5f13945a6b809e751be3ea1306ac7",
+    "reviewedAt": "2026-10-01T22:33:23.451Z",
+    "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  },
+  "cta": "anxiety",
+  "ownerImageOverride": {
+    "sha256": "5e15b776e3fa8eed17f5527ec47de4080699030695a0fd38fe408a179adea3da",
+    "approvedAt": "2026-10-01T22:33:23.451Z",
+    "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  }
+}

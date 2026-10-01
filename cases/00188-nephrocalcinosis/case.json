@@ -1,0 +1,129 @@
+{
+  "folder": "00188-nephrocalcinosis",
+  "number": 188,
+  "diagnosis": "Nephrocalcinosis",
+  "aliases": [
+    "medullary nephrocalcinosis",
+    "renal calcinosis"
+  ],
+  "symptom": "frequent trips to the bathroom at night",
+  "hook": "both kidneys were full of sand",
+  "whatYouSee": "Both kidneys are packed with clusters of tiny bright calcium deposits.",
+  "whyItMatters": "Nephrocalcinosis is calcium deposited in the kidney tissue itself. Hypercalcaemia is the most common metabolic cause.",
+  "treatment": "Treatment targets the underlying cause such as a high blood calcium to protect kidney function.",
+  "takeaway": "Speckled calcium in both kidneys should prompt a check of blood calcium.",
+  "igOptions": [
+    "A. Nephrocalcinosis",
+    "B. Staghorn calculi",
+    "C. Renal tuberculosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-02T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T22:21:09.612Z"
+  },
+  "condition": {
+    "diagnosis": "Nephrocalcinosis",
+    "aliases": [
+      "medullary nephrocalcinosis",
+      "renal calcinosis"
+    ],
+    "symptom": "frequent trips to the bathroom at night",
+    "hook": "both kidneys were full of sand",
+    "view": "AP upper abdomen centred on both kidneys and cropped above the pelvis",
+    "ageBand": "middle-aged",
+    "keyFindings": "dense clusters of fine stippled calcification filling the medulla of both kidneys in a symmetric pattern so each kidney outline is studded with sand-like specks",
+    "whatYouSee": "Both kidneys are packed with clusters of tiny bright calcium deposits.",
+    "whyItMatters": "Nephrocalcinosis is calcium deposited in the kidney tissue itself. Hypercalcaemia is the most common metabolic cause.",
+    "treatment": "Treatment targets the underlying cause such as a high blood calcium to protect kidney function.",
+    "takeaway": "Speckled calcium in both kidneys should prompt a check of blood calcium.",
+    "igTitle": "THE SAND KIDNEYS",
+    "igOptions": [
+      "Nephrocalcinosis",
+      "Staghorn calculi",
+      "Renal tuberculosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 Interstitial nephritis 2025-2026, original pages 31-41"
+    ],
+    "referenceImage": "nephrocalcinosis.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "dense clusters of fine stippled calcification filling the medulla of both kidneys in a symmetric pattern so each kidney outline is studded with sand-like specks",
+      "The visible anatomy matches the requested AP upper abdomen centred on both kidneys and cropped above the pelvis and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "efd3dd828f2a924afe022ba0e2ad93261b038a7ab965b38e870e31826def3638",
+    "conditionSha256": "598505080af8cb161bc0c6e422c0c535163a1b61593be39b8c773ee23a3cedec",
+    "clinicalContextSha256": "acc676a60c2636c1c99d5dadcff1e04d65db716b229d9e00c7f04854fd1059c2",
+    "verifiedAt": "2026-10-01T22:21:09.619Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The calcifications bilaterally are coarse, branching, dendritic/staghorn-pattern filling the pelvi-calyceal system, not the fine stippled medullary calcification expected for nephrocalcinosis; this pattern is more consistent with bilateral staghorn nephrolithiasis\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the abdomen and lower chest, supine positioning",
+        "Bilateral renal regions demonstrate multiple branching, arborizing, coarse calcifications with a dendritic/coral-like morphology occupying the collecting systems bilaterally, consistent with bilateral staghorn or partial staghorn calculi",
+        "The calcifications are dense, white, and branch in a pattern conforming to the renal pelvis and calyces bilaterally",
+        "The lumbar spine is visible centrally with maintained vertebral body heights and disc spaces",
+        "Gas is seen throughout the large and small bowel in a non-obstructive pattern",
+        "A large gas-filled structure is visible in the left upper quadrant, likely gastric fundus or splenic flexure",
+        "The pelvis is partially included; iliac wings are symmetric",
+        "No free intraperitoneal air is identified on this supine view",
+        "No obvious soft tissue masses or organomegaly clearly delineated",
+        "No vascular calcifications or pelvic phleboliths identified on this view"
+      ],
+      "differential": [
+        "Bilateral staghorn nephrolithiasis (struvite or calcium phosphate calculi filling the renal collecting systems bilaterally)",
+        "Bilateral medullary sponge kidney with nephrocalcinosis (medullary calcifications, though distribution here appears more pelvi-calyceal than medullary)",
+        "Bilateral renal tuberculosis with dystrophic calcification (though calcifications here appear intraluminal/collecting system rather than parenchymal)"
+      ],
+      "anatomyConcerns": [
+        "The upper chest and diaphragm are not fully included, limiting assessment of lower lung fields",
+        "Supine projection limits detection of free air or air-fluid levels; erect or decubitus views would be complementary",
+        "Image collimation cuts off the upper abdomen slightly on the right, potentially obscuring right hepatic margin"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The calcifications bilaterally are coarse, branching, dendritic/staghorn-pattern filling the pelvi-calyceal system, not the fine stippled medullary calcification expected for nephrocalcinosis; this pattern is more consistent with bilateral staghorn nephrolithiasis\"]"
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "What do both kidneys look like they swallowed?",
+  "seedHint": "Look at where the bright specks collect and ask yourself if this is one spot or everywhere.",
+  "teaser": "And nothing about the night visits prepared anyone for this",
+  "generated": {
+    "threadsCaption": "A patient with frequent trips to the bathroom at night.\n\nThen the X-ray loaded 😭\n\nAnd nothing about the night visits prepared anyone for this.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a mildly inconvenient need to use the bathroom at night.\n\nThen the X-ray loaded 😭\n\nAnd nothing about the night visits prepared anyone for this.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Nephrocalcinosis\n\n👀 What you see:\nBoth kidneys are packed with clusters of tiny bright calcium deposits.\n\n🦴 Why it matters:\nNephrocalcinosis is calcium deposited in the kidney tissue itself. Hypercalcaemia is the most common metabolic cause.\n\n💊 Treatment:\nTreatment targets the underlying cause such as a high blood calcium to protect kidney function.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI turned it into The Hopital Challenge.\n\nLook at the X-ray. Make your guess. Then reveal the answer.\n\nSee how many you get right 👇🏼\nchallenge.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "8f1976ebeefd6ffa6a39d9753daf837ef004164af8619aeaeb66eb78fabc0716",
+    "reviewedAt": "2026-10-01T22:33:23.451Z",
+    "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  },
+  "cta": "challenge",
+  "ownerImageOverride": {
+    "sha256": "efd3dd828f2a924afe022ba0e2ad93261b038a7ab965b38e870e31826def3638",
+    "approvedAt": "2026-10-01T22:33:23.451Z",
+    "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  }
+}

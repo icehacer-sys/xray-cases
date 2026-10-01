@@ -1,0 +1,139 @@
+{
+  "folder": "00194-massive-haemothorax",
+  "number": 194,
+  "diagnosis": "Massive haemothorax",
+  "aliases": [
+    "massive hemothorax",
+    "haemothorax",
+    "hemothorax",
+    "traumatic haemothorax",
+    "gunshot haemothorax"
+  ],
+  "symptom": "chest pain and breathlessness after an injury",
+  "hook": "half the chest was white and a bullet was hiding inside",
+  "whatYouSee": "One whole side of the chest is white with blood and a bright bullet sits low on the same side.",
+  "whyItMatters": "A massive haemothorax is more than 1500 mL of blood in the chest. It causes shock and low oxygen at the same time.",
+  "treatment": "Immediate resuscitation and a chest drain are needed. Surgery may follow depending on the blood loss.",
+  "takeaway": "A white side of the chest after a gunshot wound suggests a massive haemothorax.",
+  "igOptions": [
+    "A. Massive haemothorax",
+    "B. Pleural effusion",
+    "C. Lung collapse"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-08T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T22:27:47.955Z"
+  },
+  "condition": {
+    "diagnosis": "Massive haemothorax",
+    "aliases": [
+      "massive hemothorax",
+      "haemothorax",
+      "hemothorax",
+      "traumatic haemothorax",
+      "gunshot haemothorax"
+    ],
+    "symptom": "chest pain and breathlessness after an injury",
+    "hook": "half the chest was white and a bullet was hiding inside",
+    "view": "AP chest",
+    "ageBand": "young-adult",
+    "keyFindings": "a dense white-out of the entire right hemithorax from a large haemothorax with a small bright metallic bullet projected over the right lower chest near the thoracoabdominal junction and a normally aerated left lung",
+    "whatYouSee": "One whole side of the chest is white with blood and a bright bullet sits low on the same side.",
+    "whyItMatters": "A massive haemothorax is more than 1500 mL of blood in the chest. It causes shock and low oxygen at the same time.",
+    "treatment": "Immediate resuscitation and a chest drain are needed. Surgery may follow depending on the blood loss.",
+    "takeaway": "A white side of the chest after a gunshot wound suggests a massive haemothorax.",
+    "igTitle": "THE BULLET IN THE WHITE CHEST",
+    "igOptions": [
+      "Massive haemothorax",
+      "Pleural effusion",
+      "Lung collapse"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 1.Torso Injuries (SCS 51.1), original pages 103-104"
+    ],
+    "referenceImage": "haemothorax-bullet.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a dense white-out of the entire right hemithorax from a large haemothorax with a small bright metallic bullet projected over the right lower chest near the thoracoabdominal junction and a normally aerated left lung",
+      "The visible anatomy matches the requested AP chest and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "fc34485c960de4118025b45736a0036f4473e1f4c8ae5906b4dd665347c1628d",
+    "conditionSha256": "e7abb74db2904e07f1f1c6282e45411b8eccddf4b42c3ea1aa08af7f9d09eac6",
+    "clinicalContextSha256": "df3f9336bef6c710a092a07d6a118cecf2740a4248d5f71acb021704c118f6ca",
+    "verifiedAt": "2026-10-01T22:27:47.962Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "a dense white-out of the entire right hemithorax from a large haemothorax with a small bright metallic bullet projected over the right lower chest near the thoracoabdominal junction and a normally aerated left lung",
+        "observed": "The right hemithorax is completely opacified with homogeneous white-out; a small rounded metallic density is visible in the right lower lateral chest wall consistent with a bullet/fragment; the left lung is normally aerated with visible vascular markings; mediastinum is shifted to the left consistent with a space-occupying haemothorax.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested AP chest and the declared age and anatomical exceptions.",
+        "observed": "The image is an AP chest projection. Bilateral clavicles, scapulae, and shoulders are visible and symmetric. The left ribs are countable and appear normally formed. Skeletal maturity is consistent with a young adult (19-39 years). No extra or duplicated bones are identified. No lettering or side markers are present.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "PA or AP projection chest radiograph",
+        "Complete opacification of the right hemithorax with homogeneous white-out and loss of all right-sided lung and vascular markings",
+        "The trachea and mediastinum appear shifted toward the LEFT, away from the opacified side",
+        "The left lung is hyperinflated and shows normal vascular markings throughout",
+        "The right heart border, right hemidiaphragm, and right costophrenic angle are completely obscured",
+        "The left hemidiaphragm is partially visible with a gastric air bubble beneath it",
+        "A small rounded metallic density (probable foreign body or surgical clip) is projected over the right lower lateral chest wall",
+        "No visible rib fractures, pneumothorax, or pleural air-fluid level on left",
+        "The left lung parenchyma appears clear without focal consolidation or effusion"
+      ],
+      "differential": [
+        "Massive right pleural effusion (most likely given mediastinal shift away from opacity and smooth homogeneous opacification)",
+        "Right lung collapse/total atelectasis (however mediastinal shift toward the opacity would be expected; shift away argues against simple collapse alone, though mixed effusion with collapse is possible)",
+        "Right-sided pleural mass or mesothelioma causing complete hemithoracic opacification with mediastinal shift (less common but possible when effusion is absent)"
+      ],
+      "anatomyConcerns": [
+        "Mediastinal shift to the left is a critical finding: in the context of a white-out, leftward shift strongly favors a space-occupying process (large effusion or mass) rather than collapse, which would shift mediastinum toward the opacity",
+        "The image appears slightly rotated with the spinous processes not perfectly centered, which may modestly affect perceived mediastinal position",
+        "The small metallic opacity in the right lateral chest wall requires clinical correlation to exclude a foreign body or retained surgical material"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "Complete homogeneous opacification of the right hemithorax with mediastinal shift to the LEFT (trachea and mediastinum deviated leftward) indicates a large space-occupying process on the right. In the clinical context of chest pain and breathlessness after injury, this pattern is classic for massive haemothorax — blood accumulating under tension shifts the mediastinum away from the affected side. A small rounded metallic density projected over the right lower lateral chest wall is consistent with a retained bullet or fragment, supporting a penetrating trauma aetiology. The leftward mediastinal shift distinguishes this from simple collapse (which would shift toward the opacity). The left lung is normally aerated. These findings together strongly support massive haemothorax over other differentials such as pleural mass or mesothelioma, which would be unsupported by the acute trauma history."
+  },
+  "difficulty": 2,
+  "laypersonQuestion": "What is that bright white thing hiding in there?",
+  "seedHint": "Look at the side that looks filled in and ask yourself why half the chest is white.",
+  "teaser": "And the chest did not look the way anyone expected",
+  "generated": {
+    "threadsCaption": "A patient with chest pain and breathlessness after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with mild chest pain and some breathlessness after a minor-seeming injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Massive haemothorax\n\n👀 What you see:\nOne whole side of the chest is white with blood and a bright bullet sits low on the same side.\n\n🦴 Why it matters:\nA massive haemothorax is more than 1500 mL of blood in the chest. It causes shock and low oxygen at the same time.\n\n💊 Treatment:\nImmediate resuscitation and a chest drain are needed. Surgery may follow depending on the blood loss.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "5eaced142b148d751c924b23644742a2191689560b5db5fa2eb5d422eb6db726",
+    "reviewedAt": "2026-10-01T22:33:23.451Z",
+    "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  },
+  "needsReview": false
+}

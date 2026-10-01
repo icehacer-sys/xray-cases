@@ -1,0 +1,131 @@
+{
+  "folder": "00192-tension-pneumothorax",
+  "number": 192,
+  "diagnosis": "Tension pneumothorax",
+  "aliases": [
+    "tension ptx",
+    "tension pneumothorax with mediastinal shift"
+  ],
+  "symptom": "sudden sharp chest pain and worsening breathlessness",
+  "hook": "one lung vanished and the heart was shoved to the other side",
+  "whatYouSee": "One side of the chest is black with no lung markings and the collapsed lung has shrunk toward the middle.",
+  "whyItMatters": "Air keeps entering the pleural space but cannot leave. The rising pressure pushes the mediastinum across and can stop blood returning to the heart.",
+  "treatment": "This is an emergency treated at once with needle decompression followed by a chest drain.",
+  "takeaway": "Tension pneumothorax is a clinical diagnosis and treatment should not wait for an X-ray.",
+  "igOptions": [
+    "A. Tension pneumothorax",
+    "B. Massive pleural effusion",
+    "C. Pneumonectomy"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-06T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T22:26:24.410Z"
+  },
+  "condition": {
+    "diagnosis": "Tension pneumothorax",
+    "aliases": [
+      "tension ptx",
+      "tension pneumothorax with mediastinal shift"
+    ],
+    "symptom": "sudden sharp chest pain and worsening breathlessness",
+    "hook": "one lung vanished and the heart was shoved to the other side",
+    "view": "AP chest",
+    "ageBand": "young-adult",
+    "keyFindings": "a large right pneumothorax with a completely black right hemithorax without lung markings and a small collapsed right lung near the hilum with the trachea and mediastinum pushed to the left and a flattened depressed right hemidiaphragm",
+    "whatYouSee": "One side of the chest is black with no lung markings and the collapsed lung has shrunk toward the middle.",
+    "whyItMatters": "Air keeps entering the pleural space but cannot leave. The rising pressure pushes the mediastinum across and can stop blood returning to the heart.",
+    "treatment": "This is an emergency treated at once with needle decompression followed by a chest drain.",
+    "takeaway": "Tension pneumothorax is a clinical diagnosis and treatment should not wait for an X-ray.",
+    "igTitle": "THE VANISHING LUNG",
+    "igOptions": [
+      "Tension pneumothorax",
+      "Massive pleural effusion",
+      "Pneumonectomy"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC1 [080] Basic chest X-ray interpretation 2025-2026, original pages 55-59",
+      "Year 5 lecture 11-Pleura (117) LGW 2025-2026, original page 47",
+      "Year 5 lecture Thoracic Trauma (SCS 8.1), original page 5"
+    ],
+    "referenceImage": "tension-ptx.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a large right pneumothorax with a completely black right hemithorax without lung markings and a small collapsed right lung near the hilum with the trachea and mediastinum pushed to the left and a flattened depressed right hemidiaphragm",
+      "The visible anatomy matches the requested AP chest and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "6fda932fe82d927c771dd1527cf8e842bfb49af44ea3b02a63dc9db8ade051de",
+    "conditionSha256": "631d6eec3c0f65a163740d6a91fab0689b65d8472229cb358f3ff8752a15130f",
+    "clinicalContextSha256": "14f18ac372f65c9d441f9128ae9e1763c33cb9cf084fe167c19593d33506a205",
+    "verifiedAt": "2026-10-01T22:26:24.414Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The right lung is not collapsed — it shows a large hyperinflated hyperlucent hemithorax with absent vascular markings but no visible pleural line separating lung from air, and no small collapsed lung near the hilum as required for tension pneumothorax\",\"A lobulated partially calcified hilar/perihilar mass-like opacity is present at the right hilum — this is not explained by tension pneumothorax and represents an unexplained additional lesion\",\"The left lung shows diffusely increased reticular interstitial markings throughout — this bilateral interstitial pattern is not explained by tension pneumothorax\",\"The trachea and mediastinum appear midline or mildly shifted left, not the marked contralateral shift expected in tension pneumothorax\",\"The right hemidiaphragm is well-defined and at a normal level, not flattened or depressed as required\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph",
+        "Right lung appears hyperinflated and hyperlucent relative to the left, with absent vascular markings in the right upper and mid zones, consistent with markedly reduced pulmonary vascularity on that side",
+        "A lobulated, partially calcified hilar/perihilar mass-like opacity is present at the right hilum, with dense central calcification in a popcorn or eggshell pattern",
+        "The left lung demonstrates diffusely increased interstitial markings with a reticular pattern throughout, most prominent in the lower and mid zones, with no frank consolidation",
+        "The left hemidiaphragm is slightly elevated and the cardiac silhouette appears shifted mildly toward the left",
+        "No visible pleural effusion",
+        "Trachea appears midline",
+        "Bony thorax: ribs appear intact bilaterally; no gross lytic or sclerotic lesions identified",
+        "The right hemidiaphragm is well-defined and at a normal level"
+      ],
+      "differential": [
+        "Unilateral hyperlucent lung (right) due to large vessel obstruction or Swyer-James-MacLeod syndrome, with the right hilar calcified mass representing a calcified lymph node or carcinoid tumor causing proximal obstruction; left lung interstitial changes may represent reactive or inflammatory process",
+        "Right hilar calcified mass most consistent with a calcified granuloma (e.g., histoplasmosis or tuberculosis) with associated post-obstructive hyperinflation of right lung; left lung reticular pattern suggesting chronic interstitial lung disease (e.g., hypersensitivity pneumonitis or pulmonary fibrosis)",
+        "Right lung primary carcinoid tumor with calcification at the right hilum causing proximal bronchial obstruction and distal air trapping, with left lung showing superimposed pulmonary edema or lymphangitic carcinomatosis"
+      ],
+      "anatomyConcerns": [
+        "The right lung is markedly hyperlucent compared to the left, which is an asymmetric finding requiring correlation with clinical history and CT",
+        "The reticular pattern is confined to the left lung, which is an atypical lateralized distribution for most bilateral interstitial lung diseases and may suggest asymmetric disease or unilateral pathology",
+        "No rotation artifact detected; projection appears adequate for standard PA assessment"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The right lung is not collapsed — it shows a large hyperinflated hyperlucent hemithorax with absent vascular markings but no visible pleural line separating lung from air, and no small collapsed lung near the hilum as required for tension pneumothorax\",\"A lobulated partially calcified hilar/perihilar mass-like opacity is present at the right hilum — this is not explained by tension pneumothorax and represents an unexplained additional lesion\",\"The left lung shows diffusely increased reticular interstitial markings throughout — this bilateral interstitial pattern is not explained by tension pneumothorax\",\"The trachea and mediastinum appear midline or mildly shifted left, not the marked contralateral shift expected in tension pneumothorax\",\"The right hemidiaphragm is well-defined and at a normal level, not flattened or depressed as required\"]",
+    "Error: Copy review failed: [\"threadsCaptionAlt contains a doubled phrase: 'A patient with A patient with chest pain and breathlessness' — this is a broken grammar/copy error that should be reported.\"]"
+  ],
+  "difficulty": 2,
+  "laypersonQuestion": "Can you spot what is missing on one side?",
+  "seedHint": "Count how many lungs you can actually see on this film.",
+  "teaser": "And the chest X-ray explained everything at once",
+  "generated": {
+    "threadsCaption": "A patient with sudden sharp chest pain and worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd the chest X-ray explained everything at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with chest pain and breathlessness that had been getting steadily worse.\n\nThen the X-ray loaded 😭\n\nAnd the chest X-ray explained everything at once.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Tension pneumothorax\n\n👀 What you see:\nOne side of the chest is black with no lung markings and the collapsed lung has shrunk toward the middle.\n\n🦴 Why it matters:\nAir keeps entering the pleural space but cannot leave. The rising pressure pushes the mediastinum across and can stop blood returning to the heart.\n\n💊 Treatment:\nThis is an emergency treated at once with needle decompression followed by a chest drain.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI turned it into The Hopital Challenge.\n\nLook at the X-ray. Make your guess. Then reveal the answer.\n\nSee how many you get right 👇🏼\nchallenge.mednoteslab.com"
+  },
+  "cta": "challenge",
+  "ownerImageOverride": {
+    "sha256": "6fda932fe82d927c771dd1527cf8e842bfb49af44ea3b02a63dc9db8ade051de",
+    "approvedAt": "2026-10-01T22:33:23.451Z",
+    "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  },
+  "contentReview": {
+    "sha256": "bd14c9ccd45a0d744a944f54322b3beb972e4b974dd618d9f819cb0ef700064e",
+    "reviewedAt": "2026-10-01T22:34:19.775Z",
+    "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  }
+}

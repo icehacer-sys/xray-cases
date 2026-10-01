@@ -21,10 +21,12 @@
   "igSlides": [],
   "postAt": "2026-10-05T19:00:00.000Z",
   "cta": "anxiety",
-  "approved": true,
-  "needsReview": false,
+  "approved": false,
+  "needsReview": true,
   "source": "generated",
-  "verifyDefects": [],
+  "verifyDefects": [
+    "Owner replaced this week's queue with the atlas-reference batch (2026-10-02). Remove retired to bring it back."
+  ],
   "diagnosticContext": {
     "certainty": "illustrative",
     "confirmationEvidence": [],
@@ -119,5 +121,6 @@
     "reviewedAt": "2026-10-01T21:53:16.002Z",
     "reviewer": "Claude Code local CTA-only swap: canonical pickCta text for the owner-pinned night after the 00182 retirement shifted the queue; underlying clinical/image/copy review retained unchanged; not clinical certification"
   },
-  "number": 185
+  "number": 185,
+  "retired": true
 }
