@@ -21,9 +21,11 @@
   "postAt": "2026-10-01T20:00:00Z",
   "cta": "anxiety",
   "approved": true,
-  "needsReview": false,
+  "needsReview": true,
   "source": "generated",
-  "verifyDefects": [],
+  "verifyDefects": [
+    "Owner hold 2026-10-01: do not post; replace with one of the new atlas-reference cases"
+  ],
   "diagnosticContext": {
     "certainty": "illustrative",
     "confirmationEvidence": [],
