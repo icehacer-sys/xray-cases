@@ -10,7 +10,10 @@ export function repairQueueSlots(cases: Case[], state: State, now: Date): void {
   const occupied = new Set(cases.flatMap(c => {
     const posted = state.getStages(c.folder).challengePostedAt ?? c.stages?.challengePostedAt;
     const pending = state.publication(`case:${c.folder}:challenge`).get();
-    return posted ? [nightKey(new Date(posted), config.activeTz)] : pending ? [nightKey(new Date(c.postAt), config.activeTz), nightKey(now, config.activeTz)] : [];
+    if (posted) return [nightKey(new Date(posted), config.activeTz)];
+    if (pending) return [nightKey(new Date(c.postAt), config.activeTz), nightKey(now, config.activeTz)];
+    // A ready owner repost holds its own night, so compaction moves the queue around it.
+    return c.replacesFolder && !readinessProblem(c) ? [nightKey(new Date(c.postAt), config.activeTz)] : [];
   }));
   for (const c of cases) {
     if (state.getStages(c.folder).challengePostedAt || c.stages?.challengePostedAt || state.publication(`case:${c.folder}:challenge`).get() || readinessProblem(c)) continue;
