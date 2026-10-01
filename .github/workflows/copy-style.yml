@@ -17,3 +17,4 @@ jobs:
       - run: npm ci
       - run: npm run typecheck
       - run: npm run copy:verify
+      - run: npm run digits:verify

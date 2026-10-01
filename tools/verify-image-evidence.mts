@@ -3,7 +3,7 @@ process.env.ANTHROPIC_API_KEY = 'offline-fixture';
 process.env.BOT_USAGE_LOG = 'off';
 const { verifyXray, parseXrayVerdict, fatalQaError } = await import('../src/verify.js');
 const cond: any = { diagnosis: 'SECRET_INTENDED_ANSWER', symptom: 'SECRET_CLINICAL_VIGNETTE', view: 'AP shoulder', keyFindings: 'displaced head', requiredObservations: ['displaced head'] };
-const valid = { unexplainedFindings: [], singleAnswerSupported: true, diagnosticReason: 'Head below the glenoid with superior shaft direction', plausible: true, depictsDiagnosis: true, correctBodyPart: true, severity: 'pass', defects: [], observations: [{ expected: 'displaced head', observed: 'head below glenoid', assessable: true, matches: true }] };
+const valid = { unexplainedFindings: [], digitCounts: [], singleAnswerSupported: true, diagnosticReason: 'Head below the glenoid with superior shaft direction', plausible: true, depictsDiagnosis: true, correctBodyPart: true, severity: 'pass', defects: [], observations: [{ expected: 'displaced head', observed: 'head below glenoid', assessable: true, matches: true }] };
 assert.equal(parseXrayVerdict(JSON.stringify({ ...valid, singleAnswerSupported: false }), cond).ok, false);
 assert.equal(parseXrayVerdict(JSON.stringify({ ...valid, unexplainedFindings: ['unexpected osteochondroma'] }), cond).ok, false);
 assert.equal(fatalQaError(new Error('Your credit balance is too low')), true);
