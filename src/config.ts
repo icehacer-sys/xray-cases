@@ -143,6 +143,8 @@ export const config = {
 
   // Local queue + state
   casesDir: process.env.BOT_CASES_DIR ?? "./cases",
+  // Local folder of cleaned atlas reference crops. Kept OUTSIDE this public repo (see reference.ts).
+  referenceDir: process.env.BOT_REFERENCE_DIR ?? "../xray-references",
   stateFile: process.env.BOT_STATE_FILE ?? "./state.json",
 
   // Live posting safety latch

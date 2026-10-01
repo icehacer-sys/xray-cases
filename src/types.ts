@@ -149,6 +149,9 @@ export interface Condition {
   sources?: string[];
   reviewedAt?: string;
   requiredObservations?: string[];
+  /** Optional reference radiograph (file in BOT_REFERENCE_DIR, never committed here). When set the
+   *  X-ray renders from the reference plus the anatomy guide, locally only. See reference.ts. */
+  referenceImage?: string;
   diagnosis: string; // "Maffucci syndrome"
   aliases?: string[];
   symptom: string; // "abdominal discomfort"

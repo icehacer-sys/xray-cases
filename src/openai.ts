@@ -6,6 +6,7 @@
 
 import { config, requireEnv } from "./config.js";
 import { recordUsage } from "./usage.js";
+import { REFERENCE_PROMPT } from "./reference.js";
 
 /**
  * Generate an X-ray image for the given prompt and return it as a PNG Buffer.
@@ -14,21 +15,40 @@ import { recordUsage } from "./usage.js";
  * model/size; gpt-image-1 returns the image as `data[0].b64_json`, which is
  * decoded into a Buffer. Throws a clear Error on a non-200 response.
  */
-export async function generateXray(prompt: string): Promise<Buffer> {
-  const res = await fetch("https://api.openai.com/v1/images/generations", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${requireEnv("OPENAI_API_KEY")}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model: config.imageModel,
-      prompt,
-      size: config.imageSize,
-      quality: config.imageQuality,
-      n: 1,
-    }),
-  });
+export async function generateXray(prompt: string, reference?: Buffer): Promise<Buffer> {
+  let res: Response;
+  if (reference) {
+    // A reference radiograph goes through the edit endpoint with the full anatomy-guide prompt.
+    const form = new FormData();
+    form.append("model", config.imageModel);
+    form.append("prompt", `${prompt}
+
+${REFERENCE_PROMPT}`);
+    form.append("size", config.imageSize);
+    form.append("quality", config.imageQuality);
+    form.append("n", "1");
+    form.append("image", new Blob([new Uint8Array(reference)], { type: "image/png" }), "reference.png");
+    res = await fetch("https://api.openai.com/v1/images/edits", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${requireEnv("OPENAI_API_KEY")}` },
+      body: form,
+    });
+  } else {
+    res = await fetch("https://api.openai.com/v1/images/generations", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${requireEnv("OPENAI_API_KEY")}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: config.imageModel,
+        prompt,
+        size: config.imageSize,
+        quality: config.imageQuality,
+        n: 1,
+      }),
+    });
+  }
 
   const text = await res.text();
   let json: any;
