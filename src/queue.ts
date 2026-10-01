@@ -14,6 +14,8 @@ export function repairQueueSlots(cases: Case[], state: State, now: Date): void {
   }));
   for (const c of cases) {
     if (state.getStages(c.folder).challengePostedAt || c.stages?.challengePostedAt || state.publication(`case:${c.folder}:challenge`).get() || readinessProblem(c)) continue;
+    // An owner repost keeps its explicit time; it never takes or shifts a nightly slot.
+    if (c.replacesFolder) continue;
     while (occupied.has(nightKey(slot, config.activeTz))) slot = nextSlot(slot, config.postHourLocal, config.activeTz);
     // Compact ready cases into consecutive nightly slots, leaving held cases for repair.
     if (Date.parse(c.postAt) !== slot.getTime()) {

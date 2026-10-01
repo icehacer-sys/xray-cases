@@ -67,6 +67,10 @@ export interface Case {
    *  (e.g. cross-promoting a new product with a case covered once before). Never set by the
    *  auto-generator; skips the no-repeat gate for THIS case only. */
   forceRepeat?: boolean;
+  /** Owner repost: this case replaces a posted case the owner withdrew (archived) in the app.
+   *  The withdrawn case gets no further stages and stops counting as that night's challenge,
+   *  and this case keeps its explicit postAt instead of being compacted into a nightly slot. */
+  replacesFolder?: string;
   /** Set by the generator's X-ray anatomy-QA gate when the image fails verification after
    *  all retries. The publisher HARD-BLOCKS these (no auto-post, even with BOT_AUTO_APPROVE)
    *  until a human regenerates the X-ray and clears the flag. */

@@ -166,8 +166,10 @@ async function runPublish(cli: Cli): Promise<void> {
   // run and let CI raise it.
   await assertThreadsTokenValid(live);
   if (live) repairQueueSlots(cases, state, now);
+  const withdrawn = new Set(cases.flatMap(c => c.replacesFolder ? [c.replacesFolder] : []));
 
   for (const c of cases) {
+    if (withdrawn.has(c.folder)) { log(`Skipping ${c.folder}: withdrawn by the owner and replaced by a repost.`); continue; }
     // Per-case isolation: one poisoned case (a deleted post, a 404 image URL, an owner-edited
     // answer over 500 chars) must NEVER abort the whole run — otherwise it crash-loops every
     // poll and today's due case never posts. Log it and carry on to the next case.
@@ -228,7 +230,7 @@ async function runPublish(cli: Cli): Promise<void> {
 
     // --- Stage 1: challenge -------------------------------------------------------------
     if (!stages.challengePostedAt) {
-      if (cases.some(other => { if (other.folder === c.folder) return false; const posted = state.getStages(other.folder).challengePostedAt ?? other.stages?.challengePostedAt; return posted && nightKey(new Date(posted), config.activeTz) === nightKey(now, config.activeTz); })) {
+      if (cases.some(other => { if (other.folder === c.folder || withdrawn.has(other.folder)) return false; const posted = state.getStages(other.folder).challengePostedAt ?? other.stages?.challengePostedAt; return posted && nightKey(new Date(posted), config.activeTz) === nightKey(now, config.activeTz); })) {
         heldCases++; log(`Holding ${c.folder}: this local night already has a challenge.`); continue;
       }
       if (live) await verifyLegacyImage(c);
