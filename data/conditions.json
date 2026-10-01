@@ -3425,5 +3425,243 @@
       "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
     ],
     "used": true
+  },
+  {
+    "diagnosis": "Calcinosis cutis in systemic sclerosis",
+    "aliases": [
+      "calcinosis cutis",
+      "scleroderma calcinosis",
+      "systemic sclerosis calcinosis",
+      "CREST calcinosis",
+      "scleroderma"
+    ],
+    "symptom": "fingers that kept turning white and numb in the cold",
+    "hook": "the fingers were packed with lumps of chalk",
+    "view": "PA hand",
+    "ageBand": "middle-aged",
+    "keyFindings": "dense lumpy chalk-like calcified deposits in the soft tissues around several finger joints and fingertips with clumps clustered over the interphalangeal joints while every finger bone keeps its normal shape and count",
+    "whatYouSee": "Dense lumps of calcium sit in the soft tissue around the finger joints and fingertips.",
+    "whyItMatters": "Systemic sclerosis can deposit calcium in the skin and soft tissue of the hands. Other hand X-ray findings include acro-osteolysis, joint erosions, and periarticular osteoporosis.",
+    "treatment": "Care is led by rheumatology and targets the underlying systemic sclerosis. Painful deposits are sometimes removed surgically.",
+    "takeaway": "Chalky lumps around the fingers should prompt a look for systemic sclerosis.",
+    "igTitle": "THE CHALK FINGERS",
+    "igOptions": [
+      "Calcinosis cutis in systemic sclerosis",
+      "Gouty tophi",
+      "Enchondromas"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC-2 [138] Rheumatology imaging 2025-2026, original pages 26-30 (scleroderma hand X-ray findings)"
+    ],
+    "referenceImage": "calcinosis.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "dense lumpy chalk-like calcified deposits in the soft tissues around several finger joints and fingertips with clumps clustered over the interphalangeal joints while every finger bone keeps its normal shape and count",
+      "The visible anatomy matches the requested PA hand and the declared age and anatomical exceptions."
+    ]
+  },
+  {
+    "diagnosis": "Acute pulmonary oedema",
+    "aliases": [
+      "pulmonary oedema",
+      "pulmonary edema",
+      "acute pulmonary edema",
+      "bat wing pulmonary oedema",
+      "cardiogenic pulmonary oedema"
+    ],
+    "symptom": "breathlessness and swollen ankles that got worse over three months",
+    "hook": "a giant bat spread its wings across both lungs",
+    "view": "PA chest",
+    "ageBand": "middle-aged",
+    "keyFindings": "dense fluffy airspace shadowing fanning out from both hila across the central lungs in a symmetric bat-wing shape with relative sparing of the outer lung edges and an enlarged heart shadow",
+    "whatYouSee": "Fluffy white shadowing spreads out from the centre of both lungs in the shape of bat wings.",
+    "whyItMatters": "When a failing heart backs pressure up into the lungs fluid floods the air spaces around both hila. The outer edges are often spared which creates the bat wing shape.",
+    "treatment": "Emergency treatment includes sitting the patient up, oxygen, and IV furosemide. Nitrates and long term heart failure therapy follow depending on the cause.",
+    "takeaway": "Bat wing shadowing around both hila is a classic picture of pulmonary oedema.",
+    "igTitle": "BAT WINGS IN THE LUNGS",
+    "igOptions": [
+      "Acute pulmonary oedema",
+      "Pneumonia",
+      "Sarcoidosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC-1 [039] clinical cardiac cases S T 2 2025-2026, original pages 4-17",
+      "Year 5 lecture ICC1 [080] Basic chest X-ray interpretation 2025-2026, original page 72"
+    ],
+    "referenceImage": "batwing.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "dense fluffy airspace shadowing fanning out from both hila across the central lungs in a symmetric bat-wing shape with relative sparing of the outer lung edges and an enlarged heart shadow",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ]
+  },
+  {
+    "diagnosis": "Tension pneumothorax",
+    "aliases": [
+      "tension ptx",
+      "tension pneumothorax with mediastinal shift"
+    ],
+    "symptom": "sudden sharp chest pain and getting more and more short of breath",
+    "hook": "one lung vanished and the heart was shoved to the other side",
+    "view": "AP chest",
+    "ageBand": "young-adult",
+    "keyFindings": "a large right pneumothorax with a completely black right hemithorax without lung markings and a small collapsed right lung near the hilum with the trachea and mediastinum pushed to the left and a flattened depressed right hemidiaphragm",
+    "whatYouSee": "One side of the chest is black with no lung markings. The collapsed lung sits near the middle and the heart and windpipe are pushed away.",
+    "whyItMatters": "Air keeps entering the pleural space but cannot leave. The rising pressure pushes the mediastinum across and can stop blood returning to the heart.",
+    "treatment": "This is an emergency treated at once with needle decompression followed by a chest drain.",
+    "takeaway": "Tension pneumothorax is a clinical diagnosis and treatment should not wait for an X-ray.",
+    "igTitle": "THE VANISHING LUNG",
+    "igOptions": [
+      "Tension pneumothorax",
+      "Massive pleural effusion",
+      "Pneumonectomy"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC1 [080] Basic chest X-ray interpretation 2025-2026, original pages 55-59",
+      "Year 5 lecture 11-Pleura (117) LGW 2025-2026, original page 47",
+      "Year 5 lecture Thoracic Trauma (SCS 8.1), original page 5"
+    ],
+    "referenceImage": "tension-ptx.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a large right pneumothorax with a completely black right hemithorax without lung markings and a small collapsed right lung near the hilum with the trachea and mediastinum pushed to the left and a flattened depressed right hemidiaphragm",
+      "The visible anatomy matches the requested AP chest and the declared age and anatomical exceptions."
+    ]
+  },
+  {
+    "diagnosis": "Acute epiglottitis",
+    "aliases": [
+      "epiglottitis",
+      "supraglottitis",
+      "acute supraglottitis",
+      "thumb sign"
+    ],
+    "symptom": "a sore throat that suddenly made it hard to swallow",
+    "hook": "a thumb was stuck inside the throat",
+    "view": "lateral soft-tissue neck",
+    "ageBand": "young-adult",
+    "keyFindings": "a swollen rounded thumb-shaped epiglottis bulging into the airway above the larynx with thickened aryepiglottic folds and a narrowed upper airway",
+    "whatYouSee": "The epiglottis is swollen into a rounded thumb shape that narrows the airway.",
+    "whyItMatters": "Supraglottitis can progress fast and block the airway completely.",
+    "treatment": "Securing the airway comes first. Treatment includes intravenous antibiotics, steroids, and nebulised adrenaline.",
+    "takeaway": "A thumb shaped epiglottis on a neck X-ray is an airway emergency.",
+    "igTitle": "THE THUMB IN THE THROAT",
+    "igOptions": [
+      "Acute epiglottitis",
+      "Retropharyngeal abscess",
+      "Croup"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture SSE [033] Emergencies in ENT, original pages 15-19"
+    ],
+    "referenceImage": "epiglottitis.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a swollen rounded thumb-shaped epiglottis bulging into the airway above the larynx with thickened aryepiglottic folds and a narrowed upper airway",
+      "The visible anatomy matches the requested lateral soft-tissue neck and the declared age and anatomical exceptions."
+    ]
+  },
+  {
+    "diagnosis": "Hydropneumothorax",
+    "aliases": [
+      "hydro-pneumothorax",
+      "pneumohydrothorax"
+    ],
+    "symptom": "breathlessness and a dry cough that would not settle",
+    "hook": "there was a fish tank water line inside the chest",
+    "view": "PA chest",
+    "ageBand": "middle-aged",
+    "keyFindings": "a left pleural collection with a perfectly straight horizontal air-fluid level across the lower left hemithorax with dark air and no lung markings above the level and a partly collapsed left lung while the right lung is normal",
+    "whatYouSee": "A ruler straight horizontal fluid line sits in one side of the chest with black air above it.",
+    "whyItMatters": "Air and fluid have both collected in the pleural space so the fluid surface lies perfectly flat. The cause is found with imaging and analysis of the pleural fluid.",
+    "treatment": "Treatment targets the cause and usually involves draining the pleural space with a chest tube.",
+    "takeaway": "A straight fluid level in the chest means air and fluid are both in the pleural space.",
+    "igTitle": "THE FISH TANK CHEST",
+    "igOptions": [
+      "Hydropneumothorax",
+      "Pleural effusion",
+      "Lung abscess"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 11-Pleura (117) LGW 2025-2026, original pages 4-28 (image on page 19)"
+    ],
+    "referenceImage": "hydropneumothorax.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a left pleural collection with a perfectly straight horizontal air-fluid level across the lower left hemithorax with dark air and no lung markings above the level and a partly collapsed left lung while the right lung is normal",
+      "The visible anatomy matches the requested PA chest and the declared age and anatomical exceptions."
+    ]
+  },
+  {
+    "diagnosis": "Massive haemothorax",
+    "aliases": [
+      "massive hemothorax",
+      "haemothorax",
+      "hemothorax",
+      "traumatic haemothorax",
+      "gunshot haemothorax"
+    ],
+    "symptom": "chest pain and breathlessness after an injury",
+    "hook": "half the chest was white and a bullet was hiding inside",
+    "view": "AP chest",
+    "ageBand": "young-adult",
+    "keyFindings": "a dense white-out of the entire right hemithorax from a large haemothorax with a small bright metallic bullet projected over the right lower chest near the thoracoabdominal junction and a normally aerated left lung",
+    "whatYouSee": "One whole side of the chest is white with blood and a bright bullet sits low on the same side.",
+    "whyItMatters": "A massive haemothorax is more than 1500 mL of blood in the chest. It causes shock and low oxygen at the same time.",
+    "treatment": "Immediate resuscitation and a chest drain are needed. Surgery may follow depending on the blood loss.",
+    "takeaway": "A white side of the chest after a gunshot wound suggests a massive haemothorax.",
+    "igTitle": "THE BULLET IN THE WHITE CHEST",
+    "igOptions": [
+      "Massive haemothorax",
+      "Pleural effusion",
+      "Lung collapse"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 1.Torso Injuries (SCS 51.1), original pages 103-104"
+    ],
+    "referenceImage": "haemothorax-bullet.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "a dense white-out of the entire right hemithorax from a large haemothorax with a small bright metallic bullet projected over the right lower chest near the thoracoabdominal junction and a normally aerated left lung",
+      "The visible anatomy matches the requested AP chest and the declared age and anatomical exceptions."
+    ]
+  },
+  {
+    "diagnosis": "Nephrocalcinosis",
+    "aliases": [
+      "medullary nephrocalcinosis",
+      "renal calcinosis"
+    ],
+    "symptom": "passing a lot of urine at night",
+    "hook": "both kidneys were full of sand",
+    "view": "AP upper abdomen centred on both kidneys and cropped above the pelvis",
+    "ageBand": "middle-aged",
+    "keyFindings": "dense clusters of fine stippled calcification filling the medulla of both kidneys in a symmetric pattern so each kidney outline is studded with sand-like specks",
+    "whatYouSee": "Both kidneys are packed with clusters of tiny bright calcium deposits.",
+    "whyItMatters": "Nephrocalcinosis is calcium deposited in the kidney tissue itself. Hypercalcaemia is the most common metabolic cause.",
+    "treatment": "Treatment targets the underlying cause such as a high blood calcium to protect kidney function.",
+    "takeaway": "Speckled calcium in both kidneys should prompt a check of blood calcium.",
+    "igTitle": "THE SAND KIDNEYS",
+    "igOptions": [
+      "Nephrocalcinosis",
+      "Staghorn calculi",
+      "Renal tuberculosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 Interstitial nephritis 2025-2026, original pages 31-41"
+    ],
+    "referenceImage": "nephrocalcinosis.png",
+    "reviewedAt": "2026-10-02",
+    "requiredObservations": [
+      "dense clusters of fine stippled calcification filling the medulla of both kidneys in a symmetric pattern so each kidney outline is studded with sand-like specks",
+      "The visible anatomy matches the requested AP upper abdomen centred on both kidneys and cropped above the pelvis and the declared age and anatomical exceptions."
+    ]
   }
 ]

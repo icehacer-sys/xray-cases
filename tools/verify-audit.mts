@@ -42,4 +42,14 @@ const state: any = { getStages: () => ({}), publication: () => ({ get: () => und
 repairQueueSlots(queue, state, new Date("2026-09-10T20:00:00Z"));
 assert.equal(queue[0].postAt, "2026-09-10T19:00:00.000Z"); assert.equal(queue[1].postAt, "2026-09-11T19:00:00.000Z");
 assert.equal(JSON.parse(readFileSync(join(dir, "two", "case.json"), "utf8")).postAt, queue[1].postAt);
+// A ready owner repost keeps its night and the rest of the queue moves around it; a held one does not.
+const reposts: any[] = [{ folder: "one", diagnosis: "Queue fixture 0", source: "manual", postAt: "2026-09-10T19:00:00.000Z" },
+  { folder: "two", diagnosis: "Queue fixture 1", source: "manual", postAt: "2026-09-11T19:00:00.000Z" },
+  { folder: "three", diagnosis: "Queue fixture 2", source: "manual", postAt: "2026-09-10T19:00:00Z", replacesFolder: "withdrawn" }];
+mkdirSync(join(dir, "three"));
+repairQueueSlots(reposts, state, new Date("2026-09-10T20:00:00Z"));
+assert.deepEqual(reposts.map((c) => c.postAt), ["2026-09-11T19:00:00.000Z", "2026-09-12T19:00:00.000Z", "2026-09-10T19:00:00Z"]);
+const held: any[] = [{ ...reposts[0], postAt: "2026-09-11T19:00:00.000Z" }, { ...reposts[2], needsReview: true }];
+repairQueueSlots(held, state, new Date("2026-09-10T20:00:00Z"));
+assert.equal(held[0].postAt, "2026-09-10T19:00:00.000Z", "a held repost does not reserve its night");
 console.log("PASS Cairo DST, nightly backlog slots, image/criteria identity, copy invalidation, pending asset hold and complete clinical sentences");
