@@ -1,0 +1,130 @@
+{
+  "diagnosis": "Kienböck disease",
+  "aliases": [
+    "Kienbock disease",
+    "lunate osteonecrosis"
+  ],
+  "symptom": "persistent wrist pain, stiffness and a weakening grip",
+  "whatYouSee": "A dense, flattened, irregular lunate in the centre of the wrist.",
+  "whyItMatters": "Loss of blood supply damages this carpal bone; collapse can disrupt wrist mechanics.",
+  "treatment": "Stage-dependent hand-surgery review: protection early; reconstructive or salvage options later.",
+  "takeaway": "A collapsed lunate deserves more than a sprain label.",
+  "folder": "00187-kienbock",
+  "hook": "A dense, flattened, irregular lunate in the centre of the wrist.",
+  "captionSymptom": "persistent wrist pain with stiffness and a weakening grip",
+  "teaser": "And suddenly the symptom made a lot more sense",
+  "difficulty": 3,
+  "laypersonQuestion": "What detail would you check first?",
+  "seedHint": "Look at the anatomy before naming the diagnosis.",
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-01T20:00:00Z",
+  "cta": "anxiety",
+  "approved": true,
+  "needsReview": false,
+  "source": "generated",
+  "verifyDefects": [],
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": [
+      "Scaphoid fracture",
+      "Septic arthritis"
+    ]
+  },
+  "condition": {
+    "diagnosis": "Kienböck disease",
+    "aliases": [
+      "Kienbock disease",
+      "lunate osteonecrosis"
+    ],
+    "symptom": "persistent wrist pain, stiffness and a weakening grip",
+    "view": "PA right wrist, including distal radius and ulna, all eight carpal bones and proximal metacarpals",
+    "keyFindings": "Sclerosis, loss of height and irregular fragmentation confined to the lunate, with early carpal malalignment. Preserve the remaining carpal bones as individual coherent structures. No acute fracture line or surgical hardware.",
+    "requiredObservations": [
+      "The lunate is abnormally dense and collapsed.",
+      "Lunate contour is irregular with fragmentation, rather than an acute isolated fracture.",
+      "Surrounding carpal anatomy is coherent with no duplicated bones."
+    ],
+    "whatYouSee": "A dense, flattened, irregular lunate in the centre of the wrist.",
+    "whyItMatters": "Loss of blood supply damages this carpal bone; collapse can disrupt wrist mechanics.",
+    "treatment": "Stage-dependent hand-surgery review: protection early; reconstructive or salvage options later.",
+    "takeaway": "A collapsed lunate deserves more than a sprain label.",
+    "ageBand": "young-adult",
+    "sources": [
+      "https://www.orthoinfo.org/diseases--conditions/kienbocks-disease/"
+    ],
+    "hook": "A dense, flattened, irregular lunate in the centre of the wrist.",
+    "captionSymptom": "persistent wrist pain with stiffness and a weakening grip",
+    "igTitle": "Kienböck disease",
+    "igOptions": [
+      "Kienböck disease",
+      "Scaphoid fracture",
+      "Septic arthritis"
+    ],
+    "igCorrect": "A",
+    "used": false,
+    "skipPublic": false,
+    "reviewedAt": "2026-09-30T21:05:01.574952Z"
+  },
+  "generated": {
+    "threadsCaption": "A patient with persistent wrist pain, stiffness, and a weakening grip.\n\nThen the X-ray loaded 😭\n\nAnd suddenly the symptom made a lot more sense.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Kienböck disease\n\n👀 What you see:\nA dense, flattened, irregular lunate in the centre of the wrist.\n\n🦴 Why it matters:\nLoss of blood supply damages this carpal bone; collapse can disrupt wrist mechanics.\n\n💊 Treatment:\nStage-dependent hand-surgery review: protection early; reconstructive or salvage options later.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "4ff718944c35094da09df3df6c65b2dbf86973f534f6236b8e7c3ca566688c9c",
+    "reviewedAt": "2026-09-30T23:51:30.715Z",
+    "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
+  },
+  "number": 180,
+  "forceRepeat": true,
+  "replacesFolder": "00180-kienbock",
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-01T19:23:32.578Z"
+  },
+  "imageApproval": {
+    "sha256": "ec58241c7d7563e8c18e69899ca147f81e6ff88e2c80ee8433e1d12bf66118d8",
+    "conditionSha256": "58d994601db905cbc1f410e4cae625215d4ed184ab305eb8c1f6ac4596ec4972",
+    "clinicalContextSha256": "5c6a2b00d76381040cf46c359f1f828b202d80da3f118042bfebe15aeb91a1eb",
+    "verifiedAt": "2026-10-01T19:26:38.207Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Image does not support a sufficiently distinct teaching answer: The lunate appears as a rounded, well-corticated carpal bone without convincing sclerosis, collapse, or fragmentation on this image. The carpal bones overall show normal density and morphology. Kienböck disease requires visible lunate sclerosis, loss of height, and/or fragmentation, none of which are clearly demonstrated here. The clinical vignette (wrist pain, stiffness, weakening grip) is consistent but non-specific; the image itself does not show the discriminating features of Kienböck disease. A normal wrist radiograph is equally or better supported by the visible pattern."
+    ],
+    "blindRead": {
+      "findings": [
+        "Posteroanterior (PA) projection of the right hand and wrist, with the thumb projected obliquely to the radial side",
+        "Skeletal maturity appears complete with closed physes throughout the visualized bones",
+        "Cortical margins of the radius and ulna appear intact distally; no acute fracture line identified at the distal radius or ulna",
+        "Carpal bones are present in normal number and overall alignment; carpal joint spaces appear maintained without gross malalignment",
+        "No definitive widening of the scapholunate interval is identified on this single projection",
+        "Metacarpals 1 through 5 appear intact; no fracture or dislocation identified at the metacarpophalangeal joints",
+        "Phalangeal cortices appear intact throughout; joint spaces of the interphalangeal joints appear preserved",
+        "Bone density appears within normal limits; no focal lytic or sclerotic lesion identified",
+        "Soft tissue contour appears unremarkable without focal swelling or calcification",
+        "No radiopaque foreign body identified"
+      ],
+      "differential": [
+        "Normal radiograph of the hand and wrist — no acute osseous abnormality identified",
+        "Subtle scapholunate ligament injury (scapholunate dissociation) cannot be excluded on a single PA view without stress views or measurement of the scapholunate interval",
+        "Early or mild osteoarthritis of the carpometacarpal or intercarpal joints, if clinical correlation suggests joint pain, though findings are minimal on this image"
+      ],
+      "anatomyConcerns": [
+        "The thumb is imaged in an oblique rather than true lateral or PA orientation, which is standard for a PA hand view but limits full assessment of the first carpometacarpal joint",
+        "The distal forearm is partially included but the proximal carpal row is at the inferior image margin, slightly limiting evaluation of the radiocarpal joint; a dedicated wrist PA view would better assess carpal alignment",
+        "No laterality marker or patient identifier is visible in the image, which is an acquisition/labeling concern"
+      ]
+    }
+  },
+  "ownerImageOverride": {
+    "sha256": "ec58241c7d7563e8c18e69899ca147f81e6ff88e2c80ee8433e1d12bf66118d8",
+    "approvedAt": "2026-10-01T19:29:13.407Z",
+    "note": "Owner reviewed the regenerated image in chat and approved it for the 11:00 PM Cairo repost despite the automated verifier finding the lunate change weak. Local Claude Code review: five digits, coherent carpals, fragmented lunate without clear sclerosis or collapse. Rendered once with an added prompt line requiring exactly five digits (one thumb and four fingers each on its own metacarpal); the stored condition is the original reviewed one."
+  }
+}
