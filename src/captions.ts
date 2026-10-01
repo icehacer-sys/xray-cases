@@ -631,8 +631,8 @@ Match the patient’s prompt with the most absurd reply.
 Grab it here 👇🏼
 anxiety.mednoteslab.com`,
 
-  // Prepared only: never add to automatic rotation or pin a live case until the
-  // product, public destination and checkout have been confirmed live.
+  // Explicit pins only: the owner activated the confirmed-live Challenge on
+  // October 2, 4, and 6. Keep it excluded from automatic rotation.
   challenge: `If these weird X-rays keep pulling you in.
 
 I turned it into The Hopital Challenge.

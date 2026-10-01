@@ -20,7 +20,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-10-02T19:00:00Z",
-  "cta": "anxiety",
+  "cta": "challenge",
   "approved": true,
   "needsReview": false,
   "source": "generated",
@@ -75,7 +75,7 @@
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Pancoast tumour pattern\n\n👀 What you see:\nAn irregular right apical mass abutting the chest wall.\n\n🦴 Why it matters:\nA superior sulcus tumour can affect nearby nerves. The film raises suspicion; it cannot establish histology.\n\n💊 Treatment:\nUrgent CT, tissue diagnosis, and staging; treatment depends on resectability and tumour type.",
     "igCaption": "",
-    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI turned it into The Hopital Challenge.\n\nLook at the X-ray. Make your guess. Then reveal the answer.\n\nSee how many you get right 👇🏼\nchallenge.mednoteslab.com"
   },
   "generation": {
     "model": "gpt-image-2.5-flare",
@@ -114,8 +114,8 @@
     ]
   },
   "contentReview": {
-    "sha256": "185bba651f5351fd2e17141f5c23a5eb6db0830e77c2e5fc17eb04f7983f5772",
-    "reviewedAt": "2026-09-30T23:51:30.715Z",
-    "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
+    "sha256": "160f083244b6dcb351558011e3d3167b572e9077b5225d9b19cddbf19e33e6ac",
+    "reviewedAt": "2026-10-01T11:26:43Z",
+    "reviewer": "Codex cloud CTA-only factual/copy review against confirmed live Challenge mechanics; underlying clinical/image review retained unchanged; not clinical certification"
   }
 }

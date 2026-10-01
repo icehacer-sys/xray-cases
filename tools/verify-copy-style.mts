@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 process.env.BOT_USAGE_LOG = "off";
 globalThis.fetch = async () => { throw new Error("Unexpected network request in copy-style checks"); };
 const { SERIAL_COMMA_RULE, serialCommaProblems, assertSerialCommas } = await import("../src/copy-style.js");
 const { generateThreadsCaption, generateThreadsAnswer, pickCta } = await import("../src/captions.js");
-const { copyProblems } = await import("../src/readiness.js");
+const { copyProblems, contentProblem } = await import("../src/readiness.js");
 const fixture: any = { diagnosis: "Kienbock disease", aliases: [], symptom: "persistent wrist pain, stiffness, and a weakening grip", hook: "lunate changes", teaser: "And suddenly the symptom made a lot more sense", whatYouSee: "A dense and flattened lunate.", whyItMatters: "Collapse can affect wrist mechanics.", treatment: "Care depends on stage.", takeaway: "Seek assessment." };
 const caption = generateThreadsCaption(fixture);
 assert.equal(caption.split("\n\n")[0], "A patient with persistent wrist pain, stiffness, and a weakening grip.");
@@ -46,8 +47,8 @@ assert.deepEqual(copyProblems(good), []);
 for (const field of ["threadsCaption", "threadsCaptionAlt", "threadsAnswer", "ctaText"])
   assert.ok(copyProblems({ ...good, generated: { ...good.generated, [field]: "Pain, stiffness and weakness." } }).some(p => p.startsWith("Missing Oxford comma")), field);
 await assert.rejects(generateThreadsAnswer({ ...fixture, treatment: "Offloading, footwear changes and activity modification first." }), /Missing Oxford comma/);
-// A prepared offer must never leak into default rotation. Existing pinned card
-// cases keep their offer; this test performs no queue writes or API calls.
+// The explicit-only offer must never leak into default rotation.
+// This test performs no queue writes or API calls.
 const challengeCta = pickCta({ ...fixture, cta: "challenge" });
 assert.equal(challengeCta.key, "challenge");
 assert.ok(challengeCta.text.length <= 500);
@@ -65,4 +66,20 @@ assert.equal(cardCta.key, "anxiety");
 assert.ok(cardCta.text.includes("Match the patient’s prompt with the most absurd reply."));
 assert.ok(!cardCta.text.includes("flip"));
 assert.deepEqual(copyProblems({ ...good, generated: { ...good.generated, ctaText: challengeCta.text } }), []);
-console.log("PASS copy style, corrected card mechanics, explicit Challenge key and no automatic Challenge activation; zero network calls");
+const pinnedWeek = [
+  ["00180-kienbock", "2026-10-01", "anxiety"],
+  ["00181-pancoast", "2026-10-02", "challenge"],
+  ["00182-compound-odontoma", "2026-10-03", "anxiety"],
+  ["00183-freiberg", "2026-10-04", "challenge"],
+  ["00184-osgood-schlatter", "2026-10-05", "anxiety"],
+  ["00185-calcific-tendinopathy", "2026-10-06", "challenge"],
+  ["00186-osteochondritis-dissecans", "2026-10-07", "anxiety"],
+];
+for (const [folder, date, key] of pinnedWeek) {
+  const c = JSON.parse(readFileSync(new URL(`../cases/${folder}/case.json`, import.meta.url), "utf8"));
+  assert.equal(c.postAt, `${date}T19:00:00Z`, folder);
+  assert.equal(c.cta, key, folder);
+  assert.equal(c.generated.ctaText, pickCta(c).text, `${folder}: cached CTA matches pin`);
+  assert.equal(contentProblem(c), null, `${folder}: current copy review`);
+}
+console.log("PASS copy style, corrected card mechanics, explicit Challenge pins on October 2/4/6, matching cached copy/reviews, and no automatic Challenge rotation; zero network calls");

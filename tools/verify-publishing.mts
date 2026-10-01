@@ -16,7 +16,7 @@ const { State } = await import("../src/state.js");
 const { parseXrayVerdict } = await import("../src/verify.js");
 const { imageApproval, imageApprovalProblem, assertPublicImage, invalidateImage } = await import("../src/image-approval.js");
 const { buildXrayPrompt } = await import("../src/anatomy.js");
-const { imagePrompt, generateThreadsCaption, assertPublicCopy } = await import("../src/captions.js");
+const { imagePrompt, generateThreadsCaption, assertPublicCopy, pickCta } = await import("../src/captions.js");
 const { postImage, reply } = await import("../src/threads.js");
 const { atomicJson, checkpointState, PersistenceError } = await import("../src/persistence.js");
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
@@ -114,6 +114,31 @@ if (process.argv.includes("--failure-cli")) {
   console.log("PASS final image binding, public bytes, repair hold, and canonical prompt variants");
 
   const state = new State();
+  const challengeCta = pickCta({ ...c, cta: "challenge" }).text;
+  const challengeDomain = challengeCta.trim().split("\n").at(-1)!;
+  globalThis.fetch = async (url, init) => {
+    const params = new URLSearchParams(String(init?.body ?? ""));
+    if (String(url).endsWith("/threads")) {
+      assert.equal(params.get("media_type"), "TEXT");
+      assert.equal(params.get("reply_to_id"), "answer-parent");
+      assert.equal(params.get("text"), challengeCta);
+      assert.equal(params.get("link_attachment"), "https://challenge.mednoteslab.com");
+      assert.equal(params.has("image_url"), false);
+      assert.equal(params.has("text_entities"), false);
+      return response({ id: "challenge-cta-container" });
+    }
+    if (String(url).endsWith("/threads_publish")) {
+      assert.equal(params.get("creation_id"), "challenge-cta-container");
+      return response({ id: "challenge-cta-id" });
+    }
+    throw new Error(`Unexpected Challenge CTA fixture URL: ${String(url)}`);
+  };
+  const challengeStore = state.publication("challenge-cta");
+  assert.equal(await reply("answer-parent", challengeCta, undefined, `https://${challengeDomain}`, challengeStore), "challenge-cta-id");
+  assert.equal(challengeStore.get()?.params.link_attachment, "https://challenge.mednoteslab.com");
+  globalThis.fetch = async () => { throw new Error("Published CTA must not be replayed"); };
+  assert.equal(await reply("answer-parent", challengeCta, undefined, `https://${challengeDomain}`, challengeStore), "challenge-cta-id");
+  console.log("PASS separate Challenge TEXT reply, exact cached copy, link attachment, and no replay");
   const events: string[] = [];
   const backing = state.publication("challenge");
   const store: PublicationStore = { get: backing.get, set: (p) => { events.push("save"); backing.set(p); } };
