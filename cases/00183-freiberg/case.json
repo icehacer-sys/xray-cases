@@ -19,7 +19,7 @@
   "threadsImage": "xray.png",
   "igSlides": [],
   "postAt": "2026-10-03T19:00:00.000Z",
-  "cta": "challenge",
+  "cta": "anxiety",
   "approved": true,
   "needsReview": false,
   "source": "generated",
@@ -74,7 +74,7 @@
     "threadsCaptionAlt": "",
     "threadsAnswer": "Answer: Freiberg disease\n\n👀 What you see:\nA flattened, dense second metatarsal head with an irregular joint surface.\n\n🦴 Why it matters:\nOsteonecrosis here can lead to collapse and arthritis at the base of the toe.\n\n💊 Treatment:\nOffloading, footwear changes, and activity modification first; persistent disease may need surgery.",
     "igCaption": "",
-    "ctaText": "If these weird X-rays keep pulling you in.\n\nI turned it into The Hopital Challenge.\n\nLook at the X-ray. Make your guess. Then reveal the answer.\n\nSee how many you get right 👇🏼\nchallenge.mednoteslab.com"
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
   },
   "generation": {
     "model": "gpt-image-2.5-flare",
@@ -113,9 +113,9 @@
     ]
   },
   "contentReview": {
-    "sha256": "124634e441692aa4c67bb5e550f2aa78fa13b041c29884a8bab7a8adab00e353",
-    "reviewedAt": "2026-10-01T11:26:43Z",
-    "reviewer": "Codex cloud CTA-only factual/copy review against confirmed live Challenge mechanics; underlying clinical/image review retained unchanged; not clinical certification"
+    "sha256": "80158dedcc49e3aea8526d78615f3d90c647204bade0f1c092b65fdec39e6b88",
+    "reviewedAt": "2026-10-01T21:53:15.997Z",
+    "reviewer": "Claude Code local CTA-only swap: canonical pickCta text for the owner-pinned night after the 00182 retirement shifted the queue; underlying clinical/image/copy review retained unchanged; not clinical certification"
   },
   "number": 183
 }

@@ -66,20 +66,21 @@ assert.equal(cardCta.key, "anxiety");
 assert.ok(cardCta.text.includes("Match the patient’s prompt with the most absurd reply."));
 assert.ok(!cardCta.text.includes("flip"));
 assert.deepEqual(copyProblems({ ...good, generated: { ...good.generated, ctaText: challengeCta.text } }), []);
+// Challenge stays on the nights of October 2, 4 and 6. Retiring 00182 (dental, owner rule) moved
+// the later cases up one night, so their CTA keys were swapped to keep those nights.
 const pinnedWeek = [
   ["00180-kienbock", "2026-10-01", "anxiety"],
   ["00181-pancoast", "2026-10-02", "challenge"],
-  ["00182-compound-odontoma", "2026-10-03", "anxiety"],
-  ["00183-freiberg", "2026-10-04", "challenge"],
-  ["00184-osgood-schlatter", "2026-10-05", "anxiety"],
-  ["00185-calcific-tendinopathy", "2026-10-06", "challenge"],
-  ["00186-osteochondritis-dissecans", "2026-10-07", "anxiety"],
+  ["00183-freiberg", "2026-10-03", "anxiety"],
+  ["00184-osgood-schlatter", "2026-10-04", "challenge"],
+  ["00185-calcific-tendinopathy", "2026-10-05", "anxiety"],
+  ["00186-osteochondritis-dissecans", "2026-10-06", "challenge"],
 ];
 for (const [folder, date, key] of pinnedWeek) {
   const c = JSON.parse(readFileSync(new URL(`../cases/${folder}/case.json`, import.meta.url), "utf8"));
-  assert.equal(c.postAt, `${date}T19:00:00Z`, folder);
+  assert.equal(Date.parse(c.postAt), Date.parse(`${date}T19:00:00Z`), folder);
   assert.equal(c.cta, key, folder);
   assert.equal(c.generated.ctaText, pickCta(c).text, `${folder}: cached CTA matches pin`);
   assert.equal(contentProblem(c), null, `${folder}: current copy review`);
 }
-console.log("PASS copy style, corrected card mechanics, explicit Challenge pins on October 2/4/6, matching cached copy/reviews, and no automatic Challenge rotation; zero network calls");
+console.log("PASS copy style, corrected card mechanics, explicit Challenge pins on the nights of October 2/4/6, matching cached copy/reviews, and no automatic Challenge rotation; zero network calls");
