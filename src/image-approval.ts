@@ -31,6 +31,8 @@ export function imageApproval(png: Buffer, condition: Condition, verdict: XrayVe
 export function imageApprovalProblem(c: Case, png: Buffer): string | null {
   if (c.source !== "generated") return null;
   if (!c.condition) return "generated case has no diagnostic image inputs";
+  // An explicit owner approval of these exact bytes stands in for the automated verdict.
+  if (c.ownerImageOverride?.sha256) return c.ownerImageOverride.sha256 === hash(png) ? null : "image changed after owner approval";
   const a = c.imageApproval;
   if (!a) return "final image has not been verified";
   if (a.sha256 !== hash(png)) return "image changed after verification";

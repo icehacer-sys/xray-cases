@@ -77,6 +77,9 @@ export interface Case {
   needsReview?: boolean;
   verifyDefects?: string[];
   /** QA belongs to these exact final image bytes and these diagnostic inputs. */
+  /** The owner looked at these exact final image bytes and approved posting them, overriding a
+   *  failed automated verdict. imageApproval keeps the verifier's own result unchanged. */
+  ownerImageOverride?: { sha256: string; approvedAt: string; note: string };
   imageApproval?: {
     sha256: string;
     conditionSha256: string;
