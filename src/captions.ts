@@ -626,10 +626,21 @@ hopital.mednoteslab.com`,
 
 I turned medical gaslighting into a card game.
 
-Real conditions waved off as nothing until the card flips to the diagnosis.
+Match the patient’s prompt with the most absurd reply.
 
 Grab it here 👇🏼
 anxiety.mednoteslab.com`,
+
+  // Prepared only: never add to automatic rotation or pin a live case until the
+  // product, public destination and checkout have been confirmed live.
+  challenge: `If these weird X-rays keep pulling you in.
+
+I turned it into The Hopital Challenge.
+
+Look at the X-ray. Make your guess. Then reveal the answer.
+
+See how many you get right 👇🏼
+challenge.mednoteslab.com`,
 
   viral10: `These are the 10 cases that broke the internet.
 

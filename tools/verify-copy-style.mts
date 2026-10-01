@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 process.env.BOT_USAGE_LOG = "off";
 globalThis.fetch = async () => { throw new Error("Unexpected network request in copy-style checks"); };
 const { SERIAL_COMMA_RULE, serialCommaProblems, assertSerialCommas } = await import("../src/copy-style.js");
-const { generateThreadsCaption, generateThreadsAnswer } = await import("../src/captions.js");
+const { generateThreadsCaption, generateThreadsAnswer, pickCta } = await import("../src/captions.js");
 const { copyProblems } = await import("../src/readiness.js");
 const fixture: any = { diagnosis: "Kienbock disease", aliases: [], symptom: "persistent wrist pain, stiffness, and a weakening grip", hook: "lunate changes", teaser: "And suddenly the symptom made a lot more sense", whatYouSee: "A dense and flattened lunate.", whyItMatters: "Collapse can affect wrist mechanics.", treatment: "Care depends on stage.", takeaway: "Seek assessment." };
 const caption = generateThreadsCaption(fixture);
@@ -46,4 +46,23 @@ assert.deepEqual(copyProblems(good), []);
 for (const field of ["threadsCaption", "threadsCaptionAlt", "threadsAnswer", "ctaText"])
   assert.ok(copyProblems({ ...good, generated: { ...good.generated, [field]: "Pain, stiffness and weakness." } }).some(p => p.startsWith("Missing Oxford comma")), field);
 await assert.rejects(generateThreadsAnswer({ ...fixture, treatment: "Offloading, footwear changes and activity modification first." }), /Missing Oxford comma/);
-console.log("PASS exact owner vignette, flat serial-list guard, cached-copy gate, pairs, clauses and URLs; zero network calls");
+// A prepared offer must never leak into default rotation. Existing pinned card
+// cases keep their offer; this test performs no queue writes or API calls.
+const challengeCta = pickCta({ ...fixture, cta: "challenge" });
+assert.equal(challengeCta.key, "challenge");
+assert.ok(challengeCta.text.length <= 500);
+assert.deepEqual(serialCommaProblems(challengeCta.text), []);
+const lastLine = challengeCta.text.trim().split("\n").at(-1)!;
+assert.match(lastLine, /^[a-z0-9.-]+\.[a-z]{2,}(\/\S*)?$/i);
+assert.equal(`https://${lastLine}`, "https://challenge.mednoteslab.com");
+for (let seq = 0; seq < 52; seq++) {
+  const automatic = pickCta(fixture, seq);
+  assert.notEqual(automatic.key, "challenge");
+  assert.ok(!automatic.text.includes("challenge.mednoteslab.com"));
+}
+const cardCta = pickCta({ ...fixture, cta: "anxiety" });
+assert.equal(cardCta.key, "anxiety");
+assert.ok(cardCta.text.includes("Match the patient’s prompt with the most absurd reply."));
+assert.ok(!cardCta.text.includes("flip"));
+assert.deepEqual(copyProblems({ ...good, generated: { ...good.generated, ctaText: challengeCta.text } }), []);
+console.log("PASS copy style, corrected card mechanics, explicit Challenge key and no automatic Challenge activation; zero network calls");

@@ -121,7 +121,7 @@ export interface Case {
   };
 }
 
-export type CtaKey = "support" | "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vol1" | "vol3" | "field" | "anxiety" | "viral10" | "ctvol1";
+export type CtaKey = "support" | "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vol1" | "vol3" | "field" | "anxiety" | "challenge" | "viral10" | "ctvol1";
 
 /** A resolved public image URL for a case file (built from config.githubRawBase). */
 export type ImageUrl = string;
