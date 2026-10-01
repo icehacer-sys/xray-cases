@@ -17,6 +17,7 @@ import { verifyXray } from "./verify.js";
 import { saveCase } from "./cases.js";
 import sharp from "sharp";
 import type { Case, Condition } from "./types.js";
+import { loadReference } from "./reference.js";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const folder = process.argv[2];
@@ -79,7 +80,7 @@ if (mode === "xray") {
   invalidateImage(c);
   // Generate a CLEAN X-ray (no auto-censor — auto-placement is unreliable; blur manually
   // afterward with `grid` + `blurbox`).
-  const png = await generateXray(prompt);
+  const png = await generateXray(prompt, loadReference(cond!));
   writeFileSync(join(dir, c.threadsImage), png);
   c.generation = { model: config.imageModel, generatedAt: new Date().toISOString() };
   saveCase(c);

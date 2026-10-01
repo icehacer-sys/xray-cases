@@ -33,6 +33,7 @@ import {
   pickCta,
 } from "./captions.js";
 import { generateXray } from "./openai.js";
+import { loadReference, referenceAvailable } from "./reference.js";
 import { buildXrayPrompt, AGE_BANDS } from "./anatomy.js";
 import { generateSlides } from "./slidegen.js";
 import { verifyXray, assertQaAvailable, fatalQaError, type XrayVerdict } from "./verify.js";
@@ -52,6 +53,8 @@ interface Cli {
   topup: boolean;
   diagnosis?: string;
   threadsOnly: boolean;
+  /** An already-rendered film to use as the case X-ray (no new render). Needs --diagnosis. */
+  image?: string;
 }
 
 function parseArgs(argv: string[]): Cli {
@@ -61,6 +64,7 @@ function parseArgs(argv: string[]): Cli {
   let topup = false;
   let diagnosis: string | undefined;
   let threadsOnly = false;
+  let image: string | undefined;
 
   for (let i = 0; i < args.length; i++) {
     const a = args[i];
@@ -72,6 +76,11 @@ function parseArgs(argv: string[]): Cli {
       if (!diagnosis) throw new Error("--diagnosis expects a value, e.g. --diagnosis \"Proteus syndrome\".");
     } else if (a.startsWith("--diagnosis=")) {
       diagnosis = a.slice("--diagnosis=".length);
+    } else if (a === "--image") {
+      image = args[++i];
+      if (!image) throw new Error("--image expects a PNG path.");
+    } else if (a.startsWith("--image=")) {
+      image = a.slice("--image=".length);
     } else if (a === "--count") {
       const n = Number(args[++i]);
       if (!Number.isFinite(n) || n < 1) {
@@ -89,7 +98,8 @@ function parseArgs(argv: string[]): Cli {
     }
   }
 
-  return { count, mock, topup, diagnosis, threadsOnly };
+  if (image && (!diagnosis || topup || count !== 1)) throw new Error("--image needs --diagnosis for exactly one case.");
+  return { count, mock, topup, diagnosis, threadsOnly, image };
 }
 
 function log(...parts: unknown[]): void {
@@ -312,6 +322,7 @@ async function generateOne(
   postAt: Date,
   mock: boolean,
   threadsOnly: boolean,
+  prerendered?: Buffer,
 ): Promise<GenResult> {
   const folder = `${pad5(number)}-${slug(cond.diagnosis)}`;
   const casesDir = join(projectRoot, config.casesDir);
@@ -323,7 +334,9 @@ async function generateOne(
   //    (duplicated/extra bones, wrong body part, melted bone) up to xrayMaxAttempts, feeding
   //    the detected defects back into the prompt to steer away from them. A persistent failure
   //    is queued with needsReview so the publisher never auto-posts a defective image.
-  let xrayPng = mock ? placeholderXray() : await generateXray(buildXrayPrompt(cond));
+  // A pre-rendered film (--image) is used as is: one render per case, never a second one here.
+  const reference = mock || prerendered ? undefined : loadReference(cond);
+  let xrayPng = mock ? placeholderXray() : prerendered ?? await generateXray(buildXrayPrompt(cond), reference);
   let verifiedPng: Buffer | undefined;
   let verdict: XrayVerdict | undefined;
   if (!mock && config.xrayVerify) {
@@ -337,7 +350,8 @@ async function generateOne(
       }
       log(`    ⚠ X-ray QA rejected (attempt ${attempt}/${config.xrayMaxAttempts}, ${verdict.severity}): ${verdict.defects.join(" | ")}`);
       avoid.push(...verdict.defects);
-      if (attempt < config.xrayMaxAttempts) xrayPng = await generateXray(buildXrayPrompt(cond, { avoid }));
+      if (prerendered || attempt >= config.xrayMaxAttempts) break;
+      xrayPng = await generateXray(buildXrayPrompt(cond, { avoid }), reference);
     }
   }
   // Blur external genitalia (if any) so Threads/IG do not flag the post as sensitive/adult.
@@ -469,11 +483,11 @@ async function main(): Promise<void> {
       ? conditions.find(
           (c) =>
             c.diagnosis.toLowerCase() === cli.diagnosis!.toLowerCase() &&
-            !attempted.has(c.diagnosis) && c.used !== true && c.skipPublic !== true &&
+            !attempted.has(c.diagnosis) && c.used !== true && c.skipPublic !== true && referenceAvailable(c) &&
             !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
         )
       : conditions.find(
-          (c) => !attempted.has(c.diagnosis) && c.used !== true && c.skipPublic !== true && Boolean(c.sources?.length && c.reviewedAt) && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
+          (c) => !attempted.has(c.diagnosis) && c.used !== true && c.skipPublic !== true && referenceAvailable(c) && Boolean(c.sources?.length && c.reviewedAt) && !isUsedDiagnosis(used, c.diagnosis, c.aliases ?? []),
         );
     if (!cond) {
       log(
@@ -506,7 +520,7 @@ async function main(): Promise<void> {
 
     let result: GenResult;
     try {
-      result = await generateOne(cond, number, postAt, cli.mock, cli.threadsOnly);
+      result = await generateOne(cond, number, postAt, cli.mock, cli.threadsOnly, cli.image ? readFileSync(cli.image) : undefined);
     } catch (err) {
       if (err instanceof PersistenceError) throw err;
       failures++;
