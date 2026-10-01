@@ -799,6 +799,17 @@
       "publishedId": "17989075806113174",
       "publishedAt": "2026-09-29T20:16:35.960Z",
       "confirmedPublished": true
+    },
+    "case:00180-kienbock:challenge": {
+      "creationId": "17891801412614054",
+      "createdAt": "2026-10-01T19:04:28.701Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00180-kienbock/xray.png",
+        "text": "A patient with persistent wrist pain, stiffness, and a weakening grip.\n\nThen the X-ray loaded 😭\n\nAnd suddenly the symptom made a lot more sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "f626ebabcf27007934ddeff92ce68844e5de47ac8fa253d9cba29d4238f2d11d:0986184568c167e378e5261f32f4db12c8c7b350ed2094f9e2fb3e051cec232d:4ff718944c35094da09df3df6c65b2dbf86973f534f6236b8e7c3ca566688c9c"
     }
   },
   "stages": {
@@ -1656,12 +1667,18 @@
       "answerCommentId": "18130284304690941",
       "answerPostedAt": "2026-09-29T19:20:55.934Z",
       "ctaPostedAt": "2026-09-29T20:16:37.807Z"
+    },
+    "00180-kienbock": {
+      "publishedCaption": "A patient with persistent wrist pain, stiffness, and a weakening grip.\n\nThen the X-ray loaded 😭\n\nAnd suddenly the symptom made a lot more sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00180-kienbock\",\"assignedAt\":\"2026-10-01T19:04:21.557Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-09-29",
+      "date": "2026-10-01",
       "count": 0
     }
   }
