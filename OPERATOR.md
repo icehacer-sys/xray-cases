@@ -46,3 +46,9 @@ Companion service: [threads-bot](https://github.com/icehacer-sys/threads-bot).
 Use an Oxford comma in genuine lists of three or more items: "A patient with persistent wrist pain, stiffness, and a weakening grip." Keep two-item pairs and ordinary clauses unchanged. Do not insert commas into URLs. The established challenge, titled spoiler answer, and separate verbatim CTA format remains; case openings use neutral "A patient with" vignettes rather than claiming an actual encounter.
 
 The offline serial-list check reports clear short phrase lists for a local rewrite; it never edits copy automatically. Complex or ambiguous grammar still needs local Codex/Claude review. A guard failure must not trigger a paid redraft or review without owner authorization. Run `npm run copy:verify`. Existing cached public copy also goes through the readiness check. No historical case, queue hold, receipt, image or provider is changed by this rule.
+
+## Active Hopital Challenge CTA pins (owner, 2026-10-01)
+
+The `challenge` CTA key is separate from `hopital` (the older free pack). The Challenge product, public destination, checkout, and look/guess/reveal mechanics were confirmed live on October 1. The owner authorized activation: the unposted October 2, 4, and 6 cases are pinned to Challenge; October 1, 3, 5, and 7 retain the corrected card-game CTA. Challenge stays excluded from automatic rotation.
+
+Before any later CTA change, check exact fresh case/state receipts for the target. Stop on a created or uncertain CTA receipt; never overwrite its recorded parameters or replay a published CTA. Update `cta`, cached `generated.ctaText` and the hash-bound local content review together. Preserve images, image approvals, descriptions, answers, times, historical holds and state. The CTA remains a separate TEXT reply with a last-line bare domain for `link_attachment`; preview display is best-effort.
