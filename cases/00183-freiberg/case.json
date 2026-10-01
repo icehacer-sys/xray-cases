@@ -18,7 +18,7 @@
   "seedHint": "Look at the anatomy before naming the diagnosis.",
   "threadsImage": "xray.png",
   "igSlides": [],
-  "postAt": "2026-10-04T19:00:00Z",
+  "postAt": "2026-10-03T19:00:00.000Z",
   "cta": "challenge",
   "approved": true,
   "needsReview": false,
@@ -116,5 +116,6 @@
     "sha256": "124634e441692aa4c67bb5e550f2aa78fa13b041c29884a8bab7a8adab00e353",
     "reviewedAt": "2026-10-01T11:26:43Z",
     "reviewer": "Codex cloud CTA-only factual/copy review against confirmed live Challenge mechanics; underlying clinical/image review retained unchanged; not clinical certification"
-  }
+  },
+  "number": 183
 }

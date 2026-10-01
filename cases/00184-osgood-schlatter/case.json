@@ -18,7 +18,7 @@
   "seedHint": "Look at the anatomy before naming the diagnosis.",
   "threadsImage": "xray.png",
   "igSlides": [],
-  "postAt": "2026-10-05T19:00:00Z",
+  "postAt": "2026-10-04T19:00:00.000Z",
   "cta": "anxiety",
   "approved": true,
   "needsReview": false,
@@ -116,5 +116,6 @@
     "sha256": "9fe282f4f16bd3768034f2d206ee37cb9dda644c53b292bf02bc6e28984e817c",
     "reviewedAt": "2026-09-30T23:51:30.715Z",
     "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
-  }
+  },
+  "number": 184
 }
