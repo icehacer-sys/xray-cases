@@ -32,7 +32,14 @@
       "Septic arthritis"
     ]
   },
-  "stages": {},
+  "stages": {
+    "publishedCaption": "A patient with persistent wrist pain, stiffness, and a weakening grip.\n\nThen the X-ray loaded 😭\n\nAnd suddenly the symptom made a lot more sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00180-kienbock\",\"assignedAt\":\"2026-10-01T19:04:21.557Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18105853550189942",
+    "challengePostedAt": "2026-10-01T19:04:35.874Z"
+  },
   "condition": {
     "diagnosis": "Kienböck disease",
     "aliases": [
@@ -115,5 +122,6 @@
     "sha256": "4ff718944c35094da09df3df6c65b2dbf86973f534f6236b8e7c3ca566688c9c",
     "reviewedAt": "2026-09-30T23:51:30.715Z",
     "reviewer": "Codex local CTA-only factual/copy review; underlying independent clinical/image review retained unchanged; not clinical certification"
-  }
+  },
+  "number": 180
 }
