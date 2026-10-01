@@ -91,6 +91,7 @@ function userPrompt(cond: Condition, blind: BlindImageRead): string {
     ...(extra.length ? ["", ...extra] : []),
     ``,
     `Return ONLY this JSON:`,
+    `Include a digitCounts array: one {part:"hand"|"foot", digits:integer, allDigitsInFrame:boolean} for EVERY hand or foot in the image (empty if none). Count digits one by one starting at the thumb or big toe; each digit has its own metacarpal or metatarsal. allDigitsInFrame is false only when the film crops some digits out.`,
     `Include an observations array: one {expected:string, observed:string, assessable:boolean, matches:boolean} for EACH required observation in order. Quote expected exactly. Describe what is actually visible before judging a match. Do not assume the expected diagnosis is correct. Unassessable required findings must fail.`,
     `{"plausible": boolean, "depictsDiagnosis": boolean, "correctBodyPart": boolean, "defects": [string], "severity": "pass"|"minor"|"critical"}`,
     `severity = "critical" if there is any clear AI anatomical impossibility (duplicated/extra bone or organ,`,
@@ -126,8 +127,8 @@ export async function verifyXray(png: Buffer, cond: Condition): Promise<XrayVerd
     model: config.xrayVerifyModel,
     max_tokens: 2400,
     output_config: { format: { type: "json_schema", schema: {
-      type: "object", additionalProperties: false, required: ["unexplainedFindings", "singleAnswerSupported", "diagnosticReason", "plausible", "depictsDiagnosis", "correctBodyPart", "defects", "severity", "observations"],
-      properties: { unexplainedFindings: { type: "array", items: { type: "string" } }, singleAnswerSupported: { type: "boolean" }, diagnosticReason: { type: "string" }, plausible: { type: "boolean" }, depictsDiagnosis: { type: "boolean" }, correctBodyPart: { type: "boolean" }, defects: { type: "array", items: { type: "string" } }, severity: { type: "string", enum: ["pass", "minor", "critical"] }, observations: { type: "array", items: { type: "object", additionalProperties: false, required: ["expected", "observed", "assessable", "matches"], properties: { expected: { type: "string" }, observed: { type: "string" }, assessable: { type: "boolean" }, matches: { type: "boolean" } } } } },
+      type: "object", additionalProperties: false, required: ["unexplainedFindings", "singleAnswerSupported", "diagnosticReason", "plausible", "depictsDiagnosis", "correctBodyPart", "defects", "severity", "observations", "digitCounts"],
+      properties: { unexplainedFindings: { type: "array", items: { type: "string" } }, singleAnswerSupported: { type: "boolean" }, diagnosticReason: { type: "string" }, plausible: { type: "boolean" }, depictsDiagnosis: { type: "boolean" }, correctBodyPart: { type: "boolean" }, defects: { type: "array", items: { type: "string" } }, severity: { type: "string", enum: ["pass", "minor", "critical"] }, observations: { type: "array", items: { type: "object", additionalProperties: false, required: ["expected", "observed", "assessable", "matches"], properties: { expected: { type: "string" }, observed: { type: "string" }, assessable: { type: "boolean" }, matches: { type: "boolean" } } } }, digitCounts: { type: "array", items: { type: "object", additionalProperties: false, required: ["part", "digits", "allDigitsInFrame"], properties: { part: { type: "string", enum: ["hand", "foot"] }, digits: { type: "integer" }, allDigitsInFrame: { type: "boolean" } } } } },
     } } },
     system: SYSTEM,
     messages: [
@@ -148,6 +149,9 @@ export async function verifyXray(png: Buffer, cond: Condition): Promise<XrayVerd
     .trim();
   return { ...parseXrayVerdict(text, cond, res.stop_reason), blindRead: blind };
 }
+
+// Diagnoses that legitimately change how many digits a hand or foot has.
+const DIGIT_COUNT_CONDITIONS = /polydactyl|ectrodactyl|oligodactyl|amputat|split[- ](?:hand|foot)|cleft (?:hand|foot)/i;
 
 /** Treat model output as untrusted data, including syntactically valid but contradictory JSON. */
 export function parseXrayVerdict(text: string, cond: Condition, stopReason: string | null = "end_turn"): XrayVerdict {
@@ -175,6 +179,12 @@ export function parseXrayVerdict(text: string, cond: Condition, stopReason: stri
       !Array.isArray(v.defects) || !v.defects.every((d) => typeof d === "string" && d.trim().length > 0)) {
     return reject("X-ray verifier returned invalid field types or missing fields; needs review");
   }
+  // 2026-10-01: a six-finger Kienbock hand passed this gate and posted. The prompt already called a
+  // wrong digit count critical, so the count is now an explicit field that code enforces.
+  if (!Array.isArray(v.digitCounts) || !v.digitCounts.every((d) => d && typeof d === "object" && ["hand", "foot"].includes(d.part) && Number.isInteger(d.digits) && typeof d.allDigitsInFrame === "boolean")) return reject("Missing or invalid digit counts");
+  const digitsVary = DIGIT_COUNT_CONDITIONS.test([cond.diagnosis, ...(cond.aliases ?? [])].join(" "));
+  const wrongDigits = digitsVary ? [] : v.digitCounts.filter((d) => d.allDigitsInFrame && d.digits !== 5);
+  if (wrongDigits.length) return reject("Wrong digit count: " + wrongDigits.map((d) => `${d.part} shows ${d.digits} digits (must be 5)`).join("; "));
   const severity = v.severity as XrayVerdict["severity"];
   const depictsDiagnosis = v.depictsDiagnosis;
   const correctBodyPart = v.correctBodyPart;

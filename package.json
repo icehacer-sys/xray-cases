@@ -17,6 +17,7 @@
     "publishing:verify": "tsx tools/verify-publishing.mts",
     "audit:verify": "tsx tools/verify-audit.mts",
     "copy:verify": "tsx tools/verify-copy-style.mts",
+    "digits:verify": "tsx tools/verify-digit-count.mts",
     "runtime:summary": "tsx tools/runtime-summary.mts",
     "queue:check": "tsx tools/review-queue.mts",
     "queue:review": "tsx tools/review-queue.mts --review",
