@@ -289,7 +289,8 @@ export async function draftForegroundedCaption(c: Case): Promise<string> {
     const p = parseJsonObject(await ask(system, user, 250, false));
     const raw = p.foregrounded;
     if (raw == null || typeof raw !== "string" || raw.trim() === "" || raw.trim().toLowerCase() === "null") return "";
-    const alt = cleanPunct(str(raw)).replace(/^["']+|["']+$/g, "").replace(/\.\s*$/, "").trim();
+    // The caption template supplies "A patient with"; drafts sometimes repeat it (2026-10-02, five of seven).
+    const alt = cleanPunct(str(raw)).replace(/^["']+|["']+$/g, "").replace(/^a patient with\s+/i, "").replace(/\.\s*$/, "").trim();
     // A model that leaked the diagnosis, or ignored the no-commas rule, is not trusted for this
     // line at all — fall back rather than post it.
     if (!alt || alt.length > 130 || alt.includes(",")) return "";

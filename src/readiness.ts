@@ -27,6 +27,7 @@ export function copyProblems(c: Case): string[] {
   for (const caption of [g?.threadsCaption, g?.threadsCaptionAlt, c.seedHint].filter(Boolean) as string[]) {
     if ([c.diagnosis, ...(c.aliases ?? [])].some((d) => normalize(d).length > 3 && ` ${normalize(caption)} `.includes(` ${normalize(d)} `))) problems.push("challenge or hint reveals diagnosis/alias");
     if (/came in with (?:a |an |the )?(?:child|patient|infant|newborn)\b/i.test(caption)) problems.push("invalid symptom insertion");
+    if (/\ba patient with a patient with\b/i.test(caption)) problems.push("duplicated caption opener");
     // The opening line names the cause or exposure ("after swallowing an object"): the guess is over.
     const clue = symptomGiveaway(caption.split("\n\n")[0]);
     if (clue) problems.push(`opening line gives away the answer: ${clue}`);

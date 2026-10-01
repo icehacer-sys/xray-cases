@@ -43,6 +43,8 @@ for (const symptom of ["pain, swelling and weakness that worsens", "pain, which 
   assert.equal(generateThreadsCaption({ ...fixture, symptom }).split("\n\n")[0], `A patient with ${symptom}.`);
 const answer = await generateThreadsAnswer(fixture);
 const good = { ...fixture, generated: { threadsCaption: caption, threadsCaptionAlt: "", threadsAnswer: answer, igCaption: "", ctaText: "Pain and stiffness.\nfree.mednoteslab.com" } };
+// 2026-10-02: five drafted alternate captions began "A patient with A patient with".
+assert.ok(copyProblems({ ...good, generated: { ...good.generated, threadsCaptionAlt: "A patient with A patient with mild pain." } }).includes("duplicated caption opener"));
 assert.deepEqual(copyProblems(good), []);
 for (const field of ["threadsCaption", "threadsCaptionAlt", "threadsAnswer", "ctaText"])
   assert.ok(copyProblems({ ...good, generated: { ...good.generated, [field]: "Pain, stiffness and weakness." } }).some(p => p.startsWith("Missing Oxford comma")), field);
