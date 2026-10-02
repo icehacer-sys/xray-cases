@@ -827,6 +827,16 @@
       "publishedId": "18102001628139439",
       "publishedAt": "2026-10-02T19:02:02.266Z",
       "confirmedPublished": true
+    },
+    "case:00188-nephrocalcinosis:answer": {
+      "creationId": "17891956965614054",
+      "createdAt": "2026-10-02T20:32:46.697Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Nephrocalcinosis\n\n👀 What you see:\nBoth kidneys are packed with clusters of tiny bright calcium deposits.\n\n🦴 Why it matters:\nNephrocalcinosis is calcium deposited in the kidney tissue itself. Hypercalcaemia is the most common metabolic cause.\n\n💊 Treatment:\nTreatment targets the underlying cause such as a high blood calcium to protect kidney function.",
+        "reply_to_id": "18102001628139439",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":354}]"
+      }
     }
   },
   "stages": {
