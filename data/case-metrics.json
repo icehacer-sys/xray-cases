@@ -8006,5 +8006,135 @@
       "reposts": 9,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00162-ascariasis-bowel-infestation",
+    "postId": "18108355154189422",
+    "measuredAt": "2026-10-02T13:33:10.077Z",
+    "publishedAt": "2026-09-25T19:04:20.625Z",
+    "ageHours": 162.48040333333333,
+    "experiment": {
+      "id": "case-00162-ascariasis-bowel-infestation",
+      "assignedAt": "2026-09-25T19:04:06.270Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with crampy abdominal pain and vomiting.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more going on than the pain let on.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-25T19:24:20.625Z",
+    "ctaDueAt": "2026-09-25T20:19:20.625Z",
+    "metrics": {
+      "views": 585216,
+      "likes": 861,
+      "replies": 538,
+      "reposts": 29,
+      "quotes": 6
+    }
+  },
+  {
+    "folder": "00174-aspergilloma",
+    "postId": "18143133703596228",
+    "measuredAt": "2026-10-02T13:33:10.289Z",
+    "publishedAt": "2026-09-26T19:02:12.233Z",
+    "ageHours": 138.51612666666668,
+    "experiment": {
+      "id": "case-00174-aspergilloma",
+      "assignedAt": "2026-09-26T19:01:59.696Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a cough that kept bringing up streaks of blood.\n\nThen the X-ray loaded 😭\n\nAnd the chest had its own answer waiting.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-26T20:32:12.233Z",
+    "ctaDueAt": "2026-09-26T21:27:12.233Z",
+    "metrics": {
+      "views": 233031,
+      "likes": 349,
+      "replies": 306,
+      "reposts": 5,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00175-porocephalosis",
+    "postId": "18097639436415272",
+    "measuredAt": "2026-10-02T13:33:10.674Z",
+    "publishedAt": "2026-09-27T19:03:52.882Z",
+    "ageHours": 114.48827555555556,
+    "experiment": {
+      "id": "case-00175-porocephalosis",
+      "assignedAt": "2026-09-27T19:03:39.032Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with vague upper belly discomfort.\n\nThen the X-ray loaded 😭\n\nAnd then the radiologist went very quiet.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-27T19:23:52.882Z",
+    "ctaDueAt": "2026-09-27T20:18:52.882Z",
+    "metrics": {
+      "views": 1121456,
+      "likes": 1482,
+      "replies": 545,
+      "reposts": 40,
+      "quotes": 5
+    }
+  },
+  {
+    "folder": "00173-faecaloma",
+    "postId": "18133515574657616",
+    "measuredAt": "2026-10-02T13:33:10.883Z",
+    "publishedAt": "2026-09-28T19:01:44.954Z",
+    "ageHours": 90.52386916666667,
+    "experiment": {
+      "id": "case-00173-faecaloma",
+      "assignedAt": "2026-09-28T19:01:31.555Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with a belly that kept getting bigger and tighter for weeks.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been telling the truth the whole time.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-09-28T20:31:44.954Z",
+    "ctaDueAt": "2026-09-28T21:26:44.954Z",
+    "metrics": {
+      "views": 200659,
+      "likes": 401,
+      "replies": 234,
+      "reposts": 11,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00176-sturge-weber-syndrome",
+    "postId": "18205974196371350",
+    "measuredAt": "2026-10-02T13:33:11.389Z",
+    "publishedAt": "2026-09-29T19:00:30.232Z",
+    "ageHours": 66.54476583333333,
+    "experiment": {
+      "id": "case-00176-sturge-weber-syndrome",
+      "assignedAt": "2026-09-29T19:00:15.063Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient came in with seizures since early childhood.\n\nThen the X-ray loaded 😭\n\nAnd then the skull film changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-09-29T19:20:30.232Z",
+    "ctaDueAt": "2026-09-29T20:15:30.232Z",
+    "metrics": {
+      "views": 127606,
+      "likes": 402,
+      "replies": 162,
+      "reposts": 9,
+      "quotes": 0
+    }
   }
 ]
