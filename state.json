@@ -813,6 +813,17 @@
       "publishedId": "18105853550189942",
       "publishedAt": "2026-10-01T19:04:35.874Z",
       "confirmedPublished": true
+    },
+    "case:00188-nephrocalcinosis:challenge": {
+      "creationId": "17891950413614054",
+      "createdAt": "2026-10-02T19:01:56.124Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00188-nephrocalcinosis/xray.png",
+        "text": "A patient with frequent trips to the bathroom at night.\n\nThen the X-ray loaded 😭\n\nAnd nothing about the night visits prepared anyone for this.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "efd3dd828f2a924afe022ba0e2ad93261b038a7ab965b38e870e31826def3638:598505080af8cb161bc0c6e422c0c535163a1b61593be39b8c773ee23a3cedec:8f1976ebeefd6ffa6a39d9753daf837ef004164af8619aeaeb66eb78fabc0716"
     }
   },
   "stages": {
@@ -1678,12 +1689,18 @@
       "ctaDelayMin": "75",
       "threadsPostId": "18105853550189942",
       "challengePostedAt": "2026-10-01T19:04:35.874Z"
+    },
+    "00188-nephrocalcinosis": {
+      "publishedCaption": "A patient with frequent trips to the bathroom at night.\n\nThen the X-ray loaded 😭\n\nAnd nothing about the night visits prepared anyone for this.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00188-nephrocalcinosis\",\"assignedAt\":\"2026-10-02T19:01:49.465Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "90",
+      "ctaDelayMin": "145"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-01",
+      "date": "2026-10-02",
       "count": 0
     }
   }
