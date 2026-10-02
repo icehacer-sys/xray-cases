@@ -840,6 +840,16 @@
       "publishedId": "18634006549008878",
       "publishedAt": "2026-10-02T20:32:55.578Z",
       "confirmedPublished": true
+    },
+    "case:00188-nephrocalcinosis:cta": {
+      "creationId": "17891961201614054",
+      "createdAt": "2026-10-02T21:28:28.733Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays keep pulling you in.\n\nI turned it into The Hopital Challenge.\n\nLook at the X-ray. Make your guess. Then reveal the answer.\n\nSee how many you get right 👇🏼\nchallenge.mednoteslab.com",
+        "reply_to_id": "18634006549008878",
+        "link_attachment": "https://challenge.mednoteslab.com"
+      }
     }
   },
   "stages": {
