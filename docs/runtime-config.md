@@ -37,6 +37,7 @@ xrayMaxAttempts: num("BOT_XRAY_MAX_ATTEMPTS", 3),
 censorGenitals: (process.env.BOT_CENSOR_GENITALS ?? "on").toLowerCase() !== "off",
 slideSize: num("BOT_SLIDE_SIZE", 1080),
 casesDir: process.env.BOT_CASES_DIR ?? "./cases",
+referenceDir: process.env.BOT_REFERENCE_DIR ?? "../xray-references",
 stateFile: process.env.BOT_STATE_FILE ?? "./state.json",
 confirmLive: (process.env.BOT_CONFIRM_LIVE ?? "").toLowerCase() === "yes",
 `BOT_CTA_DELAY_MIN (${config.ctaDelayMin}) must be greater than ` +
@@ -68,8 +69,6 @@ BOT_CTA_REPLY: "on" # auto-post the CTA under the pinned answer WITH a working l
 BOT_MODEL: "claude-sonnet-4-6"
 echo "rebase failed (attempt $attempt/3), retrying in 3s"; sleep 3; continue
 echo "push failed (attempt $attempt/3), retrying in 3s"; sleep 3
-export BOT_ANSWER_DELAY_MIN=20 BOT_CTA_DELAY_MIN=75; arm=A
-export BOT_ANSWER_DELAY_MIN=90 BOT_CTA_DELAY_MIN=145; arm=B
 export BOT_FOLLOW_CTA=off; fcta=A
 export BOT_FOLLOW_CTA=on; fcta=B
 sleep 300
