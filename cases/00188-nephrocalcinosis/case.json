@@ -125,5 +125,13 @@
     "sha256": "efd3dd828f2a924afe022ba0e2ad93261b038a7ab965b38e870e31826def3638",
     "approvedAt": "2026-10-01T22:33:23.451Z",
     "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  },
+  "stages": {
+    "publishedCaption": "A patient with frequent trips to the bathroom at night.\n\nThen the X-ray loaded 😭\n\nAnd nothing about the night visits prepared anyone for this.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00188-nephrocalcinosis\",\"assignedAt\":\"2026-10-02T19:01:49.465Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "90",
+    "ctaDelayMin": "145",
+    "threadsPostId": "18102001628139439",
+    "challengePostedAt": "2026-10-02T19:02:02.266Z"
   }
 }
