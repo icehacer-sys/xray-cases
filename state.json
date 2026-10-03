@@ -1748,7 +1748,9 @@
       "publishedCaption": "A patient with fingers that kept turning white and numb in the cold.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of those fingers changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
       "experiment": "{\"id\":\"case-00189-calcinosis-cutis-in-systemic-sclerosis\",\"assignedAt\":\"2026-10-03T19:03:55.226Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "17919320862444697",
+      "challengePostedAt": "2026-10-03T19:04:05.736Z"
     }
   },
   "posted": {
