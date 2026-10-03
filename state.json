@@ -867,6 +867,16 @@
       "publishedId": "17919320862444697",
       "publishedAt": "2026-10-03T19:04:05.736Z",
       "confirmedPublished": true
+    },
+    "case:00189-calcinosis-cutis-in-systemic-sclerosis:answer": {
+      "creationId": "17892102564614054",
+      "createdAt": "2026-10-03T19:24:16.982Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Calcinosis cutis in systemic sclerosis\n\n👀 What you see:\nDense lumps of calcium sit in the soft tissue around the finger joints and fingertips.\n\n🦴 Why it matters:\nSystemic sclerosis can deposit calcium in the skin and soft tissue of the hands.\n\n💊 Treatment:\nCare is led by rheumatology and targets the underlying systemic sclerosis. Painful deposits are sometimes removed surgically.",
+        "reply_to_id": "17919320862444697",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":385}]"
+      }
     }
   },
   "stages": {
