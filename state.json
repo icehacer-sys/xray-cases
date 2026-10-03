@@ -853,6 +853,17 @@
       "publishedId": "18118500763982094",
       "publishedAt": "2026-10-02T21:28:38.737Z",
       "confirmedPublished": true
+    },
+    "case:00189-calcinosis-cutis-in-systemic-sclerosis:challenge": {
+      "creationId": "17892100302614054",
+      "createdAt": "2026-10-03T19:04:01.006Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00189-calcinosis-cutis-in-systemic-sclerosis/xray.png",
+        "text": "A patient with fingers that kept turning white and numb in the cold.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of those fingers changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "0856ae1f89be15dbe827e2686c07ae9a8f4133987cbb25031fd1608b32dcdf47:be0a49d5deaee96c88e53e388f1ee6e6eaf22a2749e870902a84758dbd82a4a8:b205d86f2bba21b6ac8f325282647fedd5e4d83809c5e588da3a82dbfddb4cc4"
     }
   },
   "stages": {
@@ -1729,12 +1740,18 @@
       "answerCommentId": "18634006549008878",
       "answerPostedAt": "2026-10-02T20:32:55.578Z",
       "ctaPostedAt": "2026-10-02T21:28:40.528Z"
+    },
+    "00189-calcinosis-cutis-in-systemic-sclerosis": {
+      "publishedCaption": "A patient with fingers that kept turning white and numb in the cold.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of those fingers changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00189-calcinosis-cutis-in-systemic-sclerosis\",\"assignedAt\":\"2026-10-03T19:03:55.226Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-02",
+      "date": "2026-10-03",
       "count": 0
     }
   }
