@@ -880,6 +880,16 @@
       "publishedId": "18491091190105717",
       "publishedAt": "2026-10-03T19:24:23.490Z",
       "confirmedPublished": true
+    },
+    "case:00189-calcinosis-cutis-in-systemic-sclerosis:cta": {
+      "creationId": "17892106806614054",
+      "createdAt": "2026-10-03T20:20:27.812Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com",
+        "reply_to_id": "18491091190105717",
+        "link_attachment": "https://anxiety.mednoteslab.com"
+      }
     }
   },
   "stages": {
