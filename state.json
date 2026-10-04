@@ -916,7 +916,10 @@
         "text": "Answer: Hydropneumothorax\n\n👀 What you see:\nA ruler straight horizontal fluid line sits in one side of the chest with black air above it.\n\n🦴 Why it matters:\nAir and fluid have both collected in the pleural space so the fluid surface lies perfectly flat. The cause is found with imaging and analysis of the pleural fluid.\n\n💊 Treatment:\nTreatment targets the cause and usually involves draining the pleural space with a chest tube.",
         "reply_to_id": "18115888633802609",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":423}]"
-      }
+      },
+      "publishedId": "18117973804968552",
+      "publishedAt": "2026-10-04T19:22:15.347Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
