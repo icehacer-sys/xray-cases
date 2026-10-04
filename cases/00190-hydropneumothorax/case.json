@@ -124,5 +124,13 @@
     "sha256": "3d6e7c83e1f973d14cdd72ef3257068bc31c2ca6acb6ae90edd09d7bfcb22c4f",
     "approvedAt": "2026-10-01T22:33:23.451Z",
     "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  },
+  "stages": {
+    "publishedCaption": "A patient with breathlessness and a dry cough that would not settle.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray stopped everyone mid-breath.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "experiment": "{\"id\":\"case-00190-hydropneumothorax\",\"assignedAt\":\"2026-10-04T19:01:44.394Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18115888633802609",
+    "challengePostedAt": "2026-10-04T19:01:55.264Z"
   }
 }
