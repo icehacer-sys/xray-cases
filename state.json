@@ -893,6 +893,17 @@
       "publishedId": "17909004855490040",
       "publishedAt": "2026-10-03T20:20:37.706Z",
       "confirmedPublished": true
+    },
+    "case:00190-hydropneumothorax:challenge": {
+      "creationId": "17892250653614054",
+      "createdAt": "2026-10-04T19:01:50.628Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00190-hydropneumothorax/xray.png",
+        "text": "A patient with breathlessness and a dry cough that would not settle.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray stopped everyone mid-breath.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "3d6e7c83e1f973d14cdd72ef3257068bc31c2ca6acb6ae90edd09d7bfcb22c4f:b186beb737f7be5e48d7c50fd2a56fd7df6069e32559b7f8714c32e6cc6350d5:69aa39f5899579294a214f93b1f53e34881e3117f917f596830c21cf36241536"
     }
   },
   "stages": {
@@ -1780,12 +1791,18 @@
       "answerCommentId": "18491091190105717",
       "answerPostedAt": "2026-10-03T19:24:23.490Z",
       "ctaPostedAt": "2026-10-03T20:20:39.116Z"
+    },
+    "00190-hydropneumothorax": {
+      "publishedCaption": "A patient with breathlessness and a dry cough that would not settle.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray stopped everyone mid-breath.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00190-hydropneumothorax\",\"assignedAt\":\"2026-10-04T19:01:44.394Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-03",
+      "date": "2026-10-04",
       "count": 0
     }
   }
