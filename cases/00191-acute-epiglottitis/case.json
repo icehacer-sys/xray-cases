@@ -131,5 +131,13 @@
     "sha256": "5e15b776e3fa8eed17f5527ec47de4080699030695a0fd38fe408a179adea3da",
     "approvedAt": "2026-10-01T22:33:23.451Z",
     "note": "Owner picked this exact render from the atlas-reference batch sheet on 2026-10-02 and approved the whole batch for this week. Local Claude Code review agreed the finding is shown. The automated verifier failed it; its objection is kept in verifyDefects for the record."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a sore throat that suddenly made it hard to swallow.\n\nThen the X-ray loaded 😭\n\nAnd the neck lateral said everything the patient could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00191-acute-epiglottitis\",\"assignedAt\":\"2026-10-05T19:00:24.234Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18126282277854768",
+    "challengePostedAt": "2026-10-05T19:00:42.337Z"
   }
 }

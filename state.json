@@ -1850,7 +1850,9 @@
       "publishedCaption": "A patient with a sore throat that suddenly made it hard to swallow.\n\nThen the X-ray loaded 😭\n\nAnd the neck lateral said everything the patient could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
       "experiment": "{\"id\":\"case-00191-acute-epiglottitis\",\"assignedAt\":\"2026-10-05T19:00:24.234Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18126282277854768",
+      "challengePostedAt": "2026-10-05T19:00:42.337Z"
     }
   },
   "posted": {
