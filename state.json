@@ -956,7 +956,10 @@
         "text": "Answer: Acute epiglottitis\n\n👀 What you see:\nThe epiglottis is swollen into a rounded thumb shape that narrows the airway.\n\n🦴 Why it matters:\nSupraglottitis can progress fast and block the airway completely.\n\n💊 Treatment:\nSecuring the airway comes first. Treatment includes intravenous antibiotics, steroids, and nebulised adrenaline.",
         "reply_to_id": "18126282277854768",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":328}]"
-      }
+      },
+      "publishedId": "17918847471447172",
+      "publishedAt": "2026-10-05T19:21:12.231Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
