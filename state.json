@@ -960,6 +960,16 @@
       "publishedId": "17918847471447172",
       "publishedAt": "2026-10-05T19:21:12.231Z",
       "confirmedPublished": true
+    },
+    "case:00191-acute-epiglottitis:cta": {
+      "creationId": "17892396027614054",
+      "createdAt": "2026-10-05T20:16:46.761Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com",
+        "reply_to_id": "17918847471447172",
+        "link_attachment": "https://anxiety.mednoteslab.com"
+      }
     }
   },
   "stages": {
