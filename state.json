@@ -973,6 +973,17 @@
       "publishedId": "18129282703774961",
       "publishedAt": "2026-10-05T20:16:57.909Z",
       "confirmedPublished": true
+    },
+    "case:00192-tension-pneumothorax:challenge": {
+      "creationId": "17892517059614054",
+      "createdAt": "2026-10-06T19:00:18.424Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00192-tension-pneumothorax/xray.png",
+        "text": "A patient with sudden sharp chest pain and worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd the chest X-ray explained everything at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "6fda932fe82d927c771dd1527cf8e842bfb49af44ea3b02a63dc9db8ade051de:631d6eec3c0f65a163740d6a91fab0689b65d8472229cb358f3ff8752a15130f:bd14c9ccd45a0d744a944f54322b3beb972e4b974dd618d9f819cb0ef700064e"
     }
   },
   "stages": {
@@ -1882,12 +1893,18 @@
       "answerCommentId": "17918847471447172",
       "answerPostedAt": "2026-10-05T19:21:12.231Z",
       "ctaPostedAt": "2026-10-05T20:16:59.587Z"
+    },
+    "00192-tension-pneumothorax": {
+      "publishedCaption": "A patient with sudden sharp chest pain and worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd the chest X-ray explained everything at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00192-tension-pneumothorax\",\"assignedAt\":\"2026-10-06T19:00:11.075Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-05",
+      "date": "2026-10-06",
       "count": 0
     }
   }
