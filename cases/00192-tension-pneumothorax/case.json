@@ -127,5 +127,13 @@
     "sha256": "bd14c9ccd45a0d744a944f54322b3beb972e4b974dd618d9f819cb0ef700064e",
     "reviewedAt": "2026-10-01T22:34:19.775Z",
     "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  },
+  "stages": {
+    "publishedCaption": "A patient with sudden sharp chest pain and worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd the chest X-ray explained everything at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "experiment": "{\"id\":\"case-00192-tension-pneumothorax\",\"assignedAt\":\"2026-10-06T19:00:11.075Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18169862959459418",
+    "challengePostedAt": "2026-10-06T19:00:23.813Z"
   }
 }
