@@ -987,6 +987,16 @@
       "publishedId": "18169862959459418",
       "publishedAt": "2026-10-06T19:00:23.813Z",
       "confirmedPublished": true
+    },
+    "case:00192-tension-pneumothorax:answer": {
+      "creationId": "17892519111614054",
+      "createdAt": "2026-10-06T19:20:38.431Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Tension pneumothorax\n\n👀 What you see:\nOne side of the chest is black with no lung markings and the collapsed lung has shrunk toward the middle.\n\n🦴 Why it matters:\nAir keeps entering the pleural space but cannot leave. The rising pressure pushes the mediastinum across and can stop blood returning to the heart.\n\n💊 Treatment:\nThis is an emergency treated at once with needle decompression followed by a chest drain.",
+        "reply_to_id": "18169862959459418",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":417}]"
+      }
     }
   },
   "stages": {
