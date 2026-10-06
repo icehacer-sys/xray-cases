@@ -1000,6 +1000,16 @@
       "publishedId": "18064898624610035",
       "publishedAt": "2026-10-06T19:20:46.225Z",
       "confirmedPublished": true
+    },
+    "case:00192-tension-pneumothorax:cta": {
+      "creationId": "17892523647614054",
+      "createdAt": "2026-10-06T20:16:15.986Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays keep pulling you in.\n\nI turned it into The Hopital Challenge.\n\nLook at the X-ray. Make your guess. Then reveal the answer.\n\nSee how many you get right 👇🏼\nchallenge.mednoteslab.com",
+        "reply_to_id": "18064898624610035",
+        "link_attachment": "https://challenge.mednoteslab.com"
+      }
     }
   },
   "stages": {
