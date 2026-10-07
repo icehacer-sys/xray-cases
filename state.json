@@ -1027,6 +1027,16 @@
       "publishedId": "18004698404989902",
       "publishedAt": "2026-10-07T19:02:25.995Z",
       "confirmedPublished": true
+    },
+    "case:00193-acute-pulmonary-oedema:answer": {
+      "creationId": "17892655971614054",
+      "createdAt": "2026-10-07T19:22:38.107Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Acute pulmonary oedema\n\n👀 What you see:\nFluffy white shadowing spreads out from the centre of both lungs in the shape of bat wings.\n\n🦴 Why it matters:\nWhen a failing heart backs pressure up into the lungs fluid floods the air spaces around both hila. The outer edges are often spared which creates the bat wing shape.\n\n💊 Treatment:\nEmergency treatment includes sitting the patient up, oxygen, and IV furosemide. Nitrates and long term heart failure therapy follow depending on the cause.",
+        "reply_to_id": "18004698404989902",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":490}]"
+      }
     }
   },
   "stages": {
