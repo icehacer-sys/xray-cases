@@ -1040,6 +1040,16 @@
       "publishedId": "18035126249662978",
       "publishedAt": "2026-10-07T19:22:44.984Z",
       "confirmedPublished": true
+    },
+    "case:00193-acute-pulmonary-oedema:cta": {
+      "creationId": "17892659571614054",
+      "createdAt": "2026-10-07T20:18:46.069Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com",
+        "reply_to_id": "18035126249662978",
+        "link_attachment": "https://anxiety.mednoteslab.com"
+      }
     }
   },
   "stages": {
