@@ -141,5 +141,13 @@
     "sha256": "e93b68831cb6ce38982f490a9833344f47478499711cf37269482136f7eb0c71",
     "reviewedAt": "2026-10-01T22:33:23.451Z",
     "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
+  },
+  "stages": {
+    "publishedCaption": "A patient with breathlessness and swollen ankles that got worse over three months.\n\nThen the X-ray loaded 😭\n\nAnd the chest told a very different story than the ankles did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "experiment": "{\"id\":\"case-00193-acute-pulmonary-oedema\",\"assignedAt\":\"2026-10-07T19:02:14.939Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18004698404989902",
+    "challengePostedAt": "2026-10-07T19:02:25.995Z"
   }
 }

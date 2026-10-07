@@ -1952,7 +1952,9 @@
       "publishedCaption": "A patient with breathlessness and swollen ankles that got worse over three months.\n\nThen the X-ray loaded 😭\n\nAnd the chest told a very different story than the ankles did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
       "experiment": "{\"id\":\"case-00193-acute-pulmonary-oedema\",\"assignedAt\":\"2026-10-07T19:02:14.939Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18004698404989902",
+      "challengePostedAt": "2026-10-07T19:02:25.995Z"
     }
   },
   "posted": {
