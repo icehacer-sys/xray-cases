@@ -135,5 +135,13 @@
     "reviewedAt": "2026-10-01T22:33:23.451Z",
     "reviewer": "Claude Code local copy review 2026-10-02: pipeline-drafted copy checked line by line; fixed doubled alternate opener, caption symptom grammar, seed hint side and answer wording to match the film; CTA set to the owner-pinned night; not clinical certification"
   },
-  "needsReview": false
+  "needsReview": false,
+  "stages": {
+    "publishedCaption": "A patient with chest pain and breathlessness after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "experiment": "{\"id\":\"case-00194-massive-haemothorax\",\"assignedAt\":\"2026-10-08T19:00:16.074Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18054929093583647",
+    "challengePostedAt": "2026-10-08T19:00:27.674Z"
+  }
 }
