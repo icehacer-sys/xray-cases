@@ -1053,6 +1053,17 @@
       "publishedId": "17896674105672645",
       "publishedAt": "2026-10-07T20:18:55.113Z",
       "confirmedPublished": true
+    },
+    "case:00194-massive-haemothorax:challenge": {
+      "creationId": "17892782247614054",
+      "createdAt": "2026-10-08T19:00:22.855Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00194-massive-haemothorax/xray.png",
+        "text": "A patient with chest pain and breathlessness after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "fc34485c960de4118025b45736a0036f4473e1f4c8ae5906b4dd665347c1628d:e7abb74db2904e07f1f1c6282e45411b8eccddf4b42c3ea1aa08af7f9d09eac6:5eaced142b148d751c924b23644742a2191689560b5db5fa2eb5d422eb6db726"
     }
   },
   "stages": {
@@ -1984,12 +1995,18 @@
       "answerCommentId": "18035126249662978",
       "answerPostedAt": "2026-10-07T19:22:44.984Z",
       "ctaPostedAt": "2026-10-07T20:18:57.191Z"
+    },
+    "00194-massive-haemothorax": {
+      "publishedCaption": "A patient with chest pain and breathlessness after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00194-massive-haemothorax\",\"assignedAt\":\"2026-10-08T19:00:16.074Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "count": 0
     }
   }
