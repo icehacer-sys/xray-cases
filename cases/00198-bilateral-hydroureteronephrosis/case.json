@@ -1,0 +1,139 @@
+{
+  "folder": "00198-bilateral-hydroureteronephrosis",
+  "number": 198,
+  "diagnosis": "Bilateral hydroureteronephrosis",
+  "aliases": [
+    "bilateral megaureters",
+    "bilateral hydronephrosis",
+    "bilateral hydroureteronephrosis",
+    "obstructive uropathy",
+    "bladder outlet obstruction"
+  ],
+  "symptom": "a weak stream and getting up at night to pee",
+  "hook": "both drainage pipes from the kidneys had ballooned into twisting garden hoses",
+  "whatYouSee": "Both kidneys have swollen drainage systems and both ureters are wide and twisted down to a large rounded bladder.",
+  "whyItMatters": "When outflow from the bladder is blocked the back pressure dilates both ureters and both kidney collecting systems. Left untreated this can damage kidney function.",
+  "treatment": "Treatment targets the blockage and may include bladder drainage with a catheter and later relief of the obstruction. Upper tract drainage such as percutaneous nephrostomy or ureteric stenting may be needed.",
+  "takeaway": "When both sides are dilated look below the ureters at the bladder and its outlet.",
+  "igOptions": [
+    "A. Bilateral hydroureteronephrosis",
+    "B. Pelviureteric junction obstruction",
+    "C. Polycystic kidney disease"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-13T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:29:50.298Z"
+  },
+  "condition": {
+    "diagnosis": "Bilateral hydroureteronephrosis",
+    "aliases": [
+      "bilateral megaureters",
+      "bilateral hydronephrosis",
+      "bilateral hydroureteronephrosis",
+      "obstructive uropathy",
+      "bladder outlet obstruction"
+    ],
+    "symptom": "a weak stream and getting up at night to pee",
+    "hook": "both drainage pipes from the kidneys had ballooned into twisting garden hoses",
+    "view": "IVU delayed AP film",
+    "ageBand": "older",
+    "keyFindings": "Delayed AP intravenous urogram film of the abdomen and pelvis with BILATERAL findings. Both renal pelves are dilated with blunted clubbed calyces, the collecting system on the patient's LEFT more ballooned than on the right. Both ureters are markedly dilated and tortuous with kinks and folds along their whole length from the renal pelvis down to the bladder. The bladder is a large distended rounded contrast-filled sac with a smooth outline filling the pelvis. No calcified stones are seen. The lumbar spine, sacrum and pelvic bones are normal and bowel gas is unremarkable.",
+    "whatYouSee": "Both kidneys have swollen drainage systems and both ureters are wide and twisted down to a large rounded bladder.",
+    "whyItMatters": "When outflow from the bladder is blocked the back pressure dilates both ureters and both kidney collecting systems. Left untreated this can damage kidney function.",
+    "treatment": "Treatment targets the blockage and may include bladder drainage with a catheter and later relief of the obstruction. Upper tract drainage such as percutaneous nephrostomy or ureteric stenting may be needed.",
+    "takeaway": "When both sides are dilated look below the ureters at the bladder and its outlet.",
+    "igTitle": "BOTH SIDES BACKED UP",
+    "igOptions": [
+      "Bilateral hydroureteronephrosis",
+      "Pelviureteric junction obstruction",
+      "Polycystic kidney disease"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 [VM 005] Radiology of the kidney.pdf, original page 42"
+    ],
+    "referenceImage": "megaureters.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Delayed AP intravenous urogram film of the abdomen and pelvis with BILATERAL findings. Both renal pelves are dilated with blunted clubbed calyces, the collecting system on the patient's LEFT more ballooned than on the right. Both ureters are markedly dilated and tortuous with kinks and folds along their whole length from the renal pelvis down to the bladder. The bladder is a large distended rounded contrast-filled sac with a smooth outline filling the pelvis. No calcified stones are seen. The lumbar spine, sacrum and pelvic bones are normal and bowel gas is unremarkable.",
+      "The visible anatomy matches the requested IVU delayed AP film and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "830172032f6f941f3012af911bfcd8fd8b0ec3de0bd7269a059e954f4c7b32e7",
+    "conditionSha256": "307da239d1acdaf82e56903272c9a23b3b6c8c799c7e4e1748cb683c1af9a5ee",
+    "clinicalContextSha256": "a114575f310080c84982d05b09660da1d10211a67fe1d99e646d4ce2f46c11f8",
+    "verifiedAt": "2026-10-09T21:29:50.303Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Delayed AP intravenous urogram film of the abdomen and pelvis with BILATERAL findings. Both renal pelves are dilated with blunted clubbed calyces, the collecting system on the patient's LEFT more ballooned than on the right. Both ureters are markedly dilated and tortuous with kinks and folds along their whole length from the renal pelvis down to the bladder. The bladder is a large distended rounded contrast-filled sac with a smooth outline filling the pelvis. No calcified stones are seen. The lumbar spine, sacrum and pelvic bones are normal and bowel gas is unremarkable.",
+        "observed": "AP abdomen/pelvis IVU film with bilateral contrast-opacified collecting systems. Left renal calyces are markedly ballooned and clubbed with loss of papillary impressions; right side is similarly but less severely dilated. Both ureters are visible as markedly tortuous serpentine contrast-filled structures with redundant loops along their entire course to the bladder. The bladder is a large smoothly rounded contrast-filled sac centrally in the pelvis. No radiopaque calculi are identified. Lumbar vertebrae, sacrum, and pelvic bones appear intact without aggressive lesions; bowel gas pattern is unremarkable.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested IVU delayed AP film and the declared age and anatomical exceptions.",
+        "observed": "The image is consistent with an AP IVU delayed film of the abdomen and pelvis. Skeletal maturity is confirmed with adult pelvic and spinal morphology appropriate for an adult over 60. No anatomical impossibilities are identified; all bilateral structures are coherent and correctly paired.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Projection: Anteroposterior (AP) plain radiograph of the abdomen and pelvis, intravenous urogram (IVU) phase",
+        "Bilateral renal collecting systems opacified with contrast: the left kidney demonstrates markedly enlarged, rounded calyces with clubbing and loss of the normal papillary impressions, consistent with calyceal dilatation; the right kidney shows similar but less pronounced calyceal blunting and dilatation",
+        "Bilateral ureters are opacified and demonstrate a markedly tortuous, serpentine course from the renal pelves to the bladder, with multiple redundant loops along their entire length",
+        "The urinary bladder is opacified and appears markedly enlarged, smoothly rounded, and centrally positioned within the pelvis, with a large ovoid contrast-filled lumen",
+        "Lumbar spine is visible in the midline; mild degenerative changes noted at multiple levels",
+        "Pelvic bones and hip joints appear grossly intact bilaterally",
+        "No obvious radiopaque calculi identified along the urinary tract",
+        "Soft tissue shadows are otherwise unremarkable on this radiograph"
+      ],
+      "differential": [
+        "Chronic bladder outlet obstruction (e.g., benign prostatic hyperplasia or urethral stricture) with bilateral hydroureteronephrosis: the massively distended bladder, bilateral ureteral tortuosity, and calyceal dilatation are classic for long-standing lower urinary tract obstruction",
+        "Primary megaureter (bilateral) with secondary pelvicalyceal dilatation: congenital or acquired bilateral ureteral aperistalsis or distal obstruction producing the marked serpentine ureteral redundancy seen",
+        "Neurogenic bladder with bilateral vesicoureteral reflux: a large atonic bladder with bilateral dilated tortuous ureters and calyceal clubbing can result from neurogenic dysfunction and chronic reflux nephropathy"
+      ],
+      "anatomyConcerns": [
+        "The degree of ureteral tortuosity is extreme and bilateral, which is a pathological finding rather than normal anatomy",
+        "The bladder size is markedly enlarged beyond normal capacity, indicating pathological retention or atonia",
+        "Left renal collecting system appears more severely dilated than right, raising concern for asymmetric obstruction or differential renal function",
+        "Calyceal clubbing on the left suggests established parenchymal damage (reflux nephropathy or chronic obstruction)"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The IVU film shows bilateral dilated tortuous ureters with serpentine redundant loops from renal pelvis to bladder, bilateral calyceal blunting and clubbing (left greater than right), and a massively distended smooth-walled bladder. The clinical vignette of weak stream and nocturia in an older adult points to bladder outlet obstruction as the underlying cause, producing the classic bilateral hydroureteronephrosis pattern. No calcified stones are visible. The independent differential lists chronic outlet obstruction as the top candidate, which is entirely consistent with the vignette. No alternative diagnosis is equally or better supported when the clinical context is applied."
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Does this look normal to you?",
+  "seedHint": "Look at the tubes between the kidneys and bladder and ask yourself if they should be that wide.",
+  "teaser": "And nobody in the room said a word",
+  "generated": {
+    "threadsCaption": "A patient with a weak stream and getting up at night to pee.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a weak stream and getting up at night to pee.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Bilateral hydroureteronephrosis\n\n👀 What you see:\nBoth kidneys have swollen drainage systems and both ureters are wide and twisted down to a large rounded bladder.\n\n🦴 Why it matters:\nWhen outflow from the bladder is blocked the back pressure dilates both ureters and both kidney collecting systems. Left untreated this can damage kidney function.\n\n💊 Treatment:\nTreatment targets the blockage and may include bladder drainage with a catheter and later relief of the obstruction.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "57ca25247be1660829cf3cf16b6c7afc770aff47f7dee952ac07b48216b2e465",
+    "reviewedAt": "2026-10-09T21:41:53.726Z",
+    "reviewer": "Claude Code local copy review 2026-10-09: pipeline-drafted copy checked line by line against the lecture facts and style rules; fixed modality wording and dash or gendered alternate captions; not clinical certification"
+  },
+  "needsReview": false
+}

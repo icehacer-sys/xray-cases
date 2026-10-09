@@ -1,0 +1,143 @@
+{
+  "folder": "00195-diffuse-oesophageal-spasm",
+  "number": 195,
+  "diagnosis": "Diffuse oesophageal spasm",
+  "aliases": [
+    "diffuse esophageal spasm",
+    "DES",
+    "corkscrew oesophagus",
+    "corkscrew esophagus",
+    "rosary bead oesophagus"
+  ],
+  "symptom": "food that sometimes felt stuck halfway down",
+  "hook": "the gullet had twisted itself into a wine-bottle corkscrew",
+  "whatYouSee": "The barium-filled oesophagus coils down the middle of the chest in tight repeating twists like a corkscrew.",
+  "whyItMatters": "Diffuse oesophageal spasm causes chest pain that can mimic a heart attack and is relieved by GTN. A corkscrew oesophagus on barium swallow is highly suggestive of it.",
+  "treatment": "Treatment targets the spasm once cardiac causes are excluded and may include smooth muscle relaxants such as nitrates or calcium channel blockers.",
+  "takeaway": "Chest pain eased by GTN plus a corkscrew barium swallow points to the oesophagus and not the heart.",
+  "igOptions": [
+    "A. Diffuse oesophageal spasm",
+    "B. Achalasia",
+    "C. Oesophageal carcinoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-10T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:27:31.400Z"
+  },
+  "condition": {
+    "diagnosis": "Diffuse oesophageal spasm",
+    "aliases": [
+      "diffuse esophageal spasm",
+      "DES",
+      "corkscrew oesophagus",
+      "corkscrew esophagus",
+      "rosary bead oesophagus"
+    ],
+    "symptom": "food that sometimes felt stuck halfway down",
+    "hook": "the gullet had twisted itself into a wine-bottle corkscrew",
+    "view": "barium swallow, oblique/lateral view of the oesophagus",
+    "ageBand": "middle-aged",
+    "keyFindings": "Oblique/lateral barium swallow of the thoracic oesophagus in the midline of the chest. The barium column in the mid and lower oesophagus is deformed by multiple simultaneous non-propulsive contractions that make deep alternating indentations on both walls with rounded barium outpouchings between them, giving a regular tight spiral corkscrew or rosary-bead pattern over a long segment. The lumen is not dilated, the mucosal outline is smooth with no ulcer, stricture, filling defect or mass, and barium passes through the gastro-oesophageal junction into the stomach. The upper oesophagus, trachea, thoracic vertebrae and posterior mediastinum look normal.",
+    "whatYouSee": "The barium-filled oesophagus coils down the middle of the chest in tight repeating twists like a corkscrew.",
+    "whyItMatters": "Diffuse oesophageal spasm causes chest pain that can mimic a heart attack and is relieved by GTN. A corkscrew oesophagus on barium swallow is highly suggestive of it.",
+    "treatment": "Treatment targets the spasm once cardiac causes are excluded and may include smooth muscle relaxants such as nitrates or calcium channel blockers.",
+    "takeaway": "Chest pain eased by GTN plus a corkscrew barium swallow points to the oesophagus and not the heart.",
+    "igTitle": "CORKSCREW SWALLOW",
+    "igOptions": [
+      "Diffuse oesophageal spasm",
+      "Achalasia",
+      "Oesophageal carcinoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 06 - ICC-2 Interactive GIT revision 1 (Oesophagus gastroduodenal diseases).pdf, original page 59"
+    ],
+    "referenceImage": "corkscrew.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Oblique/lateral barium swallow of the thoracic oesophagus in the midline of the chest. The barium column in the mid and lower oesophagus is deformed by multiple simultaneous non-propulsive contractions that make deep alternating indentations on both walls with rounded barium outpouchings between them, giving a regular tight spiral corkscrew or rosary-bead pattern over a long segment. The lumen is not dilated, the mucosal outline is smooth with no ulcer, stricture, filling defect or mass, and barium passes through the gastro-oesophageal junction into the stomach. The upper oesophagus, trachea, thoracic vertebrae and posterior mediastinum look normal.",
+      "The visible anatomy matches the requested barium swallow, oblique/lateral view of the oesophagus and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "76e2e5b75a8622df9b13c5cd7fef00f5a809831160f8a7802702260f2c21ebb2",
+    "conditionSha256": "f7dbb112955b6f6c8c6f996bec2a55c4361a57677bea34d602ca01cae7961182",
+    "clinicalContextSha256": "28fbd6aeea61ee0679766b65fd5d60857a2879e9bcf1bb1be8a2c8793a4a632d",
+    "verifiedAt": "2026-10-09T21:27:31.404Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Oblique/lateral barium swallow of the thoracic oesophagus in the midline of the chest. The barium column in the mid and lower oesophagus is deformed by multiple simultaneous non-propulsive contractions that make deep alternating indentations on both walls with rounded barium outpouchings between them, giving a regular tight spiral corkscrew or rosary-bead pattern over a long segment. The lumen is not dilated, the mucosal outline is smooth with no ulcer, stricture, filling defect or mass, and barium passes through the gastro-oesophageal junction into the stomach. The upper oesophagus, trachea, thoracic vertebrae and posterior mediastinum look normal.",
+        "observed": "Lateral/oblique barium swallow image showing a striking regular corkscrew/rosary-bead pattern of the thoracic oesophagus with multiple simultaneous deep alternating indentations and rounded outpouchings throughout the mid and lower oesophagus. The lumen is not dilated and the mucosal contour between indentations appears smooth with no discrete filling defect, ulcer or stricture. Barium pools into a globular collection at the inferior end consistent with the gastric cardia/fundus indicating passage through the GOJ. The upper oesophagus appears relatively normal in calibre. Thoracic vertebrae are visible on the right side and appear normal. The posterior mediastinum appears clear. No pneumomediastinum or extravasation.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested barium swallow, oblique/lateral view of the oesophagus and the declared age and anatomical exceptions.",
+        "observed": "The image depicts a lateral/oblique barium swallow of the oesophagus with skeletally mature thoracic vertebrae consistent with an adult aged 40-59. No paediatric features or growth plates are visible. The view and body part are correct for the requested examination.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection fluoroscopic image of the chest and upper abdomen demonstrating a barium esophagram",
+        "The esophageal lumen is opacified with barium contrast throughout its entire visible length from the upper thoracic inlet to the gastroesophageal junction",
+        "The esophageal contour demonstrates a striking, regular, corrugated or corkscrew appearance with multiple simultaneous circular indentations producing a beaded or rosary-bead pattern along the entire length of the esophagus",
+        "The indentations are rhythmic, closely spaced, and symmetric, affecting the full circumference of the lumen",
+        "At the inferior extent, contrast pools into a globular collection consistent with the gastric fundus or cardia",
+        "The cervical esophagus at the top of the image appears relatively normal in caliber before the abnormal segmentation begins",
+        "No discrete fixed stricture, mass lesion, or mucosal destruction is identified",
+        "Thoracic spine is visible on the right with normal-appearing vertebral bodies; cardiac silhouette is partially visible on the left",
+        "No pneumomediastinum or extravasation of contrast is evident"
+      ],
+      "differential": [
+        "Diffuse esophageal spasm (DES): the classic corkscrew or rosary-bead appearance with multiple simultaneous non-peristaltic contractions is the hallmark finding and is the leading diagnosis",
+        "Nutcracker esophagus (now termed jackhammer esophagus / hypercontractile esophagus): can produce a similar corrugated appearance due to high-amplitude prolonged contractions, though typically fewer segments are involved",
+        "Presbyesophagus or tertiary contractions in the context of an esophageal motility disorder: diffuse non-propulsive tertiary contractions can produce a similar segmented appearance, particularly in older patients, and should be considered"
+      ],
+      "anatomyConcerns": [
+        "The corrugated pattern is physiologically implausible as a normal peristaltic wave; it represents simultaneous multi-segmental non-peristaltic contractions, which are pathological",
+        "The image appears to be a single static frame; a single frame cannot definitively distinguish simultaneous spasm from sequential tertiary waves without fluoroscopic real-time observation or manometry",
+        "No left-right anatomical marker is visible on the image, limiting definitive laterality confirmation",
+        "The globular pooling at the distal end could represent a prominent gastric fundus or could partly reflect a hiatal component; the gastroesophageal junction and diaphragmatic level are not clearly delineated"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The classic corkscrew/rosary-bead pattern of multiple simultaneous deep alternating indentations along the entire thoracic oesophagus with smooth mucosa and no fixed stricture or mass is the hallmark fluoroscopic appearance of diffuse oesophageal spasm. The clinical vignette of intermittent dysphagia with food stuck halfway down is consistent. Nutcracker/jackhammer oesophagus could produce a similar appearance but typically involves fewer segments and higher amplitude; the diffuse, long-segment, tightly corrugated pattern here strongly favours DES over the alternatives. No laterality marker is present but this is an expected normal film feature. The distal pooling is consistent with contrast passing into the gastric fundus at the cardia."
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Would you trust a tube that looks like this?",
+  "seedHint": "Look at the shape of the gullet and ask yourself if it goes straight down or takes a very different path.",
+  "teaser": "And nobody expected that shape",
+  "generated": {
+    "threadsCaption": "A patient with food that sometimes felt stuck halfway down.\n\nThen the X-ray loaded 😭\n\nAnd nobody expected that shape.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Diffuse oesophageal spasm\n\n👀 What you see:\nThe barium-filled oesophagus coils down the middle of the chest in tight repeating twists like a corkscrew.\n\n💊 Treatment:\nTreatment targets the spasm once cardiac causes are excluded and may include smooth muscle relaxants such as nitrates or calcium channel blockers.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Error: Copy review failed: [\"The threadsCaption refers to 'the chest X-ray stopped everyone in the room' and 'chest X-ray' but the investigation is a barium swallow, not a chest X-ray. This misidentifies the imaging modality presented to the user.\"]"
+  ],
+  "contentReview": {
+    "sha256": "f310def081b7130ad22877ce27059a2cdcdbe0f758e6e1f15b05b3b267442327",
+    "reviewedAt": "2026-10-09T21:41:53.726Z",
+    "reviewer": "Claude Code local copy review 2026-10-09: pipeline-drafted copy checked line by line against the lecture facts and style rules; fixed modality wording and dash or gendered alternate captions; not clinical certification"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "folder": "00201-infrarenal-abdominal-aortic-aneurysm",
+  "number": 201,
+  "diagnosis": "Infrarenal abdominal aortic aneurysm",
+  "aliases": [
+    "AAA",
+    "abdominal aortic aneurysm",
+    "infrarenal AAA",
+    "saccular aortic aneurysm",
+    "aortic aneurysm"
+  ],
+  "symptom": "a dull ache in the lower back that was put down to age",
+  "hook": "the body's main water pipe had a balloon blown out of its side",
+  "whatYouSee": "Just below the kidney arteries the aorta balloons into a round sac that bulges toward the left side of the patient.",
+  "whyItMatters": "An abdominal aortic aneurysm can grow silently and its risk of rupture rises as it gets wider. Ultrasound measures its diameter and shows thrombus or dissection while CTA maps it.",
+  "treatment": "Treatment depends on size and symptoms and may include ultrasound surveillance or repair by open surgery or an endovascular stent graft.",
+  "takeaway": "A round bulge of the aorta below the renal arteries is an infrarenal aneurysm and its size decides the plan.",
+  "igOptions": [
+    "A. Infrarenal abdominal aortic aneurysm",
+    "B. Aortic dissection",
+    "C. Renal artery stenosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-16T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:32:47.241Z"
+  },
+  "condition": {
+    "diagnosis": "Infrarenal abdominal aortic aneurysm",
+    "aliases": [
+      "AAA",
+      "abdominal aortic aneurysm",
+      "infrarenal AAA",
+      "saccular aortic aneurysm",
+      "aortic aneurysm"
+    ],
+    "symptom": "a dull ache in the lower back that was put down to age",
+    "hook": "the body's main water pipe had a balloon blown out of its side",
+    "view": "aortogram AP",
+    "ageBand": "older",
+    "keyFindings": "AP catheter aortogram of the abdomen. The contrast-filled abdominal aorta runs down the midline with a normal calibre at the level of the renal arteries, which arise on both sides and supply normally enhancing kidneys. Just below the renal arteries the aorta balloons into a round saccular aneurysm about twice the aortic width that bulges mainly toward the patient's LEFT. Below the sac the aorta narrows again to a normal bifurcation into the common iliac arteries. Lumbar and mesenteric branches are visible and there is no contrast leak outside the vessel.",
+    "whatYouSee": "Just below the kidney arteries the aorta balloons into a round sac that bulges toward the left side of the patient.",
+    "whyItMatters": "An abdominal aortic aneurysm can grow silently and its risk of rupture rises as it gets wider. Ultrasound measures its diameter and shows thrombus or dissection while CTA maps it.",
+    "treatment": "Treatment depends on size and symptoms and may include ultrasound surveillance or repair by open surgery or an endovascular stent graft.",
+    "takeaway": "A round bulge of the aorta below the renal arteries is an infrarenal aneurysm and its size decides the plan.",
+    "igTitle": "BALLOON ON THE AORTA",
+    "igOptions": [
+      "Infrarenal abdominal aortic aneurysm",
+      "Aortic dissection",
+      "Renal artery stenosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 01 - ICC-1 (015) computer lab vascular imaging 1 (Arteries) MODFIED 2025-2026.pdf, original page 34"
+    ],
+    "referenceImage": "aaa.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP catheter aortogram of the abdomen. The contrast-filled abdominal aorta runs down the midline with a normal calibre at the level of the renal arteries, which arise on both sides and supply normally enhancing kidneys. Just below the renal arteries the aorta balloons into a round saccular aneurysm about twice the aortic width that bulges mainly toward the patient's LEFT. Below the sac the aorta narrows again to a normal bifurcation into the common iliac arteries. Lumbar and mesenteric branches are visible and there is no contrast leak outside the vessel.",
+      "The visible anatomy matches the requested aortogram AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "eb7b7b39b41910bb49d8f57b1cee0d05429c5f7a974af4b714247c3233f94ef6",
+    "conditionSha256": "8ee4435ecd649adb7fcdd46dd42765cb41fb60fa7b7a4669a365cf75795c077f",
+    "clinicalContextSha256": "652712ba3d100b3fbb05443e5f46a4366c3651c5176b19eb065c13d802510d6a",
+    "verifiedAt": "2026-10-09T21:32:47.245Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "AP catheter aortogram of the abdomen. The contrast-filled abdominal aorta runs down the midline with a normal calibre at the level of the renal arteries, which arise on both sides and supply normally enhancing kidneys. Just below the renal arteries the aorta balloons into a round saccular aneurysm about twice the aortic width that bulges mainly toward the patient's LEFT. Below the sac the aorta narrows again to a normal bifurcation into the common iliac arteries. Lumbar and mesenteric branches are visible and there is no contrast leak outside the vessel.",
+        "observed": "The image shows an AP abdominal aortogram. The contrast-opacified aorta courses centrally with normal calibre at the level of the renal arteries; bilateral renal arteries arise and supply normally enhancing kidneys. Infrarenal to the renal ostia, a focal aneurysmal dilatation approximately twice the suprarenal aortic width is visible, bulging predominantly to the patient's left. Below the aneurysm sac the aorta reconstitutes and bifurcates into bilateral common iliac arteries without further aneurysmal change. Lumbar and mesenteric branch vessels are opacified. No contrast extravasation outside the vessel lumen is identified.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested aortogram AP and the declared age and anatomical exceptions.",
+        "observed": "The projection is AP, the anatomy is abdominal aorta and its branches, consistent with an aortogram. The bony structures visible (lumbar spine, pelvis) show skeletally mature appearances appropriate for an adult over 60. No anatomical impossibility is identified.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection catheter-based contrast aortogram or CT angiogram maximum-intensity-projection image of the abdominal aorta and its branches",
+        "Focal saccular to fusiform dilation of the infrarenal abdominal aorta, approximately two to three times the diameter of the suprarenal aorta, consistent with an infrarenal aortic aneurysm; the aneurysm sac appears to extend below the renal artery origins and above the aortic bifurcation",
+        "Bilateral renal arteries are opacified and appear patent with visible intrarenal branching; both kidneys are visible as soft-tissue density structures",
+        "Celiac axis and superior mesenteric artery origins are suggested in the upper abdomen; inferior mesenteric artery branches are visible arising from the lower aneurysm segment",
+        "Aortic bifurcation into bilateral common iliac arteries is visualized; iliac vessels appear patent without obvious additional aneurysmal dilation",
+        "Bony pelvis and lumbar spine are visible in the background; no calcification or bony destruction is noted"
+      ],
+      "differential": [
+        "Infrarenal abdominal aortic aneurysm (AAA), atherosclerotic in etiology — most likely given the location, morphology, and infrarenal position sparing the renal artery origins",
+        "Inflammatory abdominal aortic aneurysm — cannot be excluded on this image alone; periaortic soft tissue thickening would require cross-sectional imaging to assess",
+        "Mycotic (infectious) aortic aneurysm — saccular morphology could suggest this; clinical correlation required"
+      ],
+      "anatomyConcerns": [
+        "The aneurysmal segment appears to involve the infrarenal aorta below the renal artery origins, which is anatomically consistent; however, precise relationship to the renal arteries and iliac bifurcation should be confirmed on cross-sectional imaging for surgical planning",
+        "No obvious filling defect suggestive of intraluminal thrombus is visible on this projection, but mural thrombus can obscure on single-plane angiography",
+        "Asymmetry in renal size is noted with the right kidney appearing larger than the left; clinical significance uncertain without additional views"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The aortogram demonstrates a focal infrarenal aneurysmal dilatation of the abdominal aorta below the renal artery origins, with the sac approximately twice the suprarenal aortic diameter, tapering back to a normal calibre bifurcation. Both renal arteries are patent with normal parenchymal enhancement. The infrarenal location, fusiform-to-saccular morphology, and clinical context of a dull lower back ache in an older adult together strongly favour atherosclerotic infrarenal AAA over inflammatory or mycotic subtypes, which would require additional cross-sectional features not visible here. The asymmetry in renal size is a projected appearance difference and does not constitute an independent lesion. The aneurysm bulge is predominantly leftward as expected."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Would you blame your back for this one?",
+  "seedHint": "Look low and central and ask yourself if that shape belongs there.",
+  "teaser": "And then the abdomen answered a question nobody thought to ask",
+  "generated": {
+    "threadsCaption": "A patient with a dull ache in the lower back that was put down to age.\n\nThen the X-ray loaded 😭\n\nAnd then the abdomen answered a question nobody thought to ask.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Infrarenal abdominal aortic aneurysm\n\n👀 What you see:\nJust below the kidney arteries the aorta balloons into a round sac that bulges toward the left side of the patient.\n\n🦴 Why it matters:\nAn abdominal aortic aneurysm can grow silently and its risk of rupture rises as it gets wider.\n\n💊 Treatment:\nTreatment depends on size and symptoms and may include ultrasound surveillance or repair by open surgery or an endovascular stent graft.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "851f84cd4ca8165b612e974541150142c6d49705527a3bd4e55bb7e335d3a9ed",
+    "reviewedAt": "2026-10-09T21:32:53.348Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "needsReview": false
+}

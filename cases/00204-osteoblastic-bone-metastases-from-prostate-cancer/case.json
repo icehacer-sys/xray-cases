@@ -1,0 +1,133 @@
+{
+  "folder": "00204-osteoblastic-bone-metastases-from-prostate-cancer",
+  "number": 204,
+  "diagnosis": "Osteoblastic bone metastases from prostate cancer",
+  "aliases": [
+    "sclerotic bone metastases",
+    "osteoblastic metastases",
+    "prostate cancer metastases",
+    "ivory vertebra",
+    "metastatic prostate carcinoma"
+  ],
+  "symptom": "a dull lower back ache blamed on an old mattress",
+  "hook": "One vertebra turned to solid chalk among its grey neighbours.",
+  "whatYouSee": "One lumbar vertebra glows solid white with dense round white spots scattered through the right side of the patient's pelvis.",
+  "whyItMatters": "Prostate cancer spreads to bone as dense osteoblastic deposits in the pelvis and lumbar spine. Large or poorly differentiated tumours are the ones more often metastatic.",
+  "treatment": "If bone metastases are suspected the workup includes PSA, biopsy, and a bone scan. Treatment then depends on the stage of the disease.",
+  "takeaway": "A white ivory vertebra in an older man should make you think of prostate cancer.",
+  "igOptions": [
+    "A. Osteoblastic prostate cancer metastases",
+    "B. Paget disease of bone",
+    "C. Lymphoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-19T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:36:39.621Z"
+  },
+  "condition": {
+    "diagnosis": "Osteoblastic bone metastases from prostate cancer",
+    "aliases": [
+      "sclerotic bone metastases",
+      "osteoblastic metastases",
+      "prostate cancer metastases",
+      "ivory vertebra",
+      "metastatic prostate carcinoma"
+    ],
+    "symptom": "a dull lower back ache blamed on an old mattress",
+    "hook": "One vertebra turned to solid chalk among its grey neighbours.",
+    "view": "AP pelvis and lower lumbar spine X-ray cropped above the pubic region",
+    "ageBand": "older",
+    "keyFindings": "AP radiograph of the lower lumbar spine and pelvis cropped above the pubic region. The L4 vertebral body is uniformly dense and chalk-white (ivory vertebra) with preserved height and normal shape and no collapse. The upper sacrum at S1 is also diffusely dense and white. In the PATIENT'S RIGHT ilium (image left) there are multiple discrete rounded white sclerotic blobs of varying size. The other lumbar vertebrae (L3 and L5) have normal grey bone density. Sacroiliac joints and hip joints are preserved. Overlying bowel gas is normal.",
+    "whatYouSee": "One lumbar vertebra glows solid white with dense round white spots scattered through the right side of the patient's pelvis.",
+    "whyItMatters": "Prostate cancer spreads to bone as dense osteoblastic deposits in the pelvis and lumbar spine. Large or poorly differentiated tumours are the ones more often metastatic.",
+    "treatment": "If bone metastases are suspected the workup includes PSA, biopsy, and a bone scan. Treatment then depends on the stage of the disease.",
+    "takeaway": "A white ivory vertebra in an older man should make you think of prostate cancer.",
+    "igTitle": "THE CHALK VERTEBRA",
+    "igOptions": [
+      "Osteoblastic prostate cancer metastases",
+      "Paget disease of bone",
+      "Lymphoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture WH [305] Prostate Cancer (24-25).pdf, original page 11"
+    ],
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP radiograph of the lower lumbar spine and pelvis cropped above the pubic region. The L4 vertebral body is uniformly dense and chalk-white (ivory vertebra) with preserved height and normal shape and no collapse. The upper sacrum at S1 is also diffusely dense and white. In the PATIENT'S RIGHT ilium (image left) there are multiple discrete rounded white sclerotic blobs of varying size. The other lumbar vertebrae (L3 and L5) have normal grey bone density. Sacroiliac joints and hip joints are preserved. Overlying bowel gas is normal.",
+      "The visible anatomy matches the requested AP pelvis and lower lumbar spine X-ray cropped above the pubic region and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "56abffe32e79d2a0d1072175de6f28285586eb35193a26bac6751b61f83297a7",
+    "conditionSha256": "f785737ff87f26522787095049ce7f51ef90d0e92bb14c516743b70df32ce3b8",
+    "clinicalContextSha256": "ec9daee1f927619e7a5913cd7e068667442c0f93f1510a90f6f578ac01d40412",
+    "verifiedAt": "2026-10-09T21:36:39.626Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The independent read identifies the calcifications as soft-tissue chondroid-pattern calcifications overlying the right iliac fossa rather than intraosseous sclerotic blobs; the morphology described (lobulated 'popcorn' pattern without cortical involvement) raises the possibility of a soft-tissue chondroid lesion rather than purely intraosseous osteoblastic metastases, but this is a projection-ambiguity that cannot be resolved from the plain film alone and does not constitute an additional unrelated lesion\",\"The lumbar disc space narrowing and endplate sclerosis at L4-L5 and L5-S1 noted by the independent read is a degenerative change incidental to the stated diagnosis; dense sclerosis at L5-S1 could represent an additional metastatic focus not explicitly named in the expected findings — this requires flagging as an unexplained finding relative to the stated pattern which specifies L4 ivory vertebra and S1 upper sacrum density only\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "AP projection pelvis and lower lumbar spine radiograph",
+        "Multiple discrete, rounded, densely calcified foci of varying sizes clustered within the right iliac wing/right iliac fossa region, with a 'popcorn' or lobulated calcification pattern",
+        "The calcifications are confined to the soft tissues overlying the right iliac bone and do not appear to arise from the bone cortex itself",
+        "Lumbar spine shows multilevel disc space narrowing with endplate sclerosis and osteophyte formation, most pronounced at L4-L5 and L5-S1",
+        "Dense sclerosis at the L5-S1 level with apparent loss of disc height",
+        "Bilateral hip joints appear preserved without obvious joint space narrowing",
+        "No acute bony fracture identified",
+        "No obvious periosteal reaction or cortical destruction of the right iliac wing underlying the calcifications",
+        "Bowel gas pattern is unremarkable on this limited view",
+        "No radio-opaque urinary calculi identified in the visualised ureters or bladder region"
+      ],
+      "differential": [
+        "Soft tissue chondroid neoplasm with dystrophic calcification in the right iliac fossa (e.g., soft tissue chondroma or chondrosarcoma) — the lobulated 'popcorn' calcification pattern is characteristic of chondroid matrix",
+        "Synovial chondromatosis or calcific deposits within a bursa or soft tissue mass overlying the right iliac region",
+        "Multiple phleboliths or dystrophic calcifications within a soft tissue vascular malformation (e.g., venous malformation) in the right iliac fossa — though the calcification morphology appears more lobulated/chondroid than typical phlebolith rings"
+      ],
+      "anatomyConcerns": [
+        "The clustering and morphology of the right-sided calcifications are distinctly abnormal and represent true pathology rather than normal anatomical structure",
+        "Mild rotational asymmetry of the pelvis on this projection may slightly affect assessment of the sacroiliac joints",
+        "The upper lumbar and lower thoracic spine are partially excluded from the field of view, limiting full spinal assessment"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The independent read identifies the calcifications as soft-tissue chondroid-pattern calcifications overlying the right iliac fossa rather than intraosseous sclerotic blobs; the morphology described (lobulated 'popcorn' pattern without cortical involvement) raises the possibility of a soft-tissue chondroid lesion rather than purely intraosseous osteoblastic metastases, but this is a projection-ambiguity that cannot be resolved from the plain film alone and does not constitute an additional unrelated lesion\",\"The lumbar disc space narrowing and endplate sclerosis at L4-L5 and L5-S1 noted by the independent read is a degenerative change incidental to the stated diagnosis; dense sclerosis at L5-S1 could represent an additional metastatic focus not explicitly named in the expected findings — this requires flagging as an unexplained finding relative to the stated pattern which specifies L4 ivory vertebra and S1 upper sacrum density only\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does one bone look nothing like its neighbors?",
+  "seedHint": "Find the vertebra that looks more like chalk than bone and ask why.",
+  "teaser": "And then the spine had something to say about that mattress theory",
+  "generated": {
+    "threadsCaption": "A patient with a dull lower back ache blamed on an old mattress.\n\nThen the X-ray loaded 😭\n\nAnd then the spine had something to say about that mattress theory.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Osteoblastic bone metastases from prostate cancer\n\n👀 What you see:\nOne lumbar vertebra glows solid white with dense round white spots scattered through the right side of the patient's pelvis.\n\n💊 Treatment:\nIf bone metastases are suspected the workup includes PSA, biopsy, and a bone scan. Treatment then depends on the stage of the disease.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "contentReview": {
+    "sha256": "f4adebfa4a09c874b25e90d8ed2262d7b0843e6ea03d8350f0ba83c3db6862ed",
+    "reviewedAt": "2026-10-09T21:36:46.253Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "ownerImageOverride": {
+    "sha256": "b9e9235c8c62d68f14dae5acebd427181c4fb8863924814ccf2ae9823e77b45d",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record. The automatic genital censor blurred the lower pelvis; local review found no external genitalia in frame (the film stops at the pubic bone), so the owner-approved unblurred render is used."
+  }
+}

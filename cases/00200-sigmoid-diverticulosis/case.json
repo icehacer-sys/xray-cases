@@ -1,0 +1,133 @@
+{
+  "folder": "00200-sigmoid-diverticulosis",
+  "number": 200,
+  "diagnosis": "Sigmoid diverticulosis",
+  "aliases": [
+    "diverticulosis",
+    "diverticular disease",
+    "colonic diverticulosis",
+    "sigmoid diverticular disease",
+    "diverticula"
+  ],
+  "symptom": "irregular bowel habits and some bloating",
+  "hook": "the colon was studded with little pouches like berries along a stem",
+  "whatYouSee": "Many small pouches stick out from the colon wall on the left side of the patient's lower abdomen.",
+  "whyItMatters": "Diverticula are acquired pouches of mucosa and submucosa pushed out through weak points where vessels enter the wall. They are most common in the sigmoid and can lead to diverticulitis, abscess, perforation, and bleeding.",
+  "treatment": "Uncomplicated diverticulosis may be managed with a high fibre diet. Complications may need IV antibiotics, guided drainage, or surgery such as Hartmann's procedure.",
+  "takeaway": "Little pouches clustered in the sigmoid on barium enema mean diverticulosis and the left iliac fossa is where trouble starts.",
+  "igOptions": [
+    "A. Sigmoid diverticulosis",
+    "B. Colorectal carcinoma",
+    "C. Ulcerative colitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-15T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:32:00.549Z"
+  },
+  "condition": {
+    "diagnosis": "Sigmoid diverticulosis",
+    "aliases": [
+      "diverticulosis",
+      "diverticular disease",
+      "colonic diverticulosis",
+      "sigmoid diverticular disease",
+      "diverticula"
+    ],
+    "symptom": "irregular bowel habits and some bloating",
+    "hook": "the colon was studded with little pouches like berries along a stem",
+    "view": "barium enema AP",
+    "ageBand": "older",
+    "keyFindings": "AP barium enema of the abdomen and pelvis. On the patient's LEFT side the descending colon and especially the sigmoid colon in the left lower quadrant and pelvis carry numerous small round and flask-shaped barium-filled outpouchings 3 to 10 mm across projecting from the bowel wall, densest in the sigmoid where the segment looks narrowed with a saw-tooth outline. The rectum is distended and smooth. The transverse colon and the caecum and ascending colon on the patient's right have normal haustra. The lumbar spine, sacrum and hip joints are normal.",
+    "whatYouSee": "Many small pouches stick out from the colon wall on the left side of the patient's lower abdomen.",
+    "whyItMatters": "Diverticula are acquired pouches of mucosa and submucosa pushed out through weak points where vessels enter the wall. They are most common in the sigmoid and can lead to diverticulitis, abscess, perforation, and bleeding.",
+    "treatment": "Uncomplicated diverticulosis may be managed with a high fibre diet. Complications may need IV antibiotics, guided drainage, or surgery such as Hartmann's procedure.",
+    "takeaway": "Little pouches clustered in the sigmoid on barium enema mean diverticulosis and the left iliac fossa is where trouble starts.",
+    "igTitle": "POUCHES IN THE COLON",
+    "igOptions": [
+      "Sigmoid diverticulosis",
+      "Colorectal carcinoma",
+      "Ulcerative colitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 09 - ICC-2 [66] Diverticular Disease of The Colon (Hospital tutorial).pdf, original page 21"
+    ],
+    "referenceImage": "diverticulosis.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP barium enema of the abdomen and pelvis. On the patient's LEFT side the descending colon and especially the sigmoid colon in the left lower quadrant and pelvis carry numerous small round and flask-shaped barium-filled outpouchings 3 to 10 mm across projecting from the bowel wall, densest in the sigmoid where the segment looks narrowed with a saw-tooth outline. The rectum is distended and smooth. The transverse colon and the caecum and ascending colon on the patient's right have normal haustra. The lumbar spine, sacrum and hip joints are normal.",
+      "The visible anatomy matches the requested barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "961e4fac80f25d97a6564e9bb3e38888413cab7f2a6b94695b8dff85c5e30785",
+    "conditionSha256": "869e154df7b90cc22a19f84fc465d6e57e182c75027fbcdc854432c845bd6c08",
+    "clinicalContextSha256": "914dcc555b7687f022975f56e05f5c597ed20406588e951a01928f85f609c63e",
+    "verifiedAt": "2026-10-09T21:32:00.553Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Numerous lobulated filling defects carpeting the left colon and sigmoid in a polypoid pattern — these are inconsistent with diverticulosis and are not explained by the supplied diagnosis of sigmoid diverticulosis; they appear as rounded intraluminal projections rather than extraluminal outpouchings, raising the separate diagnosis of polyposis (e.g. FAP)\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the abdomen and pelvis",
+        "Double-contrast barium enema study with air and barium visible throughout the large bowel",
+        "The ascending colon and transverse colon demonstrate smooth, well-distended haustral folds with uniform barium coating and no mucosal irregularity",
+        "The descending colon and sigmoid colon demonstrate numerous small rounded and lobulated filling defects of varying size (2–10 mm range) projecting into the lumen, consistent with multiple polypoid lesions",
+        "The sigmoid colon shows the highest density of these filling defects, with a carpeting pattern of polyps",
+        "The rectum appears distended with barium; a rounded soft-tissue density is seen in the pelvis overlying the rectal region, possibly representing a balloon catheter tip or pelvic soft tissue structure",
+        "Bony pelvis and visible lumbar spine show no acute osseous abnormality",
+        "No free intraperitoneal air is identified",
+        "No definite annular or apple-core constricting lesion is identified on this view"
+      ],
+      "differential": [
+        "Familial adenomatous polyposis (FAP): The innumerable small polyps carpeting the left colon and sigmoid are the dominant feature, and the pattern of hundreds of adenomatous polyps is classic for FAP",
+        "Attenuated FAP or MYH-associated polyposis: A lesser polyp burden variant that may appear identical on imaging",
+        "Hyperplastic/serrated polyposis syndrome: Multiple hyperplastic or serrated polyps could produce a similar radiographic appearance, though less commonly this numerous"
+      ],
+      "anatomyConcerns": [
+        "The right colon and cecum are not clearly visualized in the field; adequate filling of the cecum cannot be confirmed from this image alone, representing a potential study incompleteness",
+        "The rounded pelvic density overlying the rectum could represent a retention catheter balloon, an overlying structure, or a pelvic mass — superimposition limits characterization",
+        "Significant asymmetry in polyp distribution (left-sided predominance) is noted; this could reflect true anatomical distribution or incomplete mixing/coating of barium on the right side"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Numerous lobulated filling defects carpeting the left colon and sigmoid in a polypoid pattern — these are inconsistent with diverticulosis and are not explained by the supplied diagnosis of sigmoid diverticulosis; they appear as rounded intraluminal projections rather than extraluminal outpouchings, raising the separate diagnosis of polyposis (e.g. FAP)\"]"
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "What does this colon remind you of?",
+  "seedHint": "Count the little outpouchings along the lower left curve and ask yourself if that looks like one or many.",
+  "teaser": "And the answer was hiding in plain sight",
+  "generated": {
+    "threadsCaption": "A patient with irregular bowel habits and some bloating.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with the kind of digestive grumbles most people blame on stress and ignore for months.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Sigmoid diverticulosis\n\n👀 What you see:\nMany small pouches stick out from the colon wall on the left side of the patient's lower abdomen.\n\n🦴 Why it matters:\nDiverticula are acquired pouches of mucosa and submucosa pushed out through weak points where vessels enter the wall.\n\n💊 Treatment:\nUncomplicated diverticulosis may be managed with a high fibre diet. Complications may need IV antibiotics, guided drainage, or surgery such as Hartmann's procedure.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "57aab1ca46931a35be76d0dc7b4d535f71aeefca3246013dd990f0c2154c8a93",
+    "reviewedAt": "2026-10-09T21:32:09.000Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "ownerImageOverride": {
+    "sha256": "48f8806722eca519044188f710b0e6470f28dfc51fc165f75fe97c220eb31278",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record. The automatic genital censor blurred the lower pelvis; local review found no external genitalia in frame (the film stops at the pubic bone), so the owner-approved unblurred render is used."
+  }
+}

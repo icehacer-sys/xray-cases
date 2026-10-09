@@ -1,0 +1,138 @@
+{
+  "folder": "00206-annular-colorectal-carcinoma-apple-core-lesion",
+  "number": 206,
+  "diagnosis": "Annular colorectal carcinoma (apple core lesion)",
+  "aliases": [
+    "colorectal carcinoma",
+    "colon cancer",
+    "apple core lesion",
+    "annular carcinoma of the colon",
+    "napkin ring carcinoma"
+  ],
+  "symptom": "a change in bowel habit put down to a new diet",
+  "hook": "An apple eaten down to the core in the middle of a smooth hose.",
+  "whatYouSee": "A short ragged apple core narrowing with overhanging shoulders in the colon on the left side of the patient.",
+  "whyItMatters": "Carcinoma of the large bowel can encircle the lumen and produce an apple core narrowing that leads to large bowel obstruction. Suspected tumours need histology and a staging CT.",
+  "treatment": "If biopsy confirms cancer the usual treatment is surgical resection of the involved segment after staging. Obstructing tumours may first need decompression by a stent or colostomy.",
+  "takeaway": "An apple core stricture with overhanging edges on barium enema is colon cancer until proven otherwise.",
+  "igOptions": [
+    "A. Annular colorectal carcinoma",
+    "B. Diverticular stricture",
+    "C. Crohn's stricture"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-21T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:38:52.974Z"
+  },
+  "condition": {
+    "diagnosis": "Annular colorectal carcinoma (apple core lesion)",
+    "aliases": [
+      "colorectal carcinoma",
+      "colon cancer",
+      "apple core lesion",
+      "annular carcinoma of the colon",
+      "napkin ring carcinoma"
+    ],
+    "symptom": "a change in bowel habit put down to a new diet",
+    "hook": "An apple eaten down to the core in the middle of a smooth hose.",
+    "view": "double-contrast barium enema AP",
+    "ageBand": "older",
+    "keyFindings": "AP double contrast barium enema radiograph of the abdomen. In the descending to sigmoid colon on the PATIENT'S LEFT side (image right) there is a short abrupt circumferential narrowing about 3 to 5 cm long with an irregular ragged mucosal lumen through it and sharply overhanging shelf-like shoulders at both ends, giving an apple core shape. The colon above and below the stricture is normally distended with white barium coating and black air with normal haustral folds. The rest of the colon including the right side is normal. Lumbar spine and pelvic bones are normal.",
+    "whatYouSee": "A short ragged apple core narrowing with overhanging shoulders in the colon on the left side of the patient.",
+    "whyItMatters": "Carcinoma of the large bowel can encircle the lumen and produce an apple core narrowing that leads to large bowel obstruction. Suspected tumours need histology and a staging CT.",
+    "treatment": "If biopsy confirms cancer the usual treatment is surgical resection of the involved segment after staging. Obstructing tumours may first need decompression by a stent or colostomy.",
+    "takeaway": "An apple core stricture with overhanging edges on barium enema is colon cancer until proven otherwise.",
+    "igTitle": "THE APPLE CORE",
+    "igOptions": [
+      "Annular colorectal carcinoma",
+      "Diverticular stricture",
+      "Crohn's stricture"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 07 - ICC-2 [101] Intestinal Obstruction.pdf, original page 38"
+    ],
+    "referenceImage": "apple-core.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP double contrast barium enema radiograph of the abdomen. In the descending to sigmoid colon on the PATIENT'S LEFT side (image right) there is a short abrupt circumferential narrowing about 3 to 5 cm long with an irregular ragged mucosal lumen through it and sharply overhanging shelf-like shoulders at both ends, giving an apple core shape. The colon above and below the stricture is normally distended with white barium coating and black air with normal haustral folds. The rest of the colon including the right side is normal. Lumbar spine and pelvic bones are normal.",
+      "The visible anatomy matches the requested double-contrast barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "924d208867661da37cf1067110373e77f87f9a83b3544c4ba0369ac838912c10",
+    "conditionSha256": "4c114e9957e1bf155e4ae460bc74532c05a986405c16815f84ac15a2c3bbc4fc",
+    "clinicalContextSha256": "71eb2ef081ac3d960a22fbe3689f09737deac525ca90b193db7370c744f61652",
+    "verifiedAt": "2026-10-09T21:38:52.979Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "AP double contrast barium enema radiograph of the abdomen. In the descending to sigmoid colon on the PATIENT'S LEFT side (image right) there is a short abrupt circumferential narrowing about 3 to 5 cm long with an irregular ragged mucosal lumen through it and sharply overhanging shelf-like shoulders at both ends, giving an apple core shape. The colon above and below the stricture is normally distended with white barium coating and black air with normal haustral folds. The rest of the colon including the right side is normal. Lumbar spine and pelvic bones are normal.",
+        "observed": "AP double-contrast barium enema is confirmed. On the patient's left side (image right), in the descending colon transitioning to sigmoid, there is a focal segment of abrupt circumferential narrowing approximately 3-5 cm in length with a nodular irregular ragged lumen and sharply overhanging shelf-like shoulders at both ends producing a classic apple-core configuration. Colon above and below this stricture is well-distended with barium coating and air with normal haustral folds. The right colon including ascending colon and hepatic flexure appears normal with preserved haustration. Lumbar vertebrae and pelvic bones appear skeletally mature and normal without osseous lesion. Sigmoid/rectosigmoid is relatively under-distended but this does not obscure the primary lesion.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested double-contrast barium enema AP and the declared age and anatomical exceptions.",
+        "observed": "The projection is AP double-contrast barium enema. The skeleton shows skeletally mature adult pelvis and lumbar spine consistent with an adult over 60. No anatomical impossibilities are identified. The under-distension of the distal sigmoid and mild bowel overlap at the hepatic flexure are within expected acquisition variability for this examination.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the abdomen demonstrating a double-contrast barium enema study",
+        "The entire large bowel is opacified with barium coating the mucosal surface and air providing luminal distension, outlining the colon from rectum to cecum",
+        "Normal haustral folds are visible throughout most of the colon",
+        "In the mid-descending colon on the left side there is a focal area of mucosal irregularity with a nodular, lobulated filling defect and altered fold pattern, producing an irregular luminal narrowing",
+        "The remainder of the colon demonstrates relatively preserved haustral pattern without diffuse mucosal granularity",
+        "No evidence of free intraperitoneal air is seen",
+        "Lumbar spine and pelvis are visible; no osseous lesions are apparent on this view",
+        "Rectal catheter tip is not clearly visible, suggesting retrograde filling technique"
+      ],
+      "differential": [
+        "Colorectal adenocarcinoma: the focal irregular mucosal mass with luminal narrowing in the descending colon is most consistent with a primary colonic carcinoma",
+        "Annular or polypoid adenoma with malignant transformation: a large polyp or villous adenoma could produce this degree of lobulated mucosal irregularity",
+        "Diverticular disease with associated mucosal distortion: less likely given the focal lobulated character, but segmental spasm or pericolic inflammation from diverticulitis can mimic a mass lesion"
+      ],
+      "anatomyConcerns": [
+        "The sigmoid colon and rectosigmoid junction appear relatively under-distended compared to more proximal segments, which could mask additional lesions in this region",
+        "The hepatic flexure region shows somewhat redundant bowel loop overlap, limiting full mucosal assessment in that area",
+        "No small bowel opacification is present, consistent with a large-bowel-only study"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The independent reading identifies a focal area of nodular, lobulated mucosal irregularity with luminal narrowing in the mid-descending/sigmoid colon on the patient's left (image right). The double-contrast barium enema shows abrupt circumferential narrowing with overhanging shelf-like shoulders at both ends and an irregular ragged lumen through the stricture segment — the classic apple-core morphology. This short, abrupt, shouldered circumferential stricture with destroyed mucosal pattern is the hallmark discriminator for annular colorectal carcinoma rather than a polyp/adenoma (which would be polypoid/pedunculated without complete circumferential shouldering) or diverticular disease (which shows spasm/sacculation without true mucosal destruction). The remainder of the colon shows preserved haustration bilaterally. The sigmoid/rectosigmoid is under-distended but the primary lesion is clearly visible. Hepatic flexure overlap is a normal projection effect from redundant bowel. No unexplained additional lesion is identified."
+  },
+  "difficulty": 3,
+  "laypersonQuestion": "Does something look bitten out of that tube?",
+  "seedHint": "Find the narrowest point and ask yourself if that shape is smooth or ragged.",
+  "teaser": "And then the scan of the abdomen changed everything",
+  "generated": {
+    "threadsCaption": "A patient with a change in bowel habit put down to a new diet.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the abdomen changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a change in bowel habit that seemed entirely explained by a new diet.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the abdomen changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Annular colorectal carcinoma (apple core lesion)\n\n👀 What you see:\nA short ragged apple core narrowing with overhanging shoulders in the colon on the left side of the patient.\n\n🦴 Why it matters:\nCarcinoma of the large bowel can encircle the lumen and produce an apple core narrowing that leads to large bowel obstruction.\n\n💊 Treatment:\nIf biopsy confirms cancer the usual treatment is surgical resection of the involved segment after staging.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "d18f7c23ef3d4f4795eb8dd2bbe84ed956100b55a7935f8a2981986e0e1d54b9",
+    "reviewedAt": "2026-10-09T21:38:59.699Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "needsReview": false
+}

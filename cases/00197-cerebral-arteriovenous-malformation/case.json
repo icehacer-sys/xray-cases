@@ -1,0 +1,137 @@
+{
+  "folder": "00197-cerebral-arteriovenous-malformation",
+  "number": 197,
+  "diagnosis": "Cerebral arteriovenous malformation",
+  "aliases": [
+    "AVM",
+    "brain AVM",
+    "cerebral AVM",
+    "arteriovenous malformation",
+    "pial AVM"
+  ],
+  "symptom": "headaches that kept coming back for months",
+  "hook": "a tangled ball of yarn was knotted into the brain's plumbing",
+  "whatYouSee": "A dense tangle of abnormal vessels in the brain fills with contrast and drains early into an enlarged vein.",
+  "whyItMatters": "An AVM is a direct connection between arteries and veins with no capillary bed in between. It can bleed into the brain or cause seizures and headaches.",
+  "treatment": "Treatment may include embolisation with agents such as Onyx or NBCA, surgery, or gamma knife radiosurgery.",
+  "takeaway": "A vessel tangle that drains into a vein during the arterial phase is an AVM until proven otherwise.",
+  "igOptions": [
+    "A. Cerebral arteriovenous malformation",
+    "B. Cerebral aneurysm",
+    "C. Moyamoya disease"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-12T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:29:07.078Z"
+  },
+  "condition": {
+    "diagnosis": "Cerebral arteriovenous malformation",
+    "aliases": [
+      "AVM",
+      "brain AVM",
+      "cerebral AVM",
+      "arteriovenous malformation",
+      "pial AVM"
+    ],
+    "symptom": "headaches that kept coming back for months",
+    "hook": "a tangled ball of yarn was knotted into the brain's plumbing",
+    "view": "lateral catheter cerebral angiogram (DSA)",
+    "ageBand": "young-adult",
+    "keyFindings": "Lateral subtracted catheter cerebral angiogram in the arterial phase with the skull subtracted to a pale grey background and vessels in black. A compact oval nidus about 3 cm across of densely tangled small abnormal vessels sits in the parietal region of the hemisphere. Enlarged feeding arteries run into it and in the same arterial phase a dilated early draining vein with a rounded venous pouch fills next to the nidus and runs up toward the superior sagittal sinus. The carotid siphon and the other cortical branches have a normal calibre and a normal branching tree. A lateral projection superimposes both sides so the hemisphere side is not shown.",
+    "whatYouSee": "A dense tangle of abnormal vessels in the brain fills with contrast and drains early into an enlarged vein.",
+    "whyItMatters": "An AVM is a direct connection between arteries and veins with no capillary bed in between. It can bleed into the brain or cause seizures and headaches.",
+    "treatment": "Treatment may include embolisation with agents such as Onyx or NBCA, surgery, or gamma knife radiosurgery.",
+    "takeaway": "A vessel tangle that drains into a vein during the arterial phase is an AVM until proven otherwise.",
+    "igTitle": "TANGLE IN THE BRAIN",
+    "igOptions": [
+      "Cerebral arteriovenous malformation",
+      "Cerebral aneurysm",
+      "Moyamoya disease"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC-3 [137] Neurointervention.pdf, original page 23"
+    ],
+    "referenceImage": "avm.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Lateral subtracted catheter cerebral angiogram in the arterial phase with the skull subtracted to a pale grey background and vessels in black. A compact oval nidus about 3 cm across of densely tangled small abnormal vessels sits in the parietal region of the hemisphere. Enlarged feeding arteries run into it and in the same arterial phase a dilated early draining vein with a rounded venous pouch fills next to the nidus and runs up toward the superior sagittal sinus. The carotid siphon and the other cortical branches have a normal calibre and a normal branching tree. A lateral projection superimposes both sides so the hemisphere side is not shown.",
+      "The visible anatomy matches the requested lateral catheter cerebral angiogram (DSA) and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "3344b5c23b12dc57a7d38372755cac904bf6d71d32f1c09084e667798ac2eb7b",
+    "conditionSha256": "dacf980aaa092d5fc91ef256865ab55e42a596d967b1baafe733ab330c4fb471",
+    "clinicalContextSha256": "1ec065f997665336244c7db51034e366cb4b0e661dfe0e714d4766e4894fdcf4",
+    "verifiedAt": "2026-10-09T21:29:07.083Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Lateral subtracted catheter cerebral angiogram in the arterial phase with the skull subtracted to a pale grey background and vessels in black. A compact oval nidus about 3 cm across of densely tangled small abnormal vessels sits in the parietal region of the hemisphere. Enlarged feeding arteries run into it and in the same arterial phase a dilated early draining vein with a rounded venous pouch fills next to the nidus and runs up toward the superior sagittal sinus. The carotid siphon and the other cortical branches have a normal calibre and a normal branching tree. A lateral projection superimposes both sides so the hemisphere side is not shown.",
+        "observed": "The image shows a lateral DSA with skull subtracted to a pale grey background and vessels rendered in black. A compact tangle of abnormal vessels approximately 2-3 cm in diameter is present in the mid-to-posterior parietal region consistent with an AVM nidus. Enlarged tortuous feeding arteries course into the nidus. A round well-defined contrast-filled outpouching approximately 1 cm in diameter is seen adjacent to the nidus on its lateral margin, consistent with a venous varix or intranidal aneurysm; an enlarged draining vein courses superiorly toward the superior sagittal sinus region. The background cortical branches appear of normal calibre. The main feeding vessel (likely MCA territory) appears patent. A lateral projection is used. The carotid siphon is not clearly visible in the field shown, but the overall vascular tree branching pattern is coherent.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested lateral catheter cerebral angiogram (DSA) and the declared age and anatomical exceptions.",
+        "observed": "The modality is clearly a DSA cerebral angiogram in lateral projection with appropriate circular image intensifier collimation. The vascular anatomy is that of a young to middle-aged adult without visible degenerative change, consistent with age 19-39. No skeletal structures are visible as the skull is subtracted. The anatomy is coherent and matches the expected modality and age group.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Cerebral digital subtraction angiography (DSA), lateral or oblique projection, with contrast opacification of cerebral arterial vasculature",
+        "Central nidus: a compact, tightly packed tangle of abnormal vessels approximately 2-3 cm in diameter situated in the mid-to-posterior cerebral hemisphere, consistent with an arteriovenous malformation (AVM) nidus",
+        "Multiple enlarged, tortuous feeding arteries arising from what appears to be middle cerebral artery (MCA) branches coursing toward the nidus",
+        "A discrete, round, well-defined contrast-filled outpouching approximately 1 cm in diameter immediately adjacent to the nidus on its lateral/superior margin, morphologically consistent with an intranidal or perinidal aneurysm",
+        "Enlarged tortuous draining vein or venous varix visible at the superior aspect of the nidus, coursing toward the superior sagittal sinus region",
+        "Background cerebral vasculature appears otherwise patent without significant atherosclerotic change visible on this image",
+        "Image acquisition appears adequate; circular image intensifier collimation visible"
+      ],
+      "differential": [
+        "Cerebral arteriovenous malformation (AVM) with associated intranidal or perinidal aneurysm — most likely diagnosis given compact nidus, enlarged feeding arteries, and adjacent saccular outpouching",
+        "Cerebral AVM with venous varix — the round opacification could represent a high-flow venous varix rather than a true aneurysm, remaining a close differential",
+        "Dural arteriovenous fistula (dAVF) with secondary venous hypertension and varices — less likely given the compact parenchymal nidus morphology, but cannot be entirely excluded on a single projection"
+      ],
+      "anatomyConcerns": [
+        "Only a single projection is shown; two orthogonal projections (AP and lateral) are standard and needed to fully characterize nidus geometry, feeding vessel anatomy, and venous drainage",
+        "The precise parent artery (ICA vs MCA territory vs combined supply) cannot be definitively determined from this single view alone",
+        "No venous phase images are shown, limiting assessment of complete drainage pattern and cortical venous reflux"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The image shows a compact tangle of abnormal vessels (nidus) approximately 2-3 cm in diameter in the parietal region, with enlarged tortuous feeding arteries and an adjacent round saccular outpouching consistent with an intranidal or perinidal aneurysm/venous varix, and an enlarged early draining vein coursing superiorly. This constellation — compact parenchymal nidus, arterial feeders, and early venous filling — is diagnostic of cerebral AVM. The venous varix/aneurysm is a recognised associated finding and does not represent an unexplained lesion. The clinical history of recurrent headaches is consistent. No equally supported alternative diagnosis is present; dAVF typically lacks a compact parenchymal nidus."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Does this brain look like it has a knot in it?",
+  "seedHint": "Find the tangle and ask yourself if the vessels there look calm or chaotic.",
+  "teaser": "And then the scan of the head answered everything",
+  "generated": {
+    "threadsCaption": "A patient with headaches that kept coming back for months.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the head answered everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with headaches that just kept coming back and nothing else to explain them.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the head answered everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Cerebral arteriovenous malformation\n\n👀 What you see:\nA dense tangle of abnormal vessels in the brain fills with contrast and drains early into an enlarged vein.\n\n🦴 Why it matters:\nAn AVM is a direct connection between arteries and veins with no capillary bed in between. It can bleed into the brain or cause seizures and headaches.\n\n💊 Treatment:\nTreatment may include embolisation with agents such as Onyx or NBCA, surgery, or gamma knife radiosurgery.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "contentReview": {
+    "sha256": "9f69129756ca3c343750939e1275197722b8e32b41e35867f0fb983a4ae0bc3a",
+    "reviewedAt": "2026-10-09T21:29:13.511Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "needsReview": false
+}

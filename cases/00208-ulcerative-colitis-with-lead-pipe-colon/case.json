@@ -1,0 +1,134 @@
+{
+  "folder": "00208-ulcerative-colitis-with-lead-pipe-colon",
+  "number": 208,
+  "diagnosis": "Ulcerative colitis with lead-pipe colon",
+  "aliases": [
+    "ulcerative colitis",
+    "lead pipe colon",
+    "chronic ulcerative colitis",
+    "UC",
+    "loss of haustra"
+  ],
+  "symptom": "loose stools blamed on stress at work",
+  "hook": "A smooth rubber hose where a bumpy chain of beads should be.",
+  "whatYouSee": "The whole colon is a smooth narrow tube with no haustral folds like a lead pipe.",
+  "whyItMatters": "Chronic ulcerative colitis scars the colon into a shortened featureless lead pipe on barium enema. Double contrast barium enema is contraindicated in acute severe colitis.",
+  "treatment": "If disease is active it is treated with aminosalicylates and steroids. Colectomy is considered if medical therapy fails.",
+  "takeaway": "Loss of haustra with a smooth tubular colon is the lead-pipe sign of chronic ulcerative colitis.",
+  "igOptions": [
+    "A. Ulcerative colitis",
+    "B. Crohn's colitis",
+    "C. Ischaemic colitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-23T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:41:02.825Z"
+  },
+  "condition": {
+    "diagnosis": "Ulcerative colitis with lead-pipe colon",
+    "aliases": [
+      "ulcerative colitis",
+      "lead pipe colon",
+      "chronic ulcerative colitis",
+      "UC",
+      "loss of haustra"
+    ],
+    "symptom": "loose stools blamed on stress at work",
+    "hook": "A smooth rubber hose where a bumpy chain of beads should be.",
+    "view": "barium enema AP",
+    "ageBand": "young-adult",
+    "keyFindings": "AP double contrast barium enema radiograph of the abdomen. The entire colon from rectum through sigmoid, descending, transverse, and ascending colon is filled with white barium and air and appears as a narrowed shortened smooth featureless tube with complete loss of the haustral folds on both the PATIENT'S LEFT and RIGHT sides (bilateral and continuous). The flexures are blunted and the colon is straightened like a rigid pipe. Mucosal outline is smooth or finely granular without masses. Lumbar spine and pelvic bones are normal.",
+    "whatYouSee": "The whole colon is a smooth narrow tube with no haustral folds like a lead pipe.",
+    "whyItMatters": "Chronic ulcerative colitis scars the colon into a shortened featureless lead pipe on barium enema. Double contrast barium enema is contraindicated in acute severe colitis.",
+    "treatment": "If disease is active it is treated with aminosalicylates and steroids. Colectomy is considered if medical therapy fails.",
+    "takeaway": "Loss of haustra with a smooth tubular colon is the lead-pipe sign of chronic ulcerative colitis.",
+    "igTitle": "THE LEAD PIPE",
+    "igOptions": [
+      "Ulcerative colitis",
+      "Crohn's colitis",
+      "Ischaemic colitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 2- (Rev 12) - Abdominal Imaging Recap.pdf, original page 4"
+    ],
+    "referenceImage": "lead-pipe.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP double contrast barium enema radiograph of the abdomen. The entire colon from rectum through sigmoid, descending, transverse, and ascending colon is filled with white barium and air and appears as a narrowed shortened smooth featureless tube with complete loss of the haustral folds on both the PATIENT'S LEFT and RIGHT sides (bilateral and continuous). The flexures are blunted and the colon is straightened like a rigid pipe. Mucosal outline is smooth or finely granular without masses. Lumbar spine and pelvic bones are normal.",
+      "The visible anatomy matches the requested barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "11e5a241722f8592c8f15021a2804a5a2a26ec09c81f54240f1bae4e77eba13e",
+    "conditionSha256": "8f4982bed1697919c08a1c366373c4bf6c4bc8f0f90317965ff10157459c61e2",
+    "clinicalContextSha256": "b8c97eadbfcf3a9e5c01c6914f0645f5391d7be144c55050f2c5002bd5c71916",
+    "verifiedAt": "2026-10-09T21:41:02.829Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The transverse colon and ascending/descending colon show prominent preserved haustral folds rather than the complete haustral loss (lead-pipe appearance) required for ulcerative colitis with lead-pipe colon — the haustral pattern is inconsistent with the declared diagnosis and is not explained by it\",\"The colon appears of normal or near-normal calibre without the shortening and rigidity expected for chronic UC with lead-pipe change\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the abdomen demonstrating a double-contrast barium enema study",
+        "Dense barium coating outlines the entire large bowel from rectum to the visualised hepatic and splenic flexures and transverse colon",
+        "The colonic mucosa of the transverse colon shows prominent haustral folds with a regular, scalloped inner contour",
+        "The ascending and descending colon appear foreshortened and smooth-walled with dense barium filling",
+        "The rectum and sigmoid colon show pooled barium in the pelvis with a rounded rectal contour",
+        "No discrete mucosal polyp, filling defect, apple-core lesion, or frank perforation is identified on this single projection",
+        "The lumbar spine shows multilevel disc-space narrowing and osteophytosis consistent with degenerative change",
+        "Pelvic bones are intact; a small rounded opacity is projected over the pubic symphysis, likely a urinary bladder calculus or phlebolith",
+        "The sigmoid and descending colon appear to converge toward the left pelvis without redundancy suggestive of sigmoid volvulus on this view",
+        "The central abdomen shows no gross small-bowel dilation or free air"
+      ],
+      "differential": [
+        "Normal double-contrast barium enema examination (no definite mucosal abnormality identified on this projection)",
+        "Inflammatory bowel disease (e.g., ulcerative colitis or Crohn colitis) — mucosal granularity in the transverse colon warrants further evaluation",
+        "Colonic polyps or early neoplasm — incomplete coating or overlapping loops in the sigmoid could obscure small lesions requiring additional projections"
+      ],
+      "anatomyConcerns": [
+        "The splenic flexure extends superiorly beyond the upper image margin, potentially excluding evaluation of the proximal transverse/splenic flexure region",
+        "Overlapping barium pools in the pelvis limit assessment of the rectosigmoid junction; additional oblique or lateral views would be standard",
+        "The small rounded pelvic midline opacity requires correlation to exclude a vesical calculus versus artifact or phlebolith"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The transverse colon and ascending/descending colon show prominent preserved haustral folds rather than the complete haustral loss (lead-pipe appearance) required for ulcerative colitis with lead-pipe colon — the haustral pattern is inconsistent with the declared diagnosis and is not explained by it\",\"The colon appears of normal or near-normal calibre without the shortening and rigidity expected for chronic UC with lead-pipe change\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does this gut look too smooth to you?",
+  "seedHint": "Compare the walls: rigid and featureless or soft and rippled?",
+  "teaser": "And the abdomen had a lot to say about it",
+  "generated": {
+    "threadsCaption": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Ulcerative colitis with lead-pipe colon\n\n👀 What you see:\nThe whole colon is a smooth narrow tube with no haustral folds like a lead pipe.\n\n🦴 Why it matters:\nChronic ulcerative colitis scars the colon into a shortened featureless lead pipe on barium enema.\n\n💊 Treatment:\nIf disease is active it is treated with aminosalicylates and steroids. Colectomy is considered if medical therapy fails.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "643c6a63988b93d425ee67029cdafe797886792feccaeffd49df760dd4b9ab69",
+    "reviewedAt": "2026-10-09T21:41:09.811Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "ownerImageOverride": {
+    "sha256": "81469659f39032ce6eb3cb3b4dd6c0581688eae259580e10d5f569d0140a5a55",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record. The automatic genital censor blurred the lower pelvis; local review found no external genitalia in frame (the film stops at the pubic bone), so the owner-approved unblurred render is used."
+  }
+}

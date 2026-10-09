@@ -1,0 +1,131 @@
+{
+  "folder": "00202-laryngocele",
+  "number": 202,
+  "diagnosis": "Laryngocele",
+  "aliases": [
+    "laryngocele",
+    "external laryngocele",
+    "mixed laryngocele",
+    "dilated laryngeal saccule",
+    "air sac of the larynx"
+  ],
+  "symptom": "a soft bulge on one side of the neck that puffs up with hard blowing",
+  "hook": "A ping-pong ball of trapped air tucked beside the windpipe.",
+  "whatYouSee": "A round black air-filled sac bulging out beside the larynx on the right side of the patient's neck.",
+  "whyItMatters": "A laryngocele is an air-filled dilatation of the saccule of the laryngeal ventricle and can be internal, external, or mixed. It classically grows on straining such as in glass blowers or trumpet players.",
+  "treatment": "If the swelling is confirmed on CT the treatment is surgical excision.",
+  "takeaway": "An air-filled neck swelling that grows when the patient blows or strains points to a laryngocele.",
+  "igOptions": [
+    "A. Laryngocele",
+    "B. Branchial cyst",
+    "C. Thyroglossal cyst"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-17T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:33:34.226Z"
+  },
+  "condition": {
+    "diagnosis": "Laryngocele",
+    "aliases": [
+      "laryngocele",
+      "external laryngocele",
+      "mixed laryngocele",
+      "dilated laryngeal saccule",
+      "air sac of the larynx"
+    ],
+    "symptom": "a soft bulge on one side of the neck that puffs up with hard blowing",
+    "hook": "A ping-pong ball of trapped air tucked beside the windpipe.",
+    "view": "AP soft-tissue neck X-ray",
+    "ageBand": "middle-aged",
+    "keyFindings": "AP soft-tissue radiograph of the neck. On the PATIENT'S RIGHT side (image left) there is a well-defined round to oval black air-filled sac about 3 to 4 cm across lying just lateral to the larynx at the level of the thyroid cartilage and thyrohyoid membrane, bulging outward into the right lateral neck soft tissues with a thin smooth wall. The sac connects medially toward the laryngeal airway. The trachea and laryngeal air column stay midline and patent. The left side of the neck soft tissues is normal with no air collection. Cervical spine, clavicles and mandible are normal.",
+    "whatYouSee": "A round black air-filled sac bulging out beside the larynx on the right side of the patient's neck.",
+    "whyItMatters": "A laryngocele is an air-filled dilatation of the saccule of the laryngeal ventricle and can be internal, external, or mixed. It classically grows on straining such as in glass blowers or trumpet players.",
+    "treatment": "If the swelling is confirmed on CT the treatment is surgical excision.",
+    "takeaway": "An air-filled neck swelling that grows when the patient blows or strains points to a laryngocele.",
+    "igTitle": "AIR WHERE IT SHOULDN'T BE",
+    "igOptions": [
+      "Laryngocele",
+      "Branchial cyst",
+      "Thyroglossal cyst"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture [030] Neck Swellings UPDATED Lecture.pdf, original page 14"
+    ],
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP soft-tissue radiograph of the neck. On the PATIENT'S RIGHT side (image left) there is a well-defined round to oval black air-filled sac about 3 to 4 cm across lying just lateral to the larynx at the level of the thyroid cartilage and thyrohyoid membrane, bulging outward into the right lateral neck soft tissues with a thin smooth wall. The sac connects medially toward the laryngeal airway. The trachea and laryngeal air column stay midline and patent. The left side of the neck soft tissues is normal with no air collection. Cervical spine, clavicles and mandible are normal.",
+      "The visible anatomy matches the requested AP soft-tissue neck X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "88ecc0a9d8065c885b57e4fd6bf1164431d9c84db9f7c5c4c8b764c9d4a4cdfe",
+    "conditionSha256": "9c9c4312da81efc39f5e1fefd32542f0f8fdfa277b4c3ace3160e3b69aeae319",
+    "clinicalContextSha256": "8cc7b58300617c619ad254dfe23b6c42afc4cb73218bc1cdf8b3204b77a487c8",
+    "verifiedAt": "2026-10-09T21:33:34.232Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The large air-filled sac is located on the patient's LEFT side (image right) rather than the expected RIGHT side (image left); however, since laterality is determined by the clinical description and no lead marker is present, this could represent a left-sided laryngocele — but the expected key finding specifically requires a right-sided lesion, making this a mismatch rather than an unexplained additional lesion\",\"The air-filled sac appears to be at a slightly higher level (C3-C5) than the expected thyroid cartilage/thyrohyoid membrane level, sitting more superiorly in the neck\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "AP projection of the cervical spine and upper thorax, including partial mandible superiorly and upper lung fields inferiorly",
+        "Large, well-defined, rounded radiolucent (air-filled) structure overlying the left side of the neck at approximately the C3-C5 level, with sharp margins, situated anterior and lateral to the trachea",
+        "The trachea appears midline or minimally displaced to the right at the level of the lucent structure",
+        "Cervical vertebral alignment appears grossly intact on this AP view; intervertebral disc spaces appear preserved",
+        "Upper lung fields visible at the inferior margin; no obvious gross opacification",
+        "Mandible and lower dentition visible superiorly; no gross bony destruction identified",
+        "No visible calcification within the lucent cervical mass",
+        "Soft tissue of the neck otherwise unremarkable in density aside from the described lucency"
+      ],
+      "differential": [
+        "Branchial cleft cyst (second branchial cleft cyst with air-fluid level or gas-containing cyst, or fistula tract containing air)",
+        "Laryngocele or pharyngocele (air-filled saccular outpouching from the laryngeal ventricle or pharynx)",
+        "Abscess with gas formation (infected neck space abscess containing gas, e.g., Ludwig's angina or deep neck space infection with gas-forming organisms)"
+      ],
+      "anatomyConcerns": [
+        "The radiolucent rounded structure is unusually large and well-defined for normal anatomy; it does not correspond to any normal air-containing structure in this location on a standard AP projection",
+        "Slight rotation of the patient cannot be fully excluded, which could affect assessment of tracheal deviation",
+        "The field of view clips the skull base superiorly, limiting full craniocervical junction assessment"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The large air-filled sac is located on the patient's LEFT side (image right) rather than the expected RIGHT side (image left); however, since laterality is determined by the clinical description and no lead marker is present, this could represent a left-sided laryngocele — but the expected key finding specifically requires a right-sided lesion, making this a mismatch rather than an unexplained additional lesion\",\"The air-filled sac appears to be at a slightly higher level (C3-C5) than the expected thyroid cartilage/thyrohyoid membrane level, sitting more superiorly in the neck\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What happens to that bubble when you hold your breath?",
+  "seedHint": "Look just beside the windpipe and ask yourself: solid lump or hollow pocket?",
+  "teaser": "And the neck had a secret it only shared under pressure",
+  "generated": {
+    "threadsCaption": "A patient with a soft bulge on one side of the neck that puffs up with hard blowing.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a soft bulge on one side of the neck that was easy to ignore at rest.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Laryngocele\n\n👀 What you see:\nA round black air-filled sac bulging out beside the larynx on the right side of the patient's neck.\n\n🦴 Why it matters:\nA laryngocele is an air-filled dilatation of the saccule of the laryngeal ventricle and can be internal, external, or mixed.\n\n💊 Treatment:\nIf the swelling is confirmed on CT the treatment is surgical excision.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "ad34d8270f2e6a618e7b83bc02222d15dc7d89e38c720b11e312ea74d2d8588e",
+    "reviewedAt": "2026-10-09T21:33:41.385Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "ownerImageOverride": {
+    "sha256": "88ecc0a9d8065c885b57e4fd6bf1164431d9c84db9f7c5c4c8b764c9d4a4cdfe",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record."
+  }
+}
