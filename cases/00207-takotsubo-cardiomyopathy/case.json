@@ -1,0 +1,137 @@
+{
+  "folder": "00207-takotsubo-cardiomyopathy",
+  "number": 207,
+  "diagnosis": "Takotsubo cardiomyopathy",
+  "aliases": [
+    "Takotsubo cardiomyopathy",
+    "Tako-tsubo",
+    "broken heart syndrome",
+    "stress cardiomyopathy",
+    "apical ballooning syndrome"
+  ],
+  "symptom": "a tight chest after a really upsetting week",
+  "hook": "A round octopus pot with a narrow neck.",
+  "whatYouSee": "The left ventricle balloons into a big round flask at the apex while its base squeezes tight.",
+  "whyItMatters": "Takotsubo mimics an acute MI with chest pain, breathlessness, ECG changes, and raised cardiac biomarkers. It is more common in middle-aged to elderly women and the coronary arteries are normal.",
+  "treatment": "If coronary angiography shows normal arteries the treatment is supportive heart failure care. Ventricular function usually recovers over weeks.",
+  "takeaway": "Apical ballooning with normal coronaries after emotional stress is Takotsubo.",
+  "igOptions": [
+    "A. Takotsubo cardiomyopathy",
+    "B. Left ventricular aneurysm",
+    "C. Dilated cardiomyopathy"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-22T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:39:39.340Z"
+  },
+  "condition": {
+    "diagnosis": "Takotsubo cardiomyopathy",
+    "aliases": [
+      "Takotsubo cardiomyopathy",
+      "Tako-tsubo",
+      "broken heart syndrome",
+      "stress cardiomyopathy",
+      "apical ballooning syndrome"
+    ],
+    "symptom": "a tight chest after a really upsetting week",
+    "hook": "A round octopus pot with a narrow neck.",
+    "view": "left ventriculogram RAO view",
+    "ageBand": "older",
+    "keyFindings": "Right anterior oblique (RAO) left ventriculogram fluoroscopy image with a pigtail catheter passing down the aorta into the left ventricle. The contrast-filled left ventricle shows a narrow tightly contracting base near the aortic valve and a large round ballooned akinetic apex pointing down and to the image right giving a flask shape with a narrow neck and a wide round bottom. The apical wall is smooth and bulges outward evenly. No contrast leaks out of the ventricle. Ribs, diaphragm and spine show faintly in the background and an ECG tracing runs along the bottom edge.",
+    "whatYouSee": "The left ventricle balloons into a big round flask at the apex while its base squeezes tight.",
+    "whyItMatters": "Takotsubo mimics an acute MI with chest pain, breathlessness, ECG changes, and raised cardiac biomarkers. It is more common in middle-aged to elderly women and the coronary arteries are normal.",
+    "treatment": "If coronary angiography shows normal arteries the treatment is supportive heart failure care. Ventricular function usually recovers over weeks.",
+    "takeaway": "Apical ballooning with normal coronaries after emotional stress is Takotsubo.",
+    "igTitle": "THE BROKEN HEART SHAPE",
+    "igOptions": [
+      "Takotsubo cardiomyopathy",
+      "Left ventricular aneurysm",
+      "Dilated cardiomyopathy"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 01 - Cardiomyopathies.pdf, original page 53"
+    ],
+    "referenceImage": "takotsubo.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Right anterior oblique (RAO) left ventriculogram fluoroscopy image with a pigtail catheter passing down the aorta into the left ventricle. The contrast-filled left ventricle shows a narrow tightly contracting base near the aortic valve and a large round ballooned akinetic apex pointing down and to the image right giving a flask shape with a narrow neck and a wide round bottom. The apical wall is smooth and bulges outward evenly. No contrast leaks out of the ventricle. Ribs, diaphragm and spine show faintly in the background and an ECG tracing runs along the bottom edge.",
+      "The visible anatomy matches the requested left ventriculogram RAO view and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "98139a6dbc488524ab859b8b0f86976d5e4c5b1d02bac0e6859e0d8ec78e5ec2",
+    "conditionSha256": "cc06345c27f83b2f72f066fb59d467cd921f537585daaf6c8398c7fbe1da5831",
+    "clinicalContextSha256": "89f09aaaf895c38c14deca5d8ca34c672dd38f07991f9a46cc99a0aacdd590b8",
+    "verifiedAt": "2026-10-09T21:39:39.348Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Right anterior oblique (RAO) left ventriculogram fluoroscopy image with a pigtail catheter passing down the aorta into the left ventricle. The contrast-filled left ventricle shows a narrow tightly contracting base near the aortic valve and a large round ballooned akinetic apex pointing down and to the image right giving a flask shape with a narrow neck and a wide round bottom. The apical wall is smooth and bulges outward evenly. No contrast leaks out of the ventricle. Ribs, diaphragm and spine show faintly in the background and an ECG tracing runs along the bottom edge.",
+        "observed": "A fluoroscopic frame shows a contrast-filled ventricular cavity with a narrow neck superiorly near the base and a large, round, bulbous inferior chamber creating a flask/teardrop shape. The apical wall appears smooth and bulges symmetrically. A pigtail catheter with a coiled tip is visible within the upper cardiac region coursing into the ventricle, and a second catheter/wire loop is seen more superiorly. Posterior rib margins and vertebral column are faintly visible on the left. The diaphragm is partially visible inferiorly. No contrast extravasation is seen. An ECG trace is visible along the bottom edge. The projection is consistent with RAO.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested left ventriculogram RAO view and the declared age and anatomical exceptions.",
+        "observed": "The anatomy visible is consistent with an adult (skeletally mature spine and ribs visible). The projection and cardiac anatomy are consistent with an RAO left ventriculogram. No anatomical impossibilities, extra structures, or AI duplication artifacts are identified. The catheters and cardiac silhouette are coherent.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Fluoroscopic image (single frame) consistent with a left anterior oblique or anteroposterior cardiac projection, with ECG trace visible at image base indicating real-time acquisition",
+        "Large ovoid radiopaque structure in the left ventricular region with a narrow neck superiorly and a bulbous inferior chamber, consistent with an inflated intra-aortic balloon pump (IABP) balloon or a ventriculographic contrast-filled ventricular aneurysm cavity",
+        "A catheter with a pigtail loop is visible in the upper mid-cardiac region, tip directed inferiorly into the left ventricle, consistent with a pigtail angiographic catheter",
+        "A second catheter or guidewire loop is visible in the upper left field, coursing superiorly",
+        "Vertebral column and posterior rib margins are partially visible on the left side",
+        "No obvious pneumothorax or pleural effusion is identifiable in the visible lung fields",
+        "The bulbous opacified structure has a teardrop or flask shape with a distinct waist, suggesting either contrast pooling in an aneurysmal sac or balloon inflation"
+      ],
+      "differential": [
+        "Left ventricular aneurysm with contrast ventriculography demonstrating an aneurysmal sac: the flask-shaped contrast pool with narrow neck connecting to the main ventricular cavity is the most characteristic appearance",
+        "Intra-aortic balloon pump balloon inflated in diastole visible during fluoroscopy, with pigtail catheter co-positioned for ventriculography",
+        "Left ventricular pseudoaneurysm demonstrated at ventriculography: narrow neck to body ratio and eccentric location are consistent, though distinction from true aneurysm requires additional views"
+      ],
+      "anatomyConcerns": [
+        "The bulbous structure's narrow neck and inferior eccentric position are atypical for normal ventricular opacification and raise concern for aneurysmal or pseudoaneurysmal morphology rather than normal chamber shape",
+        "The pigtail catheter tip position should be confirmed to exclude inadvertent positioning outside the left ventricle",
+        "Image is a single fluoroscopic frame; phase of cardiac cycle and contrast injection timing cannot be confirmed without cine sequence"
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The fluoroscopic left ventriculogram demonstrates a classic flask or teardrop shape: a narrow contracting base at the level of the aortic valve and a large, round, ballooned apical chamber pointing inferiorly and to the image right, with smooth walls and no contrast leak. A pigtail catheter is visible with its tip in the ventricular cavity and a second wire/catheter loop superiorly. The ECG trace at the bottom confirms real-time fluoroscopic acquisition. This apical ballooning with basal hypercontractility in the context of emotional stress is the hallmark ventriculographic appearance of Takotsubo cardiomyopathy. Left ventricular aneurysm could mimic this shape, but the clinical vignette of acute emotional stress with no ischaemic history and the smooth, symmetric apical ballooning favour Takotsubo. The independent differential listed LV aneurysm as top consideration, but the clinical vignette resolves this ambiguity in favour of Takotsubo."
+  },
+  "difficulty": 5,
+  "laypersonQuestion": "Does this heart shape remind you of anything?",
+  "seedHint": "Look at the bottom of the heart and then look at the top.",
+  "teaser": "And the chest held something nobody expected to see",
+  "generated": {
+    "threadsCaption": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Takotsubo cardiomyopathy\n\n👀 What you see:\nThe left ventricle balloons into a big round flask at the apex while its base squeezes tight.\n\n🦴 Why it matters:\nTakotsubo mimics an acute MI with chest pain, breathlessness, ECG changes, and raised cardiac biomarkers.\n\n💊 Treatment:\nIf coronary angiography shows normal arteries the treatment is supportive heart failure care. Ventricular function usually recovers over weeks.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "dd213ef6fbf6df03b418c7c4764d4514f17698f2a6a7bd30df42f60300b340dc",
+    "reviewedAt": "2026-10-09T21:41:53.726Z",
+    "reviewer": "Claude Code local copy review 2026-10-09: pipeline-drafted copy checked line by line against the lecture facts and style rules; fixed modality wording and dash or gendered alternate captions; not clinical certification"
+  },
+  "needsReview": false
+}

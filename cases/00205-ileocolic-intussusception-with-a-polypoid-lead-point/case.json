@@ -1,0 +1,132 @@
+{
+  "folder": "00205-ileocolic-intussusception-with-a-polypoid-lead-point",
+  "number": 205,
+  "diagnosis": "Ileocolic intussusception with a polypoid lead point",
+  "aliases": [
+    "intussusception",
+    "ileocolic intussusception",
+    "adult intussusception",
+    "telescoping bowel",
+    "coiled spring sign"
+  ],
+  "symptom": "a tummy ache that comes and goes and jeans that feel looser lately",
+  "hook": "A coiled spring stuffed inside a garden hose.",
+  "whatYouSee": "A coiled-spring filling defect blocking the colon near the hepatic flexure on the right side of the patient.",
+  "whyItMatters": "Intussusception shows as a coiled spring on contrast enema and a target sign on CT. In an adult with pain and anaemia and weight loss a polypoid mass is often the lead point.",
+  "treatment": "If an adult has a mass at the lead point the involved bowel is usually resected surgically with histology. A contrast enema can be therapeutic mainly in children.",
+  "takeaway": "A coiled spring on barium enema means bowel telescoping into bowel.",
+  "igOptions": [
+    "A. Ileocolic intussusception",
+    "B. Colon cancer",
+    "C. Volvulus"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-20T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:38:09.508Z"
+  },
+  "condition": {
+    "diagnosis": "Ileocolic intussusception with a polypoid lead point",
+    "aliases": [
+      "intussusception",
+      "ileocolic intussusception",
+      "adult intussusception",
+      "telescoping bowel",
+      "coiled spring sign"
+    ],
+    "symptom": "a tummy ache that comes and goes and jeans that feel looser lately",
+    "hook": "A coiled spring stuffed inside a garden hose.",
+    "view": "barium enema AP",
+    "ageBand": "older",
+    "keyFindings": "AP double contrast barium enema radiograph of the abdomen. On the PATIENT'S RIGHT side (image left) at the hepatic flexure and upper ascending colon a rounded intraluminal soft-tissue mass obstructs the barium column. Barium trickles around it in thin concentric parallel rings giving a coiled-spring appearance with the meniscus of the intussusceptum head pointing toward the barium. The rest of the colon (sigmoid, descending, transverse) is normally distended with barium and air with normal haustra. Lumbar spine and pelvic bones are normal.",
+    "whatYouSee": "A coiled-spring filling defect blocking the colon near the hepatic flexure on the right side of the patient.",
+    "whyItMatters": "Intussusception shows as a coiled spring on contrast enema and a target sign on CT. In an adult with pain and anaemia and weight loss a polypoid mass is often the lead point.",
+    "treatment": "If an adult has a mass at the lead point the involved bowel is usually resected surgically with histology. A contrast enema can be therapeutic mainly in children.",
+    "takeaway": "A coiled spring on barium enema means bowel telescoping into bowel.",
+    "igTitle": "SPRING IN THE COLON",
+    "igOptions": [
+      "Ileocolic intussusception",
+      "Colon cancer",
+      "Volvulus"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 07 - ICC-2 [101] Intestinal Obstruction.pdf, original page 80"
+    ],
+    "referenceImage": "intussusception.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP double contrast barium enema radiograph of the abdomen. On the PATIENT'S RIGHT side (image left) at the hepatic flexure and upper ascending colon a rounded intraluminal soft-tissue mass obstructs the barium column. Barium trickles around it in thin concentric parallel rings giving a coiled-spring appearance with the meniscus of the intussusceptum head pointing toward the barium. The rest of the colon (sigmoid, descending, transverse) is normally distended with barium and air with normal haustra. Lumbar spine and pelvic bones are normal.",
+      "The visible anatomy matches the requested barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "b2ccf32d6ca9c3338aba558110073c2645e47e98e9e316d49755f22c49280ed5",
+    "conditionSha256": "b78a7756b4bfb9a6866375057b05746a4d86606fbfa47b859283d4bc203aeec3",
+    "clinicalContextSha256": "03622cd85925df69ae5598d2c53f2f4a5e211f0b6923e759fda3cb0328d9e287",
+    "verifiedAt": "2026-10-09T21:38:09.512Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"The coiled metallic object in the right upper quadrant appears as a tightly wound wire/spring device rather than the expected coiled-spring sign of barium trickling around an intussusceptum — its appearance is inconsistent with any explained anatomical structure or medical device in this clinical context\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the abdomen and pelvis",
+        "Barium contrast study of the large bowel (double-contrast barium enema technique): barium coats the mucosal surface of the entire colon with haustral pattern visible throughout",
+        "The colon is opacified from rectum through sigmoid, descending, transverse, and ascending colon to the cecum; the hepatic and splenic flexures are identified",
+        "A coiled metallic foreign body is present in the right upper quadrant overlying the region of the hepatic flexure/ascending colon — appears to be a tightly coiled wire or spring-like device",
+        "The colonic haustral folds appear preserved and symmetric throughout the visualised segments with no definite mucosal filling defect or apple-core lesion identified on this view",
+        "No free intraperitoneal gas is identified",
+        "Bony pelvis and visualised lumbar spine appear intact without overt lytic or sclerotic lesion",
+        "Soft tissue density in the pelvis likely represents urinary bladder filled with contrast or urine"
+      ],
+      "differential": [
+        "Double-contrast barium enema examination — the primary purpose of the study; the overall appearance is consistent with a technically adequate examination; no gross colonic pathology definitively identified on this single view",
+        "Retained or ingested metallic foreign body (coiled wire/spring) in the right upper quadrant — could represent an ingested object, a colonoscopy-related device (guidewire loop), or an extrinsic device; location adjacent to hepatic flexure raises concern for proximity to bowel wall",
+        "Colonic polyp or early mucosal lesion not excluded — single-view assessment is limited; additional projections (lateral, oblique, post-evacuation) would be required to evaluate for subtle filling defects"
+      ],
+      "anatomyConcerns": [
+        "The tightly coiled metallic object in the right upper quadrant is a significant acquisition/clinical inconsistency — its nature (intraluminal, intramural, or extrinsic) cannot be determined from this single projection alone",
+        "The rectosigmoid region appears incompletely distended relative to the rest of the colon, which may represent underfilling or true luminal narrowing; additional views needed",
+        "Only a single AP projection is available; standard double-contrast barium enema requires multiple projections (prone, oblique, lateral decubitus, post-evacuation) for complete mucosal assessment"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"The coiled metallic object in the right upper quadrant appears as a tightly wound wire/spring device rather than the expected coiled-spring sign of barium trickling around an intussusceptum — its appearance is inconsistent with any explained anatomical structure or medical device in this clinical context\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does this X-ray remind you of something from your kitchen?",
+  "seedHint": "Look at where the two sections of bowel meet and ask yourself which is inside which.",
+  "teaser": "And the abdomen had more to say than anyone expected",
+  "generated": {
+    "threadsCaption": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a tummy ache that comes and goes and jeans that feel a little looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Ileocolic intussusception with a polypoid lead point\n\n👀 What you see:\nA coiled-spring filling defect blocking the colon near the hepatic flexure on the right side of the patient.\n\n🦴 Why it matters:\nIntussusception shows as a coiled spring on contrast enema and a target sign on CT.\n\n💊 Treatment:\nIf an adult has a mass at the lead point the involved bowel is usually resected surgically with histology. A contrast enema can be therapeutic mainly in children.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "ab737052522d22b8c10c4eefdbedd857405bbbee5f245359401c852ee85fd0b2",
+    "reviewedAt": "2026-10-09T21:38:15.971Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "ownerImageOverride": {
+    "sha256": "29013f2115f578a7d1fe9c4f8ceb2479b46ad7a5670bf05ed0aab8c7894fa213",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record. The automatic genital censor blurred the lower pelvis; local review found no external genitalia in frame (the film stops at the pubic bone), so the owner-approved unblurred render is used."
+  }
+}

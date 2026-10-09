@@ -1,0 +1,133 @@
+{
+  "folder": "00203-gastric-outlet-obstruction-scarred-pyloric-ulcer",
+  "number": 203,
+  "diagnosis": "Gastric outlet obstruction (scarred pyloric ulcer)",
+  "aliases": [
+    "gastric outlet obstruction",
+    "pyloric stenosis from peptic ulcer",
+    "pyloric obstruction",
+    "GOO",
+    "cicatricial pyloric stenosis"
+  ],
+  "symptom": "a heavy full feeling after meals and burps that taste of yesterday's dinner",
+  "hook": "A sagging water balloon of barium hanging down toward the pelvis.",
+  "whatYouSee": "A hugely stretched stomach full of barium sagging toward the pelvis with no barium getting past the outlet.",
+  "whyItMatters": "Scarring from a long-standing pyloric ulcer blocks the outlet and causes projectile non-bile-stained vomiting of food from previous meals. Patients develop dehydration with metabolic alkalosis, hyponatraemia, and hypokalaemia.",
+  "treatment": "If the outlet is blocked the first step is nasogastric suction and washouts with correction of fluids and electrolytes. Once stable the standard operation is truncal vagotomy with gastrojejunostomy after endoscopy excludes a tumour.",
+  "takeaway": "Vomiting old food plus a giant barium-filled stomach means the outlet is blocked.",
+  "igOptions": [
+    "A. Gastric outlet obstruction",
+    "B. Achalasia",
+    "C. Gastric volvulus"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-18T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:35:11.614Z"
+  },
+  "condition": {
+    "diagnosis": "Gastric outlet obstruction (scarred pyloric ulcer)",
+    "aliases": [
+      "gastric outlet obstruction",
+      "pyloric stenosis from peptic ulcer",
+      "pyloric obstruction",
+      "GOO",
+      "cicatricial pyloric stenosis"
+    ],
+    "symptom": "a heavy full feeling after meals and burps that taste of yesterday's dinner",
+    "hook": "A sagging water balloon of barium hanging down toward the pelvis.",
+    "view": "barium meal AP",
+    "ageBand": "middle-aged",
+    "keyFindings": "AP upright barium meal radiograph of the abdomen. The stomach is massively dilated and sags low into the abdomen on the PATIENT'S LEFT side of the spine (image right), its greater curve reaching down toward the pelvic brim. Dense white barium pools as a large rounded dependent puddle at the bottom of the distended stomach with streaky barium and food residue strands hanging above it in a grey gas and fluid filled lumen. No barium passes through the pylorus into the duodenum or small bowel. Lumbar spine, ribs and iliac crests are normal. Bowel elsewhere is gasless and collapsed.",
+    "whatYouSee": "A hugely stretched stomach full of barium sagging toward the pelvis with no barium getting past the outlet.",
+    "whyItMatters": "Scarring from a long-standing pyloric ulcer blocks the outlet and causes projectile non-bile-stained vomiting of food from previous meals. Patients develop dehydration with metabolic alkalosis, hyponatraemia, and hypokalaemia.",
+    "treatment": "If the outlet is blocked the first step is nasogastric suction and washouts with correction of fluids and electrolytes. Once stable the standard operation is truncal vagotomy with gastrojejunostomy after endoscopy excludes a tumour.",
+    "takeaway": "Vomiting old food plus a giant barium-filled stomach means the outlet is blocked.",
+    "igTitle": "THE STOMACH THAT FELL",
+    "igOptions": [
+      "Gastric outlet obstruction",
+      "Achalasia",
+      "Gastric volvulus"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 04 - ICC-2 [157] Principles of management of complicated PUD.pdf, original page 67"
+    ],
+    "referenceImage": "gastric-outlet.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP upright barium meal radiograph of the abdomen. The stomach is massively dilated and sags low into the abdomen on the PATIENT'S LEFT side of the spine (image right), its greater curve reaching down toward the pelvic brim. Dense white barium pools as a large rounded dependent puddle at the bottom of the distended stomach with streaky barium and food residue strands hanging above it in a grey gas and fluid filled lumen. No barium passes through the pylorus into the duodenum or small bowel. Lumbar spine, ribs and iliac crests are normal. Bowel elsewhere is gasless and collapsed.",
+      "The visible anatomy matches the requested barium meal AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "167fcf1e11fd9ce1813d55df5b33efbc022603d0e21a7d730c6d6594ac2e399f",
+    "conditionSha256": "0d15bdf28239684a01efe591f67f99656a0462dfbd10fb407ef01ef6cc7d99b3",
+    "clinicalContextSha256": "ee92a24d8b6b7a8e00c41a21b8dbf3b8b36f04b466e936eba5b17240b30cdcc0",
+    "verifiedAt": "2026-10-09T21:35:11.618Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Large dense globular opacity at the inferior pole of the gastric mass: while barium pooling in a distended stomach is expected, the perfectly smooth spherical dependent opacity has an implausibly geometric, diagram-like quality inconsistent with natural barium pooling in a rugal-folded stomach\",\"No barium passes into the duodenum or small bowel — this is expected for gastric outlet obstruction and is not an unexplained finding\",\"The arborizing frond-like opacities within the gastric lumen are consistent with barium coating food residue strands and are not unexplained\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Anteroposterior projection of the abdomen and pelvis, partially including the lower thorax",
+        "Large, predominantly left-sided abdominal mass occupying the left hemi-abdomen extending from the left upper quadrant to the left iliac fossa and crossing midline inferiorly",
+        "The mass contains a dependent globular dense opacity (pooled contrast or calcification) at its inferior pole, consistent with contrast pooling in a cyst or calcified component",
+        "Irregular, frond-like or arborizing higher-attenuation material within the superior and mid portions of the mass, suggesting mucinous material, calcification, or contrast-opacified mucosal folds within a cystic/hollow structure",
+        "Marked rightward displacement of the lumbar spine relative to the mass; the spine demonstrates scoliosis convex to the right, likely positional or secondary to mass effect",
+        "The right hemi-abdomen appears relatively lucent with no definite solid organ shadow visible, suggesting displacement or compression of right-sided structures",
+        "Lower thoracic ribs are partially visualised; lung bases appear clear",
+        "Osseous structures show no obvious destructive lesion",
+        "No definite free intraperitoneal gas identified"
+      ],
+      "differential": [
+        "Ovarian mucinous cystadenoma or cystadenocarcinoma: large cystic pelvic/abdominal mass with internal mucinous/arborizing opacities and dependent contrast or calcification pooling is classic",
+        "Giant mesenteric or retroperitoneal cyst/mucinous cystic neoplasm: large multilocular cystic mass with internal septations and calcification displacing bowel and spine",
+        "Mature cystic teratoma (dermoid cyst) with complicating features: the dense dependent globule could represent sebaceous/calcified material; arborizing calcification within a large ovarian dermoid is recognized"
+      ],
+      "anatomyConcerns": [
+        "The right kidney and liver shadow are not clearly delineated, likely displaced rather than absent—mass effect should be correlated clinically",
+        "The dense globular inferior opacity could represent pooled oral/IV contrast if this is a post-contrast study, or could represent a calcified component; differentiation requires clinical context",
+        "Patient positioning appears slightly rotated to the right given asymmetric iliac wing projection, which may accentuate apparent midline shift"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Large dense globular opacity at the inferior pole of the gastric mass: while barium pooling in a distended stomach is expected, the perfectly smooth spherical dependent opacity has an implausibly geometric, diagram-like quality inconsistent with natural barium pooling in a rugal-folded stomach\",\"No barium passes into the duodenum or small bowel — this is expected for gastric outlet obstruction and is not an unexplained finding\",\"The arborizing frond-like opacities within the gastric lumen are consistent with barium coating food residue strands and are not unexplained\"]"
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "Does that stomach look way too big to you?",
+  "seedHint": "Look at how far south that barium drops and ask yourself if anything is holding it back.",
+  "teaser": "And the stomach had a lot to say",
+  "generated": {
+    "threadsCaption": "A patient with a heavy full feeling after meals and burps that taste of yesterday's dinner.\n\nThen the X-ray loaded 😭\n\nAnd the stomach had a lot to say.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Gastric outlet obstruction (scarred pyloric ulcer)\n\n👀 What you see:\nA hugely stretched stomach full of barium sagging toward the pelvis with no barium getting past the outlet.\n\n🦴 Why it matters:\nScarring from a long-standing pyloric ulcer blocks the outlet and causes projectile non-bile-stained vomiting of food from previous meals.\n\n💊 Treatment:\nIf the outlet is blocked the first step is nasogastric suction and washouts with correction of fluids and electrolytes.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "8c050b53932f6971862c434cb9cff200dca57f6c34e01e15f9a6117964e5f755",
+    "reviewedAt": "2026-10-09T21:35:18.994Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "ownerImageOverride": {
+    "sha256": "820c3478f1a5f06275edcc193342d892c58dafa37d6323ca4d34fcef41a13637",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record. The automatic genital censor blurred the lower pelvis; local review found no external genitalia in frame (the film stops at the pubic bone), so the owner-approved unblurred render is used."
+  }
+}

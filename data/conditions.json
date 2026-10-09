@@ -3670,5 +3670,506 @@
       "The visible anatomy matches the requested AP upper abdomen centred on both kidneys and cropped above the pelvis and the declared age and anatomical exceptions."
     ],
     "used": true
+  },
+  {
+    "diagnosis": "Diffuse oesophageal spasm",
+    "aliases": [
+      "diffuse esophageal spasm",
+      "DES",
+      "corkscrew oesophagus",
+      "corkscrew esophagus",
+      "rosary bead oesophagus"
+    ],
+    "symptom": "food that sometimes felt stuck halfway down",
+    "hook": "the gullet had twisted itself into a wine-bottle corkscrew",
+    "view": "barium swallow, oblique/lateral view of the oesophagus",
+    "ageBand": "middle-aged",
+    "keyFindings": "Oblique/lateral barium swallow of the thoracic oesophagus in the midline of the chest. The barium column in the mid and lower oesophagus is deformed by multiple simultaneous non-propulsive contractions that make deep alternating indentations on both walls with rounded barium outpouchings between them, giving a regular tight spiral corkscrew or rosary-bead pattern over a long segment. The lumen is not dilated, the mucosal outline is smooth with no ulcer, stricture, filling defect or mass, and barium passes through the gastro-oesophageal junction into the stomach. The upper oesophagus, trachea, thoracic vertebrae and posterior mediastinum look normal.",
+    "whatYouSee": "The barium-filled oesophagus coils down the middle of the chest in tight repeating twists like a corkscrew.",
+    "whyItMatters": "Diffuse oesophageal spasm causes chest pain that can mimic a heart attack and is relieved by GTN. A corkscrew oesophagus on barium swallow is highly suggestive of it.",
+    "treatment": "Treatment targets the spasm once cardiac causes are excluded and may include smooth muscle relaxants such as nitrates or calcium channel blockers.",
+    "takeaway": "Chest pain eased by GTN plus a corkscrew barium swallow points to the oesophagus and not the heart.",
+    "igTitle": "CORKSCREW SWALLOW",
+    "igOptions": [
+      "Diffuse oesophageal spasm",
+      "Achalasia",
+      "Oesophageal carcinoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 06 - ICC-2 Interactive GIT revision 1 (Oesophagus gastroduodenal diseases).pdf, original page 59"
+    ],
+    "referenceImage": "corkscrew.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Oblique/lateral barium swallow of the thoracic oesophagus in the midline of the chest. The barium column in the mid and lower oesophagus is deformed by multiple simultaneous non-propulsive contractions that make deep alternating indentations on both walls with rounded barium outpouchings between them, giving a regular tight spiral corkscrew or rosary-bead pattern over a long segment. The lumen is not dilated, the mucosal outline is smooth with no ulcer, stricture, filling defect or mass, and barium passes through the gastro-oesophageal junction into the stomach. The upper oesophagus, trachea, thoracic vertebrae and posterior mediastinum look normal.",
+      "The visible anatomy matches the requested barium swallow, oblique/lateral view of the oesophagus and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Septic (haematogenous) lung abscesses",
+    "aliases": [
+      "septic pulmonary emboli",
+      "multiple lung abscesses",
+      "haematogenous lung abscesses",
+      "cavitating lung abscesses",
+      "septic emboli"
+    ],
+    "symptom": "a cough and night sweats that kept coming back",
+    "hook": "both lungs looked like a sheet of bubble wrap with water pooled in some of the bubbles",
+    "view": "PA chest X-ray",
+    "ageBand": "young-adult",
+    "keyFindings": "PA chest radiograph showing BILATERAL disease: roughly ten round and oval cavities of varying size from about 1.5 to 5 cm scattered through both the right and left lungs, mainly in the mid and lower zones and toward the periphery. The cavities have thick irregular walls, several contain horizontal air-fluid levels, and patchy surrounding consolidation blurs the lower zones. The trachea is midline, the heart is normal in size, the mediastinum is not widened, and the ribs, clavicles and shoulders are intact.",
+    "whatYouSee": "Many round air pockets of different sizes are scattered through both lungs.",
+    "whyItMatters": "Lung abscesses can arise from blood spread in bacteraemia, IV drug use, cannulae, haemodialysis, and abdominal or urinary sepsis. The infection is polymicrobial in 90 percent of cases.",
+    "treatment": "Treatment may include 4 to 6 weeks of antibiotics such as clindamycin or meropenem with ultrasound or CT guided drainage. Lobectomy may be needed if antibiotics fail or complications develop.",
+    "takeaway": "Many cavities in both lungs at once should make you think of infection arriving through the blood.",
+    "igTitle": "BUBBLES IN BOTH LUNGS",
+    "igOptions": [
+      "Septic lung abscesses",
+      "Cavitating lung metastases",
+      "Pulmonary tuberculosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 01 - 1. abcess_Bronchiectasis_HE_2026.pdf, original page 10"
+    ],
+    "referenceImage": "septic-abscesses.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "PA chest radiograph showing BILATERAL disease: roughly ten round and oval cavities of varying size from about 1.5 to 5 cm scattered through both the right and left lungs, mainly in the mid and lower zones and toward the periphery. The cavities have thick irregular walls, several contain horizontal air-fluid levels, and patchy surrounding consolidation blurs the lower zones. The trachea is midline, the heart is normal in size, the mediastinum is not widened, and the ribs, clavicles and shoulders are intact.",
+      "The visible anatomy matches the requested PA chest X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Cerebral arteriovenous malformation",
+    "aliases": [
+      "AVM",
+      "brain AVM",
+      "cerebral AVM",
+      "arteriovenous malformation",
+      "pial AVM"
+    ],
+    "symptom": "headaches that kept coming back for months",
+    "hook": "a tangled ball of yarn was knotted into the brain's plumbing",
+    "view": "lateral catheter cerebral angiogram (DSA)",
+    "ageBand": "young-adult",
+    "keyFindings": "Lateral subtracted catheter cerebral angiogram in the arterial phase with the skull subtracted to a pale grey background and vessels in black. A compact oval nidus about 3 cm across of densely tangled small abnormal vessels sits in the parietal region of the hemisphere. Enlarged feeding arteries run into it and in the same arterial phase a dilated early draining vein with a rounded venous pouch fills next to the nidus and runs up toward the superior sagittal sinus. The carotid siphon and the other cortical branches have a normal calibre and a normal branching tree. A lateral projection superimposes both sides so the hemisphere side is not shown.",
+    "whatYouSee": "A dense tangle of abnormal vessels in the brain fills with contrast and drains early into an enlarged vein.",
+    "whyItMatters": "An AVM is a direct connection between arteries and veins with no capillary bed in between. It can bleed into the brain or cause seizures and headaches.",
+    "treatment": "Treatment may include embolisation with agents such as Onyx or NBCA, surgery, or gamma knife radiosurgery.",
+    "takeaway": "A vessel tangle that drains into a vein during the arterial phase is an AVM until proven otherwise.",
+    "igTitle": "TANGLE IN THE BRAIN",
+    "igOptions": [
+      "Cerebral arteriovenous malformation",
+      "Cerebral aneurysm",
+      "Moyamoya disease"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC-3 [137] Neurointervention.pdf, original page 23"
+    ],
+    "referenceImage": "avm.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Lateral subtracted catheter cerebral angiogram in the arterial phase with the skull subtracted to a pale grey background and vessels in black. A compact oval nidus about 3 cm across of densely tangled small abnormal vessels sits in the parietal region of the hemisphere. Enlarged feeding arteries run into it and in the same arterial phase a dilated early draining vein with a rounded venous pouch fills next to the nidus and runs up toward the superior sagittal sinus. The carotid siphon and the other cortical branches have a normal calibre and a normal branching tree. A lateral projection superimposes both sides so the hemisphere side is not shown.",
+      "The visible anatomy matches the requested lateral catheter cerebral angiogram (DSA) and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Bilateral hydroureteronephrosis",
+    "aliases": [
+      "bilateral megaureters",
+      "bilateral hydronephrosis",
+      "bilateral hydroureteronephrosis",
+      "obstructive uropathy",
+      "bladder outlet obstruction"
+    ],
+    "symptom": "a weak stream and getting up at night to pee",
+    "hook": "both drainage pipes from the kidneys had ballooned into twisting garden hoses",
+    "view": "IVU delayed AP film",
+    "ageBand": "older",
+    "keyFindings": "Delayed AP intravenous urogram film of the abdomen and pelvis with BILATERAL findings. Both renal pelves are dilated with blunted clubbed calyces, the collecting system on the patient's LEFT more ballooned than on the right. Both ureters are markedly dilated and tortuous with kinks and folds along their whole length from the renal pelvis down to the bladder. The bladder is a large distended rounded contrast-filled sac with a smooth outline filling the pelvis. No calcified stones are seen. The lumbar spine, sacrum and pelvic bones are normal and bowel gas is unremarkable.",
+    "whatYouSee": "Both kidneys have swollen drainage systems and both ureters are wide and twisted down to a large rounded bladder.",
+    "whyItMatters": "When outflow from the bladder is blocked the back pressure dilates both ureters and both kidney collecting systems. Left untreated this can damage kidney function.",
+    "treatment": "Treatment targets the blockage and may include bladder drainage with a catheter and later relief of the obstruction. Upper tract drainage such as percutaneous nephrostomy or ureteric stenting may be needed.",
+    "takeaway": "When both sides are dilated look below the ureters at the bladder and its outlet.",
+    "igTitle": "BOTH SIDES BACKED UP",
+    "igOptions": [
+      "Bilateral hydroureteronephrosis",
+      "Pelviureteric junction obstruction",
+      "Polycystic kidney disease"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 [VM 005] Radiology of the kidney.pdf, original page 42"
+    ],
+    "referenceImage": "megaureters.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Delayed AP intravenous urogram film of the abdomen and pelvis with BILATERAL findings. Both renal pelves are dilated with blunted clubbed calyces, the collecting system on the patient's LEFT more ballooned than on the right. Both ureters are markedly dilated and tortuous with kinks and folds along their whole length from the renal pelvis down to the bladder. The bladder is a large distended rounded contrast-filled sac with a smooth outline filling the pelvis. No calcified stones are seen. The lumbar spine, sacrum and pelvic bones are normal and bowel gas is unremarkable.",
+      "The visible anatomy matches the requested IVU delayed AP film and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Traumatic pneumocephalus",
+    "aliases": [
+      "pneumocephaly",
+      "pneumocephalus",
+      "intracranial air",
+      "traumatic pneumocephaly",
+      "aerocele"
+    ],
+    "symptom": "a headache and a runny nose that would not dry up",
+    "hook": "air had crept in and sat over the front of the brain like a bubble under a phone screen protector",
+    "view": "lateral skull X-ray",
+    "ageBand": "young-adult",
+    "keyFindings": "Lateral skull radiograph. Irregular lobulated very dark (radiolucent) air collections lie inside the skull just beneath the inner table of the frontal bone and outline the anterior surface of the frontal lobes, forming a dark crescent behind the forehead and over the anterior cranial fossa. Because this is a lateral view both frontal regions are superimposed. A faint fracture line crosses the floor of the anterior cranial fossa. The rest of the skull vault, the sella turcica, the facial bones, the mandible and the upper cervical spine look normal and the brain elsewhere is uniform grey.",
+    "whatYouSee": "Dark pockets of air sit inside the skull at the front pressing on the brain behind the forehead.",
+    "whyItMatters": "Pneumocephaly is air inside the skull and is a complication of a fracture of the skull base. A fracture of the anterior skull base can also give the raccoon eye sign.",
+    "treatment": "Treatment may include observation with head elevation since small amounts of air often absorb. A persistent leak or air under tension may need surgical repair of the torn dura.",
+    "takeaway": "Air inside the skull after a head injury means the skull base has been breached until proven otherwise.",
+    "igTitle": "AIR INSIDE THE SKULL",
+    "igOptions": [
+      "Traumatic pneumocephalus",
+      "Frontal sinusitis",
+      "Extradural haematoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture Traumatic brain injury MHN (3.5).pdf, original page 22"
+    ],
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Lateral skull radiograph. Irregular lobulated very dark (radiolucent) air collections lie inside the skull just beneath the inner table of the frontal bone and outline the anterior surface of the frontal lobes, forming a dark crescent behind the forehead and over the anterior cranial fossa. Because this is a lateral view both frontal regions are superimposed. A faint fracture line crosses the floor of the anterior cranial fossa. The rest of the skull vault, the sella turcica, the facial bones, the mandible and the upper cervical spine look normal and the brain elsewhere is uniform grey.",
+      "The visible anatomy matches the requested lateral skull X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Sigmoid diverticulosis",
+    "aliases": [
+      "diverticulosis",
+      "diverticular disease",
+      "colonic diverticulosis",
+      "sigmoid diverticular disease",
+      "diverticula"
+    ],
+    "symptom": "irregular bowel habits and some bloating",
+    "hook": "the colon was studded with little pouches like berries along a stem",
+    "view": "barium enema AP",
+    "ageBand": "older",
+    "keyFindings": "AP barium enema of the abdomen and pelvis. On the patient's LEFT side the descending colon and especially the sigmoid colon in the left lower quadrant and pelvis carry numerous small round and flask-shaped barium-filled outpouchings 3 to 10 mm across projecting from the bowel wall, densest in the sigmoid where the segment looks narrowed with a saw-tooth outline. The rectum is distended and smooth. The transverse colon and the caecum and ascending colon on the patient's right have normal haustra. The lumbar spine, sacrum and hip joints are normal.",
+    "whatYouSee": "Many small pouches stick out from the colon wall on the left side of the patient's lower abdomen.",
+    "whyItMatters": "Diverticula are acquired pouches of mucosa and submucosa pushed out through weak points where vessels enter the wall. They are most common in the sigmoid and can lead to diverticulitis, abscess, perforation, and bleeding.",
+    "treatment": "Uncomplicated diverticulosis may be managed with a high fibre diet. Complications may need IV antibiotics, guided drainage, or surgery such as Hartmann's procedure.",
+    "takeaway": "Little pouches clustered in the sigmoid on barium enema mean diverticulosis and the left iliac fossa is where trouble starts.",
+    "igTitle": "POUCHES IN THE COLON",
+    "igOptions": [
+      "Sigmoid diverticulosis",
+      "Colorectal carcinoma",
+      "Ulcerative colitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 09 - ICC-2 [66] Diverticular Disease of The Colon (Hospital tutorial).pdf, original page 21"
+    ],
+    "referenceImage": "diverticulosis.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP barium enema of the abdomen and pelvis. On the patient's LEFT side the descending colon and especially the sigmoid colon in the left lower quadrant and pelvis carry numerous small round and flask-shaped barium-filled outpouchings 3 to 10 mm across projecting from the bowel wall, densest in the sigmoid where the segment looks narrowed with a saw-tooth outline. The rectum is distended and smooth. The transverse colon and the caecum and ascending colon on the patient's right have normal haustra. The lumbar spine, sacrum and hip joints are normal.",
+      "The visible anatomy matches the requested barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Infrarenal abdominal aortic aneurysm",
+    "aliases": [
+      "AAA",
+      "abdominal aortic aneurysm",
+      "infrarenal AAA",
+      "saccular aortic aneurysm",
+      "aortic aneurysm"
+    ],
+    "symptom": "a dull ache in the lower back that was put down to age",
+    "hook": "the body's main water pipe had a balloon blown out of its side",
+    "view": "aortogram AP",
+    "ageBand": "older",
+    "keyFindings": "AP catheter aortogram of the abdomen. The contrast-filled abdominal aorta runs down the midline with a normal calibre at the level of the renal arteries, which arise on both sides and supply normally enhancing kidneys. Just below the renal arteries the aorta balloons into a round saccular aneurysm about twice the aortic width that bulges mainly toward the patient's LEFT. Below the sac the aorta narrows again to a normal bifurcation into the common iliac arteries. Lumbar and mesenteric branches are visible and there is no contrast leak outside the vessel.",
+    "whatYouSee": "Just below the kidney arteries the aorta balloons into a round sac that bulges toward the left side of the patient.",
+    "whyItMatters": "An abdominal aortic aneurysm can grow silently and its risk of rupture rises as it gets wider. Ultrasound measures its diameter and shows thrombus or dissection while CTA maps it.",
+    "treatment": "Treatment depends on size and symptoms and may include ultrasound surveillance or repair by open surgery or an endovascular stent graft.",
+    "takeaway": "A round bulge of the aorta below the renal arteries is an infrarenal aneurysm and its size decides the plan.",
+    "igTitle": "BALLOON ON THE AORTA",
+    "igOptions": [
+      "Infrarenal abdominal aortic aneurysm",
+      "Aortic dissection",
+      "Renal artery stenosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 01 - ICC-1 (015) computer lab vascular imaging 1 (Arteries) MODFIED 2025-2026.pdf, original page 34"
+    ],
+    "referenceImage": "aaa.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP catheter aortogram of the abdomen. The contrast-filled abdominal aorta runs down the midline with a normal calibre at the level of the renal arteries, which arise on both sides and supply normally enhancing kidneys. Just below the renal arteries the aorta balloons into a round saccular aneurysm about twice the aortic width that bulges mainly toward the patient's LEFT. Below the sac the aorta narrows again to a normal bifurcation into the common iliac arteries. Lumbar and mesenteric branches are visible and there is no contrast leak outside the vessel.",
+      "The visible anatomy matches the requested aortogram AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Laryngocele",
+    "aliases": [
+      "laryngocele",
+      "external laryngocele",
+      "mixed laryngocele",
+      "dilated laryngeal saccule",
+      "air sac of the larynx"
+    ],
+    "symptom": "a soft bulge on one side of the neck that puffs up with hard blowing",
+    "hook": "A ping-pong ball of trapped air tucked beside the windpipe.",
+    "view": "AP soft-tissue neck X-ray",
+    "ageBand": "middle-aged",
+    "keyFindings": "AP soft-tissue radiograph of the neck. On the PATIENT'S RIGHT side (image left) there is a well-defined round to oval black air-filled sac about 3 to 4 cm across lying just lateral to the larynx at the level of the thyroid cartilage and thyrohyoid membrane, bulging outward into the right lateral neck soft tissues with a thin smooth wall. The sac connects medially toward the laryngeal airway. The trachea and laryngeal air column stay midline and patent. The left side of the neck soft tissues is normal with no air collection. Cervical spine, clavicles and mandible are normal.",
+    "whatYouSee": "A round black air-filled sac bulging out beside the larynx on the right side of the patient's neck.",
+    "whyItMatters": "A laryngocele is an air-filled dilatation of the saccule of the laryngeal ventricle and can be internal, external, or mixed. It classically grows on straining such as in glass blowers or trumpet players.",
+    "treatment": "If the swelling is confirmed on CT the treatment is surgical excision.",
+    "takeaway": "An air-filled neck swelling that grows when the patient blows or strains points to a laryngocele.",
+    "igTitle": "AIR WHERE IT SHOULDN'T BE",
+    "igOptions": [
+      "Laryngocele",
+      "Branchial cyst",
+      "Thyroglossal cyst"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture [030] Neck Swellings UPDATED Lecture.pdf, original page 14"
+    ],
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP soft-tissue radiograph of the neck. On the PATIENT'S RIGHT side (image left) there is a well-defined round to oval black air-filled sac about 3 to 4 cm across lying just lateral to the larynx at the level of the thyroid cartilage and thyrohyoid membrane, bulging outward into the right lateral neck soft tissues with a thin smooth wall. The sac connects medially toward the laryngeal airway. The trachea and laryngeal air column stay midline and patent. The left side of the neck soft tissues is normal with no air collection. Cervical spine, clavicles and mandible are normal.",
+      "The visible anatomy matches the requested AP soft-tissue neck X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Gastric outlet obstruction (scarred pyloric ulcer)",
+    "aliases": [
+      "gastric outlet obstruction",
+      "pyloric stenosis from peptic ulcer",
+      "pyloric obstruction",
+      "GOO",
+      "cicatricial pyloric stenosis"
+    ],
+    "symptom": "a heavy full feeling after meals and burps that taste of yesterday's dinner",
+    "hook": "A sagging water balloon of barium hanging down toward the pelvis.",
+    "view": "barium meal AP",
+    "ageBand": "middle-aged",
+    "keyFindings": "AP upright barium meal radiograph of the abdomen. The stomach is massively dilated and sags low into the abdomen on the PATIENT'S LEFT side of the spine (image right), its greater curve reaching down toward the pelvic brim. Dense white barium pools as a large rounded dependent puddle at the bottom of the distended stomach with streaky barium and food residue strands hanging above it in a grey gas and fluid filled lumen. No barium passes through the pylorus into the duodenum or small bowel. Lumbar spine, ribs and iliac crests are normal. Bowel elsewhere is gasless and collapsed.",
+    "whatYouSee": "A hugely stretched stomach full of barium sagging toward the pelvis with no barium getting past the outlet.",
+    "whyItMatters": "Scarring from a long-standing pyloric ulcer blocks the outlet and causes projectile non-bile-stained vomiting of food from previous meals. Patients develop dehydration with metabolic alkalosis, hyponatraemia, and hypokalaemia.",
+    "treatment": "If the outlet is blocked the first step is nasogastric suction and washouts with correction of fluids and electrolytes. Once stable the standard operation is truncal vagotomy with gastrojejunostomy after endoscopy excludes a tumour.",
+    "takeaway": "Vomiting old food plus a giant barium-filled stomach means the outlet is blocked.",
+    "igTitle": "THE STOMACH THAT FELL",
+    "igOptions": [
+      "Gastric outlet obstruction",
+      "Achalasia",
+      "Gastric volvulus"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 04 - ICC-2 [157] Principles of management of complicated PUD.pdf, original page 67"
+    ],
+    "referenceImage": "gastric-outlet.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP upright barium meal radiograph of the abdomen. The stomach is massively dilated and sags low into the abdomen on the PATIENT'S LEFT side of the spine (image right), its greater curve reaching down toward the pelvic brim. Dense white barium pools as a large rounded dependent puddle at the bottom of the distended stomach with streaky barium and food residue strands hanging above it in a grey gas and fluid filled lumen. No barium passes through the pylorus into the duodenum or small bowel. Lumbar spine, ribs and iliac crests are normal. Bowel elsewhere is gasless and collapsed.",
+      "The visible anatomy matches the requested barium meal AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Osteoblastic bone metastases from prostate cancer",
+    "aliases": [
+      "sclerotic bone metastases",
+      "osteoblastic metastases",
+      "prostate cancer metastases",
+      "ivory vertebra",
+      "metastatic prostate carcinoma"
+    ],
+    "symptom": "a dull lower back ache blamed on an old mattress",
+    "hook": "One vertebra turned to solid chalk among its grey neighbours.",
+    "view": "AP pelvis and lower lumbar spine X-ray cropped above the pubic region",
+    "ageBand": "older",
+    "keyFindings": "AP radiograph of the lower lumbar spine and pelvis cropped above the pubic region. The L4 vertebral body is uniformly dense and chalk-white (ivory vertebra) with preserved height and normal shape and no collapse. The upper sacrum at S1 is also diffusely dense and white. In the PATIENT'S RIGHT ilium (image left) there are multiple discrete rounded white sclerotic blobs of varying size. The other lumbar vertebrae (L3 and L5) have normal grey bone density. Sacroiliac joints and hip joints are preserved. Overlying bowel gas is normal.",
+    "whatYouSee": "One lumbar vertebra glows solid white with dense round white spots scattered through the right side of the patient's pelvis.",
+    "whyItMatters": "Prostate cancer spreads to bone as dense osteoblastic deposits in the pelvis and lumbar spine. Large or poorly differentiated tumours are the ones more often metastatic.",
+    "treatment": "If bone metastases are suspected the workup includes PSA, biopsy, and a bone scan. Treatment then depends on the stage of the disease.",
+    "takeaway": "A white ivory vertebra in an older man should make you think of prostate cancer.",
+    "igTitle": "THE CHALK VERTEBRA",
+    "igOptions": [
+      "Osteoblastic prostate cancer metastases",
+      "Paget disease of bone",
+      "Lymphoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture WH [305] Prostate Cancer (24-25).pdf, original page 11"
+    ],
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP radiograph of the lower lumbar spine and pelvis cropped above the pubic region. The L4 vertebral body is uniformly dense and chalk-white (ivory vertebra) with preserved height and normal shape and no collapse. The upper sacrum at S1 is also diffusely dense and white. In the PATIENT'S RIGHT ilium (image left) there are multiple discrete rounded white sclerotic blobs of varying size. The other lumbar vertebrae (L3 and L5) have normal grey bone density. Sacroiliac joints and hip joints are preserved. Overlying bowel gas is normal.",
+      "The visible anatomy matches the requested AP pelvis and lower lumbar spine X-ray cropped above the pubic region and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Ileocolic intussusception with a polypoid lead point",
+    "aliases": [
+      "intussusception",
+      "ileocolic intussusception",
+      "adult intussusception",
+      "telescoping bowel",
+      "coiled spring sign"
+    ],
+    "symptom": "a tummy ache that comes and goes and jeans that feel looser lately",
+    "hook": "A coiled spring stuffed inside a garden hose.",
+    "view": "barium enema AP",
+    "ageBand": "older",
+    "keyFindings": "AP double contrast barium enema radiograph of the abdomen. On the PATIENT'S RIGHT side (image left) at the hepatic flexure and upper ascending colon a rounded intraluminal soft-tissue mass obstructs the barium column. Barium trickles around it in thin concentric parallel rings giving a coiled-spring appearance with the meniscus of the intussusceptum head pointing toward the barium. The rest of the colon (sigmoid, descending, transverse) is normally distended with barium and air with normal haustra. Lumbar spine and pelvic bones are normal.",
+    "whatYouSee": "A coiled-spring filling defect blocking the colon near the hepatic flexure on the right side of the patient.",
+    "whyItMatters": "Intussusception shows as a coiled spring on contrast enema and a target sign on CT. In an adult with pain and anaemia and weight loss a polypoid mass is often the lead point.",
+    "treatment": "If an adult has a mass at the lead point the involved bowel is usually resected surgically with histology. A contrast enema can be therapeutic mainly in children.",
+    "takeaway": "A coiled spring on barium enema means bowel telescoping into bowel.",
+    "igTitle": "SPRING IN THE COLON",
+    "igOptions": [
+      "Ileocolic intussusception",
+      "Colon cancer",
+      "Volvulus"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 07 - ICC-2 [101] Intestinal Obstruction.pdf, original page 80"
+    ],
+    "referenceImage": "intussusception.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP double contrast barium enema radiograph of the abdomen. On the PATIENT'S RIGHT side (image left) at the hepatic flexure and upper ascending colon a rounded intraluminal soft-tissue mass obstructs the barium column. Barium trickles around it in thin concentric parallel rings giving a coiled-spring appearance with the meniscus of the intussusceptum head pointing toward the barium. The rest of the colon (sigmoid, descending, transverse) is normally distended with barium and air with normal haustra. Lumbar spine and pelvic bones are normal.",
+      "The visible anatomy matches the requested barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Annular colorectal carcinoma (apple core lesion)",
+    "aliases": [
+      "colorectal carcinoma",
+      "colon cancer",
+      "apple core lesion",
+      "annular carcinoma of the colon",
+      "napkin ring carcinoma"
+    ],
+    "symptom": "a change in bowel habit put down to a new diet",
+    "hook": "An apple eaten down to the core in the middle of a smooth hose.",
+    "view": "double-contrast barium enema AP",
+    "ageBand": "older",
+    "keyFindings": "AP double contrast barium enema radiograph of the abdomen. In the descending to sigmoid colon on the PATIENT'S LEFT side (image right) there is a short abrupt circumferential narrowing about 3 to 5 cm long with an irregular ragged mucosal lumen through it and sharply overhanging shelf-like shoulders at both ends, giving an apple core shape. The colon above and below the stricture is normally distended with white barium coating and black air with normal haustral folds. The rest of the colon including the right side is normal. Lumbar spine and pelvic bones are normal.",
+    "whatYouSee": "A short ragged apple core narrowing with overhanging shoulders in the colon on the left side of the patient.",
+    "whyItMatters": "Carcinoma of the large bowel can encircle the lumen and produce an apple core narrowing that leads to large bowel obstruction. Suspected tumours need histology and a staging CT.",
+    "treatment": "If biopsy confirms cancer the usual treatment is surgical resection of the involved segment after staging. Obstructing tumours may first need decompression by a stent or colostomy.",
+    "takeaway": "An apple core stricture with overhanging edges on barium enema is colon cancer until proven otherwise.",
+    "igTitle": "THE APPLE CORE",
+    "igOptions": [
+      "Annular colorectal carcinoma",
+      "Diverticular stricture",
+      "Crohn's stricture"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 07 - ICC-2 [101] Intestinal Obstruction.pdf, original page 38"
+    ],
+    "referenceImage": "apple-core.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP double contrast barium enema radiograph of the abdomen. In the descending to sigmoid colon on the PATIENT'S LEFT side (image right) there is a short abrupt circumferential narrowing about 3 to 5 cm long with an irregular ragged mucosal lumen through it and sharply overhanging shelf-like shoulders at both ends, giving an apple core shape. The colon above and below the stricture is normally distended with white barium coating and black air with normal haustral folds. The rest of the colon including the right side is normal. Lumbar spine and pelvic bones are normal.",
+      "The visible anatomy matches the requested double-contrast barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Takotsubo cardiomyopathy",
+    "aliases": [
+      "Takotsubo cardiomyopathy",
+      "Tako-tsubo",
+      "broken heart syndrome",
+      "stress cardiomyopathy",
+      "apical ballooning syndrome"
+    ],
+    "symptom": "a tight chest after a really upsetting week",
+    "hook": "A round octopus pot with a narrow neck.",
+    "view": "left ventriculogram RAO view",
+    "ageBand": "older",
+    "keyFindings": "Right anterior oblique (RAO) left ventriculogram fluoroscopy image with a pigtail catheter passing down the aorta into the left ventricle. The contrast-filled left ventricle shows a narrow tightly contracting base near the aortic valve and a large round ballooned akinetic apex pointing down and to the image right giving a flask shape with a narrow neck and a wide round bottom. The apical wall is smooth and bulges outward evenly. No contrast leaks out of the ventricle. Ribs, diaphragm and spine show faintly in the background and an ECG tracing runs along the bottom edge.",
+    "whatYouSee": "The left ventricle balloons into a big round flask at the apex while its base squeezes tight.",
+    "whyItMatters": "Takotsubo mimics an acute MI with chest pain, breathlessness, ECG changes, and raised cardiac biomarkers. It is more common in middle-aged to elderly women and the coronary arteries are normal.",
+    "treatment": "If coronary angiography shows normal arteries the treatment is supportive heart failure care. Ventricular function usually recovers over weeks.",
+    "takeaway": "Apical ballooning with normal coronaries after emotional stress is Takotsubo.",
+    "igTitle": "THE BROKEN HEART SHAPE",
+    "igOptions": [
+      "Takotsubo cardiomyopathy",
+      "Left ventricular aneurysm",
+      "Dilated cardiomyopathy"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 01 - Cardiomyopathies.pdf, original page 53"
+    ],
+    "referenceImage": "takotsubo.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Right anterior oblique (RAO) left ventriculogram fluoroscopy image with a pigtail catheter passing down the aorta into the left ventricle. The contrast-filled left ventricle shows a narrow tightly contracting base near the aortic valve and a large round ballooned akinetic apex pointing down and to the image right giving a flask shape with a narrow neck and a wide round bottom. The apical wall is smooth and bulges outward evenly. No contrast leaks out of the ventricle. Ribs, diaphragm and spine show faintly in the background and an ECG tracing runs along the bottom edge.",
+      "The visible anatomy matches the requested left ventriculogram RAO view and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Ulcerative colitis with lead-pipe colon",
+    "aliases": [
+      "ulcerative colitis",
+      "lead pipe colon",
+      "chronic ulcerative colitis",
+      "UC",
+      "loss of haustra"
+    ],
+    "symptom": "loose stools blamed on stress at work",
+    "hook": "A smooth rubber hose where a bumpy chain of beads should be.",
+    "view": "barium enema AP",
+    "ageBand": "young-adult",
+    "keyFindings": "AP double contrast barium enema radiograph of the abdomen. The entire colon from rectum through sigmoid, descending, transverse, and ascending colon is filled with white barium and air and appears as a narrowed shortened smooth featureless tube with complete loss of the haustral folds on both the PATIENT'S LEFT and RIGHT sides (bilateral and continuous). The flexures are blunted and the colon is straightened like a rigid pipe. Mucosal outline is smooth or finely granular without masses. Lumbar spine and pelvic bones are normal.",
+    "whatYouSee": "The whole colon is a smooth narrow tube with no haustral folds like a lead pipe.",
+    "whyItMatters": "Chronic ulcerative colitis scars the colon into a shortened featureless lead pipe on barium enema. Double contrast barium enema is contraindicated in acute severe colitis.",
+    "treatment": "If disease is active it is treated with aminosalicylates and steroids. Colectomy is considered if medical therapy fails.",
+    "takeaway": "Loss of haustra with a smooth tubular colon is the lead-pipe sign of chronic ulcerative colitis.",
+    "igTitle": "THE LEAD PIPE",
+    "igOptions": [
+      "Ulcerative colitis",
+      "Crohn's colitis",
+      "Ischaemic colitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 2- (Rev 12) - Abdominal Imaging Recap.pdf, original page 4"
+    ],
+    "referenceImage": "lead-pipe.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "AP double contrast barium enema radiograph of the abdomen. The entire colon from rectum through sigmoid, descending, transverse, and ascending colon is filled with white barium and air and appears as a narrowed shortened smooth featureless tube with complete loss of the haustral folds on both the PATIENT'S LEFT and RIGHT sides (bilateral and continuous). The flexures are blunted and the colon is straightened like a rigid pipe. Mucosal outline is smooth or finely granular without masses. Lumbar spine and pelvic bones are normal.",
+      "The visible anatomy matches the requested barium enema AP and the declared age and anatomical exceptions."
+    ],
+    "used": true
   }
 ]

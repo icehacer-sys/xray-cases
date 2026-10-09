@@ -1,0 +1,132 @@
+{
+  "folder": "00199-traumatic-pneumocephalus",
+  "number": 199,
+  "diagnosis": "Traumatic pneumocephalus",
+  "aliases": [
+    "pneumocephaly",
+    "pneumocephalus",
+    "intracranial air",
+    "traumatic pneumocephaly",
+    "aerocele"
+  ],
+  "symptom": "a headache and a runny nose that would not dry up",
+  "hook": "air had crept in and sat over the front of the brain like a bubble under a phone screen protector",
+  "whatYouSee": "Dark pockets of air sit inside the skull at the front pressing on the brain behind the forehead.",
+  "whyItMatters": "Pneumocephaly is air inside the skull and is a complication of a fracture of the skull base. A fracture of the anterior skull base can also give the raccoon eye sign.",
+  "treatment": "Treatment may include observation with head elevation since small amounts of air often absorb. A persistent leak or air under tension may need surgical repair of the torn dura.",
+  "takeaway": "Air inside the skull after a head injury means the skull base has been breached until proven otherwise.",
+  "igOptions": [
+    "A. Traumatic pneumocephalus",
+    "B. Frontal sinusitis",
+    "C. Extradural haematoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-14T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:30:35.785Z"
+  },
+  "condition": {
+    "diagnosis": "Traumatic pneumocephalus",
+    "aliases": [
+      "pneumocephaly",
+      "pneumocephalus",
+      "intracranial air",
+      "traumatic pneumocephaly",
+      "aerocele"
+    ],
+    "symptom": "a headache and a runny nose that would not dry up",
+    "hook": "air had crept in and sat over the front of the brain like a bubble under a phone screen protector",
+    "view": "lateral skull X-ray",
+    "ageBand": "young-adult",
+    "keyFindings": "Lateral skull radiograph. Irregular lobulated very dark (radiolucent) air collections lie inside the skull just beneath the inner table of the frontal bone and outline the anterior surface of the frontal lobes, forming a dark crescent behind the forehead and over the anterior cranial fossa. Because this is a lateral view both frontal regions are superimposed. A faint fracture line crosses the floor of the anterior cranial fossa. The rest of the skull vault, the sella turcica, the facial bones, the mandible and the upper cervical spine look normal and the brain elsewhere is uniform grey.",
+    "whatYouSee": "Dark pockets of air sit inside the skull at the front pressing on the brain behind the forehead.",
+    "whyItMatters": "Pneumocephaly is air inside the skull and is a complication of a fracture of the skull base. A fracture of the anterior skull base can also give the raccoon eye sign.",
+    "treatment": "Treatment may include observation with head elevation since small amounts of air often absorb. A persistent leak or air under tension may need surgical repair of the torn dura.",
+    "takeaway": "Air inside the skull after a head injury means the skull base has been breached until proven otherwise.",
+    "igTitle": "AIR INSIDE THE SKULL",
+    "igOptions": [
+      "Traumatic pneumocephalus",
+      "Frontal sinusitis",
+      "Extradural haematoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture Traumatic brain injury MHN (3.5).pdf, original page 22"
+    ],
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "Lateral skull radiograph. Irregular lobulated very dark (radiolucent) air collections lie inside the skull just beneath the inner table of the frontal bone and outline the anterior surface of the frontal lobes, forming a dark crescent behind the forehead and over the anterior cranial fossa. Because this is a lateral view both frontal regions are superimposed. A faint fracture line crosses the floor of the anterior cranial fossa. The rest of the skull vault, the sella turcica, the facial bones, the mandible and the upper cervical spine look normal and the brain elsewhere is uniform grey.",
+      "The visible anatomy matches the requested lateral skull X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "f6461d95b59e830f5cbf0b6b90d79a06922979b7e951e990f219e4c63352563c",
+    "conditionSha256": "bd2c92a9648dfab1b475e944688e43f609fb713c0e57409d25a024406631222c",
+    "clinicalContextSha256": "a64a0fb29992bc192dbe58acb3630d7199b58211b304e1da1a93dc04dd445fd0",
+    "verifiedAt": "2026-10-09T21:30:35.791Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Multiple well-defined rounded radiolucent lesions clustered in the frontal and anterior parietal calvarium — these represent lytic calvarial lesions (myeloma/metastases pattern), not intracranial air collections consistent with traumatic pneumocephalus\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection skull and upper cervical spine radiograph",
+        "Multiple well-defined rounded radiolucent lesions clustered predominantly in the frontal and anterior parietal calvarium, varying in size from approximately 5–20 mm, with relatively well-defined margins and no visible sclerotic rim on most lesions",
+        "The lesions are concentrated in the frontal bone and extend toward the vertex anteriorly",
+        "Calvarium cortical outline otherwise appears intact at the posterior and superior vault",
+        "Sella turcica appears within normal limits on this projection",
+        "Upper cervical spine visible with no gross bony destruction identified",
+        "Dentition present with tooth roots visible; mandible appears intact",
+        "No obvious intracranial calcification identified",
+        "No evidence of midline shift assessable on plain radiograph"
+      ],
+      "differential": [
+        "Multiple myeloma (plasmacytoma of the skull — classical 'punched-out' lytic lesions without sclerotic rim)",
+        "Metastatic disease to the calvarium (lytic metastases, e.g., from breast, lung, renal, or thyroid primary)",
+        "Langerhans cell histiocytosis (eosinophilic granuloma — lytic calvarial lesions, which can be geographic or beveled-edge; clustered frontal predominance is compatible)"
+      ],
+      "anatomyConcerns": [
+        "The lesions are clustered asymmetrically in the anterior calvarium which is anatomically plausible for pathology but unusual for a single incidental finding; artifact or overlying foreign material is considered unlikely given consistent rounded morphology and varying sizes",
+        "Projection is a true lateral; slight rotation cannot be fully excluded but facial bones appear reasonably superimposed",
+        "No acquisition artifacts such as motion blur or positioning collimation errors that would obscure diagnosis are noted"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Multiple well-defined rounded radiolucent lesions clustered in the frontal and anterior parietal calvarium — these represent lytic calvarial lesions (myeloma/metastases pattern), not intracranial air collections consistent with traumatic pneumocephalus\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What does that dark patch floating up top look like?",
+  "seedHint": "Check just above the brain and ask yourself what belongs there and what does not.",
+  "teaser": "And then the X-ray of the head stopped everyone in the room",
+  "generated": {
+    "threadsCaption": "A patient with a headache and a runny nose that would not dry up.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of the head stopped everyone in the room.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a headache and a runny nose that just would not dry up.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of the head stopped everyone in the room.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Traumatic pneumocephalus\n\n👀 What you see:\nDark pockets of air sit inside the skull at the front pressing on the brain behind the forehead.\n\n🦴 Why it matters:\nPneumocephaly is air inside the skull and is a complication of a fracture of the skull base. A fracture of the anterior skull base can also give the raccoon eye sign.\n\n💊 Treatment:\nTreatment may include observation with head elevation since small amounts of air often absorb.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "b363f2044e0c2bc8fa3e9fb8111a080e619c926f443743b197a126b927cab013",
+    "reviewedAt": "2026-10-09T21:30:42.259Z",
+    "reviewer": "claude-sonnet-4-6"
+  },
+  "ownerImageOverride": {
+    "sha256": "f6461d95b59e830f5cbf0b6b90d79a06922979b7e951e990f219e4c63352563c",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record."
+  }
+}

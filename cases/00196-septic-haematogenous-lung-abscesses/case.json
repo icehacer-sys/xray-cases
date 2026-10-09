@@ -1,0 +1,134 @@
+{
+  "folder": "00196-septic-haematogenous-lung-abscesses",
+  "number": 196,
+  "diagnosis": "Septic (haematogenous) lung abscesses",
+  "aliases": [
+    "septic pulmonary emboli",
+    "multiple lung abscesses",
+    "haematogenous lung abscesses",
+    "cavitating lung abscesses",
+    "septic emboli"
+  ],
+  "symptom": "a cough and night sweats that kept coming back",
+  "hook": "both lungs looked like a sheet of bubble wrap with water pooled in some of the bubbles",
+  "whatYouSee": "Many round air pockets of different sizes are scattered through both lungs.",
+  "whyItMatters": "Lung abscesses can arise from blood spread in bacteraemia, IV drug use, cannulae, haemodialysis, and abdominal or urinary sepsis. The infection is polymicrobial in 90 percent of cases.",
+  "treatment": "Treatment may include 4 to 6 weeks of antibiotics such as clindamycin or meropenem with ultrasound or CT guided drainage. Lobectomy may be needed if antibiotics fail or complications develop.",
+  "takeaway": "Many cavities in both lungs at once should make you think of infection arriving through the blood.",
+  "igOptions": [
+    "A. Septic lung abscesses",
+    "B. Cavitating lung metastases",
+    "C. Pulmonary tuberculosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-11T19:00:00Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-09T21:28:17.214Z"
+  },
+  "condition": {
+    "diagnosis": "Septic (haematogenous) lung abscesses",
+    "aliases": [
+      "septic pulmonary emboli",
+      "multiple lung abscesses",
+      "haematogenous lung abscesses",
+      "cavitating lung abscesses",
+      "septic emboli"
+    ],
+    "symptom": "a cough and night sweats that kept coming back",
+    "hook": "both lungs looked like a sheet of bubble wrap with water pooled in some of the bubbles",
+    "view": "PA chest X-ray",
+    "ageBand": "young-adult",
+    "keyFindings": "PA chest radiograph showing BILATERAL disease: roughly ten round and oval cavities of varying size from about 1.5 to 5 cm scattered through both the right and left lungs, mainly in the mid and lower zones and toward the periphery. The cavities have thick irregular walls, several contain horizontal air-fluid levels, and patchy surrounding consolidation blurs the lower zones. The trachea is midline, the heart is normal in size, the mediastinum is not widened, and the ribs, clavicles and shoulders are intact.",
+    "whatYouSee": "Many round air pockets of different sizes are scattered through both lungs.",
+    "whyItMatters": "Lung abscesses can arise from blood spread in bacteraemia, IV drug use, cannulae, haemodialysis, and abdominal or urinary sepsis. The infection is polymicrobial in 90 percent of cases.",
+    "treatment": "Treatment may include 4 to 6 weeks of antibiotics such as clindamycin or meropenem with ultrasound or CT guided drainage. Lobectomy may be needed if antibiotics fail or complications develop.",
+    "takeaway": "Many cavities in both lungs at once should make you think of infection arriving through the blood.",
+    "igTitle": "BUBBLES IN BOTH LUNGS",
+    "igOptions": [
+      "Septic lung abscesses",
+      "Cavitating lung metastases",
+      "Pulmonary tuberculosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 01 - 1. abcess_Bronchiectasis_HE_2026.pdf, original page 10"
+    ],
+    "referenceImage": "septic-abscesses.png",
+    "reviewedAt": "2026-10-10",
+    "requiredObservations": [
+      "PA chest radiograph showing BILATERAL disease: roughly ten round and oval cavities of varying size from about 1.5 to 5 cm scattered through both the right and left lungs, mainly in the mid and lower zones and toward the periphery. The cavities have thick irregular walls, several contain horizontal air-fluid levels, and patchy surrounding consolidation blurs the lower zones. The trachea is midline, the heart is normal in size, the mediastinum is not widened, and the ribs, clavicles and shoulders are intact.",
+      "The visible anatomy matches the requested PA chest X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "eaf42818ae5887912a6059f6b1f0777fe7fd6000cf3e334bcad3eede8796993d",
+    "conditionSha256": "e0cb8e9c7d3831211cbccd37399a6e0e640710700253d71c7438319e6fd86492",
+    "clinicalContextSha256": "bcbeedad84bc47cf9113822bc06dde4ff5e72df3b6722cdc40062c5603c48690",
+    "verifiedAt": "2026-10-09T21:28:17.219Z",
+    "model": "claude-sonnet-4-6",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Image does not support a sufficiently distinct teaching answer: The image shows bilateral multiple round/oval lucencies of varying size with thick walls scattered through both lungs, predominantly mid and lower zones, with surrounding reticular and nodular opacities. While thick-walled cavities with surrounding consolidation favor septic abscesses in the context of cough and night sweats, the independent reading raises LAM and PLCH as equally or better supported alternatives based on the visible pattern alone — the cystic/ring lucencies lack clearly visible horizontal air-fluid levels required to confidently distinguish cavities with fluid from thin-walled cysts, and the reticulonodular background could support either diagnosis. No single discriminating feature (e.g., confirmed air-fluid levels, clearly thick irregular walls versus thin walls, upper-zone sparing) is unambiguously demonstrated to resolve the differential in favor of septic abscesses over LAM or PLCH. The independent differential therefore cannot be overridden without the clinical context."
+    ],
+    "blindRead": {
+      "findings": [
+        "PA projection chest radiograph",
+        "Bilateral diffuse coarse reticulonodular opacities distributed throughout both lung fields, predominantly in the mid and lower zones",
+        "Multiple bilateral ring-shaped and cystic lucencies of varying sizes (ranging approximately 0.5–3 cm) superimposed on the reticular background, consistent with cyst or cavity formation",
+        "Increased interstitial markings with a honeycomb-like pattern in the lower zones bilaterally",
+        "Lung volumes appear preserved to mildly increased",
+        "Cardiac silhouette appears normal in size",
+        "No obvious pleural effusion identified",
+        "No pneumothorax identified",
+        "Bony thorax appears intact without obvious destructive lesions",
+        "Mediastinal contours appear unremarkable"
+      ],
+      "differential": [
+        "Lymphangioleiomyomatosis (LAM): diffuse bilateral thin-walled cysts with preserved or increased lung volumes in a background of interstitial change is characteristic",
+        "Pulmonary Langerhans cell histiocytosis (PLCH): bilateral cystic and nodular changes predominantly in mid and upper lung zones with relative sparing of costophrenic angles, though lower zone involvement is also present here",
+        "Advanced cystic bronchiectasis or end-stage fibrotic lung disease (e.g., UIP/IPF with honeycombing): bilateral lower-zone predominant honeycombing and reticular pattern, though the cyst size variability and distribution also support this"
+      ],
+      "anatomyConcerns": [
+        "The right shoulder/clavicle region appears slightly rotated relative to the left, suggesting mild patient rotation, which may alter apparent mediastinal width",
+        "No anatomically impossible structures identified",
+        "Acquisition technique appears adequate with satisfactory inspiration and penetration"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Image does not support a sufficiently distinct teaching answer: The image shows bilateral multiple round/oval lucencies of varying size with thick walls scattered through both lungs, predominantly mid and lower zones, with surrounding reticular and nodular opacities. While thick-walled cavities with surrounding consolidation favor septic abscesses in the context of cough and night sweats, the independent reading raises LAM and PLCH as equally or better supported alternatives based on the visible pattern alone — the cystic/ring lucencies lack clearly visible horizontal air-fluid levels required to confidently distinguish cavities with fluid from thin-walled cysts, and the reticulonodular background could support either diagnosis. No single discriminating feature (e.g., confirmed air-fluid levels, clearly thick irregular walls versus thin walls, upper-zone sparing) is unambiguously demonstrated to resolve the differential in favor of septic abscesses over LAM or PLCH. The independent differential therefore cannot be overridden without the clinical context."
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "Does this look like one problem or many?",
+  "seedHint": "Count the holes and ask yourself if they all look dry inside.",
+  "teaser": "And the chest had more to say than the symptoms did",
+  "generated": {
+    "threadsCaption": "A patient with a cough and night sweats that kept coming back.\n\nThen the X-ray loaded 😭\n\nAnd the chest had more to say than the symptoms did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a cough and night sweats that kept coming back.\n\nThen the X-ray loaded 😭\n\nAnd the chest had more to say than the symptoms did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Septic (haematogenous) lung abscesses\n\n👀 What you see:\nMany round air pockets of different sizes are scattered through both lungs.\n\n🦴 Why it matters:\nLung abscesses can arise from blood spread in bacteraemia, IV drug use, cannulae, haemodialysis, and abdominal or urinary sepsis.\n\n💊 Treatment:\nTreatment may include 4 to 6 weeks of antibiotics such as clindamycin or meropenem with ultrasound or CT guided drainage.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "d8d349a10c5e062e2dccf89ab4976f1043f55ddd661f69d0d9a3b6f360923ace",
+    "reviewedAt": "2026-10-09T21:41:53.726Z",
+    "reviewer": "Claude Code local copy review 2026-10-09: pipeline-drafted copy checked line by line against the lecture facts and style rules; fixed modality wording and dash or gendered alternate captions; not clinical certification"
+  },
+  "ownerImageOverride": {
+    "sha256": "eaf42818ae5887912a6059f6b1f0777fe7fd6000cf3e334bcad3eede8796993d",
+    "approvedAt": "2026-10-09T21:41:53.726Z",
+    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record."
+  }
+}
