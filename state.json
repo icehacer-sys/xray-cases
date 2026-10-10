@@ -1093,6 +1093,17 @@
       "publishedId": "18113219480120558",
       "publishedAt": "2026-10-08T20:16:22.948Z",
       "confirmedPublished": true
+    },
+    "case:00195-diffuse-oesophageal-spasm:challenge": {
+      "creationId": "17893052580614054",
+      "createdAt": "2026-10-10T19:01:03.492Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00195-diffuse-oesophageal-spasm/xray.png",
+        "text": "A patient with food that sometimes felt stuck halfway down.\n\nThen the X-ray loaded 😭\n\nAnd nobody expected that shape.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "76e2e5b75a8622df9b13c5cd7fef00f5a809831160f8a7802702260f2c21ebb2:f7dbb112955b6f6c8c6f996bec2a55c4361a57677bea34d602ca01cae7961182:f310def081b7130ad22877ce27059a2cdcdbe0f758e6e1f15b05b3b267442327"
     }
   },
   "stages": {
@@ -2035,12 +2046,18 @@
       "answerCommentId": "18096683660552385",
       "answerPostedAt": "2026-10-08T19:20:49.042Z",
       "ctaPostedAt": "2026-10-08T20:16:24.354Z"
+    },
+    "00195-diffuse-oesophageal-spasm": {
+      "publishedCaption": "A patient with food that sometimes felt stuck halfway down.\n\nThen the X-ray loaded 😭\n\nAnd nobody expected that shape.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+      "experiment": "{\"id\":\"case-00195-diffuse-oesophageal-spasm\",\"assignedAt\":\"2026-10-10T19:00:55.357Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":true,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-08",
+      "date": "2026-10-10",
       "count": 0
     }
   }
