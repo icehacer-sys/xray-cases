@@ -9462,5 +9462,161 @@
       "reposts": 9,
       "quotes": 3
     }
+  },
+  {
+    "folder": "00189-calcinosis-cutis-in-systemic-sclerosis",
+    "postId": "17919320862444697",
+    "measuredAt": "2026-10-10T13:22:26.603Z",
+    "publishedAt": "2026-10-03T19:04:05.736Z",
+    "ageHours": 162.3057963888889,
+    "experiment": {
+      "id": "case-00189-calcinosis-cutis-in-systemic-sclerosis",
+      "assignedAt": "2026-10-03T19:03:55.226Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with fingers that kept turning white and numb in the cold.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of those fingers changed everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-03T19:24:05.736Z",
+    "ctaDueAt": "2026-10-03T20:19:05.736Z",
+    "metrics": {
+      "views": 280340,
+      "likes": 457,
+      "replies": 326,
+      "reposts": 5,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00190-hydropneumothorax",
+    "postId": "18115888633802609",
+    "measuredAt": "2026-10-10T13:22:26.794Z",
+    "publishedAt": "2026-10-04T19:01:55.264Z",
+    "ageHours": 138.34209166666668,
+    "experiment": {
+      "id": "case-00190-hydropneumothorax",
+      "assignedAt": "2026-10-04T19:01:44.394Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with breathlessness and a dry cough that would not settle.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray stopped everyone mid-breath.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-04T19:21:55.264Z",
+    "ctaDueAt": "2026-10-04T20:16:55.264Z",
+    "metrics": {
+      "views": 107470,
+      "likes": 343,
+      "replies": 233,
+      "reposts": 7,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00191-acute-epiglottitis",
+    "postId": "18126282277854768",
+    "measuredAt": "2026-10-10T13:22:27.056Z",
+    "publishedAt": "2026-10-05T19:00:42.337Z",
+    "ageHours": 114.36242194444445,
+    "experiment": {
+      "id": "case-00191-acute-epiglottitis",
+      "assignedAt": "2026-10-05T19:00:24.234Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with a sore throat that suddenly made it hard to swallow.\n\nThen the X-ray loaded 😭\n\nAnd the neck lateral said everything the patient could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-10-05T19:20:42.337Z",
+    "ctaDueAt": "2026-10-05T20:15:42.337Z",
+    "metrics": {
+      "views": 427150,
+      "likes": 580,
+      "replies": 338,
+      "reposts": 10,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00192-tension-pneumothorax",
+    "postId": "18169862959459418",
+    "measuredAt": "2026-10-10T13:22:27.227Z",
+    "publishedAt": "2026-10-06T19:00:23.813Z",
+    "ageHours": 90.367615,
+    "experiment": {
+      "id": "case-00192-tension-pneumothorax",
+      "assignedAt": "2026-10-06T19:00:11.075Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with sudden sharp chest pain and worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd the chest X-ray explained everything at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-10-06T19:20:23.813Z",
+    "ctaDueAt": "2026-10-06T20:15:23.813Z",
+    "metrics": {
+      "views": 10361,
+      "likes": 151,
+      "replies": 223,
+      "reposts": 4,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00193-acute-pulmonary-oedema",
+    "postId": "18004698404989902",
+    "measuredAt": "2026-10-10T13:22:27.429Z",
+    "publishedAt": "2026-10-07T19:02:25.995Z",
+    "ageHours": 66.33373166666667,
+    "experiment": {
+      "id": "case-00193-acute-pulmonary-oedema",
+      "assignedAt": "2026-10-07T19:02:14.939Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with breathlessness and swollen ankles that got worse over three months.\n\nThen the X-ray loaded 😭\n\nAnd the chest told a very different story than the ankles did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-07T19:22:25.995Z",
+    "ctaDueAt": "2026-10-07T20:17:25.995Z",
+    "metrics": {
+      "views": 48235,
+      "likes": 249,
+      "replies": 142,
+      "reposts": 8,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00194-massive-haemothorax",
+    "postId": "18054929093583647",
+    "measuredAt": "2026-10-10T13:22:27.689Z",
+    "publishedAt": "2026-10-08T19:00:27.674Z",
+    "ageHours": 42.36667083333333,
+    "experiment": {
+      "id": "case-00194-massive-haemothorax",
+      "assignedAt": "2026-10-08T19:00:16.074Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with chest pain and breathlessness after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-08T19:20:27.674Z",
+    "ctaDueAt": "2026-10-08T20:15:27.674Z",
+    "metrics": {
+      "views": 54592,
+      "likes": 272,
+      "replies": 165,
+      "reposts": 10,
+      "quotes": 3
+    }
   }
 ]
