@@ -1107,6 +1107,16 @@
       "publishedId": "18628279045036981",
       "publishedAt": "2026-10-10T19:01:09.795Z",
       "confirmedPublished": true
+    },
+    "case:00195-diffuse-oesophageal-spasm:answer": {
+      "creationId": "17893054251614054",
+      "createdAt": "2026-10-10T19:21:22.937Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Diffuse oesophageal spasm\n\n👀 What you see:\nThe barium-filled oesophagus coils down the middle of the chest in tight repeating twists like a corkscrew.\n\n💊 Treatment:\nTreatment targets the spasm once cardiac causes are excluded and may include smooth muscle relaxants such as nitrates or calcium channel blockers.",
+        "reply_to_id": "18628279045036981",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":313}]"
+      }
     }
   },
   "stages": {
