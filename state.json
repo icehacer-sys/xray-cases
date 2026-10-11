@@ -1160,6 +1160,16 @@
       "publishedId": "18090523316218019",
       "publishedAt": "2026-10-11T19:23:43.232Z",
       "confirmedPublished": true
+    },
+    "case:00196-septic-haematogenous-lung-abscesses:cta": {
+      "creationId": "17893211652614054",
+      "createdAt": "2026-10-11T20:19:50.919Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com",
+        "reply_to_id": "18090523316218019",
+        "link_attachment": "https://free.mednoteslab.com"
+      }
     }
   },
   "stages": {
