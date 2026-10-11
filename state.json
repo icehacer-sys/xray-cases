@@ -1156,7 +1156,10 @@
         "text": "Answer: Septic (haematogenous) lung abscesses\n\n👀 What you see:\nMany round air pockets of different sizes are scattered through both lungs.\n\n🦴 Why it matters:\nLung abscesses can arise from blood spread in bacteraemia, IV drug use, cannulae, haemodialysis, and abdominal or urinary sepsis.\n\n💊 Treatment:\nTreatment may include 4 to 6 weeks of antibiotics such as clindamycin or meropenem with ultrasound or CT guided drainage.",
         "reply_to_id": "18117179536935952",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":418}]"
-      }
+      },
+      "publishedId": "18090523316218019",
+      "publishedAt": "2026-10-11T19:23:43.232Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
