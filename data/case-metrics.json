@@ -9930,5 +9930,161 @@
       "reposts": 8,
       "quotes": 1
     }
+  },
+  {
+    "folder": "00191-acute-epiglottitis",
+    "postId": "18126282277854768",
+    "measuredAt": "2026-10-11T19:38:51.189Z",
+    "publishedAt": "2026-10-05T19:00:42.337Z",
+    "ageHours": 144.63579222222222,
+    "experiment": {
+      "id": "case-00191-acute-epiglottitis",
+      "assignedAt": "2026-10-05T19:00:24.234Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with a sore throat that suddenly made it hard to swallow.\n\nThen the X-ray loaded 😭\n\nAnd the neck lateral said everything the patient could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-10-05T19:20:42.337Z",
+    "ctaDueAt": "2026-10-05T20:15:42.337Z",
+    "metrics": {
+      "views": 427850,
+      "likes": 581,
+      "replies": 338,
+      "reposts": 10,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00192-tension-pneumothorax",
+    "postId": "18169862959459418",
+    "measuredAt": "2026-10-11T19:38:51.491Z",
+    "publishedAt": "2026-10-06T19:00:23.813Z",
+    "ageHours": 120.64102166666666,
+    "experiment": {
+      "id": "case-00192-tension-pneumothorax",
+      "assignedAt": "2026-10-06T19:00:11.075Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with sudden sharp chest pain and worsening breathlessness.\n\nThen the X-ray loaded 😭\n\nAnd the chest X-ray explained everything at once.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-10-06T19:20:23.813Z",
+    "ctaDueAt": "2026-10-06T20:15:23.813Z",
+    "metrics": {
+      "views": 10738,
+      "likes": 151,
+      "replies": 224,
+      "reposts": 4,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00193-acute-pulmonary-oedema",
+    "postId": "18004698404989902",
+    "measuredAt": "2026-10-11T19:38:51.687Z",
+    "publishedAt": "2026-10-07T19:02:25.995Z",
+    "ageHours": 96.60713666666666,
+    "experiment": {
+      "id": "case-00193-acute-pulmonary-oedema",
+      "assignedAt": "2026-10-07T19:02:14.939Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with breathlessness and swollen ankles that got worse over three months.\n\nThen the X-ray loaded 😭\n\nAnd the chest told a very different story than the ankles did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-07T19:22:25.995Z",
+    "ctaDueAt": "2026-10-07T20:17:25.995Z",
+    "metrics": {
+      "views": 48696,
+      "likes": 249,
+      "replies": 142,
+      "reposts": 8,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00194-massive-haemothorax",
+    "postId": "18054929093583647",
+    "measuredAt": "2026-10-11T19:38:51.958Z",
+    "publishedAt": "2026-10-08T19:00:27.674Z",
+    "ageHours": 72.6400788888889,
+    "experiment": {
+      "id": "case-00194-massive-haemothorax",
+      "assignedAt": "2026-10-08T19:00:16.074Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with chest pain and breathlessness after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-08T19:20:27.674Z",
+    "ctaDueAt": "2026-10-08T20:15:27.674Z",
+    "metrics": {
+      "views": 55497,
+      "likes": 279,
+      "replies": 167,
+      "reposts": 10,
+      "quotes": 3
+    }
+  },
+  {
+    "folder": "00195-diffuse-oesophageal-spasm",
+    "postId": "18628279045036981",
+    "measuredAt": "2026-10-11T19:38:52.295Z",
+    "publishedAt": "2026-10-10T19:01:09.795Z",
+    "ageHours": 24.62847222222222,
+    "experiment": {
+      "id": "case-00195-diffuse-oesophageal-spasm",
+      "assignedAt": "2026-10-10T19:00:55.357Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with food that sometimes felt stuck halfway down.\n\nThen the X-ray loaded 😭\n\nAnd nobody expected that shape.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-10-10T19:21:09.795Z",
+    "ctaDueAt": "2026-10-10T20:16:09.795Z",
+    "metrics": {
+      "views": 327004,
+      "likes": 870,
+      "replies": 554,
+      "reposts": 15,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00196-septic-haematogenous-lung-abscesses",
+    "postId": "18117179536935952",
+    "measuredAt": "2026-10-11T19:38:52.613Z",
+    "publishedAt": "2026-10-11T19:03:22.407Z",
+    "ageHours": 0.5917238888888889,
+    "experiment": {
+      "id": "case-00196-septic-haematogenous-lung-abscesses",
+      "assignedAt": "2026-10-11T19:03:11.120Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with a cough and night sweats that kept coming back.\n\nThen the X-ray loaded 😭\n\nAnd the chest had more to say than the symptoms did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-11T19:23:22.407Z",
+    "ctaDueAt": "2026-10-11T20:18:22.407Z",
+    "metrics": {
+      "views": 6824,
+      "likes": 70,
+      "replies": 91,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
