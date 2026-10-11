@@ -2105,7 +2105,9 @@
       "publishedCaption": "A patient with a cough and night sweats that kept coming back.\n\nThen the X-ray loaded 😭\n\nAnd the chest had more to say than the symptoms did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
       "experiment": "{\"id\":\"case-00196-septic-haematogenous-lung-abscesses\",\"assignedAt\":\"2026-10-11T19:03:11.120Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18117179536935952",
+      "challengePostedAt": "2026-10-11T19:03:22.407Z"
     }
   },
   "posted": {
