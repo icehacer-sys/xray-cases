@@ -5,6 +5,7 @@
 // here verbatim; only the {fields} vary.
 
 import Anthropic from "@anthropic-ai/sdk";
+import { forModel } from "./model-params.js";
 import { recordUsage } from "./usage.js";
 import { config, requireEnv } from "./config.js";
 import type { Case, CtaKey } from "./types.js";
@@ -31,12 +32,12 @@ function client(): Anthropic {
 
 /** Run a single non-streaming Claude call and return the concatenated text. */
 async function ask(system: string, user: string, maxTokens = 600, allowSerialLists = true): Promise<string> {
-  const res = await client().messages.create({
+  const res = await client().messages.create(forModel({
     model: config.model,
     max_tokens: maxTokens,
     system: system + (allowSerialLists ? " " + SERIAL_COMMA_RULE : " Do not use lists in this suspense/alternate line.") + " Do not add image-production disclosures or labels to public case copy, answers or CTAs. Do not invent claims about real-patient provenance.",
     messages: [{ role: "user", content: user }],
-  });
+  }, "low"));
   recordUsage("caption", config.model, res.usage);
   if (res.stop_reason !== "end_turn") throw new Error(`Caption drafting did not finish: ${res.stop_reason}`);
   const text = res.content

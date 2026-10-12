@@ -4,6 +4,7 @@
 // (fails open so it never blocks the pipeline). Used on the X-ray and, when the X-ray had a
 // region blurred, on the composited IG slides too.
 import Anthropic from "@anthropic-ai/sdk";
+import { forModel } from "./model-params.js";
 import sharp from "sharp";
 import { config, requireEnv } from "./config.js";
 
@@ -53,7 +54,7 @@ export async function censorXray(png: Buffer): Promise<{ png: Buffer; result: Ce
 
   let parsed: { present?: boolean; box?: { x: number; y: number; w: number; h: number } };
   try {
-    const res = await client().messages.create({
+    const res = await client().messages.create(forModel({
       model: config.xrayVerifyModel,
       max_tokens: 200,
       system: SYSTEM,
@@ -66,7 +67,7 @@ export async function censorXray(png: Buffer): Promise<{ png: Buffer; result: Ce
           ],
         },
       ],
-    });
+    }, "low"));
     const text = res.content
       .filter((b): b is Anthropic.TextBlock => b.type === "text")
       .map((b) => b.text)

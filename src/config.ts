@@ -16,7 +16,7 @@ function num(name: string, fallback: number): number {
 }
 
 export const config = {
-  model: process.env.BOT_MODEL ?? "claude-sonnet-4-6",
+  model: process.env.BOT_MODEL ?? "claude-sonnet-5-5",
 
   // API hosts (pinned versions)
   threadsBase: "https://graph.threads.net/v1.0",
@@ -131,7 +131,7 @@ export const config = {
   // queued with needsReview so it NEVER auto-posts. Motivated by the duplicated-scapula
   // Sprengel incident. Set BOT_XRAY_VERIFY=off to disable (not recommended).
   xrayVerify: (process.env.BOT_XRAY_VERIFY ?? "on").toLowerCase() !== "off",
-  xrayVerifyModel: process.env.BOT_XRAY_VERIFY_MODEL ?? process.env.BOT_MODEL ?? "claude-sonnet-4-6",
+  xrayVerifyModel: process.env.BOT_XRAY_VERIFY_MODEL ?? process.env.BOT_MODEL ?? "claude-sonnet-5-5",
   xrayMaxAttempts: num("BOT_XRAY_MAX_ATTEMPTS", 3),
 
   // Blur external genitalia on generated images (X-ray + composited slides) so Threads/IG
