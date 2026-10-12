@@ -133,5 +133,10 @@
     "reviewedAt": "2026-10-09T21:41:53.726Z",
     "reviewer": "Claude Code local copy review 2026-10-09: pipeline-drafted copy checked line by line against the lecture facts and style rules; fixed modality wording and dash or gendered alternate captions; not clinical certification"
   },
-  "needsReview": false
+  "needsReview": false,
+  "ownerImageOverride": {
+    "sha256": "5ab6eeea7f869f141eb9af55de10b5c20d8fc629eac6f16adbc71a7466a75fed",
+    "approvedAt": "2026-10-12T13:51:13.000Z",
+    "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset fluoro strength 0.5 applied to the previously approved image sha256 98139a6dbc488524ab859b8b0f86976d5e4c5b1d02bac0e6859e0d8ec78e5ec2). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  }
 }

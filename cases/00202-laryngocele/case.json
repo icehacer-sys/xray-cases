@@ -124,8 +124,8 @@
     "reviewer": "claude-sonnet-4-6"
   },
   "ownerImageOverride": {
-    "sha256": "88ecc0a9d8065c885b57e4fd6bf1164431d9c84db9f7c5c4c8b764c9d4a4cdfe",
-    "approvedAt": "2026-10-09T21:41:53.726Z",
-    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record."
+    "sha256": "bcd538a0567a043a3a6824fbc053784fa0ef3f7e603029a50d0444e8c80e7b37",
+    "approvedAt": "2026-10-12T13:51:13.000Z",
+    "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset radiograph strength 0.6 applied to the previously approved image sha256 88ecc0a9d8065c885b57e4fd6bf1164431d9c84db9f7c5c4c8b764c9d4a4cdfe). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
   }
 }

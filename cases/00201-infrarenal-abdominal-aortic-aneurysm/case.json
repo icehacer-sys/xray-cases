@@ -132,5 +132,10 @@
     "reviewedAt": "2026-10-09T21:32:53.348Z",
     "reviewer": "claude-sonnet-4-6"
   },
-  "needsReview": false
+  "needsReview": false,
+  "ownerImageOverride": {
+    "sha256": "3a1e5b2ceda5455a2720d6b435516b60feda8ae3405cac1bfcad7139a1c5d50a",
+    "approvedAt": "2026-10-12T13:51:13.000Z",
+    "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset fluoro strength 0.5 applied to the previously approved image sha256 eb7b7b39b41910bb49d8f57b1cee0d05429c5f7a974af4b714247c3233f94ef6). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  }
 }

@@ -126,8 +126,8 @@
     "reviewer": "claude-sonnet-4-6"
   },
   "ownerImageOverride": {
-    "sha256": "48f8806722eca519044188f710b0e6470f28dfc51fc165f75fe97c220eb31278",
-    "approvedAt": "2026-10-09T21:41:53.726Z",
-    "note": "Owner reviewed the batch sheet of these exact renders on 2026-10-09 and said to schedule them. Local Claude Code review checked the finding and patient side against the atlas reference. The automated verifier objection is kept in verifyDefects for the record. The automatic genital censor blurred the lower pelvis; local review found no external genitalia in frame (the film stops at the pubic bone), so the owner-approved unblurred render is used."
+    "sha256": "2a5b9d9d6e1c4ac4a731adb03f4da59d5bd8ca63e4a150c2cf6a9f769ff0065a",
+    "approvedAt": "2026-10-12T13:51:13.000Z",
+    "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset contrast strength 0.6 applied to the previously approved image sha256 48f8806722eca519044188f710b0e6470f28dfc51fc165f75fe97c220eb31278). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
   }
 }
