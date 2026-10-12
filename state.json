@@ -1196,7 +1196,10 @@
         "text": "Answer: Cerebral arteriovenous malformation\n\n👀 What you see:\nA dense tangle of abnormal vessels in the brain fills with contrast and drains early into an enlarged vein.\n\n🦴 Why it matters:\nAn AVM is a direct connection between arteries and veins with no capillary bed in between. It can bleed into the brain or cause seizures and headaches.\n\n💊 Treatment:\nTreatment may include embolisation with agents such as Onyx or NBCA, surgery, or gamma knife radiosurgery.",
         "reply_to_id": "18144676564597946",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":455}]"
-      }
+      },
+      "publishedId": "18012381371764205",
+      "publishedAt": "2026-10-12T19:21:26.053Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
