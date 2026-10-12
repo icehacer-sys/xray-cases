@@ -221,6 +221,18 @@ export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
  */
 export function withFollowCta(caption: string, enabled = config.followCta): string {
   if (!enabled) return caption;
+  return swapChallengeLabel(caption, FOLLOW_CTA_LINE);
+}
+
+/** Launch-line caption hint (owner, 2026-10-12): about 91% of post viewers never open the replies,
+ *  where the answer and the CTA live. Same slot and emoji shape as the follow arm. */
+export const REPLY_HINT_LINE = "Answer and what happened next drop in the replies 👇🏼";
+export function withReplyHint(caption: string, enabled = config.replyHint): string {
+  if (!enabled) return caption;
+  return swapChallengeLabel(caption, REPLY_HINT_LINE);
+}
+
+function swapChallengeLabel(caption: string, lastLine: string): string {
   // Prefix match on the EMOJI-LESS token, not equality against the rendered line: captions cached
   // in case.json carry whichever emoji era they were drafted under (🩻 then none then 🔍). An exact
   // match would silently miss them and leave a SEVEN-line caption with the follow line bolted on
@@ -240,7 +252,7 @@ export function withFollowCta(caption: string, enabled = config.followCta): stri
       if (t.startsWith(GUESSES_PREFIX)) return GUESSES_PREFIX;
       return l;
     });
-  lines.push(FOLLOW_CTA_LINE);
+  lines.push(lastLine);
   const out = lines.join("\n\n");
   return out.length > config.captionMaxChars ? caption : out;
 }
@@ -663,7 +675,80 @@ Look then guess then flip for the breakdown.
 
 Grab it here 👇🏼
 ctvol1.mednoteslab.com`,
+
+  // --- Weird X-Ray Case Files new line (2026-10-12). Only reachable with BOT_CTA_LINE=v2. Copy from
+  // docs/research-2026-10-12/product/COPY.md with the section 10 revisions, sized to 10 cases. ---
+  freeround: `If these X-rays keep stopping your scroll 😭
+
+I made a free round you can play on your phone.
+
+6 X-rays. Guess what is inside. Then find out what happens next.
+
+Play it free 👇🏼
+free.mednoteslab.com`,
+
+  book: `Is it curable? What happens next?
+
+I put 10 of the weirdest X-rays into one book with every answer in plain words.
+
+It comes as a phone game too 👇🏼
+book.mednoteslab.com`,
+
+  // Pin on swallowed-object and parasite nights. Re-check the object list once the final 10 are set.
+  inside: `If you guessed this one in two seconds you might be built for this.
+
+I turned 10 of the strangest things ever found inside people into a game.
+
+A sword. A padlock. A fork. Worse.
+
+Guess then reveal then score yourself 👇🏼
+inside.mednoteslab.com`,
+
+  everyfile: `If you could read these all day.
+
+I put every case I have ever posted into one library.
+
+Both games. The book. Every new file I make from here on.
+
+Everything is here 👇🏼
+all.mednoteslab.com`,
+
+  keepcoming: `Every one of these cases is made by one med student between hospital shifts.
+
+They stay free for everyone.
+
+If you want to help keep them coming you can do that here 👇🏼
+support.mednoteslab.com`,
 };
+
+// New line: two rotating keys (account audit 2026-10-12: revenue per click was $0 for 9 of 13
+// rotated products). inside, keepcoming, everyfile and anxiety are pins, not rotation.
+export const CTA_ROTATION_V2: CtaKey[] = ["freeround", "book"];
+// Queued cases still pin old keys; on the new line they land on the product that replaced them.
+const LEGACY_CTA: Partial<Record<CtaKey, CtaKey>> = {
+  hopital: "freeround", challenge: "inside", viral10: "inside",
+  spotit: "book", vol1: "book", vol2: "book", vol3: "book", rare: "book", field: "book",
+  collection: "everyfile", ctvol1: "everyfile", support: "keepcoming",
+};
+
+/** "?c=MMDD" on the CTA link so clicks and sales can be tied to the night (UTC posting date). */
+export function tagCtaLink(text: string, postAt?: string): string {
+  const at = postAt ? new Date(postAt) : null;
+  if (!at || Number.isNaN(at.getTime())) return text;
+  const tag = `c=${String(at.getUTCMonth() + 1).padStart(2, "0")}${String(at.getUTCDate()).padStart(2, "0")}`;
+  const lines = text.trimEnd().split("\n");
+  const last = lines.pop()!.trim();
+  const url = last.includes("/") ? `${last}${last.includes("?") ? "&" : "?"}${tag}` : `${last}/?${tag}`;
+  return [...lines, url].join("\n");
+}
+
+/** The new-line CTA for a case, chosen at post time. Rotation alternates by posting night. */
+export function pickLaunchCta(c: Pick<Case, "cta" | "postAt">): { key: CtaKey; text: string } {
+  const pinned = c.cta ? (LEGACY_CTA[c.cta] ?? c.cta) : undefined;
+  const night = c.postAt ? Math.floor(Date.parse(c.postAt) / 86_400_000) : 0;
+  const key = pinned ?? CTA_ROTATION_V2[((night % CTA_ROTATION_V2.length) + CTA_ROTATION_V2.length) % CTA_ROTATION_V2.length];
+  return { key, text: tagCtaLink(CTA_TEXT[key], c.postAt) };
+}
 
 // 13-slot rotation covering EVERY product. Free pack (hopital) is still the most frequent slot
 // (top-of-funnel email capture) but never back-to-back; the collection appears twice; each paid
