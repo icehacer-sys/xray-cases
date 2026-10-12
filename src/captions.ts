@@ -676,46 +676,44 @@ Look then guess then flip for the breakdown.
 Grab it here 👇🏼
 ctvol1.mednoteslab.com`,
 
-  // --- Weird X-Ray Case Files new line (2026-10-12). Only reachable with BOT_CTA_LINE=v2. Copy from
-  // docs/research-2026-10-12/product/COPY.md with the section 10 revisions, sized to 10 cases. ---
-  freeround: `If these X-rays keep stopping your scroll 😭
+  // --- Weird X-Ray Case Files new line (2026-10-12). Only reachable with BOT_CTA_LINE=v2. ---
+  // Flowing sentences on purpose (no "A fork. A sword." fragments). Lineup as launched:
+  //   freeround  Case File 00, free, 6 cases (coin, spoon, razor blade, nail in the eye socket, metal rod, tooth in the chest)
+  //   inside     Case File 01, $3+, 10 cases (fork ... sword ... retained surgical scissors as the finale)
+  //   book       Case File 02, $9, 10 cases as a book plus a phone game
+  //   everyfile  Case File 03, $49, everything
+  //   keepcoming Patron (the Support page edited in place)
+  // Name only objects that are really in that file, and never state a price here (prices move).
+  freeround: `If these X-rays keep stopping your scroll I made you a free round to play on your phone 😭
 
-I made a free round you can play on your phone.
+It has 6 X-rays with a spoon, a razor blade, and a nail hiding somewhere they should never be.
 
-6 X-rays. Guess what is inside. Then find out what happens next.
-
-Play it free 👇🏼
+Guess what each one is and then find out what happens next 👇🏼
 free.mednoteslab.com`,
 
-  book: `Is it curable? What happens next?
+  book: `These X-rays have had over 170 million views and the question under almost every one is whether it can be fixed.
 
-I put 10 of the weirdest X-rays into one book with every answer in plain words.
+So I put 10 of the weirdest into one book that explains what each one is and what happens next in plain words.
 
-It comes as a phone game too 👇🏼
+It comes with a phone game too so you can guess before you flip 👇🏼
 book.mednoteslab.com`,
 
-  // Pin on swallowed-object and parasite nights. Re-check the object list once the final 10 are set.
+  // Pin on swallowed-object and parasite nights.
   inside: `If you guessed this one in two seconds you might be built for this.
 
-I turned 10 of the strangest things ever found inside people into a game.
+I turned 10 of the strangest things doctors have found inside people into a game with a fork, a full length sword, and a pair of scissors left behind after surgery.
 
-A sword. A padlock. A fork. Worse.
-
-Guess then reveal then score yourself 👇🏼
+Guess each one and then find out how on earth it got in there 👇🏼
 inside.mednoteslab.com`,
 
-  everyfile: `If you could read these all day.
+  everyfile: `If you could read these all day I put every case I have ever posted into one library.
 
-I put every case I have ever posted into one library.
+It has both games, the book, and every new file I make from here on.
 
-Both games. The book. Every new file I make from here on.
-
-Everything is here 👇🏼
+Everything is in one place here 👇🏼
 all.mednoteslab.com`,
 
-  keepcoming: `Every one of these cases is made by one med student between hospital shifts.
-
-They stay free for everyone.
+  keepcoming: `Every one of these cases is made by one med student between hospital shifts and they stay free for everyone.
 
 If you want to help keep them coming you can do that here 👇🏼
 support.mednoteslab.com`,
