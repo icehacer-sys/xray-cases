@@ -1173,6 +1173,17 @@
       "publishedId": "18108372983211409",
       "publishedAt": "2026-10-11T20:19:59.204Z",
       "confirmedPublished": true
+    },
+    "case:00197-cerebral-arteriovenous-malformation:challenge": {
+      "creationId": "17893346613614054",
+      "createdAt": "2026-10-12T19:00:56.623Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00197-cerebral-arteriovenous-malformation/xray.png",
+        "text": "A patient with headaches that kept coming back for months.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the head answered everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "3344b5c23b12dc57a7d38372755cac904bf6d71d32f1c09084e667798ac2eb7b:dacf980aaa092d5fc91ef256865ab55e42a596d967b1baafe733ab330c4fb471:9f69129756ca3c343750939e1275197722b8e32b41e35867f0fb983a4ae0bc3a"
     }
   },
   "stages": {
@@ -2137,12 +2148,18 @@
       "answerCommentId": "18090523316218019",
       "answerPostedAt": "2026-10-11T19:23:43.232Z",
       "ctaPostedAt": "2026-10-11T20:20:00.723Z"
+    },
+    "00197-cerebral-arteriovenous-malformation": {
+      "publishedCaption": "A patient with headaches that kept coming back for months.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the head answered everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+      "experiment": "{\"id\":\"case-00197-cerebral-arteriovenous-malformation\",\"assignedAt\":\"2026-10-12T19:00:49.766Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-4-6\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "count": 0
     }
   }
