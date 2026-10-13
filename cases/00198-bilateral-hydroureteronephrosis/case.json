@@ -140,5 +140,13 @@
     "sha256": "47a85720483c92f2179d5969b2da4edf1c113e03e76f7af2a60c8aec76da281c",
     "approvedAt": "2026-10-12T13:51:13.000Z",
     "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset contrast strength 0.6 applied to the previously approved image sha256 830172032f6f941f3012af911bfcd8fd8b0ec3de0bd7269a059e954f4c7b32e7). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a weak stream and getting up at night to pee.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00198-bilateral-hydroureteronephrosis\",\"assignedAt\":\"2026-10-13T19:04:09.050Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "17958909246216998",
+    "challengePostedAt": "2026-10-13T19:04:19.675Z"
   }
 }

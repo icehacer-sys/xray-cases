@@ -2207,7 +2207,9 @@
       "publishedCaption": "A patient with a weak stream and getting up at night to pee.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00198-bilateral-hydroureteronephrosis\",\"assignedAt\":\"2026-10-13T19:04:09.050Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "17958909246216998",
+      "challengePostedAt": "2026-10-13T19:04:19.675Z"
     }
   },
   "posted": {
