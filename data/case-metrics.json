@@ -10736,5 +10736,137 @@
       "reposts": 1,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00193-acute-pulmonary-oedema",
+    "postId": "18004698404989902",
+    "measuredAt": "2026-10-13T22:06:05.418Z",
+    "publishedAt": "2026-10-07T19:02:25.995Z",
+    "ageHours": 147.06095083333332,
+    "experiment": {
+      "id": "case-00193-acute-pulmonary-oedema",
+      "assignedAt": "2026-10-07T19:02:14.939Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with breathlessness and swollen ankles that got worse over three months.\n\nThen the X-ray loaded 😭\n\nAnd the chest told a very different story than the ankles did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-07T19:22:25.995Z",
+    "ctaDueAt": "2026-10-07T20:17:25.995Z",
+    "metrics": {
+      "views": 49579,
+      "likes": 251,
+      "replies": 142,
+      "reposts": 8,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00194-massive-haemothorax",
+    "postId": "18054929093583647",
+    "measuredAt": "2026-10-13T22:06:05.643Z",
+    "publishedAt": "2026-10-08T19:00:27.674Z",
+    "ageHours": 123.09388027777777,
+    "experiment": {
+      "id": "case-00194-massive-haemothorax",
+      "assignedAt": "2026-10-08T19:00:16.074Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with chest pain and breathlessness after an injury.\n\nThen the X-ray loaded 😭\n\nAnd the chest did not look the way anyone expected.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-08T19:20:27.674Z",
+    "ctaDueAt": "2026-10-08T20:15:27.674Z",
+    "metrics": {
+      "views": 66018,
+      "likes": 321,
+      "replies": 199,
+      "reposts": 11,
+      "quotes": 3
+    }
+  },
+  {
+    "folder": "00195-diffuse-oesophageal-spasm",
+    "postId": "18628279045036981",
+    "measuredAt": "2026-10-13T22:06:06.690Z",
+    "publishedAt": "2026-10-10T19:01:09.795Z",
+    "ageHours": 75.08247083333333,
+    "experiment": {
+      "id": "case-00195-diffuse-oesophageal-spasm",
+      "assignedAt": "2026-10-10T19:00:55.357Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": true,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with food that sometimes felt stuck halfway down.\n\nThen the X-ray loaded 😭\n\nAnd nobody expected that shape.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nFollow for a new case every night 🔔",
+    "answerDueAt": "2026-10-10T19:21:09.795Z",
+    "ctaDueAt": "2026-10-10T20:16:09.795Z",
+    "metrics": {
+      "views": 429957,
+      "likes": 971,
+      "replies": 600,
+      "reposts": 15,
+      "quotes": 1
+    }
+  },
+  {
+    "folder": "00196-septic-haematogenous-lung-abscesses",
+    "postId": "18117179536935952",
+    "measuredAt": "2026-10-13T22:06:06.889Z",
+    "publishedAt": "2026-10-11T19:03:22.407Z",
+    "ageHours": 51.04568944444444,
+    "experiment": {
+      "id": "case-00196-septic-haematogenous-lung-abscesses",
+      "assignedAt": "2026-10-11T19:03:11.120Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with a cough and night sweats that kept coming back.\n\nThen the X-ray loaded 😭\n\nAnd the chest had more to say than the symptoms did.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-11T19:23:22.407Z",
+    "ctaDueAt": "2026-10-11T20:18:22.407Z",
+    "metrics": {
+      "views": 2504138,
+      "likes": 2878,
+      "replies": 1648,
+      "reposts": 81,
+      "quotes": 10
+    }
+  },
+  {
+    "folder": "00198-bilateral-hydroureteronephrosis",
+    "postId": "17958909246216998",
+    "measuredAt": "2026-10-13T22:06:09.763Z",
+    "publishedAt": "2026-10-13T19:04:19.675Z",
+    "ageHours": 3.03058,
+    "experiment": {
+      "id": "case-00198-bilateral-hydroureteronephrosis",
+      "assignedAt": "2026-10-13T19:04:09.050Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a weak stream and getting up at night to pee.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "answerDueAt": "2026-10-13T19:24:19.675Z",
+    "ctaDueAt": "2026-10-13T20:19:19.675Z",
+    "metrics": {
+      "views": 3043,
+      "likes": 63,
+      "replies": 63,
+      "reposts": 1,
+      "quotes": 0
+    }
   }
 ]
