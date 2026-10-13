@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit",
     "publishing:verify": "tsx tools/verify-publishing.mts",
     "audit:verify": "tsx tools/verify-audit.mts",
-    "copy:verify": "tsx tools/verify-copy-style.mts",
+    "copy:verify": "tsx tools/verify-copy-style.mts && tsx tools/verify-launch-ctas.mts",
     "digits:verify": "tsx tools/verify-digit-count.mts",
     "references:verify": "tsx tools/verify-reference-image.mts",
     "runtime:summary": "tsx tools/runtime-summary.mts",

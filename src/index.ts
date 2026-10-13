@@ -21,6 +21,8 @@ import {
   generateThreadsCaption,
   draftTeaser,
   withFollowCta,
+  withReplyHint,
+  pickLaunchCta,
   draftForegroundedCaption,
   generateThreadsAnswer,
   generateIgCaption,
@@ -260,7 +262,8 @@ async function runPublish(cli: Cli): Promise<void> {
       // a crash. withFollowCta then applies the (independent) follow-CTA arm on top.
       const arm = stages.experiment ? JSON.parse(stages.experiment) : { hookAlt: config.hookAlt, followCta: config.followCta };
       const base = arm.hookAlt && generated.threadsCaptionAlt ? generated.threadsCaptionAlt : generated.threadsCaption!;
-      const caption = withFollowCta(base, arm.followCta);
+      // The launch reply hint takes the follow arm's slot, so it ends that experiment when on.
+      const caption = config.replyHint ? withReplyHint(base) : withFollowCta(base, arm.followCta);
       assertPublicCopy(caption);
       const copyIssue = contentProblem(c);
       if (copyIssue) throw new Error(`${c.folder}: ${copyIssue}`);
@@ -271,7 +274,7 @@ async function runPublish(cli: Cli): Promise<void> {
         log(caption);
       } else {
         if (!state.publication(`case:${c.folder}:challenge`).get()) {
-          stages = state.setStages(c.folder, { publishedCaption: caption, experiment: stages.experiment ?? JSON.stringify({ id: `case-${c.folder}`, assignedAt: now.toISOString(), hookAlt: config.hookAlt, hookAltAvailable: !!generated.threadsCaptionAlt, followCta: config.followCta, promptVersion: "2026-09-10", model: config.model }), answerDelayMin: stages.answerDelayMin ?? String(config.answerDelayMin), ctaDelayMin: stages.ctaDelayMin ?? String(config.ctaDelayMin) });
+          stages = state.setStages(c.folder, { publishedCaption: caption, experiment: stages.experiment ?? JSON.stringify({ id: `case-${c.folder}`, assignedAt: now.toISOString(), hookAlt: config.hookAlt, hookAltAvailable: !!generated.threadsCaptionAlt, followCta: config.followCta && !config.replyHint, replyHint: config.replyHint, ctaLine: config.ctaLine, promptVersion: "2026-09-10", model: config.model }), answerDelayMin: stages.answerDelayMin ?? String(config.answerDelayMin), ctaDelayMin: stages.ctaDelayMin ?? String(config.ctaDelayMin) });
         }
         dueStage(postAt.getTime());
         await assertPublicImage(c, imageUrl(c.folder, c.threadsImage));
@@ -458,7 +461,8 @@ async function runPublish(cli: Cli): Promise<void> {
       now.getTime() >= challengePostedAt.getTime() + Number(stages.ctaDelayMin ?? config.ctaDelayMin) * MINUTE_MS;
 
     if (config.ctaReply && ctaDue && stages.answerPostedAt && !stages.ctaPostedAt) {
-      const ctaText = generated.ctaText ?? pickCta(c).text;
+      // New product line (BOT_CTA_LINE=v2): chosen at post time, never from the cached v1 text.
+      const ctaText = config.ctaLine === "v2" ? pickLaunchCta(c).text : generated.ctaText ?? pickCta(c).text;
       assertPublicCopy(ctaText);
 
       if (cli.mode === "dry-run") {

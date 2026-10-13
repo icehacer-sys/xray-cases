@@ -54,6 +54,14 @@ export const config = {
   // Off = the caption the audience already knows, unchanged.
   followCta: (process.env.BOT_FOLLOW_CTA ?? "off").toLowerCase() === "on",
 
+  // NEW PRODUCT LINE switch (built 2026-10-12, owner-approved, OFF until launch day). v2 posts the
+  // new-line CTA chosen at post time (2-key rotation, legacy pins remapped, ?c=MMDD tag per night)
+  // instead of the CTA cached in case.json, so no queued case or content review has to change.
+  ctaLine: (process.env.BOT_CTA_LINE ?? "v1").toLowerCase() === "v2" ? "v2" as const : "v1" as const,
+  // The caption tells viewers the answer is in the replies (91% never open them). It takes the
+  // slot the follow-CTA experiment used, so turning it on ends that experiment.
+  replyHint: (process.env.BOT_REPLY_HINT ?? "off").toLowerCase() === "on",
+
   // HOOK-FRAMING experiment, B arm: post the foregrounded caption instead of the plain one.
   // Built 2026-09-05 but DORMANT -- publish.yml does not set this until the answer-delay
   // experiment finishes (~2026-10-03), so the caption is not varied by three things at once.

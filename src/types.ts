@@ -128,7 +128,9 @@ export interface Case {
   };
 }
 
-export type CtaKey = "support" | "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vol1" | "vol3" | "field" | "anxiety" | "challenge" | "viral10" | "ctvol1";
+export type CtaKey = "support" | "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vol1" | "vol3" | "field" | "anxiety" | "challenge" | "viral10" | "ctvol1"
+  // Weird X-Ray Case Files new line (2026-10-12). Used only when BOT_CTA_LINE=v2.
+  | "freeround" | "inside" | "book" | "everyfile" | "keepcoming";
 
 /** A resolved public image URL for a case file (built from config.githubRawBase). */
 export type ImageUrl = string;

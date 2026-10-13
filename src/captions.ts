@@ -221,6 +221,18 @@ export const FOLLOW_CTA_LINE = "Follow for a new case every night 🔔";
  */
 export function withFollowCta(caption: string, enabled = config.followCta): string {
   if (!enabled) return caption;
+  return swapChallengeLabel(caption, FOLLOW_CTA_LINE);
+}
+
+/** Launch-line caption hint (owner, 2026-10-12): about 91% of post viewers never open the replies,
+ *  where the answer and the CTA live. Same slot and emoji shape as the follow arm. */
+export const REPLY_HINT_LINE = "Answer and what happened next drop in the replies 👇🏼";
+export function withReplyHint(caption: string, enabled = config.replyHint): string {
+  if (!enabled) return caption;
+  return swapChallengeLabel(caption, REPLY_HINT_LINE);
+}
+
+function swapChallengeLabel(caption: string, lastLine: string): string {
   // Prefix match on the EMOJI-LESS token, not equality against the rendered line: captions cached
   // in case.json carry whichever emoji era they were drafted under (🩻 then none then 🔍). An exact
   // match would silently miss them and leave a SEVEN-line caption with the follow line bolted on
@@ -240,7 +252,7 @@ export function withFollowCta(caption: string, enabled = config.followCta): stri
       if (t.startsWith(GUESSES_PREFIX)) return GUESSES_PREFIX;
       return l;
     });
-  lines.push(FOLLOW_CTA_LINE);
+  lines.push(lastLine);
   const out = lines.join("\n\n");
   return out.length > config.captionMaxChars ? caption : out;
 }
@@ -663,7 +675,78 @@ Look then guess then flip for the breakdown.
 
 Grab it here 👇🏼
 ctvol1.mednoteslab.com`,
+
+  // --- Weird X-Ray Case Files new line (2026-10-12). Only reachable with BOT_CTA_LINE=v2. ---
+  // Flowing sentences on purpose (no "A fork. A sword." fragments). Lineup as launched:
+  //   freeround  Case File 00, free, 6 cases (coin, spoon, razor blade, nail in the eye socket, metal rod, tooth in the chest)
+  //   inside     Case File 01, $3+, 10 cases (fork ... sword ... retained surgical scissors as the finale)
+  //   book       Case File 02, $9, 10 cases as a book plus a phone game
+  //   everyfile  Case File 03, $49, everything
+  //   keepcoming Patron (the Support page edited in place)
+  // Name only objects that are really in that file, and never state a price here (prices move).
+  freeround: `If these X-rays keep stopping your scroll I made you a free round to play on your phone 😭
+
+It has 6 X-rays with a spoon, a razor blade, and a nail hiding somewhere they should never be.
+
+Guess what each one is and then find out what happens next 👇🏼
+free.mednoteslab.com`,
+
+  book: `These X-rays have had over 170 million views and the question under almost every one is whether it can be fixed.
+
+So I put 10 of the weirdest into one book that explains what each one is and what happens next in plain words.
+
+It comes with a phone game too so you can guess before you flip 👇🏼
+book.mednoteslab.com`,
+
+  // Pin on swallowed-object and parasite nights.
+  inside: `If you guessed this one in two seconds you might be built for this.
+
+I turned 10 of the strangest things doctors have found inside people into a game with a fork, a full length sword, and a pair of scissors left behind after surgery.
+
+Guess each one and then find out how on earth it got in there 👇🏼
+inside.mednoteslab.com`,
+
+  everyfile: `If you could read these all day I put every case I have ever posted into one library.
+
+It has both games, the book, and every new file I make from here on.
+
+Everything is in one place here 👇🏼
+all.mednoteslab.com`,
+
+  keepcoming: `Every one of these cases is made by one med student between hospital shifts and they stay free for everyone.
+
+If you want to help keep them coming you can do that here 👇🏼
+support.mednoteslab.com`,
 };
+
+// New line: two rotating keys (account audit 2026-10-12: revenue per click was $0 for 9 of 13
+// rotated products). inside, keepcoming, everyfile and anxiety are pins, not rotation.
+export const CTA_ROTATION_V2: CtaKey[] = ["freeround", "book"];
+// Queued cases still pin old keys; on the new line they land on the product that replaced them.
+const LEGACY_CTA: Partial<Record<CtaKey, CtaKey>> = {
+  hopital: "freeround", challenge: "inside", viral10: "inside",
+  spotit: "book", vol1: "book", vol2: "book", vol3: "book", rare: "book", field: "book",
+  collection: "everyfile", ctvol1: "everyfile", support: "keepcoming",
+};
+
+/** "?c=MMDD" on the CTA link so clicks and sales can be tied to the night (UTC posting date). */
+export function tagCtaLink(text: string, postAt?: string): string {
+  const at = postAt ? new Date(postAt) : null;
+  if (!at || Number.isNaN(at.getTime())) return text;
+  const tag = `c=${String(at.getUTCMonth() + 1).padStart(2, "0")}${String(at.getUTCDate()).padStart(2, "0")}`;
+  const lines = text.trimEnd().split("\n");
+  const last = lines.pop()!.trim();
+  const url = last.includes("/") ? `${last}${last.includes("?") ? "&" : "?"}${tag}` : `${last}/?${tag}`;
+  return [...lines, url].join("\n");
+}
+
+/** The new-line CTA for a case, chosen at post time. Rotation alternates by posting night. */
+export function pickLaunchCta(c: Pick<Case, "cta" | "postAt">): { key: CtaKey; text: string } {
+  const pinned = c.cta ? (LEGACY_CTA[c.cta] ?? c.cta) : undefined;
+  const night = c.postAt ? Math.floor(Date.parse(c.postAt) / 86_400_000) : 0;
+  const key = pinned ?? CTA_ROTATION_V2[((night % CTA_ROTATION_V2.length) + CTA_ROTATION_V2.length) % CTA_ROTATION_V2.length];
+  return { key, text: tagCtaLink(CTA_TEXT[key], c.postAt) };
+}
 
 // 13-slot rotation covering EVERY product. Free pack (hopital) is still the most frequent slot
 // (top-of-funnel email capture) but never back-to-back; the collection appears twice; each paid
