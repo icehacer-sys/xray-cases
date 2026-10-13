@@ -1213,6 +1213,17 @@
       "publishedId": "18175807465449193",
       "publishedAt": "2026-10-12T20:17:03.501Z",
       "confirmedPublished": true
+    },
+    "case:00198-bilateral-hydroureteronephrosis:challenge": {
+      "creationId": "17893470795614054",
+      "createdAt": "2026-10-13T19:04:14.614Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00198-bilateral-hydroureteronephrosis/xray.png",
+        "text": "A patient with a weak stream and getting up at night to pee.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "830172032f6f941f3012af911bfcd8fd8b0ec3de0bd7269a059e954f4c7b32e7:307da239d1acdaf82e56903272c9a23b3b6c8c799c7e4e1748cb683c1af9a5ee:57ca25247be1660829cf3cf16b6c7afc770aff47f7dee952ac07b48216b2e465"
     }
   },
   "stages": {
@@ -2188,12 +2199,18 @@
       "answerCommentId": "18012381371764205",
       "answerPostedAt": "2026-10-12T19:21:26.053Z",
       "ctaPostedAt": "2026-10-12T20:17:05.011Z"
+    },
+    "00198-bilateral-hydroureteronephrosis": {
+      "publishedCaption": "A patient with a weak stream and getting up at night to pee.\n\nThen the X-ray loaded 😭\n\nAnd nobody in the room said a word.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00198-bilateral-hydroureteronephrosis\",\"assignedAt\":\"2026-10-13T19:04:09.050Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-12",
+      "date": "2026-10-13",
       "count": 0
     }
   }
