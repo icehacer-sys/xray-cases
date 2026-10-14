@@ -11026,5 +11026,31 @@
       "reposts": 4,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00197-cerebral-arteriovenous-malformation",
+    "postId": "18144676564597946",
+    "measuredAt": "2026-10-14T13:13:03.503Z",
+    "publishedAt": "2026-10-12T19:01:02.992Z",
+    "ageHours": 42.20014194444445,
+    "experiment": {
+      "id": "case-00197-cerebral-arteriovenous-malformation",
+      "assignedAt": "2026-10-12T19:00:49.766Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with headaches that kept coming back for months.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the head answered everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-12T19:21:02.992Z",
+    "ctaDueAt": "2026-10-12T20:16:02.992Z",
+    "metrics": {
+      "views": 5844,
+      "likes": 109,
+      "replies": 129,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
