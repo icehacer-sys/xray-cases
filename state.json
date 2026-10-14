@@ -1253,6 +1253,17 @@
       "publishedId": "18026963885911291",
       "publishedAt": "2026-10-13T20:20:22.749Z",
       "confirmedPublished": true
+    },
+    "case:00199-traumatic-pneumocephalus:challenge": {
+      "creationId": "17893606308614054",
+      "createdAt": "2026-10-14T19:01:53.956Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00199-traumatic-pneumocephalus/xray.png",
+        "text": "A patient with a headache and a runny nose that would not dry up.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of the head stopped everyone in the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "f6461d95b59e830f5cbf0b6b90d79a06922979b7e951e990f219e4c63352563c:bd2c92a9648dfab1b475e944688e43f609fb713c0e57409d25a024406631222c:b363f2044e0c2bc8fa3e9fb8111a080e619c926f443743b197a126b927cab013"
     }
   },
   "stages": {
@@ -2239,12 +2250,18 @@
       "answerCommentId": "18169197817462607",
       "answerPostedAt": "2026-10-13T19:24:41.200Z",
       "ctaPostedAt": "2026-10-13T20:20:24.130Z"
+    },
+    "00199-traumatic-pneumocephalus": {
+      "publishedCaption": "A patient with a headache and a runny nose that would not dry up.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of the head stopped everyone in the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00199-traumatic-pneumocephalus\",\"assignedAt\":\"2026-10-14T19:01:49.532Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "count": 0
     }
   }
