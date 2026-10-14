@@ -1267,6 +1267,16 @@
       "publishedId": "18079498634383460",
       "publishedAt": "2026-10-14T19:01:58.238Z",
       "confirmedPublished": true
+    },
+    "case:00199-traumatic-pneumocephalus:answer": {
+      "creationId": "17893608384614054",
+      "createdAt": "2026-10-14T19:22:12.266Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Traumatic pneumocephalus\n\n👀 What you see:\nDark pockets of air sit inside the skull at the front pressing on the brain behind the forehead.\n\n🦴 Why it matters:\nPneumocephaly is air inside the skull and is a complication of a fracture of the skull base. A fracture of the anterior skull base can also give the raccoon eye sign.\n\n💊 Treatment:\nTreatment may include observation with head elevation since small amounts of air often absorb.",
+        "reply_to_id": "18079498634383460",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":436}]"
+      }
     }
   },
   "stages": {
