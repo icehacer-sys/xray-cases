@@ -128,5 +128,13 @@
     "sha256": "d432694e0471f535149b602fce7463db53fd0b13f0aeb5032ba411597bc6954e",
     "approvedAt": "2026-10-12T13:51:13.000Z",
     "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset radiograph strength 0.6 applied to the previously approved image sha256 f6461d95b59e830f5cbf0b6b90d79a06922979b7e951e990f219e4c63352563c). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a headache and a runny nose that would not dry up.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of the head stopped everyone in the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00199-traumatic-pneumocephalus\",\"assignedAt\":\"2026-10-14T19:01:49.532Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18079498634383460",
+    "challengePostedAt": "2026-10-14T19:01:58.238Z"
   }
 }
