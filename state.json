@@ -1293,6 +1293,17 @@
       "publishedId": "18109311926610626",
       "publishedAt": "2026-10-14T20:18:06.242Z",
       "confirmedPublished": true
+    },
+    "case:00200-sigmoid-diverticulosis:challenge": {
+      "creationId": "17893742355614054",
+      "createdAt": "2026-10-15T19:05:04.175Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00200-sigmoid-diverticulosis/xray.png",
+        "text": "A patient with irregular bowel habits and some bloating.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "961e4fac80f25d97a6564e9bb3e38888413cab7f2a6b94695b8dff85c5e30785:869e154df7b90cc22a19f84fc465d6e57e182c75027fbcdc854432c845bd6c08:57aab1ca46931a35be76d0dc7b4d535f71aeefca3246013dd990f0c2154c8a93"
     }
   },
   "stages": {
@@ -2290,12 +2301,18 @@
       "answerCommentId": "18129823861871586",
       "answerPostedAt": "2026-10-14T19:22:21.287Z",
       "ctaPostedAt": "2026-10-14T20:18:08.082Z"
+    },
+    "00200-sigmoid-diverticulosis": {
+      "publishedCaption": "A patient with irregular bowel habits and some bloating.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00200-sigmoid-diverticulosis\",\"assignedAt\":\"2026-10-15T19:04:58.470Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-14",
+      "date": "2026-10-15",
       "count": 0
     }
   }
