@@ -2309,7 +2309,9 @@
       "publishedCaption": "A patient with irregular bowel habits and some bloating.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00200-sigmoid-diverticulosis\",\"assignedAt\":\"2026-10-15T19:04:58.470Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "17903856849668624",
+      "challengePostedAt": "2026-10-15T19:05:09.723Z"
     }
   },
   "posted": {
