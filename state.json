@@ -1316,7 +1316,10 @@
         "text": "Answer: Sigmoid diverticulosis\n\n👀 What you see:\nMany small pouches stick out from the colon wall on the left side of the patient's lower abdomen.\n\n🦴 Why it matters:\nDiverticula are acquired pouches of mucosa and submucosa pushed out through weak points where vessels enter the wall.\n\n💊 Treatment:\nUncomplicated diverticulosis may be managed with a high fibre diet. Complications may need IV antibiotics, guided drainage, or surgery such as Hartmann's procedure.",
         "reply_to_id": "17903856849668624",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":456}]"
-      }
+      },
+      "publishedId": "17968881741189445",
+      "publishedAt": "2026-10-15T19:25:30.707Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
