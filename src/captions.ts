@@ -730,6 +730,14 @@ const LEGACY_CTA: Partial<Record<CtaKey, CtaKey>> = {
 };
 
 /** "?c=MMDD" on the CTA link so clicks and sales can be tied to the night (UTC posting date). */
+/** Stable link-preview URL for a CTA domain line: same host and path, the nightly ?c= tag swapped for a fixed one.
+ *  Meta only shows the preview image once a URL has been scraped before, so the card URL must not change nightly. */
+export function cardUrl(domainLine: string): string {
+  const u = new URL(`https://${domainLine.trim()}`);
+  u.search = "?c=card";
+  return u.toString();
+}
+
 export function tagCtaLink(text: string, postAt?: string): string {
   const at = postAt ? new Date(postAt) : null;
   if (!at || Number.isNaN(at.getTime())) return text;
