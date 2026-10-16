@@ -11828,5 +11828,87 @@
       "reposts": 7,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00197-cerebral-arteriovenous-malformation",
+    "postId": "18144676564597946",
+    "measuredAt": "2026-10-16T15:40:43.580Z",
+    "publishedAt": "2026-10-12T19:01:02.992Z",
+    "ageHours": 92.66127444444444,
+    "experiment": {
+      "id": "case-00197-cerebral-arteriovenous-malformation",
+      "assignedAt": "2026-10-12T19:00:49.766Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-4-6"
+    },
+    "caption": "A patient with headaches that kept coming back for months.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the head answered everything.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "answerDueAt": "2026-10-12T19:21:02.992Z",
+    "ctaDueAt": "2026-10-12T20:16:02.992Z",
+    "metrics": {
+      "views": 6196,
+      "likes": 112,
+      "replies": 130,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00199-traumatic-pneumocephalus",
+    "postId": "18079498634383460",
+    "measuredAt": "2026-10-16T15:40:43.797Z",
+    "publishedAt": "2026-10-14T19:01:58.238Z",
+    "ageHours": 44.645988611111115,
+    "experiment": {
+      "id": "case-00199-traumatic-pneumocephalus",
+      "assignedAt": "2026-10-14T19:01:49.532Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a headache and a runny nose that would not dry up.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of the head stopped everyone in the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "answerDueAt": "2026-10-14T19:21:58.238Z",
+    "ctaDueAt": "2026-10-14T20:16:58.238Z",
+    "metrics": {
+      "views": 45509,
+      "likes": 260,
+      "replies": 275,
+      "reposts": 6,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00200-sigmoid-diverticulosis",
+    "postId": "17903856849668624",
+    "measuredAt": "2026-10-16T15:40:43.996Z",
+    "publishedAt": "2026-10-15T19:05:09.723Z",
+    "ageHours": 20.59285361111111,
+    "experiment": {
+      "id": "case-00200-sigmoid-diverticulosis",
+      "assignedAt": "2026-10-15T19:04:58.470Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with irregular bowel habits and some bloating.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "answerDueAt": "2026-10-15T19:25:09.723Z",
+    "ctaDueAt": "2026-10-15T20:20:09.723Z",
+    "metrics": {
+      "views": 5872,
+      "likes": 118,
+      "replies": 133,
+      "reposts": 1,
+      "quotes": 0
+    }
   }
 ]
