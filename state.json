@@ -1356,7 +1356,10 @@
         "text": "Answer: Infrarenal abdominal aortic aneurysm\n\n👀 What you see:\nJust below the kidney arteries the aorta balloons into a round sac that bulges toward the left side of the patient.\n\n🦴 Why it matters:\nAn abdominal aortic aneurysm can grow silently and its risk of rupture rises as it gets wider.\n\n💊 Treatment:\nTreatment depends on size and symptoms and may include ultrasound surveillance or repair by open surgery or an endovascular stent graft.",
         "reply_to_id": "18425195461157641",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":437}]"
-      }
+      },
+      "publishedId": "17904969705353597",
+      "publishedAt": "2026-10-16T19:23:05.530Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
