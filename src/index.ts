@@ -31,6 +31,7 @@ import {
   pickCta,
   imagePrompt,
   assertPublicCopy,
+  cardUrl,
 } from "./captions.js";
 import { postImage, reply, getReplies, getMyUsername, TopicTagError, type SpoilerEntity } from "./threads.js";
 import { publishCarousel } from "./instagram.js";
@@ -489,7 +490,10 @@ async function runPublish(cli: Cli): Promise<void> {
         // renders a link-preview card (link_attachment). The URL also stays in the text as a
         // fallback auto-preview if link_attachment is ignored on a reply.
         const domain = ctaText.trim().split("\n").map((l) => l.trim()).filter(Boolean).pop() ?? "";
-        const linkAttachment = /^[a-z0-9.-]+\.[a-z]{2,}(\/\S*)?$/i.test(domain) ? `https://${domain}` : undefined;
+        // The card URL stays the SAME every night (only the visible text link carries the nightly
+        // ?c=MMDD tag). Meta renders the preview image only once a URL has been scraped before, so a
+        // brand new tagged URL each night always got a bare text card (seen 2026-10-13 to 10-16).
+        const linkAttachment = /^[a-z0-9.-]+\.[a-z]{2,}(\/\S*)?$/i.test(domain) ? cardUrl(domain) : undefined;
         await reply(target, ctaText, undefined, linkAttachment, state.publication(`case:${c.folder}:cta`));
         state.setStages(c.folder, { ctaPostedAt: new Date().toISOString() });
         c.stages = state.getStages(c.folder);
