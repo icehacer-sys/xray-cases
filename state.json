@@ -1387,6 +1387,16 @@
       "publishedId": "18644902039045637",
       "publishedAt": "2026-10-17T19:05:02.723Z",
       "confirmedPublished": true
+    },
+    "case:00202-laryngocele:answer": {
+      "creationId": "17894062770614054",
+      "createdAt": "2026-10-17T19:25:13.559Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Laryngocele\n\n👀 What you see:\nA round black air-filled sac bulging out beside the larynx on the right side of the patient's neck.\n\n🦴 Why it matters:\nA laryngocele is an air-filled dilatation of the saccule of the laryngeal ventricle and can be internal, external, or mixed.\n\n💊 Treatment:\nIf the swelling is confirmed on CT the treatment is surgical excision.",
+        "reply_to_id": "18644902039045637",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":360}]"
+      }
     }
   },
   "stages": {
