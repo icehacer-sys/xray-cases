@@ -226,7 +226,8 @@ export function withFollowCta(caption: string, enabled = config.followCta): stri
 
 /** Launch-line caption hint (owner, 2026-10-12): about 91% of post viewers never open the replies,
  *  where the answer and the CTA live. Same slot and emoji shape as the follow arm. */
-export const REPLY_HINT_LINE = "Answer and what happened next drop in the replies 👇🏼";
+// Kept short so the 👇🏼 stays on the same line on a phone (the old 52-character line wrapped the emoji).
+export const REPLY_HINT_LINE = "Answer drops in the replies 👇🏼";
 export function withReplyHint(caption: string, enabled = config.replyHint): string {
   if (!enabled) return caption;
   return swapChallengeLabel(caption, REPLY_HINT_LINE);
