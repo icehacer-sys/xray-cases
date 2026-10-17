@@ -15,6 +15,12 @@
   "whyItMatters": "Chronic ulcerative colitis scars the colon into a shortened featureless lead pipe on barium enema. Double contrast barium enema is contraindicated in acute severe colitis.",
   "treatment": "If disease is active it is treated with aminosalicylates and steroids. Colectomy is considered if medical therapy fails.",
   "takeaway": "Loss of haustra with a smooth tubular colon is the lead-pipe sign of chronic ulcerative colitis.",
+  "clueFacts": [
+    {
+      "clue": "loose stools",
+      "fact": "Ulcerative colitis typically causes recurring loose stools that often contain blood and mucus with urgency to open the bowels."
+    }
+  ],
   "igOptions": [
     "A. Ulcerative colitis",
     "B. Crohn's colitis",

@@ -15,6 +15,12 @@
   "whyItMatters": "Takotsubo mimics an acute MI with chest pain, breathlessness, ECG changes, and raised cardiac biomarkers. It is more common in middle-aged to elderly women and the coronary arteries are normal.",
   "treatment": "If coronary angiography shows normal arteries the treatment is supportive heart failure care. Ventricular function usually recovers over weeks.",
   "takeaway": "Apical ballooning with normal coronaries after emotional stress is Takotsubo.",
+  "clueFacts": [
+    {
+      "clue": "after a really upsetting week",
+      "fact": "Takotsubo is classically triggered by intense emotional or physical stress such as bereavement or a frightening event and this is why it is nicknamed broken heart syndrome."
+    }
+  ],
   "igOptions": [
     "A. Takotsubo cardiomyopathy",
     "B. Left ventricular aneurysm",

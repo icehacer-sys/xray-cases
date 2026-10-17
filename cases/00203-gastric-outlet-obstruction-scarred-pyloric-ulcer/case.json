@@ -15,6 +15,16 @@
   "whyItMatters": "Scarring from a long-standing pyloric ulcer blocks the outlet and causes projectile non-bile-stained vomiting of food from previous meals. Patients develop dehydration with metabolic alkalosis, hyponatraemia, and hypokalaemia.",
   "treatment": "If the outlet is blocked the first step is nasogastric suction and washouts with correction of fluids and electrolytes. Once stable the standard operation is truncal vagotomy with gastrojejunostomy after endoscopy excludes a tumour.",
   "takeaway": "Vomiting old food plus a giant barium-filled stomach means the outlet is blocked.",
+  "clueFacts": [
+    {
+      "clue": "a heavy full feeling after meals",
+      "fact": "When scarring narrows the pylorus food cannot leave the stomach so it stretches and patients feel heavy and full soon after meals."
+    },
+    {
+      "clue": "burps that taste of yesterday's dinner",
+      "fact": "Food can sit in an obstructed stomach for many hours so belches and vomit often taste of meals eaten the day before."
+    }
+  ],
   "igOptions": [
     "A. Gastric outlet obstruction",
     "B. Achalasia",

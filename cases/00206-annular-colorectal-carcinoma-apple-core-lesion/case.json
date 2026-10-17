@@ -15,6 +15,12 @@
   "whyItMatters": "Carcinoma of the large bowel can encircle the lumen and produce an apple core narrowing that leads to large bowel obstruction. Suspected tumours need histology and a staging CT.",
   "treatment": "If biopsy confirms cancer the usual treatment is surgical resection of the involved segment after staging. Obstructing tumours may first need decompression by a stent or colostomy.",
   "takeaway": "An apple core stricture with overhanging edges on barium enema is colon cancer until proven otherwise.",
+  "clueFacts": [
+    {
+      "clue": "a change in bowel habit",
+      "fact": "A tumour that narrows the left colon classically causes a change in bowel habit with constipation or looser stools and sometimes blood in the stool."
+    }
+  ],
   "igOptions": [
     "A. Annular colorectal carcinoma",
     "B. Diverticular stricture",
