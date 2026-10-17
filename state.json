@@ -2411,7 +2411,9 @@
       "publishedCaption": "A patient with a soft bulge on one side of the neck that puffs up with hard blowing.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00202-laryngocele\",\"assignedAt\":\"2026-10-17T19:04:50.269Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18644902039045637",
+      "challengePostedAt": "2026-10-17T19:05:02.723Z"
     }
   },
   "posted": {

@@ -127,5 +127,13 @@
     "sha256": "bcd538a0567a043a3a6824fbc053784fa0ef3f7e603029a50d0444e8c80e7b37",
     "approvedAt": "2026-10-12T13:51:13.000Z",
     "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset radiograph strength 0.6 applied to the previously approved image sha256 88ecc0a9d8065c885b57e4fd6bf1164431d9c84db9f7c5c4c8b764c9d4a4cdfe). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a soft bulge on one side of the neck that puffs up with hard blowing.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00202-laryngocele\",\"assignedAt\":\"2026-10-17T19:04:50.269Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18644902039045637",
+    "challengePostedAt": "2026-10-17T19:05:02.723Z"
   }
 }
