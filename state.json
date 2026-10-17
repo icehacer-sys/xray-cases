@@ -1373,6 +1373,17 @@
       "publishedId": "17933622609404256",
       "publishedAt": "2026-10-16T20:18:37.786Z",
       "confirmedPublished": true
+    },
+    "case:00202-laryngocele:challenge": {
+      "creationId": "17894061318614054",
+      "createdAt": "2026-10-17T19:04:56.841Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00202-laryngocele/xray.png",
+        "text": "A patient with a soft bulge on one side of the neck that puffs up with hard blowing.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "88ecc0a9d8065c885b57e4fd6bf1164431d9c84db9f7c5c4c8b764c9d4a4cdfe:9c9c4312da81efc39f5e1fefd32542f0f8fdfa277b4c3ace3160e3b69aeae319:ad34d8270f2e6a618e7b83bc02222d15dc7d89e38c720b11e312ea74d2d8588e"
     }
   },
   "stages": {
@@ -2392,12 +2403,18 @@
       "answerCommentId": "17904969705353597",
       "answerPostedAt": "2026-10-16T19:23:05.530Z",
       "ctaPostedAt": "2026-10-16T20:18:40.084Z"
+    },
+    "00202-laryngocele": {
+      "publishedCaption": "A patient with a soft bulge on one side of the neck that puffs up with hard blowing.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00202-laryngocele\",\"assignedAt\":\"2026-10-17T19:04:50.269Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-16",
+      "date": "2026-10-17",
       "count": 0
     }
   }
