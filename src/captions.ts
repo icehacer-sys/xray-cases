@@ -10,7 +10,8 @@ import { recordUsage } from "./usage.js";
 import { config, requireEnv } from "./config.js";
 import type { Case, CtaKey } from "./types.js";
 import { buildXrayPrompt } from "./anatomy.js";
-import { SERIAL_COMMA_RULE, assertSerialCommas } from "./copy-style.js";
+import { SERIAL_COMMA_RULE, assertSerialCommas, serialCommaProblems } from "./copy-style.js";
+import { clueFactFormatProblems, clueProblems, missingQualifierHints } from "./clue-facts.js";
 
 // ---------------------------------------------------------------------------
 // Anthropic client (lazy: --prompt mode never needs it)
@@ -326,6 +327,101 @@ export async function draftForegroundedCaption(c: Case): Promise<string> {
   } catch {
     return ""; // never let a drafting failure block a publish
   }
+}
+
+// ---------------------------------------------------------------------------
+// Caption clue facts (reply audit 2026-10-17, see clue-facts.ts)
+// ---------------------------------------------------------------------------
+
+/** Why a drafted symptom line may not replace the public one, or null. It may only ADD a history hint. */
+export function storyHintProblem(c: Case, alt: string): string | null {
+  const original = publicSymptom(c);
+  if (!alt || alt.length > 140) return "length";
+  if (/[—–"]|\s-\s/.test(alt) || /\p{Extended_Pictographic}/u.test(alt)) return "punctuation or emoji";
+  if ((alt.match(/,/g) ?? []).length > (original.match(/,/g) ?? []).length || serialCommaProblems(alt).length) return "commas";
+  const words = (s: string): string[] => s.toLowerCase().match(/[a-z]{3,}/g) ?? [];
+  const altWords = new Set(words(alt));
+  const dropped = words(original).filter((w) => !altWords.has(w));
+  if (dropped.length) return `drops original wording: ${dropped.join(" ")}`;
+  const giveaway = symptomGiveaway(alt);
+  if (giveaway && !symptomGiveaway(original)) return `names the cause: ${giveaway}`;
+  // Neither the answer (or its qualifier word) nor the finding may move into the opening line.
+  const originalWords = new Set(words(original));
+  const added = [...altWords].filter((w) => !originalWords.has(w));
+  const near = (a: string, b: string) => a.length >= 5 && b.length >= 5 && (a.startsWith(b.slice(0, 5)) || b.startsWith(a.slice(0, 5)));
+  const answerWords = [c.diagnosis, ...(c.aliases ?? [])].flatMap(words).filter((w) => w.length >= 5);
+  const leakedAnswer = added.find((w) => answerWords.some((a) => near(w, a)));
+  if (leakedAnswer) return `names the answer: ${leakedAnswer}`;
+  const leakedHook = added.find((w) => w.length >= 5 && words(c.hook).includes(w));
+  if (leakedHook) return `reuses the finding's wording: ${leakedHook}`;
+  if (missingQualifierHints({ ...c, captionSymptom: alt }).length) return "still no qualifier hint";
+  return null;
+}
+
+/** Validate a drafted {clueFacts, captionSymptom} and keep only what passes. Pure: no network. */
+export function applyClueDraft(c: Case, draft: Record<string, unknown>): void {
+  const raw = Array.isArray(draft.clueFacts) ? draft.clueFacts : [];
+  const drafted = raw
+    .map((f) => (f && typeof f === "object" ? (f as Record<string, unknown>) : {}))
+    .map((f) => ({ clue: cleanPunct(str(f.clue)), fact: cleanPunct(str(f.fact)) }))
+    .filter((f) => f.clue && f.fact && clueFactFormatProblems([f]).length === 0);
+  const known = new Set((c.clueFacts ?? []).map((f) => f.fact.toLowerCase()));
+  const fresh = drafted.filter((f) => !known.has(f.fact.toLowerCase()));
+  if (fresh.length) c.clueFacts = [...(c.clueFacts ?? []), ...fresh];
+  if (typeof draft.captionSymptom === "string" && missingQualifierHints(c).length) {
+    const alt = cleanPunct(draft.captionSymptom).replace(/^["']+|["']+$/g, "").replace(/^a patient with\s+/i, "").replace(/[.!?]+$/, "").trim();
+    const problem = storyHintProblem(c, alt);
+    if (problem) console.log(`  story hint rejected for ${c.folder}: "${alt}": ${problem}`);
+    else c.captionSymptom = alt;
+  }
+}
+
+export type ClueDrafter = (c: Case, problems: string[]) => Promise<Record<string, unknown>>;
+
+/** One small Claude call: a teaching fact per unexplained caption clue, plus a story hint when the
+ *  answer label carries a qualifier (traumatic, congenital...) that the story never hints at. */
+export const draftClueFacts: ClueDrafter = async (c, problems) => {
+  const missing = missingQualifierHints(c);
+  const system =
+    "You write private teaching facts for the reply assistant of @mdnoteslab, a daily guess-the-X-ray account. " +
+    "The assistant may only state what the case facts say. The public caption relies on clinical clues the facts do not explain yet. " +
+    "For EACH listed clue write ONE general teaching sentence explaining how the named diagnosis produces that clue. " +
+    "RULES: (1) Facts only: well-established textbook facts about the condition. Never invent this patient's history, tests, treatment or outcome and never write 'this patient'. " +
+    "(2) Repeat the clue's own key words in the sentence so it is obvious which clue it explains. " +
+    "(3) Use typical or conditional wording such as can, often or typically. " +
+    "(4) Under 200 characters each. No dashes, emoji or quotation marks. " +
+    "(5) If this diagnosis cannot honestly explain a clue, leave that clue out rather than forcing a fact. " +
+    (missing.length
+      ? `(6) The answer label carries ${missing.map((q) => `"${q.name}"`).join(" and ")} but the caption story gives no hint of ${missing.map((q) => q.hint).join(" or ")}. ` +
+        "Return captionSymptom: the presenting symptom line rewritten to ADD only a short plain hint of that history (for example 'after a fall'). Keep every original word. " +
+        "Never name or hint at the diagnosis, the X-ray finding or the qualifier word itself. No commas. Under 130 characters. It must read naturally after 'A patient with '. "
+      : "(6) Return captionSymptom as null. ") +
+    'Respond ONLY with JSON {"clueFacts":[{"clue":string,"fact":string}],"captionSymptom":string|null}';
+  const user =
+    `Diagnosis: ${c.diagnosis}\n` +
+    `Presenting symptom as the caption shows it: ${publicSymptom(c)}\n` +
+    `Full clinical vignette: ${c.symptom}\n` +
+    (c.teaser ? `Suspense line: ${c.teaser}\n` : "") +
+    `Existing facts: ${[c.whatYouSee, c.whyItMatters, c.treatment].filter(Boolean).join(" ")}\n` +
+    `Problems to fix:\n- ${problems.join("\n- ")}`;
+  return parseJsonObject(await ask(system, user, 700));
+};
+
+/**
+ * Generation-time consistency step. Owner-vetted condition clue facts come first; otherwise one
+ * drafted call fills the gaps. Returns the problems still left, which the generator turns into a
+ * hold (never an image regeneration). A drafting failure is not fatal: the case is simply held.
+ */
+export async function ensureClueFacts(c: Case, drafter: ClueDrafter = draftClueFacts): Promise<string[]> {
+  if (!c.clueFacts?.length && c.condition?.clueFacts?.length) c.clueFacts = c.condition.clueFacts.map((f) => ({ ...f }));
+  const problems = clueProblems(c);
+  if (!problems.length) return [];
+  try {
+    applyClueDraft(c, await drafter(c, problems));
+  } catch (err) {
+    console.log(`  clue facts not drafted for ${c.folder}: ${err instanceof Error ? err.message : String(err)}`);
+  }
+  return clueProblems(c);
 }
 
 // ---------------------------------------------------------------------------

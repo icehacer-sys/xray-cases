@@ -15,6 +15,16 @@
   "whyItMatters": "Intussusception shows as a coiled spring on contrast enema and a target sign on CT. In an adult with pain and anaemia and weight loss a polypoid mass is often the lead point.",
   "treatment": "If an adult has a mass at the lead point the involved bowel is usually resected surgically with histology. A contrast enema can be therapeutic mainly in children.",
   "takeaway": "A coiled spring on barium enema means bowel telescoping into bowel.",
+  "clueFacts": [
+    {
+      "clue": "a tummy ache that comes and goes",
+      "fact": "Intussusception typically causes a colicky tummy ache that comes and goes as the bowel squeezes against the telescoped segment."
+    },
+    {
+      "clue": "jeans that feel looser lately",
+      "fact": "In adults a mass usually forms the lead point and unplanned weight loss that makes clothes feel looser is a red flag that the mass may be a tumour."
+    }
+  ],
   "igOptions": [
     "A. Ileocolic intussusception",
     "B. Colon cancer",

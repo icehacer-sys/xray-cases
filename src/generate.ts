@@ -31,7 +31,9 @@ import {
   generateIgCaption,
   draftEngagement,
   pickCta,
+  ensureClueFacts,
 } from "./captions.js";
+import { clueProblems } from "./clue-facts.js";
 import { generateXray } from "./openai.js";
 import { loadReference, referenceAvailable } from "./reference.js";
 import { buildXrayPrompt, AGE_BANDS } from "./anatomy.js";
@@ -254,6 +256,9 @@ function placeholderXray(): Buffer {
 // ---------------------------------------------------------------------------
 
 async function predraftCaptions(c: Case, threadsOnly = false): Promise<void> {
+  // Caption clues need facts behind them and a qualified answer label needs a story hint (reply
+  // audit 2026-10-17). Runs first because it may add a history hint to the public symptom line.
+  await ensureClueFacts(c);
   // Draft the non-spoiling engagement fields first so the caption can render the difficulty +
   // layperson question and the seed comment has its hint.
   if (c.difficulty == null || c.laypersonQuestion == null || c.seedHint == null) {
@@ -428,6 +433,14 @@ async function generateOne(
   await predraftCaptions(c, threadsOnly);
   if (!mock) {
     try { await reviewContent(c); } catch (err) { c.needsReview = true; c.verifyDefects = [...(c.verifyDefects ?? []), String(err)]; }
+  }
+  // A caption clue with no fact behind it holds the case. The image is fine: the repair is a
+  // clueFacts entry or a story hint, then a copy review. Never a new render.
+  const clueGaps = clueProblems(c);
+  if (clueGaps.length) {
+    c.needsReview = true;
+    c.verifyDefects = [...(c.verifyDefects ?? []), `Caption/facts mismatch (add clueFacts or a story hint; keep the image): ${clueGaps.join("; ")}`];
+    log(`    ⛔ ${cond.diagnosis}: caption clues lack facts so it is queued with needsReview:${clueGaps.join(" | ")}`);
   }
   saveCase(c);
 

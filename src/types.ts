@@ -36,6 +36,11 @@ export interface Case {
   teaser?: string;
   /** IG slide A/B/C options as shown on the user's slide image (for context only). */
   igOptions?: string[];
+  /** Facts that explain the clinical clues the public story relies on (a runny nose after a head
+   *  injury is a CSF leak). Read by the reply bot with whatYouSee/whyItMatters/treatment, never
+   *  posted. Kept out of contentHash so facts can be added to a queued case without touching its
+   *  reviewed copy; a new review binds them in contentReview.clueFactsSha256. See clue-facts.ts. */
+  clueFacts?: ClueFact[];
 
   // --- images (filenames inside the case folder) ---
   threadsImage: string; // the X-ray for the Threads challenge
@@ -96,7 +101,7 @@ export interface Case {
   };
 
   // --- filled by the tool ---
-  contentReview?: { sha256: string; reviewedAt: string; reviewer: string };
+  contentReview?: { sha256: string; reviewedAt: string; reviewer: string; clueFactsSha256?: string };
   generated?: {
     threadsCaption?: string;
     /** Hook-framing experiment B arm: the same case with its opening tension foregrounded.
@@ -131,6 +136,12 @@ export interface Case {
 export type CtaKey = "support" | "hopital" | "spotit" | "collection" | "vol2" | "rare" | "vol1" | "vol3" | "field" | "anxiety" | "challenge" | "viral10" | "ctvol1"
   // Weird X-Ray Case Files new line (2026-10-12). Used only when BOT_CTA_LINE=v2.
   | "freeround" | "inside" | "book" | "everyfile" | "keepcoming";
+
+/** One caption clue and the general teaching fact that explains it. `clue` quotes the story. */
+export interface ClueFact {
+  clue: string;
+  fact: string;
+}
 
 /** A resolved public image URL for a case file (built from config.githubRawBase). */
 export type ImageUrl = string;
@@ -167,6 +178,8 @@ export interface Condition {
   whyItMatters: string;
   treatment: string;
   takeaway: string;
+  /** Optional owner-vetted clue facts. When present the generator uses them instead of drafting. */
+  clueFacts?: ClueFact[];
   // IG slide content
   igTitle: string; // "THE HAND OF STONES"
   igOptions: [string, string, string]; // the A/B/C choices shown on the question slide
