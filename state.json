@@ -2462,7 +2462,9 @@
       "publishedCaption": "A patient with a heavy full feeling after meals and burps that taste of yesterday's dinner.\n\nThen the X-ray loaded 😭\n\nAnd the stomach had a lot to say.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00203-gastric-outlet-obstruction-scarred-pyloric-ulcer\",\"assignedAt\":\"2026-10-18T19:01:13.303Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18131363542692371",
+      "challengePostedAt": "2026-10-18T19:01:25.036Z"
     }
   },
   "posted": {
