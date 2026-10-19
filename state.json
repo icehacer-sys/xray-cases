@@ -1476,7 +1476,10 @@
         "text": "Answer: Osteoblastic bone metastases from prostate cancer\n\n👀 What you see:\nOne lumbar vertebra glows solid white with dense round white spots scattered through the right side of the patient's pelvis.\n\n💊 Treatment:\nIf bone metastases are suspected the workup includes PSA, biopsy, and a bone scan. Treatment then depends on the stage of the disease.",
         "reply_to_id": "17907301383665788",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":342}]"
-      }
+      },
+      "publishedId": "17961805008226673",
+      "publishedAt": "2026-10-19T19:24:59.248Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
