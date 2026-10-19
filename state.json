@@ -1480,6 +1480,16 @@
       "publishedId": "17961805008226673",
       "publishedAt": "2026-10-19T19:24:59.248Z",
       "confirmedPublished": true
+    },
+    "case:00204-osteoblastic-bone-metastases-from-prostate-cancer:cta": {
+      "creationId": "17894406612614054",
+      "createdAt": "2026-10-19T20:20:22.395Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "These X-rays have had over 170 million views and the question under almost every one is whether it can be fixed.\n\nSo I put 10 of the weirdest into one book that explains what each one is and what happens next in plain words.\n\nIt comes with a phone game too so you can guess before you flip 👇🏼\nbook.mednoteslab.com/?c=1019",
+        "reply_to_id": "17961805008226673",
+        "link_attachment": "https://book.mednoteslab.com/?c=card"
+      }
     }
   },
   "stages": {
