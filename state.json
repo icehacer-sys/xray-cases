@@ -2513,7 +2513,9 @@
       "publishedCaption": "A patient with a dull lower back ache blamed on an old mattress.\n\nThen the X-ray loaded 😭\n\nAnd then the spine had something to say about that mattress theory.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00204-osteoblastic-bone-metastases-from-prostate-cancer\",\"assignedAt\":\"2026-10-19T19:03:57.054Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "17907301383665788",
+      "challengePostedAt": "2026-10-19T19:04:06.729Z"
     }
   },
   "posted": {
