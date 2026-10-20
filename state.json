@@ -1493,6 +1493,17 @@
       "publishedId": "18017116412955490",
       "publishedAt": "2026-10-19T20:20:30.613Z",
       "confirmedPublished": true
+    },
+    "case:00205-ileocolic-intussusception-with-a-polypoid-lead-point:challenge": {
+      "creationId": "17894554251614054",
+      "createdAt": "2026-10-20T19:00:53.729Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00205-ileocolic-intussusception-with-a-polypoid-lead-point/xray.png",
+        "text": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "b2ccf32d6ca9c3338aba558110073c2645e47e98e9e316d49755f22c49280ed5:b78a7756b4bfb9a6866375057b05746a4d86606fbfa47b859283d4bc203aeec3:ab737052522d22b8c10c4eefdbedd857405bbbee5f245359401c852ee85fd0b2"
     }
   },
   "stages": {
@@ -2545,12 +2556,18 @@
       "answerCommentId": "17961805008226673",
       "answerPostedAt": "2026-10-19T19:24:59.248Z",
       "ctaPostedAt": "2026-10-19T20:20:32.179Z"
+    },
+    "00205-ileocolic-intussusception-with-a-polypoid-lead-point": {
+      "publishedCaption": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00205-ileocolic-intussusception-with-a-polypoid-lead-point\",\"assignedAt\":\"2026-10-20T19:00:46.486Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "count": 0
     }
   }
