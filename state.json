@@ -2564,7 +2564,9 @@
       "publishedCaption": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00205-ileocolic-intussusception-with-a-polypoid-lead-point\",\"assignedAt\":\"2026-10-20T19:00:46.486Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18392433658207307",
+      "challengePostedAt": "2026-10-20T19:01:00.594Z"
     }
   },
   "posted": {

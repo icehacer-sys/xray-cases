@@ -138,5 +138,13 @@
     "sha256": "8c2768c284008d62f488cad410ec2d981f2774d99b81612022fffb18d3ecc1fa",
     "approvedAt": "2026-10-12T13:51:13.000Z",
     "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset contrast strength 0.6 applied to the previously approved image sha256 29013f2115f578a7d1fe9c4f8ceb2479b46ad7a5670bf05ed0aab8c7894fa213). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00205-ileocolic-intussusception-with-a-polypoid-lead-point\",\"assignedAt\":\"2026-10-20T19:00:46.486Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18392433658207307",
+    "challengePostedAt": "2026-10-20T19:01:00.594Z"
   }
 }
