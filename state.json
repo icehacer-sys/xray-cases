@@ -1556,7 +1556,10 @@
         "text": "Answer: Annular colorectal carcinoma (apple core lesion)\n\n👀 What you see:\nA short ragged apple core narrowing with overhanging shoulders in the colon on the left side of the patient.\n\n🦴 Why it matters:\nCarcinoma of the large bowel can encircle the lumen and produce an apple core narrowing that leads to large bowel obstruction.\n\n💊 Treatment:\nIf biopsy confirms cancer the usual treatment is surgical resection of the involved segment after staging.",
         "reply_to_id": "18131755174775163",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":444}]"
-      }
+      },
+      "publishedId": "17929274139181560",
+      "publishedAt": "2026-10-21T19:23:53.649Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
