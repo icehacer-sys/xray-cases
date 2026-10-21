@@ -14176,5 +14176,117 @@
       "reposts": 3,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00199-traumatic-pneumocephalus",
+    "postId": "18079498634383460",
+    "measuredAt": "2026-10-21T16:41:49.774Z",
+    "publishedAt": "2026-10-14T19:01:58.238Z",
+    "ageHours": 165.66431555555556,
+    "experiment": {
+      "id": "case-00199-traumatic-pneumocephalus",
+      "assignedAt": "2026-10-14T19:01:49.532Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a headache and a runny nose that would not dry up.\n\nThen the X-ray loaded 😭\n\nAnd then the X-ray of the head stopped everyone in the room.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "answerDueAt": "2026-10-14T19:21:58.238Z",
+    "ctaDueAt": "2026-10-14T20:16:58.238Z",
+    "metrics": {
+      "views": 45913,
+      "likes": 262,
+      "replies": 276,
+      "reposts": 6,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00200-sigmoid-diverticulosis",
+    "postId": "17903856849668624",
+    "measuredAt": "2026-10-21T16:41:50.201Z",
+    "publishedAt": "2026-10-15T19:05:09.723Z",
+    "ageHours": 141.61124388888888,
+    "experiment": {
+      "id": "case-00200-sigmoid-diverticulosis",
+      "assignedAt": "2026-10-15T19:04:58.470Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with irregular bowel habits and some bloating.\n\nThen the X-ray loaded 😭\n\nAnd the answer was hiding in plain sight.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "answerDueAt": "2026-10-15T19:25:09.723Z",
+    "ctaDueAt": "2026-10-15T20:20:09.723Z",
+    "metrics": {
+      "views": 7141,
+      "likes": 131,
+      "replies": 140,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00202-laryngocele",
+    "postId": "18644902039045637",
+    "measuredAt": "2026-10-21T16:41:50.571Z",
+    "publishedAt": "2026-10-17T19:05:02.723Z",
+    "ageHours": 93.61329111111111,
+    "experiment": {
+      "id": "case-00202-laryngocele",
+      "assignedAt": "2026-10-17T19:04:50.269Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a soft bulge on one side of the neck that puffs up with hard blowing.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-17T19:25:02.723Z",
+    "ctaDueAt": "2026-10-17T20:20:02.723Z",
+    "metrics": {
+      "views": 4723,
+      "likes": 112,
+      "replies": 89,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00205-ileocolic-intussusception-with-a-polypoid-lead-point",
+    "postId": "18392433658207307",
+    "measuredAt": "2026-10-21T16:41:50.770Z",
+    "publishedAt": "2026-10-20T19:01:00.594Z",
+    "ageHours": 21.680604444444445,
+    "experiment": {
+      "id": "case-00205-ileocolic-intussusception-with-a-polypoid-lead-point",
+      "assignedAt": "2026-10-20T19:00:46.486Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-20T19:21:00.594Z",
+    "ctaDueAt": "2026-10-20T20:16:00.594Z",
+    "metrics": {
+      "views": 4567,
+      "likes": 92,
+      "replies": 73,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
