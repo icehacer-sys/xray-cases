@@ -13896,5 +13896,89 @@
       "reposts": 0,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00201-infrarenal-abdominal-aortic-aneurysm",
+    "postId": "18425195461157641",
+    "measuredAt": "2026-10-21T01:34:44.590Z",
+    "publishedAt": "2026-10-16T19:02:48.095Z",
+    "ageHours": 102.53235972222222,
+    "experiment": {
+      "id": "case-00201-infrarenal-abdominal-aortic-aneurysm",
+      "assignedAt": "2026-10-16T19:02:30.119Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a dull ache in the lower back that was put down to age.\n\nThen the X-ray loaded 😭\n\nAnd then the abdomen answered a question nobody thought to ask.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer and what happened next drop in the replies 👇🏼",
+    "answerDueAt": "2026-10-16T19:22:48.095Z",
+    "ctaDueAt": "2026-10-16T20:17:48.095Z",
+    "metrics": {
+      "views": 5905,
+      "likes": 114,
+      "replies": 153,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00203-gastric-outlet-obstruction-scarred-pyloric-ulcer",
+    "postId": "18131363542692371",
+    "measuredAt": "2026-10-21T01:34:45.214Z",
+    "publishedAt": "2026-10-18T19:01:25.036Z",
+    "ageHours": 54.555605,
+    "experiment": {
+      "id": "case-00203-gastric-outlet-obstruction-scarred-pyloric-ulcer",
+      "assignedAt": "2026-10-18T19:01:13.303Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a heavy full feeling after meals and burps that taste of yesterday's dinner.\n\nThen the X-ray loaded 😭\n\nAnd the stomach had a lot to say.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-18T19:21:25.036Z",
+    "ctaDueAt": "2026-10-18T20:16:25.036Z",
+    "metrics": {
+      "views": 9869,
+      "likes": 140,
+      "replies": 95,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00204-osteoblastic-bone-metastases-from-prostate-cancer",
+    "postId": "17907301383665788",
+    "measuredAt": "2026-10-21T01:34:45.415Z",
+    "publishedAt": "2026-10-19T19:04:06.729Z",
+    "ageHours": 30.51074611111111,
+    "experiment": {
+      "id": "case-00204-osteoblastic-bone-metastases-from-prostate-cancer",
+      "assignedAt": "2026-10-19T19:03:57.054Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a dull lower back ache blamed on an old mattress.\n\nThen the X-ray loaded 😭\n\nAnd then the spine had something to say about that mattress theory.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-19T19:24:06.729Z",
+    "ctaDueAt": "2026-10-19T20:19:06.729Z",
+    "metrics": {
+      "views": 6933,
+      "likes": 118,
+      "replies": 100,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
