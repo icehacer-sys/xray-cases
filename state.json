@@ -1600,6 +1600,16 @@
       "publishedId": "17919612171450063",
       "publishedAt": "2026-10-22T19:23:33.679Z",
       "confirmedPublished": true
+    },
+    "case:00207-takotsubo-cardiomyopathy:cta": {
+      "creationId": "17894837097614054",
+      "createdAt": "2026-10-22T20:18:58.369Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these X-rays keep stopping your scroll I made you a free round to play on your phone 😭\n\nIt has 6 X-rays with a spoon, a razor blade, and a nail hiding somewhere they should never be.\n\nGuess what each one is and then find out what happens next 👇🏼\nfree.mednoteslab.com/?c=1022",
+        "reply_to_id": "17919612171450063",
+        "link_attachment": "https://free.mednoteslab.com/?c=card"
+      }
     }
   },
   "stages": {
