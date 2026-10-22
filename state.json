@@ -2666,7 +2666,9 @@
       "publishedCaption": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00207-takotsubo-cardiomyopathy\",\"assignedAt\":\"2026-10-22T19:02:58.136Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18096011516656084",
+      "challengePostedAt": "2026-10-22T19:03:10.903Z"
     }
   },
   "posted": {

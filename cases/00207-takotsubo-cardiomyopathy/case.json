@@ -144,5 +144,13 @@
     "sha256": "5ab6eeea7f869f141eb9af55de10b5c20d8fc629eac6f16adbc71a7466a75fed",
     "approvedAt": "2026-10-12T13:51:13.000Z",
     "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset fluoro strength 0.5 applied to the previously approved image sha256 98139a6dbc488524ab859b8b0f86976d5e4c5b1d02bac0e6859e0d8ec78e5ec2). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00207-takotsubo-cardiomyopathy\",\"assignedAt\":\"2026-10-22T19:02:58.136Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18096011516656084",
+    "challengePostedAt": "2026-10-22T19:03:10.903Z"
   }
 }
