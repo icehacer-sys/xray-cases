@@ -1573,6 +1573,17 @@
       "publishedId": "18233427169325415",
       "publishedAt": "2026-10-21T20:19:28.485Z",
       "confirmedPublished": true
+    },
+    "case:00207-takotsubo-cardiomyopathy:challenge": {
+      "creationId": "17894830437614054",
+      "createdAt": "2026-10-22T19:03:05.560Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00207-takotsubo-cardiomyopathy/xray.png",
+        "text": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "98139a6dbc488524ab859b8b0f86976d5e4c5b1d02bac0e6859e0d8ec78e5ec2:cc06345c27f83b2f72f066fb59d467cd921f537585daaf6c8398c7fbe1da5831:dd213ef6fbf6df03b418c7c4764d4514f17698f2a6a7bd30df42f60300b340dc"
     }
   },
   "stages": {
@@ -2647,12 +2658,18 @@
       "answerCommentId": "17929274139181560",
       "answerPostedAt": "2026-10-21T19:23:53.649Z",
       "ctaPostedAt": "2026-10-21T20:19:30.112Z"
+    },
+    "00207-takotsubo-cardiomyopathy": {
+      "publishedCaption": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00207-takotsubo-cardiomyopathy\",\"assignedAt\":\"2026-10-22T19:02:58.136Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "count": 0
     }
   }
