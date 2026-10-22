@@ -1596,7 +1596,10 @@
         "text": "Answer: Takotsubo cardiomyopathy\n\n👀 What you see:\nThe left ventricle balloons into a big round flask at the apex while its base squeezes tight.\n\n🦴 Why it matters:\nTakotsubo mimics an acute MI with chest pain, breathlessness, ECG changes, and raised cardiac biomarkers.\n\n💊 Treatment:\nIf coronary angiography shows normal arteries the treatment is supportive heart failure care. Ventricular function usually recovers over weeks.",
         "reply_to_id": "18096011516656084",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":421}]"
-      }
+      },
+      "publishedId": "17919612171450063",
+      "publishedAt": "2026-10-22T19:23:33.679Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
