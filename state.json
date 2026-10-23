@@ -2717,7 +2717,9 @@
       "publishedCaption": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00208-ulcerative-colitis-with-lead-pipe-colon\",\"assignedAt\":\"2026-10-23T19:03:52.486Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18030752579899369",
+      "challengePostedAt": "2026-10-23T19:04:05.357Z"
     }
   },
   "posted": {

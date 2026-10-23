@@ -136,5 +136,13 @@
     "sha256": "41a0051b036b59bf590b77cf564487def4682b5dd2a456318a9e232541b90987",
     "approvedAt": "2026-10-12T13:51:13.000Z",
     "note": "Owner approved the film-realism pass on 2026-10-12 after reviewing a before/after sheet of these exact bytes (degrade.py preset contrast strength 0.6 applied to the previously approved image sha256 81469659f39032ce6eb3cb3b4dd6c0581688eae259580e10d5f569d0140a5a55). Same render and same finding; only softness, grain and tone changed. The automated verifier record in imageApproval is unchanged."
+  },
+  "stages": {
+    "publishedCaption": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00208-ulcerative-colitis-with-lead-pipe-colon\",\"assignedAt\":\"2026-10-23T19:03:52.486Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18030752579899369",
+    "challengePostedAt": "2026-10-23T19:04:05.357Z"
   }
 }
