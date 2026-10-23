@@ -1627,6 +1627,16 @@
       "publishedId": "18030752579899369",
       "publishedAt": "2026-10-23T19:04:05.357Z",
       "confirmedPublished": true
+    },
+    "case:00208-ulcerative-colitis-with-lead-pipe-colon:answer": {
+      "creationId": "17894977746614054",
+      "createdAt": "2026-10-23T19:24:56.199Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Ulcerative colitis with lead-pipe colon\n\n👀 What you see:\nThe whole colon is a smooth narrow tube with no haustral folds like a lead pipe.\n\n🦴 Why it matters:\nChronic ulcerative colitis scars the colon into a shortened featureless lead pipe on barium enema.\n\n💊 Treatment:\nIf disease is active it is treated with aminosalicylates and steroids. Colectomy is considered if medical therapy fails.",
+        "reply_to_id": "18030752579899369",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":393}]"
+      }
     }
   },
   "stages": {
