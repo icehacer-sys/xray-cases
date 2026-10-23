@@ -14988,5 +14988,89 @@
       "reposts": 2,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00202-laryngocele",
+    "postId": "18644902039045637",
+    "measuredAt": "2026-10-23T09:09:15.123Z",
+    "publishedAt": "2026-10-17T19:05:02.723Z",
+    "ageHours": 134.07011111111112,
+    "experiment": {
+      "id": "case-00202-laryngocele",
+      "assignedAt": "2026-10-17T19:04:50.269Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a soft bulge on one side of the neck that puffs up with hard blowing.\n\nThen the X-ray loaded 😭\n\nAnd the neck had a secret it only shared under pressure.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-17T19:25:02.723Z",
+    "ctaDueAt": "2026-10-17T20:20:02.723Z",
+    "metrics": {
+      "views": 4773,
+      "likes": 112,
+      "replies": 89,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00205-ileocolic-intussusception-with-a-polypoid-lead-point",
+    "postId": "18392433658207307",
+    "measuredAt": "2026-10-23T09:09:15.625Z",
+    "publishedAt": "2026-10-20T19:01:00.594Z",
+    "ageHours": 62.13750861111111,
+    "experiment": {
+      "id": "case-00205-ileocolic-intussusception-with-a-polypoid-lead-point",
+      "assignedAt": "2026-10-20T19:00:46.486Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-20T19:21:00.594Z",
+    "ctaDueAt": "2026-10-20T20:16:00.594Z",
+    "metrics": {
+      "views": 5925,
+      "likes": 103,
+      "replies": 74,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00207-takotsubo-cardiomyopathy",
+    "postId": "18096011516656084",
+    "measuredAt": "2026-10-23T09:09:15.875Z",
+    "publishedAt": "2026-10-22T19:03:10.903Z",
+    "ageHours": 14.101381111111111,
+    "experiment": {
+      "id": "case-00207-takotsubo-cardiomyopathy",
+      "assignedAt": "2026-10-22T19:02:58.136Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-22T19:23:10.903Z",
+    "ctaDueAt": "2026-10-22T20:18:10.903Z",
+    "metrics": {
+      "views": 3421,
+      "likes": 105,
+      "replies": 104,
+      "reposts": 3,
+      "quotes": 0
+    }
   }
 ]
