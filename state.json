@@ -1613,6 +1613,17 @@
       "publishedId": "18095429432669400",
       "publishedAt": "2026-10-22T20:19:09.288Z",
       "confirmedPublished": true
+    },
+    "case:00208-ulcerative-colitis-with-lead-pipe-colon:challenge": {
+      "creationId": "17894976054614054",
+      "createdAt": "2026-10-23T19:03:59.252Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00208-ulcerative-colitis-with-lead-pipe-colon/xray.png",
+        "text": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "11e5a241722f8592c8f15021a2804a5a2a26ec09c81f54240f1bae4e77eba13e:8f4982bed1697919c08a1c366373c4bf6c4bc8f0f90317965ff10157459c61e2:643c6a63988b93d425ee67029cdafe797886792feccaeffd49df760dd4b9ab69"
     }
   },
   "stages": {
@@ -2698,12 +2709,18 @@
       "answerCommentId": "17919612171450063",
       "answerPostedAt": "2026-10-22T19:23:33.679Z",
       "ctaPostedAt": "2026-10-22T20:19:10.748Z"
+    },
+    "00208-ulcerative-colitis-with-lead-pipe-colon": {
+      "publishedCaption": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00208-ulcerative-colitis-with-lead-pipe-colon\",\"assignedAt\":\"2026-10-23T19:03:52.486Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-22",
+      "date": "2026-10-23",
       "count": 0
     }
   }
