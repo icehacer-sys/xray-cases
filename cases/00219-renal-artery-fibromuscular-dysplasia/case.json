@@ -1,0 +1,147 @@
+{
+  "folder": "00219-renal-artery-fibromuscular-dysplasia",
+  "number": 219,
+  "diagnosis": "Renal artery fibromuscular dysplasia",
+  "aliases": [
+    "fibromuscular dysplasia",
+    "FMD",
+    "renal artery FMD",
+    "string of beads",
+    "renovascular hypertension"
+  ],
+  "symptom": "headaches and blood pressure that would not come down",
+  "hook": "the kidney artery looked like a string of pearls",
+  "whatYouSee": "The right renal artery alternates between tight narrowings and small bulges like a string of beads.",
+  "whyItMatters": "Fibromuscular dysplasia is a noninflammatory nonatherosclerotic disease of the artery wall. It typically affects young women and causes renovascular hypertension. Atherosclerosis instead narrows the origin of the artery in older people.",
+  "treatment": "Balloon angioplasty is the usual treatment with a stent only if needed.",
+  "takeaway": "A string of beads in the middle of the renal artery in a young woman with hypertension is fibromuscular dysplasia.",
+  "igOptions": [
+    "A. Fibromuscular dysplasia",
+    "B. Atherosclerotic renal artery stenosis",
+    "C. Takayasu arteritis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-05T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:09:55.059Z"
+  },
+  "condition": {
+    "diagnosis": "Renal artery fibromuscular dysplasia",
+    "aliases": [
+      "fibromuscular dysplasia",
+      "FMD",
+      "renal artery FMD",
+      "string of beads",
+      "renovascular hypertension"
+    ],
+    "symptom": "headaches and blood pressure that would not come down",
+    "hook": "the kidney artery looked like a string of pearls",
+    "view": "renal digital subtraction angiogram, frontal view",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal digital subtraction angiogram of the abdominal aorta and renal arteries with a flush catheter in the aorta, dark contrast-filled vessels on a pale grey background. The right renal artery shows repeated short narrowings alternating with small round bulges along its middle and distal segment like a string of beads or pearls, while its origin from the aorta is normal. The left renal artery is smooth and normal calibre. Both kidneys show normal branching arteries and a renal blush. The aorta is smooth with no plaque. The lumbar spine shows faintly.",
+    "whatYouSee": "The right renal artery alternates between tight narrowings and small bulges like a string of beads.",
+    "whyItMatters": "Fibromuscular dysplasia is a noninflammatory nonatherosclerotic disease of the artery wall. It typically affects young women and causes renovascular hypertension. Atherosclerosis instead narrows the origin of the artery in older people.",
+    "treatment": "Balloon angioplasty is the usual treatment with a stent only if needed.",
+    "takeaway": "A string of beads in the middle of the renal artery in a young woman with hypertension is fibromuscular dysplasia.",
+    "igTitle": "THE STRING OF PEARLS",
+    "igOptions": [
+      "Fibromuscular dysplasia",
+      "Atherosclerotic renal artery stenosis",
+      "Takayasu arteritis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 [VM 005] Radiology of the kidney.pdf, original page 23 (atlas p626)",
+      "Textbook addition: Radiopaedia 'Fibromuscular dysplasia' for the age and sex pattern"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal digital subtraction angiogram of the abdominal aorta and renal arteries with a flush catheter in the aorta, dark contrast-filled vessels on a pale grey background. The right renal artery shows repeated short narrowings alternating with small round bulges along its middle and distal segment like a string of beads or pearls, while its origin from the aorta is normal. The left renal artery is smooth and normal calibre. Both kidneys show normal branching arteries and a renal blush. The aorta is smooth with no plaque. The lumbar spine shows faintly.",
+      "The visible anatomy matches the requested renal digital subtraction angiogram, frontal view and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "c29c7c8af3e869351bba36ac5d64fed393ae4f695f2f181be9f046b41046ca9d",
+    "conditionSha256": "2f6c09074c3cc4e66fadb379494bb836a0f1121d820a4c18ae4c2731dc436f4e",
+    "clinicalContextSha256": "a9cd1c66a4a5e136e57795b8409d57285838eb4d73dddf181af41473d1109293",
+    "verifiedAt": "2026-10-25T21:09:55.067Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Frontal digital subtraction angiogram of the abdominal aorta and renal arteries with a flush catheter in the aorta, dark contrast-filled vessels on a pale grey background. The right renal artery shows repeated short narrowings alternating with small round bulges along its middle and distal segment like a string of beads or pearls, while its origin from the aorta is normal. The left renal artery is smooth and normal calibre. Both kidneys show normal branching arteries and a renal blush. The aorta is smooth with no plaque. The lumbar spine shows faintly.",
+        "observed": "Frontal abdominal aortogram with a catheter in the upper aorta and dark contrast-filled vessels. The right renal artery has a beaded pattern in its mid to distal segment with a normal origin. The left renal artery is smooth and normal in caliber. Both kidneys show normal intrarenal branching and a nephrogram. The aorta is smooth. The lumbar spine is faintly visible.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested renal digital subtraction angiogram, frontal view and the declared age and anatomical exceptions.",
+        "observed": "The anatomy matches a frontal renal angiogram, with a normal aortic bifurcation into the iliac arteries, a single stomach bubble and continuous bowel gas. Skeletal maturity is not contradicted.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP) digital subtraction-type abdominal aortogram with a catheter tip in the upper abdominal aorta, projected at about the celiac/SMA level, and contrast opacifying the aorta, renal arteries and iliac arteries.",
+        "The right renal artery has a beaded, alternating stenosis and dilatation pattern (string-of-beads) in its mid to distal segment, before it branches within the kidney.",
+        "The left renal artery is smooth and of normal caliber, with normal intrarenal branching and a normal nephrogram.",
+        "The right kidney shows a preserved arterial tree and cortical blush, with no definite infarct or occlusion.",
+        "The abdominal aorta is smooth and of normal caliber, with no aneurysm or significant stenosis, and it bifurcates into the common iliac arteries that continue into the pelvis.",
+        "A large lucent gas-filled stomach or bowel structure lies in the left upper abdomen, with additional gas-filled bowel loops in both lower quadrants, and the lumbar spine is faintly seen.",
+        "Exposure and brightness are uneven, with a bright, overexposed right lateral edge."
+      ],
+      "differential": [
+        "Fibromuscular dysplasia (medial fibroplasia) of the right renal artery",
+        "Segmental arterial mediolysis or renal artery vasculitis",
+        "Atherosclerotic renal artery disease (less likely given the classic beaded morphology and the smooth aorta)"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy is seen; the renal arteries, aorta and iliac bifurcation follow a normal configuration.",
+        "The beaded right renal artery is a genuine vascular finding rather than an anatomical impossibility or artifact.",
+        "The uneven exposure at the right edge and the overlying bowel gas are acquisition features and do not indicate pathology."
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The right renal artery shows a classic string-of-beads pattern of alternating short stenoses and round dilatations in its mid to distal segment, with a normal origin. The left renal artery, the aorta and the intrarenal branching are smooth and normal. This pattern with hypertension and headaches in a young adult favors renal artery fibromuscular dysplasia (medial fibroplasia). Vasculitis and segmental arterial mediolysis are less likely because the beading is classic and there are no aneurysms, occlusions or infarcts. Atherosclerosis is unlikely given the smooth aorta and the normal origin. The uneven exposure at the right edge and the overlying bowel gas are acquisition features. There is a single gas-filled stomach bubble, continuous bowel loops, two kidneys, a faint midline lumbar spine and a flush catheter in the aorta, so there are no anatomical impossibilities. The image has no lettering."
+  },
+  "clueFacts": [
+    {
+      "clue": "headaches",
+      "fact": "Renal artery fibromuscular dysplasia can cause renovascular hypertension, and headaches are a common symptom of that raised blood pressure; FMD can also involve the arteries to the brain."
+    }
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What everyday object does this vessel remind you of?",
+  "seedHint": "Follow the vessel from the kidney outward and look at how its edges change along the way.",
+  "teaser": "Nothing about the pressure readings prepared anyone for this one",
+  "generated": {
+    "threadsCaption": "A patient with headaches and blood pressure that would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with headaches that seemed like the usual kind and a blood pressure reading that just would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Renal artery fibromuscular dysplasia\n\n👀 What you see:\nThe right renal artery alternates between tight narrowings and small bulges like a string of beads.\n\n🦴 Why it matters:\nFibromuscular dysplasia is a noninflammatory nonatherosclerotic disease of the artery wall. It typically affects young women and causes renovascular hypertension.\n\n💊 Treatment:\nBalloon angioplasty is the usual treatment with a stent only if needed.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Error: Copy review failed: [\"threadsCaption calls the image an \\\"X-ray\\\" although it is a digital subtraction angiogram. This misdescribes the modality.\",\"threadsCaptionAlt also says \\\"X-ray\\\", and its \\\"headaches that seemed like the usual kind\\\" adds a patient detail not in the supplied context.\",\"threadsAnswer treatment is not conditional. \\\"Percutaneous transluminal angioplasty is the interventional treatment\\\" states a definitive plan, and the case is only illustrative with no confirmation evidence. It should be framed as general options, such as \\\"may be considered\\\".\",\"The clueFacts entry for \\\"headaches\\\" is too broad and partly unsupported. It adds that FMD can involve brain arteries, which is not supplied and does not explain the caption clue. It also calls headaches a \\\"common symptom\\\" without support in the supplied sources or context.\",\"whyItMatters and takeaway state that FMD typically affects young women and that the case is in \\\"a young woman\\\". The image context gives only a young-adult age band, not sex, and the projection cannot establish sex.\",\"The takeaway \\\"A string of beads ... in a young woman with hypertension is fibromuscular dysplasia\\\" overstates certainty. A single angiographic projection is illustrative and cannot establish the diagnosis alone.\"]"
+  ],
+  "contentReview": {
+    "sha256": "b3b3afbd7710a404d722380480ce3633da5f69c8dce95521209974ae5e68a157",
+    "reviewedAt": "2026-10-25T21:15:38.917Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "a8eb1c18ef6081915923f0f61df587be3a83457b5f907d144b9fa88b8aa8ddc0"
+  }
+}

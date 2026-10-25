@@ -1,0 +1,146 @@
+{
+  "folder": "00215-tuberculous-autonephrectomy",
+  "number": 215,
+  "diagnosis": "Tuberculous autonephrectomy",
+  "aliases": [
+    "tuberculous autonephrectomy",
+    "autonephrectomy",
+    "putty kidney",
+    "cement kidney",
+    "renal tuberculosis",
+    "genitourinary tuberculosis",
+    "tuberculous kidney"
+  ],
+  "symptom": "peeing a lot more often for months",
+  "hook": "the whole kidney had turned into a lump of chalk",
+  "whatYouSee": "The left kidney is replaced by a dense lump of chalky calcium that still keeps a rough kidney shape.",
+  "whyItMatters": "This is the classic picture of end-stage tuberculosis of the kidney. The destroyed kidney calcifies into a nonfunctioning mass called a putty kidney. Classic clues are urinary frequency and sterile pyuria.",
+  "treatment": "Standard antituberculous therapy treats the infection. A painful or infected nonfunctioning kidney may be removed by nephrectomy.",
+  "takeaway": "A chalky nonfunctioning kidney with a putty texture is tuberculous autonephrectomy.",
+  "igOptions": [
+    "A. Tuberculous autonephrectomy",
+    "B. Staghorn calculus",
+    "C. Medullary nephrocalcinosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-01T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:07:22.554Z"
+  },
+  "condition": {
+    "diagnosis": "Tuberculous autonephrectomy",
+    "aliases": [
+      "tuberculous autonephrectomy",
+      "autonephrectomy",
+      "putty kidney",
+      "cement kidney",
+      "renal tuberculosis",
+      "genitourinary tuberculosis",
+      "tuberculous kidney"
+    ],
+    "symptom": "peeing a lot more often for months",
+    "hook": "the whole kidney had turned into a lump of chalk",
+    "view": "AP abdomen X-ray (KUB)",
+    "ageBand": "middle-aged",
+    "keyFindings": "Plain AP abdominal radiograph centred on the kidneys, with the bottom edge of the film above the pubic symphysis. In the left renal fossa the left kidney is replaced by a dense lobulated amorphous chalk-white calcified mass that keeps a rough kidney outline, with clumped putty-like calcification filling it and no normal soft tissue kidney shadow. The right kidney outline is normal size and uncalcified. The lumbar spine, lower ribs, psoas outlines and bowel gas pattern look normal.",
+    "whatYouSee": "The left kidney is replaced by a dense lump of chalky calcium that still keeps a rough kidney shape.",
+    "whyItMatters": "This is the classic picture of end-stage tuberculosis of the kidney. The destroyed kidney calcifies into a nonfunctioning mass called a putty kidney. Classic clues are urinary frequency and sterile pyuria.",
+    "treatment": "Standard antituberculous therapy treats the infection. A painful or infected nonfunctioning kidney may be removed by nephrectomy.",
+    "takeaway": "A chalky nonfunctioning kidney with a putty texture is tuberculous autonephrectomy.",
+    "igTitle": "THE CHALK KIDNEY",
+    "igOptions": [
+      "Tuberculous autonephrectomy",
+      "Staghorn calculus",
+      "Medullary nephrocalcinosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Putty kidney' and 'Genitourinary tuberculosis'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Plain AP abdominal radiograph centred on the kidneys, with the bottom edge of the film above the pubic symphysis. In the left renal fossa the left kidney is replaced by a dense lobulated amorphous chalk-white calcified mass that keeps a rough kidney outline, with clumped putty-like calcification filling it and no normal soft tissue kidney shadow. The right kidney outline is normal size and uncalcified. The lumbar spine, lower ribs, psoas outlines and bowel gas pattern look normal.",
+      "The visible anatomy matches the requested AP abdomen X-ray (KUB) and the declared age and anatomical exceptions."
+    ],
+    "used": true,
+    "captionSymptom": "a constant urge to pee for months"
+  },
+  "imageApproval": {
+    "sha256": "58d0e3a218f4a4c37938e5d453ad5ea7435529ae751b793a6de1062d962f7621",
+    "conditionSha256": "64769b9c98a433a34beec690ec3c08883dbd378e1618db06aeb464eb6b433923",
+    "clinicalContextSha256": "ecc18cd420e5398e8f2f9b5338520471da6a7b14b6007361bf5139ad0cd06787",
+    "verifiedAt": "2026-10-25T21:07:22.561Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Dense granular popcorn-like calcified cluster lies in the left upper abdomen near the gastric bubble and splenic flexure rather than as a kidney-shaped mass in the renal fossa\",\"Left kidney fossa shows no clear kidney outline, and the right kidney lies unusually low and medial relative to the liver\",\"Gastric air bubble sits high and lateral with an air-fluid level, an unexplained gastric finding\",\"Oblique linear lines cross the abdomen\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal abdominal radiograph, apparently AP supine or semi-erect, with the lower chest, full lumbar spine and pelvis included.",
+        "Large clustered mass of dense, granular, popcorn-like radiopacities in the left upper abdomen, in the expected gastric or splenic flexure region, with a lobulated outline and mottled internal texture.",
+        "Air-fluid level or gas bubble in the gastric fundus at the left upper quadrant, suggesting an upright or semi-upright position; the gastric lumen appears otherwise opacified or soft-tissue dense.",
+        "Multiple air-filled loops of bowel in both lower quadrants with haustral pattern; no definite marked dilatation.",
+        "Right renal outline appears as a smooth oval soft-tissue density; no obvious calculus is seen on it.",
+        "Linear thin lines crossing the abdomen obliquely, likely skin folds, gown or clothing artifacts or tubing.",
+        "Vertebral column is straight with no obvious fracture; the pelvis is symmetric, and the sacroiliac joints and hips are grossly unremarkable.",
+        "Image is slightly rotated, with some beam-hardening and edge vignetting artifact."
+      ],
+      "differential": [
+        "Ingested radiopaque material (pills, concretions or foreign bodies) aggregated in the stomach or bowel, such as a pharmacobezoar or ingested heavy-metal or iron tablets",
+        "Gastric bezoar with calcific or contrast-coated content",
+        "Residual oral contrast or barium within a bowel loop or diverticulum"
+      ],
+      "anatomyConcerns": [
+        "The dense granular cluster is unusually discrete and sharply marginated for normal bowel content and does not match a normal organ calcification pattern, so it is likely extrinsic or ingested material rather than native anatomy.",
+        "Its position relative to the gas bubble suggests intragastric or proximal colonic location, but this cannot be confirmed on a single projection.",
+        "Oblique linear lines are acquisition or clothing artifacts, not anatomic structures.",
+        "No impossible anatomy identified; the left kidney is not clearly seen, likely obscured by bowel gas and the dense material."
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Dense granular popcorn-like calcified cluster lies in the left upper abdomen near the gastric bubble and splenic flexure rather than as a kidney-shaped mass in the renal fossa\",\"Left kidney fossa shows no clear kidney outline, and the right kidney lies unusually low and medial relative to the liver\",\"Gastric air bubble sits high and lateral with an air-fluid level, an unexplained gastric finding\",\"Oblique linear lines cross the abdomen\"]",
+    "Error: Copy review failed: [\"threadsCaptionAlt adds an unsupported patient detail, \\\"nothing else that seemed worth a visit\\\", which is not in the supplied case.\",\"threadsAnswer states \\\"This is end-stage tuberculosis of the kidney\\\" as fact, but certainty is illustrative with no confirmation evidence. A plain KUB cannot establish tuberculosis as the cause of the calcification, so the text overstates what the projection shows.\",\"The answer wording \\\"The infection destroys the kidney and it calcifies\\\" presents the pathogenesis as established for this image, rather than as the typical teaching explanation.\",\"Standard antituberculous therapy is said to \\\"treat the infection\\\" without any conditional framing. It should be described as a general option, not as applying to this simulated case.\",\"The clueFact asserts that frequency occurs \\\"because\\\" infection spreads to the bladder. It does not mention that this is a typical mechanism rather than established for this case. It also leaves out sterile pyuria, which whyItMatters names as a classic clue, so it only partly explains the clue set.\"]"
+  ],
+  "clueFacts": [
+    {
+      "clue": "peeing a lot more often for months",
+      "fact": "In renal tuberculosis, urinary frequency over months can occur because infection often spreads to the bladder, where inflammation and a shrunken, irritable bladder wall reduce capacity."
+    }
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What would you guess a chalky organ is made of?",
+  "seedHint": "Look at the flank on one side and ask if that shape should be there.",
+  "teaser": "Nothing about the bladder prepared anyone for this one",
+  "generated": {
+    "threadsCaption": "A patient with a constant urge to pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a constant urge to pee for months and nothing else that seemed worth a visit.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Tuberculous autonephrectomy\n\n👀 What you see:\nThe left kidney is replaced by a dense lump of chalky calcium that still keeps a rough kidney shape.\n\n🦴 Why it matters:\nThis is the classic picture of end-stage tuberculosis of the kidney. The destroyed kidney calcifies into a nonfunctioning mass called a putty kidney.\n\n💊 Treatment:\nStandard antituberculous therapy treats the infection. A painful or infected nonfunctioning kidney may be removed by nephrectomy.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "captionSymptom": "a constant urge to pee for months",
+  "contentReview": {
+    "sha256": "d662928ccda4ad69747e78ed7942c33facf1b77048e3400ced5f20aff7f2a25b",
+    "reviewedAt": "2026-10-25T21:15:38.868Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "bfbca692e44f0e03756a512f8d6a7ccc1ded0404743554b10864811781390c68"
+  },
+  "ownerImageOverride": {
+    "sha256": "58d0e3a218f4a4c37938e5d453ad5ea7435529ae751b793a6de1062d962f7621",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "folder": "00210-moyamoya-disease",
+  "number": 210,
+  "diagnosis": "Moyamoya disease",
+  "aliases": [
+    "moyamoya",
+    "moyamoya disease",
+    "moyamoya syndrome",
+    "puff of smoke",
+    "spontaneous occlusion of the circle of Willis"
+  ],
+  "symptom": "brief spells of arm weakness after crying or blowing hard",
+  "captionSymptom": "headaches and an arm that sometimes felt heavy",
+  "hook": "a puff of smoke deep inside the brain",
+  "whatYouSee": "The end of the left internal carotid artery is narrowed and a hazy cloud of tiny collateral vessels fills the base of the brain like a puff of smoke.",
+  "whyItMatters": "Moyamoya is a progressive narrowing of the ends of the internal carotid arteries. The brain grows fragile collateral vessels to compensate and moyamoya means puff of smoke in Japanese. Children get strokes and TIAs that are often triggered by crying or hyperventilation.",
+  "treatment": "Surgical revascularisation brings new blood flow to the brain. Antiplatelet drugs are used to lower the stroke risk.",
+  "takeaway": "Narrowed carotid ends with a puff of smoke collateral network is moyamoya.",
+  "igOptions": [
+    "A. Moyamoya disease",
+    "B. Cerebral arteriovenous malformation",
+    "C. Cerebral vasculitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-27T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:03:53.691Z"
+  },
+  "condition": {
+    "diagnosis": "Moyamoya disease",
+    "aliases": [
+      "moyamoya",
+      "moyamoya disease",
+      "moyamoya syndrome",
+      "puff of smoke",
+      "spontaneous occlusion of the circle of Willis"
+    ],
+    "symptom": "brief spells of arm weakness after crying or blowing hard",
+    "captionSymptom": "headaches and an arm that sometimes felt heavy",
+    "hook": "a puff of smoke deep inside the brain",
+    "view": "frontal (AP) cerebral angiogram, left internal carotid injection",
+    "ageBand": "child",
+    "keyFindings": "Frontal (AP) digital subtraction cerebral angiogram after injection of the left internal carotid artery, shown as dark contrast-filled vessels on a pale grey background. The terminal left internal carotid artery narrows severely and the first parts of the left middle and anterior cerebral arteries are barely seen. Instead a dense tangled network of countless tiny fine collateral vessels fills the region of the basal ganglia just above the carotid terminus, forming a hazy cloud like a puff of cigarette smoke. Distal cortical branches fill faintly. The skull outline is faint. No aneurysm and no early draining vein.",
+    "whatYouSee": "The end of the left internal carotid artery is narrowed and a hazy cloud of tiny collateral vessels fills the base of the brain like a puff of smoke.",
+    "whyItMatters": "Moyamoya is a progressive narrowing of the ends of the internal carotid arteries. The brain grows fragile collateral vessels to compensate and moyamoya means puff of smoke in Japanese. Children get strokes and TIAs that are often triggered by crying or hyperventilation.",
+    "treatment": "Surgical revascularisation brings new blood flow to the brain. Antiplatelet drugs are used to lower the stroke risk.",
+    "takeaway": "Narrowed carotid ends with a puff of smoke collateral network is moyamoya.",
+    "igTitle": "THE PUFF OF SMOKE",
+    "igOptions": [
+      "Moyamoya disease",
+      "Cerebral arteriovenous malformation",
+      "Cerebral vasculitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Moyamoya disease'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal (AP) digital subtraction cerebral angiogram after injection of the left internal carotid artery, shown as dark contrast-filled vessels on a pale grey background. The terminal left internal carotid artery narrows severely and the first parts of the left middle and anterior cerebral arteries are barely seen. Instead a dense tangled network of countless tiny fine collateral vessels fills the region of the basal ganglia just above the carotid terminus, forming a hazy cloud like a puff of cigarette smoke. Distal cortical branches fill faintly. The skull outline is faint. No aneurysm and no early draining vein.",
+      "The visible anatomy matches the requested frontal (AP) cerebral angiogram, left internal carotid injection and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "698b22da79d2a533bd3a515c899b6d3af6d9144537b94bb59d010cf0f834538e",
+    "conditionSha256": "bff6d05546dd0e273615751604393766ae4f82289b4319ef4fdd3e3012ff4a74",
+    "clinicalContextSha256": "c06d0424261aab1bb150aa51229d32633439736b42c80fdc122e406e84d993f6",
+    "verifiedAt": "2026-10-25T21:03:53.702Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Dense tangled nidus-like vascular cluster in the central/right supratentorial region with serpentine vessels, which reads as an AVM rather than moyamoya collaterals\",\"Large tortuous cervical and petrous ICA with a hairpin loop, much more prominent than expected\",\"Separate branching vessel pattern on the image left that does not connect coherently to the injected carotid, so the injection source and laterality are unclear\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP) projection digital subtraction-style catheter angiogram of the head and neck, with iodinated contrast in the arterial phase.",
+        "Contrast opacifies a tortuous internal carotid artery on the image right of the neck, with a looping petrous/cavernous course, and fills the intracranial branches.",
+        "A dense, tangled cluster of small serpentine vessels lies in the central to image-right supratentorial region, consistent with a nidus.",
+        "The nidus is fed by enlarged branches arising from the supraclinoid ICA/MCA–ACA territory. No definite early draining vein is clearly shown on this single frame.",
+        "On the image left, a separate injected vessel shows an MCA/ACA-type branching pattern with a prominent sylvian-type loop and distal cortical branches. It is separate from the nidus.",
+        "Overall the cortical arterial branches appear otherwise normal in caliber, with no definite occlusion.",
+        "Skull, facial bones, dentition and shoulders are visible in the background, with no obvious fracture."
+      ],
+      "differential": [
+        "Cerebral arteriovenous malformation (brain AVM) with a compact nidus",
+        "Hypervascular tumor with tumor blush, such as a vascular glioma or metastasis (less likely given the discrete tangled nidus)",
+        "Dural or pial arteriovenous fistula (less likely, since a discrete nidus is seen)"
+      ],
+      "anatomyConcerns": [
+        "The injected vessel pattern is unusual: the large tortuous vessel with the nidus is on the image right, while a separate branching vessel is on the image left. This could reflect crossflow through the anterior communicating artery or a bilateral/overlapping projection, and it needs confirmation of the injected vessel and laterality.",
+        "The marked cervical ICA tortuosity looping appears to be a normal variant or acquired, and is not impossible anatomy.",
+        "No definite impossible anatomy is seen; the apparent asymmetry is probably due to projection, head rotation or crossflow."
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Dense tangled nidus-like vascular cluster in the central/right supratentorial region with serpentine vessels, which reads as an AVM rather than moyamoya collaterals\",\"Large tortuous cervical and petrous ICA with a hairpin loop, much more prominent than expected\",\"Separate branching vessel pattern on the image left that does not connect coherently to the injected carotid, so the injection source and laterality are unclear\"]",
+    "Error: challenge or hint reveals diagnosis/alias"
+  ],
+  "clueFacts": [
+    {
+      "clue": "headaches",
+      "fact": "In moyamoya disease, headaches are common and can occur because reduced blood flow and the dilated collateral vessels at the base of the brain may irritate pain-sensitive structures."
+    },
+    {
+      "clue": "an arm that sometimes felt heavy",
+      "fact": "In moyamoya disease, an arm that feels heavy can reflect a TIA, since narrowed carotid ends reduce blood flow to the brain area that controls arm movement, causing temporary weakness."
+    }
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What does this wispy cloud look like to you?",
+  "seedHint": "Look at the base of the brain on one side and ask what that hazy cloud is doing there.",
+  "teaser": "Nothing about the head or the arm prepared anyone for this one",
+  "generated": {
+    "threadsCaption": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a few ordinary headaches and an arm that sometimes felt heavy but never enough to seem worth a visit.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Moyamoya disease\n\n👀 What you see:\nThe end of the left internal carotid artery is narrowed and a hazy cloud of tiny collateral vessels fills the base of the brain like a puff of smoke.\n\n🦴 Why it matters:\nMoyamoya is a progressive narrowing of the ends of the internal carotid arteries.\n\n💊 Treatment:\nSurgical revascularisation brings new blood flow to the brain. Antiplatelet drugs are used to lower the stroke risk.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "contentReview": {
+    "sha256": "c0700ff692729a3f2c5f748342ab3c8cfa5501af242678ef28f1a24869511b87",
+    "reviewedAt": "2026-10-25T21:15:38.811Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "ade17fcad8888dde7c07bc6c5fac116cef390db856cafc4d71ef31699c6137be"
+  },
+  "ownerImageOverride": {
+    "sha256": "698b22da79d2a533bd3a515c899b6d3af6d9144537b94bb59d010cf0f834538e",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "folder": "00213-supracardiac-total-anomalous-pulmonary-venous-return",
+  "number": 213,
+  "diagnosis": "Supracardiac total anomalous pulmonary venous return",
+  "aliases": [
+    "TAPVR",
+    "TAPVC",
+    "total anomalous pulmonary venous return",
+    "total anomalous pulmonary venous connection",
+    "snowman heart",
+    "figure of 8 heart",
+    "supracardiac TAPVR"
+  ],
+  "symptom": "a child who got tired and breathless while playing",
+  "hook": "the heart looked exactly like a snowman",
+  "whatYouSee": "The heart and a widened upper mediastinum make a figure of 8 like a snowman with busy lung vessels.",
+  "whyItMatters": "In supracardiac TAPVR all four pulmonary veins drain into a vertical vein that empties into the innominate vein and the superior vena cava. The dilated veins form the snowman head. Survival depends on an atrial septal defect that lets mixed blood reach the left heart.",
+  "treatment": "Treatment is surgery to reconnect the pulmonary veins to the left atrium. Obstructed forms are a neonatal emergency.",
+  "takeaway": "A snowman heart on a chest X-ray is supracardiac TAPVR.",
+  "igOptions": [
+    "A. Supracardiac total anomalous pulmonary venous return",
+    "B. Transposition of the great arteries",
+    "C. Tetralogy of Fallot"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-30T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:05:47.078Z"
+  },
+  "condition": {
+    "diagnosis": "Supracardiac total anomalous pulmonary venous return",
+    "aliases": [
+      "TAPVR",
+      "TAPVC",
+      "total anomalous pulmonary venous return",
+      "total anomalous pulmonary venous connection",
+      "snowman heart",
+      "figure of 8 heart",
+      "supracardiac TAPVR"
+    ],
+    "symptom": "a child who got tired and breathless while playing",
+    "hook": "the heart looked exactly like a snowman",
+    "view": "PA chest X-ray",
+    "ageBand": "child",
+    "keyFindings": "PA chest radiograph of a child. The heart and upper mediastinum together form a figure of 8 like a snowman: the lower round part is the enlarged heart and the upper round part is a wide smooth bulging superior mediastinum on both sides, made by a dilated vertical vein on the left, a dilated innominate vein across the top and a dilated superior vena cava on the right. The lungs show increased pulmonary vascular markings (plethora). The ribs, clavicles and spine are appropriate for a child with normal number and shape. There is no pleural effusion.",
+    "whatYouSee": "The heart and a widened upper mediastinum make a figure of 8 like a snowman with busy lung vessels.",
+    "whyItMatters": "In supracardiac TAPVR all four pulmonary veins drain into a vertical vein that empties into the innominate vein and the superior vena cava. The dilated veins form the snowman head. Survival depends on an atrial septal defect that lets mixed blood reach the left heart.",
+    "treatment": "Treatment is surgery to reconnect the pulmonary veins to the left atrium. Obstructed forms are a neonatal emergency.",
+    "takeaway": "A snowman heart on a chest X-ray is supracardiac TAPVR.",
+    "igTitle": "THE SNOWMAN HEART",
+    "igOptions": [
+      "Supracardiac total anomalous pulmonary venous return",
+      "Transposition of the great arteries",
+      "Tetralogy of Fallot"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Snowman sign (heart)' and 'Total anomalous pulmonary venous return'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "PA chest radiograph of a child. The heart and upper mediastinum together form a figure of 8 like a snowman: the lower round part is the enlarged heart and the upper round part is a wide smooth bulging superior mediastinum on both sides, made by a dilated vertical vein on the left, a dilated innominate vein across the top and a dilated superior vena cava on the right. The lungs show increased pulmonary vascular markings (plethora). The ribs, clavicles and spine are appropriate for a child with normal number and shape. There is no pleural effusion.",
+      "The visible anatomy matches the requested PA chest X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true,
+    "captionSymptom": "breathlessness and tiredness every time they played"
+  },
+  "imageApproval": {
+    "sha256": "7e1c222527d5f7ef68ec312757b2fed24b4f49465f75e31b0661dfabbef8fd27",
+    "conditionSha256": "539814a971d5df86bac2f1bee29b3a32491eab7c5d0b7c19d4221f01108843eb",
+    "clinicalContextSha256": "d12a5430ead1b2791d5379f14f39ee7576b7659bd7a425ff1d35483d372671eb",
+    "verifiedAt": "2026-10-25T21:05:47.084Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [
+      "Pulmonary vascular markings look fine and normal to slightly diminished rather than clearly increased (plethora), so this expected key finding is only weakly shown."
+    ],
+    "observations": [
+      {
+        "expected": "PA chest radiograph of a child. The heart and upper mediastinum together form a figure of 8 like a snowman: the lower round part is the enlarged heart and the upper round part is a wide smooth bulging superior mediastinum on both sides, made by a dilated vertical vein on the left, a dilated innominate vein across the top and a dilated superior vena cava on the right. The lungs show increased pulmonary vascular markings (plethora). The ribs, clavicles and spine are appropriate for a child with normal number and shape. There is no pleural effusion.",
+        "observed": "Frontal chest film of a child with a clear snowman contour: a large globular heart below and a wide smooth bilateral superior mediastinal bulge above. The ribs and clavicles are symmetric and normal in number. There is no effusion. The lung markings are fine and delicate, with only subtle or no obvious plethora.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested PA chest X-ray and the declared age and anatomical exceptions.",
+        "observed": "The anatomy is a chest with symmetric ribs, one clavicle and one scapula per side, a single cardiac silhouette and one hemidiaphragm per side. The proportions are pediatric. There is no lettering and no duplicated anatomy.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP or PA) chest radiograph of a small/pediatric-appearing patient, with the arms at the sides and the upper abdomen included.",
+        "Marked cardiomegaly with a large globular cardiac silhouette that extends to both sides of the spine and fills much of the mid and lower chest.",
+        "A separate rounded or bulbous soft-tissue opacity in the superior mediastinum above the cardiac silhouette, creating a figure-of-eight or snowman contour. It is wide and extends laterally on both sides.",
+        "The lungs are relatively clear and hyperlucent, with fine, delicate vascular markings. There is no focal consolidation, large effusion or pneumothorax.",
+        "The lung vascularity looks normal or slightly diminished, with no obvious pulmonary edema.",
+        "Both hemidiaphragms are smooth. A large soft-tissue density in the right upper abdomen is consistent with the liver. Bowel gas is present in the left abdomen.",
+        "The visible ribs and clavicles are symmetric, and the spine is not clearly abnormal. The image is slightly rotated or tilted."
+      ],
+      "differential": [
+        "Congenital heart disease with a snowman-type silhouette, such as supracardiac total anomalous pulmonary venous return, with marked cardiomegaly",
+        "Large pericardial effusion or cardiomyopathy with a prominent superior mediastinal vascular shadow",
+        "Mediastinal mass, such as a thymic mass or lymphoma, superimposed on cardiomegaly"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy is identified. The figure-of-eight mediastinal contour is plausible as pathology and is not an acquisition artifact.",
+        "Slight rotation or tilt of the image and a cropped lower edge. The thymus cannot be separated from the vascular pedicle.",
+        "The projection (AP vs PA) is uncertain, which can exaggerate the cardiac size."
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "The film shows a classic figure-of-8 snowman contour. A large globular enlarged heart forms the lower round part, and a wide, smooth, bulbous superior mediastinum extending to both sides forms the upper part. In a child with exertional fatigue and breathlessness, this pattern best fits supracardiac TAPVR. The alternatives are a thymic mass or a pericardial effusion, but a symmetric, smooth supracardiac pedicle with cardiomegaly favors the vertical vein, innominate vein and SVC configuration. The limits are that the lungs look relatively clear and hyperlucent rather than plethoric, and an AP projection cannot be excluded. The slight rotation and cropping are acquisition features. The ribs, clavicles and spine are symmetric, with no extra or fused structures, and the child's skeletal proportions are appropriate. No lettering or side marker is visible."
+  },
+  "clueFacts": [
+    {
+      "clue": "breathlessness",
+      "fact": "In supracardiac TAPVR all pulmonary venous blood returns to the right heart so the lungs are flooded with extra blood flow, which typically causes breathlessness on exertion such as play."
+    },
+    {
+      "clue": "tiredness every time they played",
+      "fact": "Tiredness every time a child played fits TAPVR because only mixed blood crosses the atrial septal defect from right to left to reach the left heart, so oxygen delivery falls on exertion."
+    }
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What shape do you see in this child's chest?",
+  "seedHint": "Look at the outline of the heart and the shape stacked above it. Is it one piece or two?",
+  "teaser": "Playtime ended early and the chest film had other plans",
+  "generated": {
+    "threadsCaption": "A patient with breathlessness and tiredness every time they played.\n\nThen the X-ray loaded 😭\n\nPlaytime ended early and the chest film had other plans.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Supracardiac total anomalous pulmonary venous return\n\n👀 What you see:\nThe heart and a widened upper mediastinum make a figure of 8 like a snowman with busy lung vessels.\n\n🦴 Why it matters:\nIn supracardiac TAPVR all four pulmonary veins drain into a vertical vein that empties into the innominate vein and the superior vena cava.\n\n💊 Treatment:\nTreatment is surgery to reconnect the pulmonary veins to the left atrium. Obstructed forms are a neonatal emergency.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Error: Copy review failed: [\"threadsCaption begins \\\"A patient with a child who got tired...\\\", which is broken grammar and implies the patient is not the child.\",\"threadsAnswer states the X-ray shows supracardiac TAPVR as the answer, and the takeaway \\\"A snowman heart on a chest X-ray is supracardiac TAPVR\\\" overstates what a single projection can establish. Snowman appearance is not specific, and the image is only illustrative. The text should say it is characteristic or suggests TAPVR.\",\"threadsAnswer treatment line \\\"Surgery reconnects the pulmonary veins to the left atrium\\\" is stated as unconditional, but general treatment options must remain conditional.\",\"clueFacts: the \\\"got tired\\\" fact says oxygenated blood returns to the right heart and mixes with systemic venous blood, but it does not explain the clue accurately. It says \\\"a large left to right shunt\\\" in the second fact, which mislabels the physiology. In TAPVR, all pulmonary venous return reaches the right atrium, and the shunt through the ASD is right-to-left. Increased pulmonary blood flow and volume overload come from this, not from a left-to-right shunt.\",\"Snowman sign anatomy: the age band is \\\"child\\\", but the classic snowman sign of supracardiac TAPVR is typically seen in infants, usually several months old. The claim is not matched to the child age band, and the older-child presentation is left unsupported.\"]"
+  ],
+  "captionSymptom": "breathlessness and tiredness every time they played",
+  "contentReview": {
+    "sha256": "dbbf60fbe0b6d7f609eb83841b80a43f08f9db040cd3541b316c2215b35f0162",
+    "reviewedAt": "2026-10-25T21:15:38.844Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "47c20aee378eb3e5579b5b5f57ea473df7b64dfb97c892fc5890b9a0f4b1af89"
+  }
+}

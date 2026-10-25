@@ -1,0 +1,144 @@
+{
+  "folder": "00216-carotid-body-tumour",
+  "number": 216,
+  "diagnosis": "Carotid body tumour",
+  "aliases": [
+    "carotid body tumour",
+    "carotid body tumor",
+    "carotid paraganglioma",
+    "chemodectoma",
+    "lyre sign",
+    "carotid body paraganglioma"
+  ],
+  "symptom": "a painless lump in the side of the neck for a year",
+  "hook": "a tumour had pried the carotid fork apart like the arms of a lyre",
+  "whatYouSee": "A round vascular tumour at the right carotid fork splays the internal and external carotid arteries apart like a lyre.",
+  "whyItMatters": "A carotid body tumour is a paraganglioma of the chemoreceptor at the carotid bifurcation. It is a firm pulsatile swelling that may have a thrill and a bruit. Angiography shows splaying of both carotids called the lyre sign.",
+  "treatment": "Treatment is usually surgical excision. Preoperative embolisation may be used to reduce bleeding.",
+  "takeaway": "A vascular mass splaying the carotid fork is a carotid body tumour.",
+  "igOptions": [
+    "A. Carotid body tumour",
+    "B. Branchial cyst",
+    "C. Carotid artery aneurysm"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-02T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:08:02.115Z"
+  },
+  "condition": {
+    "diagnosis": "Carotid body tumour",
+    "aliases": [
+      "carotid body tumour",
+      "carotid body tumor",
+      "carotid paraganglioma",
+      "chemodectoma",
+      "lyre sign",
+      "carotid body paraganglioma"
+    ],
+    "symptom": "a painless lump in the side of the neck for a year",
+    "hook": "a tumour had pried the carotid fork apart like the arms of a lyre",
+    "view": "lateral carotid angiogram, right common carotid injection",
+    "ageBand": "middle-aged",
+    "keyFindings": "Lateral digital subtraction angiogram of the right side of the neck after injection of the right common carotid artery, dark contrast-filled vessels on a pale grey background. A round hypervascular tumour blush fed by many small vessels sits at the carotid bifurcation and splays the internal and external carotid arteries widely apart, so the two arteries bow around the mass like the arms of a lyre (lyre sign). The common carotid artery below is normal calibre. The cervical spine and mandible show faintly in the background.",
+    "whatYouSee": "A round vascular tumour at the right carotid fork splays the internal and external carotid arteries apart like a lyre.",
+    "whyItMatters": "A carotid body tumour is a paraganglioma of the chemoreceptor at the carotid bifurcation. It is a firm pulsatile swelling that may have a thrill and a bruit. Angiography shows splaying of both carotids called the lyre sign.",
+    "treatment": "Treatment is usually surgical excision. Preoperative embolisation may be used to reduce bleeding.",
+    "takeaway": "A vascular mass splaying the carotid fork is a carotid body tumour.",
+    "igTitle": "THE LYRE IN THE NECK",
+    "igOptions": [
+      "Carotid body tumour",
+      "Branchial cyst",
+      "Carotid artery aneurysm"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture [030] Neck Swellings UPDATED Lecture.pdf, original pages 9 and 10 (atlas p761)",
+      "Textbook addition: Radiopaedia 'Carotid body tumour' for preoperative embolisation"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Lateral digital subtraction angiogram of the right side of the neck after injection of the right common carotid artery, dark contrast-filled vessels on a pale grey background. A round hypervascular tumour blush fed by many small vessels sits at the carotid bifurcation and splays the internal and external carotid arteries widely apart, so the two arteries bow around the mass like the arms of a lyre (lyre sign). The common carotid artery below is normal calibre. The cervical spine and mandible show faintly in the background.",
+      "The visible anatomy matches the requested lateral carotid angiogram, right common carotid injection and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "081efb90e4e1ba2dcab8adb020ff03faccf753228ada08f8517e9f9d43c59a14",
+    "conditionSha256": "dfd6f524880f093cf1dd9b930dc9097dfd21c414e1c804e9950280a9ca579c84",
+    "clinicalContextSha256": "570cdbeb399cd4ddc12168049d3d9a9624e85e06b11faaaa2731c4864b341179",
+    "verifiedAt": "2026-10-25T21:08:02.123Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Lateral digital subtraction angiogram of the right side of the neck after injection of the right common carotid artery, dark contrast-filled vessels on a pale grey background. A round hypervascular tumour blush fed by many small vessels sits at the carotid bifurcation and splays the internal and external carotid arteries widely apart, so the two arteries bow around the mass like the arms of a lyre (lyre sign). The common carotid artery below is normal calibre. The cervical spine and mandible show faintly in the background.",
+        "observed": "Lateral catheter angiogram with the common carotid artery filled with dark contrast on a pale grey background. A round hypervascular blush with tangled small feeding vessels sits at the bifurcation, and the internal and external carotid arteries bow apart around it in a lyre configuration. The common carotid is of normal calibre. The cervical spine and mandible are faintly visible.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested lateral carotid angiogram, right common carotid injection and the declared age and anatomical exceptions.",
+        "observed": "The view is a lateral carotid angiogram with coherent mandible, teeth and cervical vertebrae. The skeleton is mature, consistent with an adult. Laterality is not determinable, but there is no conflicting anatomy.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral projection digital subtraction-style catheter angiogram of the neck and skull base, with the face facing right and cervical spine on the left.",
+        "Contrast fills the common carotid artery, which bifurcates in the upper neck.",
+        "A well-circumscribed, round hypervascular tumor blush with dense, tangled fine vessels sits at the carotid bifurcation.",
+        "The mass splays the internal and external carotid arteries apart, widening the bifurcation (lyre-sign configuration).",
+        "Multiple small feeding branches, likely from the ascending pharyngeal and external carotid branches, supply the lesion.",
+        "The posterior vessel, probably the internal carotid, is displaced posteriorly and appears tortuous, without a clear occlusion or flow-limiting stenosis.",
+        "The anterior vessel, probably the external carotid, is bowed anteriorly around the mass and gives off branches.",
+        "The upper image shows a branching network of external carotid branches and an upper vascular blush near the skull base or occipital region.",
+        "Overlying bones include the mandible, teeth, and cervical vertebrae."
+      ],
+      "differential": [
+        "Carotid body paraganglioma (carotid body tumor)",
+        "Other hypervascular carotid space mass, such as glomus vagale paraganglioma or a vascular schwannoma/metastasis",
+        "Arteriovenous malformation or hypervascular vascular tumor near the bifurcation"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy; the findings are consistent with a pathologic mass displacing normal vessels.",
+        "Vessel identification (internal versus external carotid) is inferred from branching pattern, as the full intracranial course is not shown.",
+        "Laterality cannot be determined from the image."
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A round, well-circumscribed hypervascular blush with dense tangled fine feeding vessels sits at the carotid bifurcation and splays the internal and external carotid arteries apart (lyre sign). This is the classic discriminator for a carotid body tumour, and it fits the painless neck lump of one year. A glomus vagale paraganglioma would sit higher and displace the vessels differently, and a vascular schwannoma would be less vascular. Histology and laterality cannot be established from the image. The posterior vessel is tortuous, but this is plausible for an adult and is not an artifact. The projected mandible, teeth and cervical spine are coherent, and no lettering is present."
+  },
+  "difficulty": 4,
+  "laypersonQuestion": "Would you ignore a painless neck lump for a year?",
+  "seedHint": "Look at the fork in the vessel and ask what is pushing the two arms apart.",
+  "teaser": "And the neck had been keeping a secret",
+  "generated": {
+    "threadsCaption": "A patient with a painless lump in the side of the neck for a year.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a painless lump in the side of the neck for a year that never bothered them enough to rush in.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Carotid body tumour\n\n👀 What you see:\nA round vascular tumour at the right carotid fork splays the internal and external carotid arteries apart like a lyre.\n\n🦴 Why it matters:\nA carotid body tumour is a paraganglioma of the chemoreceptor at the carotid bifurcation. It is a firm pulsatile swelling that may have a thrill and a bruit.\n\n💊 Treatment:\nTreatment is usually surgical excision. Preoperative embolisation may be used to reduce bleeding.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Error: Copy review failed: [\"threadsCaptionAlt adds an unsupported patient detail: the lump \\\"never bothered them enough to rush in\\\" is not in the diagnosticContext or symptom.\",\"Both captions say \\\"the X-ray loaded\\\", but the image is a lateral digital subtraction carotid angiogram, not a plain X-ray.\",\"threadsAnswer \\\"Treatment\\\" is stated as a flat fact (\\\"Surgical excision is the treatment\\\") rather than a conditional general option, which the audit rules require.\",\"threadsAnswer \\\"Why it matters\\\" says a carotid body tumour \\\"is a firm pulsatile swelling with a thrill and a bruit\\\", an absolute claim; not every tumour has a thrill or bruit, and this angiogram cannot show them.\",\"The answer lists the thrill and bruit under what the angiogram shows, but a single projection cannot establish them, and the case is only illustrative with no confirmation.\",\"clueFacts is empty, so there are no private teaching facts explaining the caption's clinical clues (painless lump in the neck for a year, the neck keeping a secret).\",\"igCaption is empty while the Instagram channel is inactive; this is acceptable, but igOptions/igCorrect \\\"A\\\" are still supplied, so the unused Instagram fields are inconsistent.\"]"
+  ],
+  "contentReview": {
+    "sha256": "fb46c0e736450b6ae291bebc5dfab7a1a14b8dae7955b62a42ec2b20f5b313cf",
+    "reviewedAt": "2026-10-25T21:15:38.878Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification"
+  }
+}

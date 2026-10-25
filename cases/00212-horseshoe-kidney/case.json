@@ -1,0 +1,131 @@
+{
+  "folder": "00212-horseshoe-kidney",
+  "number": 212,
+  "diagnosis": "Horseshoe kidney",
+  "aliases": [
+    "horseshoe kidney",
+    "fused kidney",
+    "renal fusion anomaly",
+    "ren arcuatus"
+  ],
+  "symptom": "a vague ache low in the back",
+  "hook": "the two kidneys had joined at the bottom into one big U",
+  "whatYouSee": "Both kidneys sit low and their lower poles point inward and join across the spine into one U-shaped horseshoe.",
+  "whyItMatters": "Horseshoe kidney is the commonest renal fusion anomaly. The lower poles fuse in the embryo and the isthmus gets caught under the inferior mesenteric artery so the kidney cannot ascend. It raises the risk of PUJ obstruction, stones, and infection.",
+  "treatment": "Most people need no treatment. Complications such as obstruction or stones are treated when they occur.",
+  "takeaway": "Low kidneys with medially pointing lower poles joined across the spine are a horseshoe kidney.",
+  "igOptions": [
+    "A. Horseshoe kidney",
+    "B. Crossed fused renal ectopia",
+    "C. Bilateral hydronephrosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-29T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:05:08.197Z"
+  },
+  "condition": {
+    "diagnosis": "Horseshoe kidney",
+    "aliases": [
+      "horseshoe kidney",
+      "fused kidney",
+      "renal fusion anomaly",
+      "ren arcuatus"
+    ],
+    "symptom": "a vague ache low in the back",
+    "hook": "the two kidneys had joined at the bottom into one big U",
+    "view": "intravenous urogram (IVU), frontal abdomen",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal intravenous urogram radiograph of the abdomen with contrast in both renal collecting systems, the bottom edge of the film above the pubic symphysis. Both kidneys lie lower and closer to the spine than normal with their long axes reversed so the lower poles point inward toward the midline. The lower poles join across the front of the lower lumbar spine through a band of kidney tissue (the isthmus), making one U-shaped kidney like a horseshoe. The calyces point medially and both ureters pass down over the front of the isthmus. The lumbar spine, psoas outlines and bowel gas look normal.",
+    "whatYouSee": "Both kidneys sit low and their lower poles point inward and join across the spine into one U-shaped horseshoe.",
+    "whyItMatters": "Horseshoe kidney is the commonest renal fusion anomaly. The lower poles fuse in the embryo and the isthmus gets caught under the inferior mesenteric artery so the kidney cannot ascend. It raises the risk of PUJ obstruction, stones, and infection.",
+    "treatment": "Most people need no treatment. Complications such as obstruction or stones are treated when they occur.",
+    "takeaway": "Low kidneys with medially pointing lower poles joined across the spine are a horseshoe kidney.",
+    "igTitle": "THE HORSESHOE INSIDE",
+    "igOptions": [
+      "Horseshoe kidney",
+      "Crossed fused renal ectopia",
+      "Bilateral hydronephrosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 [VM 005] Radiology of the kidney.pdf, original page 53 (atlas p633)",
+      "Textbook addition: Radiopaedia 'Horseshoe kidney' for the inferior mesenteric artery and complications"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal intravenous urogram radiograph of the abdomen with contrast in both renal collecting systems, the bottom edge of the film above the pubic symphysis. Both kidneys lie lower and closer to the spine than normal with their long axes reversed so the lower poles point inward toward the midline. The lower poles join across the front of the lower lumbar spine through a band of kidney tissue (the isthmus), making one U-shaped kidney like a horseshoe. The calyces point medially and both ureters pass down over the front of the isthmus. The lumbar spine, psoas outlines and bowel gas look normal.",
+      "The visible anatomy matches the requested intravenous urogram (IVU), frontal abdomen and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "c7145f49261c2feb497365161e08b2dd811b281b52c4a4bca4e9e4f673e2600f",
+    "conditionSha256": "4f059043485c44267bc774080ea64dbdc93ec254a83fe8cc591303b9793c289e",
+    "clinicalContextSha256": "c5d624188ec7b93a6ffcdcf14161e0729712eb917af501f0161d79a250b78b29",
+    "verifiedAt": "2026-10-25T21:05:08.220Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "A required image finding is absent or not assessable: Frontal urogram with opacified collecting systems, ureters and bladder. Kidneys are joined by a U-shaped isthmus across the midline in front of the lumbar spine, with ureters crossing over it. However, the film includes the pubic bones and pelvis, so the bottom edge is not above the pubic symphysis. The lumbar spine shows an abrupt discontinuity at the isthmus and does not look normal.; The view and body part match an IVU of the abdomen, and the skeleton is mature. The spinal discontinuity and the artificial-looking renal contour undermine the anatomical coherence."
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP) abdominal radiograph with positive contrast opacifying both collecting systems, ureters and bladder, consistent with an excretory urogram/IVU-type or contrast study.",
+        "Kidneys appear fused across the midline: the lower poles are joined by a band of renal-density tissue (isthmus) crossing anterior to the spine at roughly L3-L4, producing a horseshoe configuration.",
+        "Lower poles are medially directed and joined; upper poles are separated and lie more laterally.",
+        "Renal pelves and calyces are opacified bilaterally with sharp calyceal contours; no obvious hydronephrosis or filling defect.",
+        "Both ureters are opacified along their full length, arising anteriorly/laterally from the pelves, running down near the lumbar spine and entering the bladder. They are mildly smooth in caliber with no definite obstruction.",
+        "Bladder is well opacified, smooth and rounded, with no clear filling defect.",
+        "Gas-filled colon and small bowel loops with stool are present. Gastric gas bubble is seen at the left upper abdomen. Hepatic shadow is on the right.",
+        "Osseous structures: lumbar spine and pelvis visible without an obvious acute fracture. The image is slightly rotated, with some overlying grid or line artifact over the right upper abdomen/chest wall."
+      ],
+      "differential": [
+        "Horseshoe kidney with opacified collecting systems and ureters, without evident obstruction",
+        "Fused renal ectopia or other renal fusion anomaly (less likely)",
+        "Normal kidneys with a superimposed overlying soft tissue or bowel shadow simulating an isthmus (least likely)"
+      ],
+      "anatomyConcerns": [
+        "Midline renal fusion with low-lying kidneys is an anatomic variant (malrotation/fusion anomaly), not impossible anatomy.",
+        "Anterior ureteral course over the isthmus is expected in horseshoe kidney.",
+        "No impossible anatomy identified; slight rotation and grid/line artifacts are acquisition issues only."
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "A required image finding is absent or not assessable: Frontal urogram with opacified collecting systems, ureters and bladder. Kidneys are joined by a U-shaped isthmus across the midline in front of the lumbar spine, with ureters crossing over it. However, the film includes the pubic bones and pelvis, so the bottom edge is not above the pubic symphysis. The lumbar spine shows an abrupt discontinuity at the isthmus and does not look normal.; The view and body part match an IVU of the abdomen, and the skeleton is mature. The spinal discontinuity and the artificial-looking renal contour undermine the anatomical coherence.",
+    "Error: Copy review failed: [\"threadsAnswer \\\"Why it matters\\\" omits the embryology and complications, but the shown text is accurate; however, whyItMatters states the isthmus is caught under the inferior mesenteric artery as established fact, which is acceptable, so the main defect is that keyFindings says the calyces point medially and the lower poles point inward, while whatYouSee/takeaway describe the kidneys as \\\"low\\\" without any limit on what an IVU alone can show about the isthmus tissue: an IVU opacifies collecting systems, so it cannot directly show a band of kidney tissue (the isthmus) crossing the spine; the image text overstates what this projection establishes.\",\"keyFindings claims the film shows a 'band of kidney tissue (the isthmus)' joining the lower poles and both ureters passing 'over the front of the isthmus', which an IVU frontal projection cannot establish (no anterior/posterior relationship can be determined on a frontal film).\",\"clueFacts is empty, so no private teaching facts explain the caption clues (vague low back ache, 'what sat behind that ache', joined at the bottom), leaving the clues unexplained.\",\"Threads caption says 'Nobody was ready for what sat behind that ache', implying the ache was caused by the horseshoe kidney, which is unsupported given certainty is only illustrative and horseshoe kidney is often asymptomatic.\",\"The caption 'A patient with a vague ache' with 'Then the X-ray loaded' implies a real patient case, while the image is a simulation with no confirmation evidence.\",\"igCaption is empty while igOptions and igCorrect are supplied, but Instagram is inactive so this is not a defect; however igCorrect 'A' leaves the answer option order inconsistent with a spoiler-free design only if options are shown unshuffled.\"]"
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "Does this shape look normal to you?",
+  "seedHint": "Look at where the two sides meet near the bottom and ask if that seems right.",
+  "teaser": "Nobody was ready for what sat behind that ache",
+  "generated": {
+    "threadsCaption": "A patient with a vague ache low in the back.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a vague ache low in the back that most people would shrug off as nothing.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Horseshoe kidney\n\n👀 What you see:\nBoth kidneys sit low and their lower poles point inward and join across the spine into one U-shaped horseshoe.\n\n🦴 Why it matters:\nHorseshoe kidney is the commonest renal fusion anomaly.\n\n💊 Treatment:\nMost people need no treatment. Complications such as obstruction or stones are treated when they occur.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "f631a48975ac2a5fa5739c346a05ce517e47ca395c6829ca0c491e1cc5b44f74",
+    "reviewedAt": "2026-10-25T21:15:38.831Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification"
+  },
+  "ownerImageOverride": {
+    "sha256": "c7145f49261c2feb497365161e08b2dd811b281b52c4a4bca4e9e4f673e2600f",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  }
+}

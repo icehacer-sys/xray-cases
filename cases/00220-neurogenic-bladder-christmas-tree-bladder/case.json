@@ -1,0 +1,140 @@
+{
+  "folder": "00220-neurogenic-bladder-christmas-tree-bladder",
+  "number": 220,
+  "diagnosis": "Neurogenic bladder (Christmas tree bladder)",
+  "aliases": [
+    "neurogenic bladder",
+    "Christmas tree bladder",
+    "pine cone bladder",
+    "neuropathic bladder",
+    "trabeculated bladder"
+  ],
+  "symptom": "leaking urine and one urine infection after another",
+  "hook": "the bladder was shaped exactly like a Christmas tree",
+  "whatYouSee": "The bladder is tall and pointed with a ridged wall and many small pouches like a Christmas tree.",
+  "whyItMatters": "Spinal cord damage such as spina bifida makes the detrusor squeeze against a closed outlet. The high pressure thickens the wall and risks kidney damage.",
+  "treatment": "Clean intermittent self-catheterisation keeps bladder pressure low. Anticholinergics or botulinum toxin can calm the detrusor.",
+  "takeaway": "A tall trabeculated bladder shaped like a Christmas tree means a neurogenic bladder.",
+  "igOptions": [
+    "A. Neurogenic bladder",
+    "B. Bladder outlet obstruction from an enlarged prostate",
+    "C. Bladder diverticulum"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-06T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:10:56.969Z"
+  },
+  "condition": {
+    "diagnosis": "Neurogenic bladder (Christmas tree bladder)",
+    "aliases": [
+      "neurogenic bladder",
+      "Christmas tree bladder",
+      "pine cone bladder",
+      "neuropathic bladder",
+      "trabeculated bladder"
+    ],
+    "symptom": "leaking urine and one urine infection after another",
+    "hook": "the bladder was shaped exactly like a Christmas tree",
+    "view": "cystogram, frontal view of the pelvis",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal cystogram radiograph of the pelvis with the bladder filled with contrast, the bottom edge of the film at the top of the pubic symphysis so nothing below the pubic bone is shown. The contrast-filled bladder is elongated vertically and pointed at the top, with a thick ridged trabeculated wall and many small outpouchings (sacculations and small diverticula) along both sides, giving a tall tapering shape like a Christmas tree or pine cone. The sacrum, iliac bones and lower lumbar spine are visible and look normal.",
+    "whatYouSee": "The bladder is tall and pointed with a ridged wall and many small pouches like a Christmas tree.",
+    "whyItMatters": "Spinal cord damage such as spina bifida makes the detrusor squeeze against a closed outlet. The high pressure thickens the wall and risks kidney damage.",
+    "treatment": "Clean intermittent self-catheterisation keeps bladder pressure low. Anticholinergics or botulinum toxin can calm the detrusor.",
+    "takeaway": "A tall trabeculated bladder shaped like a Christmas tree means a neurogenic bladder.",
+    "igTitle": "THE CHRISTMAS TREE BLADDER",
+    "igOptions": [
+      "Neurogenic bladder",
+      "Bladder outlet obstruction from an enlarged prostate",
+      "Bladder diverticulum"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Christmas tree bladder' and 'Neurogenic bladder'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal cystogram radiograph of the pelvis with the bladder filled with contrast, the bottom edge of the film at the top of the pubic symphysis so nothing below the pubic bone is shown. The contrast-filled bladder is elongated vertically and pointed at the top, with a thick ridged trabeculated wall and many small outpouchings (sacculations and small diverticula) along both sides, giving a tall tapering shape like a Christmas tree or pine cone. The sacrum, iliac bones and lower lumbar spine are visible and look normal.",
+      "The visible anatomy matches the requested cystogram, frontal view of the pelvis and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "c2e426d6c18b91ea7fa1ae4c2fab1243572225fd56439b06c0f8175ab136c61e",
+    "conditionSha256": "e650500d38ea479588e1cca38dbec15ebcdc08e81a06edc7bc192998f0fbdb64",
+    "clinicalContextSha256": "ffff61969b99e9c62c6bfe430bb735a51d55529a8ede0013f0075cb7fab646fa",
+    "verifiedAt": "2026-10-25T21:10:56.977Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Dense contrast-like column fills the midline pelvis with a tapering pine-cone shape, but it lies in the rectosigmoid position, with the pelvis and femora shown below the pubic level rather than a bladder cystogram\",\"Blurred gray rectangular mask over the perineum obscuring the inferior pelvis\",\"Film extends below the pubic symphysis to include the hips and proximal femora, contrary to the expected cystogram framing\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP) radiograph of the pelvis and lower lumbar spine with both hip joints and proximal femora partly included.",
+        "A dense, radiopaque, tapering column of material fills the midline of the pelvis from about the sacral level down toward the perineum, with multiple rounded outpouchings along both margins.",
+        "The pattern follows the expected rectosigmoid course and suggests positive contrast (barium-like) within the rectum and sigmoid colon, with haustral or diverticular-type saccular projections.",
+        "The lateral outpouchings are numerous and smoothly rounded, with variable size.",
+        "A blurred gray rectangular obscuration overlies the inferior midline pelvis and perineum, hiding the lower end of the contrast column. This looks like an image-editing or privacy mask rather than anatomy.",
+        "Gas-containing colonic loops are visible in the right abdomen.",
+        "Lumbar vertebrae show degenerative-appearing endplate and facet changes.",
+        "The bony pelvis and hips are symmetric, with no obvious acute fracture or hip dislocation.",
+        "Soft tissue folds are seen laterally."
+      ],
+      "differential": [
+        "Barium-opacified rectosigmoid colon with diverticulosis or haustral saccules, as in a barium enema or retained oral contrast",
+        "Retained contrast or barium in a redundant sigmoid colon with possible fecal loading",
+        "Dense intraluminal material, such as a rectal foreign body or fecal impaction with radiopaque content (less likely given the smooth, contrast-like opacity)"
+      ],
+      "anatomyConcerns": [
+        "The blurred rectangular patch over the perineum is an artifact or redaction that obscures the distal rectum and anal region, so the inferior extent of the contrast column cannot be assessed.",
+        "The bright column is not native bone density. It is an intraluminal radiopaque substance, not impossible anatomy.",
+        "No definite impossible anatomy is otherwise seen. The pelvis, spine and hips are in plausible relationships."
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Dense contrast-like column fills the midline pelvis with a tapering pine-cone shape, but it lies in the rectosigmoid position, with the pelvis and femora shown below the pubic level rather than a bladder cystogram\",\"Blurred gray rectangular mask over the perineum obscuring the inferior pelvis\",\"Film extends below the pubic symphysis to include the hips and proximal femora, contrary to the expected cystogram framing\"]",
+    "Error: Copy review failed: [\"threadsCaptionAlt is ungrammatical and changes the clinical clue: \\\"A patient with leaking a little urine and getting yet another routine urine infection that seemed easy to shrug off\\\" is broken grammar and adds invented details (\\\"a little\\\", \\\"routine\\\", \\\"easy to shrug off\\\") that conflict with the specified symptom of leaking urine and recurrent infections.\",\"threadsAnswer \\\"What you see\\\" says \\\"a thick ridged wall\\\" but omits nothing wrong; however the answer text and whyItMatters state definitively that the shape \\\"comes from\\\" and \\\"means\\\" a neurogenic bladder, overstating certainty: a trabeculated tall bladder on one simulated projection is not specific (bladder outlet obstruction is also a cause) and diagnosticContext certainty is only illustrative with no confirmation or accepted differentials.\",\"takeaway \\\"A tall trabeculated bladder shaped like a Christmas tree means a neurogenic bladder\\\" overstates what a single frontal cystogram can establish; trabeculation and sacculation also occur with outlet obstruction (the igOptions even list enlarged prostate as a distractor), so the claim is unsupported as absolute.\",\"whyItMatters states the mechanism as fact for this case (\\\"Spinal cord damage such as spina bifida or spinal injury makes the detrusor contract against a closed outlet\\\"; detrusor-sphincter dyssynergia) without conditional wording; no cause is specified for this simulated case, and the statement that it \\\"risks reflux and kidney damage\\\" is presented without conditional framing for this patient.\",\"treatment is not framed conditionally: \\\"Clean intermittent self-catheterisation keeps bladder pressure low. Anticholinergic drugs or botulinum toxin calm the detrusor muscle\\\" reads as definitive management rather than general options that may be considered.\",\"clueFact for \\\"one urine infection after another\\\" is hedged inconsistently and partly unsupported: \\\"high pressure with reflux can also occur, so urine infection can often recur\\\" is a muddled causal chain; it also does not explain the other clue (leaking urine / overflow or urge incontinence).\"]"
+  ],
+  "clueFacts": [
+    {
+      "clue": "one urine infection after another",
+      "fact": "In neurogenic bladder, incomplete emptying leaves residual urine, and high pressure with reflux can also occur, so urine infection can often recur one after another."
+    }
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "What everyday shape does this organ remind you of?",
+  "seedHint": "Look at the outline of the bladder and ask yourself what shape it makes.",
+  "teaser": "Take a slow look before you scroll to the answer",
+  "generated": {
+    "threadsCaption": "A patient with leaking urine and one urine infection after another.\n\nThen the X-ray loaded 😭\n\nTake a slow look before you scroll to the answer.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Neurogenic bladder (Christmas tree bladder)\n\n👀 What you see:\nThe bladder is tall and pointed with a ridged wall and many small pouches like a Christmas tree.\n\n🦴 Why it matters:\nSpinal cord damage such as spina bifida makes the detrusor squeeze against a closed outlet. The high pressure thickens the wall and risks kidney damage.\n\n💊 Treatment:\nClean intermittent self-catheterisation keeps bladder pressure low. Anticholinergics or botulinum toxin can calm the detrusor.",
+    "igCaption": "",
+    "ctaText": "If you like guessing what is wrong on an X-ray wait until you see it on a CT scan.\n\nI put 10 real CT cases into Weird CT Case Files: Volume 1.\n\nLook then guess then flip for the breakdown.\n\nGrab it here 👇🏼\nctvol1.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "bd7843e99897f343327e2c74ab6849da2e63ea3838040691a8c6887f1fb812b9",
+    "reviewedAt": "2026-10-25T21:15:38.935Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "fb32f04da06e550458f4586c3d0499d0fcf1770c69cd54d566f83afda3d1a3e1"
+  },
+  "ownerImageOverride": {
+    "sha256": "482f4975fc007bde7318d015732219be75ff07c2cc64d342d4618a4db7fbe399",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects. The genital censor had blurred the lower pelvis although the film stops at the pubic bone with no external genitalia in frame, so the unblurred render was restored before approval."
+  }
+}

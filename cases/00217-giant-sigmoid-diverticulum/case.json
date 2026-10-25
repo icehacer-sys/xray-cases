@@ -1,0 +1,132 @@
+{
+  "folder": "00217-giant-sigmoid-diverticulum",
+  "number": 217,
+  "diagnosis": "Giant sigmoid diverticulum",
+  "aliases": [
+    "giant sigmoid diverticulum",
+    "giant colonic diverticulum",
+    "giant diverticulum",
+    "giant gas cyst of the colon"
+  ],
+  "symptom": "a bloated belly that came and went for years",
+  "hook": "a giant balloon of gas was living in the lower belly",
+  "whatYouSee": "A huge smooth round balloon of gas with a thin wall sits in the left lower abdomen and pushes the bowel aside.",
+  "whyItMatters": "A giant sigmoid diverticulum is a rare complication of diverticular disease. A one-way valve lets gas into the pouch but not out so it inflates over time. It can mimic sigmoid volvulus and may perforate or twist.",
+  "treatment": "Treatment is usually surgical resection of the diverticulum with the involved sigmoid colon. This removes the risk of perforation and volvulus.",
+  "takeaway": "A giant smooth gas balloon without haustra beside the sigmoid colon is a giant sigmoid diverticulum.",
+  "igOptions": [
+    "A. Giant sigmoid diverticulum",
+    "B. Sigmoid volvulus",
+    "C. Pneumoperitoneum"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-03T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:08:39.248Z"
+  },
+  "condition": {
+    "diagnosis": "Giant sigmoid diverticulum",
+    "aliases": [
+      "giant sigmoid diverticulum",
+      "giant colonic diverticulum",
+      "giant diverticulum",
+      "giant gas cyst of the colon"
+    ],
+    "symptom": "a bloated belly that came and went for years",
+    "hook": "a giant balloon of gas was living in the lower belly",
+    "view": "supine AP abdomen X-ray",
+    "ageBand": "older",
+    "keyFindings": "Supine AP abdominal radiograph with the bottom edge of the film above the pubic symphysis. A huge smooth round well-defined gas-filled cavity about 15 cm across sits in the left lower abdomen rising out of the pelvis, with a thin smooth white wall and no haustral folds or mucosal markings inside it, like a balloon. Normal calibre gas-filled colon with haustra runs around it and normal small bowel loops are pushed to the right. There is no gas under the diaphragm and the bowel is not dilated elsewhere. The lumbar spine and iliac crests look normal.",
+    "whatYouSee": "A huge smooth round balloon of gas with a thin wall sits in the left lower abdomen and pushes the bowel aside.",
+    "whyItMatters": "A giant sigmoid diverticulum is a rare complication of diverticular disease. A one-way valve lets gas into the pouch but not out so it inflates over time. It can mimic sigmoid volvulus and may perforate or twist.",
+    "treatment": "Treatment is usually surgical resection of the diverticulum with the involved sigmoid colon. This removes the risk of perforation and volvulus.",
+    "takeaway": "A giant smooth gas balloon without haustra beside the sigmoid colon is a giant sigmoid diverticulum.",
+    "igTitle": "THE BALLOON IN THE BELLY",
+    "igOptions": [
+      "Giant sigmoid diverticulum",
+      "Sigmoid volvulus",
+      "Pneumoperitoneum"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Giant sigmoid diverticulum'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Supine AP abdominal radiograph with the bottom edge of the film above the pubic symphysis. A huge smooth round well-defined gas-filled cavity about 15 cm across sits in the left lower abdomen rising out of the pelvis, with a thin smooth white wall and no haustral folds or mucosal markings inside it, like a balloon. Normal calibre gas-filled colon with haustra runs around it and normal small bowel loops are pushed to the right. There is no gas under the diaphragm and the bowel is not dilated elsewhere. The lumbar spine and iliac crests look normal.",
+      "The visible anatomy matches the requested supine AP abdomen X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "ecdec21c7e7d16e9e971a4ff84bfe75504d6a3540b68174b58bf86e6fe6b8fc8",
+    "conditionSha256": "22b358aae8cd5341b9698629d26979dfc63c07ee821ec9471bdb34980fc85a07",
+    "clinicalContextSha256": "f3483df599cf41f54b69c75ea75ab4a459ede2dac9235df0e1c9bf06f2f22462",
+    "verifiedAt": "2026-10-25T21:08:39.254Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Diffuse gas distension of small bowel and right-sided bowel loops in the right abdomen, contrary to the expected normal-calibre bowel\",\"Colon along the left flank is gas-distended around the large cavity rather than normal calibre\",\"The film includes the pubic symphysis region and lower pelvis, and the lower chest and diaphragm region is partially cropped\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP) supine-appearing abdominal radiograph covering the lower chest to the pelvis",
+        "Markedly dilated, thin-walled, gas-filled round loop in the left mid and lower abdomen, roughly 12-13 cm, with a smooth sharp wall",
+        "The large loop has a single rounded lumen with no haustral folds or internal septations visible",
+        "A column of haustrated gas-filled colon curves around the left and upper margin of the large loop, consistent with the descending and sigmoid colon, with the colon mildly gas-distended along the left flank",
+        "Multiple gas-filled small bowel and right-sided bowel loops in the right abdomen, with mild to moderate gas distension and valvulae or haustral markings",
+        "Gas bubble in the left upper quadrant consistent with the gastric fundus",
+        "No obvious free intraperitoneal air, pneumatosis or portal venous gas seen",
+        "Lumbar spine and pelvis appear intact with no definite fracture",
+        "Lateral left-sided dark band and a vertical straight edge in the upper left of the image are likely collimation or detector edge artifacts"
+      ],
+      "differential": [
+        "Sigmoid volvulus with a markedly distended closed-loop sigmoid colon (coffee-bean or omega-type loop) causing large bowel obstruction",
+        "Distal large bowel obstruction from another cause (e.g. stricture or mass) with a dilated sigmoid colon",
+        "Megacolon or megasigmoid, chronic or functional, without torsion"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy identified",
+        "The vertical straight edge and black lateral band are acquisition or collimation artifacts rather than pathology",
+        "Rotation and projection are slightly asymmetric, and the upper image is cropped, so the diaphragm and lung bases are not fully assessed",
+        "Supine versus erect position cannot be confirmed, as no air-fluid levels are clearly shown"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Diffuse gas distension of small bowel and right-sided bowel loops in the right abdomen, contrary to the expected normal-calibre bowel\",\"Colon along the left flank is gas-distended around the large cavity rather than normal calibre\",\"The film includes the pubic symphysis region and lower pelvis, and the lower chest and diaphragm region is partially cropped\"]",
+    "Error: Copy review failed: [\"threadsAnswer treatment line says surgery \\\"is the usual treatment\\\" and \\\"removes the risk of perforation and volvulus\\\" as unconditional fact; general treatment must stay conditional and should not claim it eliminates risk.\",\"threadsAnswer \\\"Why it matters\\\" states the one-way valve mechanism as established fact for this case; a simulated illustrative image cannot establish mechanism, so it overstates what the projection shows.\",\"threadsAnswer says the balloon \\\"pushes the bowel aside\\\" without noting this is an illustrative simulation; teaching answer should not read as confirmed finding (diagnosticContext certainty is illustrative with no confirmation evidence).\",\"The caption \\\"the belly had been keeping a secret all along\\\" and \\\"A patient with a bloated belly that came and went for years\\\" present an invented patient history as real; alternate caption adds unsupported detail \\\"never seemed worth making a fuss over\\\".\",\"clueFacts is empty, so the caption's clinical clues (bloating that came and went for years, older age) have no private teaching facts explaining them.\",\"seedHint \\\"whether this bubble sits inside the gut or outside it\\\" is misleading/inconsistent with the answer, since a giant diverticulum arises from the bowel wall and the findings describe a gas cavity beside the colon; it also hints toward the answer.\",\"Source is listed as \\\"Textbook, not the lecture atlas: Radiopaedia\\\" which is an inconsistent/unclear citation (Radiopaedia is not a textbook).\",\"The image findings claim \\\"no haustral folds\\\" and \\\"thin smooth white wall\\\" yet the radiograph detail \\\"bottom edge of the film above the pubic symphysis\\\" means the pelvis is cut off, so the claim the cavity is \\\"rising out of the pelvis\\\" and that there is no other dilatation is not fully establishable from this projection.\"]"
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What would you guess is inside that giant bubble?",
+  "seedHint": "Look low in the belly and ask whether this bubble sits inside the gut or outside it.",
+  "teaser": "And the belly had been keeping a secret all along",
+  "generated": {
+    "threadsCaption": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with a bloated belly that came and went for years and never seemed worth making a fuss over.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Giant sigmoid diverticulum\n\n👀 What you see:\nA huge smooth round balloon of gas with a thin wall sits in the left lower abdomen and pushes the bowel aside.\n\n🦴 Why it matters:\nA giant sigmoid diverticulum is a rare complication of diverticular disease. A one-way valve lets gas into the pouch but not out so it inflates over time.\n\n💊 Treatment:\nTreatment is usually surgical resection of the diverticulum with the involved sigmoid colon. This removes the risk of perforation and volvulus.",
+    "igCaption": "",
+    "ctaText": "If you cannot get enough of these weird X-rays.\n\nI bundled every collection into one library.\n\n✅ Volume 1\n\n✅ Volume 2\n\n✅ Volume 3\n\n✅ The Rarest Findings\n\n✅ Hopital Field Edition\n\n✅ Could You Spot It?\n\nOver 140 unusual X-ray cases with all the answers.\nmednoteslab.gumroad.com/l/collection"
+  },
+  "contentReview": {
+    "sha256": "a83c771e186c2503738e0aff78d15ae35b6a6d6261ac8a93fde7fb2f7d543a04",
+    "reviewedAt": "2026-10-25T21:15:38.896Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification"
+  },
+  "ownerImageOverride": {
+    "sha256": "ecdec21c7e7d16e9e971a4ff84bfe75504d6a3540b68174b58bf86e6fe6b8fc8",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  }
+}

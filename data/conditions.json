@@ -4171,5 +4171,512 @@
       "The visible anatomy matches the requested barium enema AP and the declared age and anatomical exceptions."
     ],
     "used": true
+  },
+  {
+    "diagnosis": "Urinary schistosomiasis with a calcified bladder",
+    "aliases": [
+      "urinary schistosomiasis",
+      "schistosomiasis",
+      "bilharzia",
+      "bilharziasis",
+      "Schistosoma haematobium",
+      "calcified bladder",
+      "eggshell bladder"
+    ],
+    "symptom": "a little blood at the end of every pee for months",
+    "hook": "the bladder looked like a thin eggshell drawn in white chalk",
+    "view": "AP pelvis X-ray (KUB)",
+    "ageBand": "young-adult",
+    "keyFindings": "Plain AP radiograph of the lower abdomen and pelvis (KUB view) with the bottom edge of the film at the top of the pubic symphysis. A thin smooth continuous curvilinear rim of calcification outlines the whole wall of the urinary bladder in the midline of the pelvis, forming a round to oval white ring like an eggshell or the outline of a fetal head sitting just above the pubic bone. The inside of the bladder is uniform soft tissue grey. Fine thin linear calcification also runs along the distal ureters on both sides as they enter the bladder. The sacrum, iliac bones, hip joints, lower lumbar spine and bowel gas pattern look normal.",
+    "whatYouSee": "A thin white rim of calcium outlines the whole bladder wall like an eggshell sitting just above the pubic bone.",
+    "whyItMatters": "Schistosoma haematobium eggs lodge in the bladder wall and calcify. The worm is caught by wading or swimming in fresh water that carries infected snails. Chronic infection raises the risk of squamous cell carcinoma of the bladder.",
+    "treatment": "Praziquantel kills the adult worms. Long-standing disease needs follow-up for ureteric obstruction and bladder cancer.",
+    "takeaway": "Eggshell calcification of the bladder wall in someone from an endemic area is schistosomiasis until proven otherwise.",
+    "igTitle": "THE EGGSHELL BLADDER",
+    "igOptions": [
+      "Urinary schistosomiasis",
+      "Bladder stone",
+      "Tuberculosis of the bladder"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Urinary schistosomiasis' and 'Bladder wall calcification'",
+      "WHO fact sheet: Schistosomiasis"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Plain AP radiograph of the lower abdomen and pelvis (KUB view) with the bottom edge of the film at the top of the pubic symphysis. A thin smooth continuous curvilinear rim of calcification outlines the whole wall of the urinary bladder in the midline of the pelvis, forming a round to oval white ring like an eggshell or the outline of a fetal head sitting just above the pubic bone. The inside of the bladder is uniform soft tissue grey. Fine thin linear calcification also runs along the distal ureters on both sides as they enter the bladder. The sacrum, iliac bones, hip joints, lower lumbar spine and bowel gas pattern look normal.",
+      "The visible anatomy matches the requested AP pelvis X-ray (KUB) and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Tuberculous autonephrectomy",
+    "aliases": [
+      "tuberculous autonephrectomy",
+      "autonephrectomy",
+      "putty kidney",
+      "cement kidney",
+      "renal tuberculosis",
+      "genitourinary tuberculosis",
+      "tuberculous kidney"
+    ],
+    "symptom": "peeing a lot more often for months",
+    "hook": "the whole kidney had turned into a lump of chalk",
+    "view": "AP abdomen X-ray (KUB)",
+    "ageBand": "middle-aged",
+    "keyFindings": "Plain AP abdominal radiograph centred on the kidneys, with the bottom edge of the film above the pubic symphysis. In the left renal fossa the left kidney is replaced by a dense lobulated amorphous chalk-white calcified mass that keeps a rough kidney outline, with clumped putty-like calcification filling it and no normal soft tissue kidney shadow. The right kidney outline is normal size and uncalcified. The lumbar spine, lower ribs, psoas outlines and bowel gas pattern look normal.",
+    "whatYouSee": "The left kidney is replaced by a dense lump of chalky calcium that still keeps a rough kidney shape.",
+    "whyItMatters": "This is end-stage tuberculosis of the kidney. The infection destroys the kidney and it calcifies into a nonfunctioning mass called a putty kidney. Classic clues are urinary frequency and sterile pyuria.",
+    "treatment": "Standard antituberculous therapy treats the infection. A painful or infected nonfunctioning kidney may be removed by nephrectomy.",
+    "takeaway": "A chalky nonfunctioning kidney with a putty texture is tuberculous autonephrectomy.",
+    "igTitle": "THE CHALK KIDNEY",
+    "igOptions": [
+      "Tuberculous autonephrectomy",
+      "Staghorn calculus",
+      "Medullary nephrocalcinosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Putty kidney' and 'Genitourinary tuberculosis'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Plain AP abdominal radiograph centred on the kidneys, with the bottom edge of the film above the pubic symphysis. In the left renal fossa the left kidney is replaced by a dense lobulated amorphous chalk-white calcified mass that keeps a rough kidney outline, with clumped putty-like calcification filling it and no normal soft tissue kidney shadow. The right kidney outline is normal size and uncalcified. The lumbar spine, lower ribs, psoas outlines and bowel gas pattern look normal.",
+      "The visible anatomy matches the requested AP abdomen X-ray (KUB) and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Moyamoya disease",
+    "aliases": [
+      "moyamoya",
+      "moyamoya disease",
+      "moyamoya syndrome",
+      "puff of smoke",
+      "spontaneous occlusion of the circle of Willis"
+    ],
+    "symptom": "brief spells of arm weakness after crying or blowing hard",
+    "captionSymptom": "headaches and an arm that sometimes felt heavy",
+    "hook": "a puff of smoke deep inside the brain",
+    "view": "frontal (AP) cerebral angiogram, left internal carotid injection",
+    "ageBand": "child",
+    "keyFindings": "Frontal (AP) digital subtraction cerebral angiogram after injection of the left internal carotid artery, shown as dark contrast-filled vessels on a pale grey background. The terminal left internal carotid artery narrows severely and the first parts of the left middle and anterior cerebral arteries are barely seen. Instead a dense tangled network of countless tiny fine collateral vessels fills the region of the basal ganglia just above the carotid terminus, forming a hazy cloud like a puff of cigarette smoke. Distal cortical branches fill faintly. The skull outline is faint. No aneurysm and no early draining vein.",
+    "whatYouSee": "The end of the left internal carotid artery is narrowed and a hazy cloud of tiny collateral vessels fills the base of the brain like a puff of smoke.",
+    "whyItMatters": "Moyamoya is a progressive narrowing of the ends of the internal carotid arteries. The brain grows fragile collateral vessels to compensate and moyamoya means puff of smoke in Japanese. Children get strokes and TIAs that are often triggered by crying or hyperventilation.",
+    "treatment": "Surgical revascularisation brings new blood flow to the brain. Antiplatelet drugs are used to lower the stroke risk.",
+    "takeaway": "Narrowed carotid ends with a puff of smoke collateral network is moyamoya.",
+    "igTitle": "THE PUFF OF SMOKE",
+    "igOptions": [
+      "Moyamoya disease",
+      "Cerebral arteriovenous malformation",
+      "Cerebral vasculitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Moyamoya disease'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal (AP) digital subtraction cerebral angiogram after injection of the left internal carotid artery, shown as dark contrast-filled vessels on a pale grey background. The terminal left internal carotid artery narrows severely and the first parts of the left middle and anterior cerebral arteries are barely seen. Instead a dense tangled network of countless tiny fine collateral vessels fills the region of the basal ganglia just above the carotid terminus, forming a hazy cloud like a puff of cigarette smoke. Distal cortical branches fill faintly. The skull outline is faint. No aneurysm and no early draining vein.",
+      "The visible anatomy matches the requested frontal (AP) cerebral angiogram, left internal carotid injection and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Linitis plastica",
+    "aliases": [
+      "linitis plastica",
+      "leather bottle stomach",
+      "diffuse gastric cancer",
+      "diffuse type gastric adenocarcinoma",
+      "scirrhous gastric carcinoma",
+      "signet ring cell carcinoma of the stomach"
+    ],
+    "symptom": "feeling full after just a few bites for months",
+    "hook": "the stomach had shrunk into a stiff narrow leather bottle",
+    "view": "upper GI barium meal, frontal view",
+    "ageBand": "middle-aged",
+    "keyFindings": "Frontal double contrast barium meal radiograph of the upper abdomen. The stomach is clearly visible and fully coated with white barium in the left upper abdomen below the left hemidiaphragm, but it is small and contracted into a straight narrow rigid tube about 4 cm wide and 12 cm long with parallel stiff smooth walls, no rugal folds, no fundal bulge and no J-shaped curve, like a narrow leather bottle hanging from the oesophagus. The rigid narrowing involves the whole gastric body and fundus. A thin column of barium leaves the lower end of the tube through a wide open pylorus into the duodenal cap. The oesophagus above is normal calibre. The lower ribs, lumbar spine and diaphragm outlines look normal.",
+    "whatYouSee": "The stomach is shrunk into a narrow rigid tube with stiff smooth walls and no normal folds like a leather bottle.",
+    "whyItMatters": "Linitis plastica is gastric cancer that spreads through the submucosa of the stomach wall and makes it fixed and narrow. Most patients present with advanced disease. Breast and lung metastases can look the same.",
+    "treatment": "Endoscopy with biopsy confirms it and CT stages it. Proximal and body tumours need total gastrectomy with chemotherapy while advanced disease gets palliative care.",
+    "takeaway": "A small rigid tube-like stomach on barium is linitis plastica until proven otherwise.",
+    "igTitle": "THE LEATHER BOTTLE STOMACH",
+    "igOptions": [
+      "Linitis plastica",
+      "Gastric outlet obstruction",
+      "Gastric lymphoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 06 - ICC-2 [176b] Principles of Management of Gastric Malignancies.pdf, original page 36 (atlas p655)"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal double contrast barium meal radiograph of the upper abdomen. The stomach is clearly visible and fully coated with white barium in the left upper abdomen below the left hemidiaphragm, but it is small and contracted into a straight narrow rigid tube about 4 cm wide and 12 cm long with parallel stiff smooth walls, no rugal folds, no fundal bulge and no J-shaped curve, like a narrow leather bottle hanging from the oesophagus. The rigid narrowing involves the whole gastric body and fundus. A thin column of barium leaves the lower end of the tube through a wide open pylorus into the duodenal cap. The oesophagus above is normal calibre. The lower ribs, lumbar spine and diaphragm outlines look normal.",
+      "The visible anatomy matches the requested upper GI barium meal, frontal view and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Oesophageal varices",
+    "aliases": [
+      "oesophageal varices",
+      "esophageal varices",
+      "oesophageal varix",
+      "varices",
+      "portal hypertension varices",
+      "bleeding varices"
+    ],
+    "symptom": "vomiting blood after years of a swelling belly",
+    "captionSymptom": "feeling tired with a belly that kept getting bigger",
+    "hook": "the gullet looked stuffed with wriggling worms",
+    "view": "barium swallow, frontal view of the oesophagus",
+    "ageBand": "middle-aged",
+    "keyFindings": "Frontal barium swallow radiograph of the thorax showing the oesophagus. The lower half of the oesophagus is normal width but its lining is covered by multiple tortuous serpiginous rounded filling defects that make a wavy worm-like and beaded pattern along the mucosa, like a bag of worms under the barium coating. The outline stays smooth and pliable with no stricture, shouldering or mass. The upper oesophagus, the gastric fundus below the diaphragm, the spine and the heart shadow look normal.",
+    "whatYouSee": "The lower gullet is lined with wavy worm-like filling defects under the barium coating.",
+    "whyItMatters": "Varices are dilated veins that form when portal hypertension diverts blood through the oesophageal veins. Cirrhosis is the most common cause. A variceal bleed can be massive and life-threatening.",
+    "treatment": "Endoscopic band ligation and nonselective beta blockers prevent bleeding. An acute bleed needs resuscitation with terlipressin, antibiotics, and urgent endoscopy.",
+    "takeaway": "Worm-like filling defects in the lower oesophagus mean varices from portal hypertension.",
+    "igTitle": "THE BAG OF WORMS",
+    "igOptions": [
+      "Oesophageal varices",
+      "Oesophageal carcinoma",
+      "Candida oesophagitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Oesophageal varices'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal barium swallow radiograph of the thorax showing the oesophagus. The lower half of the oesophagus is normal width but its lining is covered by multiple tortuous serpiginous rounded filling defects that make a wavy worm-like and beaded pattern along the mucosa, like a bag of worms under the barium coating. The outline stays smooth and pliable with no stricture, shouldering or mass. The upper oesophagus, the gastric fundus below the diaphragm, the spine and the heart shadow look normal.",
+      "The visible anatomy matches the requested barium swallow, frontal view of the oesophagus and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Crohn disease with string sign",
+    "aliases": [
+      "Crohn disease",
+      "Crohn's disease",
+      "string sign",
+      "string sign of Kantor",
+      "terminal ileitis",
+      "regional enteritis",
+      "Crohn's ileitis"
+    ],
+    "symptom": "belly cramps and diarrhoea on and off for a year",
+    "hook": "a loop of gut squeezed down to a thin piece of string",
+    "view": "small bowel follow-through, frontal view",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal small bowel follow-through barium radiograph of the abdomen, with the bottom edge of the film above the pubic symphysis. Barium fills normal calibre jejunal and ileal loops in the centre and left of the abdomen. In the right lower quadrant a long segment of terminal ileum is narrowed to a thin irregular thread of barium like a piece of string leading into the caecum, and this narrowed loop is separated from its neighbours. The ileum just before it shows coarse cobblestone mucosa. The caecum, ascending colon, lumbar spine and iliac crests look normal.",
+    "whatYouSee": "In the right lower abdomen the terminal ileum is squeezed into a thin thread of barium like a piece of string.",
+    "whyItMatters": "Crohn disease is chronic transmural inflammation that can affect any part of the gut and favours the terminal ileum. The string sign reflects spasm and fibrotic narrowing. Skip lesions and cobblestone mucosa are typical.",
+    "treatment": "Steroids induce remission and immunomodulators or biologics maintain it. A tight fibrotic stricture may need resection or strictureplasty.",
+    "takeaway": "A thin string of barium in the terminal ileum is Crohn disease.",
+    "igTitle": "THE STRING IN THE GUT",
+    "igOptions": [
+      "Crohn disease",
+      "Ulcerative colitis",
+      "Intestinal tuberculosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'String sign (Crohn disease)' and 'Crohn disease'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal small bowel follow-through barium radiograph of the abdomen, with the bottom edge of the film above the pubic symphysis. Barium fills normal calibre jejunal and ileal loops in the centre and left of the abdomen. In the right lower quadrant a long segment of terminal ileum is narrowed to a thin irregular thread of barium like a piece of string leading into the caecum, and this narrowed loop is separated from its neighbours. The ileum just before it shows coarse cobblestone mucosa. The caecum, ascending colon, lumbar spine and iliac crests look normal.",
+      "The visible anatomy matches the requested small bowel follow-through, frontal view and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Neurogenic bladder (Christmas tree bladder)",
+    "aliases": [
+      "neurogenic bladder",
+      "Christmas tree bladder",
+      "pine cone bladder",
+      "neuropathic bladder",
+      "trabeculated bladder"
+    ],
+    "symptom": "leaking urine and one urine infection after another",
+    "hook": "the bladder was shaped exactly like a Christmas tree",
+    "view": "cystogram, frontal view of the pelvis",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal cystogram radiograph of the pelvis with the bladder filled with contrast, the bottom edge of the film at the top of the pubic symphysis so nothing below the pubic bone is shown. The contrast-filled bladder is elongated vertically and pointed at the top, with a thick ridged trabeculated wall and many small outpouchings (sacculations and small diverticula) along both sides, giving a tall tapering shape like a Christmas tree or pine cone. The sacrum, iliac bones and lower lumbar spine are visible and look normal.",
+    "whatYouSee": "The contrast-filled bladder is tall and pointed with a thick ridged wall and many small pouches like a Christmas tree.",
+    "whyItMatters": "This shape comes from a neurogenic bladder. Spinal cord damage such as spina bifida or spinal injury makes the detrusor contract against a closed outlet. The high pressure thickens the wall and risks reflux and kidney damage.",
+    "treatment": "Clean intermittent self-catheterisation keeps bladder pressure low. Anticholinergic drugs or botulinum toxin calm the detrusor muscle.",
+    "takeaway": "A tall trabeculated bladder shaped like a Christmas tree means a neurogenic bladder.",
+    "igTitle": "THE CHRISTMAS TREE BLADDER",
+    "igOptions": [
+      "Neurogenic bladder",
+      "Bladder outlet obstruction from an enlarged prostate",
+      "Bladder diverticulum"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Christmas tree bladder' and 'Neurogenic bladder'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal cystogram radiograph of the pelvis with the bladder filled with contrast, the bottom edge of the film at the top of the pubic symphysis so nothing below the pubic bone is shown. The contrast-filled bladder is elongated vertically and pointed at the top, with a thick ridged trabeculated wall and many small outpouchings (sacculations and small diverticula) along both sides, giving a tall tapering shape like a Christmas tree or pine cone. The sacrum, iliac bones and lower lumbar spine are visible and look normal.",
+      "The visible anatomy matches the requested cystogram, frontal view of the pelvis and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Horseshoe kidney",
+    "aliases": [
+      "horseshoe kidney",
+      "fused kidney",
+      "renal fusion anomaly",
+      "ren arcuatus"
+    ],
+    "symptom": "a vague ache low in the back",
+    "hook": "the two kidneys had joined at the bottom into one big U",
+    "view": "intravenous urogram (IVU), frontal abdomen",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal intravenous urogram radiograph of the abdomen with contrast in both renal collecting systems, the bottom edge of the film above the pubic symphysis. Both kidneys lie lower and closer to the spine than normal with their long axes reversed so the lower poles point inward toward the midline. The lower poles join across the front of the lower lumbar spine through a band of kidney tissue (the isthmus), making one U-shaped kidney like a horseshoe. The calyces point medially and both ureters pass down over the front of the isthmus. The lumbar spine, psoas outlines and bowel gas look normal.",
+    "whatYouSee": "Both kidneys sit low and their lower poles point inward and join across the spine into one U-shaped horseshoe.",
+    "whyItMatters": "Horseshoe kidney is the commonest renal fusion anomaly. The lower poles fuse in the embryo and the isthmus gets caught under the inferior mesenteric artery so the kidney cannot ascend. It raises the risk of PUJ obstruction, stones, and infection.",
+    "treatment": "Most people need no treatment. Complications such as obstruction or stones are treated when they occur.",
+    "takeaway": "Low kidneys with medially pointing lower poles joined across the spine are a horseshoe kidney.",
+    "igTitle": "THE HORSESHOE INSIDE",
+    "igOptions": [
+      "Horseshoe kidney",
+      "Crossed fused renal ectopia",
+      "Bilateral hydronephrosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 [VM 005] Radiology of the kidney.pdf, original page 53 (atlas p633)",
+      "Textbook addition: Radiopaedia 'Horseshoe kidney' for the inferior mesenteric artery and complications"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal intravenous urogram radiograph of the abdomen with contrast in both renal collecting systems, the bottom edge of the film above the pubic symphysis. Both kidneys lie lower and closer to the spine than normal with their long axes reversed so the lower poles point inward toward the midline. The lower poles join across the front of the lower lumbar spine through a band of kidney tissue (the isthmus), making one U-shaped kidney like a horseshoe. The calyces point medially and both ureters pass down over the front of the isthmus. The lumbar spine, psoas outlines and bowel gas look normal.",
+      "The visible anatomy matches the requested intravenous urogram (IVU), frontal abdomen and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Renal artery fibromuscular dysplasia",
+    "aliases": [
+      "fibromuscular dysplasia",
+      "FMD",
+      "renal artery FMD",
+      "string of beads",
+      "renovascular hypertension"
+    ],
+    "symptom": "headaches and blood pressure that would not come down",
+    "hook": "the kidney artery looked like a string of pearls",
+    "view": "renal digital subtraction angiogram, frontal view",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal digital subtraction angiogram of the abdominal aorta and renal arteries with a flush catheter in the aorta, dark contrast-filled vessels on a pale grey background. The right renal artery shows repeated short narrowings alternating with small round bulges along its middle and distal segment like a string of beads or pearls, while its origin from the aorta is normal. The left renal artery is smooth and normal calibre. Both kidneys show normal branching arteries and a renal blush. The aorta is smooth with no plaque. The lumbar spine shows faintly.",
+    "whatYouSee": "The right renal artery alternates between tight narrowings and small bulges like a string of beads.",
+    "whyItMatters": "Fibromuscular dysplasia is a noninflammatory nonatherosclerotic disease of the artery wall. It typically affects young women and causes renovascular hypertension. Atherosclerosis instead narrows the origin of the artery in older people.",
+    "treatment": "Percutaneous transluminal angioplasty is the interventional treatment with a stent only where needed. Blood pressure is also controlled with antihypertensives.",
+    "takeaway": "A string of beads in the middle of the renal artery in a young woman with hypertension is fibromuscular dysplasia.",
+    "igTitle": "THE STRING OF PEARLS",
+    "igOptions": [
+      "Fibromuscular dysplasia",
+      "Atherosclerotic renal artery stenosis",
+      "Takayasu arteritis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture ICC3 [VM 005] Radiology of the kidney.pdf, original page 23 (atlas p626)",
+      "Textbook addition: Radiopaedia 'Fibromuscular dysplasia' for the age and sex pattern"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal digital subtraction angiogram of the abdominal aorta and renal arteries with a flush catheter in the aorta, dark contrast-filled vessels on a pale grey background. The right renal artery shows repeated short narrowings alternating with small round bulges along its middle and distal segment like a string of beads or pearls, while its origin from the aorta is normal. The left renal artery is smooth and normal calibre. Both kidneys show normal branching arteries and a renal blush. The aorta is smooth with no plaque. The lumbar spine shows faintly.",
+      "The visible anatomy matches the requested renal digital subtraction angiogram, frontal view and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Acromegaly",
+    "aliases": [
+      "acromegaly",
+      "growth hormone excess",
+      "pituitary adenoma",
+      "GH secreting pituitary adenoma",
+      "somatotroph adenoma"
+    ],
+    "symptom": "rings and shoes that kept getting tighter",
+    "hook": "the jaw and skull kept growing long after the rest of the body stopped",
+    "view": "lateral skull X-ray",
+    "ageBand": "middle-aged",
+    "keyFindings": "Lateral skull radiograph of an adult. The pituitary fossa (sella turcica) is markedly enlarged and ballooned with a thinned floor. The frontal sinuses are hugely enlarged and the supraorbital ridges bulge forward giving frontal bossing. The skull vault is thickened and the external occipital protuberance is prominent. The mandible is long and juts forward with a widened angle so the lower front teeth sit in front of the upper front teeth (prognathism). The cervical spine looks normal.",
+    "whatYouSee": "The pituitary fossa is ballooned and the frontal sinuses are huge while the jaw juts forward past the upper teeth.",
+    "whyItMatters": "Acromegaly is growth hormone excess after the growth plates close and it is almost always caused by a pituitary adenoma. The face, jaw, hands, and feet keep enlarging. It raises the risk of diabetes, hypertension, and heart disease.",
+    "treatment": "Transsphenoidal surgery removes the pituitary adenoma. Somatostatin analogues or radiotherapy treat residual disease.",
+    "takeaway": "A ballooned sella with frontal bossing and a jutting jaw is acromegaly.",
+    "igTitle": "THE SKULL THAT KEPT GROWING",
+    "igOptions": [
+      "Acromegaly",
+      "Paget disease of bone",
+      "Thalassaemia major"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Acromegaly'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Lateral skull radiograph of an adult. The pituitary fossa (sella turcica) is markedly enlarged and ballooned with a thinned floor. The frontal sinuses are hugely enlarged and the supraorbital ridges bulge forward giving frontal bossing. The skull vault is thickened and the external occipital protuberance is prominent. The mandible is long and juts forward with a widened angle so the lower front teeth sit in front of the upper front teeth (prognathism). The cervical spine looks normal.",
+      "The visible anatomy matches the requested lateral skull X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Copper beaten skull from craniosynostosis",
+    "aliases": [
+      "copper beaten skull",
+      "beaten copper skull",
+      "craniosynostosis",
+      "raised intracranial pressure",
+      "thumbprinting of the skull",
+      "beaten silver skull"
+    ],
+    "symptom": "a toddler with morning headaches and vomiting",
+    "captionSymptom": "a toddler who kept waking up with headaches",
+    "hook": "the inside of the skull looked like hammered copper",
+    "view": "lateral skull X-ray",
+    "ageBand": "child",
+    "keyFindings": "Lateral skull radiograph of a young child. The whole inner surface of the skull vault shows countless rounded scalloped lucent impressions separated by ridges of denser bone, like hammered beaten copper or thumbprints pressed into the bone. The coronal suture is not visible because it has fused, and the skull is short from front to back and tall (turribrachycephaly). The facial bones, the unerupted tooth buds and the cervical spine are appropriate for a young child.",
+    "whatYouSee": "The inner skull vault is covered in rounded scalloped dents like hammered copper and the coronal suture has fused.",
+    "whyItMatters": "The brain is growing inside a skull that cannot expand because its sutures fused too early. The raised pressure presses the brain folds into the inner table and leaves these marks. Untreated it threatens vision and development.",
+    "treatment": "Surgery releases and reshapes the fused skull to make room for the growing brain. Raised intracranial pressure needs urgent neurosurgical review.",
+    "takeaway": "Diffuse beaten copper markings with fused sutures in a child point to raised intracranial pressure from craniosynostosis.",
+    "igTitle": "THE HAMMERED COPPER SKULL",
+    "igOptions": [
+      "Copper beaten skull from craniosynostosis",
+      "Multiple myeloma",
+      "Langerhans cell histiocytosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Copper beaten skull' and 'Craniosynostosis'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Lateral skull radiograph of a young child. The whole inner surface of the skull vault shows countless rounded scalloped lucent impressions separated by ridges of denser bone, like hammered beaten copper or thumbprints pressed into the bone. The coronal suture is not visible because it has fused, and the skull is short from front to back and tall (turribrachycephaly). The facial bones, the unerupted tooth buds and the cervical spine are appropriate for a young child.",
+      "The visible anatomy matches the requested lateral skull X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Giant sigmoid diverticulum",
+    "aliases": [
+      "giant sigmoid diverticulum",
+      "giant colonic diverticulum",
+      "giant diverticulum",
+      "giant gas cyst of the colon"
+    ],
+    "symptom": "a bloated belly that came and went for years",
+    "hook": "a giant balloon of gas was living in the lower belly",
+    "view": "supine AP abdomen X-ray",
+    "ageBand": "older",
+    "keyFindings": "Supine AP abdominal radiograph with the bottom edge of the film above the pubic symphysis. A huge smooth round well-defined gas-filled cavity about 15 cm across sits in the left lower abdomen rising out of the pelvis, with a thin smooth white wall and no haustral folds or mucosal markings inside it, like a balloon. Normal calibre gas-filled colon with haustra runs around it and normal small bowel loops are pushed to the right. There is no gas under the diaphragm and the bowel is not dilated elsewhere. The lumbar spine and iliac crests look normal.",
+    "whatYouSee": "A huge smooth round balloon of gas with a thin wall sits in the left lower abdomen and pushes the bowel aside.",
+    "whyItMatters": "A giant sigmoid diverticulum is a rare complication of diverticular disease. A one-way valve lets gas into the pouch but not out so it inflates over time. It can mimic sigmoid volvulus and may perforate or twist.",
+    "treatment": "Surgical resection of the diverticulum with the involved sigmoid colon is the usual treatment. It removes the risk of perforation and volvulus.",
+    "takeaway": "A giant smooth gas balloon without haustra beside the sigmoid colon is a giant sigmoid diverticulum.",
+    "igTitle": "THE BALLOON IN THE BELLY",
+    "igOptions": [
+      "Giant sigmoid diverticulum",
+      "Sigmoid volvulus",
+      "Pneumoperitoneum"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Giant sigmoid diverticulum'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Supine AP abdominal radiograph with the bottom edge of the film above the pubic symphysis. A huge smooth round well-defined gas-filled cavity about 15 cm across sits in the left lower abdomen rising out of the pelvis, with a thin smooth white wall and no haustral folds or mucosal markings inside it, like a balloon. Normal calibre gas-filled colon with haustra runs around it and normal small bowel loops are pushed to the right. There is no gas under the diaphragm and the bowel is not dilated elsewhere. The lumbar spine and iliac crests look normal.",
+      "The visible anatomy matches the requested supine AP abdomen X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Supracardiac total anomalous pulmonary venous return",
+    "aliases": [
+      "TAPVR",
+      "TAPVC",
+      "total anomalous pulmonary venous return",
+      "total anomalous pulmonary venous connection",
+      "snowman heart",
+      "figure of 8 heart",
+      "supracardiac TAPVR"
+    ],
+    "symptom": "a child who got tired and breathless while playing",
+    "hook": "the heart looked exactly like a snowman",
+    "view": "PA chest X-ray",
+    "ageBand": "child",
+    "keyFindings": "PA chest radiograph of a child. The heart and upper mediastinum together form a figure of 8 like a snowman: the lower round part is the enlarged heart and the upper round part is a wide smooth bulging superior mediastinum on both sides, made by a dilated vertical vein on the left, a dilated innominate vein across the top and a dilated superior vena cava on the right. The lungs show increased pulmonary vascular markings (plethora). The ribs, clavicles and spine are appropriate for a child with normal number and shape. There is no pleural effusion.",
+    "whatYouSee": "The heart and a widened upper mediastinum make a figure of 8 like a snowman with busy lung vessels.",
+    "whyItMatters": "In supracardiac TAPVR all four pulmonary veins drain into a vertical vein that empties into the innominate vein and the superior vena cava. The dilated veins form the snowman head. Survival depends on an atrial septal defect that lets mixed blood reach the left heart.",
+    "treatment": "Surgery reconnects the pulmonary veins to the left atrium. Obstructed forms are a neonatal emergency.",
+    "takeaway": "A snowman heart on a chest X-ray is supracardiac TAPVR.",
+    "igTitle": "THE SNOWMAN HEART",
+    "igOptions": [
+      "Supracardiac total anomalous pulmonary venous return",
+      "Transposition of the great arteries",
+      "Tetralogy of Fallot"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Snowman sign (heart)' and 'Total anomalous pulmonary venous return'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "PA chest radiograph of a child. The heart and upper mediastinum together form a figure of 8 like a snowman: the lower round part is the enlarged heart and the upper round part is a wide smooth bulging superior mediastinum on both sides, made by a dilated vertical vein on the left, a dilated innominate vein across the top and a dilated superior vena cava on the right. The lungs show increased pulmonary vascular markings (plethora). The ribs, clavicles and spine are appropriate for a child with normal number and shape. There is no pleural effusion.",
+      "The visible anatomy matches the requested PA chest X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  {
+    "diagnosis": "Carotid body tumour",
+    "aliases": [
+      "carotid body tumour",
+      "carotid body tumor",
+      "carotid paraganglioma",
+      "chemodectoma",
+      "lyre sign",
+      "carotid body paraganglioma"
+    ],
+    "symptom": "a painless lump in the side of the neck for a year",
+    "hook": "a tumour had pried the carotid fork apart like the arms of a lyre",
+    "view": "lateral carotid angiogram, right common carotid injection",
+    "ageBand": "middle-aged",
+    "keyFindings": "Lateral digital subtraction angiogram of the right side of the neck after injection of the right common carotid artery, dark contrast-filled vessels on a pale grey background. A round hypervascular tumour blush fed by many small vessels sits at the carotid bifurcation and splays the internal and external carotid arteries widely apart, so the two arteries bow around the mass like the arms of a lyre (lyre sign). The common carotid artery below is normal calibre. The cervical spine and mandible show faintly in the background.",
+    "whatYouSee": "A round vascular tumour at the right carotid fork splays the internal and external carotid arteries apart like a lyre.",
+    "whyItMatters": "A carotid body tumour is a paraganglioma of the chemoreceptor at the carotid bifurcation. It is a firm pulsatile swelling with a thrill and a bruit. Angiography shows splaying of both carotids called the lyre sign.",
+    "treatment": "Surgical excision is the treatment. Preoperative embolisation may be used to reduce bleeding.",
+    "takeaway": "A vascular mass splaying the carotid fork is a carotid body tumour.",
+    "igTitle": "THE LYRE IN THE NECK",
+    "igOptions": [
+      "Carotid body tumour",
+      "Branchial cyst",
+      "Carotid artery aneurysm"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture [030] Neck Swellings UPDATED Lecture.pdf, original pages 9 and 10 (atlas p761)",
+      "Textbook addition: Radiopaedia 'Carotid body tumour' for preoperative embolisation"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Lateral digital subtraction angiogram of the right side of the neck after injection of the right common carotid artery, dark contrast-filled vessels on a pale grey background. A round hypervascular tumour blush fed by many small vessels sits at the carotid bifurcation and splays the internal and external carotid arteries widely apart, so the two arteries bow around the mass like the arms of a lyre (lyre sign). The common carotid artery below is normal calibre. The cervical spine and mandible show faintly in the background.",
+      "The visible anatomy matches the requested lateral carotid angiogram, right common carotid injection and the declared age and anatomical exceptions."
+    ],
+    "used": true
   }
 ]
