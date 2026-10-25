@@ -16108,5 +16108,89 @@
       "reposts": 2,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00205-ileocolic-intussusception-with-a-polypoid-lead-point",
+    "postId": "18392433658207307",
+    "measuredAt": "2026-10-25T21:39:25.068Z",
+    "publishedAt": "2026-10-20T19:01:00.594Z",
+    "ageHours": 122.64013166666666,
+    "experiment": {
+      "id": "case-00205-ileocolic-intussusception-with-a-polypoid-lead-point",
+      "assignedAt": "2026-10-20T19:00:46.486Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a tummy ache that comes and goes and jeans that feel looser lately.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had more to say than anyone expected.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-20T19:21:00.594Z",
+    "ctaDueAt": "2026-10-20T20:16:00.594Z",
+    "metrics": {
+      "views": 6004,
+      "likes": 104,
+      "replies": 74,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00207-takotsubo-cardiomyopathy",
+    "postId": "18096011516656084",
+    "measuredAt": "2026-10-25T21:39:26.085Z",
+    "publishedAt": "2026-10-22T19:03:10.903Z",
+    "ageHours": 74.60421722222222,
+    "experiment": {
+      "id": "case-00207-takotsubo-cardiomyopathy",
+      "assignedAt": "2026-10-22T19:02:58.136Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-22T19:23:10.903Z",
+    "ctaDueAt": "2026-10-22T20:18:10.903Z",
+    "metrics": {
+      "views": 4787,
+      "likes": 115,
+      "replies": 113,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00208-ulcerative-colitis-with-lead-pipe-colon",
+    "postId": "18030752579899369",
+    "measuredAt": "2026-10-25T21:39:26.388Z",
+    "publishedAt": "2026-10-23T19:04:05.357Z",
+    "ageHours": 50.58917527777778,
+    "experiment": {
+      "id": "case-00208-ulcerative-colitis-with-lead-pipe-colon",
+      "assignedAt": "2026-10-23T19:03:52.486Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-23T19:24:05.357Z",
+    "ctaDueAt": "2026-10-23T20:19:05.357Z",
+    "metrics": {
+      "views": 8876,
+      "likes": 139,
+      "replies": 111,
+      "reposts": 1,
+      "quotes": 0
+    }
   }
 ]
