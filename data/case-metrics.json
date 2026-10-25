@@ -15856,5 +15856,89 @@
       "reposts": 0,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00203-gastric-outlet-obstruction-scarred-pyloric-ulcer",
+    "postId": "18131363542692371",
+    "measuredAt": "2026-10-25T06:32:06.011Z",
+    "publishedAt": "2026-10-18T19:01:25.036Z",
+    "ageHours": 155.51138194444445,
+    "experiment": {
+      "id": "case-00203-gastric-outlet-obstruction-scarred-pyloric-ulcer",
+      "assignedAt": "2026-10-18T19:01:13.303Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a heavy full feeling after meals and burps that taste of yesterday's dinner.\n\nThen the X-ray loaded 😭\n\nAnd the stomach had a lot to say.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-18T19:21:25.036Z",
+    "ctaDueAt": "2026-10-18T20:16:25.036Z",
+    "metrics": {
+      "views": 10076,
+      "likes": 140,
+      "replies": 95,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00204-osteoblastic-bone-metastases-from-prostate-cancer",
+    "postId": "17907301383665788",
+    "measuredAt": "2026-10-25T06:32:06.345Z",
+    "publishedAt": "2026-10-19T19:04:06.729Z",
+    "ageHours": 131.46656,
+    "experiment": {
+      "id": "case-00204-osteoblastic-bone-metastases-from-prostate-cancer",
+      "assignedAt": "2026-10-19T19:03:57.054Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a dull lower back ache blamed on an old mattress.\n\nThen the X-ray loaded 😭\n\nAnd then the spine had something to say about that mattress theory.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-19T19:24:06.729Z",
+    "ctaDueAt": "2026-10-19T20:19:06.729Z",
+    "metrics": {
+      "views": 9816,
+      "likes": 132,
+      "replies": 100,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00206-annular-colorectal-carcinoma-apple-core-lesion",
+    "postId": "18131755174775163",
+    "measuredAt": "2026-10-25T06:32:06.653Z",
+    "publishedAt": "2026-10-21T19:03:34.229Z",
+    "ageHours": 83.47567333333333,
+    "experiment": {
+      "id": "case-00206-annular-colorectal-carcinoma-apple-core-lesion",
+      "assignedAt": "2026-10-21T19:03:23.833Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a change in bowel habit put down to a new diet.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the abdomen changed everything.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-21T19:23:34.229Z",
+    "ctaDueAt": "2026-10-21T20:18:34.229Z",
+    "metrics": {
+      "views": 3453,
+      "likes": 93,
+      "replies": 55,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
