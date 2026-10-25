@@ -1,0 +1,144 @@
+{
+  "folder": "00214-copper-beaten-skull-from-craniosynostosis",
+  "number": 214,
+  "diagnosis": "Copper beaten skull from craniosynostosis",
+  "aliases": [
+    "copper beaten skull",
+    "beaten copper skull",
+    "craniosynostosis",
+    "raised intracranial pressure",
+    "thumbprinting of the skull",
+    "beaten silver skull"
+  ],
+  "symptom": "a toddler with morning headaches and vomiting",
+  "captionSymptom": "headaches that kept waking them up at night",
+  "hook": "the inside of the skull looked like hammered copper",
+  "whatYouSee": "The whole inner skull vault is covered in rounded scalloped dents like hammered copper.",
+  "whyItMatters": "The brain is growing inside a skull that cannot expand because its sutures fused too early. The raised pressure presses the brain folds into the inner table and leaves these marks. Untreated it threatens vision and development.",
+  "treatment": "Surgery releases and reshapes the fused skull to make room for the growing brain. Raised intracranial pressure needs urgent neurosurgical review.",
+  "takeaway": "Diffuse beaten copper markings with fused sutures in a child point to raised intracranial pressure from craniosynostosis.",
+  "igOptions": [
+    "A. Copper beaten skull from craniosynostosis",
+    "B. Multiple myeloma",
+    "C. Langerhans cell histiocytosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-31T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:06:37.873Z"
+  },
+  "condition": {
+    "diagnosis": "Copper beaten skull from craniosynostosis",
+    "aliases": [
+      "copper beaten skull",
+      "beaten copper skull",
+      "craniosynostosis",
+      "raised intracranial pressure",
+      "thumbprinting of the skull",
+      "beaten silver skull"
+    ],
+    "symptom": "a toddler with morning headaches and vomiting",
+    "captionSymptom": "headaches that kept waking them up at night",
+    "hook": "the inside of the skull looked like hammered copper",
+    "view": "lateral skull X-ray",
+    "ageBand": "child",
+    "keyFindings": "Lateral skull radiograph of a young child. The whole inner surface of the skull vault shows countless rounded scalloped lucent impressions separated by ridges of denser bone, like hammered beaten copper or thumbprints pressed into the bone. The coronal suture is not visible because it has fused, and the skull is short from front to back and tall (turribrachycephaly). The facial bones, the unerupted tooth buds and the cervical spine are appropriate for a young child.",
+    "whatYouSee": "The whole inner skull vault is covered in rounded scalloped dents like hammered copper.",
+    "whyItMatters": "The brain is growing inside a skull that cannot expand because its sutures fused too early. The raised pressure presses the brain folds into the inner table and leaves these marks. Untreated it threatens vision and development.",
+    "treatment": "Surgery releases and reshapes the fused skull to make room for the growing brain. Raised intracranial pressure needs urgent neurosurgical review.",
+    "takeaway": "Diffuse beaten copper markings with fused sutures in a child point to raised intracranial pressure from craniosynostosis.",
+    "igTitle": "THE HAMMERED COPPER SKULL",
+    "igOptions": [
+      "Copper beaten skull from craniosynostosis",
+      "Multiple myeloma",
+      "Langerhans cell histiocytosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Copper beaten skull' and 'Craniosynostosis'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Lateral skull radiograph of a young child. The whole inner surface of the skull vault shows countless rounded scalloped lucent impressions separated by ridges of denser bone, like hammered beaten copper or thumbprints pressed into the bone. The coronal suture is not visible because it has fused, and the skull is short from front to back and tall (turribrachycephaly). The facial bones, the unerupted tooth buds and the cervical spine are appropriate for a young child.",
+      "The visible anatomy matches the requested lateral skull X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "d7213808e8766bbf00be3abb7c36aac01f30214d61e984a9b3404dbdf2b2c21c",
+    "conditionSha256": "51e28634a9be7d5f9bd16bd9ab22d42dd6601ff39a97e2894241d18ed9d0daa4",
+    "clinicalContextSha256": "2c031a0f5ba4cb3829bec3c17e11869fa939ea598bfc19ea21a7bff2e94e4421",
+    "verifiedAt": "2026-10-25T21:06:37.879Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Coronal suture is not identifiable and no fused suture is demonstrated\",\"Skull shape is rounded and globular rather than clearly short anteroposteriorly and tall (turribrachycephaly)\",\"Lucent round lesions are unusually uniform and regular, like a repeated pattern covering the whole vault, rather than the convolutional markings of a real film\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral skull radiograph of a child, facing right, including the cervical spine and mandible",
+        "Mixed dentition with unerupted permanent tooth buds in the maxilla and mandible, so a young child",
+        "Innumerable round, well-defined lucent lesions of fairly uniform size (a few mm to about 1 cm) throughout the calvarium, giving a honeycomb or cobblestone pattern",
+        "Lucencies are separated by thin dense bony septa, with a diffuse distribution across the frontal, parietal, occipital and temporal bones",
+        "Outer table is thin but appears intact, with no obvious large lytic defect, sclerotic margin or soft-tissue mass",
+        "Cranial vault appears relatively large compared with the facial skeleton",
+        "Skull base, sella and facial bones are not clearly abnormal on this projection",
+        "Cervical vertebrae are visible without evident fracture or malalignment",
+        "Soft-tissue shadows at the back and shoulder, with overlying positioning or other external structures"
+      ],
+      "differential": [
+        "Prominent physiologic digital or convolutional markings with a beaten-copper pattern, as seen with raised intracranial pressure or craniosynostosis, though the diffuse round lucencies are more pronounced than typical",
+        "Multiple myeloma-like or metastatic punched-out lytic lesions, such as neuroblastoma metastases or other diffuse lytic marrow disease, including Langerhans cell histiocytosis",
+        "Lacunar skull (Luckenschädel) or diffuse osteopenic and fibrous dysplasia-like process"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy identified; the honeycomb pattern is a true diffuse vault abnormality and not a projection artifact",
+        "The overlying external soft-tissue density behind the head and neck is likely positioning or support equipment, not pathology",
+        "The uniform lucent pattern is unusually regular, so superimposed grid, processing or artifact effect cannot be fully excluded"
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Coronal suture is not identifiable and no fused suture is demonstrated\",\"Skull shape is rounded and globular rather than clearly short anteroposteriorly and tall (turribrachycephaly)\",\"Lucent round lesions are unusually uniform and regular, like a repeated pattern covering the whole vault, rather than the convolutional markings of a real film\"]",
+    "Error: Copy review failed: [\"threadsAnswer states as fact that the coronal suture has fused and that the skull marks come from raised pressure, with no hedging beyond the illustrative certainty; the answer treats a single lateral projection as establishing fusion and craniosynostosis, which overstates what this view can show (fused sutures are better assessed with AP/vertex views or CT)\",\"whyItMatters and threadsAnswer say the brain 'is growing inside a skull that cannot expand' as a definitive mechanism, and the answer line asserts the diagnosis without any conditional framing despite certainty 'illustrative' and no confirmation evidence\",\"Treatment line 'Surgery releases and reshapes the fused skull' is stated as definite rather than conditional general options (e.g., 'may involve')\",\"clueFact says raised ICP 'can be worse after lying flat overnight' and describes vomiting; it explains the clue but adds claims of morning vomiting that are not in the caption, and attributes the symptom pattern specifically to craniosynostosis rather than raised ICP generally\",\"Caption 'A patient with a toddler who kept waking up' is broken grammar (patient with a toddler), implying the toddler is not the patient\",\"Caption line 'Nothing about the bedtime routine prepared anyone for this film' and the alt caption's 'seemed like an ordinary childhood complaint' invent clinical history/details not supplied\",\"keyFindings claims the coronal suture 'is not visible because it has fused' and 'unerupted tooth buds' appropriate for age, while the whatYouSee implies a definite fused coronal suture; a non-visible suture on a lateral film is not proof of fusion\"]"
+  ],
+  "clueFacts": [
+    {
+      "clue": "a toddler who kept waking up",
+      "fact": "In craniosynostosis, raised intracranial pressure can be worse after lying flat overnight, so a toddler may often wake up with headaches, and vomiting can also occur in the early morning."
+    }
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "What everyday object does this skull texture remind you of?",
+  "seedHint": "Look at the inside surface of the skull and decide if it looks smooth or dented.",
+  "teaser": "Nothing about the bedtime routine prepared anyone for this film",
+  "generated": {
+    "threadsCaption": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with headaches that kept waking them up at night and seemed like an ordinary childhood thing.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Copper beaten skull from craniosynostosis\n\n👀 What you see:\nThe whole inner skull vault is covered in rounded scalloped dents like hammered copper.\n\n🦴 Why it matters:\nThe brain is growing inside a skull that cannot expand because its sutures fused too early.\n\n💊 Treatment:\nSurgery releases and reshapes the fused skull to make room for the growing brain. Raised intracranial pressure needs urgent neurosurgical review.",
+    "igCaption": "",
+    "ctaText": "If a case here ever taught you something or made you laugh at 2 AM.\n\nIt is just me and a lot of late nights behind every one of these.\n\nThe cases stay free either way and this is only for anyone who wants to help keep them coming.\n\nYou can do that here 👇🏼\nsupport.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "19bb56d9d9d72ba447a0f847b062b089fb00cef30c25f4e422cb4e03381c43c3",
+    "reviewedAt": "2026-10-25T21:15:38.860Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "e0a8d443fae176c7adb2319c8bcf5da7174a1e7c467383a939efdd7116eed09d"
+  },
+  "ownerImageOverride": {
+    "sha256": "d7213808e8766bbf00be3abb7c36aac01f30214d61e984a9b3404dbdf2b2c21c",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "folder": "00218-acromegaly",
+  "number": 218,
+  "diagnosis": "Acromegaly",
+  "aliases": [
+    "acromegaly",
+    "growth hormone excess",
+    "pituitary adenoma",
+    "GH secreting pituitary adenoma",
+    "somatotroph adenoma"
+  ],
+  "symptom": "rings and shoes that kept getting tighter",
+  "hook": "the jaw and skull kept growing long after the rest of the body stopped",
+  "whatYouSee": "Huge frontal sinuses and a thick skull vault sit above a jaw that juts past the upper teeth.",
+  "whyItMatters": "Acromegaly is growth hormone excess after the growth plates close and it is almost always caused by a pituitary adenoma. The face, jaw, hands, and feet keep enlarging. It raises the risk of diabetes, hypertension, and heart disease.",
+  "treatment": "Treatment is usually transsphenoidal surgery to remove the pituitary adenoma. Somatostatin analogues or radiotherapy can treat residual disease.",
+  "takeaway": "A ballooned sella with frontal bossing and a jutting jaw is acromegaly.",
+  "igOptions": [
+    "A. Acromegaly",
+    "B. Paget disease of bone",
+    "C. Thalassaemia major"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-04T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:09:21.426Z"
+  },
+  "condition": {
+    "diagnosis": "Acromegaly",
+    "aliases": [
+      "acromegaly",
+      "growth hormone excess",
+      "pituitary adenoma",
+      "GH secreting pituitary adenoma",
+      "somatotroph adenoma"
+    ],
+    "symptom": "rings and shoes that kept getting tighter",
+    "hook": "the jaw and skull kept growing long after the rest of the body stopped",
+    "view": "lateral skull X-ray",
+    "ageBand": "middle-aged",
+    "keyFindings": "Lateral skull radiograph of an adult. The pituitary fossa (sella turcica) is markedly enlarged and ballooned with a thinned floor. The frontal sinuses are hugely enlarged and the supraorbital ridges bulge forward giving frontal bossing. The skull vault is thickened and the external occipital protuberance is prominent. The mandible is long and juts forward with a widened angle so the lower front teeth sit in front of the upper front teeth (prognathism). The cervical spine looks normal.",
+    "whatYouSee": "Huge frontal sinuses and a thick skull vault sit above a jaw that juts past the upper teeth.",
+    "whyItMatters": "Acromegaly is growth hormone excess after the growth plates close and it is almost always caused by a pituitary adenoma. The face, jaw, hands, and feet keep enlarging. It raises the risk of diabetes, hypertension, and heart disease.",
+    "treatment": "Treatment is usually transsphenoidal surgery to remove the pituitary adenoma. Somatostatin analogues or radiotherapy can treat residual disease.",
+    "takeaway": "A ballooned sella with frontal bossing and a jutting jaw is acromegaly.",
+    "igTitle": "THE SKULL THAT KEPT GROWING",
+    "igOptions": [
+      "Acromegaly",
+      "Paget disease of bone",
+      "Thalassaemia major"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Acromegaly'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Lateral skull radiograph of an adult. The pituitary fossa (sella turcica) is markedly enlarged and ballooned with a thinned floor. The frontal sinuses are hugely enlarged and the supraorbital ridges bulge forward giving frontal bossing. The skull vault is thickened and the external occipital protuberance is prominent. The mandible is long and juts forward with a widened angle so the lower front teeth sit in front of the upper front teeth (prognathism). The cervical spine looks normal.",
+      "The visible anatomy matches the requested lateral skull X-ray and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "b53430c8c2b97576395ed513eb2bfccb63f3a08d1fc85f15d8f160f65244176b",
+    "conditionSha256": "126365bbf0b8b32c125107f37d6038ae4db107e65e0cb72383c402cbe6db2200",
+    "clinicalContextSha256": "f03bbc06b6a03cd58d60da11ab17110aca51964edc6ab3bd0ee1461bedc890f7",
+    "verifiedAt": "2026-10-25T21:09:21.435Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Multiple large, well-circumscribed, septated lucent lesions in the frontal and anterior parietal calvarium, with a bubbly appearance, that are not part of acromegaly\",\"Large rounded lucent cavities in the orbital and mid-face region that do not follow normal orbit or sinus anatomy\",\"Honeycomb, coarse lucent pattern at the skull base and mastoid\",\"Sella turcica not clearly seen as enlarged or ballooned\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Lateral skull and cervical spine radiograph, facing right, with soft-tissue profile, upper cervical spine and shoulder/upper thorax partly included.",
+        "Several large, well-defined, rounded lucent lesions with thin sclerotic or scalloped margins and internal septations in the frontal and anterior parietal calvarium, with a multiloculated 'bubbly' appearance.",
+        "Additional large rounded lucent areas in the orbital or frontal skull base region and the mid-face; these overlap the expected orbit and frontal sinus and are partly confluent with the other lucencies.",
+        "The calvarium looks diffusely heterogeneous with a coarsened trabecular pattern. Possible diffuse thickening of the vault, particularly posteriorly and occipitally, with a mottled texture.",
+        "The skull base and mastoid/petrous region has a honeycomb or coarse trabecular lucent pattern.",
+        "The facial bones and mandible are prominent, with the mandible appearing large and the bone texture coarsened.",
+        "Teeth are visible and the incisors are in an edge-to-edge or open relationship, with the maxillary incisors appearing flared.",
+        "The cervical vertebrae are visible with preserved alignment and no obvious fracture. The vertebral bodies are somewhat prominent with coarse trabeculae."
+      ],
+      "differential": [
+        "Polyostotic Paget disease of bone (lytic/mixed phase) with osteoporosis circumscripta and facial involvement",
+        "Fibrous dysplasia, craniofacial polyostotic form",
+        "Multiple lytic lesions such as myeloma or metastases, or brown tumors of hyperparathyroidism"
+      ],
+      "anatomyConcerns": [
+        "The large round lucencies in the frontal and orbital regions are unusually well-circumscribed and regular, and their positions do not follow normal sinus or orbit anatomy. This raises the question of an unusual acquisition or processing artifact, or of a synthetic image, though they could also be real lytic or cystic lesions.",
+        "The overlap of the lucencies with the orbit and frontal sinus on a true lateral projection makes it hard to tell pathology from normal sinus air.",
+        "The skull is not in a perfect true lateral position, as the mandibular rami and the orbits are slightly offset."
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Multiple large, well-circumscribed, septated lucent lesions in the frontal and anterior parietal calvarium, with a bubbly appearance, that are not part of acromegaly\",\"Large rounded lucent cavities in the orbital and mid-face region that do not follow normal orbit or sinus anatomy\",\"Honeycomb, coarse lucent pattern at the skull base and mastoid\",\"Sella turcica not clearly seen as enlarged or ballooned\"]",
+    "Error: Copy review failed: [\"threadsAnswer states treatment as definitive fact (\\\"Transsphenoidal surgery removes the pituitary adenoma. Somatostatin analogues or radiotherapy treat residual disease.\\\"), but general treatment options must remain conditional (e.g., \\\"can be treated with\\\", \\\"may be considered\\\").\",\"threadsAnswer presents the diagnosis as an unqualified fact (\\\"Answer: Acromegaly\\\") although diagnosticContext certainty is only illustrative with no confirmation evidence; it needs to be framed as the teaching answer for this simulated image, not a confirmed diagnosis.\",\"threadsCaption says \\\"the picture finally explains what the history could not\\\", which overstates what a single lateral skull projection can establish and implies a definitive diagnosis of the patient, and \\\"A patient with rings and shoes...\\\" invents a patient narrative beyond the supplied context.\",\"threadsAnswer claims acromegaly is \\\"almost always caused by a pituitary adenoma\\\" and that the jaw \\\"juts forward past the upper teeth\\\", which overstates what the projection shows; a lateral skull X-ray cannot establish hormone excess or its cause, and the image-text relationship needs to be framed as consistent with rather than diagnostic of acromegaly.\",\"threadsAnswer \\\"growth hormone excess after the growth plates close\\\" is incomplete and misleading because it implies the condition is defined only by adult onset, and the whatYouSee text says \\\"jaw juts forward past the upper teeth\\\" while the key finding is lower incisors in front of upper incisors, which is a different description.\",\"The caption's \\\"rings\\\" clue fact and the \\\"shoes\\\" clue fact claim that rings \\\"often become tight and need to be resized\\\" and shoe size \\\"often increases\\\", which are generalized and not supported by the supplied diagnosticContext or sources, so they go beyond the stated clue explanation.\"]"
+  ],
+  "clueFacts": [
+    {
+      "clue": "rings",
+      "fact": "In acromegaly, excess growth hormone and IGF-1 can thicken soft tissue and enlarge the bones of the fingers, so rings often become tight and need to be resized."
+    },
+    {
+      "clue": "shoes that kept getting tighter",
+      "fact": "In acromegaly, excess growth hormone can enlarge the feet through bone and soft tissue growth, so shoe size often increases and shoes feel tighter over time."
+    }
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "Which part of this skull looks oversized to you?",
+  "seedHint": "Look at the jaw and the brow, then ask what would make bones keep growing.",
+  "teaser": "And now the picture finally explains what the history could not",
+  "generated": {
+    "threadsCaption": "A patient with rings and shoes that kept getting tighter.\n\nThen the X-ray loaded 😭\n\nAnd now the picture finally explains what the history could not.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Acromegaly\n\n👀 What you see:\nHuge frontal sinuses and a thick skull vault sit above a jaw that juts past the upper teeth.\n\n🦴 Why it matters:\nAcromegaly is growth hormone excess after the growth plates close and it is almost always caused by a pituitary adenoma. The face, jaw, hands, and feet keep enlarging.\n\n💊 Treatment:\nTreatment is usually transsphenoidal surgery to remove the pituitary adenoma. Somatostatin analogues or radiotherapy can treat residual disease.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays have made you learn something or laugh or question reality for a few seconds 😭\n\nI put 20 of the most bizarre cases into one PDF.\n\nLook then guess then flip for a simple breakdown of each.\n\nGrab it here 👇🏼\nxray.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "3fa57d050e8263170c265e434b4ad2a746e3e7fa51bec6d641e5794e347e7030",
+    "reviewedAt": "2026-10-25T21:15:38.908Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "c179e30436890b9d648dcd66487da9af570033aaf0964b2a7947ff29ad2151c1"
+  },
+  "ownerImageOverride": {
+    "sha256": "b53430c8c2b97576395ed513eb2bfccb63f3a08d1fc85f15d8f160f65244176b",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  }
+}

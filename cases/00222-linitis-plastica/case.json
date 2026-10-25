@@ -1,0 +1,141 @@
+{
+  "folder": "00222-linitis-plastica",
+  "number": 222,
+  "diagnosis": "Linitis plastica",
+  "aliases": [
+    "linitis plastica",
+    "leather bottle stomach",
+    "diffuse gastric cancer",
+    "diffuse type gastric adenocarcinoma",
+    "scirrhous gastric carcinoma",
+    "signet ring cell carcinoma of the stomach"
+  ],
+  "symptom": "feeling full after just a few bites for months",
+  "hook": "the stomach had shrunk into a stiff narrow leather bottle",
+  "whatYouSee": "The stomach is shrunk into a narrow rigid tube with stiff walls and no folds like a leather bottle.",
+  "whyItMatters": "Linitis plastica is gastric cancer that spreads through the submucosa and makes the wall fixed and narrow. Most patients present with advanced disease.",
+  "treatment": "Endoscopy with biopsy and CT staging guide care. Surgery with chemotherapy may suit localised disease while advanced disease gets palliative care.",
+  "takeaway": "A small rigid tube-like stomach on barium is linitis plastica until proven otherwise.",
+  "igOptions": [
+    "A. Linitis plastica",
+    "B. Gastric outlet obstruction",
+    "C. Gastric lymphoma"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-09T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:27:32.304Z"
+  },
+  "condition": {
+    "diagnosis": "Linitis plastica",
+    "aliases": [
+      "linitis plastica",
+      "leather bottle stomach",
+      "diffuse gastric cancer",
+      "diffuse type gastric adenocarcinoma",
+      "scirrhous gastric carcinoma",
+      "signet ring cell carcinoma of the stomach"
+    ],
+    "symptom": "feeling full after just a few bites for months",
+    "hook": "the stomach had shrunk into a stiff narrow leather bottle",
+    "view": "upper GI barium meal, frontal view",
+    "ageBand": "middle-aged",
+    "keyFindings": "Frontal double contrast barium meal radiograph of the upper abdomen. The stomach is clearly visible and fully coated with white barium in the left upper abdomen below the left hemidiaphragm, but it is small and contracted into a straight narrow rigid tube about 4 cm wide and 12 cm long with parallel stiff smooth walls, no rugal folds, no fundal bulge and no J-shaped curve, like a narrow leather bottle hanging from the oesophagus. The rigid narrowing involves the whole gastric body and fundus. A thin column of barium leaves the lower end of the tube through a wide open pylorus into the duodenal cap. The oesophagus above is normal calibre. The lower ribs, lumbar spine and diaphragm outlines look normal.",
+    "whatYouSee": "The stomach is shrunk into a narrow rigid tube with stiff walls and no folds like a leather bottle.",
+    "whyItMatters": "Linitis plastica is gastric cancer that spreads through the submucosa and makes the wall fixed and narrow. Most patients present with advanced disease.",
+    "treatment": "Endoscopy with biopsy and CT staging guide care. Surgery with chemotherapy may suit localised disease while advanced disease gets palliative care.",
+    "takeaway": "A small rigid tube-like stomach on barium is linitis plastica until proven otherwise.",
+    "igTitle": "THE LEATHER BOTTLE STOMACH",
+    "igOptions": [
+      "Linitis plastica",
+      "Gastric outlet obstruction",
+      "Gastric lymphoma"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Year 5 lecture 06 - ICC-2 [176b] Principles of Management of Gastric Malignancies.pdf, original page 36 (atlas p655)"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal double contrast barium meal radiograph of the upper abdomen. The stomach is clearly visible and fully coated with white barium in the left upper abdomen below the left hemidiaphragm, but it is small and contracted into a straight narrow rigid tube about 4 cm wide and 12 cm long with parallel stiff smooth walls, no rugal folds, no fundal bulge and no J-shaped curve, like a narrow leather bottle hanging from the oesophagus. The rigid narrowing involves the whole gastric body and fundus. A thin column of barium leaves the lower end of the tube through a wide open pylorus into the duodenal cap. The oesophagus above is normal calibre. The lower ribs, lumbar spine and diaphragm outlines look normal.",
+      "The visible anatomy matches the requested upper GI barium meal, frontal view and the declared age and anatomical exceptions."
+    ],
+    "used": true,
+    "captionSymptom": "a full feeling after just a few bites for months"
+  },
+  "imageApproval": {
+    "sha256": "406e84c60a05d95965326b469d89def1f84247a509ce2dcb3fd02c28c2f4a20c",
+    "conditionSha256": "22e74a4015c33b8c0342f58e28203b2d026071348a724b1d282121ecc0a98116",
+    "clinicalContextSha256": "36ed6034123e0a4496325c7cf5c8555bc43388a46e198abb7d1d69e2318f7957",
+    "verifiedAt": "2026-10-25T21:27:32.310Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Small separate rounded barium collection with irregular trailing margin inferomedial to the tube, below the stomach's lower end, not clearly the duodenal cap and not explained by the supplied condition\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP/PA) upper GI contrast study of the lower chest and abdomen with barium opacifying the esophagus, stomach and proximal duodenal bulb.",
+        "The esophagus is a smooth, narrow barium column running along the left of the spine to the gastroesophageal junction, without a clear stricture or filling defect.",
+        "The stomach is a narrow, elongated, vertically oriented tubular structure in the left upper abdomen, with a flat upper contour and an air-fluid or barium level under the left hemidiaphragm.",
+        "A small rounded barium collection with irregular trailing margins lies inferomedially, likely the pylorus/duodenal bulb or antrum, connected by a thin channel.",
+        "The stomach reaches the level of the lower lumbar spine/pelvic brim region with a J- or tubular configuration and no obvious wall mass.",
+        "Gas-filled bowel loops in the right and left abdomen, with no obvious obstruction or free air.",
+        "The spine is straight and the ribs and lung bases are visible; the lungs are clear on visible portions."
+      ],
+      "differential": [
+        "Normal variant vertically oriented, narrow (steerhorn or J-shaped) stomach with a normal pyloroduodenal outflow",
+        "Gastric outlet narrowing, such as pyloric stenosis or a peptic or antral stricture, with delayed emptying",
+        "Gastric hypotonia or ptosis, or a postoperative or extrinsic compression pattern"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy identified; the tubular, vertical stomach is within the range of normal variation or reflects functional/positional change.",
+        "The exact projection (AP vs PA) and patient position cannot be confirmed; the left-sided stomach and apparent normal situs suggest no inversion.",
+        "The image is a single static frame, so peristalsis and emptying cannot be assessed."
+      ]
+    }
+  },
+  "needsReview": true,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Small separate rounded barium collection with irregular trailing margin inferomedial to the tube, below the stomach's lower end, not clearly the duodenal cap and not explained by the supplied condition\"]",
+    "Error: Copy review failed: [\"threadsAnswer treatment states \\\"Endoscopy with biopsy confirms it and CT stages it\\\" as fact; this is an illustrative simulation with no confirmation evidence, so the text implies a confirmed diagnosis rather than conditional general options.\",\"threadsAnswer treatment says \\\"Proximal and body tumours need total gastrectomy with chemotherapy while advanced disease gets palliative care\\\" as unconditional; general treatment options must remain conditional (e.g., \\\"may be considered\\\", depending on staging and fitness).\",\"threadsCaption says \\\"the meals stopped making sense\\\" and \\\"A patient with ...\\\" and \\\"Then the X-ray loaded\\\", presenting the simulated image as a real patient's outcome/history beyond the illustrative context.\",\"clueFact 2 claims linitis plastica \\\"typically grows slowly and silently\\\" and symptoms \\\"worsen over months\\\", which is unsupported (it is an aggressive, often advanced-at-presentation cancer) and invents a progression detail not in the diagnosticContext.\",\"clueFact 1 asserts the stomach \\\"often cannot stretch\\\" and states the mechanism with certainty although the case is illustrative; mild overstatement, and it does not explain the age/duration clue.\",\"whyItMatters says \\\"Breast and lung metastases can look the same\\\" - unsupported by the sole source reference and imprecise (metastatic infiltration to the stomach, especially from breast, mimics it; lung is less established), and it overstates what a projection radiograph can establish.\",\"takeaway \\\"is linitis plastica until proven otherwise\\\" overstates what a barium projection can establish, since differentials (e.g., infiltrating lymphoma, metastatic disease, corrosive/inflammatory causes) also produce a rigid narrowed stomach.\"]"
+  ],
+  "clueFacts": [
+    {
+      "clue": "a full feeling",
+      "fact": "A full feeling after small meals (early satiety) fits linitis plastica because cancer infiltrates and stiffens the stomach wall so the stomach cannot stretch to hold food."
+    },
+    {
+      "clue": "just a few bites for months",
+      "fact": "Fullness after just a few bites for months is typical because linitis plastica often stays silent until it is advanced and most patients present late."
+    }
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does this stomach look like it could hold a meal?",
+  "seedHint": "Look at the outline of the stomach and ask if it looks stretchy or stiff.",
+  "teaser": "And that explains why the meals stopped making sense",
+  "generated": {
+    "threadsCaption": "A patient with a full feeling after just a few bites for months.\n\nThen the X-ray loaded 😭\n\nAnd that explains why the meals stopped making sense.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Linitis plastica\n\n👀 What you see:\nThe stomach is shrunk into a narrow rigid tube with stiff walls and no folds like a leather bottle.\n\n🦴 Why it matters:\nLinitis plastica is gastric cancer that spreads through the submucosa and makes the wall fixed and narrow. Most patients present with advanced disease.\n\n💊 Treatment:\nEndoscopy with biopsy and CT staging guide care. Surgery with chemotherapy may suit localised disease while advanced disease gets palliative care.",
+    "igCaption": "",
+    "ctaText": "If these weird X-rays keep pulling you in.\n\nI put 5 of the strangest into a free pack.\n\nLook then guess then flip for what each one really is.\n\nGrab it free 👇🏼\nfree.mednoteslab.com"
+  },
+  "captionSymptom": "a full feeling after just a few bites for months",
+  "contentReview": {
+    "sha256": "17f395e3787805ee70410f6ff2fbad56e439bde145759c6d146f76e4e25e9de8",
+    "reviewedAt": "2026-10-25T21:28:14.723Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the lecture facts and style rules; fixed caption symptom grammar, a clue fact that called this cancer slow growing, conditional treatment wording and answer length so Why it matters fits; not clinical certification",
+    "clueFactsSha256": "ac44a1ca65bac11925512537db68c6550926872080ac44b249186686a6d61270"
+  }
+}

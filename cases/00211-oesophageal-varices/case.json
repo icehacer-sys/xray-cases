@@ -1,0 +1,148 @@
+{
+  "folder": "00211-oesophageal-varices",
+  "number": 211,
+  "diagnosis": "Oesophageal varices",
+  "aliases": [
+    "oesophageal varices",
+    "esophageal varices",
+    "oesophageal varix",
+    "varices",
+    "portal hypertension varices",
+    "bleeding varices"
+  ],
+  "symptom": "vomiting blood after years of a swelling belly",
+  "captionSymptom": "constant tiredness and a belly that kept getting bigger",
+  "hook": "the gullet looked stuffed with wriggling worms",
+  "whatYouSee": "The lower gullet is lined with wavy worm-like filling defects under the barium coating.",
+  "whyItMatters": "Varices are dilated veins that form when portal hypertension diverts blood through the oesophageal veins. Cirrhosis is the most common cause. A variceal bleed can be massive and life-threatening.",
+  "treatment": "Endoscopic band ligation and nonselective beta blockers prevent bleeding. An acute bleed needs resuscitation with terlipressin, antibiotics, and urgent endoscopy.",
+  "takeaway": "Worm-like filling defects in the lower oesophagus mean varices from portal hypertension.",
+  "igOptions": [
+    "A. Oesophageal varices",
+    "B. Oesophageal carcinoma",
+    "C. Candida oesophagitis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-10-28T19:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:04:27.003Z"
+  },
+  "condition": {
+    "diagnosis": "Oesophageal varices",
+    "aliases": [
+      "oesophageal varices",
+      "esophageal varices",
+      "oesophageal varix",
+      "varices",
+      "portal hypertension varices",
+      "bleeding varices"
+    ],
+    "symptom": "vomiting blood after years of a swelling belly",
+    "captionSymptom": "constant tiredness and a belly that kept getting bigger",
+    "hook": "the gullet looked stuffed with wriggling worms",
+    "view": "barium swallow, frontal view of the oesophagus",
+    "ageBand": "middle-aged",
+    "keyFindings": "Frontal barium swallow radiograph of the thorax showing the oesophagus. The lower half of the oesophagus is normal width but its lining is covered by multiple tortuous serpiginous rounded filling defects that make a wavy worm-like and beaded pattern along the mucosa, like a bag of worms under the barium coating. The outline stays smooth and pliable with no stricture, shouldering or mass. The upper oesophagus, the gastric fundus below the diaphragm, the spine and the heart shadow look normal.",
+    "whatYouSee": "The lower gullet is lined with wavy worm-like filling defects under the barium coating.",
+    "whyItMatters": "Varices are dilated veins that form when portal hypertension diverts blood through the oesophageal veins. Cirrhosis is the most common cause. A variceal bleed can be massive and life-threatening.",
+    "treatment": "Endoscopic band ligation and nonselective beta blockers prevent bleeding. An acute bleed needs resuscitation with terlipressin, antibiotics, and urgent endoscopy.",
+    "takeaway": "Worm-like filling defects in the lower oesophagus mean varices from portal hypertension.",
+    "igTitle": "THE BAG OF WORMS",
+    "igOptions": [
+      "Oesophageal varices",
+      "Oesophageal carcinoma",
+      "Candida oesophagitis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'Oesophageal varices'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal barium swallow radiograph of the thorax showing the oesophagus. The lower half of the oesophagus is normal width but its lining is covered by multiple tortuous serpiginous rounded filling defects that make a wavy worm-like and beaded pattern along the mucosa, like a bag of worms under the barium coating. The outline stays smooth and pliable with no stricture, shouldering or mass. The upper oesophagus, the gastric fundus below the diaphragm, the spine and the heart shadow look normal.",
+      "The visible anatomy matches the requested barium swallow, frontal view of the oesophagus and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "6f3839febca795b6d18d8306029bf9ad6f8328465b9571048f6607f8ad1930d0",
+    "conditionSha256": "df0e43de6acb2b7528a4e607647608fe2789589e466e4f93a15b2a4b91531071",
+    "clinicalContextSha256": "a136a53f50830a8ad8e3611581cecd73ab185c498ba0bc41099fab171f99f439",
+    "verifiedAt": "2026-10-25T21:04:27.009Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": false,
+    "defects": [
+      "Unexplained additional image findings: [\"Beak-like tapering at the gastroesophageal junction with a thin stream of contrast entering the stomach, not explained by varices\",\"Mildly dilated upper oesophagus with a dense barium column, contrary to the expected normal upper oesophagus\",\"Apparent leftward esophageal course with spinal curvature\"]"
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP/PA) upright-appearing chest and upper abdomen radiograph during a contrast (barium) esophagram.",
+        "Barium-filled esophagus runs along the left of the spine, with a smooth, tapered distal end.",
+        "The distal esophagus narrows into a beak-like tapering at the gastroesophageal junction, with a thin stream of contrast entering the stomach.",
+        "The mid-to-distal esophagus has an irregular, serpiginous, corrugated mucosal pattern with filling defects, in keeping with retained food or debris and contrast mixing, plus tertiary-like contour irregularity.",
+        "The proximal and upper esophagus is mildly dilated and filled with a dense column of barium.",
+        "A gastric fundus with a barium pool and an air-fluid level or gas bubble lies below the left hemidiaphragm.",
+        "The lungs are clear without a large effusion or focal consolidation.",
+        "The cardiac silhouette is not enlarged, and the thoracic spine shows mild degenerative change or scoliosis-like curvature.",
+        "The mediastinum is not widened."
+      ],
+      "differential": [
+        "Achalasia (primary) with distal bird-beak narrowing and a retained food/debris-filled esophagus",
+        "Pseudoachalasia from a distal esophageal or gastroesophageal junction tumor causing malignant stricture",
+        "Distal esophageal stricture from peptic or other benign disease, or a motility disorder such as Chagas disease"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy is evident. The esophageal course, beak tapering and gastric position are plausible.",
+        "The esophagus appears to lie slightly left of midline with mild spinal curvature, which is likely positional or a normal variant.",
+        "Image rotation, an edge crop and a dark border on the right do not affect interpretation.",
+        "The serpiginous filling defects are likely retained food or air within the barium column, not an anatomic anomaly."
+      ]
+    }
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Unexplained additional image findings: [\"Beak-like tapering at the gastroesophageal junction with a thin stream of contrast entering the stomach, not explained by varices\",\"Mildly dilated upper oesophagus with a dense barium column, contrary to the expected normal upper oesophagus\",\"Apparent leftward esophageal course with spinal curvature\"]"
+  ],
+  "clueFacts": [
+    {
+      "clue": "constant tiredness",
+      "fact": "Constant tiredness is common in the cirrhosis that typically underlies oesophageal varices because liver failure, anaemia, and poor nutrition can all cause fatigue."
+    },
+    {
+      "clue": "a belly that kept getting bigger",
+      "fact": "A belly that kept getting bigger often reflects ascites from portal hypertension and low albumin in cirrhosis, the same pressure that typically produces oesophageal varices."
+    }
+  ],
+  "difficulty": 3,
+  "laypersonQuestion": "What do those wriggly shapes remind you of?",
+  "seedHint": "Look at the long tube behind the heart and ask what is crowding it.",
+  "teaser": "Nobody was ready for what was hiding in there",
+  "generated": {
+    "threadsCaption": "A patient with constant tiredness and a belly that kept getting bigger.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what was hiding in there.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "",
+    "threadsAnswer": "Answer: Oesophageal varices\n\n👀 What you see:\nThe lower gullet is lined with wavy worm-like filling defects under the barium coating.\n\n🦴 Why it matters:\nVarices are dilated veins that form when portal hypertension diverts blood through the oesophageal veins. Cirrhosis is the most common cause.\n\n💊 Treatment:\nEndoscopic band ligation and nonselective beta blockers prevent bleeding. An acute bleed needs resuscitation with terlipressin, antibiotics, and urgent endoscopy.",
+    "igCaption": "",
+    "ctaText": "If you have ever been told it is just anxiety.\n\nI turned medical gaslighting into a card game.\n\nMatch the patient’s prompt with the most absurd reply.\n\nGrab it here 👇🏼\nanxiety.mednoteslab.com"
+  },
+  "contentReview": {
+    "sha256": "04fb2d8d6bbaee40403a4b475d065c7198147769bd98cdcfb1db9691cdc9577e",
+    "reviewedAt": "2026-10-25T21:15:38.822Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "9488a1e5564a91ef5e4eea2ef62ab2501a3ec8056136bc25816dc177e776b784"
+  },
+  "ownerImageOverride": {
+    "sha256": "6f3839febca795b6d18d8306029bf9ad6f8328465b9571048f6607f8ad1930d0",
+    "approvedAt": "2026-10-25T21:25:42.963Z",
+    "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  }
+}

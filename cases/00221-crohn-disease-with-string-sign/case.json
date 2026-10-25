@@ -1,0 +1,150 @@
+{
+  "folder": "00221-crohn-disease-with-string-sign",
+  "number": 221,
+  "diagnosis": "Crohn disease with string sign",
+  "aliases": [
+    "Crohn disease",
+    "Crohn's disease",
+    "string sign",
+    "string sign of Kantor",
+    "terminal ileitis",
+    "regional enteritis",
+    "Crohn's ileitis"
+  ],
+  "symptom": "belly cramps and diarrhoea on and off for a year",
+  "hook": "a loop of gut squeezed down to a thin piece of string",
+  "whatYouSee": "In the right lower abdomen the terminal ileum is squeezed into a thin thread of barium like a piece of string.",
+  "whyItMatters": "Crohn disease is chronic transmural inflammation that can affect any part of the gut and favours the terminal ileum. The string sign reflects spasm and fibrotic narrowing. Skip lesions and cobblestone mucosa are typical.",
+  "treatment": "Steroids can induce remission and immunomodulators or biologics can maintain it. A tight fibrotic stricture may need resection or strictureplasty.",
+  "takeaway": "A thin string of barium in the terminal ileum is Crohn disease.",
+  "igOptions": [
+    "A. Crohn disease",
+    "B. Ulcerative colitis",
+    "C. Intestinal tuberculosis"
+  ],
+  "threadsImage": "xray.png",
+  "igSlides": [],
+  "postAt": "2026-11-07T20:00:00.000Z",
+  "approved": true,
+  "source": "generated",
+  "diagnosticContext": {
+    "certainty": "illustrative",
+    "confirmationEvidence": [],
+    "acceptedDifferentials": []
+  },
+  "generation": {
+    "model": "gpt-image-2.5-flare",
+    "generatedAt": "2026-10-25T21:11:40.384Z"
+  },
+  "condition": {
+    "diagnosis": "Crohn disease with string sign",
+    "aliases": [
+      "Crohn disease",
+      "Crohn's disease",
+      "string sign",
+      "string sign of Kantor",
+      "terminal ileitis",
+      "regional enteritis",
+      "Crohn's ileitis"
+    ],
+    "symptom": "belly cramps and diarrhoea on and off for a year",
+    "hook": "a loop of gut squeezed down to a thin piece of string",
+    "view": "small bowel follow-through, frontal view",
+    "ageBand": "young-adult",
+    "keyFindings": "Frontal small bowel follow-through barium radiograph of the abdomen, with the bottom edge of the film above the pubic symphysis. Barium fills normal calibre jejunal and ileal loops in the centre and left of the abdomen. In the right lower quadrant a long segment of terminal ileum is narrowed to a thin irregular thread of barium like a piece of string leading into the caecum, and this narrowed loop is separated from its neighbours. The ileum just before it shows coarse cobblestone mucosa. The caecum, ascending colon, lumbar spine and iliac crests look normal.",
+    "whatYouSee": "In the right lower abdomen the terminal ileum is squeezed into a thin thread of barium like a piece of string.",
+    "whyItMatters": "Crohn disease is chronic transmural inflammation that can affect any part of the gut and favours the terminal ileum. The string sign reflects spasm and fibrotic narrowing. Skip lesions and cobblestone mucosa are typical.",
+    "treatment": "Steroids can induce remission and immunomodulators or biologics can maintain it. A tight fibrotic stricture may need resection or strictureplasty.",
+    "takeaway": "A thin string of barium in the terminal ileum is Crohn disease.",
+    "igTitle": "THE STRING IN THE GUT",
+    "igOptions": [
+      "Crohn disease",
+      "Ulcerative colitis",
+      "Intestinal tuberculosis"
+    ],
+    "igCorrect": "A",
+    "sources": [
+      "Textbook, not the lecture atlas: Radiopaedia 'String sign (Crohn disease)' and 'Crohn disease'"
+    ],
+    "reviewedAt": "2026-10-25",
+    "requiredObservations": [
+      "Frontal small bowel follow-through barium radiograph of the abdomen, with the bottom edge of the film above the pubic symphysis. Barium fills normal calibre jejunal and ileal loops in the centre and left of the abdomen. In the right lower quadrant a long segment of terminal ileum is narrowed to a thin irregular thread of barium like a piece of string leading into the caecum, and this narrowed loop is separated from its neighbours. The ileum just before it shows coarse cobblestone mucosa. The caecum, ascending colon, lumbar spine and iliac crests look normal.",
+      "The visible anatomy matches the requested small bowel follow-through, frontal view and the declared age and anatomical exceptions."
+    ],
+    "used": true
+  },
+  "imageApproval": {
+    "sha256": "b90dc907d300a4a7c0439673032b5d37e99dbc7c9b0d4e386d27fb92202eaf23",
+    "conditionSha256": "054b423c051237218361212910225c85d13ba27994f5eb97ae3b620da3859829",
+    "clinicalContextSha256": "678d61095bb015dd013e5ffbe382051bab4df8c9217e2d14691deb526b842604",
+    "verifiedAt": "2026-10-25T21:11:40.390Z",
+    "model": "claude-sonnet-5-5",
+    "verifierVersion": "4",
+    "ok": true,
+    "defects": [],
+    "observations": [
+      {
+        "expected": "Frontal small bowel follow-through barium radiograph of the abdomen, with the bottom edge of the film above the pubic symphysis. Barium fills normal calibre jejunal and ileal loops in the centre and left of the abdomen. In the right lower quadrant a long segment of terminal ileum is narrowed to a thin irregular thread of barium like a piece of string leading into the caecum, and this narrowed loop is separated from its neighbours. The ileum just before it shows coarse cobblestone mucosa. The caecum, ascending colon, lumbar spine and iliac crests look normal.",
+        "observed": "Frontal abdominal barium film. Barium-filled jejunal and ileal loops of normal calibre lie in the left and central abdomen. On the right, a long segment of distal ileum is narrowed to a thin beaded string of barium leading to the caecum, separated from the other loops. The preceding ileum shows a nodular cobblestone pattern. The caecum and ascending colon are filled with barium and look normal. The lumbar spine and iliac crests are normal. The film extends lower than the expected view and includes the pelvis and bladder, but this does not undermine the findings.",
+        "assessable": true,
+        "matches": true
+      },
+      {
+        "expected": "The visible anatomy matches the requested small bowel follow-through, frontal view and the declared age and anatomical exceptions.",
+        "observed": "Frontal small bowel follow-through. There is a single gastric bubble, one midline lumbar spine, a bladder and two iliac bones. The skeleton is mature, consistent with an adult. No duplicated organs, no impossible anatomy and no lettering are seen.",
+        "assessable": true,
+        "matches": true
+      }
+    ],
+    "blindRead": {
+      "findings": [
+        "Frontal (AP/PA) abdominal radiograph from a small-bowel barium follow-through or enteroclysis, showing the abdomen and upper pelvis.",
+        "Barium opacifies multiple small-bowel loops in the left abdomen and a long, serpentine segment on the right, with barium also in the cecum or ascending colon.",
+        "Left-sided jejunal loops are mildly dilated, with prominent valvulae conniventes and a feathery fold pattern. No discrete stricture or obstruction is evident.",
+        "The right-sided small-bowel segment, probably distal ileum, is markedly narrowed with a nodular, cobblestone or beaded mucosal contour. This is a long segment of irregular lumen narrowing with a 'string-like' appearance, leading to the terminal ileum and cecum.",
+        "The right-sided narrowed segment is separated from adjacent loops, which could suggest mural thickening or mesenteric disease.",
+        "The gastric fundus contains an air bubble with a small amount of gas and some barium or contents.",
+        "The bladder is distended and the pelvic bones, sacrum and lumbar spine are visible. There is no obvious free air or pneumatosis."
+      ],
+      "differential": [
+        "Crohn disease of the terminal and distal ileum with cobblestoning and stricturing (string sign)",
+        "Ileal tuberculosis or other infectious ileitis, such as Yersinia",
+        "Lymphoma or infiltrative or neoplastic ileal disease; radiation enteritis or ischemic stricture are less likely"
+      ],
+      "anatomyConcerns": [
+        "No impossible anatomy is seen.",
+        "The narrowed right-sided ileum is a pathological appearance, not an anatomic variant.",
+        "The image is slightly rotated and tilted. Dense barium and overlying loops limit assessment of the full extent of the disease and of any fistula or abscess."
+      ]
+    },
+    "singleAnswerSupported": true,
+    "diagnosticReason": "A long segment of distal/terminal ileum in the right lower quadrant is narrowed to a thin, irregular, beaded thread of barium (string sign), with coarse nodular cobblestone mucosa in the preceding ileum. It is separated from adjacent loops, consistent with mural and mesenteric thickening. Together with a year of intermittent cramps and diarrhoea, Crohn disease is the best-supported diagnosis. TB and lymphoma remain lower-ranked alternatives and cannot be fully excluded on imaging alone. The mild rotation and the dense barium overlap are acquisition features and do not alter the interpretation. The anatomy concerns are reconciled: the narrowed ileum is the pathology, and no impossible anatomy is seen."
+  },
+  "clueFacts": [
+    {
+      "clue": "diarrhoea intermittent for a year",
+      "fact": "Crohn disease is a chronic relapsing condition, so diarrhoea can come and go for months or years as inflammation flares and settles, often with cramping belly pain."
+    }
+  ],
+  "difficulty": 4,
+  "laypersonQuestion": "Does this gut look like it is working normally?",
+  "seedHint": "Follow the tube from top to bottom and find where it gets way too thin.",
+  "teaser": "Something in there was not meant to be missed",
+  "generated": {
+    "threadsCaption": "A patient with belly cramps and diarrhoea on and off for a year.\n\nThen the X-ray loaded 😭\n\nSomething in there was not meant to be missed.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsCaptionAlt": "A patient with belly cramps and diarrhoea on and off for a year that seemed like nothing more than a touchy stomach.\n\nThen the X-ray loaded 😭\n\nSomething in there was not meant to be missed.\n\nQuick diagnosis challenge 🔍\n\nWhat's the most likely diagnosis?\n\nWild guesses are welcome 👀",
+    "threadsAnswer": "Answer: Crohn disease with string sign\n\n👀 What you see:\nIn the right lower abdomen the terminal ileum is squeezed into a thin thread of barium like a piece of string.\n\n🦴 Why it matters:\nCrohn disease is chronic transmural inflammation that can affect any part of the gut and favours the terminal ileum.\n\n💊 Treatment:\nSteroids can induce remission and immunomodulators or biologics can maintain it. A tight fibrotic stricture may need resection or strictureplasty.",
+    "igCaption": "",
+    "ctaText": "If the weird ones keep pulling you in.\n\nI put 20 brand-new cases into a second PDF.\n\nNone repeated from Volume 1.\n\nGrab it here 👇🏼\nxray2.mednoteslab.com"
+  },
+  "needsReview": false,
+  "verifyDefects": [
+    "Error: Copy review failed: [\"threadsCaptionAlt invents a patient detail not in the supplied context: symptoms that \\\"seemed like nothing more than a touchy stomach\\\".\",\"threadsAnswer treatment is not framed conditionally. \\\"Steroids induce remission and immunomodulators or biologics maintain it\\\" reads as what was done for this patient, not as general options that may apply.\",\"threadsAnswer says the string sign is \\\"squeezed\\\" and that Crohn disease is the answer with no hedging, even though the case is illustrative with no confirmation evidence. The teaching answer is not presented as simulated or illustrative, so it overstates what a single projection can establish.\",\"The takeaway \\\"A thin string of barium in the terminal ileum is Crohn disease\\\" is overly absolute. The sign is not specific, since intestinal tuberculosis and other causes of ileal stricture can look similar.\",\"The threadsAnswer \\\"Why it matters\\\" section omits the string sign mechanism (spasm and fibrotic narrowing) and uses a bone emoji for a bowel case, so the section does not explain the finding shown.\",\"clueFacts covers only the symptom clue. It does not explain the other caption clue, \\\"something in there\\\" (the string-like terminal ileal narrowing), so the string sign clue is left unexplained.\"]"
+  ],
+  "contentReview": {
+    "sha256": "f5e63f990ec7fa060fa067bec5c88b0a737a65e133d6b25d56474a3fe0358902",
+    "reviewedAt": "2026-10-25T21:15:38.947Z",
+    "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
+    "clueFactsSha256": "784571117093d2ed752d0a2ca86a2b2f3d8648d9c69f10f6f5f2ab4274d87709"
+  }
+}
