@@ -2768,7 +2768,9 @@
       "publishedCaption": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00209-urinary-schistosomiasis-with-a-calcified-bladder\",\"assignedAt\":\"2026-10-26T19:00:11.299Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18095590730446526",
+      "challengePostedAt": "2026-10-26T19:00:21.120Z"
     }
   },
   "posted": {

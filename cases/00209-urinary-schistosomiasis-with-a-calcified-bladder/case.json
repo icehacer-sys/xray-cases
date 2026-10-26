@@ -133,5 +133,13 @@
     "sha256": "5838b37ae64d31ad47429a93c3a31e5e0c10c11ea0512ec2ed39f8d98016aec0",
     "approvedAt": "2026-10-25T21:25:42.963Z",
     "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects. The genital censor had blurred the lower pelvis although the film stops at the pubic bone with no external genitalia in frame, so the unblurred render was restored before approval."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00209-urinary-schistosomiasis-with-a-calcified-bladder\",\"assignedAt\":\"2026-10-26T19:00:11.299Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18095590730446526",
+    "challengePostedAt": "2026-10-26T19:00:21.120Z"
   }
 }
