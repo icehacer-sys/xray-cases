@@ -16192,5 +16192,61 @@
       "reposts": 1,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00204-osteoblastic-bone-metastases-from-prostate-cancer",
+    "postId": "17907301383665788",
+    "measuredAt": "2026-10-26T02:42:06.734Z",
+    "publishedAt": "2026-10-19T19:04:06.729Z",
+    "ageHours": 151.63333472222223,
+    "experiment": {
+      "id": "case-00204-osteoblastic-bone-metastases-from-prostate-cancer",
+      "assignedAt": "2026-10-19T19:03:57.054Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a dull lower back ache blamed on an old mattress.\n\nThen the X-ray loaded 😭\n\nAnd then the spine had something to say about that mattress theory.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-19T19:24:06.729Z",
+    "ctaDueAt": "2026-10-19T20:19:06.729Z",
+    "metrics": {
+      "views": 10285,
+      "likes": 132,
+      "replies": 100,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00206-annular-colorectal-carcinoma-apple-core-lesion",
+    "postId": "18131755174775163",
+    "measuredAt": "2026-10-26T02:42:07.081Z",
+    "publishedAt": "2026-10-21T19:03:34.229Z",
+    "ageHours": 103.64245888888888,
+    "experiment": {
+      "id": "case-00206-annular-colorectal-carcinoma-apple-core-lesion",
+      "assignedAt": "2026-10-21T19:03:23.833Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a change in bowel habit put down to a new diet.\n\nThen the X-ray loaded 😭\n\nAnd then the scan of the abdomen changed everything.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-21T19:23:34.229Z",
+    "ctaDueAt": "2026-10-21T20:18:34.229Z",
+    "metrics": {
+      "views": 3483,
+      "likes": 94,
+      "replies": 55,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
