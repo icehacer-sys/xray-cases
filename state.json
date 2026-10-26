@@ -1667,6 +1667,16 @@
       "publishedId": "18095590730446526",
       "publishedAt": "2026-10-26T19:00:21.120Z",
       "confirmedPublished": true
+    },
+    "case:00209-urinary-schistosomiasis-with-a-calcified-bladder:answer": {
+      "creationId": "17895521256614054",
+      "createdAt": "2026-10-26T19:20:32.333Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Urinary schistosomiasis with a calcified bladder\n\n👀 What you see:\nA thin white rim of calcium outlines the whole bladder wall like an eggshell sitting just above the pubic bone.\n\n🦴 Why it matters:\nSchistosoma haematobium eggs lodge in the bladder wall and calcify. The worm is caught by wading or swimming in fresh water that carries infected snails.\n\n💊 Treatment:\nPraziquantel kills the adult worms. Long-standing disease needs follow-up for ureteric obstruction and bladder cancer.",
+        "reply_to_id": "18095590730446526",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":486}]"
+      }
     }
   },
   "stages": {
