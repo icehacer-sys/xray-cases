@@ -1653,6 +1653,17 @@
       "publishedId": "18130964974697283",
       "publishedAt": "2026-10-23T20:20:39.368Z",
       "confirmedPublished": true
+    },
+    "case:00209-urinary-schistosomiasis-with-a-calcified-bladder:challenge": {
+      "creationId": "17895518739614054",
+      "createdAt": "2026-10-26T19:00:15.843Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00209-urinary-schistosomiasis-with-a-calcified-bladder/xray.png",
+        "text": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "62ee04246a1a897b577e1ae22ea94f4470949638ea93410ab7b878b74f5ae5f7:1ca6d57be4e7ef3d3470d86fcbbbdc156a04791befc15bc4c87bdc4838ebf972:50c19afc82ae3b0e233858b4d953f2f2621bdd5ca0964400ff293efa390835ef"
     }
   },
   "stages": {
@@ -2749,12 +2760,18 @@
       "answerCommentId": "18156471304534927",
       "answerPostedAt": "2026-10-23T19:25:03.567Z",
       "ctaPostedAt": "2026-10-23T20:20:41.072Z"
+    },
+    "00209-urinary-schistosomiasis-with-a-calcified-bladder": {
+      "publishedCaption": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00209-urinary-schistosomiasis-with-a-calcified-bladder\",\"assignedAt\":\"2026-10-26T19:00:11.299Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-23",
+      "date": "2026-10-26",
       "count": 0
     }
   }
