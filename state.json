@@ -2819,7 +2819,9 @@
       "publishedCaption": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00210-moyamoya-disease\",\"assignedAt\":\"2026-10-27T19:03:37.592Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18097822445115488",
+      "challengePostedAt": "2026-10-27T19:03:47.755Z"
     }
   },
   "posted": {

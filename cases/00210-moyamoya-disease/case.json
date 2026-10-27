@@ -140,5 +140,13 @@
     "sha256": "698b22da79d2a533bd3a515c899b6d3af6d9144537b94bb59d010cf0f834538e",
     "approvedAt": "2026-10-25T21:25:42.963Z",
     "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  },
+  "stages": {
+    "publishedCaption": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00210-moyamoya-disease\",\"assignedAt\":\"2026-10-27T19:03:37.592Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18097822445115488",
+    "challengePostedAt": "2026-10-27T19:03:47.755Z"
   }
 }
