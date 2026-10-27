@@ -1693,6 +1693,17 @@
       "publishedId": "18035142203672577",
       "publishedAt": "2026-10-26T20:16:07.514Z",
       "confirmedPublished": true
+    },
+    "case:00210-moyamoya-disease:challenge": {
+      "creationId": "17895689862614054",
+      "createdAt": "2026-10-27T19:03:43.105Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00210-moyamoya-disease/xray.png",
+        "text": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "698b22da79d2a533bd3a515c899b6d3af6d9144537b94bb59d010cf0f834538e:bff6d05546dd0e273615751604393766ae4f82289b4319ef4fdd3e3012ff4a74:c0700ff692729a3f2c5f748342ab3c8cfa5501af242678ef28f1a24869511b87"
     }
   },
   "stages": {
@@ -2800,12 +2811,18 @@
       "answerCommentId": "17994807726047612",
       "answerPostedAt": "2026-10-26T19:20:38.551Z",
       "ctaPostedAt": "2026-10-26T20:16:09.258Z"
+    },
+    "00210-moyamoya-disease": {
+      "publishedCaption": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00210-moyamoya-disease\",\"assignedAt\":\"2026-10-27T19:03:37.592Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-26",
+      "date": "2026-10-27",
       "count": 0
     }
   }
