@@ -1747,6 +1747,16 @@
       "publishedId": "17988834048118608",
       "publishedAt": "2026-10-28T19:01:47.781Z",
       "confirmedPublished": true
+    },
+    "case:00211-oesophageal-varices:answer": {
+      "creationId": "17895860208614054",
+      "createdAt": "2026-10-28T19:22:03.786Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Oesophageal varices\n\n👀 What you see:\nThe lower gullet is lined with wavy worm-like filling defects under the barium coating.\n\n🦴 Why it matters:\nVarices are dilated veins that form when portal hypertension diverts blood through the oesophageal veins. Cirrhosis is the most common cause.\n\n💊 Treatment:\nEndoscopic band ligation and nonselective beta blockers prevent bleeding. An acute bleed needs resuscitation with terlipressin, antibiotics, and urgent endoscopy.",
+        "reply_to_id": "17988834048118608",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":465}]"
+      }
     }
   },
   "stages": {
