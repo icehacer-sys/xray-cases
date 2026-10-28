@@ -1733,6 +1733,17 @@
       "publishedId": "18133714276757426",
       "publishedAt": "2026-10-27T20:19:55.977Z",
       "confirmedPublished": true
+    },
+    "case:00211-oesophageal-varices:challenge": {
+      "creationId": "17895856944614054",
+      "createdAt": "2026-10-28T19:01:39.994Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00211-oesophageal-varices/xray.png",
+        "text": "A patient with constant tiredness and a belly that kept getting bigger.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what was hiding in there.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "6f3839febca795b6d18d8306029bf9ad6f8328465b9571048f6607f8ad1930d0:df0e43de6acb2b7528a4e607647608fe2789589e466e4f93a15b2a4b91531071:04fb2d8d6bbaee40403a4b475d065c7198147769bd98cdcfb1db9691cdc9577e"
     }
   },
   "stages": {
@@ -2851,12 +2862,18 @@
       "answerCommentId": "18171407155480377",
       "answerPostedAt": "2026-10-27T19:24:07.433Z",
       "ctaPostedAt": "2026-10-27T20:19:57.471Z"
+    },
+    "00211-oesophageal-varices": {
+      "publishedCaption": "A patient with constant tiredness and a belly that kept getting bigger.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what was hiding in there.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00211-oesophageal-varices\",\"assignedAt\":\"2026-10-28T19:01:32.595Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "count": 0
     }
   }
