@@ -17480,5 +17480,61 @@
       "reposts": 4,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00209-urinary-schistosomiasis-with-a-calcified-bladder",
+    "postId": "18095590730446526",
+    "measuredAt": "2026-10-29T21:31:03.691Z",
+    "publishedAt": "2026-10-26T19:00:21.120Z",
+    "ageHours": 74.51182527777777,
+    "experiment": {
+      "id": "case-00209-urinary-schistosomiasis-with-a-calcified-bladder",
+      "assignedAt": "2026-10-26T19:00:11.299Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-26T19:20:21.120Z",
+    "ctaDueAt": "2026-10-26T20:15:21.120Z",
+    "metrics": {
+      "views": 5082,
+      "likes": 100,
+      "replies": 93,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00212-horseshoe-kidney",
+    "postId": "18102425699386750",
+    "measuredAt": "2026-10-29T21:31:04.211Z",
+    "publishedAt": "2026-10-29T19:04:49.352Z",
+    "ageHours": 2.437460833333333,
+    "experiment": {
+      "id": "case-00212-horseshoe-kidney",
+      "assignedAt": "2026-10-29T19:04:40.154Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a vague ache low in the back.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-29T19:24:49.352Z",
+    "ctaDueAt": "2026-10-29T20:19:49.352Z",
+    "metrics": {
+      "views": 1440,
+      "likes": 52,
+      "replies": 60,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
