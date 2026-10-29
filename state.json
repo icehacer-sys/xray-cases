@@ -2921,7 +2921,9 @@
       "publishedCaption": "A patient with a vague ache low in the back.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00212-horseshoe-kidney\",\"assignedAt\":\"2026-10-29T19:04:40.154Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18102425699386750",
+      "challengePostedAt": "2026-10-29T19:04:49.352Z"
     }
   },
   "posted": {

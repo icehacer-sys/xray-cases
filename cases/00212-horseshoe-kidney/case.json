@@ -127,5 +127,13 @@
     "sha256": "c7145f49261c2feb497365161e08b2dd811b281b52c4a4bca4e9e4f673e2600f",
     "approvedAt": "2026-10-25T21:25:42.963Z",
     "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a vague ache low in the back.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00212-horseshoe-kidney\",\"assignedAt\":\"2026-10-29T19:04:40.154Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18102425699386750",
+    "challengePostedAt": "2026-10-29T19:04:49.352Z"
   }
 }
