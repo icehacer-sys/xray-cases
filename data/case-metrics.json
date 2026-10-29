@@ -17228,5 +17228,117 @@
       "reposts": 3,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00207-takotsubo-cardiomyopathy",
+    "postId": "18096011516656084",
+    "measuredAt": "2026-10-29T06:23:19.094Z",
+    "publishedAt": "2026-10-22T19:03:10.903Z",
+    "ageHours": 155.3356086111111,
+    "experiment": {
+      "id": "case-00207-takotsubo-cardiomyopathy",
+      "assignedAt": "2026-10-22T19:02:58.136Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a tight chest after a really upsetting week.\n\nThen the X-ray loaded 😭\n\nAnd the chest held something nobody expected to see.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-22T19:23:10.903Z",
+    "ctaDueAt": "2026-10-22T20:18:10.903Z",
+    "metrics": {
+      "views": 4947,
+      "likes": 117,
+      "replies": 113,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00208-ulcerative-colitis-with-lead-pipe-colon",
+    "postId": "18030752579899369",
+    "measuredAt": "2026-10-29T06:23:19.469Z",
+    "publishedAt": "2026-10-23T19:04:05.357Z",
+    "ageHours": 131.32058666666666,
+    "experiment": {
+      "id": "case-00208-ulcerative-colitis-with-lead-pipe-colon",
+      "assignedAt": "2026-10-23T19:03:52.486Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-23T19:24:05.357Z",
+    "ctaDueAt": "2026-10-23T20:19:05.357Z",
+    "metrics": {
+      "views": 9078,
+      "likes": 142,
+      "replies": 112,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00210-moyamoya-disease",
+    "postId": "18097822445115488",
+    "measuredAt": "2026-10-29T06:23:19.800Z",
+    "publishedAt": "2026-10-27T19:03:47.755Z",
+    "ageHours": 35.32556805555556,
+    "experiment": {
+      "id": "case-00210-moyamoya-disease",
+      "assignedAt": "2026-10-27T19:03:37.592Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-27T19:23:47.755Z",
+    "ctaDueAt": "2026-10-27T20:18:47.755Z",
+    "metrics": {
+      "views": 5709,
+      "likes": 144,
+      "replies": 92,
+      "reposts": 7,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00211-oesophageal-varices",
+    "postId": "17988834048118608",
+    "measuredAt": "2026-10-29T06:23:21.086Z",
+    "publishedAt": "2026-10-28T19:01:47.781Z",
+    "ageHours": 11.35925138888889,
+    "experiment": {
+      "id": "case-00211-oesophageal-varices",
+      "assignedAt": "2026-10-28T19:01:32.595Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with constant tiredness and a belly that kept getting bigger.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what was hiding in there.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-28T19:21:47.781Z",
+    "ctaDueAt": "2026-10-28T20:16:47.781Z",
+    "metrics": {
+      "views": 4150,
+      "likes": 97,
+      "replies": 67,
+      "reposts": 3,
+      "quotes": 0
+    }
   }
 ]
