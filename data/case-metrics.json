@@ -17200,5 +17200,33 @@
       "reposts": 1,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00209-urinary-schistosomiasis-with-a-calcified-bladder",
+    "postId": "18095590730446526",
+    "measuredAt": "2026-10-29T01:21:01.928Z",
+    "publishedAt": "2026-10-26T19:00:21.120Z",
+    "ageHours": 54.34466888888889,
+    "experiment": {
+      "id": "case-00209-urinary-schistosomiasis-with-a-calcified-bladder",
+      "assignedAt": "2026-10-26T19:00:11.299Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-26T19:20:21.120Z",
+    "ctaDueAt": "2026-10-26T20:15:21.120Z",
+    "metrics": {
+      "views": 5059,
+      "likes": 100,
+      "replies": 93,
+      "reposts": 3,
+      "quotes": 0
+    }
   }
 ]
