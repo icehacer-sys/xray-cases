@@ -1787,6 +1787,16 @@
       "publishedId": "18102425699386750",
       "publishedAt": "2026-10-29T19:04:49.352Z",
       "confirmedPublished": true
+    },
+    "case:00212-horseshoe-kidney:answer": {
+      "creationId": "17896039140614054",
+      "createdAt": "2026-10-29T19:25:00.778Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Horseshoe kidney\n\n👀 What you see:\nBoth kidneys sit low and their lower poles point inward and join across the spine into one U-shaped horseshoe.\n\n🦴 Why it matters:\nHorseshoe kidney is the commonest renal fusion anomaly.\n\n💊 Treatment:\nMost people need no treatment. Complications such as obstruction or stones are treated when they occur.",
+        "reply_to_id": "18102425699386750",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":340}]"
+      }
     }
   },
   "stages": {
