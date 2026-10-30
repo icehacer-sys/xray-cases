@@ -17676,5 +17676,89 @@
       "reposts": 2,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00208-ulcerative-colitis-with-lead-pipe-colon",
+    "postId": "18030752579899369",
+    "measuredAt": "2026-10-30T12:37:53.322Z",
+    "publishedAt": "2026-10-23T19:04:05.357Z",
+    "ageHours": 161.56332361111112,
+    "experiment": {
+      "id": "case-00208-ulcerative-colitis-with-lead-pipe-colon",
+      "assignedAt": "2026-10-23T19:03:52.486Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with loose stools blamed on stress at work.\n\nThen the X-ray loaded 😭\n\nAnd the abdomen had a lot to say about it.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-23T19:24:05.357Z",
+    "ctaDueAt": "2026-10-23T20:19:05.357Z",
+    "metrics": {
+      "views": 9119,
+      "likes": 142,
+      "replies": 112,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00210-moyamoya-disease",
+    "postId": "18097822445115488",
+    "measuredAt": "2026-10-30T12:37:53.814Z",
+    "publishedAt": "2026-10-27T19:03:47.755Z",
+    "ageHours": 65.56834972222222,
+    "experiment": {
+      "id": "case-00210-moyamoya-disease",
+      "assignedAt": "2026-10-27T19:03:37.592Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-27T19:23:47.755Z",
+    "ctaDueAt": "2026-10-27T20:18:47.755Z",
+    "metrics": {
+      "views": 6192,
+      "likes": 145,
+      "replies": 93,
+      "reposts": 7,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00211-oesophageal-varices",
+    "postId": "17988834048118608",
+    "measuredAt": "2026-10-30T12:37:54.113Z",
+    "publishedAt": "2026-10-28T19:01:47.781Z",
+    "ageHours": 41.60175888888889,
+    "experiment": {
+      "id": "case-00211-oesophageal-varices",
+      "assignedAt": "2026-10-28T19:01:32.595Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with constant tiredness and a belly that kept getting bigger.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what was hiding in there.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-28T19:21:47.781Z",
+    "ctaDueAt": "2026-10-28T20:16:47.781Z",
+    "metrics": {
+      "views": 8443,
+      "likes": 116,
+      "replies": 72,
+      "reposts": 5,
+      "quotes": 0
+    }
   }
 ]
