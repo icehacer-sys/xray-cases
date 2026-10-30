@@ -1827,6 +1827,16 @@
       "publishedId": "17994226110051436",
       "publishedAt": "2026-10-30T20:00:24.919Z",
       "confirmedPublished": true
+    },
+    "case:00213-supracardiac-total-anomalous-pulmonary-venous-return:answer": {
+      "creationId": "17896185822614054",
+      "createdAt": "2026-10-30T20:20:38.602Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Supracardiac total anomalous pulmonary venous return\n\n👀 What you see:\nThe heart and a widened upper mediastinum make a figure of 8 like a snowman with busy lung vessels.\n\n🦴 Why it matters:\nIn supracardiac TAPVR all four pulmonary veins drain into a vertical vein that empties into the innominate vein and the superior vena cava.\n\n💊 Treatment:\nTreatment is surgery to reconnect the pulmonary veins to the left atrium. Obstructed forms are a neonatal emergency.",
+        "reply_to_id": "17994226110051436",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":462}]"
+      }
     }
   },
   "stages": {
