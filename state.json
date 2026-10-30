@@ -2972,7 +2972,9 @@
       "publishedCaption": "A patient with breathlessness and tiredness every time they played.\n\nThen the X-ray loaded 😭\n\nPlaytime ended early and the chest film had other plans.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00213-supracardiac-total-anomalous-pulmonary-venous-return\",\"assignedAt\":\"2026-10-30T20:00:16.184Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "17994226110051436",
+      "challengePostedAt": "2026-10-30T20:00:24.919Z"
     }
   },
   "posted": {

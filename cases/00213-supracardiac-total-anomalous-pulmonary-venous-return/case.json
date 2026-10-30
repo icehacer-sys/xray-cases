@@ -154,5 +154,13 @@
     "reviewedAt": "2026-10-25T21:15:38.844Z",
     "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
     "clueFactsSha256": "47c20aee378eb3e5579b5b5f57ea473df7b64dfb97c892fc5890b9a0f4b1af89"
+  },
+  "stages": {
+    "publishedCaption": "A patient with breathlessness and tiredness every time they played.\n\nThen the X-ray loaded 😭\n\nPlaytime ended early and the chest film had other plans.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00213-supracardiac-total-anomalous-pulmonary-venous-return\",\"assignedAt\":\"2026-10-30T20:00:16.184Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "17994226110051436",
+    "challengePostedAt": "2026-10-30T20:00:24.919Z"
   }
 }
