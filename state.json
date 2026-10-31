@@ -1853,6 +1853,17 @@
       "publishedId": "17948646513357661",
       "publishedAt": "2026-10-30T21:16:20.420Z",
       "confirmedPublished": true
+    },
+    "case:00214-copper-beaten-skull-from-craniosynostosis:challenge": {
+      "creationId": "17896360320614054",
+      "createdAt": "2026-10-31T20:02:20.156Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00214-copper-beaten-skull-from-craniosynostosis/xray.png",
+        "text": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "d7213808e8766bbf00be3abb7c36aac01f30214d61e984a9b3404dbdf2b2c21c:51e28634a9be7d5f9bd16bd9ab22d42dd6601ff39a97e2894241d18ed9d0daa4:19bb56d9d9d72ba447a0f847b062b089fb00cef30c25f4e422cb4e03381c43c3"
     }
   },
   "stages": {
@@ -3004,12 +3015,18 @@
       "answerCommentId": "17939440860400518",
       "answerPostedAt": "2026-10-30T20:20:45.925Z",
       "ctaPostedAt": "2026-10-30T21:16:22.026Z"
+    },
+    "00214-copper-beaten-skull-from-craniosynostosis": {
+      "publishedCaption": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00214-copper-beaten-skull-from-craniosynostosis\",\"assignedAt\":\"2026-10-31T20:02:15.336Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "count": 0
     }
   }
