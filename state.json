@@ -1867,6 +1867,16 @@
       "publishedId": "17988459480076587",
       "publishedAt": "2026-10-31T20:02:24.657Z",
       "confirmedPublished": true
+    },
+    "case:00214-copper-beaten-skull-from-craniosynostosis:answer": {
+      "creationId": "17896362552614054",
+      "createdAt": "2026-10-31T20:22:34.369Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Copper beaten skull from craniosynostosis\n\n👀 What you see:\nThe whole inner skull vault is covered in rounded scalloped dents like hammered copper.\n\n🦴 Why it matters:\nThe brain is growing inside a skull that cannot expand because its sutures fused too early.\n\n💊 Treatment:\nSurgery releases and reshapes the fused skull to make room for the growing brain. Raised intracranial pressure needs urgent neurosurgical review.",
+        "reply_to_id": "17988459480076587",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":420}]"
+      }
     }
   },
   "stages": {
