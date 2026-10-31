@@ -3023,7 +3023,9 @@
       "publishedCaption": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00214-copper-beaten-skull-from-craniosynostosis\",\"assignedAt\":\"2026-10-31T20:02:15.336Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "17988459480076587",
+      "challengePostedAt": "2026-10-31T20:02:24.657Z"
     }
   },
   "posted": {
