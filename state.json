@@ -1880,6 +1880,16 @@
       "publishedId": "18168098830483885",
       "publishedAt": "2026-10-31T20:22:39.571Z",
       "confirmedPublished": true
+    },
+    "case:00214-copper-beaten-skull-from-craniosynostosis:cta": {
+      "creationId": "17896371312614054",
+      "createdAt": "2026-10-31T21:18:00.847Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "These X-rays have had over 170 million views and the question under almost every one is whether it can be fixed.\n\nSo I put 10 of the weirdest into one book that explains what each one is and what happens next in plain words.\n\nIt comes with a phone game too so you can guess before you flip 👇🏼\nbook.mednoteslab.com/?c=1031",
+        "reply_to_id": "18168098830483885",
+        "link_attachment": "https://book.mednoteslab.com/?c=card"
+      }
     }
   },
   "stages": {
