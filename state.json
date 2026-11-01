@@ -1893,6 +1893,17 @@
       "publishedId": "18422087914158395",
       "publishedAt": "2026-10-31T21:18:07.091Z",
       "confirmedPublished": true
+    },
+    "case:00215-tuberculous-autonephrectomy:challenge": {
+      "creationId": "17896534575614054",
+      "createdAt": "2026-11-01T20:02:15.231Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00215-tuberculous-autonephrectomy/xray.png",
+        "text": "A patient with a constant urge to pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "58d0e3a218f4a4c37938e5d453ad5ea7435529ae751b793a6de1062d962f7621:64769b9c98a433a34beec690ec3c08883dbd378e1618db06aeb464eb6b433923:d662928ccda4ad69747e78ed7942c33facf1b77048e3400ced5f20aff7f2a25b"
     }
   },
   "stages": {
@@ -3055,12 +3066,18 @@
       "answerCommentId": "18168098830483885",
       "answerPostedAt": "2026-10-31T20:22:39.571Z",
       "ctaPostedAt": "2026-10-31T21:18:08.499Z"
+    },
+    "00215-tuberculous-autonephrectomy": {
+      "publishedCaption": "A patient with a constant urge to pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00215-tuberculous-autonephrectomy\",\"assignedAt\":\"2026-11-01T20:02:08.570Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-10-31",
+      "date": "2026-11-01",
       "count": 0
     }
   }
