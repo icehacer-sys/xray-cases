@@ -1907,6 +1907,16 @@
       "publishedId": "18097077188147046",
       "publishedAt": "2026-11-01T20:02:20.952Z",
       "confirmedPublished": true
+    },
+    "case:00215-tuberculous-autonephrectomy:answer": {
+      "creationId": "17896536780614054",
+      "createdAt": "2026-11-01T20:23:03.981Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Tuberculous autonephrectomy\n\n👀 What you see:\nThe left kidney is replaced by a dense lump of chalky calcium that still keeps a rough kidney shape.\n\n🦴 Why it matters:\nThis is the classic picture of end-stage tuberculosis of the kidney. The destroyed kidney calcifies into a nonfunctioning mass called a putty kidney.\n\n💊 Treatment:\nStandard antituberculous therapy treats the infection. A painful or infected nonfunctioning kidney may be removed by nephrectomy.",
+        "reply_to_id": "18097077188147046",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":461}]"
+      }
     }
   },
   "stages": {
