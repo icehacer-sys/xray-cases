@@ -18348,5 +18348,89 @@
       "reposts": 3,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00209-urinary-schistosomiasis-with-a-calcified-bladder",
+    "postId": "18095590730446526",
+    "measuredAt": "2026-11-01T10:02:37.723Z",
+    "publishedAt": "2026-10-26T19:00:21.120Z",
+    "ageHours": 135.03794527777777,
+    "experiment": {
+      "id": "case-00209-urinary-schistosomiasis-with-a-calcified-bladder",
+      "assignedAt": "2026-10-26T19:00:11.299Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-26T19:20:21.120Z",
+    "ctaDueAt": "2026-10-26T20:15:21.120Z",
+    "metrics": {
+      "views": 5151,
+      "likes": 101,
+      "replies": 93,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00212-horseshoe-kidney",
+    "postId": "18102425699386750",
+    "measuredAt": "2026-11-01T10:02:37.909Z",
+    "publishedAt": "2026-10-29T19:04:49.352Z",
+    "ageHours": 62.96348805555556,
+    "experiment": {
+      "id": "case-00212-horseshoe-kidney",
+      "assignedAt": "2026-10-29T19:04:40.154Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a vague ache low in the back.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-29T19:24:49.352Z",
+    "ctaDueAt": "2026-10-29T20:19:49.352Z",
+    "metrics": {
+      "views": 4876,
+      "likes": 99,
+      "replies": 85,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00214-copper-beaten-skull-from-craniosynostosis",
+    "postId": "17988459480076587",
+    "measuredAt": "2026-11-01T10:02:38.109Z",
+    "publishedAt": "2026-10-31T20:02:24.657Z",
+    "ageHours": 14.003736666666667,
+    "experiment": {
+      "id": "case-00214-copper-beaten-skull-from-craniosynostosis",
+      "assignedAt": "2026-10-31T20:02:15.336Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-31T20:22:24.657Z",
+    "ctaDueAt": "2026-10-31T21:17:24.657Z",
+    "metrics": {
+      "views": 5071,
+      "likes": 155,
+      "replies": 110,
+      "reposts": 7,
+      "quotes": 2
+    }
   }
 ]
