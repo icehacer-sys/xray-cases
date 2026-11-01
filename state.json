@@ -3074,7 +3074,9 @@
       "publishedCaption": "A patient with a constant urge to pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00215-tuberculous-autonephrectomy\",\"assignedAt\":\"2026-11-01T20:02:08.570Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18097077188147046",
+      "challengePostedAt": "2026-11-01T20:02:20.952Z"
     }
   },
   "posted": {
