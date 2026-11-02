@@ -1960,6 +1960,16 @@
       "publishedId": "18100161980413281",
       "publishedAt": "2026-11-02T20:25:08.602Z",
       "confirmedPublished": true
+    },
+    "case:00216-carotid-body-tumour:cta": {
+      "creationId": "17896682118614054",
+      "createdAt": "2026-11-02T21:21:10.324Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "These X-rays have had over 170 million views and the question under almost every one is whether it can be fixed.\n\nSo I put 10 of the weirdest into one book that explains what each one is and what happens next in plain words.\n\nIt comes with a phone game too so you can guess before you flip 👇🏼\nbook.mednoteslab.com/?c=1102",
+        "reply_to_id": "18100161980413281",
+        "link_attachment": "https://book.mednoteslab.com/?c=card"
+      }
     }
   },
   "stages": {
