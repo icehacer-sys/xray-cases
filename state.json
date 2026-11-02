@@ -1933,6 +1933,17 @@
       "publishedId": "18377737693208145",
       "publishedAt": "2026-11-01T21:18:43.610Z",
       "confirmedPublished": true
+    },
+    "case:00216-carotid-body-tumour:challenge": {
+      "creationId": "17896676763614054",
+      "createdAt": "2026-11-02T20:04:43.242Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00216-carotid-body-tumour/xray.png",
+        "text": "A patient with a painless lump in the side of the neck for a year.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "081efb90e4e1ba2dcab8adb020ff03faccf753228ada08f8517e9f9d43c59a14:dfd6f524880f093cf1dd9b930dc9097dfd21c414e1c804e9950280a9ca579c84:fb46c0e736450b6ae291bebc5dfab7a1a14b8dae7955b62a42ec2b20f5b313cf"
     }
   },
   "stages": {
@@ -3106,12 +3117,18 @@
       "answerCommentId": "17890869987686287",
       "answerPostedAt": "2026-11-01T20:23:09.849Z",
       "ctaPostedAt": "2026-11-01T21:18:44.952Z"
+    },
+    "00216-carotid-body-tumour": {
+      "publishedCaption": "A patient with a painless lump in the side of the neck for a year.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00216-carotid-body-tumour\",\"assignedAt\":\"2026-11-02T20:04:37.903Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "count": 0
     }
   }
