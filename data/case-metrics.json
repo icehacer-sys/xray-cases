@@ -18908,5 +18908,117 @@
       "reposts": 3,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00209-urinary-schistosomiasis-with-a-calcified-bladder",
+    "postId": "18095590730446526",
+    "measuredAt": "2026-11-02T16:17:29.454Z",
+    "publishedAt": "2026-10-26T19:00:21.120Z",
+    "ageHours": 165.28564833333334,
+    "experiment": {
+      "id": "case-00209-urinary-schistosomiasis-with-a-calcified-bladder",
+      "assignedAt": "2026-10-26T19:00:11.299Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a little blood at the end of every pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the history prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-26T19:20:21.120Z",
+    "ctaDueAt": "2026-10-26T20:15:21.120Z",
+    "metrics": {
+      "views": 5175,
+      "likes": 101,
+      "replies": 93,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00212-horseshoe-kidney",
+    "postId": "18102425699386750",
+    "measuredAt": "2026-11-02T16:17:29.676Z",
+    "publishedAt": "2026-10-29T19:04:49.352Z",
+    "ageHours": 93.21120111111111,
+    "experiment": {
+      "id": "case-00212-horseshoe-kidney",
+      "assignedAt": "2026-10-29T19:04:40.154Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a vague ache low in the back.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-29T19:24:49.352Z",
+    "ctaDueAt": "2026-10-29T20:19:49.352Z",
+    "metrics": {
+      "views": 4938,
+      "likes": 99,
+      "replies": 85,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00214-copper-beaten-skull-from-craniosynostosis",
+    "postId": "17988459480076587",
+    "measuredAt": "2026-11-02T16:17:29.929Z",
+    "publishedAt": "2026-10-31T20:02:24.657Z",
+    "ageHours": 44.251464444444444,
+    "experiment": {
+      "id": "case-00214-copper-beaten-skull-from-craniosynostosis",
+      "assignedAt": "2026-10-31T20:02:15.336Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-31T20:22:24.657Z",
+    "ctaDueAt": "2026-10-31T21:17:24.657Z",
+    "metrics": {
+      "views": 9472,
+      "likes": 204,
+      "replies": 138,
+      "reposts": 9,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00215-tuberculous-autonephrectomy",
+    "postId": "18097077188147046",
+    "measuredAt": "2026-11-02T16:17:30.166Z",
+    "publishedAt": "2026-11-01T20:02:20.952Z",
+    "ageHours": 20.252559444444444,
+    "experiment": {
+      "id": "case-00215-tuberculous-autonephrectomy",
+      "assignedAt": "2026-11-01T20:02:08.570Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a constant urge to pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-01T20:22:20.952Z",
+    "ctaDueAt": "2026-11-01T21:17:20.952Z",
+    "metrics": {
+      "views": 25594,
+      "likes": 97,
+      "replies": 68,
+      "reposts": 3,
+      "quotes": 0
+    }
   }
 ]
