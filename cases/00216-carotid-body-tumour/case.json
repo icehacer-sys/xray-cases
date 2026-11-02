@@ -140,5 +140,13 @@
     "sha256": "fb46c0e736450b6ae291bebc5dfab7a1a14b8dae7955b62a42ec2b20f5b313cf",
     "reviewedAt": "2026-10-25T21:15:38.878Z",
     "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification"
+  },
+  "stages": {
+    "publishedCaption": "A patient with a painless lump in the side of the neck for a year.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00216-carotid-body-tumour\",\"assignedAt\":\"2026-11-02T20:04:37.903Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18424033363084458",
+    "challengePostedAt": "2026-11-02T20:04:48.187Z"
   }
 }
