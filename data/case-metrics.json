@@ -19216,5 +19216,117 @@
       "reposts": 3,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00210-moyamoya-disease",
+    "postId": "18097822445115488",
+    "measuredAt": "2026-11-03T07:25:23.378Z",
+    "publishedAt": "2026-10-27T19:03:47.755Z",
+    "ageHours": 156.35989527777778,
+    "experiment": {
+      "id": "case-00210-moyamoya-disease",
+      "assignedAt": "2026-10-27T19:03:37.592Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches and an arm that sometimes felt heavy.\n\nThen the X-ray loaded 😭\n\nNothing about the head or the arm prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-27T19:23:47.755Z",
+    "ctaDueAt": "2026-10-27T20:18:47.755Z",
+    "metrics": {
+      "views": 6305,
+      "likes": 147,
+      "replies": 93,
+      "reposts": 7,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00211-oesophageal-varices",
+    "postId": "17988834048118608",
+    "measuredAt": "2026-11-03T07:25:23.569Z",
+    "publishedAt": "2026-10-28T19:01:47.781Z",
+    "ageHours": 132.39327444444444,
+    "experiment": {
+      "id": "case-00211-oesophageal-varices",
+      "assignedAt": "2026-10-28T19:01:32.595Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with constant tiredness and a belly that kept getting bigger.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what was hiding in there.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-28T19:21:47.781Z",
+    "ctaDueAt": "2026-10-28T20:16:47.781Z",
+    "metrics": {
+      "views": 9605,
+      "likes": 117,
+      "replies": 72,
+      "reposts": 5,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00213-supracardiac-total-anomalous-pulmonary-venous-return",
+    "postId": "17994226110051436",
+    "measuredAt": "2026-11-03T07:25:23.802Z",
+    "publishedAt": "2026-10-30T20:00:24.919Z",
+    "ageHours": 83.41635638888889,
+    "experiment": {
+      "id": "case-00213-supracardiac-total-anomalous-pulmonary-venous-return",
+      "assignedAt": "2026-10-30T20:00:16.184Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with breathlessness and tiredness every time they played.\n\nThen the X-ray loaded 😭\n\nPlaytime ended early and the chest film had other plans.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-30T20:20:24.919Z",
+    "ctaDueAt": "2026-10-30T21:15:24.919Z",
+    "metrics": {
+      "views": 4348,
+      "likes": 99,
+      "replies": 67,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00216-carotid-body-tumour",
+    "postId": "18424033363084458",
+    "measuredAt": "2026-11-03T07:25:24.080Z",
+    "publishedAt": "2026-11-02T20:04:48.187Z",
+    "ageHours": 11.34330361111111,
+    "experiment": {
+      "id": "case-00216-carotid-body-tumour",
+      "assignedAt": "2026-11-02T20:04:37.903Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a painless lump in the side of the neck for a year.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-02T20:24:48.187Z",
+    "ctaDueAt": "2026-11-02T21:19:48.187Z",
+    "metrics": {
+      "views": 2531,
+      "likes": 89,
+      "replies": 89,
+      "reposts": 1,
+      "quotes": 0
+    }
   }
 ]
