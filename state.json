@@ -1973,6 +1973,17 @@
       "publishedId": "18126517873682301",
       "publishedAt": "2026-11-02T21:21:18.338Z",
       "confirmedPublished": true
+    },
+    "case:00217-giant-sigmoid-diverticulum:challenge": {
+      "creationId": "17896815123614054",
+      "createdAt": "2026-11-03T20:00:15.436Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00217-giant-sigmoid-diverticulum/xray.png",
+        "text": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "ecdec21c7e7d16e9e971a4ff84bfe75504d6a3540b68174b58bf86e6fe6b8fc8:22b358aae8cd5341b9698629d26979dfc63c07ee821ec9471bdb34980fc85a07:a83c771e186c2503738e0aff78d15ae35b6a6d6261ac8a93fde7fb2f7d543a04"
     }
   },
   "stages": {
@@ -3157,12 +3168,18 @@
       "answerCommentId": "18100161980413281",
       "answerPostedAt": "2026-11-02T20:25:08.602Z",
       "ctaPostedAt": "2026-11-02T21:21:20.090Z"
+    },
+    "00217-giant-sigmoid-diverticulum": {
+      "publishedCaption": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00217-giant-sigmoid-diverticulum\",\"assignedAt\":\"2026-11-03T20:00:08.314Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-11-02",
+      "date": "2026-11-03",
       "count": 0
     }
   }
