@@ -1996,7 +1996,10 @@
         "text": "Answer: Giant sigmoid diverticulum\n\n👀 What you see:\nA huge smooth round balloon of gas with a thin wall sits in the left lower abdomen and pushes the bowel aside.\n\n🦴 Why it matters:\nA giant sigmoid diverticulum is a rare complication of diverticular disease. A one-way valve lets gas into the pouch but not out so it inflates over time.\n\n💊 Treatment:\nTreatment is usually surgical resection of the diverticulum with the involved sigmoid colon. This removes the risk of perforation and volvulus.",
         "reply_to_id": "18121296121961786",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":489}]"
-      }
+      },
+      "publishedId": "18119192684107487",
+      "publishedAt": "2026-11-03T20:21:49.849Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
