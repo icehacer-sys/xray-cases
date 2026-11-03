@@ -3176,7 +3176,9 @@
       "publishedCaption": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00217-giant-sigmoid-diverticulum\",\"assignedAt\":\"2026-11-03T20:00:08.314Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18121296121961786",
+      "challengePostedAt": "2026-11-03T20:00:32.992Z"
     }
   },
   "posted": {

@@ -128,5 +128,13 @@
     "sha256": "ecdec21c7e7d16e9e971a4ff84bfe75504d6a3540b68174b58bf86e6fe6b8fc8",
     "approvedAt": "2026-10-25T21:25:42.963Z",
     "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00217-giant-sigmoid-diverticulum\",\"assignedAt\":\"2026-11-03T20:00:08.314Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18121296121961786",
+    "challengePostedAt": "2026-11-03T20:00:32.992Z"
   }
 }
