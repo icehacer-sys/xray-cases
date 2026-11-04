@@ -2027,6 +2027,16 @@
       "publishedId": "18130883288308729",
       "publishedAt": "2026-11-04T20:04:04.517Z",
       "confirmedPublished": true
+    },
+    "case:00218-acromegaly:answer": {
+      "creationId": "17896949250614054",
+      "createdAt": "2026-11-04T20:24:20.197Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "Answer: Acromegaly\n\n👀 What you see:\nHuge frontal sinuses and a thick skull vault sit above a jaw that juts past the upper teeth.\n\n🦴 Why it matters:\nAcromegaly is growth hormone excess after the growth plates close and it is almost always caused by a pituitary adenoma. The face, jaw, hands, and feet keep enlarging.\n\n💊 Treatment:\nTreatment is usually transsphenoidal surgery to remove the pituitary adenoma. Somatostatin analogues or radiotherapy can treat residual disease.",
+        "reply_to_id": "18130883288308729",
+        "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":469}]"
+      }
     }
   },
   "stages": {
