@@ -139,5 +139,13 @@
     "sha256": "b53430c8c2b97576395ed513eb2bfccb63f3a08d1fc85f15d8f160f65244176b",
     "approvedAt": "2026-10-25T21:25:42.963Z",
     "note": "Owner approved on 2026-10-26 in the Claude Code session after reviewing the batch 3 contact sheet and per-image notes on the verifier objections (answer: approve all 9). One Higgsfield GPT Image 2.5 render per case, medium quality. The automated verifier objection is kept in verifyDefects."
+  },
+  "stages": {
+    "publishedCaption": "A patient with rings and shoes that kept getting tighter.\n\nThen the X-ray loaded 😭\n\nAnd now the picture finally explains what the history could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00218-acromegaly\",\"assignedAt\":\"2026-11-04T20:03:50.430Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18130883288308729",
+    "challengePostedAt": "2026-11-04T20:04:04.517Z"
   }
 }

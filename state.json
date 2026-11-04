@@ -3227,7 +3227,9 @@
       "publishedCaption": "A patient with rings and shoes that kept getting tighter.\n\nThen the X-ray loaded 😭\n\nAnd now the picture finally explains what the history could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00218-acromegaly\",\"assignedAt\":\"2026-11-04T20:03:50.430Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18130883288308729",
+      "challengePostedAt": "2026-11-04T20:04:04.517Z"
     }
   },
   "posted": {
