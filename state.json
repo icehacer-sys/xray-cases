@@ -2013,6 +2013,17 @@
       "publishedId": "18139056370725873",
       "publishedAt": "2026-11-03T21:19:03.049Z",
       "confirmedPublished": true
+    },
+    "case:00218-acromegaly:challenge": {
+      "creationId": "17896948422614054",
+      "createdAt": "2026-11-04T20:03:58.837Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00218-acromegaly/xray.png",
+        "text": "A patient with rings and shoes that kept getting tighter.\n\nThen the X-ray loaded 😭\n\nAnd now the picture finally explains what the history could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "b53430c8c2b97576395ed513eb2bfccb63f3a08d1fc85f15d8f160f65244176b:126365bbf0b8b32c125107f37d6038ae4db107e65e0cb72383c402cbe6db2200:3fa57d050e8263170c265e434b4ad2a746e3e7fa51bec6d641e5794e347e7030"
     }
   },
   "stages": {
@@ -3208,12 +3219,18 @@
       "answerCommentId": "18119192684107487",
       "answerPostedAt": "2026-11-03T20:21:49.849Z",
       "ctaPostedAt": "2026-11-03T21:19:17.112Z"
+    },
+    "00218-acromegaly": {
+      "publishedCaption": "A patient with rings and shoes that kept getting tighter.\n\nThen the X-ray loaded 😭\n\nAnd now the picture finally explains what the history could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00218-acromegaly\",\"assignedAt\":\"2026-11-04T20:03:50.430Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-11-03",
+      "date": "2026-11-04",
       "count": 0
     }
   }
