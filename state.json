@@ -2080,6 +2080,16 @@
       "publishedId": "18446531425131506",
       "publishedAt": "2026-11-05T20:25:43.746Z",
       "confirmedPublished": true
+    },
+    "case:00219-renal-artery-fibromuscular-dysplasia:cta": {
+      "creationId": "17897093241614054",
+      "createdAt": "2026-11-05T21:21:16.732Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "If these X-rays keep stopping your scroll I made you a free round to play on your phone 😭\n\nIt has 6 X-rays with a spoon, a razor blade, and a nail hiding somewhere they should never be.\n\nGuess what each one is and then find out what happens next 👇🏼\nfree.mednoteslab.com/?c=1105",
+        "reply_to_id": "18446531425131506",
+        "link_attachment": "https://free.mednoteslab.com/?c=card"
+      }
     }
   },
   "stages": {
