@@ -20308,5 +20308,117 @@
       "reposts": 2,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00212-horseshoe-kidney",
+    "postId": "18102425699386750",
+    "measuredAt": "2026-11-05T15:07:31.261Z",
+    "publishedAt": "2026-10-29T19:04:49.352Z",
+    "ageHours": 164.04497472222224,
+    "experiment": {
+      "id": "case-00212-horseshoe-kidney",
+      "assignedAt": "2026-10-29T19:04:40.154Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a vague ache low in the back.\n\nThen the X-ray loaded 😭\n\nNobody was ready for what sat behind that ache.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-29T19:24:49.352Z",
+    "ctaDueAt": "2026-10-29T20:19:49.352Z",
+    "metrics": {
+      "views": 5014,
+      "likes": 99,
+      "replies": 85,
+      "reposts": 2,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00214-copper-beaten-skull-from-craniosynostosis",
+    "postId": "17988459480076587",
+    "measuredAt": "2026-11-05T15:07:31.605Z",
+    "publishedAt": "2026-10-31T20:02:24.657Z",
+    "ageHours": 115.08526333333333,
+    "experiment": {
+      "id": "case-00214-copper-beaten-skull-from-craniosynostosis",
+      "assignedAt": "2026-10-31T20:02:15.336Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-31T20:22:24.657Z",
+    "ctaDueAt": "2026-10-31T21:17:24.657Z",
+    "metrics": {
+      "views": 9999,
+      "likes": 212,
+      "replies": 140,
+      "reposts": 9,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00215-tuberculous-autonephrectomy",
+    "postId": "18097077188147046",
+    "measuredAt": "2026-11-05T15:07:31.800Z",
+    "publishedAt": "2026-11-01T20:02:20.952Z",
+    "ageHours": 91.08634666666667,
+    "experiment": {
+      "id": "case-00215-tuberculous-autonephrectomy",
+      "assignedAt": "2026-11-01T20:02:08.570Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a constant urge to pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-01T20:22:20.952Z",
+    "ctaDueAt": "2026-11-01T21:17:20.952Z",
+    "metrics": {
+      "views": 57620,
+      "likes": 131,
+      "replies": 80,
+      "reposts": 5,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00217-giant-sigmoid-diverticulum",
+    "postId": "18121296121961786",
+    "measuredAt": "2026-11-05T15:07:32.025Z",
+    "publishedAt": "2026-11-03T20:00:32.992Z",
+    "ageHours": 43.11639805555556,
+    "experiment": {
+      "id": "case-00217-giant-sigmoid-diverticulum",
+      "assignedAt": "2026-11-03T20:00:08.314Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-03T20:20:32.992Z",
+    "ctaDueAt": "2026-11-03T21:15:32.992Z",
+    "metrics": {
+      "views": 7210,
+      "likes": 120,
+      "replies": 154,
+      "reposts": 3,
+      "quotes": 0
+    }
   }
 ]
