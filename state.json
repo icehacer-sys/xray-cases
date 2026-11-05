@@ -2053,6 +2053,17 @@
       "publishedId": "18119002144789871",
       "publishedAt": "2026-11-04T21:20:02.713Z",
       "confirmedPublished": true
+    },
+    "case:00219-renal-artery-fibromuscular-dysplasia:challenge": {
+      "creationId": "17897086143614054",
+      "createdAt": "2026-11-05T20:04:42.432Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00219-renal-artery-fibromuscular-dysplasia/xray.png",
+        "text": "A patient with headaches and blood pressure that would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "c29c7c8af3e869351bba36ac5d64fed393ae4f695f2f181be9f046b41046ca9d:2f6c09074c3cc4e66fadb379494bb836a0f1121d820a4c18ae4c2731dc436f4e:b3b3afbd7710a404d722380480ce3633da5f69c8dce95521209974ae5e68a157"
     }
   },
   "stages": {
@@ -3259,12 +3270,18 @@
       "answerCommentId": "18644382295021585",
       "answerPostedAt": "2026-11-04T20:24:27.025Z",
       "ctaPostedAt": "2026-11-04T21:20:04.181Z"
+    },
+    "00219-renal-artery-fibromuscular-dysplasia": {
+      "publishedCaption": "A patient with headaches and blood pressure that would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00219-renal-artery-fibromuscular-dysplasia\",\"assignedAt\":\"2026-11-05T20:04:33.353Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-11-04",
+      "date": "2026-11-05",
       "count": 0
     }
   }
