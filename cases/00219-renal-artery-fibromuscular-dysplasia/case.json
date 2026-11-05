@@ -143,5 +143,13 @@
     "reviewedAt": "2026-10-25T21:15:38.917Z",
     "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
     "clueFactsSha256": "a8eb1c18ef6081915923f0f61df587be3a83457b5f907d144b9fa88b8aa8ddc0"
+  },
+  "stages": {
+    "publishedCaption": "A patient with headaches and blood pressure that would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00219-renal-artery-fibromuscular-dysplasia\",\"assignedAt\":\"2026-11-05T20:04:33.353Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18642694195042985",
+    "challengePostedAt": "2026-11-05T20:04:47.788Z"
   }
 }

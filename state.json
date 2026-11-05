@@ -3278,7 +3278,9 @@
       "publishedCaption": "A patient with headaches and blood pressure that would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00219-renal-artery-fibromuscular-dysplasia\",\"assignedAt\":\"2026-11-05T20:04:33.353Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18642694195042985",
+      "challengePostedAt": "2026-11-05T20:04:47.788Z"
     }
   },
   "posted": {
