@@ -2093,6 +2093,17 @@
       "publishedId": "18227940451339003",
       "publishedAt": "2026-11-05T21:21:23.245Z",
       "confirmedPublished": true
+    },
+    "case:00220-neurogenic-bladder-christmas-tree-bladder:challenge": {
+      "creationId": "17897238660614054",
+      "createdAt": "2026-11-06T20:03:23.552Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00220-neurogenic-bladder-christmas-tree-bladder/xray.png",
+        "text": "A patient with leaking urine and one urine infection after another.\n\nThen the X-ray loaded 😭\n\nTake a slow look before you scroll to the answer.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "c2e426d6c18b91ea7fa1ae4c2fab1243572225fd56439b06c0f8175ab136c61e:e650500d38ea479588e1cca38dbec15ebcdc08e81a06edc7bc192998f0fbdb64:bd7843e99897f343327e2c74ab6849da2e63ea3838040691a8c6887f1fb812b9"
     }
   },
   "stages": {
@@ -3310,12 +3321,18 @@
       "answerCommentId": "18446531425131506",
       "answerPostedAt": "2026-11-05T20:25:43.746Z",
       "ctaPostedAt": "2026-11-05T21:21:25.144Z"
+    },
+    "00220-neurogenic-bladder-christmas-tree-bladder": {
+      "publishedCaption": "A patient with leaking urine and one urine infection after another.\n\nThen the X-ray loaded 😭\n\nTake a slow look before you scroll to the answer.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00220-neurogenic-bladder-christmas-tree-bladder\",\"assignedAt\":\"2026-11-06T20:03:16.026Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-11-05",
+      "date": "2026-11-06",
       "count": 0
     }
   }
