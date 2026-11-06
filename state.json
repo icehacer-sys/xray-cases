@@ -3329,7 +3329,9 @@
       "publishedCaption": "A patient with leaking urine and one urine infection after another.\n\nThen the X-ray loaded 😭\n\nTake a slow look before you scroll to the answer.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00220-neurogenic-bladder-christmas-tree-bladder\",\"assignedAt\":\"2026-11-06T20:03:16.026Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "18016003691970066",
+      "challengePostedAt": "2026-11-06T20:03:29.678Z"
     }
   },
   "posted": {
