@@ -2133,6 +2133,17 @@
       "publishedId": "18353683033287945",
       "publishedAt": "2026-11-06T21:19:30.090Z",
       "confirmedPublished": true
+    },
+    "case:00221-crohn-disease-with-string-sign:challenge": {
+      "creationId": "17897374878614054",
+      "createdAt": "2026-11-07T20:03:56.504Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00221-crohn-disease-with-string-sign/xray.png",
+        "text": "A patient with belly cramps and diarrhoea on and off for a year.\n\nThen the X-ray loaded 😭\n\nSomething in there was not meant to be missed.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "b90dc907d300a4a7c0439673032b5d37e99dbc7c9b0d4e386d27fb92202eaf23:054b423c051237218361212910225c85d13ba27994f5eb97ae3b620da3859829:f5e63f990ec7fa060fa067bec5c88b0a737a65e133d6b25d56474a3fe0358902"
     }
   },
   "stages": {
@@ -3361,12 +3372,18 @@
       "answerCommentId": "18099906128412989",
       "answerPostedAt": "2026-11-06T20:23:51.052Z",
       "ctaPostedAt": "2026-11-06T21:19:31.673Z"
+    },
+    "00221-crohn-disease-with-string-sign": {
+      "publishedCaption": "A patient with belly cramps and diarrhoea on and off for a year.\n\nThen the X-ray loaded 😭\n\nSomething in there was not meant to be missed.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00221-crohn-disease-with-string-sign\",\"assignedAt\":\"2026-11-07T20:03:51.069Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "count": 0
     }
   }
