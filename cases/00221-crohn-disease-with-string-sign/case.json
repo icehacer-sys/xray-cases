@@ -146,5 +146,13 @@
     "reviewedAt": "2026-10-25T21:15:38.947Z",
     "reviewer": "Claude Code local copy review 2026-10-26: pipeline-drafted copy checked line by line against the source facts and style rules; fixed caption symptom grammar, a seed hint that leaked an alias, answer lengths so Why it matters fits, conditional treatment wording and the TAPVR clue physiology; not clinical certification",
     "clueFactsSha256": "784571117093d2ed752d0a2ca86a2b2f3d8648d9c69f10f6f5f2ab4274d87709"
+  },
+  "stages": {
+    "publishedCaption": "A patient with belly cramps and diarrhoea on and off for a year.\n\nThen the X-ray loaded 😭\n\nSomething in there was not meant to be missed.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00221-crohn-disease-with-string-sign\",\"assignedAt\":\"2026-11-07T20:03:51.069Z\",\"hookAlt\":false,\"hookAltAvailable\":true,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "18123083599945015",
+    "challengePostedAt": "2026-11-07T20:04:01.733Z"
   }
 }
