@@ -21232,5 +21232,89 @@
       "reposts": 4,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00216-carotid-body-tumour",
+    "postId": "18424033363084458",
+    "measuredAt": "2026-11-07T12:30:24.010Z",
+    "publishedAt": "2026-11-02T20:04:48.187Z",
+    "ageHours": 112.4266175,
+    "experiment": {
+      "id": "case-00216-carotid-body-tumour",
+      "assignedAt": "2026-11-02T20:04:37.903Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a painless lump in the side of the neck for a year.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-02T20:24:48.187Z",
+    "ctaDueAt": "2026-11-02T21:19:48.187Z",
+    "metrics": {
+      "views": 4130,
+      "likes": 106,
+      "replies": 97,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00218-acromegaly",
+    "postId": "18130883288308729",
+    "measuredAt": "2026-11-07T12:30:24.288Z",
+    "publishedAt": "2026-11-04T20:04:04.517Z",
+    "ageHours": 64.43882527777778,
+    "experiment": {
+      "id": "case-00218-acromegaly",
+      "assignedAt": "2026-11-04T20:03:50.430Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with rings and shoes that kept getting tighter.\n\nThen the X-ray loaded 😭\n\nAnd now the picture finally explains what the history could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-04T20:24:04.517Z",
+    "ctaDueAt": "2026-11-04T21:19:04.517Z",
+    "metrics": {
+      "views": 5762,
+      "likes": 130,
+      "replies": 82,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00219-renal-artery-fibromuscular-dysplasia",
+    "postId": "18642694195042985",
+    "measuredAt": "2026-11-07T12:30:24.513Z",
+    "publishedAt": "2026-11-05T20:04:47.788Z",
+    "ageHours": 40.42686805555556,
+    "experiment": {
+      "id": "case-00219-renal-artery-fibromuscular-dysplasia",
+      "assignedAt": "2026-11-05T20:04:33.353Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches and blood pressure that would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-05T20:24:47.788Z",
+    "ctaDueAt": "2026-11-05T21:19:47.788Z",
+    "metrics": {
+      "views": 4148,
+      "likes": 110,
+      "replies": 107,
+      "reposts": 1,
+      "quotes": 0
+    }
   }
 ]
