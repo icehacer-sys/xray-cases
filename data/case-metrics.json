@@ -21120,5 +21120,117 @@
       "reposts": 1,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00214-copper-beaten-skull-from-craniosynostosis",
+    "postId": "17988459480076587",
+    "measuredAt": "2026-11-07T07:28:30.358Z",
+    "publishedAt": "2026-10-31T20:02:24.657Z",
+    "ageHours": 155.43491694444444,
+    "experiment": {
+      "id": "case-00214-copper-beaten-skull-from-craniosynostosis",
+      "assignedAt": "2026-10-31T20:02:15.336Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches that kept waking them up at night.\n\nThen the X-ray loaded 😭\n\nNothing about the bedtime routine prepared anyone for this film.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-10-31T20:22:24.657Z",
+    "ctaDueAt": "2026-10-31T21:17:24.657Z",
+    "metrics": {
+      "views": 10027,
+      "likes": 212,
+      "replies": 140,
+      "reposts": 9,
+      "quotes": 2
+    }
+  },
+  {
+    "folder": "00215-tuberculous-autonephrectomy",
+    "postId": "18097077188147046",
+    "measuredAt": "2026-11-07T07:28:30.585Z",
+    "publishedAt": "2026-11-01T20:02:20.952Z",
+    "ageHours": 131.43600916666668,
+    "experiment": {
+      "id": "case-00215-tuberculous-autonephrectomy",
+      "assignedAt": "2026-11-01T20:02:08.570Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a constant urge to pee for months.\n\nThen the X-ray loaded 😭\n\nNothing about the bladder prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-01T20:22:20.952Z",
+    "ctaDueAt": "2026-11-01T21:17:20.952Z",
+    "metrics": {
+      "views": 57674,
+      "likes": 131,
+      "replies": 80,
+      "reposts": 5,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00217-giant-sigmoid-diverticulum",
+    "postId": "18121296121961786",
+    "measuredAt": "2026-11-07T07:28:30.885Z",
+    "publishedAt": "2026-11-03T20:00:32.992Z",
+    "ageHours": 83.4660813888889,
+    "experiment": {
+      "id": "case-00217-giant-sigmoid-diverticulum",
+      "assignedAt": "2026-11-03T20:00:08.314Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-03T20:20:32.992Z",
+    "ctaDueAt": "2026-11-03T21:15:32.992Z",
+    "metrics": {
+      "views": 7530,
+      "likes": 121,
+      "replies": 154,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00220-neurogenic-bladder-christmas-tree-bladder",
+    "postId": "18016003691970066",
+    "measuredAt": "2026-11-07T07:28:31.006Z",
+    "publishedAt": "2026-11-06T20:03:29.678Z",
+    "ageHours": 11.417035555555556,
+    "experiment": {
+      "id": "case-00220-neurogenic-bladder-christmas-tree-bladder",
+      "assignedAt": "2026-11-06T20:03:16.026Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with leaking urine and one urine infection after another.\n\nThen the X-ray loaded 😭\n\nTake a slow look before you scroll to the answer.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-06T20:23:29.678Z",
+    "ctaDueAt": "2026-11-06T21:18:29.678Z",
+    "metrics": {
+      "views": 5495,
+      "likes": 116,
+      "replies": 108,
+      "reposts": 4,
+      "quotes": 0
+    }
   }
 ]
