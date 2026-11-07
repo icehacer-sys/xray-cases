@@ -2156,7 +2156,10 @@
         "text": "Answer: Crohn disease with string sign\n\n👀 What you see:\nIn the right lower abdomen the terminal ileum is squeezed into a thin thread of barium like a piece of string.\n\n🦴 Why it matters:\nCrohn disease is chronic transmural inflammation that can affect any part of the gut and favours the terminal ileum.\n\n💊 Treatment:\nSteroids can induce remission and immunomodulators or biologics can maintain it. A tight fibrotic stricture may need resection or strictureplasty.",
         "reply_to_id": "18123083599945015",
         "text_entities": "[{\"entity_type\":\"SPOILER\",\"offset\":8,\"length\":458}]"
-      }
+      },
+      "publishedId": "18183381640428235",
+      "publishedAt": "2026-11-07T20:24:18.838Z",
+      "confirmedPublished": true
     }
   },
   "stages": {
