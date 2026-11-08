@@ -142,5 +142,13 @@
     "sha256": "406e84c60a05d95965326b469d89def1f84247a509ce2dcb3fd02c28c2f4a20c",
     "approvedAt": "2026-10-25T21:42:09.165Z",
     "note": "Owner approved on 2026-10-26 in the Claude Code session after an owner-approved single re-render (the first render was weak). Higgsfield GPT Image 2.5, medium quality. The verifier objection (the small barium collection below the tube is the duodenal cap the prompt asked for) is kept in verifyDefects."
+  },
+  "stages": {
+    "publishedCaption": "A patient with a full feeling after just a few bites for months.\n\nThen the X-ray loaded 😭\n\nAnd that explains why the meals stopped making sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "experiment": "{\"id\":\"case-00222-linitis-plastica\",\"assignedAt\":\"2026-11-08T20:00:53.730Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+    "answerDelayMin": "20",
+    "ctaDelayMin": "75",
+    "threadsPostId": "17952721908056004",
+    "challengePostedAt": "2026-11-08T20:01:04.904Z"
   }
 }

@@ -3431,7 +3431,9 @@
       "publishedCaption": "A patient with a full feeling after just a few bites for months.\n\nThen the X-ray loaded 😭\n\nAnd that explains why the meals stopped making sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
       "experiment": "{\"id\":\"case-00222-linitis-plastica\",\"assignedAt\":\"2026-11-08T20:00:53.730Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
       "answerDelayMin": "20",
-      "ctaDelayMin": "75"
+      "ctaDelayMin": "75",
+      "threadsPostId": "17952721908056004",
+      "challengePostedAt": "2026-11-08T20:01:04.904Z"
     }
   },
   "posted": {
