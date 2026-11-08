@@ -21820,5 +21820,117 @@
       "reposts": 5,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00216-carotid-body-tumour",
+    "postId": "18424033363084458",
+    "measuredAt": "2026-11-08T18:44:55.655Z",
+    "publishedAt": "2026-11-02T20:04:48.187Z",
+    "ageHours": 142.6687411111111,
+    "experiment": {
+      "id": "case-00216-carotid-body-tumour",
+      "assignedAt": "2026-11-02T20:04:37.903Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a painless lump in the side of the neck for a year.\n\nThen the X-ray loaded 😭\n\nAnd the neck had been keeping a secret.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-02T20:24:48.187Z",
+    "ctaDueAt": "2026-11-02T21:19:48.187Z",
+    "metrics": {
+      "views": 4202,
+      "likes": 106,
+      "replies": 97,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00218-acromegaly",
+    "postId": "18130883288308729",
+    "measuredAt": "2026-11-08T18:44:55.903Z",
+    "publishedAt": "2026-11-04T20:04:04.517Z",
+    "ageHours": 94.68094055555555,
+    "experiment": {
+      "id": "case-00218-acromegaly",
+      "assignedAt": "2026-11-04T20:03:50.430Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with rings and shoes that kept getting tighter.\n\nThen the X-ray loaded 😭\n\nAnd now the picture finally explains what the history could not.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-04T20:24:04.517Z",
+    "ctaDueAt": "2026-11-04T21:19:04.517Z",
+    "metrics": {
+      "views": 5857,
+      "likes": 130,
+      "replies": 82,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00219-renal-artery-fibromuscular-dysplasia",
+    "postId": "18642694195042985",
+    "measuredAt": "2026-11-08T18:44:56.104Z",
+    "publishedAt": "2026-11-05T20:04:47.788Z",
+    "ageHours": 70.66897666666667,
+    "experiment": {
+      "id": "case-00219-renal-artery-fibromuscular-dysplasia",
+      "assignedAt": "2026-11-05T20:04:33.353Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with headaches and blood pressure that would not come down.\n\nThen the X-ray loaded 😭\n\nNothing about the pressure readings prepared anyone for this one.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-05T20:24:47.788Z",
+    "ctaDueAt": "2026-11-05T21:19:47.788Z",
+    "metrics": {
+      "views": 4595,
+      "likes": 114,
+      "replies": 108,
+      "reposts": 1,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00221-crohn-disease-with-string-sign",
+    "postId": "18123083599945015",
+    "measuredAt": "2026-11-08T18:44:56.292Z",
+    "publishedAt": "2026-11-07T20:04:01.733Z",
+    "ageHours": 22.681821944444444,
+    "experiment": {
+      "id": "case-00221-crohn-disease-with-string-sign",
+      "assignedAt": "2026-11-07T20:03:51.069Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with belly cramps and diarrhoea on and off for a year.\n\nThen the X-ray loaded 😭\n\nSomething in there was not meant to be missed.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-07T20:24:01.733Z",
+    "ctaDueAt": "2026-11-07T21:19:01.733Z",
+    "metrics": {
+      "views": 104236,
+      "likes": 163,
+      "replies": 117,
+      "reposts": 2,
+      "quotes": 0
+    }
   }
 ]
