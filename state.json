@@ -2173,6 +2173,17 @@
       "publishedId": "18080321348720885",
       "publishedAt": "2026-11-07T21:19:46.621Z",
       "confirmedPublished": true
+    },
+    "case:00222-linitis-plastica:challenge": {
+      "creationId": "17897529333614054",
+      "createdAt": "2026-11-08T20:00:59.346Z",
+      "params": {
+        "media_type": "IMAGE",
+        "image_url": "https://raw.githubusercontent.com/icehacer-sys/xray-cases/main/cases/00222-linitis-plastica/xray.png",
+        "text": "A patient with a full feeling after just a few bites for months.\n\nThen the X-ray loaded 😭\n\nAnd that explains why the meals stopped making sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+        "topic_tag": "Med Threads"
+      },
+      "assetIdentity": "406e84c60a05d95965326b469d89def1f84247a509ce2dcb3fd02c28c2f4a20c:22e74a4015c33b8c0342f58e28203b2d026071348a724b1d282121ecc0a98116:17f395e3787805ee70410f6ff2fbad56e439bde145759c6d146f76e4e25e9de8"
     }
   },
   "stages": {
@@ -3412,12 +3423,18 @@
       "answerCommentId": "18183381640428235",
       "answerPostedAt": "2026-11-07T20:24:18.838Z",
       "ctaPostedAt": "2026-11-07T21:19:47.878Z"
+    },
+    "00222-linitis-plastica": {
+      "publishedCaption": "A patient with a full feeling after just a few bites for months.\n\nThen the X-ray loaded 😭\n\nAnd that explains why the meals stopped making sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+      "experiment": "{\"id\":\"case-00222-linitis-plastica\",\"assignedAt\":\"2026-11-08T20:00:53.730Z\",\"hookAlt\":false,\"hookAltAvailable\":false,\"followCta\":false,\"replyHint\":true,\"ctaLine\":\"v2\",\"promptVersion\":\"2026-09-10\",\"model\":\"claude-sonnet-5-5\"}",
+      "answerDelayMin": "20",
+      "ctaDelayMin": "75"
     }
   },
   "posted": {
     "total": 0,
     "daily": {
-      "date": "2026-11-07",
+      "date": "2026-11-08",
       "count": 0
     }
   }
