@@ -2200,6 +2200,16 @@
       "publishedId": "18226514944339637",
       "publishedAt": "2026-11-08T20:21:22.777Z",
       "confirmedPublished": true
+    },
+    "case:00222-linitis-plastica:cta": {
+      "creationId": "17897539953614054",
+      "createdAt": "2026-11-08T21:16:48.492Z",
+      "params": {
+        "media_type": "TEXT",
+        "text": "These X-rays have had over 170 million views and the question under almost every one is whether it can be fixed.\n\nSo I put 10 of the weirdest into one book that explains what each one is and what happens next in plain words.\n\nIt comes with a phone game too so you can guess before you flip 👇🏼\nbook.mednoteslab.com/?c=1108",
+        "reply_to_id": "18226514944339637",
+        "link_attachment": "https://book.mednoteslab.com/?c=card"
+      }
     }
   },
   "stages": {
