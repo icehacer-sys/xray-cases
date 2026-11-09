@@ -22324,5 +22324,89 @@
       "reposts": 2,
       "quotes": 0
     }
+  },
+  {
+    "folder": "00217-giant-sigmoid-diverticulum",
+    "postId": "18121296121961786",
+    "measuredAt": "2026-11-09T19:56:49.292Z",
+    "publishedAt": "2026-11-03T20:00:32.992Z",
+    "ageHours": 143.93786138888888,
+    "experiment": {
+      "id": "case-00217-giant-sigmoid-diverticulum",
+      "assignedAt": "2026-11-03T20:00:08.314Z",
+      "hookAlt": false,
+      "hookAltAvailable": true,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a bloated belly that came and went for years.\n\nThen the X-ray loaded 😭\n\nAnd the belly had been keeping a secret all along.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-03T20:20:32.992Z",
+    "ctaDueAt": "2026-11-03T21:15:32.992Z",
+    "metrics": {
+      "views": 7680,
+      "likes": 121,
+      "replies": 154,
+      "reposts": 3,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00220-neurogenic-bladder-christmas-tree-bladder",
+    "postId": "18016003691970066",
+    "measuredAt": "2026-11-09T19:56:49.452Z",
+    "publishedAt": "2026-11-06T20:03:29.678Z",
+    "ageHours": 71.88882611111111,
+    "experiment": {
+      "id": "case-00220-neurogenic-bladder-christmas-tree-bladder",
+      "assignedAt": "2026-11-06T20:03:16.026Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with leaking urine and one urine infection after another.\n\nThen the X-ray loaded 😭\n\nTake a slow look before you scroll to the answer.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-06T20:23:29.678Z",
+    "ctaDueAt": "2026-11-06T21:18:29.678Z",
+    "metrics": {
+      "views": 16043,
+      "likes": 155,
+      "replies": 121,
+      "reposts": 5,
+      "quotes": 0
+    }
+  },
+  {
+    "folder": "00222-linitis-plastica",
+    "postId": "17952721908056004",
+    "measuredAt": "2026-11-09T19:56:49.717Z",
+    "publishedAt": "2026-11-08T20:01:04.904Z",
+    "ageHours": 23.929114722222224,
+    "experiment": {
+      "id": "case-00222-linitis-plastica",
+      "assignedAt": "2026-11-08T20:00:53.730Z",
+      "hookAlt": false,
+      "hookAltAvailable": false,
+      "followCta": false,
+      "replyHint": true,
+      "ctaLine": "v2",
+      "promptVersion": "2026-09-10",
+      "model": "claude-sonnet-5-5"
+    },
+    "caption": "A patient with a full feeling after just a few bites for months.\n\nThen the X-ray loaded 😭\n\nAnd that explains why the meals stopped making sense.\n\nWhat's the most likely diagnosis? 🩻\n\nWild guesses are welcome\n\nAnswer drops in the replies 👇🏼",
+    "answerDueAt": "2026-11-08T20:21:04.904Z",
+    "ctaDueAt": "2026-11-08T21:16:04.904Z",
+    "metrics": {
+      "views": 3957,
+      "likes": 109,
+      "replies": 86,
+      "reposts": 4,
+      "quotes": 0
+    }
   }
 ]
